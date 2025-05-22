@@ -31,7 +31,7 @@ See the list of dependencies in the [Compiling in Linux](linux#dependencies) art
 ### Homebrew
 
 The following command installs dependencies for RawTherapee:
-`brew install gtk+3 gtkmm3 gtk-mac-integration adwaita-icon-theme libsigc++ little-cms2 libiptcdata fftw lensfun wget llvm cmake expat pkgconfig shared-mime-info exiv2 jpeg-xl libomp automake libtool`
+`brew install gtk+3 gtkmm3 gtk-mac-integration adwaita-icon-theme libsigc++ little-cms2 libiptcdata fftw lensfun wget llvm shared-mime-info exiv2 jpeg-xl libomp automake libtool imagemagick create-dmg`
 
 - **Configuring the homebrew build environment for Apple Silicon "M1"**
 
@@ -221,9 +221,7 @@ so, make sure these settings point to the appropriate paths:
 
 - This
   [1](https://raw.githubusercontent.com/Benitoite/RTdeps/master/macbuildRT.sh)
-  complete list of commands may optionally be used to perform a
-  from-scratch build of RawTherapee and its dependencies on macOS
-  10.15.3 / Xcode 11.
+  obsolete but useful script of commands may be helpful as a basis for compiling dependencies.
 - A
   JDK[2](https://www.oracle.com/technetwork/java/javase/downloads/jdk13-downloads-5672538.html)
   must be installed.
