@@ -3560,7 +3560,7 @@ are dependent on the image, the monitor, and the 6 settings
 
 #### Introduction
 
-GHS - Generalized Hyperbolic Strectch, brings a new way of processing
+GHS -- Generalized Hyperbolic Strectch, brings a new way of processing
 images. The vocabulary used is different from what we're used to
 (contrast, brightness, etc.), so I'd like to take this opportunity to
 make a (personal) point about the different conceptions of software
