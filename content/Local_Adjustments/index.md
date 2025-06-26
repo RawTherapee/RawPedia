@@ -4014,6 +4014,14 @@ Default 0.015 to avoid the zero value.
   the stretch at that point. Pixel values will move away from the SP
   location.
 
+###### Automatic Black point & White point - Estmation Symmetry point (SP)
+To make GHS more intuitive and easier to use, I added 2 features:
+- Automatically calculate black points and white points (not in Inverse GHS mode). This allows to compensate for example (as poor Dehaze does) the black point in foggy images and take into account the reconstruction of highlights. As a reminder, unlike other Tone-mappers, these 2 points are in linear mode. The aim of the operation is to bring the data back into the interval [0 1]. Of course it is possible to retouch in manual mode, for example negative values ​​(depending on the images) to open up overly pronounced shadows and help GHS
+- Provide an evaluation of the Symmetry Point (SP). This value, which has nothing to do with 'middle gray' is essential to understanding GHS and the results. By default, I chose 0.015. The evaluation seems good to me in RGB Luminance mode, acceptable in RGB mode and it is not provided for the other modes, because it has no value. It doesn’t make much sense to try to automate this, as it’s just an evaluation of the symmetry point from the data in linear mode. This point corresponds to the maximum of the histogram in linear mode and with the working profile. It is up to the user to choose and adapt this value by adjusting the slider (SP)
+
+<img src="/images/Ghs-bw-sym.jpg" title="Black point - White point - SP" width="600"
+alt="Ghs-bw-sym.jpg" />
+
 ##### Incidence of Local intensity (b)
 
 High positive values of (b ) can be considered as histogram wideners,
