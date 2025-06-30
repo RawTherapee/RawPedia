@@ -3821,6 +3821,8 @@ all image data to be processed is in the interval \[0 ,1\].
   (positive values). Move this slider until you obtain a minimum Clipped
   Black point value. If no upstream processing has been performed, the
   first value to be retained will be Clipped Black point = -1.
+ - The 'Highlight reconstruction' method has a very strong impact on the
+  White-point value. and therefore on the amplitude of the RGB data which will then be brought back into the interval [0. 1]. It seems obvious that the values ​​of Stretch factor (D), Local intensity (b), Symmetry point (SP) ... will be (depending on the action of the reconstruction process) profoundly impacted. 
 
 ###### Associated Tooltips
 
