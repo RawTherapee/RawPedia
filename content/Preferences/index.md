@@ -473,11 +473,12 @@ RawTherapee to the folder which contains color profiles.
 
 Standard locations where color profiles are stored:
 
-:; Windows
-
-
-
-`C:\Windows\system32\spool\drivers\color`
+Windows
+    `C:\Windows\system32\spool\drivers\color`
+Linux
+    `/usr/share/color/icc/`
+macOS
+    `/library/ColorSync/Profiles/Displays/`
 
 ### Monitor
 
@@ -605,7 +606,7 @@ states:
 `[-]` Values differ across selected images.
 
 Batch editing is done by selecting multiple images in the
-[File Browser](the_file_browser_tab) (hold the or key, then click
+[File Browser](the_file_browser_tab) (hold the ⇧ Shift or ^ Ctrl key, then click
 the images you want to select), then you can edit those images using the
 tools in the Batch Edit panel on the right.
 
@@ -622,7 +623,7 @@ care what you're doing.
 What happens to the tool values as you manipulate them depends on the
 "Behavior" setting in this Batch Edit tab.
 
-The "Add" Mode
+#### The "Add" Mode
 This mode may also be understood as "relative". Modifying sliders which
 are set to the "Add" mode will result in the value of the modification
 being added to the existing value. For example, if you select two images
@@ -641,7 +642,7 @@ each selected image.
 
 <!-- -->
 
-The "Set" Mode
+#### The "Set" Mode
 This mode may also be understood as "absolute". Modifying sliders which
 are set to the "Set" mode will result in the value of the modification
 being set, irrelevant of what the existing value was. If we use the same
