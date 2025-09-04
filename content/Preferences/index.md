@@ -8,7 +8,7 @@ contributors:
 ---
 
 You can access the Preferences window by clicking on the Preferences
-button [image:preferences.png](image:preferences.png) which
+button [preferences](/static/images/Preferences.png) which
 is either in the bottom-left corner of the RawTherapee window, or the
 top-right one, depending on your
 [Editor tab mode layout](the_image_editor_tab#editor_tab_modes).
@@ -37,7 +37,7 @@ monitor or more. The following modes are available:
 - Single Editor Tab Mode
 - Single Editor Tab Mode, Vertical Tabs
 - Multiple Editor Tabs Mode
-- Multiple Editor Tabs Mode (if available on second monitor)
+- Multiple Editor Tabs In Own Window Mode
 
 <!-- -->
 
@@ -166,7 +166,7 @@ particular importance to this paragraph are the properties of the area
 which surround the observed region. The way you perceive the colors of a
 photograph viewed on a screen depends in part on the colors of the area
 surrounding the photograph. You can read more about this in the
-[CIECAM02](ciecam02) article. In order to mitigate the errors
+[CIECAM02/16](ciecam02) article. In order to mitigate the errors
 the user makes while adjusting a photo, RawTherapee ships themes which
 use neutral background colors. While all of the themes are based on
 shades of grey, the theme which is most suited to avoid affecting human
@@ -217,19 +217,17 @@ screenshot) visible in the
 <figcaption>Rt56_hidpi.png</figcaption>
 </figure>
 
-- Pseudo-HiDPI mode
-
-
-Scales the user interface so that text and images remain sharp even on a
-HiDPI screen. Introduced in RawTherapee 5.6. Scaling in RawTherapee
-depends on font size, DPI and display scaling. While scaling has been
-tested to work well in Windows, Linux and macOS, there are some macOS
-display modes which are incompatible with it, specifically those modes
-suffixed by "(HiDPI)" in macOS Display settings. Some versions of macOS
-(10.14.\*) seem to not list any modes, in which case the user must just
-give it a try.
-
 ### Clipping Indication
+
+The clipped [shadow](/static/images/Warning-shadows.png) and [highlight](/static/images/Warning-highlights.png) indicators in the Editor allow you to easily see which areas of the image are too dark or too bright. Highlighted areas are shaded according to the much they transgress the thresholds.
+
+The thresholds for these indicators are defined in Preferences > General.
+
+The clipped shadow indicator will highlight areas where all three channels fall at or below the specified shadow threshold.
+
+The clipped highlight indicator will highlight areas where at least one channel lies at or above the specified highlight threshold. If you want to see only where all channels are clipped, then enable the luminosity preview mode in addition to the clipped highlight indicator.
+
+Clipping is calculated using data which depends on the state of the gamut button Gamut-hist.png which you can toggle above the main preview in the Editor tab. When the gamut button is enabled the working profile is used, otherwise the gamma-corrected output profile is used. 
 
 ### Pan Rate Amplification
 
@@ -363,8 +361,7 @@ if you're using paths containing spaces.
 ### Directories
 
 Specify the location of your [Dark-Frame](dark-frame),
-[Flat-Field](flat-field) and
-[HaldCLUT Film Simulation](film_simulation) folders.
+[Flat-Field](flat-field), [HaldCLUT Film Simulation](film_simulation), Camera/Lens profiles and Lensfun database folders.
 
 ### Crop Editing
 
@@ -476,11 +473,12 @@ RawTherapee to the folder which contains color profiles.
 
 Standard locations where color profiles are stored:
 
-:; Windows
-
-
-
-`C:\Windows\system32\spool\drivers\color`
+Windows
+    `C:\Windows\system32\spool\drivers\color`
+Linux
+    `/usr/share/color/icc/`
+macOS
+    `/library/ColorSync/Profiles/Displays/`
 
 ### Monitor
 
@@ -608,7 +606,7 @@ states:
 `[-]` Values differ across selected images.
 
 Batch editing is done by selecting multiple images in the
-[File Browser](the_file_browser_tab) (hold the or key, then click
+[File Browser](the_file_browser_tab) (hold the ⇧ Shift or ^ Ctrl key, then click
 the images you want to select), then you can edit those images using the
 tools in the Batch Edit panel on the right.
 
@@ -625,7 +623,7 @@ care what you're doing.
 What happens to the tool values as you manipulate them depends on the
 "Behavior" setting in this Batch Edit tab.
 
-The "Add" Mode
+#### The "Add" Mode
 This mode may also be understood as "relative". Modifying sliders which
 are set to the "Add" mode will result in the value of the modification
 being added to the existing value. For example, if you select two images
@@ -644,7 +642,7 @@ each selected image.
 
 <!-- -->
 
-The "Set" Mode
+#### The "Set" Mode
 This mode may also be understood as "absolute". Modifying sliders which
 are set to the "Set" mode will result in the value of the modification
 being set, irrelevant of what the existing value was. If we use the same
