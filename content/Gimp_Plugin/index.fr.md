@@ -1,26 +1,29 @@
 ---
-title: Gimp Plugin fr
+title: GIMP Plugin fr
 contributors:
   - Lebarhon
 ---
 
-<span style="color: #000000; background: none; overflow: hidden; page-break-after: avoid; font-size: 2.0em; font-family: Georgia,Times,serif; margin-top: 1em; margin-bottom: 0.25em; line-height: 1.3; padding: 0; border-bottom: 1px solid #AAAAAA;">Le
-plugin Gimp </span>
+<div class="pagetitle">
 
-Il est possible d'ouvrir des images raw dans GIMP en utilisant
-RawTherapee comme plugin.
+Le Plugin GIMP
 
-# Requis
+</div>
+
+Vous pouvez ouvrir des images raw avec GIMP en utilisant RawTherapee en
+tant que plugin.
+
+## Requis
 
 - RawTherapee 5.3
 - GIMP 2.9.6
-- L'exécutable RawTherapee peut se trouver à partir de la variable
-  d'environnement `$PATH`. Ce sera le cas si vous avez installé
-  l'ensemble du système RawTherapee.
+- L’exécutable RawTherapee doit se trouver dans un des chemins déclarés
+  dans la variable d’environnement `$PATH`. C'est le cas si vous avez
+  installé la globalité du système RawTherapee.
 
-# Utilisation
+## Utilisation
 
-Simplement ouvrir un fichier raw avec GIMP. Une fenêtre d'édition de
-RawTherapee devrait s'ouvrir automatiquement, vous pouvez l'utiliser
-pour peaufiner votre fichier raw. A la fermeture de la fenêtre, l'image
-est importée dans GIMP.
+Simplement ouvrir un fichier raw depuis GIMP. Une fenêtre de l'éditeur
+de RawTherapee devrait s'ouvrir automatiquement, elle vous permet de
+peaufiner le fichier raw. Lorsque vous fermez la fenêtre, l'image se
+trouve importée dans GIMP.
