@@ -2048,7 +2048,7 @@ will only have to re-select the desired *level* when you re-activate the
 module.
 
 The *merging* in the *Sharp Mask* consists of enhancing the details
-below the selected level and merging (blending) the result with the
+equal to and below the selected level and merging (blending) the result with the
 remaining levels: if you have selected *level 3*, the details of levels
 *1*, *2* and *3* will be enhanced and then merged with levels 4 and
 above (including the residual image). The *merge* slider allows you to

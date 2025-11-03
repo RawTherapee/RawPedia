@@ -949,7 +949,7 @@ temperature range, it is necessary to take Cat16 into account in CIECAM:
 - Choose the new temperature in "White balance" - for example 6000K.
 - Select Color Appearance & Lighting (CIECAM02/16).
 - Select: CAM Model = CIECAM16.
-- Select CatO2/16 mode = Automatic Symmetric.
+- Select Cat02/16 mode = Automatic Symmetric.
 - Adjust the temperature in Viewing Conditions to that of the white
   balance (in this example 6000K),
 - Then use the same process as before.

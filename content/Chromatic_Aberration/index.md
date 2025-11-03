@@ -38,7 +38,7 @@ quality of demosaicing.
 
 ## Auto-Correction
 
-If "Auto-correction" is checked, the "Red"/"Blue" sliders are disabled
+If Auto-correction is checked, the "Red"/"Blue" sliders are disabled
 and an automated detection and correction of chromatic aberration is
 performed. Where manual correction applies a constant value across the
 image, auto-correction divides the image into many blocks and tailors
@@ -49,9 +49,9 @@ sliders.
 
 ## Iterations
 
-This setting is available if "Auto-Correct" is checked. Auto-Correction
+This setting is available if Auto-Correction is checked. Auto-Correction
 is conservative, means it often does not correct all Chromatic
-Abberation. To correct the remaining Chromatic Aberration, from RT 5.5
+Abberation. To correct the remaining Chromatic Aberration, from RawTherapee 5.5
 on you can use up to 5 iterations of automatic Chromatic Aberration
 correction. Each iteration will reduce the remaing Chromatic Aberration
 from the last iteration at the cost of additional processing time.
@@ -60,4 +60,4 @@ from the last iteration at the cost of additional processing time.
 
 If the "Red"/"Blue" sliders are non-zero the given values are used to
 correct chromatic aberration. They cannot be used at the same time as
-"Auto-correction".
+Auto-correction.
