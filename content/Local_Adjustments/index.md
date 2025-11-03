@@ -4073,7 +4073,8 @@ As a reminder, because I've already mentioned it:
 
 - Combining the two allows you to retrieve out-of-gamut colors (including ACES-P0). When the system finds a (WP) of 10, it means that within the limits of the usual data gamut (0 / 65535), the values ​​taken into account are about 655000...For example, when the illuminant consists of LEDs.
 
-The system acts as a gamut compressor (a bit like 'Gamut Compression', but for the 3 RGB channels) and 'fits' the data into the gamut. 
+The system acts as a gamut compressor (a bit like 'Gamut Compression', but for the 3 RGB channels) and 'fits' the data into the gamut.
+ 
 Adjusting the (WP) (for example, reducing it) will limit the maximum value. Adjusting the ‘Stretch Factor (D)’ and ‘Local Intensity (b)’ will allow you to focus on the area of ​​the image to be enhanced. If necessary to refine the colorimetry, you can use ‘Abstract profiles’ (which is not, in this branch, up to date with the new features of the 'cam16slope' branch) in particular the 'Custom (CIExy diagram)' part, and 'Refine colors', etc.
 
 And of course, if you create a second Spot, the (BP) and (WP) values ​​are recalculated and often close to 0 and 1, and (SP) recalculated.
