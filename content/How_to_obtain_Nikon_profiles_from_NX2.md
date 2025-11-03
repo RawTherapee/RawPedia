@@ -1,5 +1,5 @@
 ---
-title: How to obtain Nikon profiles from NX2
+title: How to Obtain Nikon Profiles from NX2
 contributors:
   - DrSlony
   - Thanatomanic

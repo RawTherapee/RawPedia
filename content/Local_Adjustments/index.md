@@ -3821,6 +3821,8 @@ all image data to be processed is in the interval \[0 ,1\].
   (positive values). Move this slider until you obtain a minimum Clipped
   Black point value. If no upstream processing has been performed, the
   first value to be retained will be Clipped Black point = -1.
+ - The 'Highlight reconstruction' method has a very strong impact on the
+  White-point value. and therefore on the amplitude of the RGB data which will then be brought back into the interval [0. 1]. It seems obvious that the values ​​of Stretch factor (D), Local intensity (b), Symmetry point (SP) ... will be (depending on the action of the reconstruction process) profoundly impacted. 
 
 ###### Associated Tooltips
 
@@ -4014,6 +4016,14 @@ Default 0.015 to avoid the zero value.
   the stretch at that point. Pixel values will move away from the SP
   location.
 
+###### Automatic Black point & White point - Estmation Symmetry point (SP)
+To make GHS more intuitive and easier to use, I added 2 features:
+- Automatically calculate black points and white points (not in Inverse GHS mode). This allows to compensate for example (as poor Dehaze does) the black point in foggy images and take into account the reconstruction of highlights. As a reminder, unlike other Tone-mappers, these 2 points are in linear mode. The aim of the operation is to bring the data back into the interval [0 1]. Of course it is possible to retouch in manual mode, for example negative values ​​(depending on the images) to open up overly pronounced shadows and help GHS
+- Provide an evaluation of the Symmetry Point (SP). This value, which has nothing to do with 'middle gray' is essential to understanding GHS and the results. By default, I chose 0.015. The evaluation seems good to me in RGB Luminance mode, acceptable in RGB mode and it is not provided for the other modes, because it has no value. It doesn’t make much sense to try to automate this, as it’s just an evaluation of the symmetry point from the data in linear mode. This point corresponds to the maximum of the histogram in linear mode and with the working profile. It is up to the user to choose and adapt this value by adjusting the slider (SP)
+
+<img src="/images/Ghs-bw-sym.jpg" title="Black point - White point - SP" width="600"
+alt="Ghs-bw-sym.jpg" />
+
 ##### Incidence of Local intensity (b)
 
 High positive values of (b ) can be considered as histogram wideners,
@@ -4042,6 +4052,38 @@ Symmetry point (SP) by changing the form of the transform itself:
 - As a general rule, the level of 'b' employed will decrease as a
   stretch sequence nears completion, although larger 'b' values can
   still be employed for precise placement of additional contrast.
+  
+###### Some comments to better understand GHS
+To help the user understand (a little better) what GHS and its inverse function are, I'll make a few comments.
+
+As you can see:
+- 'Stretch factor (D)' only has positive values.
+- There are no 'contrast' or 'lightness' sliders, no more 'middle grey' or 'pivot'.
+- Interestingly, I use very low values ​​of (D) as 'special' values ​​(0.001 or 0.002) to activate certain functions : settings for White Point linear (WP), Black Point linear (BP), Symmetry point (SP), and Inverse GHS.
+
+It's important to understand that the system as I've designed it is entirely dynamic. You directly see the interaction of the (WP), (BP), and (SP) settings. Some might say it's not very 'professional' (in terms of code), but I haven't found any other solutions that work. It is imperative that the GHS algorithm be activated in order to calculate and see the influence of (BP) and (WP) and examine the histogram (I recommend doing it in 'working profile' mode with gamma=1) - before any significant action on 'Stretch factor (D)'. ‘D = 0.001’ is a very low value that can be considered negligible (in terms of stretch), but it allows the algorithm to function. At this value, to ensure the impact of (BP) and (WP) is visible, some sliders are deactivated so as not to influence the result (eg : Stretch regularization & Midtones)
+
+The problem (not just that of labels and tooltips - labels and tooltips are difficult to write because you have to try to convey something else) is complex. Wanting to create a dynamic system that calculates (BP), (WP), and (SP) in real time and allows for inverse operation is difficult ; I'm not trying to be pretentious. However, it's completely different from anything being done elsewhere. I'm not saying that what is done elsewhere (in RT or other software...) is less good or bad, but it is very different.
+
+As a reminder, because I've already mentioned it:
+
+- (BP) and (WP) calculations are in linear mode, not with Ev.
+
+- It's important, even on ordinary images, to enable 'Color Propagation' (even if you can disable it later).
+
+- Combining the two allows you to retrieve out-of-gamut colors (including ACES-P0). When the system finds a (WP) of 10, it means that within the limits of the usual data gamut (0 / 65535), the values ​​taken into account are about 655000...For example, when the illuminant consists of LEDs.
+
+The system acts as a gamut compressor (a bit like 'Gamut Compression', but for the 3 RGB channels) and 'fits' the data into the gamut.
+ 
+Adjusting the (WP) (for example, reducing it) will limit the maximum value. Adjusting the ‘Stretch Factor (D)’ and ‘Local Intensity (b)’ will allow you to focus on the area of ​​the image to be enhanced. If necessary to refine the colorimetry, you can use ‘Abstract profiles’ (which is not, in this branch, up to date with the new features of the 'cam16slope' branch) in particular the 'Custom (CIExy diagram)' part, and 'Refine colors', etc.
+
+And of course, if you create a second Spot, the (BP) and (WP) values ​​are recalculated and often close to 0 and 1, and (SP) recalculated.
+
+The 'Inverse GHS' function is (somewhat) similar to 'Excluding spot', but more sophisticated, if I may use this term while remaining modest.
+
+It allows you to 'undo' previous actions for a specific area of ​​the image, for example 'removing' or ‘reduce’ Stretch in a sky or sunset.
+
+But it also allows you to work in 'negative space', that is, to treat the 'Stretch factor (D)' as if it had negative values ​​(which is not normally possible). In 'Inverse GHS' mode, the contrasts will be reduced overall (instead of being increased). The entire system will operate in reverse. Look at 'GHS curve visualization' and you'll see that when you increase 'Stretch factor (D)', the curve curves downwards...  
 
 ###### Mathematical principles used for transformations depending on the value of (b)
 
