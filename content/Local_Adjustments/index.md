@@ -4017,8 +4017,8 @@ To make GHS more intuitive and easier to use, I added 2 features:
 - It’s just an estimation of the symmetry point from the data in linear mode. This point corresponds to the maximum of the histogram in linear mode and with the working profile. It is up to the user to choose and adapt this value by adjusting the slider (SP)
 - If the checkbox added to the slider (SP) is checked : Try setting an automatic Symmetry Point (SP) estimation, only in RGB mode. May require manual adjustment.
 
-<img src="/images/CS-pre-post.jpg" title="Capture Sharpening" width="600"
-alt="CS-pre-post.jpg" />
+<img src="/images/Ghs-bw-sym2.jpg" title="Black point - White point - SP" width="600"
+alt="Ghs-bw-sym2.jpg" />
 
 ##### Incidence of Local intensity (b)
 
