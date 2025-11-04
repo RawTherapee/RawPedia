@@ -123,7 +123,7 @@ contrast with high values and simulation of "clarity".
 
 #### Sharpening - 8
 
-Uses RL deconvolution sharpening. View at 1:1
+Uses RL deconvolution sharpening. View at 1:1 or Capture Deconvolution
 
 #### Local Contrast & Wavelets - 8
 
@@ -6226,8 +6226,28 @@ well worth the effort, especially when working on the local contrast.
 
 ### Sharpening
 
-Only RL deconvolution is available. The results are only visible at 100%
-zoom (1:1) or greater.
+### RL deconvolution
+
+- RL deconvolution is available. The results are only visible at 100% zoom (1:1) or greater.
+
+### Capture deconvolution
+
+Capture Deconvolution, which is an adaptation of Capture Sharpening in the Raw tab for use in ‘Selective Editing’, and allows you to use this algorithm either in standalone mode or after denoising to restore the image's vigor . 
+Capture Sharpening's capabilities allow for finer sharpening control by allowing you to soften the corner sharpness to enhance focus on the main subject. 
+
+The results in the TIF/JPG outputs correspond to those in the 'fit to screen' view.
+
+The minimum size of the RT-spot is 150x150.
+
+<img src="/images/Capture-decon.jpg" title="Capture deconvolution" width="600"
+alt="Capture-decon.jpg" />
+
+#### Associated Tooltip
+
+Capture Deconvolution, which is an adaptation of Capture Sharpening in the Raw tab for use in Selective Editing, and allows you to use this algorithm either in standalone mode or after denoising. 
+Capture Sharpening's capabilities allow for finer sharpening control by allowing you to soften the corner sharpness to enhance focus on the main subject. 
+The results in the TIF/JPG outputs correspond to those in the 'fit to screen'view.
+
 
 ### Contrast By Detail Levels
 
