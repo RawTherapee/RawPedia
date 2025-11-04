@@ -6226,11 +6226,11 @@ well worth the effort, especially when working on the local contrast.
 
 ### Sharpening
 
-### RL deconvolution
+#### RL deconvolution
 
 - RL deconvolution is available. The results are only visible at 100% zoom (1:1) or greater.
 
-### Capture deconvolution
+#### Capture deconvolution
 
 Capture Deconvolution, which is an adaptation of Capture Sharpening in the Raw tab for use in ‘Selective Editing’, and allows you to use this algorithm either in standalone mode or after denoising to restore the image's vigor . 
 Capture Sharpening's capabilities allow for finer sharpening control by allowing you to soften the corner sharpness to enhance focus on the main subject. 
