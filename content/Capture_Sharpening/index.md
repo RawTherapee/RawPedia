@@ -160,3 +160,73 @@ To get the best out of this tool, the camera white level needs to be
 correct, especially if the image has sharp transitions between clipped
 and non-clipped highlights. If you experience problems, please refer to
 the section on *White Levels* in [Adding Support for New Raw Formats](adding_support_for_new_raw_formats).
+
+## Capture sharpening and noise-related problems
+
+Capture Sharpening is a remarkable tool entirely designed by Ingo Weirich around 2018.
+ I won't reiterate its exceptional features, from the user's perspective, which are described in Rawpedia. 
+ Noise is a problem closely linked to the concept of sharpness.
+
+A few technical considerations are important to understand before I explain the problems to be solved and the solutions implemented.
+
+For Capture Sharpening, in its Raw version:
+- The code is located immediately after ‘demoicaising’, which allows the user to choose the ‘demoicaising’ method (Amaze, DCB, etc.) and take into account most of the Raw settings applied upstream.
+- This position in the process places it before white balance and before the assignment of a working profile. Consequently, any modifications made to the Raw algorithm must take this into account.
+- This position also has the advantage of being immune to the ‘Preview’ effect. The result will always be the same on screen or in the TIF/JPG output, regardless of the zoom level, because the processing is done on the entire image.
+- However, any processing added at this level will also be applied to the entire image, resulting in significant resource consumption (memory, processing time).
+ 
+### Problems to solve
+
+- When RAW images are either too noisy or the noise is poorly distributed between flat areas and structures, the ‘Contrast Threshold (CT)’ function fails to work, resulting in: a) a CT value of zero; b) a uniformly white contrast mask. Manually adjusting the CT value does not always provide a solution.
+- For images where the main subject (monument, bird, portrait, etc.) stands out against a neutral background, noise is much more visible in the background and less noticeable on the main subject. Why not take advantage of this stage, where Preview issues are nonexistent and a contrast mask is available to reduce noise (partially or completely) in the neutral background?
+- The original version of Capture Sharpening can only process RAW files. It is desirable to extend the capabilities of Capture Sharpening to non-RAW files (TIF, JPG, etc.).
+
+The part added to Capture Sharpening (raw) is not intended to replace other processing methods, but rather to: a) allow 'Capture Sharpening' to work on certain noisy images; b) Take advantage of the contrast mask and the Preview's insensitivity to zoom to remove some of the most visible noise located in the background (flat areas) of the image.
+
+### The Problem with Contrast Masks
+
+Until this version of RawTherapee, to display contrast masks in both ‘Capture Sharpening’ and ‘RL Deconvolution’, it was necessary to click on ‘Preview the sharpening contrast mask’ (shortcut:p) in the toolbar above the main preview. 
+
+Because there are now two additional contrast masks in ‘Selective Editing (SE):
+- Capture Deconvolution.
+- Denoise Settings.
+
+It has become nearly impossible to know which mask is active. Hence the presence of a ‘Show contrast mask’ checkbox for each of the (SE) and ‘Capture Sharpening’ tools, furthermore, there can be multiple RT-spots . Activation via shortcut:p is maintained solely for compatibility purposes, but does not activate the (SE) masks.
+
+## Capture Sharpening : Presharpening denoise and Postsharpening denoise
+
+<img src="/images/CS-pre-post.jpg" title="Capture Sharpening" width="600"
+alt="CS-pre-post.jpg" />
+
+### Presharpening denoise :
+
+In order for Capture Sharpening to work on noisy or very noisy images, applies either :
+- A light '3x3 soft' to a fairly strong '5x5 strong' median denoising filter in successive gradual iterations prior to ‘Capture Sharpening’.
+- Wavelet denoising which has a different, more progressive action, mainly on the first 4 levels of decomposition(high and medium frequency), more precisely, up to 64x64 pixel packets, and Edge performance (Wavelet Settings) is set to ‘D6 – standard plus’.
+
+This helps clarify the contrast mask and allows ‘Contrast Threshold’ to work, and thus Capture Sharpening to work properly.
+- This also helps to reduce noise in the output image.
+- Be careful not to use values that are too high so as not to degrade the image. The value that allows the mask to appear (or a little more) is usually sufficient.
+
+#### Associated Tooltip
+
+In order for Capture Sharpening to work on noisy or very noisy images, applies either :
+- A light '3x3 soft' to a fairly strong '5x5 strong' median denoising filter in successive gradual iterations prior to Capture Sharpening.
+- Wavelet denoising which has a different, more progressive action, mainly on the first 4 levels of decomposition(high and medium frequency).
+- This helps clarify the contrast mask and allows Contrast Threshold to work, and thus Capture Sharpening to work properly.
+- This also helps to reduce noise in the output image.\n\nBe careful not to use values that are too high so as not to degrade the image. The value that allows the mask to appear (or a little more) is usually sufficient.
+
+### Postsharpening denoise
+
+For raw images,allows you initial denoising after Capture Sharpening taking into account the mask information.
+- Its main use is to separate the action between structured areas where the noise is barely visible and the often plain background (flat areas) where the noise is very visible.
+- The algorithm uses Wavelet on all 3 RGB channels, up to pixel packets of 64x64. To improve quality and reduce potential artifacts Edge performance 5Wavelet Settings)  is set to ‘D6 – standard plus’ is set to ‘D20 – high plus’.
+- Be careful not to use values that are too high, you can fine-tune the noise reduction later.
+
+#### Associated Tooltip
+
+For raw images, allows you initial denoising after Capture Sharpening taking into account the mask information.
+- Its main use is to separate the action between structured areas where the noise is barely visible and the often plain background (flat areas) where the noise is very visible.
+- Be careful not to use values that are too high, you can fine-tune the noise reduction later.
+
+
