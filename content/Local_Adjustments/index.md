@@ -123,7 +123,7 @@ contrast with high values and simulation of "clarity".
 
 #### Sharpening - 8
 
-Uses RL deconvolution sharpening. View at 1:1
+Uses RL deconvolution sharpening. View at 1:1 or Capture Deconvolution
 
 #### Local Contrast & Wavelets - 8
 
@@ -3754,7 +3754,7 @@ found in astrophotography.
 
 Five settings act directly on GHS:
 
-- Stretch factor (D): controls the extent of the stretch.
+- Stretch factor (D): controls the extent of the stretch .It can only have positive values. 'Negative space' can be implemented with 'Inverse GHS'.
 - Local intensity (b) - linear factor: controls the degree to which the
   stretch is focused around the Symmetry point (SP), by modifying the
   shape of the transformation itself.
@@ -3791,17 +3791,19 @@ These three factors can be used to modify image contrast, by attempting
 to preserve local contrast overall, filling in valleys and reducing
 peaks.
 
-- The 'Inverse GHS' checkbox: enables you to use the inverse form of the
-  transformation equations. This allows you to substantially recover the
-  original image, subject to the precision of the calculations, but
-  above all to the values of the black and white points. For example,
-  the 'Inverse GHS' mode will enable you to reduce the action created
-  with a first RT-spot in 'Global' mode, aimed at brightening an image
-  globally and adapting contrast. By adding an RT-spot in 'Inverse GHS'
-  mode localized on a part of the image (sky,...), the overall contrast
-  and color balance will be preserved. Of course, with Selective
-  Editing, you can use an Excluding Spot, but it will often be less
-  effective.
+##### Inverse GHS
+Only available in Standard and Advanced modes?
+
+Inverse GHS checkbox: Inverse GHS is useful for reducing overall contrast or recovering your original image. It adds contrast on the far right and left of the histogram, brightening the deep shadows, darkening the bright highlights, and squeezing the histogram towards the middle.
+
+The Generalized Hyperbolic Inverse transformation allows you to recover your original image, subject to mathematical precision, but you can also use it for other purposes. This feature is more like the 'Excluding spot' but more powerful.
+
+If the White point and Black point were changed in normal mode (automatic or not), they will likely need to be readjusted. The white point often needs to be readjusted lower. There is interaction between the two settings. In the majority of cases, especially when used as a second GHS Spot, the adjustments will be small, or even unnecessary.
+
+Can be used as a second GHS spot after a first GHS Spot in Global or 'Full image' mode, most often with 'Spot method = Normal spot', for example to darken a sky or a sunset.
+
+To allow Inverse GHS to work the 'Stretch factor (D)' must be between 0.001 and 0.002 and the checkbox 'Auto Black point & White point' disabled. 
+
 
 ##### The need to fine-tune White Point (WP linear) and Black Point (BP linear)
 
@@ -3825,55 +3827,47 @@ all image data to be processed is in the interval \[0 ,1\].
   White-point value. and therefore on the amplitude of the RGB data which will then be brought back into the interval [0. 1]. It seems obvious that the values ​​of Stretch factor (D), Local intensity (b), Symmetry point (SP) ... will be (depending on the action of the reconstruction process) profoundly impacted. 
 
 ###### Associated Tooltips
+Black point/White point: Sets the 'Black point (BP linear)', 'White point (WP linear)' for a linear stretch.
+- 'Black Point (BP linear)' and 'White Point (WP linear)' settings are only available if the 'Stretch factor (D)' is between 0.001 and 0.002. This is to avoid altering the histogram.
+- When the stretch factor is 0.002 or less, all stretch settings except for 'Black point' and 'White point' will have no effect.
+- 'Black point (BP linear)' and 'White point (WP linear)' settings are sensitive to the general settings upstream of GHS i.e. highlight reconstruction, white balance and RAW processes.
+- To have relevant 'Black Point (BP linear)' and 'White Point (WP linear)' settings, the entire image must be analyzed. It is recommended to use 'Fit whole image to screen - Shortcut Alt-f'.
 
-Blackpoint: Sets the Black point for a linear stretch of the image.
+To allow Inverse GHS to work the 'Stretch factor (D)' must be between 0.001 and 0.002 and the checkbox 'Auto Black point & White point' disabled. 
 
-- For negatives slider values, in GHS ‘normal’, shadows are raised
-  linearly to avoid excessive noise build-up and facilitate GHS work.
-- For positives slider values, the histogram is shifted to the left. For
-  Raw images you can also use Raw-Tab \> Raw Black Points – Dehaze,
-  which is more precise.
-- Contrast gained by performing the linear stretch will be evenly
-  distributed over the image.
 
-<!-- -->
+Black point: Sets the black point for a linear image stretch.
+- In normal GHS mode, negative slider values lift the shadows linearly to avoid excessive noise and facilitate the GHS calculations.
+- For positive slider values, the histogram is shifted to the left. For raw images, you can also use the more precise Raw Black Points > Dehaze in the Raw tab
+- Increases in contrast due to the linear stretch will be evenly distributed over the image.
 
-- You can adjust a linear black point offset either:
-  - to account for noise in the dark parts.
-  - adjust the histogram.
-- It is recommended to act on this sliders before implementing the GHS
-  algorithm to avoid clipping data. A very low Stretch factor (D) value
-  (0.001 by default) is recommended for performing this adjustment.
-- The label 'Clipped pixel count Shadows:x Highlights=y' shows you the
-  number of pixels that would be clipped without action on the 2
-  sliders.
-- The label Pixel values -Darkest:w Lightest:z shows you the values of
-  real limits in range \[0 1\].
-- In ‘Inverse GHS’ mode the trends are differents and there are possible
-  interactions with the White point.
+You can adjust a linear black point offset to either:
+- account for noise in the deep shadows.
+- adjust the histogram.
 
-White point: Sets the White point for a linear stretch of the image. Any
-pixel with value greater than the White point input will be clipped and
-the data lost.
+Set 'Stretch factor (D)' to 0.001 to adjust the sliders.
+- The label 'Clipped pixel count Shadows:x Highlights:y' shows the number of pixels that would be clipped without adjusting the two sliders.
+- The label ‘Pixel values - Darkest:w Lightest:z’ shows you the minimum and maximum values in the range [0, 1].
 
-- Contrast gained by performing the linear stretch will be evenly
-  distributed over the image, which will be brightened. Pixels with
-  values greater than the Whitepoint will appear white and have a value
-  of 1.0.
-- Setting this parameter to a value greater than 1 will extend the
-  dynamic range at the high end.
-- The 'Highlight reconstruction' method has a very strong impact on the
-  White-point value.
-- It is recommended to act on this slider before implementing the GHS
-  algorithm to avoid clipping data. A very low Stretch factor (D) value
-  (0.001 by default) is recommended for performing this adjustment
-- The label 'Clipped pixel count Shadows:x Highlights=y' shows you the
-  number of pixels that would be clipped without action on the 2
-  sliders.
-- The label Pixel values -Darkest:w Lightest:z shows you the values of
-  real limits in range \[0 1\].
-- In ‘Inverse GHS’ mode the trends are reversed and there are possible
-  interactions with the Black point.
+In Inverse GHS mode the behavior is reversed and there are possible interactions with the White point. In the majority of cases, especially when using a second GHS Spot, the adjustments will be small, or even unnecessary.
+
+To activate the Inverse GHS checkbox, it may be necessary to move the 'Stretch factor' slider from 0.001 to 0.002. This will work only if the checkbox 'Auto Black point & White point' is disabled. 
+
+
+White point : Sets the White point for a linear stretch of the image. Any pixel with value greater than the white point input will be clipped and the data lost.
+- Contrast gained by performing the linear stretch will be evenly distributed over the image, which will be brightened. Pixels with values greater than the white point will appear white and have a value of 1.0.
+- Setting this parameter to a value greater than 1 will extend the dynamic range at the high end.
+- The 'Highlight reconstruction' method has a very strong impact on the white-point value.
+
+Set 'Stretch factor (D)' to 0.001 to adjust the sliders.
+- The label 'Clipped pixel count - Shadows:x Highlights=y' shows you the number of pixels that would be clipped without adjusting the two sliders.
+- The label 'Pixel values - Darkest:w Lightest:z' shows you the minimum and maximum values in the range [0, 1].
+
+In Inverse GHS mode the behavior is reversed and there are possible interactions with the black point.
+
+To allow Inverse GHS to work the 'Stretch factor (D)' must be between 0.001 and 0.002 and the checkbox 'Auto Black point & White point' disabled.
+
+
 
 ##### Recommandations
 
@@ -4018,11 +4012,13 @@ Default 0.015 to avoid the zero value.
 
 ###### Automatic Black point & White point - Estmation Symmetry point (SP)
 To make GHS more intuitive and easier to use, I added 2 features:
-- Automatically calculate black points and white points (not in Inverse GHS mode). This allows to compensate for example (as poor Dehaze does) the black point in foggy images and take into account the reconstruction of highlights. As a reminder, unlike other Tone-mappers, these 2 points are in linear mode. The aim of the operation is to bring the data back into the interval [0 1]. Of course it is possible to retouch in manual mode, for example negative values ​​(depending on the images) to open up overly pronounced shadows and help GHS
-- Provide an evaluation of the Symmetry Point (SP). This value, which has nothing to do with 'middle gray' is essential to understanding GHS and the results. By default, I chose 0.015. The evaluation seems good to me in RGB Luminance mode, acceptable in RGB mode and it is not provided for the other modes, because it has no value. It doesn’t make much sense to try to automate this, as it’s just an evaluation of the symmetry point from the data in linear mode. This point corresponds to the maximum of the histogram in linear mode and with the working profile. It is up to the user to choose and adapt this value by adjusting the slider (SP)
+- Automatically calculate black points and white points (not in Inverse GHS mode). This allows to compensate for example (as poor Dehaze does) the black point in foggy images and take into account the reconstruction of highlights. As a reminder, unlike other Tone-mappers, these 2 points are in linear mode. The aim of the operation is to bring the data back into the interval [0 1]. Of course it is possible to retouch in manual mode, for example negative values ​​(depending on the images) to open up overly pronounced shadows and help GHS.
+- Provide an evaluation of the Symmetry Point (SP). This value, which has nothing to do with 'middle gray' is essential to understanding GHS and the results. By default, I chose 0.015. The evaluation seems good to me in RGB Luminance mode, acceptable in RGB mode and it is not provided for the other modes, because it has no value. 
+- It’s just an estimation of the symmetry point from the data in linear mode. This point corresponds to the maximum of the histogram in linear mode and with the working profile. It is up to the user to choose and adapt this value by adjusting the slider (SP)
+- If the checkbox added to the slider (SP) is checked : Try setting an automatic Symmetry Point (SP) estimation, only in RGB mode. May require manual adjustment.
 
-<img src="/images/Ghs-bw-sym.jpg" title="Black point - White point - SP" width="600"
-alt="Ghs-bw-sym.jpg" />
+<img src="/images/Ghs-bw-sym2.jpg" title="Black point - White point - SP" width="600"
+alt="Ghs-bw-sym2.jpg" />
 
 ##### Incidence of Local intensity (b)
 
@@ -4084,6 +4080,7 @@ The 'Inverse GHS' function is (somewhat) similar to 'Excluding spot', but more s
 It allows you to 'undo' previous actions for a specific area of ​​the image, for example 'removing' or ‘reduce’ Stretch in a sky or sunset.
 
 But it also allows you to work in 'negative space', that is, to treat the 'Stretch factor (D)' as if it had negative values ​​(which is not normally possible). In 'Inverse GHS' mode, the contrasts will be reduced overall (instead of being increased). The entire system will operate in reverse. Look at 'GHS curve visualization' and you'll see that when you increase 'Stretch factor (D)', the curve curves downwards...  
+
 
 ###### Mathematical principles used for transformations depending on the value of (b)
 
@@ -6229,8 +6226,28 @@ well worth the effort, especially when working on the local contrast.
 
 ### Sharpening
 
-Only RL deconvolution is available. The results are only visible at 100%
-zoom (1:1) or greater.
+#### RL deconvolution
+
+- RL deconvolution is available. The results are only visible at 100% zoom (1:1) or greater.
+
+#### Capture deconvolution
+
+Capture Deconvolution, which is an adaptation of Capture Sharpening in the Raw tab for use in ‘Selective Editing’, and allows you to use this algorithm either in standalone mode or after denoising to restore the image's vigor . 
+Capture Sharpening's capabilities allow for finer sharpening control by allowing you to soften the corner sharpness to enhance focus on the main subject. 
+
+The results in the TIF/JPG outputs correspond to those in the 'fit to screen' view.
+
+The minimum size of the RT-spot is 150x150.
+
+<img src="/images/Capture-decon.jpg" title="Capture deconvolution" width="600"
+alt="Capture-decon.jpg" />
+
+#### Associated Tooltip
+
+Capture Deconvolution, which is an adaptation of Capture Sharpening in the Raw tab for use in Selective Editing, and allows you to use this algorithm either in standalone mode or after denoising. 
+Capture Sharpening's capabilities allow for finer sharpening control by allowing you to soften the corner sharpness to enhance focus on the main subject. 
+The results in the TIF/JPG outputs correspond to those in the 'fit to screen'view.
+
 
 ### Contrast By Detail Levels
 
