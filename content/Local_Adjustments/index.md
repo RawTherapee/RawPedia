@@ -1451,6 +1451,63 @@ It also depends on:
   separation of the colors is less distinct.
 - "Edge detection" which will also be affected by high luminance noise.
 
+###### Selective Editing -  Blur/grain & Denoise > Denoise
+
+Allows you to differentiate the denoising action as a function of image detail and uniform background.
+
+The resulting action is a combination of the noise reduction and that of the mask created by 'Contrast threshold'
+
+On very noisy images you can reduce the mask noise.
+
+You can also differentiate the action with the curve 'Equalizer denoise mask'.
+
+The ratio flat-structured areas allows you to correct the action between the two.
+
+On noisy images and in Raw format, you should use the 'Presharpening denoise' and ‘Postsharpening denoise’ functions for more effective mask action.
+
+<img src="/images/Denoise-contrast.jpg" title="Denoise contrast mask" width="600"
+alt="Denoise-contrast.jpg" />
+
+###### Locks MadL noise evaluation
+
+Allows you to lock the noise evaluation used for Wavelet denoise.
+
+Wavelet denoise uses MadL (Median absolute deviation luminance) to act on the noise based on a slider or a curve.
+
+Rawtherapee's pipeline design results in different MadL values depending on the preview position and leads to differences in output.
+
+If you enable this checkbox, the value used for global processing will be the preview at that time. This will allow you to prioritize a specific area, background, or face for noise reduction, rather than an overall average value. Of course, you should only check the box once you've selected the area.
+
+###### Behavior when the complexity level is set to 'Advanced'
+
+Shows the actual values of Median Absolute Deviation (MadL).
+
+If 'Locks MadL noise evaluation' is not enabled you can manually change these values which will affect the entire image.
+
+The first levels 0,1,2,3,4,5,6 for the Horizontal direction,7,8,9,10 for the Vertical direction and 14,15,16,17 for the Diagonal, act on the detail noise. The higher levels have more effect on banding noise.
+Luminance noise reduction is a function that implements MadL (depending on level and direction) divided by the level of detail (high, medium, low frequency), the actual value of the decomposition at that location (depending on level and direction) and the curve applied by the user according to the level of wavelet decomposition.
+
+######  The checkbox ‘Manual settings’
+
+Allows you to manually control MadL values. Be careful: this function assumes mastery of the concepts of noise reduction using wavelets. Make sure that the initial values for the selected area have been set automatically.
+
+Be careful not to confuse the action on MadL which is a noise estimation only used in Wavelet Denoise where the strength is set in Selective Editing using a curve and a selected level (Aggressive / Conservative). The MadL scale is exponential and not linear.
+The first levels of wavelet decomposition provide visible noise reduction, whereas the higher levels have more affect on banding.
+<img src="/images/Denoise-manual.jpg" title="Denoise Manual settings" width="600"
+alt="Denoise-manual.jpg" />
+
+######  Selective Editing – Blur/Grain & Denoise > Blur & Noise
+
+You can blur the background using either:
+- Gaussian blur.
+- Median
+- Guided Filter
+
+To use the functions below you must either use a 'Normal Spot' or 'Full image' - therefore not available in 'Global' mode, because it requires a mask created by the use.
+You need to use the functions of the "Recovery based on luminance mask" tool, in conjunction with the chosen blur function. 
+A possible example is in Rawpedia (not for blur) ‘A complex noise reduction problem: how to differentiate between uniform areas and areas with texture or detail?’
+
+
 #### A moment of madness - try wavelets!
 
 ##### An example … (don't run away, it isn't as difficult as all that)
