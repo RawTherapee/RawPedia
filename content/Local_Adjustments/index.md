@@ -4010,9 +4010,9 @@ Default 0.015 to avoid the zero value.
   the stretch at that point. Pixel values will move away from the SP
   location.
 
-###### Automatic Black point & White point - Estmation Symmetry point (SP)
+###### Automatic Black point & White point - Estimation Symmetry point (SP)
 To make GHS more intuitive and easier to use, I added 2 features:
-- Automatically calculate black points and white points (not in Inverse GHS mode). This allows to compensate for example (as poor Dehaze does) the black point in foggy images and take into account the reconstruction of highlights. As a reminder, unlike other Tone-mappers, these 2 points are in linear mode. The aim of the operation is to bring the data back into the interval [0 1]. Of course it is possible to retouch in manual mode, for example negative values ​​(depending on the images) to open up overly pronounced shadows and help GHS.
+- Automatically calculate Black point (linear) and White point (linear)  - not in Inverse GHS mode. This allows to compensate for example (as poor Dehaze does) the black point in foggy images and take into account the reconstruction of highlights. As a reminder, unlike other Tone-mappers, these 2 points are in linear mode. The aim of the operation is to bring the data back into the interval [0 1]. Of course it is possible to retouch in manual mode, for example negative values ​​(depending on the images) to open up overly pronounced shadows and help GHS.
 - Provide an evaluation of the Symmetry Point (SP). This value, which has nothing to do with 'middle gray' is essential to understanding GHS and the results. By default, I chose 0.015. The evaluation seems good to me in RGB Luminance mode, acceptable in RGB mode and it is not provided for the other modes, because it has no value. 
 - It’s just an estimation of the symmetry point from the data in linear mode. This point corresponds to the maximum of the histogram in linear mode and with the working profile. It is up to the user to choose and adapt this value by adjusting the slider (SP)
 - If the checkbox added to the slider (SP) is checked : Try setting an automatic Symmetry Point (SP) estimation, only in RGB mode. May require manual adjustment.
@@ -4071,7 +4071,7 @@ As a reminder, because I've already mentioned it:
 
 The system acts as a gamut compressor (a bit like 'Gamut Compression', but for the 3 RGB channels) and 'fits' the data into the gamut.
  
-Adjusting the (WP) (for example, reducing it) will limit the maximum value. Adjusting the ‘Stretch Factor (D)’ and ‘Local Intensity (b)’ will allow you to focus on the area of ​​the image to be enhanced. If necessary to refine the colorimetry, you can use ‘Abstract profiles’ (which is not, in this branch, up to date with the new features of the 'cam16slope' branch) in particular the 'Custom (CIExy diagram)' part, and 'Refine colors', etc.
+Adjusting the (WP) (for example, reducing it) will limit the maximum value. Adjusting the ‘Stretch Factor (D)’ and ‘Local Intensity (b)’ will allow you to focus on the area of ​​the image to be enhanced. If necessary to refine the colorimetry, you can use ‘Abstract profiles’ in particular the 'Custom (CIExy diagram)' part, Refine colors, Illuminant).
 
 And of course, if you create a second Spot, the (BP) and (WP) values ​​are recalculated and often close to 0 and 1, and (SP) recalculated.
 
@@ -4113,9 +4113,9 @@ eliminating any parameters that could disrupt the analysis. I recommend
 working in Neutral mode. You can (must) activate :
 
 - Highlight reconstruction: which has a very strong impact on the
-  calculation of the White point (WP linear).
+  calculation of the White point (WP linear). In most cases, prefer 'Color propagation' - with or without Clip out-of-gamut colors depending on the nature of the image.
 - Denoise - if necessary,
-- White Balance: prefer Auto - Temperature correlation,
+- White Balance: prefer Auto - Temperature correlation, in most cases except for illuminants, which are far from daylight or blackbody.
 - Capture Sharpening and Raw functions.
 - Toggle histogram and data display to 'Working profile - linear' mode.
 
@@ -6232,7 +6232,8 @@ well worth the effort, especially when working on the local contrast.
 
 #### Capture deconvolution
 
-Capture Deconvolution, which is an adaptation of Capture Sharpening in the Raw tab for use in ‘Selective Editing’, and allows you to use this algorithm either in standalone mode or after denoising to restore the image's vigor . 
+Capture Deconvolution, which is an adaptation of Capture Sharpening in the Raw tab for use in ‘Selective Editing’, and allows you to use this algorithm either in standalone mode or after denoising to restore the image's vigor. See the Raw section of Capture Sharpening for more details on understanding. The algorithm is essentially the same, but the code had to be broken down into smaller parts, and of course, the data to be processed is of a different nature.
+
 Capture Sharpening's capabilities allow for finer sharpening control by allowing you to soften the corner sharpness to enhance focus on the main subject. 
 
 The results in the TIF/JPG outputs correspond to those in the 'fit to screen' view.
