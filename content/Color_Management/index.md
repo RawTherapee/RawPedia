@@ -987,6 +987,11 @@ You can find the description of these features in "Local Adjustments" -
 
 ### Others several improvements have been made - 2025
 
+<figure>
+<img src="/images/AP-improv.jpg" title="Abstract Profile" width="600" />
+<figcaption>AP-improv.jpg</figcaption>
+</figure>
+
 These improvements concern:
 #### Saturation - Midtones & Attenuation threshold
 
