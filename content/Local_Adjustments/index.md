@@ -3335,6 +3335,47 @@ Black-Ev.
 For the sake of compatibility and to keep a historical record
 (feedback), versions 5.11 are still available.
 
+###### Others several improvements have been made - 2025
+
+**Saturation**
+
+Modifies the image saturation whenever the gamma/slope ratio is different from 2.4/12.92. It aims to compensate for the desaturation caused by significant luminance variations.
+Values ​​between 0.2 and 1.0 are often sufficient.
+
+**Midtones**
+
+To try and mitigate a possible color shift when using Midtones, a combobox allows you to choose where the Midtones action is positioned:
+- Before Gamma & Slope (default)
+- After Gamma & Slope
+- After CAM16 - so after the adjustments 'CAM16 Image Adjustments'
+
+**Tone Mapping Operators**
+
+Complements the processing performed by Gamma, Slope and Midtones by applying either:
+- asymptotic highlight attenuation,
+- or tone mapping.
+Please note that this does not replace highlight reconstruction.
+
+- Ev based: attenuates highlights using an exponential function.
+- Gamma based: attenuates highlights using a hyperbolic function and partial tone mapping.
+- Slope based: uses tone mapping. Slope (gray balance) acts on the dynamic range and affects shadows and contrast. 'Scale Yb scene' is a function of White Ev.
+- RGB channel slope: similar to 'Slope based', but differentiable for each R, G, B channel. Attenuation threshold modifies mid gray and shadow/highlight balance.
+- Sigmoid based: applies Sigmoid tone mapping with the Contrast and Skew sliders. Display white point (cd/m2) adjusts the maximum screen luminance. This new version of Sigmoid is incompatible with versions 5.11 and earlier
+- TRC based: applies a simplified Tone Response Curve (TRC) to each individual R, G, B channel. Modifies the gamma by adjusting the shadow/highlight distribution (levels). 'Relative gamma' mode is a simplified method that takes into account the Slope. 'Highlight attenuation threshold' reduces the effect on the highlights.
+- For the RGB operators 'RGB channel slope' and 'TRC based', the 'Invert color' checkbox simulates a film negative function.
+
+**Screenshot**
+
+Screenshot showing the interface with 'Invert color' enabled (The base image is not a negative).
+
+I've tried to address user requests. You can use 'Invert color' in either 'TRC based' or 'RGB channel slope'. In both cases, you have access to a separate setting for each RGB channel.
+- TRC based: The Red balance (TRC), Green balance (TRC), and Blue balance (TRC) sliders directly affect gamma. Relative gamma mode adds a slope variation.
+- RGB channel slope: Red slope, Green slope, Blue slope modify the distribution of the tone-mapper between the low and high lights for each R, G and B channel. We cannot strictly speak of gamma, but the result is mathematically quite similar.
+
+<img src="/images/Negative-cam16.jpg" title="Sreenshot Negative & CAM16" width="600"
+alt="Negative-cam16.jpg" />
+
+
 ###### Position in the pipeline
 
 The Abstract Profile is at the end of the process, just before Color
