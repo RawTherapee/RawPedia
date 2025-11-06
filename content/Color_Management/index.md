@@ -985,6 +985,116 @@ You can find the description of these features in "Local Adjustments" -
 
 [Local Adjustments - Cam16 with HDR](local_adjustments#cam16_tutorial_with_an_hdr_image)
 
+### Others several improvements have been made - 2025
+
+These improvements concern:
+#### Saturation - Midtones & Attenuation threshold
+
+In the section relating to the TRC (Tone Response Curve), which until now consisted of the two sliders Gamma and Slope, two components have been added:
+- The ability to adjust midtones to better balance the image, especially for high Slope values ​​which are used for very underexposed images : slider Midtones 
+- The ability to modify the image saturation with the slider Saturation, whenever the gamma/slope ratio is different from 2.4/12.92.
+  It aims to compensate for the desaturation caused by significant luminance variations.
+  Values ​​between 0.2 and 1.0 are often sufficient.
+- The ability to attenuate highlights using an exponential function : slider Attenuation threshold
+
+#### Contrast Enhancement
+Purpose : This module complements the Tonal Response Curve (TRC) in the Abstract Profile (Color tab) and allows the user to carry out tonal contrast adjustments.
+
+**Contrast profile** 
+
+A series of presets defining the strength of the contrast adjustment at different detail levels. 
+Lower presets only affect fine details while higher presets affect both fine and coarse details.
+
+Note: The effect on coarse details may not be visible in the preview if the preview is too small.
+
+
+**Variable contrast** 
+
+The left end of the horizontal axis corresponds to close to zero contrast, while the right end corresponds to the strongest contrast in the image.
+ 
+The midpoint of the horizontal axis corresponds to the predominant contrast strength across all detail levels.
+
+The effect of this curve is reduced for higher Contrast profile presets.
+
+To avoid harsh contrast and halos, refrain from increasing the right half of the curve.
+
+##### More detailed comments
+
+##### Is tonal contrast a difficult concept?
+
+Traditionally, any graphics software can be used to retouch contrast. Empirically, this can be translated as modifying the difference in luminosity between the light and dark parts of an image.
+There are various algorithms some of which may or may not take into account the following:
+- the dynamic range ;
+- the whole or just part of the image (using masks or spots).
+
+Contrast acts on the luminance channel, whether in RGB (or its HSV derivatives, etc.) or Lab mode. and can be modified using various tools of varying complexity, linear or non-linear. For example by using functions such as log encoding, Laplacians, wavelets, guided filters, tone curves, sigmoid curves etc.
+
+##### The special case of wavelets
+
+Wavelets are a little-known mathematical tool that is not widely used as such in image-processing software but can be the basis for other tools. Rawtherapee is, to my knowledge, the only one to have a coherent and grouped set of tools using wavelets. Unfortunately, the whole package may seem complex and off-putting.
+Extensive information about the principles of wavelets and the various tools can be found in RawPedia so I won’t repeat the information here. To summarise:
+  It aims to compensate for the desaturation caused by significant luminance variations.
+- The image details are decomposed into groups of pixels, sorted according to their size (from 2x2 up to 1024x1024 pixels if the system allows it), and distributed across the waveletdecomposition
+  levels (one size per level). The details in each level are then assigned values which correspond to the amount of contrast in each detail (i.e. in each group of pixels) and are only generated if there is a variation between neighbouring pixels (in R,G,B or L,a,b mode).
+  They are then sorted according to whether the values are positive or negative for the horizontal, vertical and diagonal directions. The decomposition method used allows the user to choose the number of Daubechies vanishing moments, which affect the quality and finesse of the decomposition.
+- The undecomposed part, which no longer has any variations in the values of neighbouring pixels (beyond the maximum value chosen by the user), constitutes the residual image and can be processed 
+  using the same tools as a traditional image.
+
+##### Tools available in Rawtherapee:
+
+Contrast by level -this tool can be found in various forms in:
+-The Selective Editing tab:
+	-Local Contrast & Wavelets > Pyramid 2 > Contrast by level
+	-Contrast by Detail Levels
+-The Advanced tab (Advanced > Wavelet Levels > Contrast)
+-The Detail tab (Contrast by Detail Levels): It allows you to modify the contrast values of each group of pixels on a per-level basis in each of the 3 directions and for both the positive
+  and negative values. However visible artefacts can appear fairly quickly (noise, blurring, distortion, sculpting effects, etc.) even when taking measures such as progressively reducing the strength of the action for high levels of detail. Additional tools can be used to reduce - but not eliminate - these artefacts (“Attenuation response”, “Selective luminance range”, etc.).
+- Edge sharpness (Advanced > Wavelet Levels and in Selective Editing > Local Contrast & Wavelets) is used both to reinforce edges, similar to the methods used in sharpening tools, and to soften 
+  backgrounds (similar to tools such as darktable's “diffuse or sharpen”). Refer to RawPedia for details.
+- Other tools such as Clarity and “Blur levels” (both in Advanced > Wavelet Levels and in Selective Editing > Local Contrast & Wavelets) etc., allow effects that virtually only wavelets can provide.
+
+##### Local contrast
+
+Faced with the problems inherent in contrast by level, I decided a few years ago (around 2013) to take a different approach to wavelet contrast. For each level and direction, I evaluate the shape of the signal (average, standard deviation, maximum for positive and negative values). The whole thing is modelled in such a way that the user is faced with a single curve for modifying the contrast, whatever the level. This curve uses the characteristics of the signal to position the mean value at the centre of the graph, take into account the variations on either side of the mean and position the maximum at the far right of the graph. It weakens the action for large values close to the maximum. The system's behaviour avoids the majority of artefact problems, and acts in a fairly similar way across the different levels of detail. 
+
+I've called this approach 'Local contrast', but this doesn't really convey what it does. This tool is present in Rawtherapee in the Wavelet Levels > Final Touchup module, in several other modules such as Wavelet Levels > “Edge sharpness” and in Selective Editing > Local Contrast & Wavelets. It can also be found in ART.
+
+Curiously, until now this tool has not been available separately in the tools available in full-image mode.
+
+##### Variable contrast
+However, despite this improvement, the system cannot, at the same time, and with the same quality as seen from the user's point of view, process the levels containing small details (from 0 to around 6) and those containing large details (from around 5 to 9) in the same way.
+This is why I propose to combine the action of the two systems (“Contrast by levels” and Local Contrast) into a single system.
+
+In this new system, which I have called Contrast Enhancement, per-level contrast is contained in a series of contrast-profile presets, which provide the information needed to adjust the amount of local contrast in each of the levels.
+
+##### Each preset contains a selection of decomposition levels
+
+In each of these levels, the contrast values are divided up into ten discrete samples ranging from the lowest to the highest values. 
+The low-contrast-value samples and the high-contrast-value samples (which are often synonymous with artifacts) are then attenuated. 
+The nature and intensity of this attenuation depends on the preset and whether or not "Highlight attenuation" has been activated.
+
+Each preset also contains information used to weight the overall level data to either attenuate the data for the first level (to reduce noise) or to progressively attenuate it for the higher levels. 
+-the resulting data from each decomposition level is then sent to the curve, which should be preferably “bell shaped” to concentrate the action on the useful levels and attenuate the action at the extremities.
+
+##### The Contrast Enhancement module has the following characteristics:
+
+- it works on the whole image,
+- it differentiates the action according to the existing contrast values of the detail levels,
+- it avoids artefacts by reducing the action on the upper and lower contrast values in each pixel group. 
+- it introduces the notion of “Variable contrast”, which allows the user to control the areas (small, large, dark or light) where they want to modify the sharpness, structure and differentiation
+  of the highlights, with the minimum number of commands and in the most intuitive way possible, without having to master the mathematical concepts and language of wavelets.
+
+What does this tool consist of?
+A **“Contrast profile”** slider that lets you select several contrast-profile presets as described above.These presets offer a selection of possible degrees of contrast.
+These presets are classified :
+- From the least aggressive, corresponding essentially to the lower settings of the Contrast by Detail Levels tool, with the number of detail levels limited to 6, and an attenuated first level
+  to take account of noise, to the most aggressive, going so far as to use the maximum possibilities of the system (memory, size of the Preview).
+- At the same time, these presets progressively weaken the action of the “Variable contrast” curve as you move the “Contrast profile” slider to the right.
+
+The **Variable contrast” curve** , which is the heart of the system, is used to modify the existing contrast values, based on the size of the pixel groups, their contrast and possible artefacts. The information contained in the presets determines the behaviour of the curve. However, whatever the preset and the level of detail: a) the mid-point of the x-axis corresponds to the most important contrast value for the action; b) the maximum point, to the right of x-axis, corresponds to the maximum contrast found. It is recommended to reduce the variable contrast beyond the mean value.
+
+A **Refinement expander**, which can be used to modify: a) the distribution of the action between the low, medium and high values of the “Variable contrast” curve, in particular by widening or narrowing the effects of the width of the curve; b) adjust the residual image after decomposition to compensate for excessive effects linked to the action of the curve and the presets.
+
 ## Output Profile
 
 Specify the output color profile; the saved image will be transformed
