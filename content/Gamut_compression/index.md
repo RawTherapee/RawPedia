@@ -51,4 +51,65 @@ The system acts as a gamut compressor (a bit like 'Gamut Compression', but for t
   </figure>
 
 
+### Empirical adjustments Threshold & Maximum Distance Limit
+
+The default settings (from Aces) are for a theoretical conversion between the ACES AP0 workspace and an ACES P1 target. 
+
+On the other hand, these settings are relevant for cinema cameras. Of course, it's a matter of compromise.
+
+What about for a still camera, such as a Nikon Z9 or Canon EOS R5 Mark II, etc.? What are the lighting sources at the time of shooting? LEDs, for example, can introduce very large out-of-gamut values—by a factor of 1 to 10.
+
+What are we trying to achieve? Are we aiming to create a TIFF file for later use, or to adapt the image to a viewing screen, which itself has its own characteristics (SDR, HDR, peak luminance, etc.)?
+
+Taking Colorchecker24 as a reference is, I think, an imperfect choice although I understand it as a possible model, because the colors of the Colorchecker24 are generally in sRGB, so if the user has a Rec2020 monitor... we're missing out...But we could discuss it endlessly.
+
+In the case of RawTherapee, the default Working Profile is ProPhoto. Using numerous photos, I conducted various tests to provide the user with *"approximate values"* ​​based on the 'Target compression gamut'. These are indicative values, nothing more. It's up to you to adapt these values ​​to your own use, perception, and tastes.
+
+Target compression gamut : **Rec2020**
+- Threshold Cyan : 0.80
+- Threshold Magenta: 0.79
+- Threshold Yellow: 0.90
+
+- Limits Cyan: 1.12
+- Limits Magenta: 1.25
+- Limits Yellow: 1.32
+
+Target compression gamut : **Prophoto**
+- Threshold Cyan : 0.86
+- Threshold Magenta: 0.74
+- Threshold Yellow: 0.90
+
+- Limits Cyan: 1.17
+- Limits Magenta: 1.24
+- Limits Yellow: 1.30
+
+Target compression gamut : **Adobe RGB**
+- Threshold Cyan : 0.45
+- Threshold Magenta: 0.81
+- Threshold Yellow: 0.91
+
+- Limits Cyan: 1.09
+- Limits Magenta: 1.20
+- Limits Yellow: 1.09
+
+Target compression gamut : **sRGB**
+- Threshold Cyan : 0.25
+- Threshold Magenta: 0.82
+- Threshold Yellow: 0.93
+
+- Limits Cyan: 1.05
+- Limits Magenta: 1.15
+- Limits Yellow: 1.10
+
+Target compression gamut : **DCI-P3**
+- Threshold Cyan : 0.40
+- Threshold Magenta: 0.87
+- Threshold Yellow: 0.92
+
+- Limits Cyan: 1.08
+- Limits Magenta: 1.20
+- Limits Yellow: 1.26
+
+
+
 
