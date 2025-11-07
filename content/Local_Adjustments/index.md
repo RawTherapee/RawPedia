@@ -5,7 +5,7 @@ contributors:
   - DrSlony
 ---
 
-22/01/2025
+6 november 2025
 
 ## Introduction
 
@@ -1450,6 +1450,63 @@ It also depends on:
 - DeltaE, which can be affected by chromatic noise, or when the
   separation of the colors is less distinct.
 - "Edge detection" which will also be affected by high luminance noise.
+
+###### Selective Editing -  Blur/grain & Denoise > Denoise
+
+Allows you to differentiate the denoising action as a function of image detail and uniform background.
+
+The resulting action is a combination of the noise reduction and that of the mask created by 'Contrast threshold'
+
+On very noisy images you can reduce the mask noise.
+
+You can also differentiate the action with the curve 'Equalizer denoise mask'.
+
+The ratio flat-structured areas allows you to correct the action between the two.
+
+On noisy images and in Raw format, you should use the 'Presharpening denoise' and ‘Postsharpening denoise’ functions for more effective mask action.
+
+<img src="/images/Denoise-contrast.jpg" title="Denoise contrast mask" width="600"
+alt="Denoise-contrast.jpg" />
+
+###### Locks MadL noise evaluation
+
+Allows you to lock the noise evaluation used for Wavelet denoise.
+
+Wavelet denoise uses MadL (Median absolute deviation luminance) to act on the noise based on a slider or a curve.
+
+Rawtherapee's pipeline design results in different MadL values depending on the preview position and leads to differences in output.
+
+If you enable this checkbox, the value used for global processing will be the preview at that time. This will allow you to prioritize a specific area, background, or face for noise reduction, rather than an overall average value. Of course, you should only check the box once you've selected the area.
+
+###### Behavior when the complexity level is set to 'Advanced'
+
+Shows the actual values of Median Absolute Deviation (MadL).
+
+If 'Locks MadL noise evaluation' is not enabled you can manually change these values which will affect the entire image.
+
+The first levels 0,1,2,3,4,5,6 for the Horizontal direction,7,8,9,10 for the Vertical direction and 14,15,16,17 for the Diagonal, act on the detail noise. The higher levels have more effect on banding noise.
+Luminance noise reduction is a function that implements MadL (depending on level and direction) divided by the level of detail (high, medium, low frequency), the actual value of the decomposition at that location (depending on level and direction) and the curve applied by the user according to the level of wavelet decomposition.
+
+######  The checkbox ‘Manual settings’
+
+Allows you to manually control MadL values. Be careful: this function assumes mastery of the concepts of noise reduction using wavelets. Make sure that the initial values for the selected area have been set automatically.
+
+Be careful not to confuse the action on MadL which is a noise estimation only used in Wavelet Denoise where the strength is set in Selective Editing using a curve and a selected level (Aggressive / Conservative). The MadL scale is exponential and not linear.
+The first levels of wavelet decomposition provide visible noise reduction, whereas the higher levels have more affect on banding.
+<img src="/images/Denoise-manual.jpg" title="Denoise Manual settings" width="600"
+alt="Denoise-manual.jpg" />
+
+######  Selective Editing – Blur/Grain & Denoise > Blur & Noise
+
+You can blur the background using either:
+- Gaussian blur.
+- Median
+- Guided Filter
+
+To use the functions below you must either use a 'Normal Spot' or 'Full image' - therefore not available in 'Global' mode, because it requires a mask created by the use.
+You need to use the functions of the "Recovery based on luminance mask" tool, in conjunction with the chosen blur function. 
+A possible example is in Rawpedia (not for blur) ‘A complex noise reduction problem: how to differentiate between uniform areas and areas with texture or detail?’
+
 
 #### A moment of madness - try wavelets!
 
@@ -3278,6 +3335,47 @@ Black-Ev.
 For the sake of compatibility and to keep a historical record
 (feedback), versions 5.11 are still available.
 
+###### Others several improvements have been made - 2025
+
+**Saturation**
+
+Modifies the image saturation whenever the gamma/slope ratio is different from 2.4/12.92. It aims to compensate for the desaturation caused by significant luminance variations.
+Values ​​between 0.2 and 1.0 are often sufficient.
+
+**Midtones**
+
+To try and mitigate a possible color shift when using Midtones, a combobox allows you to choose where the Midtones action is positioned:
+- Before Gamma & Slope (default)
+- After Gamma & Slope
+- After CAM16 - so after the adjustments 'CAM16 Image Adjustments'
+
+**Tone Mapping Operators**
+
+Complements the processing performed by Gamma, Slope and Midtones by applying either:
+- asymptotic highlight attenuation,
+- or tone mapping.
+Please note that this does not replace highlight reconstruction.
+
+- Ev based: attenuates highlights using an exponential function.
+- Gamma based: attenuates highlights using a hyperbolic function and partial tone mapping.
+- Slope based: uses tone mapping. Slope (gray balance) acts on the dynamic range and affects shadows and contrast. 'Scale Yb scene' is a function of White Ev.
+- RGB channel slope: similar to 'Slope based', but differentiable for each R, G, B channel. Attenuation threshold modifies mid gray and shadow/highlight balance.
+- Sigmoid based: applies Sigmoid tone mapping with the Contrast and Skew sliders. Display white point (cd/m2) adjusts the maximum screen luminance. This new version of Sigmoid is incompatible with versions 5.11 and earlier
+- TRC based: applies a simplified Tone Response Curve (TRC) to each individual R, G, B channel. Modifies the gamma by adjusting the shadow/highlight distribution (levels). 'Relative gamma' mode is a simplified method that takes into account the Slope. 'Highlight attenuation threshold' reduces the effect on the highlights.
+- For the RGB operators 'RGB channel slope' and 'TRC based', the 'Invert color' checkbox simulates a film negative function.
+
+**Screenshot**
+
+Screenshot showing the interface with 'Invert color' enabled (The base image is not a negative).
+
+I've tried to address user requests. You can use 'Invert color' in either 'TRC based' or 'RGB channel slope'. In both cases, you have access to a separate setting for each RGB channel.
+- TRC based: The Red balance (TRC), Green balance (TRC), and Blue balance (TRC) sliders directly affect gamma. Relative gamma mode adds a slope variation.
+- RGB channel slope: Red slope, Green slope, Blue slope modify the distribution of the tone-mapper between the low and high lights for each R, G and B channel. We cannot strictly speak of gamma, but the result is mathematically quite similar.
+
+<img src="/images/Negative-cam16.jpg" title="Sreenshot Negative & CAM16" width="600"
+alt="Negative-cam16.jpg" />
+
+
 ###### Position in the pipeline
 
 The Abstract Profile is at the end of the process, just before Color
@@ -4010,9 +4108,9 @@ Default 0.015 to avoid the zero value.
   the stretch at that point. Pixel values will move away from the SP
   location.
 
-###### Automatic Black point & White point - Estmation Symmetry point (SP)
+###### Automatic Black point & White point - Estimation Symmetry point (SP)
 To make GHS more intuitive and easier to use, I added 2 features:
-- Automatically calculate black points and white points (not in Inverse GHS mode). This allows to compensate for example (as poor Dehaze does) the black point in foggy images and take into account the reconstruction of highlights. As a reminder, unlike other Tone-mappers, these 2 points are in linear mode. The aim of the operation is to bring the data back into the interval [0 1]. Of course it is possible to retouch in manual mode, for example negative values ​​(depending on the images) to open up overly pronounced shadows and help GHS.
+- Automatically calculate Black point (linear) and White point (linear)  - not in Inverse GHS mode. This allows to compensate for example (as poor Dehaze does) the black point in foggy images and take into account the reconstruction of highlights. As a reminder, unlike other Tone-mappers, these 2 points are in linear mode. The aim of the operation is to bring the data back into the interval [0 1]. Of course it is possible to retouch in manual mode, for example negative values ​​(depending on the images) to open up overly pronounced shadows and help GHS.
 - Provide an evaluation of the Symmetry Point (SP). This value, which has nothing to do with 'middle gray' is essential to understanding GHS and the results. By default, I chose 0.015. The evaluation seems good to me in RGB Luminance mode, acceptable in RGB mode and it is not provided for the other modes, because it has no value. 
 - It’s just an estimation of the symmetry point from the data in linear mode. This point corresponds to the maximum of the histogram in linear mode and with the working profile. It is up to the user to choose and adapt this value by adjusting the slider (SP)
 - If the checkbox added to the slider (SP) is checked : Try setting an automatic Symmetry Point (SP) estimation, only in RGB mode. May require manual adjustment.
@@ -4071,7 +4169,7 @@ As a reminder, because I've already mentioned it:
 
 The system acts as a gamut compressor (a bit like 'Gamut Compression', but for the 3 RGB channels) and 'fits' the data into the gamut.
  
-Adjusting the (WP) (for example, reducing it) will limit the maximum value. Adjusting the ‘Stretch Factor (D)’ and ‘Local Intensity (b)’ will allow you to focus on the area of ​​the image to be enhanced. If necessary to refine the colorimetry, you can use ‘Abstract profiles’ (which is not, in this branch, up to date with the new features of the 'cam16slope' branch) in particular the 'Custom (CIExy diagram)' part, and 'Refine colors', etc.
+Adjusting the (WP) (for example, reducing it) will limit the maximum value. Adjusting the ‘Stretch Factor (D)’ and ‘Local Intensity (b)’ will allow you to focus on the area of ​​the image to be enhanced. If necessary to refine the colorimetry, you can use ‘Abstract profiles’ in particular the 'Custom (CIExy diagram)' part, Refine colors, Illuminant).
 
 And of course, if you create a second Spot, the (BP) and (WP) values ​​are recalculated and often close to 0 and 1, and (SP) recalculated.
 
@@ -4113,9 +4211,9 @@ eliminating any parameters that could disrupt the analysis. I recommend
 working in Neutral mode. You can (must) activate :
 
 - Highlight reconstruction: which has a very strong impact on the
-  calculation of the White point (WP linear).
+  calculation of the White point (WP linear). In most cases, prefer 'Color propagation' - with or without Clip out-of-gamut colors depending on the nature of the image.
 - Denoise - if necessary,
-- White Balance: prefer Auto - Temperature correlation,
+- White Balance: prefer Auto - Temperature correlation, in most cases except for illuminants, which are far from daylight or blackbody.
 - Capture Sharpening and Raw functions.
 - Toggle histogram and data display to 'Working profile - linear' mode.
 
@@ -6232,7 +6330,8 @@ well worth the effort, especially when working on the local contrast.
 
 #### Capture deconvolution
 
-Capture Deconvolution, which is an adaptation of Capture Sharpening in the Raw tab for use in ‘Selective Editing’, and allows you to use this algorithm either in standalone mode or after denoising to restore the image's vigor . 
+Capture Deconvolution, which is an adaptation of Capture Sharpening in the Raw tab for use in ‘Selective Editing’, and allows you to use this algorithm either in standalone mode or after denoising to restore the image's vigor. See the Raw section of Capture Sharpening for more details on understanding. The algorithm is essentially the same, but the code had to be broken down into smaller parts, and of course, the data to be processed is of a different nature.
+
 Capture Sharpening's capabilities allow for finer sharpening control by allowing you to soften the corner sharpness to enhance focus on the main subject. 
 
 The results in the TIF/JPG outputs correspond to those in the 'fit to screen' view.
