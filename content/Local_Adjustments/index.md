@@ -4359,10 +4359,12 @@ alt="Ghs-example1.jpg" /> In this first step:
 - A fundamental question is whether GHS is a tone-mapper, and why I placed it at the beginning of the process. This deserves discussion.
 
 - Set system to Neutral
+- Enable Highlight reconstruction > Color Propagation in order to optimize the White point (WP linear) settings (see below) in GHS. 
+  Check the impact of this choice on the (WP linear) setting (see below), disable if there is no impact, to save resources.
 - Activate GHS using the automatic White Point (WP linear), Black Point (BP linear), and Symmetry Point (SP) settings. Find a balanced image
  by adjusting Stretch Factor (D) and Local Intensity (b). You can also use the other available settings: Protect Shadows (LP), Protect Highlights (HP), Stretch Regularization & Midtones, and Highlight Attenuation.
 - Then use Abstract Profile, specifically: a) Gamma/Slope to adjust tones; b) Contrast Enhancement to adjust local contrast; 
-  c) Primaries & Illuminant if necessary to correct colors (purity, saturation, dominant color)
+  c) Primaries & Illuminant if necessary to correct colors (purity, saturation, dominant color).
 - You can also use Color Appearance & Lighting (CIECAM) to take into account the physiological aspects of human vision and viewing conditions.
 
 ## General principles and settings
