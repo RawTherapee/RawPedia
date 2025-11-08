@@ -42,6 +42,7 @@ GHS can also be considered a gamut compressor (see Selective Editing > Shadows/H
 
 The system acts as a gamut compressor (a bit like 'Gamut Compression', but for the 3 RGB channels) and 'fits' the data into the gamut. Adjusting the (White Point linear) (for example, reducing it) will limit the maximum value. Adjusting the ‘Stretch Factor (D)’ and ‘Local Intensity (b)’ will allow you to focus on the area of ​​the image to be enhanced. If necessary to refine the colorimetry, you can use ‘Abstract profiles’ in particular the 'Custom (CIExy diagram)' part, 'Refine colors', Illuminants.
 
+[GHS](local_adjustments#generalized_hyperbolic_stretch)
 
 ## Interface
 
