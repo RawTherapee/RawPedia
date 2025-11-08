@@ -4344,7 +4344,7 @@ alt="Ghs-example1.jpg" /> In this first step:
   one after the other   with lower stretch values.
 
 - When the White Point (linear) and Black Point (linear) values ​​are low, for example [0.1 - 0.4], the image contrast will be 
-  significantly increased. It may be advisable to use 'Inverse GHS'.
+  significantly increased. In these extreme cases, it can be useful to create a second 'Inverse GHS' spot to reduce contrast.
 
 - When the White Point (linear) values ​​are high (3 to 5) or very high (10 or more), the system forces colors present on the sensor,
  which may be far beyond the visible spectrum, into the gamut perceived by the human eye. Adjust the White Point (linear), Stretch (D), and Local Intensity (b) values ​​as needed. Feel free to use the Gamut Compression module, or the Primaries & Illuminant section of Abstract Profile, to try to obtain colors acceptable to our eyes and brain.
@@ -4355,14 +4355,14 @@ alt="Ghs-example1.jpg" /> In this first step:
 **GHS, a game-changer for processing difficult images?**
 
 - Generally speaking, without addressing issues related to the Raw process (demosaicing, Capture Sharpening, etc.), 
-  nor those related to geometry or crops, I recommend the following steps (indicative) for an efficient workflow. 
+  nor those related to geometry or crops or denoise, I recommend the following steps (indicative) for an efficient workflow. 
 - A fundamental question is whether GHS is a tone-mapper, and why I placed it at the beginning of the process. This deserves discussion.
 
-- Set system to Neutral
-- Enable Highlight reconstruction > Color Propagation in order to optimize the White point (WP linear) settings (see below) in GHS. 
+- Set system to Neutral.
+- Enable Highlight reconstruction > Color Propagation, in order to optimize the White point (WP linear) settings (see below) in GHS. 
   Check the impact of this choice on the (WP linear) setting (see below), disable if there is no impact, to save resources.
-- Activate GHS using the automatic White Point (WP linear), Black Point (BP linear), and Symmetry Point (SP) settings. Find a balanced image
- by adjusting Stretch Factor (D) and Local Intensity (b). You can also use the other available settings: Protect Shadows (LP), Protect Highlights (HP), Stretch Regularization & Midtones, and Highlight Attenuation.
+- Activate GHS using the Automatic White Point (WP linear), Black Point (BP linear), and Symmetry Point (SP) settings. Find a balanced image
+ by adjusting Stretch Factor (D) and Local Intensity (b). You can also use the other available settings: Protect Shadows (LP), Protect Highlights (HP), Stretch Regularization & Midtones, and Highlight Attenuation. The goal is to obtain an acceptable image for subsequent enhancement; of course, it can be excellent after GHS processing. The general objectives are: a) data optimization to fit within the interval [0-1]; b) a histogram without major defects; c) a balance of luminance, contrast, and color (gamut, colorimetry, etc.).
 - Then use Abstract Profile, specifically: a) Gamma/Slope to adjust tones; b) Contrast Enhancement to adjust local contrast; 
   c) Primaries & Illuminant if necessary to correct colors (purity, saturation, dominant color).
 - You can also use Color Appearance & Lighting (CIECAM) to take into account the physiological aspects of human vision and viewing conditions.
