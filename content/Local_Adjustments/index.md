@@ -4354,7 +4354,16 @@ alt="Ghs-example1.jpg" /> In this first step:
 
 **The Primaries and Illuminant functions - possible uses**
 
-To do
+When to use this function—whether in "Abstract Profile" (Color Tab) or Selective Editing > Color Appearance (CAM16), depending on whether you want to affect the entire image or just a part of it—isn't always straightforward. The system for modifying primaries, illuminants, or adjusting the dominant color using CIExy components is neither intuitive nor user-friendly. Nevertheless, it's often the only way to make in-depth color correction adjustments.
+
+To simplify the explanation, I'll use the module located in Abstract Profiles (Color Tab), which is (slightly) more comprehensive and easier to use.
+
+<figure>
+<img src="/images/AP-prim-dom.jpg" title="Primaries - Illuminants - Dominant Color" width="600" />
+<figcaption>AP-prim-dom.jpg</figcaption>
+</figure>
+
+- Usage of 'Dominant Color':
 
 
 **GHS a pre-tone-mapper and a game-changer for processing difficult images?**
