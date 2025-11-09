@@ -37,11 +37,16 @@ You have several settings available in addition to Target Compression Gamut:
 
 It is positioned in the pipeline (and writen in C++) just after the conversion to the working profile. So just after White Balance. I put this in the ‘Color’ Tab, just after ‘White Balance’. I wrote some tooltips that should make it easier to use.
 
+[Aces gamut compress](https://github.com/jedypod/gamut-compress)
+[Aces Gaumut Compression - Specification](https://docs.acescentral.com/rgc/specification/)
+
+
 **Generalized Hyperbolic Stretch - GHS**
 GHS can also be considered a gamut compressor (see Selective Editing > Shadows/Highlights, Equalizer & GHS for more details on this tool's capabilities).
 
 The system acts as a gamut compressor (a bit like 'Gamut Compression', but for the 3 RGB channels) and 'fits' the data into the gamut. Adjusting the (White Point linear) (for example, reducing it) will limit the maximum value. Adjusting the ‘Stretch Factor (D)’ and ‘Local Intensity (b)’ will allow you to focus on the area of ​​the image to be enhanced. If necessary to refine the colorimetry, you can use ‘Abstract profiles’ in particular the 'Custom (CIExy diagram)' part, 'Refine colors', Illuminants.
 
+[GHS](local_adjustments#generalized_hyperbolic_stretch)
 
 ## Interface
 
