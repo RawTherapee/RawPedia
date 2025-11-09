@@ -4157,7 +4157,7 @@ As you can see:
 
 It's important to understand that the system as I've designed it is entirely dynamic. You directly see the interaction of the (WP), (BP), and (SP) settings. Some might say it's not very 'professional' (in terms of code), but I haven't found any other solutions that work. It is imperative that the GHS algorithm be activated in order to calculate and see the influence of (BP) and (WP) and examine the histogram (I recommend doing it in 'working profile' mode with gamma=1) - before any significant action on 'Stretch factor (D)'. ‘D = 0.001’ is a very low value that can be considered negligible (in terms of stretch), but it allows the algorithm to function. At this value, to ensure the impact of (BP) and (WP) is visible, some sliders are deactivated so as not to influence the result (eg : Stretch regularization & Midtones)
 
-The problem (not just that of labels and tooltips - labels and tooltips are difficult to write because you have to try to convey something else) is complex. Wanting to create a dynamic system that calculates (BP), (WP), and (SP) in real time and allows for inverse operation is difficult ; I'm not trying to be pretentious. However, it's completely different from anything being done elsewhere. I'm not saying that what is done elsewhere (in RT or other software...) is less good or bad, but it is very different.
+The problem (not just that of labels and tooltips - labels and tooltips are difficult to write because you have to try to convey something else) is complex. Wanting to create a dynamic system that calculates (BP), (WP), and (SP) in real time and allows for inverse operation (Inverse GHS) is difficult ; I'm not trying to be pretentious. However, it's completely different from anything being done elsewhere. I'm not saying that what is done elsewhere (in RT or other software...) is less good or bad, but it is very different.
 
 As a reminder, because I've already mentioned it:
 
@@ -4213,7 +4213,7 @@ working in Neutral mode. You can (must) activate :
 - Highlight reconstruction: which has a very strong impact on the
   calculation of the White point (WP linear). In most cases, prefer 'Color propagation' - with or without Clip out-of-gamut colors depending on the nature of the image.
 - Denoise - if necessary,
-- White Balance: prefer Auto - Temperature correlation, in most cases except for illuminants, which are far from daylight or blackbody.
+- White Balance: prefer Auto - Temperature correlation, in most cases except for illuminants, which are far from daylight or blackbody (LEDs, Halogen...).
 - Capture Sharpening and Raw functions.
 - Toggle histogram and data display to 'Working profile - linear' mode.
 
@@ -4330,7 +4330,7 @@ alt="Ghs-example1.jpg" /> In this first step:
  Selective Editing, CIECAM, etc., where saturation can be modified. However, if users wish, a 'saturation' slider can be added.
 
 - The GHS module contains the minimum tools required for operation. It will rarely function completely independently. 
- It would have been possible to add components found elsewhere, for example in Selective Editing > Color Appearance (CAM16) or Abstract Profile, to adjust the balance of light and shadow (TRC) or Contrast Enhancement, but I preferred to perform these adjustments elsewhere.
+ It would have been possible to add components found elsewhere, for example in Selective Editing > Color Appearance (CAM16) or Abstract Profile (Color Tab), to adjust the balance of light and shadow (TRC) or Contrast Enhancement, but I preferred to perform these adjustments elsewhere than in GHS.
 
 - Stretch Regularization & Midtones : The Value (LC) slider affects local contrast using a Guided Filter. It can introduce artifacts 
   or unwanted behavior in some images (LEDs, etc.). You can disable or reduce its effect.
@@ -4338,9 +4338,9 @@ alt="Ghs-example1.jpg" /> In this first step:
 **Recommandations**
 
 - It is preferable to use GHS as the first RT-spot; this will allow us to resolve the problem of equilibria due to deviations from [0 1] 
-  of the values ​​of the Black point (linear) and White point (linear).
+  of the values ​​of the Black point (linear) and White point (linear). In fact, GHS behaves like a pre-tone-mapper. Black point correction (BP linear) in Raw corresponds roughly to Raw Black Point > Dehaze (Raw Tab), while White point correction (WP linear) can be considered a better use of Raw White Points (Raw Tab). Ideally, GHS would have been developed using Raw data, but this option would have had two major drawbacks: a) the assignment of the Working Profile and White Balance would not have been performed, resulting in significant color shifts; b) it would have been impossible to process non-Raw images (TIFF/JPG).
 
-- To avoid high stretch values ​​that can lead to weakening of local contrast and saturation, you can use two RT-spots, 
+- To avoid high stretch values ​​that can lead to weakening of local contrast and saturation, you can use two (or more) RT-spots, 
   one after the other   with lower stretch values.
 
 - When the White Point (linear) and Black Point (linear) values ​​are low, for example [0.1 - 0.4], the image contrast will be 
@@ -4352,18 +4352,23 @@ alt="Ghs-example1.jpg" /> In this first step:
 - Feel free to use the Graduated Filter (at the bottom of the GHS menu) in 'Fit to screen' mode. This allows you to easily, for example,
    make skies more realistic.
 
-**GHS, a game-changer for processing difficult images?**
+**The Primaries and Illuminant functions - possible uses**
+
+To do
+
+
+**GHS a pre-tone-mapper and a game-changer for processing difficult images?**
 
 - Generally speaking, without addressing issues related to the Raw process (demosaicing, Capture Sharpening, etc.), 
   nor those related to geometry or crops or denoise, I recommend the following steps (indicative) for an efficient workflow. 
-- A fundamental question is whether GHS is a tone-mapper, and why I placed it at the beginning of the process. This deserves discussion.
+- A fundamental question is whether GHS is a tone-mapper, and why I placed it at the beginning of the process. This deserves discussion. I think we can call it a pre-tone mapper. It combines actions similar to 'Raw Black Points > Dehaze' by allowing for the precise positioning of the Black point (BP linear) – thus increasing apparent contrast and, in most cases, resolving the problem of hazy images. For the White point (WP linear), can be considered a better use of Raw White Points,  its action is close but not the same as 'Gamut compression', bringing out-of-gamut data (from the working profile) into that profile. GHS settings allow for the recovery of a usable image, either immediately, depending on the values ​​of these parameters (BP linear) and (WP linear) and the illuminant. Its position immediately after demosaicing is crucial.
 
 - Set system to Neutral.
 - Enable Highlight reconstruction > Color Propagation, in order to optimize the White point (WP linear) settings (see below) in GHS. 
   Check the impact of this choice on the (WP linear) setting (see below), disable if there is no impact, to save resources.
-- Activate GHS using the 'Auto Black Point & White point', and Automatic Symmetry Point (SP) settings. Find a balanced image by adjusting Stretch Factor (D) and Local Intensity (b). You can also use the other available settings: Protect Shadows (LP), Protect Highlights (HP), Stretch Regularization & Midtones, and Highlight Attenuation. The goal is to obtain an acceptable image for subsequent enhancement; of course, it can be excellent after GHS processing. The general objectives are: a) data optimization to fit within the interval [0-1]; b) a histogram without major defects; c) a balance of luminance, contrast, and color (gamut, colorimetry, etc.).
+- Activate GHS using the 'Auto Black Point & White point', and Automatic Symmetry Point (SP) settings, adjust the automatic settings as needed, especially for (WP linear) and (SP). Find a balanced image by adjusting Stretch Factor (D) and Local Intensity (b). You can also use the other available settings: Protect Shadows (LP), Protect Highlights (HP), Stretch Regularization & Midtones, and Highlight Attenuation. The goal is to obtain an acceptable image for subsequent enhancement; of course, it can be excellent after GHS processing. The general objectives are: a) data optimization to fit within the interval [0-1] - with no data out of gamut, the most important; b) a histogram without major defects; c) a balance of luminance, contrast, and color (gamut, colorimetry, etc.).
 - Then use Abstract Profile, specifically: a) Gamma/Slope to adjust tones; b) Contrast Enhancement to adjust local contrast; 
-  c) Primaries & Illuminant if necessary to correct colors (purity, saturation, dominant color).
+  c) Primaries & Illuminant if necessary to correct colors (purity, saturation, dominant color), in particular if the illuminants are very far from the 'Daylight' or 'BlackBody' references, for example LED or Halogen. Of course, you can also use Selective Editing > Color Appearance (CAM16) and Selective Editing > Local contrast & Wavelets > Wavelets, especially if the modifications only concern a part of the image, or a second GHS Spot, in 'Normal Spot'
 - You can also use Color Appearance & Lighting (CIECAM) to take into account the physiological aspects of human vision and viewing conditions.
 
 ## General principles and settings
