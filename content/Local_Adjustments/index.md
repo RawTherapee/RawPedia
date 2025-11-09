@@ -4354,7 +4354,7 @@ alt="Ghs-example1.jpg" /> In this first step:
 
 **The Primaries and Illuminant functions - possible uses**
 
-When to use this function—whether in "Abstract Profile" (Color Tab) or Selective Editing > Color Appearance (CAM16), depending on whether you want to affect the entire image or just a part of it—isn't always straightforward. The system for modifying primaries, illuminants, or adjusting the dominant color using CIExy components is neither intuitive nor user-friendly. Nevertheless, it's often the only way to make in-depth color correction adjustments.
+When to use this function - whether in 'Abstract Profile' (Color Tab) or 'Selective Editing > Color Appearance (CAM16)' - depending on whether you want to affect the entire image or just a part of it, isn't always straightforward. The system for modifying primaries, illuminants, or adjusting the dominant color using CIExy components is neither intuitive nor user-friendly. Nevertheless, it's often the only way to make in-depth color correction adjustments.
 
 To simplify the explanation, I'll use the module located in Abstract Profiles (Color Tab), which is (slightly) more comprehensive and easier to use.
 
@@ -4363,7 +4363,21 @@ To simplify the explanation, I'll use the module located in Abstract Profiles (C
 <figcaption>AP-prim-dom.jpg</figcaption>
 </figure>
 
-- Usage of 'Dominant Color':
+To modify the primaries or adjust the 'Dominant colors', you must change the selection in the 'Destination Primaries' combobox and choose either:
+- Custom (sliders) - usable for Abstract Profile and Selective Editing.
+- Custom (CIExy Diagram) - usable for Abstract Profle only.
+
+- Usage of 'Dominant Color' only with Custom (sliders): This adaptation is primarily intended for situations where the illuminant is known to be of the 'Daylight' or 'Blackbody' type. Gamut overshoot is often due to incorrect exposure of the highlights, resulting in overexposure. In this case, the 'Color Dominant' module is the most appropriate.
+-- The gray dot represents the calculated dominant color of the image. The white dot represents the position of the illuminant's white point (in the example, Prophoto - D50). Moving 'Refine color' to 
+     the right will increase the dominant color, primarily in the form of saturation (moving it to the left will decrease it).
+-- If you want to change the color of the changes, simply move 'Shift x' and 'Shift y' to the color area you want.
+-- The movements of the white and gray dots appear directly on the CIExy diagram.
+-- You can also change the illuminant. In the example, you can change D50 to D80. Observe the change in the image's colorimetry with all the settings (Refine Colors, Shift x, Shift y set to zero). 
+      The white point has moved, and naturally, the effects of Refine Colors (White point), Shift x, and Shift y will be amplified (or reduced depending on the illuminant chosen).
+
+- Usage of 'Primaries' : Of course, you can also change the color balance by modifying the primaries. This exercise is not at all intuitive and often results in effects opposite to those desired. This  feature is best suited for processing images with unusual illuminants (LED, Halogen, etc.). You have two ways to modify the primaries.
+-- Directly modify the values ​​of Rx and Ry for red, Gx and Gy for green, and Bx and By for blue. Moving the red dot closer to the white point will increase saturation (and vice versa) if, for example, the red dot is moved along the original white/red point line. Moving away from this original white/red point line will change the hue.
+-- Modify the primaries using the graphical interface by directly changing the red, green, or blue points on the CIExy diagram. To do this, change 'Custom (sliders)' to 'Custom (CIE xy Diagram)' in the menu (only for Abstract Profile and not available for Selective Editing). The actions will be the same as above, but the system is more intuitive to use. In this case, you do not have access to the 'Dominant colors' setting. If you wish to make further adjustments to 'Dominant colors', you will need to return to the Custom (sliders) option.
 
 
 **GHS a pre-tone-mapper and a game-changer for processing difficult images?**
