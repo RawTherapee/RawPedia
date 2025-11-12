@@ -3727,7 +3727,7 @@ in French):
   actually perceived by the human eye, combined with photographers'
   intuitive / empirical datas: direct light (totality of the CIExy
   diagram) and reflected light (Pointer gamut). Gamut (color gamut) is a
-  notion closely linked to these datas, both for hardware (camera,
+  notion closely linked to these data, both for hardware (camera,
   monitor, printer, etc.) and for human beings.
 - White balance, i.e. color balance, based on exposure conditions (sun,
   shade, type of lighting, etc.) and chromatic adaptation.
@@ -3740,8 +3740,8 @@ in French):
   luminance and chromaticity sliders react perceptually in much the same
   way as the eye.
 - CIECAM data and processing (as well as its variants with similar
-  concepts, etc.) - colored appearance models (CAM), attempting to take
-  into account the work of researchers to solve some of the problems
+  concepts, etc.) - color appearance models (CAM), attempting to make use of 
+  the work of researchers to solve some of the problems
   unsolvable by mathematics alone (notion of simultaneous contrast,
   surround, etc.). CIECAM is (very) often misunderstood, considered to
   be a researcher's fad, and yet anyone who has tried and understood it
@@ -3750,7 +3750,7 @@ in French):
 
 ##### Photographers and engineers
 
-Mathematics and science naturally came to the fore to improve digital
+Mathematics and science naturally came to the frontline to improve digital
 processing, with problems similar to those encountered with film
 (noise/grain, color drift and respect, sharpness, distortion, dynamic
 range, etc.). These mathematics and sciences, always present, are more
@@ -3768,7 +3768,7 @@ speak of software for engineers. As if an engineer were in principle a
 scientist, devoid of any artistic or photographic sense (I don't think
 I'm devoid of artistic tastes...). Nevertheless, certain concepts have
 (almost) passed into common parlance, even if underneath this used
-(understood?) vocabulary lie complex principles: Sigmoid, Log encoding,
+(understood?) vocabulary lies complex principles: Sigmoid, Log encoding,
 Denoise, Blur, HDR/SDR, Gamut, etc. Are we sure that the photographer of
 the 1980s-2000s even understands these terms? The complexity is above
 all - beyond understanding the scientific phenomenon - a problem of
@@ -3780,7 +3780,7 @@ the sigmoid function is (for a doctor, the sigmoid is the terminal part
 of the intestine)?
 
 Some of the major problems currently addressed by GHS and other advanced
-products such as Sigmoid, Filmic, TRC, Log Encoding, etc., include :
+modules such as Sigmoid, Filmic, TRC, Log Encoding, etc., include :
 
 - The gap between the dynamics perceived by human beings - in just a few
   seconds, our eye/brain pair is capable of adapting to the darkness of
@@ -3806,22 +3806,22 @@ to yourself or your interlocutors. Depending on all these factors, some
 software programs are supposed to be simple and solve (almost)
 everything with a single click, while others are more complex in their
 approach, solving a few extra problems. Is the game of complexity worth
-the candle? To quote a well-known adage: 'A problem is only difficult
+the effort? To quote a well-known adage: 'A problem is only difficult
 when you don't know the answer'..., or 'Practice makes perfect'.
 Generalized Hyperbolic Strech (GHS), integrated with Selective Editing
 (SE), breaks new ground. The algorithm is particularly innovative (I
-love it). I chose to integrate it with Selective Editing, to work in
+love it). I chose to integrate it in Selective Editing, to work in
 direct mode. As we'll see later, (GHS) + (SE) makes it easy to combine
 several 'stretches' in normal GHS or inverse GHS, in 'Global', 'Full
 image' or 'Normal spot' mode.
 
-#### Generalized Hyperbolic Strech - GHS - origine
+#### Generalized Hyperbolic Strech - GHS - origin
 
 I believe (to be verified) that two people came up with a new approach
-to the general problems seen above. The methods we know today are mostly
-derived from the work of the film industry by ACES or in the continuity
-of the work of the precursor Adobe (I can cite - non-exhaustive -
-functions such as: Log encoding, Sigmoid, Gamut compress, etc.). These
+to the general problems seen above. Most of the methods we know today 
+are derived from the work of the film industry by ACES or in the continuity
+of the precursive work of Adobe (I can cite - non-exhaustively -
+functions such as: Log encoding, Sigmoid, Gamut compress, etc.). However, 
 two people, David Payne and Mike Cranfield, have come up with 'something
 else' with a vocabulary that is a little 'disturbing'. The system uses
 foreign concepts such as 'Symmetry Point', 'Stretch' and 'Local
@@ -3834,17 +3834,18 @@ according to their authors, enable:
 - add contrast to key areas of the image.
 - general brightening or darkening of the image.
 - adjust the dynamic range of the image.
-- I've added the possibility of using several modes (RGB, Lch,
-  Saturation, Hue) to modify the image as desired: maintaining overall
-  balance while preserving contrasts, etc., or acting as a Color-toning.
+
+I've also added the possibility of using several modes (RGB, Lch,
+Saturation, Hue) to modify the image as desired: maintaining overall
+balance while preserving contrasts, etc., or acting as a Color-toning.
 
 These algorithms and functions have found a home in astrophotography
 software (Siril, Pixlnsight). Examination of the tutorials and code for
 these two programs (Siril code only) shows that the initial scope is
 broader than astrophotography, and can be extended to general
-photography. The major difference - nevertheless foreseen by the
-authors - is the extension to highlights and high dynamic range, rarely
-found in astrophotography.
+photography. The major difference - whether foreseen by the
+authors or not - is the extension to highlights and high dynamic range, 
+rarely found in astrophotography.
 
 #### GHS - available settings
 
@@ -3852,24 +3853,25 @@ found in astrophotography.
 
 Five settings act directly on GHS:
 
-- Stretch factor (D): controls the extent of the stretch .It can only have positive values. 'Negative space' can be implemented with 'Inverse GHS'.
-- Local intensity (b) - linear factor: controls the degree to which the
-  stretch is focused around the Symmetry point (SP), by modifying the
+- Stretch factor (D): controls the extent of the stretch. It can only have positive values.
+  'Negative space' can be implemented with 'Inverse GHS'.
+- Local intensity (b) - linear factor: controls the degree of the stretch 
+  that focuses around the Symmetry point (SP), by modifying the
   shape of the transformation itself.
-- Symmetry point (SP): defines the focal point around which the stretch
+- Symmetry point (SP): defines the focus point around which the stretch
   is applied - the contrast will be distributed symmetrically with
   respect to (SP). While (b) determines the degree of focus of the
-  stretch, (SP) determines where this focus is applied. (SP) should
+  stretch, (SP) determines where this focus is. (SP) should
   generally be placed close to a histogram peak(s) so that the stretch
   widens and lowers the peak(s), adding the most contrast to the stretch
   at this point.
-- Protect shadows (LP): defines a value below which stretching is
-  modified to preserve contrast in shadows and lowlights. To achieve
+- Protect shadows (LP): defines a value below which the stretching would
+  be modified to preserve contrast in shadows and lowlights. To achieve
   this, a linear transformation of the data is performed below the (LP)
   level, reserving the contrast of the rest of the image. Among other
   things, this makes it possible to better control noise.
-- Protect highlights (HP): defines a value above which stretching is
-  modified to preserve contrast in the highlights. To do this, a linear
+- Protect highlights (HP): defines a value above which the stretching would
+  be modified to preserve contrast in the highlights. To do this, a linear
   transformation of the data is performed above the HP level, reserving
   the contrast of the rest of the image. This allows you to better
   control the progression of highlights.
@@ -3890,17 +3892,29 @@ to preserve local contrast overall, filling in valleys and reducing
 peaks.
 
 ##### Inverse GHS
-Only available in Standard and Advanced modes?
+Only available in Standard and Advanced modes.
 
-Inverse GHS checkbox: Inverse GHS is useful for reducing overall contrast or recovering your original image. It adds contrast on the far right and left of the histogram, brightening the deep shadows, darkening the bright highlights, and squeezing the histogram towards the middle.
+Inverse GHS checkbox: Inverse GHS is useful for reducing overall contrast or 
+recovering your original image. It adds contrast on the far right and left 
+of the histogram, brightening the deep shadows, darkening the bright highlights, 
+and squeezing the histogram towards the middle.
 
-The Generalized Hyperbolic Inverse transformation allows you to recover your original image, subject to mathematical precision, but you can also use it for other purposes. This feature is more like the 'Excluding spot' but more powerful.
+The Generalized Hyperbolic Inverse transformation allows you to recover 
+your original image, subject to mathematical precision, but you can also 
+use it for other purposes. This feature is more like the 'Excluding spot' 
+but more powerful.
 
-If the White point and Black point were changed in normal mode (automatic or not), they will likely need to be readjusted. The white point often needs to be readjusted lower. There is interaction between the two settings. In the majority of cases, especially when used as a second GHS Spot, the adjustments will be small, or even unnecessary.
+If the White point and Black point were changed in normal mode (automatic 
+or not), they will likely need to be readjusted. The white point often needs 
+to be readjusted lower. There is interaction between the two settings. In the 
+majority of cases, especially when used as a second GHS Spot, the adjustments 
+will be minimal, or even unnecessary.
 
-Can be used as a second GHS spot after a first GHS Spot in Global or 'Full image' mode, most often with 'Spot method = Normal spot', for example to darken a sky or a sunset.
+It can be used in a second GHS spot after a first GHS spot in Global or 'Full image' 
+mode, most often with 'Spot method = Normal spot', to, for example, darken sky or sunset.
 
-To allow Inverse GHS to work the 'Stretch factor (D)' must be between 0.001 and 0.002 and the checkbox 'Auto Black point & White point' disabled. 
+To allow Inverse GHS to work, the 'Stretch factor (D)' must be between 0.001 and 0.002 
+and with the checkbox 'Auto Black point & White point' disabled. 
 
 
 ##### The need to fine-tune White Point (WP linear) and Black Point (BP linear)
@@ -3921,8 +3935,11 @@ all image data to be processed is in the interval \[0 ,1\].
   (positive values). Move this slider until you obtain a minimum Clipped
   Black point value. If no upstream processing has been performed, the
   first value to be retained will be Clipped Black point = -1.
- - The 'Highlight reconstruction' method has a very strong impact on the
-  White-point value. and therefore on the amplitude of the RGB data which will then be brought back into the interval [0. 1]. It seems obvious that the values ​​of Stretch factor (D), Local intensity (b), Symmetry point (SP) ... will be (depending on the action of the reconstruction process) profoundly impacted. 
+- The 'Highlight reconstruction' method has a very strong impact on the
+  White-point value. and therefore on the amplitude of the RGB data which
+  will then be brought back into the interval [0. 1]. It seems obvious that
+  the values ​​of Stretch factor (D), Local intensity (b), Symmetry point (SP)...
+  will be (depending on the action of the reconstruction process) profoundly impacted. 
 
 ###### Associated Tooltips
 Black point/White point: Sets the 'Black point (BP linear)', 'White point (WP linear)' for a linear stretch.
