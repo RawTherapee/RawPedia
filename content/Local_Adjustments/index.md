@@ -4359,9 +4359,9 @@ alt="Ghs-example1.jpg" /> In this first step:
 - It is preferable to use GHS as the first RT-spot; this will allow us to resolve the problem of equilibria due to deviations from [0 1] 
   of the values ​​of the Black point (linear) and White point (linear). In fact, GHS behaves like a pre-tone-mapper. Black point correction
   (BP linear) in Raw corresponds roughly to Raw Black Point > Dehaze (Raw Tab), while White point correction (WP linear) can be considered
-  a better use of Raw White Points (Raw Tab). Ideally, GHS would have been developed using raw data, but this option would have had two major
+  a better use of Raw White Points (Raw Tab). Ideally, GHS would have been developed using raw data, but this option would have two major
   drawbacks: a) the assignment of the Working Profile and White Balance would not have been performed, resulting in significant color shifts;
-  b) it would have been impossible to process non-raw images (TIFF/JPG).
+  b) it would be impossible to process non-raw images (TIFF/JPG).
 
 - To avoid high stretch values ​​that can lead to weakening of local contrast and saturation, you can use two (or more) RT-spots, 
   one after the other with lower stretch values.
@@ -4431,7 +4431,7 @@ To modify the primaries or adjust the 'Dominant colors', you must change the sel
 - Generally speaking, without addressing issues related to raw processing (demosaicing, Capture Sharpening, etc.), 
   nor those related to geometry or crops or denoise, I recommend the following steps (indicative) for an efficient workflow:
 
-- Set system to Neutral.
+- Set profile to Neutral.
 - Enable Highlight reconstruction > Color Propagation, in order to optimize the White point (WP linear) settings (see below) in GHS. 
   Check the impact of this choice on the (WP linear) setting (see below), disable if there is no impact, to save resources.
 - Activate GHS using the 'Auto Black Point & White point', and Automatic Symmetry Point (SP) settings, adjust the automatic settings as needed,
@@ -4467,7 +4467,7 @@ major differences:
   Light & Original Retinex, Blur/Grain & Denoise, Tone Mapping, Dehaze &
   Retinex, Sharpening, Local Contrast & Wavelets, Contrast by Detail
   Levels. There is also a Cam16 & JzCzHz Color Appearance module. See
-  [Tutoriel Color Appearance & Lighting (CIECAM02/16) et Color Appearance (Cam16 &  JzCzHz)](ciecam02#color_appearance_.26_lighting_.28ciecam02.2f16.29_et_color_appearance_.28cam16_.26_jzczhz.29_-_tutorial)
+  [Tutorial Color Appearance & Lighting (CIECAM02/16) et Color Appearance (Cam16 &  JzCzHz)](ciecam02#color_appearance_.26_lighting_.28ciecam02.2f16.29_et_color_appearance_.28cam16_.26_jzczhz.29_-_tutorial)
 - Each RT-spot creates an additional "layer" similar to the way layers
   are added in bit-map editors. Each new RT-spot is transparent and
   allows the user to see any previous modifications. The Excluding Spot
