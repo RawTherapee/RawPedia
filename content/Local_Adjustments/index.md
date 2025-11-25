@@ -218,8 +218,8 @@ increase the saturation of the red flower and reduce the luminance
   red flower, b) one on the blue sky, c) one on a green leaf.
 - In the example the 3 colors are:
   - Red flower L=48.6 a=74.4 b=47.0
-  - Blue sky : L=68.6 a=-3.1 b=-16.6
-  - Green leaf : L=48.3 a=-28.3 b=51.4
+  - Blue sky: L=68.6 a=-3.1 b=-16.6
+  - Green leaf: L=48.3 a=-28.3 b=51.4
 
 <img src="/images/prepare1.jpg" title="prepare1.jpg" width="600"
 alt="prepare1.jpg" /> Raw file (Jacques Desmis - Creative Common
@@ -958,7 +958,7 @@ title="sweep-rgb-trc-sigmoid-based.jpg" width="600" />
 <figcaption>sweep-rgb-trc-sigmoid-based.jpg</figcaption>
 </figure>
 
-###### Image with Local Adjustments - Dynamic Range & Exposure : Exposure only
+###### Image with Local Adjustments - Dynamic Range & Exposure: Exposure only
 
 Note:
 
@@ -1032,7 +1032,7 @@ horizon using Retinex in Local Adjustments.
 <figcaption>haze.jpg</figcaption>
 </figure>
 
-Raw file :(Pixls.us - Creative Common Attribution-share Alike 4.0):
+Raw file:(Pixls.us - Creative Common Attribution-share Alike 4.0):
 [5](https://drive.google.com/file/d/1tc9TxHGwYnVQ2OwiTZIiszDOEXfDjkh6/view?usp=sharing)
 
 ##### Processing with the Haze Removal tool (Detail tab in the main menu)
@@ -1152,7 +1152,7 @@ noise using only the Noise Reduction tool in the Detail tab will
 inevitably lead to a loss of detail and a reduction in contrast and
 saturation in the mouse.
 
-Raw file : (Copyright Andy Astbury - Creative Common Attribution-share
+Raw file: (Copyright Andy Astbury - Creative Common Attribution-share
 Alike 4.0)
 [7](https://drive.google.com/file/d/1uND8pqgfxxaBhs554RnCvOS5NI3KsWT5/view?usp=sharing)
 
@@ -1234,7 +1234,7 @@ on the eye, the fur, the vegetation, and the tail.
 - Position the center of the RT-spot on the gray background.
 - Adjust the equalizer sliders to get the best compromise, while at the
   same time adjusting the two sliders in the "Noise Reduction" module
-  (Detail tab). Here I used : luminance = 4, chrominance = 6.5 (Method:
+  (Detail tab). Here I used: luminance = 4, chrominance = 6.5 (Method:
   Manual \> Chrominance-Master).
 
 <figure>
@@ -1679,7 +1679,7 @@ to Advanced mode.
 <!-- -->
 
 - Then choose the blend mode (under the heading "Merge with
-  Original/Previous/Background") and adjust the settings : "Merge
+  Original/Previous/Background") and adjust the settings: "Merge
   background", Opacity, Contrast Threshold.
 - The other parameters in the Color & Light module can also be used if
   you wish (e.g. Lightness, Contrast, Saturation etc.).
@@ -1837,7 +1837,7 @@ The area between the dark and light areas can be adjusted with the
 Note:
 
 - To ensure that the L\*a\*b\* values of the Lockable Color Pickers
-  correspond to the real values you need to set : Local Adjustments \>
+  correspond to the real values you need to set: Local Adjustments \>
   Settings \> Mask and Merge \> "Background color/luma mask” = 0 (slider
   labeled as “Background color for luminance and color masks” in
   screenshot).
@@ -3269,15 +3269,15 @@ They include:
 - A Tone Response Curve with a Gamma slider for adjusting the highlights
   and a Slope slider for the shadows.
 - Two additional sliders or settings - checkbox or combobox (Source Data
-  Adjustments - SDA) - for adjusting the midtones and the highlights :
+  Adjustments - SDA) - for adjusting the midtones and the highlights:
   - Midtones
   - Highlight Attenuation & RGB Channels
-    - Ev based : which can be used to soften strong highlights with Ev
+    - Ev based: which can be used to soften strong highlights with Ev
       values between 0 and +12.
     - Gamma based (Source Data Adjustments): Can be used to soften
       strong highlights by using the Mean Scene luminance Yb% of an
       asymptotic polynomial function.
-    - Slope based (Source Data Adjustments) : Combine Gamma based with a
+    - Slope based (Source Data Adjustments): Combine Gamma based with a
       tone mapping function using Slope. The system is capable of
       restoring 23 to 24 Ev. The Slope slider allows you to adjust the
       balance between the shadows and the highlights. The Scene value of
@@ -3322,7 +3322,7 @@ Black-Ev.
 - First - it uses 3 sliders
   - Contrast, which acts on the slope of the Sigmoid.
   - Skew, which moves the Sigmoid between whites and blacks.
-  - Display White point (cd/m2) : Allows you to adapt the white point to
+  - Display White point (cd/m2): Allows you to adapt the white point to
     the peak luminance of the display device. Its position in the
     processing pipeline is not optimal so use with caution.
 
@@ -3423,7 +3423,7 @@ physiological aspects due to the perception of the eye and the brain.
 
 Further information, albeit incomplete, on the effects taken into
 account by the two versions of Ciecam implemented in RT can be found
-here : [Ciecam History -
+here: [Ciecam History -
 effects](CIECAM02#Introduction_-_history.md)
 
 Most of the effects are automatically taken into account by the
@@ -3778,7 +3778,7 @@ the sigmoid function is (for a doctor, the sigmoid is the terminal part
 of the intestine)?
 
 Some of the major problems currently addressed by GHS and other advanced
-modules such as Sigmoid, Filmic, TRC, Log Encoding, etc., include :
+modules such as Sigmoid, Filmic, TRC, Log Encoding, etc., include:
 
 - The gap between the dynamics perceived by human beings - in just a few
   seconds, our eye/brain pair is capable of adapting to the darkness of
@@ -3967,7 +3967,7 @@ In Inverse GHS mode the behavior is reversed and there are possible interactions
 To activate the Inverse GHS checkbox, it may be necessary to move the 'Stretch factor' slider from 0.001 to 0.002. This will work only if the 'Auto Black point & White point' checkbox is unchecked. 
 
 
-White point : Sets the White point for a linear stretch of the image. Any pixel with value greater than the white point input will be clipped and results in data lost.
+White point: Sets the White point for a linear stretch of the image. Any pixel with value greater than the white point input will be clipped and results in data lost.
 - Contrast gained by performing the linear stretch will be evenly distributed over the image, which will be brightened. Pixels with value greater than the white point will appear white and have a value of 1.0.
 - Setting this parameter to a value greater than 1 will extend the dynamic range at the high end.
 - The 'Highlight reconstruction' method has a very strong impact on the white-point value.
@@ -4061,9 +4061,9 @@ You will be able to see on the images that require a 'Highlight
 reconstruction', the effectiveness of the various methods proposed, by
 looking at the White point (WP linear) value. For example:
 
-- None : 1.1
-- Inpaint Opposed : 2.1
-- Color Propagation : 3.2
+- None: 1.1
+- Inpaint Opposed: 2.1
+- Color Propagation: 3.2
 
 ##### Particularities of Black Point (BP linear) and Highlight Attenuation checkbox
 
@@ -4305,7 +4305,7 @@ Raw image: IMGP2426.DNG
 - - Neutral – Histogram in ‘working profile – linear’ mode.
   - Highlight reconstruction – Color Propagation
   - White Balance Auto - Temperature correlation
-  - Selective Editing : Global
+  - Selective Editing: Global
   - Shadows/Highlights, Equalizer & GHS
 
 <img src="/images/Ghs-example1.jpg" title="Ghs-example1.jpg" width="600"
@@ -5835,7 +5835,7 @@ Tips:
   so it has has been included in Local Adjustments, albeit with some
   modifications to improve the behaviour.
 - Better alternatives include (there are others in the First Steps
-  section) :
+  section):
   - The Tone Equalizer in Shadows/Highlights & Tone Equalizer.
   - The Tone Response Curve (TRC) also in Shadows/Highlights & Tone
     Equalizer (Standard mode). You can use the Slope slider to linearly
@@ -5919,7 +5919,7 @@ cooler, it will increase the temperature of the viewing conditions. Note
 that you can obtain a similar result for the overall image by using the
 CIECAM02 module (Advanced tab) with the following settings:
 
-- Scene conditions : "WP model"==\> "Free temp + tint + Cat02/16 +
+- Scene conditions: "WP model"==\> "Free temp + tint + Cat02/16 +
   \[output\], Temperature = 5000K, Surround = Average, Adaptation = 100,
   Yb %=18, "Absolute luminance" = 400
 - No change to "Image adjustements"
@@ -6109,7 +6109,7 @@ Adjustments such as scope, transitions, multiple selections etc.
   towards a narrower range of contrast values.
 - The Offset slider moves the mean value towards either the shadows or
   the highlights.
-- Chroma levels : acts on the L\*a\*b\* "a" and "b" components as a
+- Chroma levels: acts on the L\*a\*b\* "a" and "b" components as a
   percentage of the luminance settings.
 
 With this slider you can adjust the apparent contrast by reinforcing or
@@ -6136,7 +6136,7 @@ operate on the edges. The action of the curve is based on the luminance.
 
 ###### Wavelet level tone mapping
 
-Example to enhance the texture : [Example in Getting started - with
+Example to enhance the texture: [Example in Getting started - with
 Wavelets Tone
 mapping](Local_Adjustments#Three_ways_of_increasing_texture.md)
 
@@ -6275,7 +6275,7 @@ with Retinex for better results.
 
 #### Retinex: Important differences with the main-menu module
 
-Example using it to increase texture :
+Example using it to increase texture:
 [Example in First steps - increasing texture with Retinex](local_adjustments#three_ways_of_increasing_texture)
 
 In Local adjustments, Retinex is similar to the main-menu
@@ -6839,7 +6839,7 @@ In “All tools” (Advanced mode)
   reference. Adapts the colors to the lighting of the output device.
 - Surround: modifies tones and colors to take into account the
   conditions of the output environment.
-  - Average : average (standard) light environment.
+  - Average: average (standard) light environment.
   - Slightly Dark (Dim): dark environment. The image becomes slightly
     dark.
   - Very Dark: the image becomes darker
@@ -6854,7 +6854,7 @@ with a Graduated Filter equipped with 2 sliders: “Gradient strength” and
 ### Color appearance (Cam16 & JzCzHz)
 
 Example using Color Appearance and HDR functions:
-[HDR-SDR First approach : Log encoding – Cam16 – JzCzHz – Sigmoid](Local_Adjustments#HDR_to_SDR:_A_First_Approach_(Log_Encoding_-_CAM16_-_JzCzHz_-_Sigmoid) "wikilink")
+[HDR-SDR First approach: Log encoding – Cam16 – JzCzHz – Sigmoid](Local_Adjustments#HDR_to_SDR:_A_First_Approach_(Log_Encoding_-_CAM16_-_JzCzHz_-_Sigmoid) "wikilink")
 
 The Color appearance module (Cam16 & JzCzHz) is both:
 
@@ -6884,7 +6884,7 @@ Gradients, Excluding spots, etc.
 For an overview of Cam16:
 [Using_Cam16_and_HDR_features](local_adjustments#using_the_cam16_and_hdr_functions)
 
-For a presentation of JzCzHz :
+For a presentation of JzCzHz:
 [Experimental JzCzHz module](local_adjustments#an_experimental_jzczhz_module)
 
 To see the tutorial:
