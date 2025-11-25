@@ -3706,19 +3706,17 @@ the same principle as masks, but in a direct way. In digital
 photography - unlike film - we don't use the inverted colors used in
 film photography (negative, enlargers, etc.), but the direct colors
 recorded on the sensor - or at least their translation into digital
-values. I'll skip the notions of Bayer matrix, demosaicing... which
-involve rather complex concepts, far removed from the concerns of the
-artist photographer (and yet one of the key points of the digital
-system). Since the 1930s, researchers have been asking the question:
-’How can we model physical and physiological data in digital concepts
-that can be used by a photographer or a scientist, in the simplest
-possible way?’
+values. If you wish to learn more about how softwares convert values 
+from a digital sensor to an image, feel free to give [Demosaicing](https://github.com/RawTherapee/RawPedia/blob/master/content/Demosaicing/index.md) a read. 
+Since the 1930s, researchers have been asking the question: "How can we 
+model physical and physiological data in digital concepts that can be 
+used by a photographer or a scientist, in the simplest possible way?"
 
 ##### Several concepts
 
 Several concepts were born and are now used in (almost) all software,
-often originating from CIE (Commission Internationale de l'Éclairage -
-in French):
+often originating from CIE (originating from CIE ("Commission Internationale 
+de l'Éclairage" in French, aka "International Commission on Illumination")):
 
 - RGB data (Red, Green, Blue) - physical data actually present on
   sensors and inside digital devices (TVs, computers, set-top boxes...)
@@ -3946,7 +3944,7 @@ Black point/White point: Sets the 'Black point (BP linear)', 'White point (WP li
 - 'Black Point (BP linear)' and 'White Point (WP linear)' settings are only available if the 'Stretch factor (D)' is between 0.001 and 0.002. This is to avoid altering the histogram.
 - When the stretch factor is 0.002 or less, all stretch settings except for 'Black point' and 'White point' will have no effect.
 - 'Black point (BP linear)' and 'White point (WP linear)' settings are sensitive to the general settings upstream of GHS i.e. highlight reconstruction, white balance and raw processes.
-- To have relevant 'Black Point (BP linear)' and 'White Point (WP linear)' settings, the entire image must be analyzed. It is recommended to use 'Fit whole image to screen' - Shortcut Alt-f.
+- To have relevant 'Black Point (BP linear)' and 'White Point (WP linear)' settings, the entire image must be analyzed. It is recommended to use 'Fit whole image to screen' function.
 
 To allow Inverse GHS to work, the 'Stretch factor (D)' must be between 0.001 and 0.002 and the checkbox 'Auto Black point & White point' should be disabled. 
 
@@ -4186,7 +4184,7 @@ As a reminder, because I've already mentioned it:
 
 The system acts as a gamut compressor (a bit like 'Gamut Compression', but for the 3 RGB channels) and 'fits' the data into the gamut.
  
-Adjusting the (WP) (for example, reducing it) will limit the maximum value. Adjusting the ‘Stretch Factor (D)’ and ‘Local Intensity (b)’ will allow you to focus on the area of ​​the image to be enhanced. If necessary to refine the colorimetry, you can use ‘Abstract profiles’ in particular the 'Custom (CIExy diagram)' part, Refine colors, Illuminant.
+Adjusting the (WP) (for example, reducing it) will limit the maximum value. Adjusting the ‘Stretch Factor (D)’ and ‘Local Intensity (b)’ will allow you to focus on the area of ​​the image to be enhanced. If necessary to refine the colorimetry, you can use ‘Abstract profiles’, in particular the 'Custom (CIExy diagram)' part, Refine colors, Illuminant.
 
 And of course, if you create a second Spot, the (BP) and (WP) values ​​are recalculated and often close to 0 and 1, and (SP) recalculated.
 
@@ -4375,7 +4373,7 @@ alt="Ghs-example1.jpg" /> In this first step:
   Abstract Profile, to try to obtain colors acceptable to our perceptions.
 
 - Feel free to use the Graduated Filter (at the bottom of the GHS menu) in 'Fit to screen' mode. This allows you to easily, for example,
-   make skies more realistic.
+  make skies more realistic.
 
 **The Primaries and Illuminant functions - possible uses**
 
