@@ -218,8 +218,8 @@ increase the saturation of the red flower and reduce the luminance
   red flower, b) one on the blue sky, c) one on a green leaf.
 - In the example the 3 colors are:
   - Red flower L=48.6 a=74.4 b=47.0
-  - Blue sky : L=68.6 a=-3.1 b=-16.6
-  - Green leaf : L=48.3 a=-28.3 b=51.4
+  - Blue sky: L=68.6 a=-3.1 b=-16.6
+  - Green leaf: L=48.3 a=-28.3 b=51.4
 
 <img src="/images/prepare1.jpg" title="prepare1.jpg" width="600"
 alt="prepare1.jpg" /> Raw file (Jacques Desmis - Creative Common
@@ -958,7 +958,7 @@ title="sweep-rgb-trc-sigmoid-based.jpg" width="600" />
 <figcaption>sweep-rgb-trc-sigmoid-based.jpg</figcaption>
 </figure>
 
-###### Image with Local Adjustments - Dynamic Range & Exposure : Exposure only
+###### Image with Local Adjustments - Dynamic Range & Exposure: Exposure only
 
 Note:
 
@@ -1032,7 +1032,7 @@ horizon using Retinex in Local Adjustments.
 <figcaption>haze.jpg</figcaption>
 </figure>
 
-Raw file :(Pixls.us - Creative Common Attribution-share Alike 4.0):
+Raw file:(Pixls.us - Creative Common Attribution-share Alike 4.0):
 [5](https://drive.google.com/file/d/1tc9TxHGwYnVQ2OwiTZIiszDOEXfDjkh6/view?usp=sharing)
 
 ##### Processing with the Haze Removal tool (Detail tab in the main menu)
@@ -1152,7 +1152,7 @@ noise using only the Noise Reduction tool in the Detail tab will
 inevitably lead to a loss of detail and a reduction in contrast and
 saturation in the mouse.
 
-Raw file : (Copyright Andy Astbury - Creative Common Attribution-share
+Raw file: (Copyright Andy Astbury - Creative Common Attribution-share
 Alike 4.0)
 [7](https://drive.google.com/file/d/1uND8pqgfxxaBhs554RnCvOS5NI3KsWT5/view?usp=sharing)
 
@@ -1234,7 +1234,7 @@ on the eye, the fur, the vegetation, and the tail.
 - Position the center of the RT-spot on the gray background.
 - Adjust the equalizer sliders to get the best compromise, while at the
   same time adjusting the two sliders in the "Noise Reduction" module
-  (Detail tab). Here I used : luminance = 4, chrominance = 6.5 (Method:
+  (Detail tab). Here I used: luminance = 4, chrominance = 6.5 (Method:
   Manual \> Chrominance-Master).
 
 <figure>
@@ -1679,7 +1679,7 @@ to Advanced mode.
 <!-- -->
 
 - Then choose the blend mode (under the heading "Merge with
-  Original/Previous/Background") and adjust the settings : "Merge
+  Original/Previous/Background") and adjust the settings: "Merge
   background", Opacity, Contrast Threshold.
 - The other parameters in the Color & Light module can also be used if
   you wish (e.g. Lightness, Contrast, Saturation etc.).
@@ -1837,7 +1837,7 @@ The area between the dark and light areas can be adjusted with the
 Note:
 
 - To ensure that the L\*a\*b\* values of the Lockable Color Pickers
-  correspond to the real values you need to set : Local Adjustments \>
+  correspond to the real values you need to set: Local Adjustments \>
   Settings \> Mask and Merge \> "Background color/luma mask” = 0 (slider
   labeled as “Background color for luminance and color masks” in
   screenshot).
@@ -3269,15 +3269,15 @@ They include:
 - A Tone Response Curve with a Gamma slider for adjusting the highlights
   and a Slope slider for the shadows.
 - Two additional sliders or settings - checkbox or combobox (Source Data
-  Adjustments - SDA) - for adjusting the midtones and the highlights :
+  Adjustments - SDA) - for adjusting the midtones and the highlights:
   - Midtones
   - Highlight Attenuation & RGB Channels
-    - Ev based : which can be used to soften strong highlights with Ev
+    - Ev based: which can be used to soften strong highlights with Ev
       values between 0 and +12.
     - Gamma based (Source Data Adjustments): Can be used to soften
       strong highlights by using the Mean Scene luminance Yb% of an
       asymptotic polynomial function.
-    - Slope based (Source Data Adjustments) : Combine Gamma based with a
+    - Slope based (Source Data Adjustments): Combine Gamma based with a
       tone mapping function using Slope. The system is capable of
       restoring 23 to 24 Ev. The Slope slider allows you to adjust the
       balance between the shadows and the highlights. The Scene value of
@@ -3322,7 +3322,7 @@ Black-Ev.
 - First - it uses 3 sliders
   - Contrast, which acts on the slope of the Sigmoid.
   - Skew, which moves the Sigmoid between whites and blacks.
-  - Display White point (cd/m2) : Allows you to adapt the white point to
+  - Display White point (cd/m2): Allows you to adapt the white point to
     the peak luminance of the display device. Its position in the
     processing pipeline is not optimal so use with caution.
 
@@ -3423,7 +3423,7 @@ physiological aspects due to the perception of the eye and the brain.
 
 Further information, albeit incomplete, on the effects taken into
 account by the two versions of Ciecam implemented in RT can be found
-here : [Ciecam History -
+here: [Ciecam History -
 effects](CIECAM02#Introduction_-_history.md)
 
 Most of the effects are automatically taken into account by the
@@ -3706,19 +3706,17 @@ the same principle as masks, but in a direct way. In digital
 photography - unlike film - we don't use the inverted colors used in
 film photography (negative, enlargers, etc.), but the direct colors
 recorded on the sensor - or at least their translation into digital
-values. I'll skip the notions of Bayer matrix, demosaicing... which
-involve rather complex concepts, far removed from the concerns of the
-artist photographer (and yet one of the key points of the digital
-system). Since the 1930s, researchers have been asking the question:
-’How can we model physical and physiological data in digital concepts
-that can be used by a photographer or a scientist, in the simplest
-possible way?’
+values. If you wish to learn more about how softwares convert values 
+from a digital sensor to an image, feel free to give [Demosaicing](https://github.com/RawTherapee/RawPedia/blob/master/content/Demosaicing/index.md) a read. 
+Since the 1930s, researchers have been asking the question: "How can we 
+model physical and physiological data in digital concepts that can be 
+used by a photographer or a scientist, in the simplest possible way?"
 
 ##### Several concepts
 
 Several concepts were born and are now used in (almost) all software,
-often originating from CIE (Commission Internationale de l'Éclairage -
-in French):
+often originating from CIE (originating from CIE ("Commission Internationale 
+de l'Éclairage" in French, aka "International Commission on Illumination")):
 
 - RGB data (Red, Green, Blue) - physical data actually present on
   sensors and inside digital devices (TVs, computers, set-top boxes...)
@@ -3727,7 +3725,7 @@ in French):
   actually perceived by the human eye, combined with photographers'
   intuitive / empirical datas: direct light (totality of the CIExy
   diagram) and reflected light (Pointer gamut). Gamut (color gamut) is a
-  notion closely linked to these datas, both for hardware (camera,
+  notion closely linked to these data, both for hardware (camera,
   monitor, printer, etc.) and for human beings.
 - White balance, i.e. color balance, based on exposure conditions (sun,
   shade, type of lighting, etc.) and chromatic adaptation.
@@ -3740,8 +3738,8 @@ in French):
   luminance and chromaticity sliders react perceptually in much the same
   way as the eye.
 - CIECAM data and processing (as well as its variants with similar
-  concepts, etc.) - colored appearance models (CAM), attempting to take
-  into account the work of researchers to solve some of the problems
+  concepts, etc.) - color appearance models (CAM), attempting to make use of 
+  the work of researchers to solve some of the problems
   unsolvable by mathematics alone (notion of simultaneous contrast,
   surround, etc.). CIECAM is (very) often misunderstood, considered to
   be a researcher's fad, and yet anyone who has tried and understood it
@@ -3750,7 +3748,7 @@ in French):
 
 ##### Photographers and engineers
 
-Mathematics and science naturally came to the fore to improve digital
+Mathematics and science naturally came to the frontline to improve digital
 processing, with problems similar to those encountered with film
 (noise/grain, color drift and respect, sharpness, distortion, dynamic
 range, etc.). These mathematics and sciences, always present, are more
@@ -3768,7 +3766,7 @@ speak of software for engineers. As if an engineer were in principle a
 scientist, devoid of any artistic or photographic sense (I don't think
 I'm devoid of artistic tastes...). Nevertheless, certain concepts have
 (almost) passed into common parlance, even if underneath this used
-(understood?) vocabulary lie complex principles: Sigmoid, Log encoding,
+(understood?) vocabulary lies complex principles: Sigmoid, Log encoding,
 Denoise, Blur, HDR/SDR, Gamut, etc. Are we sure that the photographer of
 the 1980s-2000s even understands these terms? The complexity is above
 all - beyond understanding the scientific phenomenon - a problem of
@@ -3780,7 +3778,7 @@ the sigmoid function is (for a doctor, the sigmoid is the terminal part
 of the intestine)?
 
 Some of the major problems currently addressed by GHS and other advanced
-products such as Sigmoid, Filmic, TRC, Log Encoding, etc., include :
+modules such as Sigmoid, Filmic, TRC, Log Encoding, etc., include:
 
 - The gap between the dynamics perceived by human beings - in just a few
   seconds, our eye/brain pair is capable of adapting to the darkness of
@@ -3806,22 +3804,22 @@ to yourself or your interlocutors. Depending on all these factors, some
 software programs are supposed to be simple and solve (almost)
 everything with a single click, while others are more complex in their
 approach, solving a few extra problems. Is the game of complexity worth
-the candle? To quote a well-known adage: 'A problem is only difficult
+the effort? To quote a well-known adage: 'A problem is only difficult
 when you don't know the answer'..., or 'Practice makes perfect'.
 Generalized Hyperbolic Strech (GHS), integrated with Selective Editing
 (SE), breaks new ground. The algorithm is particularly innovative (I
-love it). I chose to integrate it with Selective Editing, to work in
+love it). I chose to integrate it in Selective Editing, to work in
 direct mode. As we'll see later, (GHS) + (SE) makes it easy to combine
 several 'stretches' in normal GHS or inverse GHS, in 'Global', 'Full
 image' or 'Normal spot' mode.
 
-#### Generalized Hyperbolic Strech - GHS - origine
+#### Generalized Hyperbolic Strech - GHS - origin
 
 I believe (to be verified) that two people came up with a new approach
-to the general problems seen above. The methods we know today are mostly
-derived from the work of the film industry by ACES or in the continuity
-of the work of the precursor Adobe (I can cite - non-exhaustive -
-functions such as: Log encoding, Sigmoid, Gamut compress, etc.). These
+to the general problems seen above. Most of the methods we know today 
+are derived from the work of the film industry by ACES or in the continuity
+of the precursive work of Adobe (I can cite - non-exhaustively -
+functions such as: Log encoding, Sigmoid, Gamut compress, etc.). However, 
 two people, David Payne and Mike Cranfield, have come up with 'something
 else' with a vocabulary that is a little 'disturbing'. The system uses
 foreign concepts such as 'Symmetry Point', 'Stretch' and 'Local
@@ -3834,17 +3832,18 @@ according to their authors, enable:
 - add contrast to key areas of the image.
 - general brightening or darkening of the image.
 - adjust the dynamic range of the image.
-- I've added the possibility of using several modes (RGB, Lch,
-  Saturation, Hue) to modify the image as desired: maintaining overall
-  balance while preserving contrasts, etc., or acting as a Color-toning.
+
+I've also added the possibility of using several modes (RGB, Lch,
+Saturation, Hue) to modify the image as desired: maintaining overall
+balance while preserving contrasts, etc., or acting as a Color-toning.
 
 These algorithms and functions have found a home in astrophotography
 software (Siril, Pixlnsight). Examination of the tutorials and code for
 these two programs (Siril code only) shows that the initial scope is
 broader than astrophotography, and can be extended to general
-photography. The major difference - nevertheless foreseen by the
-authors - is the extension to highlights and high dynamic range, rarely
-found in astrophotography.
+photography. The major difference - whether foreseen by the
+authors or not - is the extension to highlights and high dynamic range, 
+rarely found in astrophotography.
 
 #### GHS - available settings
 
@@ -3852,24 +3851,25 @@ found in astrophotography.
 
 Five settings act directly on GHS:
 
-- Stretch factor (D): controls the extent of the stretch .It can only have positive values. 'Negative space' can be implemented with 'Inverse GHS'.
-- Local intensity (b) - linear factor: controls the degree to which the
-  stretch is focused around the Symmetry point (SP), by modifying the
+- Stretch factor (D): controls the extent of the stretch. It can only have positive values.
+  'Negative space' can be implemented with 'Inverse GHS'.
+- Local intensity (b) - linear factor: controls the degree of the stretch 
+  that focuses around the Symmetry point (SP), by modifying the
   shape of the transformation itself.
-- Symmetry point (SP): defines the focal point around which the stretch
+- Symmetry point (SP): defines the focus point around which the stretch
   is applied - the contrast will be distributed symmetrically with
   respect to (SP). While (b) determines the degree of focus of the
-  stretch, (SP) determines where this focus is applied. (SP) should
+  stretch, (SP) determines where this focus is. (SP) should
   generally be placed close to a histogram peak(s) so that the stretch
   widens and lowers the peak(s), adding the most contrast to the stretch
   at this point.
-- Protect shadows (LP): defines a value below which stretching is
-  modified to preserve contrast in shadows and lowlights. To achieve
+- Protect shadows (LP): defines a value below which the stretching would
+  be modified to preserve contrast in shadows and lowlights. To achieve
   this, a linear transformation of the data is performed below the (LP)
   level, reserving the contrast of the rest of the image. Among other
   things, this makes it possible to better control noise.
-- Protect highlights (HP): defines a value above which stretching is
-  modified to preserve contrast in the highlights. To do this, a linear
+- Protect highlights (HP): defines a value above which the stretching would
+  be modified to preserve contrast in the highlights. To do this, a linear
   transformation of the data is performed above the HP level, reserving
   the contrast of the rest of the image. This allows you to better
   control the progression of highlights.
@@ -3890,17 +3890,29 @@ to preserve local contrast overall, filling in valleys and reducing
 peaks.
 
 ##### Inverse GHS
-Only available in Standard and Advanced modes?
+Only available in Standard and Advanced modes.
 
-Inverse GHS checkbox: Inverse GHS is useful for reducing overall contrast or recovering your original image. It adds contrast on the far right and left of the histogram, brightening the deep shadows, darkening the bright highlights, and squeezing the histogram towards the middle.
+Inverse GHS checkbox: Inverse GHS is useful for reducing overall contrast or 
+recovering your original image. It adds contrast on the far right and left 
+of the histogram, brightening the deep shadows, darkening the bright highlights, 
+and squeezing the histogram towards the middle.
 
-The Generalized Hyperbolic Inverse transformation allows you to recover your original image, subject to mathematical precision, but you can also use it for other purposes. This feature is more like the 'Excluding spot' but more powerful.
+The Generalized Hyperbolic Inverse transformation allows you to recover 
+your original image, subject to mathematical precision, but you can also 
+use it for other purposes. This feature is more like the 'Excluding spot' 
+but more powerful.
 
-If the White point and Black point were changed in normal mode (automatic or not), they will likely need to be readjusted. The white point often needs to be readjusted lower. There is interaction between the two settings. In the majority of cases, especially when used as a second GHS Spot, the adjustments will be small, or even unnecessary.
+If the White point and Black point were changed in normal mode (automatic 
+or not), they will likely need to be readjusted. The white point often needs 
+to be readjusted lower. There is interaction between the two settings. In the 
+majority of cases, especially when used as a second GHS Spot, the adjustments 
+will be minimal, or even unnecessary.
 
-Can be used as a second GHS spot after a first GHS Spot in Global or 'Full image' mode, most often with 'Spot method = Normal spot', for example to darken a sky or a sunset.
+It can be used in a second GHS spot after a first GHS spot in Global or 'Full image' 
+mode, most often with 'Spot method = Normal spot', to, for example, darken sky or sunset.
 
-To allow Inverse GHS to work the 'Stretch factor (D)' must be between 0.001 and 0.002 and the checkbox 'Auto Black point & White point' disabled. 
+To allow Inverse GHS to work, the 'Stretch factor (D)' must be between 0.001 and 0.002 
+and the checkbox 'Auto Black point & White point' should be disabled. 
 
 
 ##### The need to fine-tune White Point (WP linear) and Black Point (BP linear)
@@ -3921,22 +3933,25 @@ all image data to be processed is in the interval \[0 ,1\].
   (positive values). Move this slider until you obtain a minimum Clipped
   Black point value. If no upstream processing has been performed, the
   first value to be retained will be Clipped Black point = -1.
- - The 'Highlight reconstruction' method has a very strong impact on the
-  White-point value. and therefore on the amplitude of the RGB data which will then be brought back into the interval [0. 1]. It seems obvious that the values ​​of Stretch factor (D), Local intensity (b), Symmetry point (SP) ... will be (depending on the action of the reconstruction process) profoundly impacted. 
+- The 'Highlight reconstruction' method has a very strong impact on the
+  White-point value. and therefore on the amplitude of the RGB data which
+  will then be brought back into the interval [0. 1]. It seems obvious that
+  the values ​​of Stretch factor (D), Local intensity (b), Symmetry point (SP)...
+  will be (depending on the action of the reconstruction process) profoundly impacted. 
 
 ###### Associated Tooltips
 Black point/White point: Sets the 'Black point (BP linear)', 'White point (WP linear)' for a linear stretch.
 - 'Black Point (BP linear)' and 'White Point (WP linear)' settings are only available if the 'Stretch factor (D)' is between 0.001 and 0.002. This is to avoid altering the histogram.
 - When the stretch factor is 0.002 or less, all stretch settings except for 'Black point' and 'White point' will have no effect.
-- 'Black point (BP linear)' and 'White point (WP linear)' settings are sensitive to the general settings upstream of GHS i.e. highlight reconstruction, white balance and RAW processes.
-- To have relevant 'Black Point (BP linear)' and 'White Point (WP linear)' settings, the entire image must be analyzed. It is recommended to use 'Fit whole image to screen - Shortcut Alt-f'.
+- 'Black point (BP linear)' and 'White point (WP linear)' settings are sensitive to the general settings upstream of GHS i.e. highlight reconstruction, white balance and raw processes.
+- To have relevant 'Black Point (BP linear)' and 'White Point (WP linear)' settings, the entire image must be analyzed. It is recommended to use 'Fit whole image to screen' function.
 
-To allow Inverse GHS to work the 'Stretch factor (D)' must be between 0.001 and 0.002 and the checkbox 'Auto Black point & White point' disabled. 
+To allow Inverse GHS to work, the 'Stretch factor (D)' must be between 0.001 and 0.002 and the checkbox 'Auto Black point & White point' should be disabled. 
 
 
 Black point: Sets the black point for a linear image stretch.
 - In normal GHS mode, negative slider values lift the shadows linearly to avoid excessive noise and facilitate the GHS calculations.
-- For positive slider values, the histogram is shifted to the left. For raw images, you can also use the more precise Raw Black Points > Dehaze in the Raw tab
+- For positive slider values, the histogram is shifted to the left. For raw images, you can also use the more precise Raw Black Points > Dehaze in the Raw tab.
 - Increases in contrast due to the linear stretch will be evenly distributed over the image.
 
 You can adjust a linear black point offset to either:
@@ -3947,13 +3962,13 @@ Set 'Stretch factor (D)' to 0.001 to adjust the sliders.
 - The label 'Clipped pixel count Shadows:x Highlights:y' shows the number of pixels that would be clipped without adjusting the two sliders.
 - The label ‘Pixel values - Darkest:w Lightest:z’ shows you the minimum and maximum values in the range [0, 1].
 
-In Inverse GHS mode the behavior is reversed and there are possible interactions with the White point. In the majority of cases, especially when using a second GHS Spot, the adjustments will be small, or even unnecessary.
+In Inverse GHS mode the behavior is reversed and there are possible interactions with the White point. In most cases, especially when using a second GHS Spot, the adjustments will be minimal, or even unnecessary.
 
-To activate the Inverse GHS checkbox, it may be necessary to move the 'Stretch factor' slider from 0.001 to 0.002. This will work only if the checkbox 'Auto Black point & White point' is disabled. 
+To activate the Inverse GHS checkbox, it may be necessary to move the 'Stretch factor' slider from 0.001 to 0.002. This will work only if the 'Auto Black point & White point' checkbox is unchecked. 
 
 
-White point : Sets the White point for a linear stretch of the image. Any pixel with value greater than the white point input will be clipped and the data lost.
-- Contrast gained by performing the linear stretch will be evenly distributed over the image, which will be brightened. Pixels with values greater than the white point will appear white and have a value of 1.0.
+White point: Sets the White point for a linear stretch of the image. Any pixel with value greater than the white point input will be clipped and results in data lost.
+- Contrast gained by performing the linear stretch will be evenly distributed over the image, which will be brightened. Pixels with value greater than the white point will appear white and have a value of 1.0.
 - Setting this parameter to a value greater than 1 will extend the dynamic range at the high end.
 - The 'Highlight reconstruction' method has a very strong impact on the white-point value.
 
@@ -3967,7 +3982,7 @@ To allow Inverse GHS to work the 'Stretch factor (D)' must be between 0.001 and 
 
 
 
-##### Recommandations
+##### Recommendations
 
 <figure>
 <img src="/images/Gamu-profil1.jpg" title="Gamu-profil1.jpg" width="600" />
@@ -4013,16 +4028,16 @@ White point.
 - retouch the Black point (BP linear), shift the slider to the right,
   until the histogram on the left is close to the vertical axis, and
   Clipped pixel count and Pixel value - Darkest are at 0. In the
-  example, the value found is 0.1247
+  example, the value found is 0.1247.
 - retouch the White-point, until Clipped pixel count Highlight is 0, and
-  Pixel values Lightest is 1. In the example, the value found is 1.0809
+  Pixel values Lightest is 1. In the example, the value found is 1.0809.
 
 <figure>
 <img src="/images/BP-WP-2.jpg" title="BP-WP-2.jpg" width="600" />
 <figcaption>BP-WP-2.jpg</figcaption>
 </figure>
 
-###### Second image image in Neutral mode, without Black Point (BP linear) and White Point (WP linear) retouching
+###### Second image in Neutral mode, without Black Point (BP linear) and White Point (WP linear) retouching
 
 Raw image: 5D3_0104.CR2
 
@@ -4034,21 +4049,21 @@ vertical axis, and Pixel values Lightest is at 0.63, so the white point
 needs adjusting. <img src="/images/BP-WP-3.jpg" title="BP-WP-3.jpg" width="600"
 alt="BP-WP-3.jpg" />
 
-- touch the White point (WP linear) until Clipped pixel count Highlight
+- retouch the White point (WP linear) until Clipped pixel count Highlight
   is 0 and Pixel values Lightest is 1.
 - check that the values set (here 0) are correct by moving the Black
   point on the right-hand side of the slider (BP linear). If you move
   the slider a little to the right and the values for Clipped pixel
-  count Shadows and Pixel value -Darkest are no longer zero, you should
+  count Shadows and Pixel value - Darkest are no longer zero, you should
   not change the Black point setting (BP linear).
 
 You will be able to see on the images that require a 'Highlight
 reconstruction', the effectiveness of the various methods proposed, by
-seeing the White point value (White point (WP linear). For example :
+looking at the White point (WP linear) value. For example:
 
-- None : 1.1
-- Inpaint Opposed : 2.1
-- Color Propagation : 3.2
+- None: 1.1
+- Inpaint Opposed: 2.1
+- Color Propagation: 3.2
 
 ##### Particularities of Black Point (BP linear) and Highlight Attenuation checkbox
 
@@ -4060,7 +4075,7 @@ seeing the White point value (White point (WP linear). For example :
 - The Highlight Attenaution checkbox completes the processing of
   highlights - Protect Highlights (HP) - in cases of high Dynamic Range,
   the GHS setting may be insufficient. This action on the checkbox will,
-  on the one hand, attenuate highlights after GHS and, on the other,
+  on one hand, attenuate highlights after GHS and, on the other,
   take into account the Protect Highlights (HP) setting to increase the
   effect of this attenuation.
 
@@ -4069,7 +4084,7 @@ seeing the White point value (White point (WP linear). For example :
 This is probably the key factor in understanding how GHS works. It is
 around this point that image transformations will take place. As this
 algorithm is designed to process highly dynamic and often under-exposed
-images, I have chosen a default value of 0.015 (arbitrary). The system
+images, I have chosen a default value of 0.015 (arbitrarily). The system
 works on linear data, in the Working profile (default: Prophoto) - the
 values to be taken into account are naturally offset from the image
 rendered in the Preview (which by default takes into account a gamma and
@@ -4100,27 +4115,27 @@ Default 0.015 to avoid the zero value.
 
 - This is the key balance value of the GHS system.
 - Sets the focus point around which the stretch is applied - contrast
-  will be distributed symmetrically about SP
-- While 'b' provides the degree of focus of the stretch, SP determines
+  will be distributed symmetrically about (SP).
+- While (b) provides the degree of focus of the stretch, (SP) determines
   where that focus is applied.
-- SP should generally be placed within a histogram peak so that the
+- (SP) should generally be placed within a histogram peak so that the
   stretch will widen and lower the peak by adding the most contrast in
-  the stretch at that point. Pixel values will move away from the SP
+  the stretch at that point. Pixel values will move away from the (SP)
   location.
 
 ###### Automatic Black point & White point - Estimation Symmetry point (SP)
 To make GHS more intuitive and easier to use, I added 2 features:
-- Automatically calculate Black point (linear) and White point (linear)  - not in Inverse GHS mode. This allows to compensate for example (as poor Dehaze does) the black point in foggy images and take into account the reconstruction of highlights. As a reminder, unlike other Tone-mappers, these 2 points are in linear mode. The aim of the operation is to bring the data back into the interval [0 1]. Of course it is possible to retouch in manual mode, for example negative values ​​(depending on the images) to open up overly pronounced shadows and help GHS.
-- Provide an evaluation of the Symmetry Point (SP). This value, which has nothing to do with 'middle gray' is essential to understanding GHS and the results. By default, I chose 0.015. The evaluation seems good to me in RGB Luminance mode, acceptable in RGB mode and it is not provided for the other modes, because it has no value. 
-- It’s just an estimation of the symmetry point from the data in linear mode. This point corresponds to the maximum of the histogram in linear mode and with the working profile. It is up to the user to choose and adapt this value by adjusting the slider (SP)
-- If the checkbox added to the slider (SP) is checked : Try setting an automatic Symmetry Point (SP) estimation, only in RGB mode. May require manual adjustment.
+- Automatically calculate Black point (linear) and White point (linear) - not in Inverse GHS mode. This allows to compensate for example (as poor Dehaze does) the black point in foggy images and take into account the reconstruction of highlights. As a reminder, unlike other Tone-mappers, these 2 points are in linear mode. The aim of the operation is to bring the data back into the interval [0 1]. Of course it is possible to retouch in manual mode, for example negative values ​​(depending on the images) to open up overly pronounced shadows and help GHS.
+- Provide an evaluation of the Symmetry Point (SP). This value, which has nothing to do with 'middle gray' is essential to understanding GHS and the results. 0.015 is chosen as the default value. The evaluation seems good to me in RGB Luminance mode, acceptable in RGB mode and it is not provided for the other modes, because it has no value. 
+- It’s just an estimation of the symmetry point from the data in linear mode. This point corresponds to the maximum of the histogram in linear mode and with the working profile. It is up to the user to choose and adapt this value by adjusting the slider (SP).
+- If the checkbox added to the slider (SP) is checked: Try setting an automatic Symmetry Point (SP) estimation, only in RGB mode. May require manual adjustment.
 
 <img src="/images/Ghs-bw-sym2.jpg" title="Black point - White point - SP" width="600"
 alt="Ghs-bw-sym2.jpg" />
 
 ##### Incidence of Local intensity (b)
 
-High positive values of (b ) can be considered as histogram wideners,
+High positive values of (b) can be considered as histogram wideners,
 i.e. they lead to a wider spread of the histogram around the point of
 focus (SP). On the other hand, lower values of (b) tend to shift the
 histogram towards a brighter (or darker) rendering without affecting its
@@ -4134,30 +4149,30 @@ This parameter controls how tightly focused the stretch is around the
 Symmetry point (SP) by changing the form of the transform itself:
 
 - For concentrated stretches (such as initial stretches on linear
-  images) a large 'b' factor should be employed to focus a stretch
+  images) a large (b) factor should be employed to focus a stretch
   within a histogram peak while de-focusing the stretch away from the
   histogram peak.
-- For adjustment of non-linear images, lower 'b' parameters should be
+- For adjustment of non-linear images, lower (b) parameters should be
   employed to distribute contrast and brightness more evenly.
-- Large positive values of 'b' can be thought of as a histogram widener,
-  ie spreading the histogram wider about the focus point, SP.
-- By contrast, lower values of 'b' tend to shift the histogram to a
+- Large positive values of (b) can be thought of as a histogram widener,
+  i.e. spreading the histogram wider about the focus point, SP.
+- By contrast, lower values of (b) tend to shift the histogram to a
   brighter (or dimmer) position without affecting its width too greatly.
-- As a general rule, the level of 'b' employed will decrease as a
-  stretch sequence nears completion, although larger 'b' values can
+- As a general rule, the level of (b) employed will decrease as a
+  stretch sequence nears completion, although larger (b) values can
   still be employed for precise placement of additional contrast.
   
 ###### Some comments to better understand GHS
-To help the user understand (a little better) what GHS and its inverse function are, I'll make a few comments.
+To help the user understand what GHS and its inverse function are (a little bit better), here's a few comments.
 
 As you can see:
 - 'Stretch factor (D)' only has positive values.
 - There are no 'contrast' or 'lightness' sliders, no more 'middle grey' or 'pivot'.
-- Interestingly, I use very low values ​​of (D) as 'special' values ​​(0.001 or 0.002) to activate certain functions : settings for White Point linear (WP), Black Point linear (BP), Symmetry point (SP), and Inverse GHS.
+- Interestingly, I use very low values ​​of (D) as 'special' values ​​(0.001 or 0.002) to activate certain functions: settings for White Point linear (WP), Black Point linear (BP), Symmetry point (SP), and Inverse GHS.
 
-It's important to understand that the system as I've designed it is entirely dynamic. You directly see the interaction of the (WP), (BP), and (SP) settings. Some might say it's not very 'professional' (in terms of code), but I haven't found any other solutions that work. It is imperative that the GHS algorithm be activated in order to calculate and see the influence of (BP) and (WP) and examine the histogram (I recommend doing it in 'working profile' mode with gamma=1) - before any significant action on 'Stretch factor (D)'. ‘D = 0.001’ is a very low value that can be considered negligible (in terms of stretch), but it allows the algorithm to function. At this value, to ensure the impact of (BP) and (WP) is visible, some sliders are deactivated so as not to influence the result (eg : Stretch regularization & Midtones)
+It's important to understand that the system, as I've designed it, is entirely dynamic. You directly see the interaction of the (WP), (BP), and (SP) settings. Some might say it's not very 'professional' (in terms of code), but I haven't found any other solutions that work. It is imperative that the GHS algorithm be activated in order to calculate and see the influence of (BP) and (WP) and examine the histogram (I recommend doing it in 'working profile' mode with gamma=1) - before any significant action on 'Stretch factor (D)'. ‘D = 0.001’ is a very low value that can be considered negligible (in terms of stretch), but it allows the algorithm to function. At this value, to ensure the impact of (BP) and (WP) is visible, some sliders are deactivated so as not to influence the result (e.g. Stretch regularization & Midtones).
 
-The problem (not just that of labels and tooltips - labels and tooltips are difficult to write because you have to try to convey something else) is complex. Wanting to create a dynamic system that calculates (BP), (WP), and (SP) in real time and allows for inverse operation (Inverse GHS) is difficult ; I'm not trying to be pretentious. However, it's completely different from anything being done elsewhere. I'm not saying that what is done elsewhere (in RT or other software...) is less good or bad, but it is very different.
+The problem (not just that of labels and tooltips - labels and tooltips are difficult to write because you have to try to convey something else) is complex. Wanting to create a dynamic system that calculates (BP), (WP), and (SP) in real time and allows for inverse operation (Inverse GHS) is difficult; I'm not trying to be pretentious. However, it's completely different from anything being done elsewhere. I'm not saying that what is done elsewhere (in RawTherapee or other software...) is less good or bad, but it is very different.
 
 As a reminder, because I've already mentioned it:
 
@@ -4165,17 +4180,17 @@ As a reminder, because I've already mentioned it:
 
 - It's important, even on ordinary images, to enable 'Color Propagation' (even if you can disable it later).
 
-- Combining the two allows you to retrieve out-of-gamut colors (including ACES-P0). When the system finds a (WP) of 10, it means that within the limits of the usual data gamut (0 / 65535), the values ​​taken into account are about 655000...For example, when the illuminant consists of LEDs.
+- Combining the two allows you to retrieve out-of-gamut colors (including ACES-P0). When the system finds a (WP) of 10, it means that within the limits of the usual data gamut (0 - 65535), the values ​​taken into account are about 655000...when the illuminant consists of, for example, LEDs.
 
 The system acts as a gamut compressor (a bit like 'Gamut Compression', but for the 3 RGB channels) and 'fits' the data into the gamut.
  
-Adjusting the (WP) (for example, reducing it) will limit the maximum value. Adjusting the ‘Stretch Factor (D)’ and ‘Local Intensity (b)’ will allow you to focus on the area of ​​the image to be enhanced. If necessary to refine the colorimetry, you can use ‘Abstract profiles’ in particular the 'Custom (CIExy diagram)' part, Refine colors, Illuminant).
+Adjusting the (WP) (for example, reducing it) will limit the maximum value. Adjusting the ‘Stretch Factor (D)’ and ‘Local Intensity (b)’ will allow you to focus on the area of ​​the image to be enhanced. If necessary to refine the colorimetry, you can use ‘Abstract profiles’, in particular the 'Custom (CIExy diagram)' part, Refine colors, Illuminant.
 
 And of course, if you create a second Spot, the (BP) and (WP) values ​​are recalculated and often close to 0 and 1, and (SP) recalculated.
 
-The 'Inverse GHS' function is (somewhat) similar to 'Excluding spot', but more sophisticated, if I may use this term while remaining modest.
+The 'Inverse GHS' function is (somewhat) similar to 'Excluding spot', but more sophisticated, to put it modestly.
 
-It allows you to 'undo' previous actions for a specific area of ​​the image, for example 'removing' or ‘reduce’ Stretch in a sky or sunset.
+It allows you to 'undo' previous actions in a specific area of ​​the image, for example 'removing' or ‘reduce’ Stretch in sky or sunset.
 
 But it also allows you to work in 'negative space', that is, to treat the 'Stretch factor (D)' as if it had negative values ​​(which is not normally possible). In 'Inverse GHS' mode, the contrasts will be reduced overall (instead of being increased). The entire system will operate in reverse. Look at 'GHS curve visualization' and you'll see that when you increase 'Stretch factor (D)', the curve curves downwards...  
 
@@ -4208,13 +4223,13 @@ Representation with Desmos
 
 It's important to control GHS under optimum conditions. This means
 eliminating any parameters that could disrupt the analysis. I recommend
-working in Neutral mode. You can (must) activate :
+working in Neutral mode. You can (must) activate:
 
 - Highlight reconstruction: which has a very strong impact on the
-  calculation of the White point (WP linear). In most cases, prefer 'Color propagation' - with or without Clip out-of-gamut colors depending on the nature of the image.
-- Denoise - if necessary,
-- White Balance: prefer Auto - Temperature correlation, in most cases except for illuminants, which are far from daylight or blackbody (LEDs, Halogen...).
-- Capture Sharpening and Raw functions.
+  calculation of the White point (WP linear). In most cases, 'Color propagation' is preferred - with or without Clip out-of-gamut colors, depending on the nature of the image.
+- Denoise - if necessary.
+- White Balance: Auto - Temperature correlation is preferred in most cases except for illuminants, which are far from daylight or blackbody (LEDs, Halogen...).
+- Capture Sharpening and raw functions.
 - Toggle histogram and data display to 'Working profile - linear' mode.
 
 In Selective Editing, activate GHS as the first tool, in the first Spot
@@ -4290,7 +4305,7 @@ Raw image: IMGP2426.DNG
 - - Neutral – Histogram in ‘working profile – linear’ mode.
   - Highlight reconstruction – Color Propagation
   - White Balance Auto - Temperature correlation
-  - Selective Editing : Global
+  - Selective Editing: Global
   - Shadows/Highlights, Equalizer & GHS
 
 <img src="/images/Ghs-example1.jpg" title="Ghs-example1.jpg" width="600"
@@ -4298,11 +4313,11 @@ alt="Ghs-example1.jpg" /> In this first step:
 
 - the White point (WP linear) has a high value, mainly due to the use of
   Highlight reconstruction – Color propagation.
-- the Black point (BP linear) is used in negative value, to slightly
+- the Black point (BP linear) is used with a negative value, to slightly
   open up the shadows, reduce the need for a high Stretch factor (D) and
   slightly increase the value of Symmetry point (SP).
 - Note the values ​​of Protect shadows (LP) at 0.0 and Protect Highlights
-  (HP) at 1.0 and the non-use of Highlight attenuation
+  (HP) at 1.0 and the non-use of Highlight attenuation.
 - The Graduated filter is activated with the Spot positioned in the
   middle of the sky, to reduce the brightness of the upper part of the
   image.
@@ -4310,12 +4325,12 @@ alt="Ghs-example1.jpg" /> In this first step:
 ##### Second step:
 
 - Histogram in ‘output profile – gamma’ mode.
-- To give more contrast and saturation to the image – is it necessary,
-  but for educational purposes – I activated in the ‘Exposure’ module –
-  Auto-Matched Tone Curve. I could have made other choices like using
-  Selective Editing – Wavelet – Local Contrast.
+- To give more contrast and saturation to the image – for educational purposes, 
+  the necessity can be debated – I activated in the ‘Exposure’ module –
+  Auto-Matched Tone Curve. Other choices like Selective Editing – Wavelet –
+  Local Contrast also works.
 - In order to have a better rendering of the sky, I activated Highlight
-  Attenuation and set Protect Highlights (HP) to 0.9
+  Attenuation and set Protect Highlights (HP) to 0.9.
 
 <figure>
 <img src="/images/Ghs-example2.jpg" title="Ghs-example2.jpg" width="600" />
@@ -4330,31 +4345,42 @@ alt="Ghs-example1.jpg" /> In this first step:
  Selective Editing, CIECAM, etc., where saturation can be modified. However, if users wish, a 'saturation' slider can be added.
 
 - The GHS module contains the minimum tools required for operation. It will rarely function completely independently. 
- It would have been possible to add components found elsewhere, for example in Selective Editing > Color Appearance (CAM16) or Abstract Profile (Color Tab), to adjust the balance of light and shadow (TRC) or Contrast Enhancement, but I preferred to perform these adjustments elsewhere than in GHS.
+  It would have been possible to add components found elsewhere, for example in Selective Editing > Color Appearance (CAM16) or
+  Abstract Profile (Color Tab), to adjust the balance of light and shadow (TRC) or Contrast Enhancement, but I preferred to
+  perform these adjustments elsewhere than in GHS.
 
-- Stretch Regularization & Midtones : The Value (LC) slider affects local contrast using a Guided Filter. It can introduce artifacts 
+- Stretch Regularization & Midtones: The Value (LC) slider affects local contrast using a Guided Filter. It can introduce artifacts 
   or unwanted behavior in some images (LEDs, etc.). You can disable or reduce its effect.
 
-**Recommandations**
+**Recommendations**
 
 - It is preferable to use GHS as the first RT-spot; this will allow us to resolve the problem of equilibria due to deviations from [0 1] 
-  of the values ​​of the Black point (linear) and White point (linear). In fact, GHS behaves like a pre-tone-mapper. Black point correction (BP linear) in Raw corresponds roughly to Raw Black Point > Dehaze (Raw Tab), while White point correction (WP linear) can be considered a better use of Raw White Points (Raw Tab). Ideally, GHS would have been developed using Raw data, but this option would have had two major drawbacks: a) the assignment of the Working Profile and White Balance would not have been performed, resulting in significant color shifts; b) it would have been impossible to process non-Raw images (TIFF/JPG).
+  of the values ​​of the Black point (linear) and White point (linear). In fact, GHS behaves like a pre-tone-mapper. Black point correction
+  (BP linear) in Raw corresponds roughly to Raw Black Point > Dehaze (Raw Tab), while White point correction (WP linear) can be considered
+  a better use of Raw White Points (Raw Tab). Ideally, GHS would have been developed using raw data, but this option would have two major
+  drawbacks: a) the assignment of the Working Profile and White Balance would not have been performed, resulting in significant color shifts;
+  b) it would be impossible to process non-raw images (TIFF/JPG).
 
 - To avoid high stretch values ​​that can lead to weakening of local contrast and saturation, you can use two (or more) RT-spots, 
-  one after the other   with lower stretch values.
+  one after the other with lower stretch values.
 
 - When the White Point (linear) and Black Point (linear) values ​​are low, for example [0.1 - 0.4], the image contrast will be 
   significantly increased. In these extreme cases, it can be useful to create a second 'Inverse GHS' spot to reduce contrast.
 
 - When the White Point (linear) values ​​are high (3 to 5) or very high (10 or more), the system forces colors present on the sensor,
- which may be far beyond the visible spectrum, into the gamut perceived by the human eye. Adjust the White Point (linear), Stretch (D), and Local Intensity (b) values ​​as needed. Feel free to use the Gamut Compression module, or the Primaries & Illuminant section of Abstract Profile, to try to obtain colors acceptable to our eyes and brain.
+  which may be far beyond the visible spectrum, into the gamut perceived by the human eye. Adjust the White Point (linear), Stretch (D),
+  and Local Intensity (b) values ​​as needed. Feel free to use the Gamut Compression module, or the Primaries & Illuminant section of
+  Abstract Profile, to try to obtain colors acceptable to our perceptions.
 
 - Feel free to use the Graduated Filter (at the bottom of the GHS menu) in 'Fit to screen' mode. This allows you to easily, for example,
-   make skies more realistic.
+  make skies more realistic.
 
 **The Primaries and Illuminant functions - possible uses**
 
-When to use this function - whether in 'Abstract Profile' (Color Tab) or 'Selective Editing > Color Appearance (CAM16)' - depending on whether you want to affect the entire image or just a part of it, isn't always straightforward. The system for modifying primaries, illuminants, or adjusting the dominant color using CIExy components is neither intuitive nor user-friendly. Nevertheless, it's often the only way to make in-depth color correction adjustments.
+When to use this function - whether in 'Abstract Profile' (Color Tab) or 'Selective Editing > Color Appearance (CAM16)' - depending on 
+whether you want to affect the entire image or just a part of it - isn't always straightforward. The system for modifying primaries, 
+illuminants, or adjusting the dominant color using CIExy components is neither intuitive nor user-friendly. Nevertheless, it's often 
+the only way to make in-depth color correction adjustments.
 
 To simplify the explanation, I'll use the module located in Abstract Profiles (Color Tab), which is (slightly) more comprehensive and easier to use.
 
@@ -4367,31 +4393,56 @@ To modify the primaries or adjust the 'Dominant colors', you must change the sel
 - Custom (sliders) - usable for Abstract Profile and Selective Editing.
 - Custom (CIExy Diagram) - usable for Abstract Profle only.
 
-- Usage of 'Dominant Color' only with Custom (sliders): This adaptation is primarily intended for situations where the illuminant is known to be of the 'Daylight' or 'Blackbody' type. Gamut overshoot is often due to incorrect exposure of the highlights, resulting in overexposure. In this case, the 'Color Dominant' module is the most appropriate.
--- The gray dot represents the calculated dominant color of the image. The white dot represents the position of the illuminant's white point (in the example, Prophoto - D50). Moving 'Refine color' to 
-     the right will increase the dominant color, primarily in the form of saturation (moving it to the left will decrease it).
+- Usage of 'Dominant Color' only with Custom (sliders): This adaptation is primarily intended for situations where the illuminant
+  is known to be of the 'Daylight' or 'Blackbody' type. Gamut overshoot is often due to incorrect exposure of the highlights,
+  resulting in overexposure. In this case, the 'Color Dominant' module is the most appropriate.
+-- The gray dot represents the calculated dominant color of the image. The white dot represents the position of the illuminant's white point
+  (in the example, Prophoto - D50). Moving 'Refine color' to the right will increase the dominant color, primarily in the form of saturation
+  (moving it to the left will decrease it).
 -- If you want to change the color of the changes, simply move 'Shift x' and 'Shift y' to the color area you want.
 -- The movements of the white and gray dots appear directly on the CIExy diagram.
--- You can also change the illuminant. In the example, you can change D50 to D80. Observe the change in the image's colorimetry with all the settings (Refine Colors, Shift x, Shift y set to zero). 
+-- You can also change the illuminant. In the example, you can change D50 to D80. Observe the change in the image's colorimetry
+   with all the settings (Refine Colors, Shift x, Shift y set to zero). 
       The white point has moved, and naturally, the effects of Refine Colors (White point), Shift x, and Shift y will be amplified (or reduced depending on the illuminant chosen).
 
-- Usage of 'Primaries' : Of course, you can also change the color balance by modifying the primaries. This exercise is not at all intuitive and often results in effects opposite to those desired. This  feature is best suited for processing images with unusual illuminants (LED, Halogen, etc.). You have two ways to modify the primaries.
--- Directly modify the values ​​of Rx and Ry for red, Gx and Gy for green, and Bx and By for blue. Moving the red dot closer to the white point will increase saturation (and vice versa) if, for example, the red dot is moved along the original white/red point line. Moving away from this original white/red point line will change the hue.
--- Modify the primaries using the graphical interface by directly changing the red, green, or blue points on the CIExy diagram. To do this, change 'Custom (sliders)' to 'Custom (CIE xy Diagram)' in the menu (only for Abstract Profile and not available for Selective Editing). The actions will be the same as above, but the system is more intuitive to use. In this case, you do not have access to the 'Dominant colors' setting. If you wish to make further adjustments to 'Dominant colors', you will need to return to the Custom (sliders) option.
+- Usage of 'Primaries': Of course, you can also change the color balance by modifying the primaries. This exercise is not at all intuitive
+- and often results in effects opposite to those desired. This feature is best suited for processing images with unusual illuminants
+- (LED, Halogen, etc.). You have two ways to modify the primaries.
+-- Directly modify the values ​​of Rx and Ry for red, Gx and Gy for green, and Bx and By for blue. Moving the red dot closer to the
+   white point will increase saturation (and vice versa) if, for example, the red dot is moved along the original white/red point line.
+   Moving away from this original white/red point line will change the hue.
+-- Modify the primaries using the graphical interface by directly changing the red, green, or blue points on the CIExy diagram.
+   To do this, change 'Custom (sliders)' to 'Custom (CIE xy Diagram)' in the menu (only for Abstract Profile and not available for
+   Selective Editing). The actions will be the same as above, but the system is more intuitive to use. In this case, you do not
+   have access to the 'Dominant colors' setting. If you wish to make further adjustments to 'Dominant colors', you will need to
+   return to the Custom (sliders) option.
 
 
-**GHS a pre-tone-mapper and a game-changer for processing difficult images?**
+**GHS, a pre-tone-mapper and a game-changer for processing difficult images?**
 
-- Generally speaking, without addressing issues related to the Raw process (demosaicing, Capture Sharpening, etc.), 
-  nor those related to geometry or crops or denoise, I recommend the following steps (indicative) for an efficient workflow. 
-- A fundamental question is whether GHS is a tone-mapper, and why I placed it at the beginning of the process. This deserves discussion. I think we can call it a pre-tone mapper. It combines actions similar to 'Raw Black Points > Dehaze' by allowing for the precise positioning of the Black point (BP linear) – thus increasing apparent contrast and, in most cases, resolving the problem of hazy images. For the White point (WP linear), can be considered a better use of Raw White Points,  its action is close but not the same as 'Gamut compression', bringing out-of-gamut data (from the working profile) into that profile. GHS settings allow for the recovery of a usable image, either immediately, depending on the values ​​of these parameters (BP linear) and (WP linear) and the illuminant. Its position immediately after demosaicing is crucial.
+- A fundamental question is whether GHS is a tone-mapper, and why I placed it at the beginning of the process. This deserves discussion.
+  I think we can call it a pre-tone mapper. It combines actions similar to 'Raw Black Points > Dehaze' by allowing for the precise
+  positioning of the Black point (BP linear) – thus increasing apparent contrast and, in most cases, resolving the problem of hazy images.
+  For the White point (WP linear), can be considered a better use of Raw White Points,  its action is close but not the same as 'Gamut compression',
+  bringing out-of-gamut data (from the working profile) into that profile. GHS settings allow for the recovery of a usable image, either immediately,
+  depending on the values ​​of these parameters (BP linear) and (WP linear) and the illuminant. Its position immediately after demosaicing is crucial.
+- Generally speaking, without addressing issues related to raw processing (demosaicing, Capture Sharpening, etc.), 
+  nor those related to geometry or crops or denoise, I recommend the following steps (indicative) for an efficient workflow:
 
-- Set system to Neutral.
+- Set profile to Neutral.
 - Enable Highlight reconstruction > Color Propagation, in order to optimize the White point (WP linear) settings (see below) in GHS. 
   Check the impact of this choice on the (WP linear) setting (see below), disable if there is no impact, to save resources.
-- Activate GHS using the 'Auto Black Point & White point', and Automatic Symmetry Point (SP) settings, adjust the automatic settings as needed, especially for (WP linear) and (SP). Find a balanced image by adjusting Stretch Factor (D) and Local Intensity (b). You can also use the other available settings: Protect Shadows (LP), Protect Highlights (HP), Stretch Regularization & Midtones, and Highlight Attenuation. The goal is to obtain an acceptable image for subsequent enhancement; of course, it can be excellent after GHS processing. The general objectives are: a) data optimization to fit within the interval [0-1] - with no data out of gamut, the most important; b) a histogram without major defects; c) a balance of luminance, contrast, and color (gamut, colorimetry, etc.).
+- Activate GHS using the 'Auto Black Point & White point', and Automatic Symmetry Point (SP) settings, adjust the automatic settings as needed,
+  especially for (WP linear) and (SP). Find a balanced image by adjusting Stretch Factor (D) and Local Intensity (b). You can also use the other
+  available settings: Protect Shadows (LP), Protect Highlights (HP), Stretch Regularization & Midtones, and Highlight Attenuation. The goal is to
+  obtain an acceptable image for subsequent enhancement; of course, it can be excellent after GHS processing. The general objectives are:
+  a) data optimization to fit within the interval [0-1] - with no data out of gamut, the most important; b) a histogram without major defects;
+  c) a balance of luminance, contrast, and color (gamut, colorimetry, etc.).
 - Then use Abstract Profile, specifically: a) Gamma/Slope to adjust tones; b) Contrast Enhancement to adjust local contrast; 
-  c) Primaries & Illuminant if necessary to correct colors (purity, saturation, dominant color), in particular if the illuminants are very far from the 'Daylight' or 'BlackBody' references, for example LED or Halogen. Of course, you can also use Selective Editing > Color Appearance (CAM16) and Selective Editing > Local contrast & Wavelets > Wavelets, especially if the modifications only concern a part of the image, or a second GHS Spot, in 'Normal Spot'
+  c) Primaries & Illuminant if necessary to correct colors (purity, saturation, dominant color), in particular if the illuminants are
+  very far from the 'Daylight' or 'BlackBody' references, for example LED or Halogen. Of course, you can also use Selective Editing >
+  Color Appearance (CAM16) and Selective Editing > Local contrast & Wavelets > Wavelets, especially if the modifications only concern
+  a part of the image, or a second GHS Spot, in 'Normal Spot'.
 - You can also use Color Appearance & Lighting (CIECAM) to take into account the physiological aspects of human vision and viewing conditions.
 
 ## General principles and settings
@@ -4414,7 +4465,7 @@ major differences:
   Light & Original Retinex, Blur/Grain & Denoise, Tone Mapping, Dehaze &
   Retinex, Sharpening, Local Contrast & Wavelets, Contrast by Detail
   Levels. There is also a Cam16 & JzCzHz Color Appearance module. See
-  [Tutoriel Color Appearance & Lighting (CIECAM02/16) et Color Appearance (Cam16 &  JzCzHz)](ciecam02#color_appearance_.26_lighting_.28ciecam02.2f16.29_et_color_appearance_.28cam16_.26_jzczhz.29_-_tutorial)
+  [Tutorial Color Appearance & Lighting (CIECAM02/16) et Color Appearance (Cam16 &  JzCzHz)](ciecam02#color_appearance_.26_lighting_.28ciecam02.2f16.29_et_color_appearance_.28cam16_.26_jzczhz.29_-_tutorial)
 - Each RT-spot creates an additional "layer" similar to the way layers
   are added in bit-map editors. Each new RT-spot is transparent and
   allows the user to see any previous modifications. The Excluding Spot
@@ -5784,7 +5835,7 @@ Tips:
   so it has has been included in Local Adjustments, albeit with some
   modifications to improve the behaviour.
 - Better alternatives include (there are others in the First Steps
-  section) :
+  section):
   - The Tone Equalizer in Shadows/Highlights & Tone Equalizer.
   - The Tone Response Curve (TRC) also in Shadows/Highlights & Tone
     Equalizer (Standard mode). You can use the Slope slider to linearly
@@ -5868,7 +5919,7 @@ cooler, it will increase the temperature of the viewing conditions. Note
 that you can obtain a similar result for the overall image by using the
 CIECAM02 module (Advanced tab) with the following settings:
 
-- Scene conditions : "WP model"==\> "Free temp + tint + Cat02/16 +
+- Scene conditions: "WP model"==\> "Free temp + tint + Cat02/16 +
   \[output\], Temperature = 5000K, Surround = Average, Adaptation = 100,
   Yb %=18, "Absolute luminance" = 400
 - No change to "Image adjustements"
@@ -6058,7 +6109,7 @@ Adjustments such as scope, transitions, multiple selections etc.
   towards a narrower range of contrast values.
 - The Offset slider moves the mean value towards either the shadows or
   the highlights.
-- Chroma levels : acts on the L\*a\*b\* "a" and "b" components as a
+- Chroma levels: acts on the L\*a\*b\* "a" and "b" components as a
   percentage of the luminance settings.
 
 With this slider you can adjust the apparent contrast by reinforcing or
@@ -6085,7 +6136,7 @@ operate on the edges. The action of the curve is based on the luminance.
 
 ###### Wavelet level tone mapping
 
-Example to enhance the texture : [Example in Getting started - with
+Example to enhance the texture: [Example in Getting started - with
 Wavelets Tone
 mapping](Local_Adjustments#Three_ways_of_increasing_texture.md)
 
@@ -6224,7 +6275,7 @@ with Retinex for better results.
 
 #### Retinex: Important differences with the main-menu module
 
-Example using it to increase texture :
+Example using it to increase texture:
 [Example in First steps - increasing texture with Retinex](local_adjustments#three_ways_of_increasing_texture)
 
 In Local adjustments, Retinex is similar to the main-menu
@@ -6788,7 +6839,7 @@ In “All tools” (Advanced mode)
   reference. Adapts the colors to the lighting of the output device.
 - Surround: modifies tones and colors to take into account the
   conditions of the output environment.
-  - Average : average (standard) light environment.
+  - Average: average (standard) light environment.
   - Slightly Dark (Dim): dark environment. The image becomes slightly
     dark.
   - Very Dark: the image becomes darker
@@ -6803,7 +6854,7 @@ with a Graduated Filter equipped with 2 sliders: “Gradient strength” and
 ### Color appearance (Cam16 & JzCzHz)
 
 Example using Color Appearance and HDR functions:
-[HDR-SDR First approach : Log encoding – Cam16 – JzCzHz – Sigmoid](Local_Adjustments#HDR_to_SDR:_A_First_Approach_(Log_Encoding_-_CAM16_-_JzCzHz_-_Sigmoid) "wikilink")
+[HDR-SDR First approach: Log encoding – Cam16 – JzCzHz – Sigmoid](Local_Adjustments#HDR_to_SDR:_A_First_Approach_(Log_Encoding_-_CAM16_-_JzCzHz_-_Sigmoid) "wikilink")
 
 The Color appearance module (Cam16 & JzCzHz) is both:
 
@@ -6833,7 +6884,7 @@ Gradients, Excluding spots, etc.
 For an overview of Cam16:
 [Using_Cam16_and_HDR_features](local_adjustments#using_the_cam16_and_hdr_functions)
 
-For a presentation of JzCzHz :
+For a presentation of JzCzHz:
 [Experimental JzCzHz module](local_adjustments#an_experimental_jzczhz_module)
 
 To see the tutorial:
