@@ -12,6 +12,14 @@ defaultContentLanguage = 'en'
     weight = 1
     [languages.en.pagination]
       path = 'page'
+  [languages.fr]
+    languageCode = 'fr'
+    languageName = 'French'
+    timeZone = 'America/New_York'
+    title = 'RawPedia'
+    weight = 1
+    [languages.fr.pagination]
+      path = 'page'
 [markup]
   [markup.highlight]
     style =  'algol_nu'
