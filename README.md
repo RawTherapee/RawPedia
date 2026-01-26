@@ -11,7 +11,7 @@ To build RawPedia, you'll need the following software:
 
 ## Getting a local Hugo live preview
 
-1. Clone the repository: `git clone https://github.com/RawTherapee/RawPedia.git`
+1. Clone the repository: `git clone --recurse-submodules https://github.com/RawTherapee/RawPedia.git`
 2. Install the npm dependencies: `cd RawPedia/themes/hugo-bootstrap-bare/assets && pnpm install && cd ../../../`
 3. Run the hugo server: `hugo server --disableFastRender`
 4. Navigate to `http://localhost:1313` in a web browser.
