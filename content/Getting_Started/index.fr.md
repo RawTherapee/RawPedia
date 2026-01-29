@@ -1,5 +1,6 @@
 ---
-title: Getting Started fr
+title: Premier Pas
+translationKey: getting-started
 contributors:
   - Lebarhon
 ---

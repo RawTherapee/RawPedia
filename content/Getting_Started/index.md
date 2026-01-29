@@ -1,5 +1,6 @@
 ---
 title: Getting Started
+translationKey: getting-started
 contributors:
   - DrSlony
   - XavAL
