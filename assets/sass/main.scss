@@ -1,0 +1,45 @@
+/* ------------------------------------------------- */
+/* These are customizations for the RawPedia site.
+/* Check with someone before hacking.
+/* Usually patdavid or mica
+/* ------------------------------------------------- */
+
+/* Bootstrap sass variable hacking has to happen
+   before importing bootstrap itself
+  ----------------------------------------------
+*/
+
+/* Overriding default bootstrap dark theme color */
+/* Link/Colors should be checked against
+/* Web Content Accessibility Guidelines:
+/* https://webaim.org/resources/linkcontrastchecker/
+/* https://webaim.org/resources/contrastchecker/ */
+/* $theme-colors: (
+/*     "primary": #1A88FF,
+/*     "dark": #222222
+/* );
+
+
+/* This nest+loop adds a bigger margin for all
+/* headings when they follow p, code, ul, ol */
+/* ----------------------------------------- */
+@for $i from 1 through 6 {
+    p + h#{$i}, code + h#{$i},
+    ul + h#{$i}, ol + h#{$i},
+    blockquote + h#{$i}, div + h#{$i} {
+        margin-top: 2rem;
+    }
+}
+
+
+/* IMPORT BOOTSTRAP HERE */
+/* So set any bootstrap variables _before_ here */
+@import 'bootstrap';
+
+/* Our custom SASS imports */
+
+
+/* --------------------------------------- */
+/* Normal CSS customization goes down here */
+/* --------------------------------------- */
+img { max-width: 100%; }
