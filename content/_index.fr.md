@@ -1,5 +1,5 @@
 ---
-title: Main Page fr
+title: Main Page
 contributors:
   - Jdc
   - Lebarhon
