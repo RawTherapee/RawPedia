@@ -6,11 +6,6 @@ tags:
   - 'General Information'
 ---
 
-<div class="pagetitle">
-
-Profondeur de couleur
-
-</div>
 
 ## Introduction
 
