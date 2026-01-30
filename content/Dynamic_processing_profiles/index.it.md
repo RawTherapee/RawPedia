@@ -1,7 +1,9 @@
 ---
-title: Dynamic processing profiles it
+title: Dynamic processing profiles
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'Processing Profiles'
 ---
 
 A volte un singolo profilo di elaborazione predefinito "statico" non è

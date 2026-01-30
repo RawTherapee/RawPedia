@@ -1,7 +1,9 @@
 ---
-title: Creating processing profiles for general use it
+title: Creating processing profiles for general use
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'Processing Profiles'
 ---
 
 ## Creazione di profili di elaborazione

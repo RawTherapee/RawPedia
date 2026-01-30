@@ -3,6 +3,8 @@ title: Sidecar Files - Processing Profiles
 contributors:
   - DrSlony
   - Thanatomanic
+tags:
+  - 'Processing Profiles'
 ---
 
 ## Introduction

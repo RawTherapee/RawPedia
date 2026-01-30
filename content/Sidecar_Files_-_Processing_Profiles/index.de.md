@@ -1,7 +1,9 @@
 ---
-title: Sidecar Files - Processing Profiles de
+title: Sidecar Files - Processing Profiles
 contributors:
   - Fherb
+tags:
+  - 'Processing Profiles'
 ---
 
 Todo-List / State:

@@ -1,7 +1,9 @@
 ---
-title: Sidecar Files - Processing Profiles fr
+title: Sidecar Files - Processing Profiles
 contributors:
   - Lebarhon
+tags:
+  - 'Processing Profiles'
 ---
 
 <div class="pagetitle">

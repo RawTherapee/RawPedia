@@ -1,7 +1,9 @@
 ---
-title: Creating processing profiles for general use de
+title: Creating processing profiles for general use
 contributors:
   - Fherb
+tags:
+  - 'Processing Profiles'
 ---
 
 Todo-List / State:

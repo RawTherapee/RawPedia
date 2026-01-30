@@ -3,6 +3,8 @@ title: Dynamic processing profiles
 contributors:
   - Agriggio
   - DrSlony
+tags:
+  - 'Processing Profiles'
 ---
 
 <figure>

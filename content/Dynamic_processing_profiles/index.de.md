@@ -1,7 +1,9 @@
 ---
-title: Dynamic processing profiles de
+title: Dynamic processing profiles
 contributors:
   - Fherb
+tags:
+  - 'Processing Profiles'
 ---
 
 Todo-List / State:

@@ -1,7 +1,9 @@
 ---
-title: Sidecar Files - Processing Profiles it
+title: Sidecar Files - Processing Profiles
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'Processing Profiles'
 ---
 
 I profili di elaborazione([sidecar

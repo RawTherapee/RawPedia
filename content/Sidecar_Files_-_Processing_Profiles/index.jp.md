@@ -1,7 +1,9 @@
 ---
-title: Sidecar Files - Processing Profiles jp
+title: Sidecar Files - Processing Profiles
 contributors:
   - Yz2house
+tags:
+  - 'Processing Profiles'
 ---
 
 <div class="pagetitle">

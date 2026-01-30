@@ -1,7 +1,9 @@
 ---
-title: Dynamic processing profiles jp
+title: Dynamic processing profiles
 contributors:
   - Yz2house
+tags:
+  - 'Processing Profiles'
 ---
 
 <div class="pagetitle">

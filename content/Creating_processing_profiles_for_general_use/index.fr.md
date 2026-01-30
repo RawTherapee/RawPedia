@@ -1,7 +1,9 @@
 ---
-title: Creating processing profiles for general use fr
+title: Creating processing profiles for general use
 contributors:
   - Lebarhon
+tags:
+  - 'Processing Profiles'
 ---
 
 <div class="pagetitle">

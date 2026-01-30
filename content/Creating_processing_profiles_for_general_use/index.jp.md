@@ -1,7 +1,9 @@
 ---
-title: Creating processing profiles for general use jp
+title: Creating processing profiles for general use
 contributors:
   - Yz2house
+tags:
+  - 'Processing Profiles'
 ---
 
 <div class="pagetitle">

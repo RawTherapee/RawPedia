@@ -2,6 +2,8 @@
 title: Creating processing profiles for general use
 contributors:
   - DrSlony
+tags:
+  - 'Processing Profiles'
 ---
 
 In RawTherapee, we call the sidecar files 'processing profiles'. We
