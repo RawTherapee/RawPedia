@@ -1,7 +1,9 @@
 ---
-title: RTProfileSelector de
+title: RTProfileSelector
 contributors:
   - Fherb
+tags:
+  - 'Processing Profile Scripts'
 ---
 
 Todo-List / State:

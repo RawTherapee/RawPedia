@@ -1,7 +1,9 @@
 ---
-title: RTProfileSelector fr
+title: RTProfileSelector
 contributors:
   - Lebarhon
+tags:
+  - 'Processing Profile Scripts'
 ---
 
 <div class="pagetitle">

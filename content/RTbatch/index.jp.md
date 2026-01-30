@@ -1,7 +1,9 @@
 ---
-title: RTbatch jp
+title: RTbatch
 contributors:
   - Yz2house
+tags:
+  - 'Processing Profile Scripts'
 ---
 
 <div class="pagetitle">

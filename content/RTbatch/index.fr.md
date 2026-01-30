@@ -1,7 +1,9 @@
 ---
-title: RTbatch fr
+title: RTbatch
 contributors:
   - Lebarhon
+tags:
+  - 'Processing Profile Scripts'
 ---
 
 <div class="pagetitle">

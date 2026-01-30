@@ -1,7 +1,9 @@
 ---
-title: RTbatch it
+title: RTbatch
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'Processing Profile Scripts'
 ---
 
 RTbatch è uno script

@@ -1,7 +1,9 @@
 ---
-title: RTProfileSelector it
+title: RTProfileSelector
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'Processing Profile Scripts'
 ---
 
 **RTProfileSelector** è un plugin RawTherapee che seleziona

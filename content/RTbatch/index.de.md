@@ -1,7 +1,9 @@
 ---
-title: RTbatch de
+title: RTbatch
 contributors:
   - Fherb
+tags:
+  - 'Processing Profile Scripts'
 ---
 
 Todo-List / State:

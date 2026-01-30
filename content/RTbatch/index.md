@@ -2,6 +2,8 @@
 title: RTbatch
 contributors:
   - DrSlony
+tags:
+  - 'Processing Profile Scripts'
 ---
 
 RTbatch is a

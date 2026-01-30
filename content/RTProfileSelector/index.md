@@ -2,6 +2,8 @@
 title: RTProfileSelector
 contributors:
   - DrSlony
+tags:
+  - 'Processing Profile Scripts'
 ---
 
 The **RTProfileSelector** is a RawTherapee plugin that automatically
