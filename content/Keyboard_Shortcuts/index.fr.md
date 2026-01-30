@@ -1,7 +1,9 @@
 ---
-title: Keyboard Shortcuts fr
+title: Keyboard Shortcuts
 contributors:
   - Lebarhon
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

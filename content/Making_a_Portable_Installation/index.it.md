@@ -1,7 +1,9 @@
 ---
-title: Making a Portable Installation it
+title: Making a Portable Installation
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'General Information'
 ---
 
 RawTherapee e la propria cartella di cache possono essere memorizzati su

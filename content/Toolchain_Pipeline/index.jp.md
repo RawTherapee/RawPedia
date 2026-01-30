@@ -1,7 +1,9 @@
 ---
-title: Toolchain Pipeline jp
+title: Toolchain Pipeline
 contributors:
   - Yz2house
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

@@ -1,7 +1,9 @@
 ---
-title: The Floating Point Engine es
+title: The Floating Point Engine
 contributors:
   - XavAL
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

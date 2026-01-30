@@ -1,7 +1,9 @@
 ---
-title: Making a Portable Installation jp
+title: Making a Portable Installation
 contributors:
   - Yz2house
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

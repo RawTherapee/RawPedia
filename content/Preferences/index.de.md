@@ -1,7 +1,9 @@
 ---
-title: Preferences de
+title: Preferences
 contributors:
   - Fherb
+tags:
+  - 'General Information'
 ---
 
 Todo-List / State:

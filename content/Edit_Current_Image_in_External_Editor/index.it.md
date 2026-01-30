@@ -1,7 +1,9 @@
 ---
-title: Edit Current Image in External Editor it
+title: Edit Current Image in External Editor
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'General Information'
 ---
 
 La funzione "*Modifica immagine corrente in editor esterno*" consente di

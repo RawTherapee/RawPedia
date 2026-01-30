@@ -1,7 +1,9 @@
 ---
-title: File Paths fr
+title: File Paths
 contributors:
   - Lebarhon
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

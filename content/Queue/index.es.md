@@ -1,7 +1,9 @@
 ---
-title: Queue es
+title: Queue
 contributors:
   - XavAL
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

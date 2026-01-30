@@ -2,6 +2,8 @@
 title: Batch Adjustments - Sync jp
 contributors:
   - Yz2house
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

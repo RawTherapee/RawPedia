@@ -1,7 +1,9 @@
 ---
-title: The File Browser Tab it
+title: The File Browser Tab
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'General Information'
 ---
 
 ![](Rt_setm_fb.png "Rt_setm_fb.png") Il Navigatore è la scheda in cui

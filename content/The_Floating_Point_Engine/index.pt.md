@@ -1,8 +1,10 @@
 ---
-title: The Floating Point Engine pt
+title: The Floating Point Engine
 contributors:
   - DigitalPix
   - DrSlony
+tags:
+  - 'General Information'
 ---
 
 O RawTherapee 4 faz todos os cálculos em notação precisa de 32 bits de

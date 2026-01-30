@@ -1,7 +1,9 @@
 ---
-title: Saving Images fr
+title: Saving Images
 contributors:
   - Lebarhon
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

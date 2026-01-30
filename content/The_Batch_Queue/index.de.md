@@ -1,7 +1,9 @@
 ---
-title: The Batch Queue de
+title: The Batch Queue
 contributors:
   - Fherb
+tags:
+  - 'General Information'
 ---
 
 Todo-List / State:

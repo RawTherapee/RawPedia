@@ -1,7 +1,10 @@
 ---
-title: Features jp
+title: Features
 contributors:
   - Yz2house
+tags:
+  - 'General Information'
+weight: 2
 ---
 
 <div class="pagetitle">

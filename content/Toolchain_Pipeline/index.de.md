@@ -1,7 +1,9 @@
 ---
-title: Toolchain Pipeline de
+title: Toolchain Pipeline
 contributors:
   - Fherb
+tags:
+  - 'General Information'
 ---
 
 Todo-List / State:

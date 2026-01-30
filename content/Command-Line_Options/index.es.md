@@ -2,6 +2,8 @@
 title: Command-Line Options es
 contributors:
   - XavAL
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

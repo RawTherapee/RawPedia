@@ -1,7 +1,9 @@
 ---
-title: RGB and Lab fr
+title: RGB and Lab
 contributors:
   - Lebarhon
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

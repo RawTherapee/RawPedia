@@ -1,7 +1,9 @@
 ---
-title: Saving Images es
+title: Saving Images
 contributors:
   - XavAL
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

@@ -1,7 +1,8 @@
 ---
-title: Getting Started es
+title: Getting Started
 contributors:
   - XavAL
+weight: 1
 ---
 
 <div class="pagetitle">

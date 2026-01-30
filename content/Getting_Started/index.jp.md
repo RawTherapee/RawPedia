@@ -1,7 +1,8 @@
 ---
-title: Getting Started jp
+title: Getting Started
 contributors:
   - Yz2house
+weight: 1
 ---
 
 <div class="pagetitle">

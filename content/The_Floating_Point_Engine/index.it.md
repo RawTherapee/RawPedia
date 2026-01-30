@@ -1,7 +1,9 @@
 ---
-title: The Floating Point Engine it
+title: The Floating Point Engine
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'General Information'
 ---
 
 RawTherapee 4 effettua tutti i calcoli in notazione a 32 bit [virgola

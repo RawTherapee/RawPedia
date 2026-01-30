@@ -1,7 +1,9 @@
 ---
-title: RGB and Lab es
+title: RGB and Lab
 contributors:
   - XavAL
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

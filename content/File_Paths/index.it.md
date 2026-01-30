@@ -1,7 +1,9 @@
 ---
-title: File Paths it
+title: File Paths
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'General Information'
 ---
 
 RawTherapee utilizza una cartella "cache" per archiviare i file

@@ -1,7 +1,10 @@
 ---
-title: Features fr
+title: Features
 contributors:
   - Lebarhon
+tags:
+  - 'General Information'
+weight: 2
 ---
 
 <div class="pagetitle">

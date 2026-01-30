@@ -1,7 +1,9 @@
 ---
-title: Keyboard Shortcuts jp
+title: Keyboard Shortcuts
 contributors:
   - Yz2house
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

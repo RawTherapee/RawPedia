@@ -1,8 +1,10 @@
 ---
-title: Adding Support for New Raw Formats fr
+title: Adding Support for New Raw Formats
 contributors:
   - Lebarhon
   - DrSlony
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

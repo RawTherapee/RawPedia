@@ -1,7 +1,9 @@
 ---
-title: Preferences jp
+title: Preferences
 contributors:
   - Yz2house
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

@@ -1,8 +1,10 @@
 ---
-title: Toolchain Pipeline fr
+title: Toolchain Pipeline
 contributors:
   - Lebarhon
   - Jdc
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

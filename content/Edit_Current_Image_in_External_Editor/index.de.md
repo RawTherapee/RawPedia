@@ -1,7 +1,9 @@
 ---
-title: Edit Current Image in External Editor de
+title: Edit Current Image in External Editor
 contributors:
   - Fherb
+tags:
+  - 'General Information'
 ---
 
 Todo-List / State:

@@ -1,7 +1,9 @@
 ---
-title: Command-Line Options it
+title: Command-Line Options
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'General Information'
 ---
 
 ## Spiegazione

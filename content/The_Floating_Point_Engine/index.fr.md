@@ -1,7 +1,9 @@
 ---
-title: The Floating Point Engine fr
+title: The Floating Point Engine
 contributors:
   - Lebarhon
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

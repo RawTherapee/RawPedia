@@ -1,7 +1,9 @@
 ---
-title: File Paths de
+title: File Paths
 contributors:
   - Fherb
+tags:
+  - 'General Information'
 ---
 
 Todo-List / State:

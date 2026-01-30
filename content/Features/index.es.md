@@ -1,7 +1,10 @@
 ---
-title: Features es
+title: Features
 contributors:
   - XavAL
+tags:
+  - 'General Information'
+weight: 2
 ---
 
 <div class="pagetitle">

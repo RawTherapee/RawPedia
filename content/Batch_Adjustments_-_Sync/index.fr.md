@@ -2,6 +2,8 @@
 title: Batch Adjustments - Sync fr
 contributors:
   - Lebarhon
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

@@ -1,7 +1,9 @@
 ---
-title: File Paths jp
+title: File Paths
 contributors:
   - Yz2house
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

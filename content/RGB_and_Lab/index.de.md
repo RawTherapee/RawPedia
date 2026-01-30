@@ -1,7 +1,9 @@
 ---
-title: RGB and Lab de
+title: RGB and Lab
 contributors:
   - Fherb
+tags:
+  - 'General Information'
 ---
 
 Todo-List / State:

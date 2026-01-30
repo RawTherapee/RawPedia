@@ -1,7 +1,9 @@
 ---
-title: The Batch Queue it
+title: The Batch Queue
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'General Information'
 ---
 
 Apri una foto per modificarla, modificala, e clicca su *Salva l'immagine

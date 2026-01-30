@@ -1,7 +1,9 @@
 ---
-title: The Floating Point Engine de
+title: The Floating Point Engine
 contributors:
   - Fherb
+tags:
+  - 'General Information'
 ---
 
 Todo-List / State:

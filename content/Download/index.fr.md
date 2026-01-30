@@ -1,7 +1,10 @@
 ---
-title: Download fr
+title: Download
 contributors:
   - Lebarhon
+tags:
+  - 'General Information'
+weight: 3
 ---
 
 <div class="pagetitle">

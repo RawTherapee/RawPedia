@@ -2,6 +2,8 @@
 title: About Noise Reduction jp
 contributors:
   - Yz2house
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

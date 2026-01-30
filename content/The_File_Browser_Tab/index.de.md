@@ -1,7 +1,9 @@
 ---
-title: The File Browser Tab de
+title: The File Browser Tab
 contributors:
   - Fherb
+tags:
+  - 'General Information'
 ---
 
 Todo-List / State:

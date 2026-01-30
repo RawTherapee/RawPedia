@@ -1,7 +1,9 @@
 ---
-title: The File Browser Tab fr
+title: The File Browser Tab
 contributors:
   - Lebarhon
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

@@ -1,7 +1,9 @@
 ---
-title: GIMP Plugin it
+title: GIMP Plugin
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'General Information'
 ---
 
 In questo articolo viene descritto come sia possibile aprire in GIMP le

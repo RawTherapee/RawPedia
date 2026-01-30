@@ -1,7 +1,9 @@
 ---
-title: GIMP Plugin pt
+title: GIMP Plugin
 contributors:
   - DigitalPix
+tags:
+  - 'General Information'
 ---
 
 Podes abrir imagens raw no GIMP usando o RawTherapee como um plugin.

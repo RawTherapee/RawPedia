@@ -1,9 +1,11 @@
 ---
-title: ICC Profile Creator fr
+title: ICC Profile Creator
 contributors:
   - Jdc
   - Lebarhon
   - DrSlony
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

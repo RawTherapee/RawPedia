@@ -1,8 +1,11 @@
 ---
-title: Features pt
+title: Features
 contributors:
   - DigitalPix
   - DrSlony
+tags:
+  - 'General Information'
+weight: 2
 ---
 
 ## Funcionalidades Gerais

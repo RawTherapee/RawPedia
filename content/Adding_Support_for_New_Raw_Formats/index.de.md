@@ -2,6 +2,8 @@
 title: Adding Support for New Raw Formats de
 contributors:
   - Fherb
+tags:
+  - 'General Information'
 ---
 
 Created for referencing.

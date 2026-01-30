@@ -1,7 +1,10 @@
 ---
-title: Download jp
+title: Download
 contributors:
   - Yz2house
+tags:
+  - 'General Information'
+weight: 3
 ---
 
 <div class="pagetitle">

@@ -2,6 +2,8 @@
 title: Adding Support for New Raw Formats it
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'General Information'
 ---
 
 Aggiungere il un supporto per un nuovo formato raw in RawTherapee è

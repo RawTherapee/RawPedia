@@ -1,7 +1,10 @@
 ---
-title: Download es
+title: Download
 contributors:
   - XavAL
+tags:
+  - 'General Information'
+weight: 3
 ---
 
 <div class="pagetitle">

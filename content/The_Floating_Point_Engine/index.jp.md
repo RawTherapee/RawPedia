@@ -1,7 +1,9 @@
 ---
-title: The Floating Point Engine jp
+title: The Floating Point Engine
 contributors:
   - Yz2house
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

@@ -1,7 +1,9 @@
 ---
-title: Preferences it
+title: Preferences
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'General Information'
 ---
 
 Puoi accedere alla finestra delle Preferenze cliccando sul bottone

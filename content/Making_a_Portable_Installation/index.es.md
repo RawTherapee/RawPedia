@@ -1,7 +1,9 @@
 ---
-title: Making a Portable Installation es
+title: Making a Portable Installation
 contributors:
   - XavAL
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

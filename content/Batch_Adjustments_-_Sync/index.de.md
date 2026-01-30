@@ -2,6 +2,8 @@
 title: Batch Adjustments - Sync de
 contributors:
   - Fherb
+tags:
+  - 'General Information'
 ---
 
 Todo-List / State:

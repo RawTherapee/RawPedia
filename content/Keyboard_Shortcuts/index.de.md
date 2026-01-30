@@ -1,7 +1,9 @@
 ---
-title: Keyboard Shortcuts de
+title: Keyboard Shortcuts
 contributors:
   - Fherb
+tags:
+  - 'General Information'
 ---
 
 Todo-List / State:

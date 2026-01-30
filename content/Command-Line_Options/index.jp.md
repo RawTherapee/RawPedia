@@ -1,7 +1,9 @@
 ---
-title: Command-Line Options jp
+title: Command-Line Options
 contributors:
   - Yz2house
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

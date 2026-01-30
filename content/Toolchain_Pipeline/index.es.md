@@ -1,7 +1,9 @@
 ---
-title: Toolchain Pipeline es
+title: Toolchain Pipeline
 contributors:
   - XavAL
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

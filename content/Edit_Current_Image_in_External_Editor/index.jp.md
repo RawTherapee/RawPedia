@@ -1,7 +1,9 @@
 ---
-title: Edit Current Image in External Editor jp
+title: Edit Current Image in External Editor
 contributors:
   - Yz2house
+tags:
+  - 'General Information'
 ---
 
 　この機能は、RawTherapeeで編集した画像を直ぐに外部のアプリケーションで開くためのものです。更なる画像処理や閲覧のために、編集した画像をGIMPやPhotoshop©の様な外部エディター、或いは画像ビューワーに簡単に送ることが出来ます。

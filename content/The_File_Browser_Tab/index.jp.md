@@ -1,7 +1,9 @@
 ---
-title: The File Browser Tab jp
+title: The File Browser Tab
 contributors:
   - Yz2house
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

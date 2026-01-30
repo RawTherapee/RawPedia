@@ -1,7 +1,9 @@
 ---
-title: Making a Portable Installation fr
+title: Making a Portable Installation
 contributors:
   - Lebarhon
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

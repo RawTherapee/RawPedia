@@ -1,7 +1,10 @@
 ---
-title: Features de
+title: Features
 contributors:
   - Fherb
+tags:
+  - 'General Information'
+weight: 2
 ---
 
 Todo-List / State:

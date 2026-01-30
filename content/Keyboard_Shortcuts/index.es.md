@@ -1,7 +1,9 @@
 ---
-title: Keyboard Shortcuts es
+title: Keyboard Shortcuts
 contributors:
   - XavAL
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

@@ -1,7 +1,9 @@
 ---
-title: RGB and Lab it
+title: RGB and Lab
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'General Information'
 ---
 
 ![](RGB_Cube_Show_lowgamma_cutout_b.png "RGB_Cube_Show_lowgamma_cutout_b.png")

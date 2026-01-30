@@ -1,7 +1,9 @@
 ---
-title: Making a Portable Installation de
+title: Making a Portable Installation
 contributors:
   - Fherb
+tags:
+  - 'General Information'
 ---
 
 Todo-List / State:

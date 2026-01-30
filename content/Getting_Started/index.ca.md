@@ -1,7 +1,8 @@
 ---
-title: Getting Started ca
+title: Getting Started
 contributors:
   - Leixet
+weight: 1
 ---
 
 ## Benvingut

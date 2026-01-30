@@ -1,7 +1,9 @@
 ---
-title: The Batch Queue jp
+title: The Batch Queue
 contributors:
   - Yz2house
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

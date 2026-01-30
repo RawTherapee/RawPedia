@@ -1,7 +1,9 @@
 ---
-title: Editor es
+title: Editor
 contributors:
   - XavAL
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

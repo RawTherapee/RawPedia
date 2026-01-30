@@ -16,7 +16,7 @@ contributors:
 <figure>
 <img src="/images/08_rt57_mushroom_blades_rawpedia.png"
 title="08_rt57_mushroom_blades_rawpedia.png" width="600" />
-<figcaption>08_rt57_mushroom_blades_rawpedia.png</figcaption>
+<!-- <figcaption>08_rt57_mushroom_blades_rawpedia.png</figcaption> -->
 </figure>
 
 Welcome to **RawTherapee's** documentation!

@@ -1,7 +1,9 @@
 ---
-title: Edit Current Image in External Editor fr
+title: Edit Current Image in External Editor
 contributors:
   - Lebarhon
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

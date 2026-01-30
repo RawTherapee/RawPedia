@@ -1,7 +1,9 @@
 ---
-title: GIMP Plugin jp
+title: GIMP Plugin
 contributors:
   - Yz2house
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

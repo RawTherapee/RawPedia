@@ -2,6 +2,8 @@
 title: Adding Support for New Raw Formats es
 contributors:
   - XavAL
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

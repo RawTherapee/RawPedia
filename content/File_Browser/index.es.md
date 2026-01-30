@@ -1,7 +1,9 @@
 ---
-title: File Browser es
+title: File Browser
 contributors:
   - XavAL
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

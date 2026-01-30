@@ -1,8 +1,10 @@
 ---
-title: Preferences fr
+title: Preferences
 contributors:
   - Lebarhon
   - Hombre
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

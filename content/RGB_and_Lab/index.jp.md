@@ -1,7 +1,9 @@
 ---
-title: RGB and Lab jp
+title: RGB and Lab
 contributors:
   - Yz2house
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

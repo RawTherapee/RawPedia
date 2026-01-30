@@ -1,7 +1,9 @@
 ---
-title: Edit Current Image in External Editor es
+title: Edit Current Image in External Editor
 contributors:
   - XavAL
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

@@ -1,7 +1,9 @@
 ---
-title: The Batch Queue fr
+title: The Batch Queue
 contributors:
   - Lebarhon
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

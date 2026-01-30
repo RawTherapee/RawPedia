@@ -1,7 +1,9 @@
 ---
-title: Keyboard Shortcuts it
+title: Keyboard Shortcuts
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'General Information'
 ---
 
 ![](KB_United_States-NoAltGr.svg "KB_United_States-NoAltGr.svg") Si noti

@@ -2,6 +2,8 @@
 title: Batch Adjustments - Sync it
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'General Information'
 ---
 
 RawTherapee consente di aggiustare o sincronizzare le impostazioni di

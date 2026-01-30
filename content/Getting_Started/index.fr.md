@@ -3,6 +3,7 @@ title: Premier Pas
 translationKey: getting-started
 contributors:
   - Lebarhon
+weight: 1
 ---
 
 <div class="pagetitle">

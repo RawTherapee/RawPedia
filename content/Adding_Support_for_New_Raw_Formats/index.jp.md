@@ -2,6 +2,8 @@
 title: Adding Support for New Raw Formats jp
 contributors:
   - Yz2house
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

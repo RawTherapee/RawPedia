@@ -2,6 +2,8 @@
 title: Bit Depth es
 contributors:
   - XavAL
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

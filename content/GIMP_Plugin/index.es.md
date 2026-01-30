@@ -1,7 +1,9 @@
 ---
-title: GIMP Plugin es
+title: GIMP Plugin
 contributors:
   - XavAL
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

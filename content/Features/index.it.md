@@ -1,7 +1,10 @@
 ---
-title: Features it
+title: Features
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'General Information'
+weight: 2
 ---
 
 ## Caratteristiche generali

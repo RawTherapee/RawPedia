@@ -1,9 +1,10 @@
 ---
-title: Getting Started de
+title: Getting Started
 contributors:
   - Fherb
   - McCap
   - Pxlcore
+weight: 1
 ---
 
 Todo-List / State:

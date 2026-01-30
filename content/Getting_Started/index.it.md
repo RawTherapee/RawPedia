@@ -1,7 +1,8 @@
 ---
-title: Getting Started it
+title: Getting Started
 contributors:
   - Andrea.romagnoli
+weight: 1
 ---
 
 ## Benvenuto

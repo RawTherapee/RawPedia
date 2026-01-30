@@ -1,8 +1,10 @@
 ---
-title: ICC Profile Creator es
+title: ICC Profile Creator
 contributors:
   - XavAL
   - DrSlony
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

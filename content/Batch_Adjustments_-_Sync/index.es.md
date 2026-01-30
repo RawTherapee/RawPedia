@@ -2,6 +2,8 @@
 title: Batch Adjustments - Sync es
 contributors:
   - XavAL
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

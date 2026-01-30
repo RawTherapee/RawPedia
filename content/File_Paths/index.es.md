@@ -1,7 +1,9 @@
 ---
-title: File Paths es
+title: File Paths
 contributors:
   - XavAL
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

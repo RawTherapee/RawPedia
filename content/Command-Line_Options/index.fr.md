@@ -3,6 +3,8 @@ title: Command-Line Options fr
 contributors:
   - Lebarhon
   - Hombre
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">
