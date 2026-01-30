@@ -3,6 +3,8 @@ title: Queue
 contributors:
   - DrSlony
   - Thanatomanic
+tags:
+  - 'General Information'
 ---
 
 ## Introduction

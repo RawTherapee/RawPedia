@@ -3,6 +3,8 @@ title: Edit Current Image in External Editor
 contributors:
   - DrSlony
   - Fherb
+tags:
+  - 'General Information'
 ---
 
 The "*Edit current image in external editor*" feature allows you to have

@@ -3,6 +3,8 @@ title: Making a Portable Installation
 contributors:
   - DrSlony
   - Hombre
+tags:
+  - 'General Information'
 ---
 
 RawTherapee and the cache folder can be stored "self-contained" on a USB

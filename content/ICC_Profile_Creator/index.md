@@ -3,6 +3,8 @@ title: ICC Profile Creator
 contributors:
   - DrSlony
   - Jdc
+tags:
+  - 'General Information'
 ---
 
 ## Introduction

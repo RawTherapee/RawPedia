@@ -3,6 +3,8 @@ title: File Browser
 contributors:
   - DrSlony
   - XavAL
+tags:
+  - 'General Information'
 ---
 
 __TOC__

@@ -2,6 +2,8 @@
 title: RGB and Lab
 contributors:
   - DrSlony
+tags:
+  - 'General Information'
 ---
 
 ![](/images/RGB_Cube_Show_lowgamma_cutout_b.png "RGB_Cube_Show_lowgamma_cutout_b.png")

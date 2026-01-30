@@ -4,6 +4,8 @@ contributors:
   - DrSlony
   - XavAL
   - Thanatomanic
+tags:
+  - 'General Information'
 ---
 
 ![](KB_United_States-NoAltGr.svg "KB_United_States-NoAltGr.svg") Note

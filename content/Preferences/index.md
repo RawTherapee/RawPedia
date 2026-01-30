@@ -5,6 +5,8 @@ contributors:
   - Hombre
   - Agriggio
   - Benitoite
+tags:
+  - 'General Information'
 ---
 
 You can access the Preferences window by clicking on the Preferences

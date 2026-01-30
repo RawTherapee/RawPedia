@@ -1,12 +1,24 @@
 {{ define "main" }}
   <!-- <h1>{{ .Title }}</h1> -->
   {{ .Content }}
+
+
+  <h2>General Information</h2>
+  <ul>
+    {{ range where .Site.RegularPages "Params.tags" "intersect" (slice "General Information") }}
+      <li>
+        <a href="{{.RelPermalink}}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+
+  <h4>All Pages</h4>
   <ul>
   {{ range .Pages }}
     <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
     <!-- {{ .Summary }} -->
-    {{ end }}
-    </ul>
+  {{ end }}
+  </ul>
 
 
     <hr/>

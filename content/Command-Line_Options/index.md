@@ -3,6 +3,8 @@ title: Command-Line Options
 contributors:
   - DrSlony
   - Hombre
+tags:
+  - 'General Information'
 ---
 
 ## Explanation

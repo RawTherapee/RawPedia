@@ -2,6 +2,8 @@
 title: Batch Adjustments - Sync
 contributors:
   - DrSlony
+tags:
+  - 'General Information'
 ---
 
 RawTherapee lets you batch-adjust, or sync, the processing settings in

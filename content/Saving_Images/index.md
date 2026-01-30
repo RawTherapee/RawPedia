@@ -2,6 +2,8 @@
 title: Saving Images
 contributors:
   - DrSlony
+tags:
+  - 'General Information'
 ---
 
 Your original raw file will never be altered by RawTherapee.

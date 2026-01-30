@@ -2,6 +2,9 @@
 title: Features
 contributors:
   - DrSlony
+tags:
+  - 'General Information'
+weight: 2
 ---
 
 - Open-source, cross-platform.

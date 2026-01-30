@@ -7,6 +7,8 @@ contributors:
   - XavAL
   - Thanatomanic
   - Benitoite
+tags:
+  - 'General Information'
 ---
 
 <figure>

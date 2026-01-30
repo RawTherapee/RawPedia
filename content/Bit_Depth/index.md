@@ -2,6 +2,8 @@
 title: Bit Depth
 contributors:
   - DrSlony
+tags:
+  - 'General Information'
 ---
 
 ## Introduction

@@ -2,6 +2,8 @@
 title: Adding Support for New Raw Formats
 contributors:
   - DrSlony
+tags:
+  - 'General Information'
 ---
 
 ## Introduction

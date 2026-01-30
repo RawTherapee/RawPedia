@@ -3,6 +3,8 @@ title: File Paths
 contributors:
   - DrSlony
   - Benitoite
+tags:
+  - 'General Information'
 ---
 
 RawTherapee makes use of a "cache" folder to store temporary files which

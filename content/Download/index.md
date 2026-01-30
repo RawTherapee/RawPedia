@@ -4,6 +4,9 @@ contributors:
   - DrSlony
   - XavAL
   - Thanatomanic
+tags:
+  - 'General Information'
+weight: 3
 ---
 
 ## Stable Releases

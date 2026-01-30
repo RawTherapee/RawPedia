@@ -3,6 +3,8 @@ title: About Noise Reduction
 contributors:
   - Jdc
   - DrSlony
+tags:
+  - 'General Information'
 ---
 
 # Comparison of the RawTherapee noise reduction tools
