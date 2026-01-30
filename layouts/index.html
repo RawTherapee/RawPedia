@@ -3,14 +3,16 @@
   {{ .Content }}
 
 
-  <h2>General Information</h2>
+  {{ $category := "General Information" }}
+  <a href='#{{ $category | urlize }}'><h2 id='{{ $category | urlize }}'>{{ $category }}</h2></a>
   <ul>
-    {{ range where .Site.RegularPages "Params.tags" "intersect" (slice "General Information") }}
+    {{ range where .Site.RegularPages "Params.tags" "intersect" (slice $category) }}
       <li>
         <a href="{{.RelPermalink}}">{{ .Title }}</a>
       </li>
     {{ end }}
   </ul>
+
 
   <h4>All Pages</h4>
   <ul>
