@@ -4,7 +4,9 @@
 
 
   {{ $category := "General Information" }}
-  <a href='#{{ $category | urlize }}'><h2 id='{{ $category | urlize }}'>{{ $category }}</h2></a>
+  <a href='#{{ $category | urlize }}'>
+    <h2 id='{{ $category | urlize }}'>{{ or (T $category) $category }}</h2>
+  </a>
   <ul>
     {{ range where .Site.RegularPages "Params.tags" "intersect" (slice $category) }}
       <li>
