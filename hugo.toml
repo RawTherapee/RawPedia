@@ -3,6 +3,7 @@ languageCode = 'en-us'
 title = 'RawPedia'
 theme = ['hugo-bootstrap-bare']
 defaultContentLanguage = 'en'
+
 [languages]
   [languages.en]
     languageCode = 'en-US'
@@ -14,12 +15,21 @@ defaultContentLanguage = 'en'
       path = 'page'
   [languages.fr]
     languageCode = 'fr'
-    languageName = 'French'
+    languageName = 'Français'
     timeZone = 'America/New_York'
     title = 'RawPedia'
     weight = 1
     [languages.fr.pagination]
       path = 'page'
+  [languages.de]
+    languageCode = 'de'
+    languageName = 'Deutsch'
+    timeZone = 'America/New_York'
+    title = 'RawPedia'
+    weight = 1
+    [languages.de.pagination]
+      path = 'page'
+
 [markup]
   [markup.highlight]
     style =  'algol_nu'
