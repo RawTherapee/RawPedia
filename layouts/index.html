@@ -47,7 +47,7 @@
 
   <h4>All Pages</h4>
   <ul>
-  {{ range .Pages }}
+  {{ range .Pages.ByTitle }}
     <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
     <!-- {{ .Summary }} -->
   {{ end }}
