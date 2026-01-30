@@ -2,6 +2,8 @@
 title: Getting Started
 contributors:
   - XavAL
+tags:
+  - 'General Information'
 weight: 1
 ---
 

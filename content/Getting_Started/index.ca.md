@@ -2,6 +2,8 @@
 title: Getting Started
 contributors:
   - Leixet
+tags:
+  - 'General Information'
 weight: 1
 ---
 

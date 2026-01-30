@@ -2,6 +2,8 @@
 title: Getting Started
 contributors:
   - Yz2house
+tags:
+  - 'General Information'
 weight: 1
 ---
 

@@ -4,6 +4,8 @@ contributors:
   - Fherb
   - McCap
   - Pxlcore
+tags:
+  - 'General Information'
 weight: 1
 ---
 

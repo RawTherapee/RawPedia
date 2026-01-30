@@ -2,6 +2,8 @@
 title: Getting Started
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'General Information'
 weight: 1
 ---
 
