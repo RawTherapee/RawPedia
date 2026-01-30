@@ -1,5 +1,5 @@
 ---
-title: Adding Support for New Raw Formats jp
+title: Adding Support for New Raw Formats
 contributors:
   - Yz2house
 tags:

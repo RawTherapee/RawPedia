@@ -1,5 +1,5 @@
 ---
-title: Batch Adjustments - Sync fr
+title: Batch Adjustments - Sync
 contributors:
   - Lebarhon
 tags:

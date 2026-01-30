@@ -1,5 +1,5 @@
 ---
-title: Command-Line Options de
+title: Command-Line Options
 contributors:
   - Fherb
 tags:

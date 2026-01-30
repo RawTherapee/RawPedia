@@ -1,5 +1,5 @@
 ---
-title: Adding Support for New Raw Formats de
+title: Adding Support for New Raw Formats
 contributors:
   - Fherb
 tags:

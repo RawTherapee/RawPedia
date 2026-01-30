@@ -1,5 +1,5 @@
 ---
-title: Batch Adjustments - Sync it
+title: Batch Adjustments - Sync
 contributors:
   - Andrea.romagnoli
 tags:

@@ -1,5 +1,5 @@
 ---
-title: Bit Depth jp
+title: Bit Depth
 contributors:
   - Yz2house
 tags:

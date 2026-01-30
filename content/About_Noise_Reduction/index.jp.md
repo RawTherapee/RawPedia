@@ -1,5 +1,5 @@
 ---
-title: About Noise Reduction jp
+title: About Noise Reduction
 contributors:
   - Yz2house
 tags:

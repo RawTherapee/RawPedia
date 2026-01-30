@@ -1,5 +1,5 @@
 ---
-title: Adding Support for New Raw Formats es
+title: Adding Support for New Raw Formats
 contributors:
   - XavAL
 tags:

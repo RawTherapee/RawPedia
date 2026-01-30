@@ -1,5 +1,5 @@
 ---
-title: Command-Line Options fr
+title: Command-Line Options
 contributors:
   - Lebarhon
   - Hombre

@@ -1,7 +1,9 @@
 ---
-title: Bit depth fr
+title: Profondeur de couleur
 contributors:
   - Lebarhon
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">

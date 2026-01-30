@@ -1,5 +1,5 @@
 ---
-title: Batch Adjustments - Sync jp
+title: Batch Adjustments - Sync
 contributors:
   - Yz2house
 tags:

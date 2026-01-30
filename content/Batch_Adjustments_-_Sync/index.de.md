@@ -1,5 +1,5 @@
 ---
-title: Batch Adjustments - Sync de
+title: Batch Adjustments - Sync
 contributors:
   - Fherb
 tags:

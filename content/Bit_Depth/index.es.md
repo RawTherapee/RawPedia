@@ -1,5 +1,5 @@
 ---
-title: Bit Depth es
+title: Bit Depth
 contributors:
   - XavAL
 tags:

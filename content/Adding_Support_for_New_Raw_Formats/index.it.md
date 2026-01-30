@@ -1,5 +1,5 @@
 ---
-title: Adding Support for New Raw Formats it
+title: Adding Support for New Raw Formats
 contributors:
   - Andrea.romagnoli
 tags:

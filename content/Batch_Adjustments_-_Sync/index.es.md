@@ -1,5 +1,5 @@
 ---
-title: Batch Adjustments - Sync es
+title: Batch Adjustments - Sync
 contributors:
   - XavAL
 tags:
