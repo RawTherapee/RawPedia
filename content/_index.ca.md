@@ -1,5 +1,5 @@
 ---
-title: Main Page ca
+title: Main Page
 contributors:
   - Leixet
   - DrSlony

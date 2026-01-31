@@ -1,5 +1,5 @@
 ---
-title: Main Page de
+title: Main Page
 contributors:
   - Fherb
   - N3tt3rm4n

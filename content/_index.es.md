@@ -1,5 +1,5 @@
 ---
-title: Main Page es
+title: Main Page
 contributors:
   - XavAL
 ---
