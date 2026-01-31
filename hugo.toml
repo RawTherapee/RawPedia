@@ -29,6 +29,30 @@ defaultContentLanguage = 'en'
     weight = 1
     [languages.de.pagination]
       path = 'page'
+  [languages.ca]
+    languageCode = 'ca'
+    languageName = 'Català'
+    timeZone = 'America/New_York'
+    title = 'RawPedia'
+    weight = 1
+    [languages.ca.pagination]
+      path = 'page'
+  [languages.es]
+    languageCode = 'es'
+    languageName = 'Español'
+    timeZone = 'America/New_York'
+    title = 'RawPedia'
+    weight = 1
+    [languages.es.pagination]
+      path = 'page'
+  [languages.it]
+    languageCode = 'it'
+    languageName = 'Italiano'
+    timeZone = 'America/New_York'
+    title = 'RawPedia'
+    weight = 1
+    [languages.it.pagination]
+      path = 'page'
 
 [markup]
   [markup.highlight]

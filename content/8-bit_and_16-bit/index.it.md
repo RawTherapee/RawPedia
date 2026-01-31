@@ -1,5 +1,5 @@
 ---
-title: 8-bit and 16-bit it
+title: 8-bit and 16-bit
 contributors:
   - Andrea.romagnoli
 ---
