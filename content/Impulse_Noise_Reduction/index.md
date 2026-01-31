@@ -4,6 +4,9 @@ contributors:
   - DrSlony
   - Andrea.romagnoli
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Detail Tab'
 ---
 
 Suppresses salt-and-pepper noise - sudden white and black pixels, which

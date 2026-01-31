@@ -1,7 +1,9 @@
 ---
-title: General Comments About Some Toolbox Widgets de
+title: General Comments About Some Toolbox Widgets
 contributors:
   - Fherb
+tags:
+  - 'Tool Description'
 ---
 
 Todo-List / State:

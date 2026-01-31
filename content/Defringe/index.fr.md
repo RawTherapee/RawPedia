@@ -1,7 +1,10 @@
 ---
-title: Defringe fr
+title: Defringe
 contributors:
   - Lebarhon
+tags:
+  - 'Tool Description'
+  - 'Detail Tab'
 ---
 
 <div class="pagetitle">

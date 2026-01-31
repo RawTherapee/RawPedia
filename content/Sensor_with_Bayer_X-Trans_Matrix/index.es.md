@@ -1,7 +1,10 @@
 ---
-title: Sensor with Bayer X-Trans Matrix es
+title: Sensor with Bayer X-Trans Matrix
 contributors:
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Raw Tab'
 ---
 
 <div class="pagetitle">

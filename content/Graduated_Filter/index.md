@@ -2,6 +2,9 @@
 title: Graduated Filter
 contributors:
   - DrSlony
+tags:
+  - 'Tool Description'
+  - 'Exposure Tab'
 ---
 
 The graduated filter tool simulates a real neutral density graduated

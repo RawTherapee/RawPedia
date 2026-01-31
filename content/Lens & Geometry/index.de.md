@@ -1,7 +1,10 @@
 ---
-title: Lens Geometry de
+title: Lens Geometry
 contributors:
   - Fherb
+tags:
+  - 'Tool Description'
+  - 'Transform Tab'
 ---
 
 Todo: übersetzen

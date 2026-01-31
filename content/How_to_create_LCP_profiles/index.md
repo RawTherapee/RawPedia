@@ -3,6 +3,8 @@ title: How to create LCP profiles
 contributors:
   - DrSlony
   - XavAL
+tags:
+  - 'General Photography'
 ---
 
 You can easily create LCP (Lens Correction Profile) profiles using Adobe

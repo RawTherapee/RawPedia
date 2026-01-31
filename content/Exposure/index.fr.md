@@ -1,7 +1,10 @@
 ---
-title: Exposure fr
+title: Exposure
 contributors:
   - Lebarhon
+tags:
+  - 'Tool Description'
+  - 'Exposure Tab'
 ---
 
 <div class="pagetitle">

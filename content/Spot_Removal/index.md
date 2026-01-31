@@ -2,6 +2,9 @@
 title: Spot Removal
 contributors:
   - Thanatomanic
+tags:
+  - 'Tool Description'
+  - 'Detail Tab'
 ---
 
 The spot removal tool can be used to mask portions of an image (e.g.

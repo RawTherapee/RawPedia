@@ -1,7 +1,10 @@
 ---
-title: Defringe de
+title: Defringe
 contributors:
   - Fherb
+tags:
+  - 'Tool Description'
+  - 'Detail Tab'
 ---
 
 Todo-List / State:

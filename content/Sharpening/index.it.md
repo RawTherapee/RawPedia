@@ -1,8 +1,11 @@
 ---
-title: Sharpening it
+title: Sharpening
 contributors:
   - Andrea.romagnoli
   - DrSlony
+tags:
+  - 'Tool Description'
+  - 'Detail Tab'
 ---
 
 Nota: Lo strumento *Nitidezza* viene calcolato **prima** dello strumento

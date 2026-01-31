@@ -1,8 +1,11 @@
 ---
-title: Retinex fr
+title: Retinex
 contributors:
   - Jdc
   - Lebarhon
+tags:
+  - 'Tool Description'
+  - 'Advanced Tab'
 ---
 
 <div class="pagetitle">

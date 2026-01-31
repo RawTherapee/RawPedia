@@ -4,6 +4,9 @@ contributors:
   - Thanatomanic
   - DrSlony
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 <figure>

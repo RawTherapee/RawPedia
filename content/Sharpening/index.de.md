@@ -1,7 +1,10 @@
 ---
-title: Sharpening de
+title: Sharpening
 contributors:
   - Fherb
+tags:
+  - 'Tool Description'
+  - 'Detail Tab'
 ---
 
 Todo-List / State:

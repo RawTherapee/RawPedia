@@ -1,7 +1,10 @@
 ---
-title: Impulse Noise Reduction jp
+title: Impulse Noise Reduction
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Detail Tab'
 ---
 
 <div class="pagetitle">

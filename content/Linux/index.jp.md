@@ -1,8 +1,10 @@
 ---
-title: Linux jp
+title: Linux
 contributors:
   - DrSlony
   - Yz2house
+tags:
+  - 'Compiling'
 ---
 
 <div class="pagetitle">

@@ -3,6 +3,8 @@ title: How to get Nikon ICM profiles
 contributors:
   - DrSlony
   - XavAL
+tags:
+  - 'General Photography'
 ---
 
 Capture NX-D, Capture NX 2 and ViewNX-i are proprietary Windows programs

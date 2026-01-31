@@ -1,9 +1,12 @@
 ---
-title: Local Adjustments fr
+title: Local Adjustments
 contributors:
   - Jdc
   - Sguyader
   - DrSlony
+tags:
+  - 'Tool Description'
+  - 'Selective Editing'
 ---
 
 <div class="pagetitle">

@@ -1,7 +1,9 @@
 ---
-title: Forum fr
+title: Forum
 contributors:
   - Lebarhon
+tags:
+  - 'Interact'
 ---
 
 <div class="pagetitle">

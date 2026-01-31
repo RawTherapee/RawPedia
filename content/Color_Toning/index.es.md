@@ -1,7 +1,10 @@
 ---
-title: Color Toning es
+title: Color Toning
 contributors:
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 <div class="pagetitle">

@@ -1,7 +1,10 @@
 ---
-title: Vibrance it
+title: Vibrance
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 *Vividezza* è una regolazione intelligente di saturazione specifica

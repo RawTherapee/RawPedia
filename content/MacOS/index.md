@@ -7,6 +7,8 @@ contributors:
   - Benitoite
   - Lebarhon
   - XavAL
+tags:
+  - 'Compiling'
 ---
 
 This page details instructions for compiling RawTherapee on **macOS**

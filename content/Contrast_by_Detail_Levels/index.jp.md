@@ -1,7 +1,10 @@
 ---
-title: Contrast by Detail Levels jp
+title: Contrast by Detail Levels
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Detail Tab'
 ---
 
 <div class="pagetitle">

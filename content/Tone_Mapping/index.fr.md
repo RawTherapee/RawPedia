@@ -1,7 +1,10 @@
 ---
-title: Tone Mapping fr
+title: Tone Mapping
 contributors:
   - Lebarhon
+tags:
+  - 'Tool Description'
+  - 'Exposure Tab'
 ---
 
 <div class="pagetitle">

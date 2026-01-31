@@ -1,7 +1,9 @@
 ---
-title: Wayland fr
+title: Wayland
 contributors:
   - Lebarhon
+tags:
+  - 'Troubleshooting'
 ---
 
 <div class="pagetitle">

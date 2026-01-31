@@ -1,7 +1,9 @@
 ---
-title: General Comments About Some Toolbox Widgets it
+title: General Comments About Some Toolbox Widgets
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'Tool Description'
 ---
 
 **Questo articolo è importante** - alcune cose possono sembrare scontate

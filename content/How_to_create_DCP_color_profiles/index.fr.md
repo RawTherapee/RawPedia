@@ -1,7 +1,9 @@
 ---
-title: How to create DCP color profiles fr
+title: How to create DCP color profiles
 contributors:
   - Lebarhon
+tags:
+  - 'General Photography'
 ---
 
 <div class="pagetitle">

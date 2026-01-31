@@ -4,6 +4,8 @@ contributors:
   - Ingo
   - DrSlony
   - XavAL
+tags:
+  - 'Troubleshooting'
 ---
 
 RawTherapee might crash immediately after starting for several reasons,

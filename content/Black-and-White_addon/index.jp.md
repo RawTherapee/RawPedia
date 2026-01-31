@@ -1,7 +1,10 @@
 ---
-title: Black-and-White addon jp
+title: Black-and-White addon
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 <div class="pagetitle">

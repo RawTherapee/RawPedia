@@ -4,6 +4,9 @@ contributors:
   - DrSlony
   - Ingo
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Raw Tab'
 ---
 
 ![](/imags/Chipincamera.jpg "Chipincamera.jpg")

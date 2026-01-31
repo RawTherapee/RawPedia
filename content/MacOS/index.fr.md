@@ -1,7 +1,9 @@
 ---
-title: MacOS fr
+title: MacOS
 contributors:
   - Lebarhon
+tags:
+  - 'Compiling'
 ---
 
 <div class="pagetitle">

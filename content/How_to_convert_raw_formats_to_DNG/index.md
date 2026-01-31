@@ -3,6 +3,8 @@ title: How to convert raw formats to DNG
 contributors:
   - DrSlony
   - XavAL
+tags:
+  - 'General Photography'
 ---
 
 __TOC__

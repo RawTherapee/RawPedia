@@ -2,6 +2,8 @@
 title: General Comments About Some Toolbox Widgets
 contributors:
   - DrSlony
+tags:
+  - 'Tool Description'
 ---
 
 This article will enable you to use RawTherapee more efficiently and to

@@ -1,7 +1,10 @@
 ---
-title: Exif Tab fr
+title: Exif Tab
 contributors:
   - Lebarhon
+tags:
+  - 'Tool Description'
+  - 'Metadata Tab'
 ---
 
 <div class="pagetitle">

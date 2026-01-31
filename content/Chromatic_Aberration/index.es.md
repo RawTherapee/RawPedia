@@ -1,7 +1,10 @@
 ---
-title: Chromatic Aberration es
+title: Chromatic Aberration
 contributors:
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Raw Tab'
 ---
 
 <div class="pagetitle">

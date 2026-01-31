@@ -2,6 +2,8 @@
 title: How to get Nikon ICM profiles from NX2
 contributors:
   - DrSlony
+tags:
+  - 'General Photography'
 ---
 
 1.  REDIRECT [How to get Nikon ICM

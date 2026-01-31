@@ -4,6 +4,9 @@ contributors:
   - DrSlony
   - XavAL
   - Jdc
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 *Vibrance* is an intelligent saturation adjustment tuned to correlate

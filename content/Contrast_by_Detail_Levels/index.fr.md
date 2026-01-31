@@ -1,7 +1,10 @@
 ---
-title: Contrast by Detail Levels fr
+title: Contrast by Detail Levels
 contributors:
   - Lebarhon
+tags:
+  - 'Tool Description'
+  - 'Detail Tab'
 ---
 
 <div class="pagetitle">

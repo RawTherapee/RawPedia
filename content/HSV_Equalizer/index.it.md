@@ -1,7 +1,10 @@
 ---
-title: HSV Equalizer it
+title: HSV Equalizer
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 ![](HSV_color_solid_cylinder_alpha_lowgamma.png "HSV_color_solid_cylinder_alpha_lowgamma.png")L'equalizzatore

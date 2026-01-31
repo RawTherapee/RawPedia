@@ -1,7 +1,9 @@
 ---
-title: How to convert raw formats to DNG jp
+title: How to convert raw formats to DNG
 contributors:
   - Yz2house
+tags:
+  - 'General Photography'
 ---
 
 <div class="pagetitle">

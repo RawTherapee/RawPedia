@@ -1,7 +1,10 @@
 ---
-title: Graduated Filter it
+title: Graduated Filter
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'Tool Description'
+  - 'Exposure Tab'
 ---
 
 ![](Graduated-filter_4.00_00_25_00_00.png "Graduated-filter_4.00_00_25_00_00.png")

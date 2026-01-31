@@ -1,7 +1,9 @@
 ---
-title: How to create DCP color profiles jp
+title: How to create DCP color profiles
 contributors:
   - Yz2house
+tags:
+  - 'General Photography'
 ---
 
 <div class="pagetitle">

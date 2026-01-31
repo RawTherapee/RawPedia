@@ -1,7 +1,10 @@
 ---
-title: Haze Removal fr
+title: Haze Removal
 contributors:
   - Lebarhon
+tags:
+  - 'Tool Description'
+  - 'Detail Tab'
 ---
 
 <div class="pagetitle">

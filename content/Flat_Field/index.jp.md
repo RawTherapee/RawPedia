@@ -1,7 +1,10 @@
 ---
-title: Flat Field jp
+title: Flat Field
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Raw Tab'
 ---
 
 <div class="pagetitle">

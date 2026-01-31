@@ -3,6 +3,9 @@ title: Flat-Field
 contributors:
   - DrSlony
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Raw Tab'
 ---
 
 [thumb](/images/flatfield_landscape.jpg) [Flat-field correction](https://en.wikipedia.org/wiki/Flat-field_correction) is used

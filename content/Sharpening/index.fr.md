@@ -1,7 +1,10 @@
 ---
-title: Sharpening fr
+title: Sharpening
 contributors:
   - Lebarhon
+tags:
+  - 'Tool Description'
+  - 'Detail Tab'
 ---
 
 <div class="pagetitle">

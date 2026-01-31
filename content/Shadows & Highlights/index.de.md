@@ -1,7 +1,10 @@
 ---
-title: Shadows Highlights de
+title: Shadows Highlights
 contributors:
   - McCap
+tags:
+  - 'Tool Description'
+  - 'Exposure Tab'
 ---
 
 `unfinished Tanslation`

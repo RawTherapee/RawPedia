@@ -1,7 +1,10 @@
 ---
-title: Color Management jp
+title: Color Management
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 <div class="pagetitle">

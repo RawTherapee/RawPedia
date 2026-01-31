@@ -1,7 +1,9 @@
 ---
-title: How to fix crashes on startup fr
+title: How to fix crashes on startup
 contributors:
   - Lebarhon
+tags:
+  - 'Troubleshooting'
 ---
 
 <div class="pagetitle">

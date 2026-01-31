@@ -1,7 +1,10 @@
 ---
-title: Lab Adjustments it
+title: Lab Adjustments
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'Tool Description'
+  - 'Exposure Tab'
 ---
 
 Dati tecnici del tool Vividezza RawTherapee, in inglese:

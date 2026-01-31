@@ -1,7 +1,10 @@
 ---
-title: Edges and Microcontrast jp
+title: Edges and Microcontrast
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Detail Tab'
 ---
 
 <div class="pagetitle">

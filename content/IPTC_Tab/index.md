@@ -4,6 +4,9 @@ contributors:
   - DrSlony
   - XavAL
   - Lebarhon
+tags:
+  - 'Tool Description'
+  - 'Metadata Tab'
 ---
 
 [IPTC](https://en.wikipedia.org/wiki/IPTC_Information_Interchange_Model)

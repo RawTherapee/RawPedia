@@ -1,7 +1,10 @@
 ---
-title: RGB Curves it
+title: RGB Curves
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 Le curve RGB consentono di applicare una regolazione singolarmente ad

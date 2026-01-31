@@ -1,7 +1,10 @@
 ---
-title: Graduated Filter jp
+title: Graduated Filter
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Exposure Tab'
 ---
 
 <div class="pagetitle">

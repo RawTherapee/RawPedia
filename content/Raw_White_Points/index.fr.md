@@ -1,7 +1,10 @@
 ---
-title: Raw White Points fr
+title: Raw White Points
 contributors:
   - Lebarhon
+tags:
+  - 'Tool Description'
+  - 'Raw Tab'
 ---
 
 <div class="pagetitle">

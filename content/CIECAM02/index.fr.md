@@ -1,8 +1,11 @@
 ---
-title: CIECAM02 fr
+title: CIECAM02
 contributors:
   - Jdc
   - Lebarhon
+tags:
+  - 'Tool Description'
+  - 'Advanced Tab'
 ---
 
 <div class="pagetitle">

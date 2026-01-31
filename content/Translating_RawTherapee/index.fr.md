@@ -1,7 +1,9 @@
 ---
-title: Translating RawTherapee fr
+title: Translating RawTherapee
 contributors:
   - Lebarhon
+tags:
+  - 'Localization'
 ---
 
 <div class="pagetitle">

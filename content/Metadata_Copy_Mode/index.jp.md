@@ -1,7 +1,10 @@
 ---
-title: Metadata Copy Mode jp
+title: Metadata Copy Mode
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Metadata Tab'
 ---
 
 <div class="pagetitle">

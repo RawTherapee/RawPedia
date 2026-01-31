@@ -1,7 +1,10 @@
 ---
-title: Exposure de
+title: Exposure
 contributors:
   - Fherb
+tags:
+  - 'Tool Description'
+  - 'Exposure Tab'
 ---
 
 Todo-List / State:

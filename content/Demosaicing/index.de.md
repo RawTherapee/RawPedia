@@ -1,7 +1,10 @@
 ---
-title: Demosaicing de
+title: Demosaicing
 contributors:
   - Fherb
+tags:
+  - 'Tool Description'
+  - 'Raw Tab'
 ---
 
 Todo-List / State:

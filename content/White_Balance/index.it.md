@@ -1,7 +1,10 @@
 ---
-title: White Balance it
+title: White Balance
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 Le immagini digitali consistono generalmente in una miscela dei tre

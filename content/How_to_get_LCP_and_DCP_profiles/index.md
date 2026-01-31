@@ -4,6 +4,8 @@ contributors:
   - DrSlony
   - Patdavid
   - XavAL
+tags:
+  - 'General Photography'
 ---
 
 A large collection of LCP (Adobe Lens Correction Profiles - for

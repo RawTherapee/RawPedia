@@ -1,7 +1,9 @@
 ---
-title: How to write useful bug reports jp
+title: How to write useful bug reports
 contributors:
   - Yz2house
+tags:
+  - 'Troubleshooting'
 ---
 
 <div class="pagetitle">

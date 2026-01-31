@@ -1,8 +1,11 @@
 ---
-title: Color Management addon fr
+title: Color Management addon
 contributors:
   - Jdc
   - Lebarhon
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 <div class="pagetitle">

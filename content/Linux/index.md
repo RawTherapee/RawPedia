@@ -8,6 +8,8 @@ contributors:
   - XavAL
   - Benitoite
   - Jdc
+tags:
+  - 'Compiling'
 ---
 
 This page details instructions for compiling RawTherapee on

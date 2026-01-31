@@ -1,7 +1,10 @@
 ---
-title: Exposure it
+title: Exposure
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'Tool Description'
+  - 'Exposure Tab'
 ---
 
 ## Livelli Automatici

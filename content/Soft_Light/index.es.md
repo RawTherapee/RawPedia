@@ -1,7 +1,10 @@
 ---
-title: Soft Light es
+title: Soft Light
 contributors:
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 <div class="pagetitle">

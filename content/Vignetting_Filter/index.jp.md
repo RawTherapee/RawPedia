@@ -1,7 +1,10 @@
 ---
-title: Vignetting Filter jp
+title: Vignetting Filter
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Exposure Tab'
 ---
 
 <div class="pagetitle">

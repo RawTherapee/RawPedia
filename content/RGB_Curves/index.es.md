@@ -1,7 +1,10 @@
 ---
-title: RGB Curves es
+title: RGB Curves
 contributors:
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 <div class="pagetitle">

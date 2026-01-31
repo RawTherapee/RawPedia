@@ -1,7 +1,9 @@
 ---
-title: How to write useful bug reports fr
+title: How to write useful bug reports
 contributors:
   - Lebarhon
+tags:
+  - 'Troubleshooting'
 ---
 
 <div class="pagetitle">

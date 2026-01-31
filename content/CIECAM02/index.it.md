@@ -1,8 +1,11 @@
 ---
-title: CIECAM02 it
+title: CIECAM02
 contributors:
   - Andrea.romagnoli
   - DrSlony
+tags:
+  - 'Tool Description'
+  - 'Advanced Tab'
 ---
 
 Di J.Desmis

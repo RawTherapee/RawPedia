@@ -1,7 +1,10 @@
 ---
-title: Vignetting Filter it
+title: Vignetting Filter
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'Tool Description'
+  - 'Exposure Tab'
 ---
 
 ![](Vignette-filter_4.00_50_50.png "Vignette-filter_4.00_50_50.png") Il

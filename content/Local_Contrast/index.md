@@ -3,6 +3,9 @@ title: Local Contrast
 contributors:
   - Thanatomanic
   - DrSlony
+tags:
+  - 'Tool Description'
+  - 'Detail Tab'
 ---
 
 ## Introduction

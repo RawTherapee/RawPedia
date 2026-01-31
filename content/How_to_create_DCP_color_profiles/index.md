@@ -3,6 +3,8 @@ title: How to create DCP color profiles
 contributors:
   - DrSlony
   - XavAL
+tags:
+  - 'General Photography'
 ---
 
 ## What Are DCP Profiles and Why Do I Need Them?

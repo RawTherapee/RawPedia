@@ -1,7 +1,10 @@
 ---
-title: Dark Frame de
+title: Dark Frame
 contributors:
   - Fherb
+tags:
+  - 'Tool Description'
+  - 'Raw Tab'
 ---
 
 Todo: übersetzen

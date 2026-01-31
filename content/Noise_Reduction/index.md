@@ -4,6 +4,9 @@ contributors:
   - DrSlony
   - Gaaned92
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Detail Tab'
 ---
 
 ## Introduction

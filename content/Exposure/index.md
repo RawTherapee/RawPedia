@@ -5,6 +5,9 @@ contributors:
   - Fherb
   - Lebarhon
   - Jdc
+tags:
+  - 'Tool Description'
+  - 'Exposure Tab'
 ---
 
 ## Auto Levels

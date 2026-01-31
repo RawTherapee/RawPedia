@@ -1,7 +1,9 @@
 ---
-title: MacOS jp
+title: MacOS
 contributors:
   - Yz2house
+tags:
+  - 'Compiling'
 ---
 
 <div class="pagetitle">

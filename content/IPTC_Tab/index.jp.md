@@ -1,7 +1,10 @@
 ---
-title: IPTC Tab jp
+title: IPTC Tab
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Metadata Tab'
 ---
 
 <div class="pagetitle">

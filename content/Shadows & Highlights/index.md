@@ -2,6 +2,9 @@
 title: Shadows Highlights
 contributors:
   - DrSlony
+tags:
+  - 'Tool Description'
+  - 'Exposure Tab'
 ---
 
 ## Introduction

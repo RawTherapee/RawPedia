@@ -3,6 +3,8 @@ title: Wayland
 contributors:
   - DrSlony
   - XavAL
+tags:
+  - 'Troubleshooting'
 ---
 
 Users of the Wayland, a computer protocol which specifies the

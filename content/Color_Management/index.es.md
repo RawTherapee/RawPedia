@@ -1,7 +1,10 @@
 ---
-title: Color Management es
+title: Color Management
 contributors:
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 <div class="pagetitle">

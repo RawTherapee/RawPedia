@@ -3,6 +3,9 @@ title: Sharpening
 contributors:
   - DrSlony
   - Ingo
+tags:
+  - 'Tool Description'
+  - 'Detail Tab'
 ---
 
 This article describes the tool called "Sharpening", however RawTherapee

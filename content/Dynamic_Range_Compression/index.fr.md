@@ -1,7 +1,10 @@
 ---
-title: Dynamic Range Compression fr
+title: Dynamic Range Compression
 contributors:
   - Lebarhon
+tags:
+  - 'Tool Description'
+  - 'Exposure Tab'
 ---
 
 <div class="pagetitle">

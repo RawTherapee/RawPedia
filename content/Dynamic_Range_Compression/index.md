@@ -3,6 +3,9 @@ title: Dynamic Range Compression
 contributors:
   - Thanatomanic
   - DrSlony
+tags:
+  - 'Tool Description'
+  - 'Exposure Tab'
 ---
 
 ## Introduction

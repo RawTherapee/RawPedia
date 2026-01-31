@@ -1,7 +1,10 @@
 ---
-title: Haze Removal jp
+title: Haze Removal
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Detail Tab'
 ---
 
 <div class="pagetitle">

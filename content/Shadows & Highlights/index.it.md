@@ -1,7 +1,10 @@
 ---
-title: Shadows Highlights it
+title: Shadows Highlights
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'Tool Description'
+  - 'Exposure Tab'
 ---
 
 Utilizzare questo strumento per influenzare indipendentemente le luci e

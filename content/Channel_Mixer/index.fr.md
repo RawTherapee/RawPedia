@@ -1,7 +1,10 @@
 ---
-title: Channel Mixer fr
+title: Channel Mixer
 contributors:
   - Lebarhon
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 <div class="pagetitle">

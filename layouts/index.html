@@ -5,7 +5,7 @@
 
   {{ $category := "General Information" }}
   <a href='#{{ $category | urlize }}'>
-    <h2 id='{{ $category | urlize }}'>{{ or (T $category) $category }}</h2>
+    <h3 id='{{ $category | urlize }}'>{{ or (T $category) $category }}</h3>
   </a>
   <ul>
     {{ range where .Site.RegularPages "Params.tags" "intersect" (slice $category) }}
@@ -15,10 +15,11 @@
     {{ end }}
   </ul>
 
+  <hr/>
 
   {{ $category := "Processing Profiles" }}
   <a href='#{{ $category | urlize }}'>
-    <h2 id='{{ $category | urlize }}'>{{ or (T $category) $category }}</h2>
+    <h3 id='{{ $category | urlize }}'>{{ or (T $category) $category }}</h3>
   </a>
   <ul>
     {{ range where .Site.RegularPages "Params.tags" "intersect" (slice $category) }}
@@ -32,7 +33,20 @@
 
   {{ $category := "Processing Profile Scripts" }}
   <a href='#{{ $category | urlize }}'>
-    <h2 id='{{ $category | urlize }}'>{{ or (T $category) $category }}</h2>
+    <h4 id='{{ $category | urlize }}'>{{ or (T $category) $category }}</h4>
+  </a>
+  <ul>
+    {{ range where .Site.RegularPages "Params.tags" "intersect" (slice $category) }}
+      <li>
+        <a href="{{.RelPermalink}}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+
+
+  {{ $category := "Bundled Processing Profiles" }}
+  <a href='#{{ $category | urlize }}'>
+    <h4 id='{{ $category | urlize }}'>{{ or (T $category) $category }}</h4>
   </a>
   <ul>
     {{ range where .Site.RegularPages "Params.tags" "intersect" (slice $category) }}
@@ -45,6 +59,208 @@
 
   <hr/>
 
+  {{ $category := "Tool Description" }}
+  <a href='#{{ $category | urlize }}'>
+    <h3 id='{{ $category | urlize }}'>{{ or (T $category) $category }}</h3>
+  </a>
+  <ul>
+    {{ range where .Site.RegularPages "Params.tags" "intersect" (slice $category) }}
+      {{ if eq (len .Params.tags) 1 }}
+      <li>
+        <a href="{{.RelPermalink}}">{{ .Title }}</a>
+      </li>
+      {{ end }}
+    {{ end }}
+  </ul>
+
+
+  {{ $category := "Exposure Tab" }}
+  <a href='#{{ $category | urlize }}'>
+    <h4 id='{{ $category | urlize }}'>{{ or (T $category) $category }}</h4>
+  </a>
+  <ul>
+    {{ range where .Site.RegularPages "Params.tags" "intersect" (slice $category) }}
+      <li>
+        <a href="{{.RelPermalink}}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+
+  {{ $category := "Detail Tab" }}
+  <a href='#{{ $category | urlize }}'>
+    <h4 id='{{ $category | urlize }}'>{{ or (T $category) $category }}</h4>
+  </a>
+  <ul>
+    {{ range where .Site.RegularPages "Params.tags" "intersect" (slice $category) }}
+      <li>
+        <a href="{{.RelPermalink}}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+
+  {{ $category := "Color Tab" }}
+  <a href='#{{ $category | urlize }}'>
+    <h4 id='{{ $category | urlize }}'>{{ or (T $category) $category }}</h4>
+  </a>
+  <ul>
+    {{ range where .Site.RegularPages "Params.tags" "intersect" (slice $category) }}
+      <li>
+        <a href="{{.RelPermalink}}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+
+  {{ $category := "Advanced Tab" }}
+  <a href='#{{ $category | urlize }}'>
+    <h4 id='{{ $category | urlize }}'>{{ or (T $category) $category }}</h4>
+  </a>
+  <ul>
+    {{ range where .Site.RegularPages "Params.tags" "intersect" (slice $category) }}
+      <li>
+        <a href="{{.RelPermalink}}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+
+  {{ $category := "Selective Editing" }}
+  <a href='#{{ $category | urlize }}'>
+    <h4 id='{{ $category | urlize }}'>{{ or (T $category) $category }}</h4>
+  </a>
+  <ul>
+    {{ range where .Site.RegularPages "Params.tags" "intersect" (slice $category) }}
+      <li>
+        <a href="{{.RelPermalink}}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+
+  {{ $category := "Transform Tab" }}
+  <a href='#{{ $category | urlize }}'>
+    <h4 id='{{ $category | urlize }}'>{{ or (T $category) $category }}</h4>
+  </a>
+  <ul>
+    {{ range where .Site.RegularPages "Params.tags" "intersect" (slice $category) }}
+      <li>
+        <a href="{{.RelPermalink}}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+
+  {{ $category := "Raw Tab" }}
+  <a href='#{{ $category | urlize }}'>
+    <h4 id='{{ $category | urlize }}'>{{ or (T $category) $category }}</h4>
+  </a>
+  <ul>
+    {{ range where .Site.RegularPages "Params.tags" "intersect" (slice $category) }}
+      <li>
+        <a href="{{.RelPermalink}}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+
+  {{ $category := "Metadata Tab" }}
+  <a href='#{{ $category | urlize }}'>
+    <h4 id='{{ $category | urlize }}'>{{ or (T $category) $category }}</h4>
+  </a>
+  <ul>
+    {{ range where .Site.RegularPages "Params.tags" "intersect" (slice $category) }}
+      <li>
+        <a href="{{.RelPermalink}}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+
+
+  <hr/>
+
+  {{ $category := "Interact" }}
+  <a href='#{{ $category | urlize }}'>
+    <h3 id='{{ $category | urlize }}'>{{ or (T $category) $category }}</h3>
+  </a>
+  <ul>
+    {{ range where .Site.RegularPages "Params.tags" "intersect" (slice $category) }}
+      <li>
+        <a href="{{.RelPermalink}}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+
+  {{ $category := "Tutorials" }}
+  <a href='#{{ $category | urlize }}'>
+    <h3 id='{{ $category | urlize }}'>{{ or (T $category) $category }}</h3>
+  </a>
+  <ul>
+    {{ range where .Site.RegularPages "Params.tags" "intersect" (slice $category) }}
+      <li>
+        <a href="{{.RelPermalink}}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+
+  {{ $category := "Compiling" }}
+  <a href='#{{ $category | urlize }}'>
+    <h3 id='{{ $category | urlize }}'>{{ or (T $category) $category }}</h3>
+  </a>
+  <ul>
+    {{ range where .Site.RegularPages "Params.tags" "intersect" (slice $category) }}
+      <li>
+        <a href="{{.RelPermalink}}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+
+  {{ $category := "Troubleshooting" }}
+  <a href='#{{ $category | urlize }}'>
+    <h3 id='{{ $category | urlize }}'>{{ or (T $category) $category }}</h3>
+  </a>
+  <ul>
+    {{ range where .Site.RegularPages "Params.tags" "intersect" (slice $category) }}
+      <li>
+        <a href="{{.RelPermalink}}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+
+  {{ $category := "Localization" }}
+  <a href='#{{ $category | urlize }}'>
+    <h3 id='{{ $category | urlize }}'>{{ or (T $category) $category }}</h3>
+  </a>
+  <ul>
+    {{ range where .Site.RegularPages "Params.tags" "intersect" (slice $category) }}
+      <li>
+        <a href="{{.RelPermalink}}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+
+
+  {{ $category := "RawPedia Contributing" }}
+  <a href='#{{ $category | urlize }}'>
+    <h2 id='{{ $category | urlize }}'>{{ or (T $category) $category }}</h2>
+  </a>
+  <ul>
+    {{ range where .Site.RegularPages "Params.tags" "intersect" (slice $category) }}
+      <li>
+        <a href="{{.RelPermalink}}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+
+  {{ $category := "General Photography" }}
+  <a href='#{{ $category | urlize }}'>
+    <h2 id='{{ $category | urlize }}'>{{ or (T $category) $category }}</h2>
+  </a>
+  <ul>
+    {{ range where .Site.RegularPages "Params.tags" "intersect" (slice $category) }}
+      <li>
+        <a href="{{.RelPermalink}}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+
+
+
+  </hr>
   <h4>All Pages</h4>
   <ul>
   {{ range .Pages.ByTitle }}

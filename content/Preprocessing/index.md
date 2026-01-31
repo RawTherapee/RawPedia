@@ -3,6 +3,9 @@ title: Preprocessing
 contributors:
   - DrSlony
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Raw Tab'
 ---
 
 There are several preprocessing settings and they are split into two

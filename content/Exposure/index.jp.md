@@ -1,7 +1,10 @@
 ---
-title: Exposure jp
+title: Exposure
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Exposure Tab'
 ---
 
 <div class="pagetitle">

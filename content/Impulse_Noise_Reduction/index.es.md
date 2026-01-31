@@ -1,7 +1,10 @@
 ---
-title: Impulse Noise Reduction es
+title: Impulse Noise Reduction
 contributors:
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Detail Tab'
 ---
 
 <div class="pagetitle">

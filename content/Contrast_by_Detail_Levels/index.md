@@ -3,6 +3,9 @@ title: Contrast by Detail Levels
 contributors:
   - DrSlony
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Detail Tab'
 ---
 
 *Contrast by Detail Levels* uses wavelet decomposition to decompose the

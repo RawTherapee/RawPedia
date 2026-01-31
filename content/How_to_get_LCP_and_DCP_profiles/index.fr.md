@@ -1,7 +1,9 @@
 ---
-title: How to get LCP and DCP profiles fr
+title: How to get LCP and DCP profiles
 contributors:
   - Lebarhon
+tags:
+  - 'General Photography'
 ---
 
 <div class="pagetitle">

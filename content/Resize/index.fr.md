@@ -1,7 +1,10 @@
 ---
-title: Resize fr
+title: Resize
 contributors:
   - Lebarhon
+tags:
+  - 'Tool Description'
+  - 'Transform Tab'
 ---
 
 <div class="pagetitle">

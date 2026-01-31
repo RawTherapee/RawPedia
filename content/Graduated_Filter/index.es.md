@@ -1,7 +1,10 @@
 ---
-title: Graduated Filter es
+title: Graduated Filter
 contributors:
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Exposure Tab'
 ---
 
 <div class="pagetitle">

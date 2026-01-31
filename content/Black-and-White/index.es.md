@@ -1,7 +1,10 @@
 ---
-title: Black-and-White es
+title: Black-and-White
 contributors:
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 <div class="pagetitle">

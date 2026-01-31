@@ -1,8 +1,11 @@
 ---
-title: Edges and Microcontrast fr
+title: Edges and Microcontrast
 contributors:
   - Lebarhon
   - Jdc
+tags:
+  - 'Tool Description'
+  - 'Detail Tab'
 ---
 
 <div class="pagetitle">

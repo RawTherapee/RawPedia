@@ -1,7 +1,10 @@
 ---
-title: Vignetting Filter es
+title: Vignetting Filter
 contributors:
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Exposure Tab'
 ---
 
 <div class="pagetitle">

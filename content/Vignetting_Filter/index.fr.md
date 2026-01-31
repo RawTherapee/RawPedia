@@ -1,7 +1,10 @@
 ---
-title: Vignetting Filter fr
+title: Vignetting Filter
 contributors:
   - Lebarhon
+tags:
+  - 'Tool Description'
+  - 'Exposure Tab'
 ---
 
 <div class="pagetitle">

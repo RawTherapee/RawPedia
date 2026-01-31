@@ -1,7 +1,10 @@
 ---
-title: Capture Sharpning jp
+title: Capture Sharpning
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Raw Tab'
 ---
 
 <div class="pagetitle">

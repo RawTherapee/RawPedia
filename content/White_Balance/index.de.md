@@ -1,7 +1,10 @@
 ---
-title: White Balance de
+title: White Balance
 contributors:
   - Fherb
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 Todo: übersetzen

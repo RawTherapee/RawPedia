@@ -1,7 +1,10 @@
 ---
-title: Flat Field fr
+title: Flat Field
 contributors:
   - Lebarhon
+tags:
+  - 'Tool Description'
+  - 'Raw Tab'
 ---
 
 <div class="pagetitle">

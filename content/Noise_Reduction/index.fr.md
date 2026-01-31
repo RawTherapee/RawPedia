@@ -1,8 +1,11 @@
 ---
-title: Noise Reduction fr
+title: Noise Reduction
 contributors:
   - Lebarhon
   - Gaaned92
+tags:
+  - 'Tool Description'
+  - 'Detail Tab'
 ---
 
 <div class="pagetitle">

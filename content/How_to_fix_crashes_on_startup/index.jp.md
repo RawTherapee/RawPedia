@@ -1,7 +1,9 @@
 ---
-title: How to fix crashes on startup jp
+title: How to fix crashes on startup
 contributors:
   - Yz2house
+tags:
+  - 'Troubleshooting'
 ---
 
 <div class="pagetitle">

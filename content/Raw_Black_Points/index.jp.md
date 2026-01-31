@@ -1,7 +1,10 @@
 ---
-title: Raw Black Points jp
+title: Raw Black Points
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Raw Tab'
 ---
 
 <div class="pagetitle">

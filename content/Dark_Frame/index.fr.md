@@ -1,7 +1,10 @@
 ---
-title: Dark Frame fr
+title: Dark Frame
 contributors:
   - Lebarhon
+tags:
+  - 'Tool Description'
+  - 'Raw Tab'
 ---
 
 <div class="pagetitle">

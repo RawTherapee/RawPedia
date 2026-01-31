@@ -3,6 +3,8 @@ title: How to extract and examine ICC profiles
 contributors:
   - DrSlony
   - XavAL
+tags:
+  - 'General Photography'
 ---
 
 ## DisplayCAL

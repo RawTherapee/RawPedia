@@ -1,7 +1,9 @@
 ---
-title: How to get Nikon ICM profiles from NX2 fr
+title: How to get Nikon ICM profiles from NX2
 contributors:
   - Lebarhon
+tags:
+  - 'General Photography'
 ---
 
 <span style="color: #000000; background: none; overflow: hidden; page-break-after: avoid; font-size: 2.0em; font-family: Georgia,Times,serif; margin-top: 1em; margin-bottom: 0.25em; line-height: 1.3; padding: 0; border-bottom: 1px solid #AAAAAA;">Comment

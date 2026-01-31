@@ -1,7 +1,10 @@
 ---
-title: Channel Mixer jp
+title: Channel Mixer
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 <div class="pagetitle">

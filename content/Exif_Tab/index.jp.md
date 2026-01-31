@@ -1,7 +1,10 @@
 ---
-title: Exif Tab jp
+title: Exif Tab
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Metadata Tab'
 ---
 
 <div class="pagetitle">

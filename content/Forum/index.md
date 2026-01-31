@@ -3,6 +3,8 @@ title: Forum
 contributors:
   - DrSlony
   - XavAL
+tags:
+  - 'Interact'
 ---
 
 Visit our forum at <https://discuss.pixls.us/c/software/rawtherapee>

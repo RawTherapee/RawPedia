@@ -1,7 +1,10 @@
 ---
-title: Sharpening jp
+title: Sharpening
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Detail Tab'
 ---
 
 <div class="pagetitle">

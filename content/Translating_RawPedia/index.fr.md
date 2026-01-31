@@ -1,7 +1,9 @@
 ---
-title: Translating RawPedia fr
+title: Translating RawPedia
 contributors:
   - Lebarhon
+tags:
+  - 'Localization'
 ---
 
 <div class="pagetitle">

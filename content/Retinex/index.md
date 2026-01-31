@@ -4,6 +4,9 @@ contributors:
   - Lebarhon
   - DrSlony
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Advanced Tab'
 ---
 
 __NOTOC__ Note: This translation of the "Retinex" French page is a

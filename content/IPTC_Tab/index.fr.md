@@ -1,7 +1,10 @@
 ---
-title: IPTC Tab fr
+title: IPTC Tab
 contributors:
   - Lebarhon
+tags:
+  - 'Tool Description'
+  - 'Metadata Tab'
 ---
 
 <div class="pagetitle">

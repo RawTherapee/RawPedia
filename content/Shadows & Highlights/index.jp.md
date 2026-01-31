@@ -1,7 +1,10 @@
 ---
-title: Shadows Highlights jp
+title: Shadows Highlights
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Exposure Tab'
 ---
 
 <div class="pagetitle">

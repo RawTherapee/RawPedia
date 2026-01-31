@@ -1,7 +1,9 @@
 ---
-title: Forum jp
+title: Forum
 contributors:
   - Yz2house
+tags:
+  - 'Interact'
 ---
 
 <div class="pagetitle">

@@ -1,7 +1,9 @@
 ---
-title: General Comments About Some Toolbox Widgets jp
+title: General Comments About Some Toolbox Widgets
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
 ---
 
 <div class="pagetitle">

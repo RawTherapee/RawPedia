@@ -1,7 +1,10 @@
 ---
-title: Capture Sharpening es
+title: Capture Sharpening
 contributors:
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Raw Tab'
 ---
 
 <div class="pagetitle">

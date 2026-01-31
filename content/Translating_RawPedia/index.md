@@ -3,6 +3,8 @@ title: Translating RawPedia
 contributors:
   - DrSlony
   - XavAL
+tags:
+  - 'Localization'
 ---
 
 This article explains how you can help translate RawTherapee's

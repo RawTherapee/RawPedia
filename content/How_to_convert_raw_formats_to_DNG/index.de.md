@@ -1,7 +1,9 @@
 ---
-title: How to convert raw formats to DNG de
+title: How to convert raw formats to DNG
 contributors:
   - Fherb
+tags:
+  - 'General Photography'
 ---
 
 Todo-List / State:

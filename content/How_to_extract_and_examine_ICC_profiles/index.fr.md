@@ -1,7 +1,9 @@
 ---
-title: How to extract and examine ICC profiles fr
+title: How to extract and examine ICC profiles
 contributors:
   - Lebarhon
+tags:
+  - 'General Photography'
 ---
 
 <div class="pagetitle">

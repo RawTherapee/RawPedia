@@ -1,7 +1,10 @@
 ---
-title: Tone Mapping it
+title: Tone Mapping
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'Tool Description'
+  - 'Exposure Tab'
 ---
 
 Gli effetti di questo strumento sono visibili a qualsiasi livello di

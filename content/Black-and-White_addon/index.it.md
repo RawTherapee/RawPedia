@@ -1,7 +1,10 @@
 ---
-title: Black-and-White addon it
+title: Black-and-White addon
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 ## I metodi diversi

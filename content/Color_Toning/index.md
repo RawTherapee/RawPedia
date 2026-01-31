@@ -4,6 +4,9 @@ contributors:
   - Lebarhon
   - DrSlony
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 ## Introduction

@@ -3,6 +3,9 @@ title: RGB Curves
 contributors:
   - DrSlony
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 RGB curves allow to apply a curve adjustment individually to each of the

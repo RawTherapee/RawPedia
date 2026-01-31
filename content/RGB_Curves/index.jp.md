@@ -1,7 +1,10 @@
 ---
-title: RGB Curves jp
+title: RGB Curves
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 <div class="pagetitle">

@@ -3,6 +3,9 @@ title: Local Adjustments
 contributors:
   - Jdc
   - DrSlony
+tags:
+  - 'Tool Description'
+  - 'Selective Editing'
 ---
 
 6 november 2025

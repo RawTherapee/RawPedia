@@ -1,7 +1,9 @@
 ---
-title: Favorites Tab fr
+title: Favorites Tab
 contributors:
   - Lebarhon
+tags:
+  - 'Tool Description'
 ---
 
 <div class="pagetitle">

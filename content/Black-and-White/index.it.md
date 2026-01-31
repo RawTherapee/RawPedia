@@ -1,7 +1,10 @@
 ---
-title: Black-and-White it
+title: Black-and-White
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 <img src="/images/Rt_ba_bw_1.jpg" title="Rt_ba_bw_1.jpg" width="900"

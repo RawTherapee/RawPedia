@@ -1,7 +1,10 @@
 ---
-title: Local Contrast jp
+title: Local Contrast
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Detail Tab'
 ---
 
 <div class="pagetitle">

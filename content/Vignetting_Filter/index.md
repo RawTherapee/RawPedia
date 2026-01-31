@@ -2,6 +2,9 @@
 title: Vignetting Filter
 contributors:
   - DrSlony
+tags:
+  - 'Tool Description'
+  - 'Exposure Tab'
 ---
 
 The vignette filter is intended for adding artistic vignetting to your

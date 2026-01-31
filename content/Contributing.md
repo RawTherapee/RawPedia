@@ -2,6 +2,8 @@
 title: Contributing
 contributors:
   - DrSlony
+tags:
+  - 'RawPedia Contributing'
 ---
 
 - Only RawTherapee developers or experienced users who have good

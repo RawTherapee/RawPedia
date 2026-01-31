@@ -2,6 +2,9 @@
 title: Tone Mapping
 contributors:
   - DrSlony
+tags:
+  - 'Tool Description'
+  - 'Exposure Tab'
 ---
 
 The effects of this tool are visible at any zoom level. However, due to

@@ -1,7 +1,10 @@
 ---
-title: Crop fr
+title: Crop
 contributors:
   - Lebarhon
+tags:
+  - 'Tool Description'
+  - 'Transform Tab'
 ---
 
 <div class="pagetitle">

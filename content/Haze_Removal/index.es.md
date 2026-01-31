@@ -1,7 +1,10 @@
 ---
-title: Haze Removal es
+title: Haze Removal
 contributors:
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Detail Tab'
 ---
 
 <div class="pagetitle">

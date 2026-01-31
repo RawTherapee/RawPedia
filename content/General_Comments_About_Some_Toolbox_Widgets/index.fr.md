@@ -1,7 +1,9 @@
 ---
-title: General Comments About Some Toolbox Widgets fr
+title: General Comments About Some Toolbox Widgets
 contributors:
   - Lebarhon
+tags:
+  - 'Tool Description'
 ---
 
 <div class="pagetitle">

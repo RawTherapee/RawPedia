@@ -1,7 +1,10 @@
 ---
-title: Channel Mixer it
+title: Channel Mixer
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 Il Miscelatore Canali è utilizzato per effetti speciali, sia per il

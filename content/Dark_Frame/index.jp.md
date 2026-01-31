@@ -1,7 +1,10 @@
 ---
-title: Dark Frame jp
+title: Dark Frame
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Raw Tab'
 ---
 
 <div class="pagetitle">

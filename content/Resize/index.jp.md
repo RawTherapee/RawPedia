@@ -1,7 +1,10 @@
 ---
-title: Resize jp
+title: Resize
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Transform Tab'
 ---
 
 <div class="pagetitle">

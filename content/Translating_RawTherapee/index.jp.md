@@ -1,7 +1,9 @@
 ---
-title: Translating RawTherapee jp
+title: Translating RawTherapee
 contributors:
   - Yz2house
+tags:
+  - 'Localization'
 ---
 
 <div class="pagetitle">

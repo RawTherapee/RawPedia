@@ -1,7 +1,10 @@
 ---
-title: CIECAM02 de
+title: CIECAM02
 contributors:
   - Fherb
+tags:
+  - 'Tool Description'
+  - 'Advanced Tab'
 ---
 
 Todo-List / State:

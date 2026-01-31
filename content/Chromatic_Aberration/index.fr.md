@@ -1,7 +1,10 @@
 ---
-title: Chromatic Aberration fr
+title: Chromatic Aberration
 contributors:
   - Lebarhon
+tags:
+  - 'Tool Description'
+  - 'Raw Tab'
 ---
 
 <div class="pagetitle">

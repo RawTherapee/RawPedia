@@ -1,7 +1,9 @@
 ---
-title: How to get LCP and DCP profiles de
+title: How to get LCP and DCP profiles
 contributors:
   - Fherb
+tags:
+  - 'General Photography'
 ---
 
 Todo-List / State:

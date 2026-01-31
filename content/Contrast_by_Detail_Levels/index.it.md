@@ -1,7 +1,10 @@
 ---
-title: Contrast by Detail Levels it
+title: Contrast by Detail Levels
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'Tool Description'
+  - 'Detail Tab'
 ---
 
 *Contrasto per Livelli di Dettaglio* utilizza la decomposizione wavelet

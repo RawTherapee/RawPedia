@@ -1,7 +1,10 @@
 ---
-title: Black-and-White jp
+title: Black-and-White
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 <div class="pagetitle">

@@ -1,7 +1,10 @@
 ---
-title: Noise Reduction it
+title: Noise Reduction
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'Tool Description'
+  - 'Detail Tab'
 ---
 
 <figure>

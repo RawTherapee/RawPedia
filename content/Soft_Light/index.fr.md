@@ -1,7 +1,10 @@
 ---
-title: Soft Light fr
+title: Soft Light
 contributors:
   - Lebarhon
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 <div class="pagetitle">

@@ -1,7 +1,10 @@
 ---
-title: Noise Reduction de
+title: Noise Reduction
 contributors:
   - Fherb
+tags:
+  - 'Tool Description'
+  - 'Detail Tab'
 ---
 
 Todo: übersetzen

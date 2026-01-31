@@ -1,7 +1,10 @@
 ---
-title: Demosaicing jp
+title: Demosaicing
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Raw Tab'
 ---
 
 <div class="pagetitle">

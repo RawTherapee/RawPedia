@@ -1,7 +1,10 @@
 ---
-title: Lens Geometry fr
+title: Lens Geometry
 contributors:
   - Lebarhon
+tags:
+  - 'Tool Description'
+  - 'Transform Tab'
 ---
 
 <div class="pagetitle">

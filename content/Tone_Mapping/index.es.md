@@ -1,7 +1,10 @@
 ---
-title: Tone Mapping es
+title: Tone Mapping
 contributors:
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Exposure Tab'
 ---
 
 <div class="pagetitle">

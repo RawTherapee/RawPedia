@@ -1,7 +1,10 @@
 ---
-title: Crop de
+title: Crop
 contributors:
   - Fherb
+tags:
+  - 'Tool Description'
+  - 'Transform Tab'
 ---
 
 Todo: übersetzen

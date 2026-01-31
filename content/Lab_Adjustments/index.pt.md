@@ -1,8 +1,11 @@
 ---
-title: Lab Adjustments pt
+title: Lab Adjustments
 contributors:
   - DigitalPix
   - DrSlony
+tags:
+  - 'Tool Description'
+  - 'Exposure Tab'
 ---
 
 ![](Lab_color_space.png "Lab_color_space.png")

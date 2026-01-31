@@ -1,7 +1,10 @@
 ---
-title: Edges and Microcontrast es
+title: Edges and Microcontrast
 contributors:
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Detail Tab'
 ---
 
 <div class="pagetitle">

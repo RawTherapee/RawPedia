@@ -1,7 +1,10 @@
 ---
-title: Lens Geometry jp
+title: Lens Geometry
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Transform Tab'
 ---
 
 <div class="pagetitle">

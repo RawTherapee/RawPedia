@@ -1,8 +1,11 @@
 ---
-title: Color Management addon de
+title: Color Management addon
 contributors:
   - Fherb
   - DrSlony
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 Todo: übersetzen

@@ -1,7 +1,10 @@
 ---
-title: Demosaicing es
+title: Demosaicing
 contributors:
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Raw Tab'
 ---
 
 <div class="pagetitle">

@@ -1,7 +1,10 @@
 ---
-title: Spot Removal jp
+title: Spot Removal
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Detail Tab'
 ---
 
 <div class="pagetitle">

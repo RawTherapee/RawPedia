@@ -2,6 +2,9 @@
 title: Capture Sharpening
 contributors:
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Raw Tab'
 ---
 
 ## What is it

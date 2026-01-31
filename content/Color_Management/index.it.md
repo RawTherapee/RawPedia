@@ -1,7 +1,10 @@
 ---
-title: Color Management it
+title: Color Management
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 ## Profilo di input

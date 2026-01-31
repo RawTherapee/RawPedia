@@ -1,7 +1,10 @@
 ---
-title: Film Simulation fr
+title: Film Simulation
 contributors:
   - Lebarhon
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 <div class="pagetitle">

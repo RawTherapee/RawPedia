@@ -3,6 +3,9 @@ title: Raw White Points
 contributors:
   - DrSlony
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Raw Tab'
 ---
 
 It is unlikely you will ever need to use the Raw White Points tool other

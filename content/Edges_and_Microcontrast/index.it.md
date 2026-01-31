@@ -1,8 +1,11 @@
 ---
-title: Edges and Microcontrast it
+title: Edges and Microcontrast
 contributors:
   - Andrea.romagnoli
   - DrSlony
+tags:
+  - 'Tool Description'
+  - 'Detail Tab'
 ---
 
 A differenza di *[Maschera di

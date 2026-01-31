@@ -3,6 +3,9 @@ title: Haze Removal
 contributors:
   - DrSlony
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Detail Tab'
 ---
 
 ![](/images/Rt55_haze_removal_1.png "Rt55_haze_removal_1.png")

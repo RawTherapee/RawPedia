@@ -1,7 +1,10 @@
 ---
-title: Raw White Points jp
+title: Raw White Points
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Raw Tab'
 ---
 
 <div class="pagetitle">

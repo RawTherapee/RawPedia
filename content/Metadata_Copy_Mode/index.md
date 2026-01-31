@@ -3,6 +3,9 @@ title: Metadata Copy Mode
 contributors:
   - DrSlony
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Metadata Tab'
 ---
 
 RawTherapee let's you decide which of three things should happen to

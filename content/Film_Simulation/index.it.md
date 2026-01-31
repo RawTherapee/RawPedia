@@ -1,7 +1,10 @@
 ---
-title: Film Simulation it
+title: Film Simulation
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 ![](Rt_haldclut_london.jpg "Rt_haldclut_london.jpg") Lo strumento

@@ -5,6 +5,9 @@ contributors:
   - Thanatomanic
   - XavAL
   - Jdc
+tags:
+  - 'Tool Description'
+  - 'Advanced Tab'
 ---
 
 <figure>

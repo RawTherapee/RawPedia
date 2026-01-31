@@ -4,6 +4,9 @@ contributors:
   - Jdc
   - DrSlony
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 ## Colorimetry concepts

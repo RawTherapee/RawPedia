@@ -1,9 +1,12 @@
 ---
-title: Color Management fr
+title: Color Management
 contributors:
   - Lebarhon
   - Hombre
   - Jdc
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 <div class="pagetitle">

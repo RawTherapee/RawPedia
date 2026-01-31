@@ -3,6 +3,9 @@ title: Lens Geometry
 contributors:
   - DrSlony
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Transform Tab'
 ---
 
 To keep the preview fast, RawTherapee uses the preview image of the

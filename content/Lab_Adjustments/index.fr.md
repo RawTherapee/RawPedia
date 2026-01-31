@@ -1,8 +1,11 @@
 ---
-title: Lab Adjustments fr
+title: Lab Adjustments
 contributors:
   - Lebarhon
   - Jdc
+tags:
+  - 'Tool Description'
+  - 'Exposure Tab'
 ---
 
 <div class="pagetitle">

@@ -1,7 +1,9 @@
 ---
-title: Rawtherapee Processing Challenge feedback
+title: Rawtherapee Processing Challenge
 contributors:
   - Jdc
+tags:
+  - 'Tutorials'
 ---
 
 ## Introduction - Who this document is for ?

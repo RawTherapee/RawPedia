@@ -1,7 +1,10 @@
 ---
-title: Graduated Filter fr
+title: Graduated Filter
 contributors:
   - Lebarhon
+tags:
+  - 'Tool Description'
+  - 'Exposure Tab'
 ---
 
 <div class="pagetitle">

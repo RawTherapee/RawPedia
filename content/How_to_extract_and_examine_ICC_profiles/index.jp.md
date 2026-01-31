@@ -1,7 +1,9 @@
 ---
-title: How to extract and examine ICC profiles jp
+title: How to extract and examine ICC profiles
 contributors:
   - Yz2house
+tags:
+  - 'General Photography'
 ---
 
 <div class="pagetitle">

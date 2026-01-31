@@ -1,7 +1,10 @@
 ---
-title: Color Toning fr
+title: Color Toning
 contributors:
   - Lebarhon
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 <div class="pagetitle">

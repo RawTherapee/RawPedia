@@ -1,7 +1,10 @@
 ---
-title: Raw White Points es
+title: Raw White Points
 contributors:
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Raw Tab'
 ---
 
 <div class="pagetitle">

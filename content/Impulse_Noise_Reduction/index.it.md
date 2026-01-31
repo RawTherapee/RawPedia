@@ -1,8 +1,11 @@
 ---
-title: Impulse Noise Reduction it
+title: Impulse Noise Reduction
 contributors:
   - Andrea.romagnoli
   - DrSlony
+tags:
+  - 'Tool Description'
+  - 'Detail Tab'
 ---
 
 Sopprime il rumore 'sale e pepe' - generalmente rumore bianco

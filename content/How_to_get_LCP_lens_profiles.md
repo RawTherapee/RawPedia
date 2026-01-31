@@ -2,6 +2,8 @@
 title: How to get LCP lens profiles
 contributors:
   - DrSlony
+tags:
+  - 'General Photography'
 ---
 
 1.  REDIRECT [How to get LCP and DCP

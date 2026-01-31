@@ -1,7 +1,10 @@
 ---
-title: Chromatic Aberration jp
+title: Chromatic Aberration
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Raw Tab'
 ---
 
 <div class="pagetitle">

@@ -1,7 +1,10 @@
 ---
-title: Lab Adjustments de
+title: Lab Adjustments
 contributors:
   - Fherb
+tags:
+  - 'Tool Description'
+  - 'Exposure Tab'
 ---
 
 Todo-List / State:

@@ -1,8 +1,11 @@
 ---
-title: White Balance fr
+title: White Balance
 contributors:
   - Lebarhon
   - Jdc
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 <div class="pagetitle">

@@ -3,6 +3,9 @@ title: CIECAM02
 contributors:
   - Jdc
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Advanced Tab'
 ---
 
 August 2022

@@ -1,7 +1,10 @@
 ---
-title: Raw Black Points es
+title: Raw Black Points
 contributors:
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Raw Tab'
 ---
 
 <div class="pagetitle">

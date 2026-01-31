@@ -1,7 +1,9 @@
 ---
-title: How to create LCP profiles fr
+title: How to create LCP profiles
 contributors:
   - Lebarhon
+tags:
+  - 'General Photography'
 ---
 
 <div class="pagetitle">

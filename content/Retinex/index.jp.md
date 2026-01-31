@@ -1,7 +1,10 @@
 ---
-title: Retinex jp
+title: Retinex
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Advanced Tab'
 ---
 
 <div class="pagetitle">

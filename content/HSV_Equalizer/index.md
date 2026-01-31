@@ -3,6 +3,9 @@ title: HSV Equalizer
 contributors:
   - DrSlony
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 ![](/images/HSV_color_solid_cylinder_alpha_lowgamma.png "HSV_color_solid_cylinder_alpha_lowgamma.png")

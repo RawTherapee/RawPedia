@@ -1,7 +1,10 @@
 ---
-title: Shadows Highlights fr
+title: Shadows Highlights
 contributors:
   - Lebarhon
+tags:
+  - 'Tool Description'
+  - 'Exposure Tab'
 ---
 
 <div class="pagetitle">

@@ -1,7 +1,9 @@
 ---
-title: How to convert raw formats to DNG fr
+title: How to convert raw formats to DNG
 contributors:
   - Lebarhon
+tags:
+  - 'General Photography'
 ---
 
 <div class="pagetitle">

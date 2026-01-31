@@ -3,6 +3,9 @@ title: Black-and-White addon
 contributors:
   - Lebarhon
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 ## The different methods

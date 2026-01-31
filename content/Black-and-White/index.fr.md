@@ -1,7 +1,10 @@
 ---
-title: Black-and-White fr
+title: Black-and-White
 contributors:
   - Lebarhon
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 <div class="pagetitle">

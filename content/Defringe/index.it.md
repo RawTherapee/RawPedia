@@ -1,7 +1,10 @@
 ---
-title: Defringe it
+title: Defringe
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'Tool Description'
+  - 'Detail Tab'
 ---
 
 [thumb](image:defringe.jpg)

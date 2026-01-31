@@ -1,7 +1,10 @@
 ---
-title: Color Toning jp
+title: Color Toning
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 <div class="pagetitle">

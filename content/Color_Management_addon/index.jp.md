@@ -1,7 +1,10 @@
 ---
-title: Color Management addon jp
+title: Color Management addon
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 <div class="pagetitle">

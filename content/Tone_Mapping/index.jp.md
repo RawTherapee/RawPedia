@@ -1,7 +1,10 @@
 ---
-title: Tone Mapping jp
+title: Tone Mapping
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Exposure Tab'
 ---
 
 <div class="pagetitle">

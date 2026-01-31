@@ -1,7 +1,10 @@
 ---
-title: Tone Mapping de
+title: Tone Mapping
 contributors:
   - Fherb
+tags:
+  - 'Tool Description'
+  - 'Exposure Tab'
 ---
 
 Todo-List / State:

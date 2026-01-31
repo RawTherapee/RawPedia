@@ -1,9 +1,11 @@
 ---
-title: Windows fr
+title: Windows
 contributors:
   - Lebarhon
   - Gaaned92
   - Jdc
+tags:
+  - 'Compiling'
 ---
 
 <div class="pagetitle">

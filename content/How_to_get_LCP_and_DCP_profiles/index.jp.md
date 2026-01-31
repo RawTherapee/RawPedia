@@ -1,7 +1,9 @@
 ---
-title: How to get LCP and DCP profiles jp
+title: How to get LCP and DCP profiles
 contributors:
   - Yz2house
+tags:
+  - 'General Photography'
 ---
 
 <div class="pagetitle">

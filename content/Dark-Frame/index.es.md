@@ -1,7 +1,10 @@
 ---
-title: Dark-Frame es
+title: Dark-Frame
 contributors:
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Raw Tab'
 ---
 
 <div class="pagetitle">

@@ -3,6 +3,9 @@ title: Channel Mixer
 contributors:
   - Lebarhon
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 The *Channel Mixer* is used for special effects, for color and

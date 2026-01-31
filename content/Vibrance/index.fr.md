@@ -1,8 +1,11 @@
 ---
-title: Vibrance fr
+title: Vibrance
 contributors:
   - Lebarhon
   - Jdc
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 <div class="pagetitle">

@@ -1,8 +1,10 @@
 ---
-title: Linux fr
+title: Linux
 contributors:
   - Lebarhon
   - Jdc
+tags:
+  - 'Compiling'
 ---
 
 <div class="pagetitle">

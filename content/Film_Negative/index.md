@@ -3,6 +3,9 @@ title: Film Negative
 contributors:
   - DrSlony
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 ## Introduction

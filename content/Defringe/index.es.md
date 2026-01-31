@@ -1,7 +1,10 @@
 ---
-title: Defringe es
+title: Defringe
 contributors:
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Detail Tab'
 ---
 
 <div class="pagetitle">

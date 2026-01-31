@@ -1,7 +1,10 @@
 ---
-title: CIECAM02 jp
+title: CIECAM02
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Advanced Tab'
 ---
 
 <div class="pagetitle">

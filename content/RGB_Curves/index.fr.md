@@ -1,7 +1,10 @@
 ---
-title: RGB Curves fr
+title: RGB Curves
 contributors:
   - Lebarhon
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 <div class="pagetitle">

@@ -1,7 +1,10 @@
 ---
-title: Lab Adjustments jp
+title: Lab Adjustments
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Exposure Tab'
 ---
 
 <div class="pagetitle">

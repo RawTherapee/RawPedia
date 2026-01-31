@@ -4,6 +4,8 @@ contributors:
   - DrSlony
   - Patdavid
   - XavAL
+tags:
+  - 'Troubleshooting'
 ---
 
 Bugs must be reported in our [RawTherapee GitHub issue tracker](https://github.com/Beep6581/RawTherapee), not in the forum and

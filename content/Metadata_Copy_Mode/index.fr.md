@@ -1,7 +1,10 @@
 ---
-title: Metadata Copy Mode fr
+title: Metadata Copy Mode
 contributors:
   - Lebarhon
+tags:
+  - 'Tool Description'
+  - 'Metadata Tab'
 ---
 
 <div class="pagetitle">

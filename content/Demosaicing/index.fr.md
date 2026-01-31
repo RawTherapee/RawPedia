@@ -1,7 +1,10 @@
 ---
-title: Demosaicing fr
+title: Demosaicing
 contributors:
   - Lebarhon
+tags:
+  - 'Tool Description'
+  - 'Raw Tab'
 ---
 
 <div class="pagetitle">

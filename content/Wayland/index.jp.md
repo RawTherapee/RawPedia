@@ -1,7 +1,9 @@
 ---
-title: Wayland jp
+title: Wayland
 contributors:
   - Yz2house
+tags:
+  - 'Troubleshooting'
 ---
 
 <div class="pagetitle">

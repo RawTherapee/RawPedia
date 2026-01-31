@@ -1,7 +1,10 @@
 ---
-title: Color Toning it
+title: Color Toning
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 ## Informazioni sul Color Toning

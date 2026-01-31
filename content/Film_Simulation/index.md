@@ -4,6 +4,9 @@ contributors:
   - DrSlony
   - Andrea.romagnoli
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 <img src="/images/Rt_haldclut_london.jpg" title="Rt_haldclut_london.jpg"

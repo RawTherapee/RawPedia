@@ -1,7 +1,10 @@
 ---
-title: Dynamic Range Compression jp
+title: Dynamic Range Compression
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Exposure Tab'
 ---
 
 <div class="pagetitle">

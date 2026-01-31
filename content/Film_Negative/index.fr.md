@@ -1,7 +1,10 @@
 ---
-title: Film Negative fr
+title: Film Negative
 contributors:
   - Lebarhon
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 <div class="pagetitle">

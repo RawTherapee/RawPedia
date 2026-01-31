@@ -1,7 +1,10 @@
 ---
-title: Black-and-White addon fr
+title: Black-and-White addon
 contributors:
   - Lebarhon
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 <div class="pagetitle">

@@ -3,6 +3,9 @@ title: Lab Adjustments
 contributors:
   - DrSlony
   - Jdc
+tags:
+  - 'Tool Description'
+  - 'Exposure Tab'
 ---
 
 ![](/images/Lab_color_space.png "Lab_color_space.png")

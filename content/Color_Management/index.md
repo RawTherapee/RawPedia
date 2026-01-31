@@ -7,6 +7,9 @@ contributors:
   - XavAL
   - Jdc
   - Thanatomanic
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 Color management comprises all tasks to ensure a faithful representation

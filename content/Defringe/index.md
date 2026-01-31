@@ -3,6 +3,9 @@ title: Defringe
 contributors:
   - DrSlony
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Detail Tab'
 ---
 
 [thumb](/images/defringe.jpg)

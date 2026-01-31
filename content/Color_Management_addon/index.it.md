@@ -1,7 +1,10 @@
 ---
-title: Color Management addon it
+title: Color Management addon
 contributors:
   - Andrea.romagnoli
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 ## Concetti di colorimetria

@@ -1,7 +1,9 @@
 ---
-title: Windows jp
+title: Windows
 contributors:
   - Yz2house
+tags:
+  - 'Compiling'
 ---
 
 <div class="pagetitle">

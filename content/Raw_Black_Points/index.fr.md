@@ -1,7 +1,10 @@
 ---
-title: Raw Black Points fr
+title: Raw Black Points
 contributors:
   - Lebarhon
+tags:
+  - 'Tool Description'
+  - 'Raw Tab'
 ---
 
 <div class="pagetitle">

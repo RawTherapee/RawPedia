@@ -3,6 +3,9 @@ title: Dark-Frame
 contributors:
   - DrSlony
   - XavAL
+tags:
+  - 'Tool Description'
+  - 'Raw Tab'
 ---
 
 [Dark-frame subtraction](https://en.wikipedia.org/wiki/Dark-frame_subtraction) is a

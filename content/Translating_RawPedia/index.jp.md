@@ -1,7 +1,9 @@
 ---
-title: Translating RawPedia jp
+title: Translating RawPedia
 contributors:
   - Yz2house
+tags:
+  - 'Localization'
 ---
 
 <div class="pagetitle">

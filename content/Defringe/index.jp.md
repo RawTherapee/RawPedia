@@ -1,7 +1,10 @@
 ---
-title: Defringe jp
+title: Defringe
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Detail Tab'
 ---
 
 <div class="pagetitle">

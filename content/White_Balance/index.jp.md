@@ -1,7 +1,10 @@
 ---
-title: White Balance jp
+title: White Balance
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 <div class="pagetitle">

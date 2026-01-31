@@ -1,7 +1,10 @@
 ---
-title: Impulse Noise Reduction fr
+title: Impulse Noise Reduction
 contributors:
   - Lebarhon
+tags:
+  - 'Tool Description'
+  - 'Detail Tab'
 ---
 
 <div class="pagetitle">

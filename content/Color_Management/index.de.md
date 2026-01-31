@@ -1,7 +1,10 @@
 ---
-title: Color Management de
+title: Color Management
 contributors:
   - Fherb
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
 ---
 
 Todo: übersetzen

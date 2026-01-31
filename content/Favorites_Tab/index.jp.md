@@ -1,7 +1,9 @@
 ---
-title: Favorites Tab jp
+title: Favorites Tab
 contributors:
   - Yz2house
+tags:
+  - 'Tool Description'
 ---
 
 <div class="pagetitle">
