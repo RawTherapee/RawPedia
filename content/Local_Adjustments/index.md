@@ -8,7 +8,7 @@ tags:
   - 'Selective Editing'
 ---
 
-6 november 2025
+3 February 2026
 
 ## Introduction
 
@@ -3916,21 +3916,21 @@ To allow Inverse GHS to work, the 'Stretch factor (D)' must be between 0.001 and
 and the checkbox 'Auto Black point & White point' should be disabled. 
 
 
-##### The need to fine-tune White Point (WP linear) and Black Point (BP linear)
+##### The need to fine-tune White Point (linear WP) and Black Point (linear BP)
 
 The algorithm developed by David Payne and Mike Cranfield assumes that
 all image data to be processed is in the interval \[0 ,1\].
 
 - Negative values or values greater than 1 will be ignored (clipped).
 - If shooting conditions or upstream processing reduce the practical
-  interval to different values, e.g. \[0.2, 0.9\], the algorithm will
+  interval to different values, e.g. [0.2, 0.9], the algorithm will
   only partially fill them. It is therefore advisable to find the values
   of the black and white points to obtain an interval of data before GHS
-  processing in the range as close as possible to \[0, 1\].
-- Move the White point (WP linear) slider slightly. Move this slider
+  processing in the range as close as possible to [0, 1].
+- Move the White point (linear WP) slider slightly. Move this slider
   until you obtain a Clipped White point value close to 0. You will also
   see the values of data that may have been lost or misused.
-- Move the Black point (BP linear) slider slightly to the right
+- Move the Black point (linear BP) slider slightly to the right
   (positive values). Move this slider until you obtain a minimum Clipped
   Black point value. If no upstream processing has been performed, the
   first value to be retained will be Clipped Black point = -1.
@@ -3941,46 +3941,49 @@ all image data to be processed is in the interval \[0 ,1\].
   will be (depending on the action of the reconstruction process) profoundly impacted. 
 
 ###### Associated Tooltips
-Black point/White point: Sets the 'Black point (BP linear)', 'White point (WP linear)' for a linear stretch.
-- 'Black Point (BP linear)' and 'White Point (WP linear)' settings are only available if the 'Stretch factor (D)' is between 0.001 and 0.002. This is to avoid altering the histogram.
-- When the stretch factor is 0.002 or less, all stretch settings except for 'Black point' and 'White point' will have no effect.
-- 'Black point (BP linear)' and 'White point (WP linear)' settings are sensitive to the general settings upstream of GHS i.e. highlight reconstruction, white balance and raw processes.
-- To have relevant 'Black Point (BP linear)' and 'White Point (WP linear)' settings, the entire image must be analyzed. It is recommended to use 'Fit whole image to screen' function.
+**Black point/White point**: Sets the 'Black point (linear BP)', 'White point (linear WP)' for a linear stretch.
 
-To allow Inverse GHS to work, the 'Stretch factor (D)' must be between 0.001 and 0.002 and the checkbox 'Auto Black point & White point' should be disabled. 
+* 'Black Point (linear BP)' and 'White Point (linear WP)' settings are only available if the 'Stretch factor (D)' is between 0.001 and 0.002. This is to avoid altering the histogram.
 
+* When the stretch factor is 0.002 or less, all stretch settings except for 'Black point' and 'White point' will have no effect.
+* 'Black point (linear BP)' and 'White point (linear WP)' settings are sensitive to the general settings upstream of GHS i.e. highlight reconstruction, white balance and RAW processes.
+* To have relevant 'Black Point (linear BP)' and 'White Point (linear WP)' settings, the entire image must be analyzed. It is recommended to use 'Fit whole image to screen - Shortcut Alt-f'.
+* To allow Inverse GHS or Matrix conversion (AgX, Jz, Cat16) to work the 'Stretch factor (D)' must be between 0.001 and 0.002 and the checkbox 'Auto Black point & White point' disabled. 
 
-Black point: Sets the black point for a linear image stretch.
-- In normal GHS mode, negative slider values lift the shadows linearly to avoid excessive noise and facilitate the GHS calculations.
-- For positive slider values, the histogram is shifted to the left. For raw images, you can also use the more precise Raw Black Points > Dehaze in the Raw tab.
-- Increases in contrast due to the linear stretch will be evenly distributed over the image.
+**Black point** Sets the black point for a linear image stretch.
+* In normal GHS mode, negative slider values lift the shadows linearly to avoid excessive noise and facilitate 
+* For positive slider values, the histogram is shifted to the left. For raw images, you can also use the more precise Raw Black Points > Dehaze in the Raw tab.
+* Increases in contrast due to the linear stretch will be evenly distributed over the image.
+* You can adjust a linear black point offset to either: a)account for noise in the deep shadows. b) adjust the histogram.
+* Set 'Stretch factor (D)' to 0.001 to adjust the sliders.
+* The label 'Clipped pixel count Shadows:x Highlights:y' shows the number of pixels that would be clipped without adjusting the two sliders.
+* The label ‘Pixel values - Darkest:w Lightest:z’ shows you the minimum and maximum values in the range [0, 1].
+* The label 'RGB values - R:r G:g B:b' shows you the maximum values for each channel.
+* The label 'Dynamic Range GHS (Ev)' shows you the Dynamic Range, which uses the value of the highest and the lowest of the 3 RGB channels, instead of the luminance.
 
-You can adjust a linear black point offset to either:
-- account for noise in the deep shadows.
-- adjust the histogram.
+* In  Inverse GHS mode the behavior is reversed and there are possible interactions with the White point. In the majority of cases, especially when using a second GHS Spot, the adjustments will be small, or even unnecessary.
+* To activate the Inverse GHS checkbox, it may be necessary to move the 'Stretch factor' slider from 0.001 to 0.002. This will work only if the checkbox 'Auto Black point & White point' is disabled. 
 
-Set 'Stretch factor (D)' to 0.001 to adjust the sliders.
-- The label 'Clipped pixel count Shadows:x Highlights:y' shows the number of pixels that would be clipped without adjusting the two sliders.
-- The label ‘Pixel values - Darkest:w Lightest:z’ shows you the minimum and maximum values in the range [0, 1].
+**White point** Sets the White point for a linear stretch of the image. Any pixel with value greater than the white point input will be clipped and the data lost.
+* Contrast gained by performing the linear stretch will be evenly distributed over the image, which will be brightened. Pixels with values greater than the white point will appear white and have a value of 1.0.
+* Setting this parameter to a value greater than 1 will extend the dynamic range at the high end.
+* The 'Highlight reconstruction' method has a very strong impact on the white-point value.
 
-In Inverse GHS mode the behavior is reversed and there are possible interactions with the White point. In most cases, especially when using a second GHS Spot, the adjustments will be minimal, or even unnecessary.
+* Set 'Stretch factor (D)' to 0.001 to adjust the sliders.
+* The label 'Clipped pixel count - Shadows:x Highlights=y' shows you the number of pixels that would be clipped without adjusting the two sliders.
+* The label 'Pixel values - Darkest:w Lightest:z' shows you the minimum and maximum values in the range [0, 1].
+* The label 'RGB values - R:r G:g B:b' shows you the maximum values for each channel.
+* The label 'Dynamic Range GHS (Ev)' shows you the Dynamic Range, which uses the value of the highest and the lowest of the 3 RGB channels, instead of the luminance.
 
-To activate the Inverse GHS checkbox, it may be necessary to move the 'Stretch factor' slider from 0.001 to 0.002. This will work only if the 'Auto Black point & White point' checkbox is unchecked. 
+* In Inverse GHS mode the behavior is reversed and there are possible interactions with the black point.
+* To allow Inverse GHS to work the 'Stretch factor (D)' must be between 0.001 and 0.002 and the checkbox 'Auto Black point & White point' disabled.
 
-
-White point: Sets the White point for a linear stretch of the image. Any pixel with value greater than the white point input will be clipped and results in data lost.
-- Contrast gained by performing the linear stretch will be evenly distributed over the image, which will be brightened. Pixels with value greater than the white point will appear white and have a value of 1.0.
-- Setting this parameter to a value greater than 1 will extend the dynamic range at the high end.
-- The 'Highlight reconstruction' method has a very strong impact on the white-point value.
-
-Set 'Stretch factor (D)' to 0.001 to adjust the sliders.
-- The label 'Clipped pixel count - Shadows:x Highlights=y' shows you the number of pixels that would be clipped without adjusting the two sliders.
-- The label 'Pixel values - Darkest:w Lightest:z' shows you the minimum and maximum values in the range [0, 1].
-
-In Inverse GHS mode the behavior is reversed and there are possible interactions with the black point.
-
-To allow Inverse GHS to work the 'Stretch factor (D)' must be between 0.001 and 0.002 and the checkbox 'Auto Black point & White point' disabled.
-
+**Auto Black point & White point** Automatically adjust the 'Black point' and 'White point' values.
+* Not available in Inverse GHS mode and must be disabled to allow Inverse GHS to work. It must be disabled (and re-enabled) in order to change 'Matrix conversion (AgX, JzAzBz, Cat16)'.
+* Generally, the automatic settings will be satisfactory.
+* If necessary, you can subsequently adjust the two points:
+* The 'Black point': using negative slider values may help when the shadows are particularly blocked.
+* Manually increase the ‘White point’ value if necessary, especially if it is less than 1, to give the system more flexibility by avoiding possible gamut overflows due to GHS or subsequent adjustments.
 
 
 ##### Recommendations
@@ -4006,7 +4009,7 @@ different. For example, a value of 1.8 for (WP linear) will be required
 in GHS mode and perhaps 0.8 in Inverse GHS mode. In addition, there is
 interaction between the two settings.
 
-###### First image in Neutral mode, without Black Point (BP linear) and White Point (WP linear) retouching
+###### First image in Neutral mode, without Black Point (linear BP) and White Point (linear WP) retouching
 
 Raw image: D200_20070802_2087.NEF
 
@@ -4038,7 +4041,7 @@ White point.
 <figcaption>bp-wp-2.jpg</figcaption>
 </figure>
 
-###### Second image in Neutral mode, without Black Point (BP linear) and White Point (WP linear) retouching
+###### Second image in Neutral mode, without Black Point (linear BP) and White Point (linear WP) retouching
 
 Raw image: 5D3_0104.CR2
 
@@ -4066,9 +4069,9 @@ looking at the White point (WP linear) value. For example:
 - Inpaint Opposed: 2.1
 - Color Propagation: 3.2
 
-##### Particularities of Black Point (BP linear) and Highlight Attenuation checkbox
+##### Particularities of Black Point (linear BP) and Highlight Attenuation checkbox
 
-- If Black Point (BP linear) is used with negative values, where
+- If Black Point (linear BP) is used with negative values, where
   possible (Black Point indicators at zero), the black point will not be
   modified, but the luminance of very low lights will be increased. This
   action will facilitate the work of the GHS algorithm by raising the
@@ -4109,6 +4112,10 @@ value captured on the image or histogram. This is certainly relevant in
 astrophoto, for example using the luminance value of a nebula, but
 unrealistic here. The position of the peak(s) in the histogram seems to
 me sufficient, more relevant and sufficient.
+
+**The 'Auto' checkbox**
+Try setting an automatic Symmetry Point (SP) estimation, only in RGB mode. May require manual adjustment.
+
 
 ###### Associated Tooltip
 
@@ -4169,7 +4176,7 @@ To help the user understand what GHS and its inverse function are (a little bit 
 As you can see:
 - 'Stretch factor (D)' only has positive values.
 - There are no 'contrast' or 'lightness' sliders, no more 'middle grey' or 'pivot'.
-- Interestingly, I use very low values ​​of (D) as 'special' values ​​(0.001 or 0.002) to activate certain functions: settings for White Point linear (WP), Black Point linear (BP), Symmetry point (SP), and Inverse GHS.
+- Interestingly, I use very low values ​​of (D) as 'special' values ​​(0.001 or 0.002) to activate certain functions: settings for White Point (linear WP), Black Point (linear BP), Symmetry point (SP), and Inverse GHS.
 
 It's important to understand that the system, as I've designed it, is entirely dynamic. You directly see the interaction of the (WP), (BP), and (SP) settings. Some might say it's not very 'professional' (in terms of code), but I haven't found any other solutions that work. It is imperative that the GHS algorithm be activated in order to calculate and see the influence of (BP) and (WP) and examine the histogram (I recommend doing it in 'working profile' mode with gamma=1) - before any significant action on 'Stretch factor (D)'. ‘D = 0.001’ is a very low value that can be considered negligible (in terms of stretch), but it allows the algorithm to function. At this value, to ensure the impact of (BP) and (WP) is visible, some sliders are deactivated so as not to influence the result (e.g. Stretch regularization & Midtones).
 
@@ -4248,10 +4255,10 @@ if necessary, the black point (BP linear) and white point (WP linear).
 
 6 modes are available:
 
-- RGB Luminance (default setting): the 3 RGB channels are modified by
+- RGB Standard (default setting): the 3 RGB channels are modified in the same way.
+- RGB Luminance: the 3 RGB channels are modified by
   taking into account the average luminance obtained from the working
   profile's XYZ data. Recommended mode.
-- RGB Standard: the 3 RGB channels are modified in the same way.
 - Luminance & chromaticity (Lab): these 2 values, L (luminance) and C
   (chromaticity) after RGB \> Lab transformation, have different peaks
   for L (luminance) and C (chromaticity), which seems obvious. I've
@@ -4307,14 +4314,15 @@ Raw image: IMGP2426.DNG
   - Highlight reconstruction – Color Propagation
   - White Balance Auto - Temperature correlation
   - Selective Editing: Global
-  - Shadows/Highlights, Equalizer & GHS
+  - Equalization & Pre-Tone Mapping
+  - Generalized Hyperbolic Stretch (GHS)
 
 <img src="ghs-example1.jpg" title="Ghs-example1.jpg" width="600"
 alt="Ghs-example1.jpg" /> In this first step:
 
-- the White point (WP linear) has a high value, mainly due to the use of
+- the White point (linear WP) has a high value, mainly due to the use of
   Highlight reconstruction – Color propagation.
-- the Black point (BP linear) is used with a negative value, to slightly
+- the Black point (linear BP) is used with a negative value, to slightly
   open up the shadows, reduce the need for a high Stretch factor (D) and
   slightly increase the value of Symmetry point (SP).
 - Note the values ​​of Protect shadows (LP) at 0.0 and Protect Highlights
@@ -4356,7 +4364,7 @@ alt="Ghs-example1.jpg" /> In this first step:
 **Recommendations**
 
 - It is preferable to use GHS as the first RT-spot; this will allow us to resolve the problem of equilibria due to deviations from [0 1] 
-  of the values ​​of the Black point (linear) and White point (linear). In fact, GHS behaves like a pre-tone-mapper. Black point correction
+  of the values ​​of the Black point (linear BP) and White point (linear WP). In fact, GHS behaves like a pre-tone-mapper. Black point correction
   (BP linear) in Raw corresponds roughly to Raw Black Point > Dehaze (Raw Tab), while White point correction (WP linear) can be considered
   a better use of Raw White Points (Raw Tab). Ideally, GHS would have been developed using raw data, but this option would have two major
   drawbacks: a) the assignment of the Working Profile and White Balance would not have been performed, resulting in significant color shifts;
@@ -4365,11 +4373,11 @@ alt="Ghs-example1.jpg" /> In this first step:
 - To avoid high stretch values ​​that can lead to weakening of local contrast and saturation, you can use two (or more) RT-spots, 
   one after the other with lower stretch values.
 
-- When the White Point (linear) and Black Point (linear) values ​​are low, for example [0.1 - 0.4], the image contrast will be 
+- When the White Point (linear WP) and Black Point (linear BP) values ​​are low, for example [0.1 - 0.4], the image contrast will be 
   significantly increased. In these extreme cases, it can be useful to create a second 'Inverse GHS' spot to reduce contrast.
 
 - When the White Point (linear) values ​​are high (3 to 5) or very high (10 or more), the system forces colors present on the sensor,
-  which may be far beyond the visible spectrum, into the gamut perceived by the human eye. Adjust the White Point (linear), Stretch (D),
+  which may be far beyond the visible spectrum, into the gamut perceived by the human eye. Adjust the White Point (linear WP), Stretch (D),
   and Local Intensity (b) values ​​as needed. Feel free to use the Gamut Compression module, or the Primaries & Illuminant section of
   Abstract Profile, to try to obtain colors acceptable to our perceptions.
 

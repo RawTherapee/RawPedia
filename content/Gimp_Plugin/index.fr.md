@@ -1,7 +1,9 @@
 ---
-title: GIMP Plugin fr
+title: GIMP Plugin
 contributors:
   - Lebarhon
+tags:
+  - 'General Information'
 ---
 
 <div class="pagetitle">
