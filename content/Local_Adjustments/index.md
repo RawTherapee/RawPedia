@@ -716,7 +716,7 @@ width="600" />
 
 ##### Using Generalize Hyperbolic Stretch - GHS
 
-[GHS](local_adjustments#generalized_hyperbolic_stretch)
+[GHS](local_adjustments#Generalized Hyperbolic Stretch)
 
 ##### Recommendations
 
