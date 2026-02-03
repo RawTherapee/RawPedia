@@ -716,7 +716,7 @@ width="600" />
 
 ##### Using Generalize Hyperbolic Stretch - GHS
 
-[GHS](g_h_s)
+
 
 ##### Recommendations
 
