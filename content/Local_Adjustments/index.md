@@ -716,7 +716,7 @@ width="600" />
 
 ##### Using Generalize Hyperbolic Stretch - GHS
 
-[GHS](Local_Adjustments#Generalized_Hyperbolic_Stretch)
+[GHS](g_h_s)
 
 ##### Recommendations
 
@@ -3656,7 +3656,7 @@ highlights. It is obvious that the responses and therefore the settings
 are dependent on the image, the monitor, and the 6 settings
 
 ### **Generalized Hyperbolic Stretch**
-
+{{< relref “#g_h_s” >}}
 #### Introduction
 
 GHS - Generalized Hyperbolic Strectch, brings a new way of processing
