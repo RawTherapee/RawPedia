@@ -3653,11 +3653,11 @@ luminance (Yb%)", affect the distribution between the shadows and the
 highlights. It is obvious that the responses and therefore the settings
 are dependent on the image, the monitor, and the 6 settings
 
-### **Generalized Hyperbolic Stretch**
+### **Generalized Hyperbolic Stretch (GHS)  & Michaelis-Menten (MM)**
 
 #### Introduction
 
-GHS - Generalized Hyperbolic Strectch, brings a new way of processing
+**GHS - Generalized Hyperbolic Strectch**, brings a new way of processing
 images. The vocabulary used is different from what we're used to
 (contrast, brightness, etc.), so I'd like to take this opportunity to
 make a (personal) point about the different conceptions of software
@@ -3674,7 +3674,11 @@ Tooltips. Their content is directly inspired by that of PixInsight
 (authors of the algorithm). When I deem it necessary to avoid
 redundancy, I will quote from the Tooltips.
 
-#### Background on the history of digital photography - GHS and Selective Editing
+**MM - Michaelis-Menten**, I added the (MM) algorithm to Selective Editing. This algorithm has the advantage of being simple for the user and is very efficient in most cases. It’s a **tone mapper** using the Michaelis-Menten equation, which is borrowed from biochemistry to describe enzyme kinetics .
+
+**It has the same role as GHS, that of a 'pre-tone mapper**' which prepares the work for other 'Game changer' tools. Of course, like GHS, it can be sufficient on its own for certain images. Schematically, it's essentially the same as GHS (on the goals), but simpler, with slightly fewer options for (very) difficult images. In mathematical terms, comparing MM to GHS is like comparing the curriculum for the Baccalaureate exam to a Master's degree in Mathematics. If we put ourselves in the "mission impossible" situation, the asymptotic possibilities in the highlights are superior for GHS, but at the cost of greater complexity for the user.
+
+#### Background on the history of digital photography - GHS && MM and Selective Editing
 
 ##### Masks and U-points / Rt-spot
 
@@ -3776,7 +3780,7 @@ foundations. Who among photographers has a clear vision of what gamut or
 the sigmoid function is (for a doctor, the sigmoid is the terminal part
 of the intestine)?
 
-Some of the major problems currently addressed by GHS and other advanced
+Some of the major problems currently addressed by GHS / MM and other advanced
 modules such as Sigmoid, Filmic, TRC, Log Encoding, etc., include:
 
 - The gap between the dynamics perceived by human beings - in just a few
@@ -3805,12 +3809,21 @@ everything with a single click, while others are more complex in their
 approach, solving a few extra problems. Is the game of complexity worth
 the effort? To quote a well-known adage: 'A problem is only difficult
 when you don't know the answer'..., or 'Practice makes perfect'.
-Generalized Hyperbolic Strech (GHS), integrated with Selective Editing
-(SE), breaks new ground. The algorithm is particularly innovative (I
+Generalized Hyperbolic Strech (GHS) or Michaelis-Menten (MM), integrated with Selective Editing
+(SE), breaks new ground. GHS algorithms is particularly innovative (I
 love it). I chose to integrate it in Selective Editing, to work in
 direct mode. As we'll see later, (GHS) + (SE) makes it easy to combine
 several 'stretches' in normal GHS or inverse GHS, in 'Global', 'Full
-image' or 'Normal spot' mode.
+image' or 'Normal spot' mode. MM is much simpler mathematically and has a simpler user interface. It gives the correct result (almost) with the default settings (or with few changes). It should be suitable in most cases. However, it lacks an Inverse mode and is less efficient in extreme cases. There's nothing stopping you from mixing them, a first RT-spot with MM, and a second with GHS, for example in 'Inverse' mode to mitigate the effects in an area that's too heavily modified (sky, sun...).
+
+#### Hyperbolics
+Both GHS and MM use hyperbolic functions, but of a different nature. Michaelis' function can work without problems in any data range (it's best to put it in [0, 1]). GHS assumes the data is in [0, 1] otherwise it clips the data, which is unfortunate. This has significant consequences in terms of code and for users.
+
+There are several types of hyperbolic functions, all sharing, despite their different mathematical principles, the common characteristic of implementing asymptotic functions that approach a value without ever reaching it (a typical example being highlights):
+* Those that use the usual functions 'sinh' (hyperbolic sinus) , 'cosh' (hyperbolic cosinus) , 'tanh' (hyperbolic tangent), or even compositions of functions exp(x) and exp(-x). GHS falls into this category. Its distinctive feature (hence the term 'Generalized') is that the formula changes seamlessly depending on the settings... this is what makes it remarkable. I've attached the ‘Desmos’ demonstration (feel free to expand the left panel to see the formulas). But it is complex to implement and for users  [GHS - Desmos](https://www.desmos.com/calculator/xufftbzks6?lang=fr)
+* Sigmoid can also be considered a hyperbolic function for the 'highlight' part, even if its use is more in the field of statistics or AI, basically it is a model of the normal Gaussian function.
+* Michaelis-Menten : this function uses the Michaelis-Menten equation, which is borrowed from biochemistry to describe enzyme kinetics. It is simple and comes in the form : (S * x) / (K +  x). Where ‘S’ is ‘Output scale’ and ‘K’ is ‘Knee strength’. It has the advantage of being easy to use and gives good results, more easily than GHS. However, it is not reversible.
+* A similar function is used in 'Gamma based' and 'Slope based' in Selective Editing > Color Appearance (CAM16 & JzCzHz)
 
 #### Generalized Hyperbolic Strech - GHS - origin
 
@@ -3997,17 +4010,16 @@ all image data to be processed is in the interval \[0 ,1\].
 
 To make these settings easier, set the 'gamut' knob so that the data and
 histogram use the same values as those - linear + working profile - used
-by GHS. While setting (WP linear) and (BP linear), observe the
+by GHS. While setting (linear WP) and (linear BP), observe the
 histogram. On the left, the histogram should be close to the vertical
-axis, with no off-gamut values (BP linear). On the right, the histogram
-should be close to the vertical axis, with no out-of-gamut values (WP
-linear). The setting of (WP linear) is particularly influenced by the
+axis, with no off-gamut values (linear BP). On the right, the histogram
+should be close to the vertical axis, with no out-of-gamut values (linear WP). The setting of (linear WP) is particularly influenced by the
 activation of Highlight reconstruction. I recommend neutralizing the
 action of GHS - Stretch factor (D) defaults to 0.001, this initializes
 the system (all other settings default) - so as not to interfere with WP
 and BP settings and histogram reading. In 'Inverse GHS' mode, the White
-point (WP linear) and Black point (BP linear) settings must be
-different. For example, a value of 1.8 for (WP linear) will be required
+point (linear WP) and Black point (linear BP) settings must be
+different. For example, a value of 1.8 for (linear WP) will be required
 in GHS mode and perhaps 0.8 in Inverse GHS mode. In addition, there is
 interaction between the two settings.
 
@@ -4016,7 +4028,7 @@ Use the LMS (Long, Medium, Short) transformation, depending on the user's select
 
 These transformations, in the form of matrix, modify each R, G and B channel for each pixel, giving priority to certain dominant colors according to your choice.
 * None - leaves the data unchanged (default).
-* Agx - accentuates each R, G, B channel quite strongly so that the LMS data is perceived as more colorful.
+* AgX - accentuates each R, G, B channel quite strongly so that the LMS data is perceived as more colorful.
 * JzAzBz (XYZ High dynamic) - modifies the LMS distribution, by acting on X, Y, Z to better account for images with a high ‘linear WP’.
 * Cat16 (XYZ harmonious) - modifies the LMS distribution, by acting, on X, Y, Z - ensures a more harmonious distribution of colors while respecting the eye/brain interaction.
 * JzAzBz (RGB High dynamic) - modifies the LMS distribution, by acting, like AgX, on the 3 channels R, G, B to better account for images with a high ‘linear WP’.\n * Cat16 (RGB harmonious) - modifies the LMS distribution, by acting, like AgX, on the 3 channels R, G and B - ensures a more harmonious distribution of colors while respecting the eye/brain interaction.
@@ -4026,7 +4038,7 @@ For JzAzBz and Cat16, the XYZ mode : JzAzBz (XYZ High dynamic) and Cat16 (XYZ h
 This transformation only affects the modifications made by GHS: 'linear WP', 'linear BP', 'Symmetry point (SP)' and of course the action on Stretch factor (D) and Local intensity (b). It is imperative to review the GHS settings each time the matrix is ​​changed. It is strongly recommended to activate 'Auto Black point and White point' (except in Inverse mode). Observe the histogram in the two modes 'Working profile - linear' and 'Gamma - corrected output profile'.
 
 Be careful :
-* Not to confuse Cat16 with CIECAM. Cat16 is only the conversion matrix, while CIECAM (Color Appearance and Lighting) is a complete colorimetry process that takes physiological aspects into account.
+* Not to confuse Cat16 with CIECAM. Cat16 is only the conversion matrix, while CIECAM (Color Appearance & Lighting) is a complete colorimetry process that takes physiological aspects into account.
 * The JzAzBz matrix here, does not take into account the notions of 'Absolute luminance' and so does not use the notion of PQ (Perceptual Quantizer). Do not confuse with the module in Selective Editing > JzCzHz.
 
 **Comments**
@@ -4080,17 +4092,17 @@ vertical axis, and Pixel values Lightest is at 0.63, so the white point
 needs adjusting. <img src="bp-wp-3.jpg" title="BP-WP-3.jpg" width="600"
 alt="BP-WP-3.jpg" />
 
-- retouch the White point (WP linear) until Clipped pixel count Highlight
+- retouch the White point (linear WP) until Clipped pixel count Highlight
   is 0 and Pixel values Lightest is 1.
 - check that the values set (here 0) are correct by moving the Black
-  point on the right-hand side of the slider (BP linear). If you move
+  point on the right-hand side of the slider (linear BP). If you move
   the slider a little to the right and the values for Clipped pixel
   count Shadows and Pixel value - Darkest are no longer zero, you should
-  not change the Black point setting (BP linear).
+  not change the Black point setting (linear BP).
 
 You will be able to see on the images that require a 'Highlight
 reconstruction', the effectiveness of the various methods proposed, by
-looking at the White point (WP linear) value. For example:
+looking at the White point (linear WP) value. For example:
 
 - None: 1.1
 - Inpaint Opposed: 2.1
@@ -4261,10 +4273,11 @@ eliminating any parameters that could disrupt the analysis. I recommend
 working in Neutral mode. You can (must) activate:
 
 - Highlight reconstruction: which has a very strong impact on the
-  calculation of the White point (WP linear). In most cases, 'Color propagation' is preferred - with or without Clip out-of-gamut colors, depending on the nature of the image.
+  calculation of the White point (linear WP). In most cases, 'Color propagation' is preferred - with or without Clip out-of-gamut colors, depending on the nature of the image. Generally, uncheck 'Clip out-of-gamut colors'.
 - Denoise - if necessary.
 - White Balance: Auto - Temperature correlation is preferred in most cases except for illuminants, which are far from daylight or blackbody (LEDs, Halogen...).
-- Capture Sharpening and raw functions.
+- Capture Sharpening and raw functions as Raw Black Points (Dehaze): Check if the sliders are not zero. If they remain at zero, disable "Dehaze".
+- Gamut Compression: observe the effect on the histogram after selecting the 'Target Compression Gamut' (often sRGB). Slightly adjust the three threshold sliders to see (or not) the changes in the histogram and image. Adjust 'Power'. 
 - Toggle histogram and data display to 'Working profile - linear' mode.
 
 In Selective Editing, activate GHS as the first tool, in the first Spot
@@ -4274,9 +4287,13 @@ Once GHS has been set up, you can activate additional contrast,
 luminance and saturation functions if required, paying particular
 attention to those upstream of GHS, such as Contrast By Detail Levels or
 Haze Removal, which will modify the data received by GHS - and retouch,
-if necessary, the black point (BP linear) and white point (WP linear).
+if necessary, the black point (linear BP) and white point (linear WP).
 
 - Toggle histogram and data to 'Output profile – gamma'.
+
+- Abstract Profile - Fine-tune the image settings, primarily adjusting Gamma and Slope. Enable Contrast Enhancement : The system uses Wavelets with a complex algorithm based solely on signal processing. You can modify the 'local contrast' according to two main principles: a) Contrast profile, which allows you to change the extent of contrast detail to be reduced or amplified, from 2x2 pixels up to 1024x1024; b) a curve that distributes the effect around the average contrast for each level of decomposition. Primaries & Illuminant: It's a difficult tool to master, especially the primaries. But you can safely modify the illuminant (for example, going from D65 to D41) or use 'Dominant color'.
+
+- Color Appearance & Lighting : It uses CIECAM, which is probably, to my knowledge, the best tool for managing color. It has three processes (Scene, Image Adjustments, Viewing). It uses six variables: J - lightness, Q - brightness, C - chroma,  S -saturation, M - colorfullness, h - hue rotation.It takes into account the shooting and viewing conditions, as well as numerous physiological factors. In addition to the usual settings, you can separately adjust the 3 R, G, B channels for hue rotation, saturation and brightness. 
 
 ##### Various data processing modes - RGB, Lab, HSL
 
@@ -4392,7 +4409,7 @@ alt="Ghs-example1.jpg" /> In this first step:
 
 - It is preferable to use GHS as the first RT-spot; this will allow us to resolve the problem of equilibria due to deviations from [0 1] 
   of the values ​​of the Black point (linear BP) and White point (linear WP). In fact, GHS behaves like a pre-tone-mapper. Black point correction
-  (BP linear) in Raw corresponds roughly to Raw Black Point > Dehaze (Raw Tab), while White point correction (WP linear) can be considered
+  (linear BP) in Raw corresponds roughly to Raw Black Point > Dehaze (Raw Tab), while White point correction (linear WP) can be considered
   a better use of Raw White Points (Raw Tab). Ideally, GHS would have been developed using raw data, but this option would have two major
   drawbacks: a) the assignment of the Working Profile and White Balance would not have been performed, resulting in significant color shifts;
   b) it would be impossible to process non-raw images (TIFF/JPG).
@@ -4410,6 +4427,61 @@ alt="Ghs-example1.jpg" /> In this first step:
 
 - Feel free to use the Graduated Filter (at the bottom of the GHS menu) in 'Fit to screen' mode. This allows you to easily, for example,
   make skies more realistic.
+
+#### Michaelis-Menten - MM - origin  
+ This tone mapper uses the Michaelis-Menten equation, which is borrowed from biochemistry to describe enzyme kinetics. In image processing, it creates a smooth, saturating curve that is useful for tone mapping.
+
+##### MM Settings
+<figure>
+<img src="mm-settings.jpg" title="MM-settings.jpg" width="300" />
+<figcaption>MM-settings.jpg</figcaption>
+</figure>
+
+###### **Basic algorithm**
+* **Exposure**: Adjusts the input image brightness.
+* **Output scale (S)**: Controls the maximum asymptotic value of the curve; essentially the output white level.
+* **Knee strength (K)**: Determines the “knee” of the curve. Lower values result in a sharper transition to the compressed highlight region.
+* **Saturation**: Adjusts color saturation post-tone mapping.
+* **Output max clamp**: Sets the final clipping point for the output values.
+
+###### **JDx Matrix**
+The JDx checkbox allows the user to choose either the default or the JDx LMS transformations. LMS is a color space transform which represents the response (sensitivity) of the three types of cone cell in the human eye at long, medium, and short wavelengths.
+These transformations are matrices that modify each of the R G B channels for each individual pixel, giving priority to certain dominant colors depending on the selected option.
+* Unchecked: leaves the data unchanged (default).
+* JDx: accentuates each of the R G B channels by acting on X Y Z such that the LMS data is perceived as being more colorful.
+
+JDx Matrix: How it works ? I'm attaching part of the code.
+
+     Matrix lms_mat = {{//JDx - Jacques Desmis Matrix XYZ -> LMS - Simple matrix that amplifies the current channel.
+                        { 0.83, 0.1, 0.07 },//Red (L) predominant in LMS with a little more green
+                        { 0.12, 0.78, 0.1 },//Green (M) almost neutral, with a little more red
+                        { 0.11, 0.09, 0.80 }//Blue (S) almost neutral, with a little more red
+                    }};
+
+As you can see, it's a kind of table (a matrix with 9 numbers). Its use is simple. If you observe the pixels of each image, they will have (we'll stick with a simple case) values ​​like this for a pixel: X=0.4, Y=0.2, Z=0.7.
+To obtain the value of 'L', we multiply the coefficients of the first line with the values ​​X, then Y, then Z respectively, by adding them together
+This will give for ‘L’ : 0.83 * 0.4 + 0.1 * 0.2 + 0.07 * 0.7 = 0.401. This value will become the new data used. We do the same for 'M' and 'S' with the second and third lines.
+
+It is important to note that I was not referring to RGB data, but XYZ data. In 1931, researchers from the CIE (Commission Internationale de l’Eclairage – in french). They imagined a reference space to free themselves from the constraints of RGB spaces (they did this with a panel of volunteers) which led, in particular, to the CIExy diagram (the limits of human vision). It is therefore important that the matrix be independent of the Working Profile and remain the same; for example, if the user chooses 'AdobeRGB' instead of 'Rec2020', the matrix will remain the same. Of course, the RGB data must first be converted to XYZ (and vice versa).
+Of course, for the user it's completely transparent. The inverse matrix is ​​calculated... I chose a simple matrix (there are only 2 significant numbers), giving more pleasing images and lowering (a little) the white point in out-of-gamut images.
+
+###### **Black point & White point  & Attenuation threshold**
+The concept is completely similar to that of GHS; I've just simplified the interface to create a system that's easier to use than GHS.
+**Subtract linear black & Linear dynamic range** 
+- Subtract linear black: reduces the linear black point values ​​to almost zero. This makes optimal use of the available data by increasing overall contrast and reducing haze effects.
+- Linear dynamic range: allows you to include any data outside the color gamut (in the case of sunsets for example). Enabling ‘Highlight reconstruction’ > Color Propagation can provide a significant improvement.
+
+**Attenuation threshold**: uses an exponential function to reduce highlights likely to cause gamut overshoot.
+
+**The label at the bottom of the page**
+Allows you to see the effect of the two checkboxes:
+* Subtract black: reduces the value of the linear black point to almost zero by subtracting the indicated value.
+* White point: after subtracting the black point, the RGB values ​​are divided by the ‘Linear dynamic range’ (i.e. the displayed white point value minus the new black point).
+
+Reducing the black point to almost zero and taking into account the linear dynamic range as described allows the algorithm to produce better contrast and better consideration of the real gamut).
+
+Activating JDx Matrix’will reduce the ‘Linear dynamic range’ and change the color balance.
+
 
 **The Primaries and Illuminant functions - possible uses**
 
