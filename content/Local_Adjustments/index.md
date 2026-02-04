@@ -4030,6 +4030,10 @@ Performs the entire GHS processing, including Matrix conversion either AgX or Jz
 * To allow this matrix to be enabled or disabled, the 'Stretch factor (D)' must be between 0.001 and 0.002 and 'Auto Black point and White point' disabled.
 * You need to re-enable 'Auto Black point and White point' to recalculate the values ​​of 'linear BP', 'linear WP' and 'Symmetry point (SP)'.
 
+<figure>
+<img src="ghs-settings.jpg" title="GHS-settings.jpg" width="600" />
+<figcaption>GHS_settings.jpg</figcaption>
+</figure>
 
 ###### First image in Neutral mode, without Black Point (linear BP) and White Point (linear WP) retouching
 
