@@ -465,18 +465,29 @@ When one of the primaries is outside the limits of human vision we speak
 of imaginary colors.
 
 ### Use of data from the "CIE xy" diagram in Abstract profiles.
-
+You have a new way to influence the primaries since 2026. There are currently 3 possibilities:
+* Custom (Linear sliders)
 <figure>
-<img src="/images/cie-abstract_graph3.jpg" title="cie-abstract_graph3.jpg"
-width="600" />
-<figcaption>cie-abstract_graph3.jpg</figcaption>
+<img src="cie-abstract_graph_slider.jpg" title="cie-abstract_graph_slider.jpg"
+width="300" />
+<figcaption>cie-abstract_graph_slider.jpg</figcaption>
+</figure>
+* Custom (CIExy Diagram)
+<figure>
+<img src="cie-abstract_graph_diagram.jpg" title="cie-abstract_graph_diagram.jpg"
+width="300" />
+<figcaption>cie-abstract_graph_diagram.jpg</figcaption>
+</figure>
+* Custom (Polar sliders)
+<figure>
+<img src="cie-abstract_graph_polar.jpg" title="cie-abstract_graph_polar.jpg"
+width="300" />
+<figcaption>cie-abstract_graph_polar.jpg</figcaption>
 </figure>
 
-You can modify the 3 components of the virtual profile as you wish. The
-screen capture represents a configuration allowing you to improve the
-"calibration" of the Input profile.
+You can modify the 3 components of the virtual profile as you wish. 
 
-- In this example, the Working profile is Prophoto, where the primaries
+- In this example, the Working profile is Rec2020, where the primaries
   have not been modified. When you choose "Destination primaries” \>
   Custom the algorithm will by default choose this particular Working
   profile to build the Abstract or Virtual profile.
@@ -484,7 +495,7 @@ screen capture represents a configuration allowing you to improve the
   used for the Working profile you can create special effects similar to
   those produced in the more familiar Color Toning or Channel Mixer
   modules.
-- You can change the D50 Illuminant to another value, either to create
+- You can change the D65 Illuminant to another value, either to create
   or amplify some special effect, or adapt the illuminant to a specific
   case.
 
@@ -501,13 +512,14 @@ some other option (e.g. BT709 etc.), the CIE xy diagram will display:
   "Destination primaries" combobox.
 
 In addition to the profile options in the "Destination primaries"
-combobox there are also two custom options.
+combobox there are also three custom options.
 
-- Custom (sliders):
+- Custom (Linear sliders):
   - The sliders Red (X, Y), Green (X, Y) & Blue (X, Y) will be active.
   - The combobox Illuminant will be active.
+  - No changes will be made to Custom (Polar sliders)
   - Any changes to the slider values will be shown in the CIE xy
-    diagram. Note that the "Custom (sliders)" option does not allow you
+    diagram. Note that the "Custom (linear sliders)" option does not allow you
     to make changes directly on the graph.
 
 <!-- -->
@@ -518,9 +530,24 @@ combobox there are also two custom options.
     sliders. Note that in this case you can only modify the slider
     positions by moving the points on the graph.
   - The illuminant cannot be changed.
+  - No changes will be made to Custom (Polar sliders)
+  - Changes will be made to Custom (linear sliders)
+  - The sliders Red (X, Y), Green (X, Y) & Blue (X, Y) will be inactive.
+
+<!-- -->
+
+- Custom (Polar sliders):
+  - The sliders R.rot, G.rot, B.rot and R.sat, G.sat, B.sat will be active
+  - R.rot, G.rot, B.rot performs a rotation in degrees around the chosen white point.
+  - R.sat, G.sat, B.sat modify the distance between the primary and the white point, leading to either a reduction or an apparent increase in 'saturation'
+  - the changes will be made automatically to the graph.
+  - The illuminant cannot be changed.
+  - Linear sliders are hidden
+
+In all three cases, there are no gamut controls or image color creation if you deviate from the CIExy diagram. These are very delicate operations to be reserved for specific cases (LED illuminants, etc.).
 
 Note: If we take the example shown in the screen capture above (with the
-sliders set to the ProPhoto primary values):
+sliders set to the Rec2020 primary values):
 
 - When you move the red primary vertically upwards, reds will move
   towards magenta.
