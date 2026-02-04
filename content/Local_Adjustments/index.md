@@ -716,7 +716,7 @@ width="600" />
 
 ##### Using Generalize Hyperbolic Stretch - GHS
 
-
+* [GHS] (#GHSbegin)
 
 ##### Recommendations
 
@@ -3655,7 +3655,7 @@ luminance (Yb%)", affect the distribution between the shadows and the
 highlights. It is obvious that the responses and therefore the settings
 are dependent on the image, the monitor, and the 6 settings
 
-### **Generalized Hyperbolic Stretch**
+### **Generalized Hyperbolic Stretch** <a id="GHSbegin"></a>
 
 #### Introduction
 
