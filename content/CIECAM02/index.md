@@ -8,7 +8,8 @@ tags:
   - 'Advanced Tab'
 ---
 
-August 2022
+2022 - 2026
+//Jacques Desmis jdesmis@gmail.com
 
 ## Color Appearance & Lighting (CIECAM02/16) et Color Appearance (Cam16 & JzCzHz) - Tutorial
 
@@ -1315,6 +1316,35 @@ The abscissa represents the value of the chroma
 scale is "open".
 
 As usual, the ordinate represents the number of pixels involved.
+
+## Red - Green - Blue - Hue rotation (h) - Saturation (s) - Brightness curve (Q)
+<figure>
+<img src="red-green-blue.jpg" title="red-green-blue.jpg"
+width="300" />
+<figcaption>red-green-blue.jpg</figcaption>
+</figure>
+I've added an extra control to 'Red Green Blue'. For each R, G, B channel, in addition to **Hue rotation (h)** and **Saturation (s)** adjustments, you can adjust the **Brightness** (Q) using a curve.
+
+
+### 'Red Blue Green' allows you to either
+* Correct any color deviations due to either: gamut overshoot following various adjustments in the process, or poor white balance.
+* Achieve a better balance of colors and luminances to satisfy your preferences.
+* Film Simulation: with or without combined use in the 'Color' panel > Film Simulation > HaldCLUT (for example, using Kodak Kodachrome 25 film). 
+
+The system operates after the first process (Scene) which converts the 'Working profile' data into that of 'CAM16'. At this stage, the J, Q, C, s, M, h data take into account the physiological aspects considered by CIECAM, and a chromatic adaptation is performed.
+
+For each main color of CIECAM ac-bc [chroma based] hue plane - Red, Green, Blue - you can perform a slight hue (h) rotation in degrees (sliders) , adjust the saturation (s) as a percentage (sliders) , and adjust brightness (Q) (curves).
+
+As a general rule, small adjustments are sufficient: 1° to 3° for hue rotations (h), 5 to 10% more or less for saturation (s), very limited variations in brightness (Q). Of course, if you are looking for special effects, such as simulating a film, the settings can be more pronounced.
+
+These adjustments are made just before the other CIECAM adjustments: Lightness (J), Brightness (Q), Chroma (C), Saturation (s), Colorfullness (M), hue (h), contrast (J), contrast (Q) and curves and are added to them. 
+
+Next, the third process converts the data from the 'CAM16' color space to the 'Working profile', taking into account the Viewing conditions. Color adaptation is then performed.
+
+These hue, saturation and brightness adjustments do not use primaries. They are based on the principle of CAM (Color Appearance Models) in 3 processes.
+
+To simplify use, I've only included one slider per channel for hue rotation, and one slider per channel for Saturation (s). I could have also included a tone equalizer for the red, green, and blue ranges... If that proves useful, aside from complicating the interface, it doesn't pose any problem. Note that the 3 Brightness curves allow you to adjust the brightness and contrast for each color range. Specifically, brightness acts on the perceived chroma via the (s) Saturation function.
+
 
 ## Gamut control (Lab + CIECAM)
 
