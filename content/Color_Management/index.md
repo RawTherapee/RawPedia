@@ -996,33 +996,13 @@ Lightroom. For small deviations from the original primaries, the results
 are fairly predictable. On the other hand, if we make big changes, the
 results will be less so.
 
-### Several improvements have been made - March 2024
-
-These improvements concern:
-
-- GUI interface;
-- the number of primaries and illuminants;
-- the possibility of acting on the dominant color from the CIExy diagram
-
+#### The user interface, without the primaries
 <figure>
-<img src="/images/cie-abstract_graph4.jpg" title="cie-abstract_graph4.jpg"
-width="600" />
-<figcaption>cie-abstract_graph4.jpg</figcaption>
+<img src="abs-prof.jpg" title="abs-prof.jpg"
+width="300" />
+<figcaption>abs-prof.jpg</figcaption>
 </figure>
 
-You can find the description of these features in "Local Adjustments" -
-"Color Appearance (Cam16 & JzCzHz)
-
-[Local Adjustments - Cam16 with HDR](local_adjustments#cam16_tutorial_with_an_hdr_image)
-
-### Others several improvements have been made - 2025
-
-<figure>
-<img src="/images/AP-improv.jpg" title="Abstract Profile" width="600" />
-<figcaption>AP-improv.jpg</figcaption>
-</figure>
-
-These improvements concern:
 #### Saturation - Midtones & Attenuation threshold
 
 In the section relating to the TRC (Tone Response Curve), which until now consisted of the two sliders Gamma and Slope, two components have been added:
@@ -1031,6 +1011,31 @@ In the section relating to the TRC (Tone Response Curve), which until now consis
   It aims to compensate for the desaturation caused by significant luminance variations.
   Values ​​between 0.2 and 1.0 are often sufficient.
 - The ability to attenuate highlights using an exponential function : slider Attenuation threshold
+
+#### Final Gain & Gamut Compression
+
+* **Gain (Ev)**
+Modifies global image appearance, similar to the Exposure slider, by applying a positive or negative Ev adjustment to the RGB data. This allows for better control of either the color gamut or the saturation; for the latter, small values ​​of plus or minus 0.1 to 0.4 are sufficient. Higher gain values ​​allow for future use with HDR displays.
+
+* **Target Gamut**
+Placed at the end of the processing pipeline, this tool allows you to compress the data to fit into the output profile, for example. If Color Appearance & Lighting is enabled, it will take the compression into account.
+
+This output gamut compression is much simpler than at the beginning of the processing pipeline because unless the user has exaggerated the settings, the gamut will already be close to the Working Profile, hence the simplified graphical interface.
+
+More often than not, you will not see any changes to the image or the histogram when using Gamut Compression. This is because it does not convert the data from Working profile (often Rec2020) to Target Gamut (often sRGB), but compresses it to fit the Target gamut (often sRGB) while remaining in Working profile (often Rec2020), and the upstream treatments must have preserved the gamut. The effect is visible on Led’s, flowers with high saturation. On a normal landscape or portrait, there is most often no change.
+
+#### The 3 labels: RGB Max - Final RGB Max - Final Saturation Max
+* **RGB Max** :
+Provides information on out-of-limit RGB values. Values greater than 1 clearly indicate that we are out of gamut whereas for values less than 1, we cannot say whether the image is within gamut or not because it depends, for example, on the luminance. This check is performed at the end of the Abstract Profile and takes into account all parameters. The ‘Attenuation threshold’ slider can be used to limit the RGB values.
+Changes made to 'Color Appearance and Lighting', 'Final Gain and Gamut Compression' are not taken into account. 
+
+* **Final RGB Max - Final Saturation Max**
+* Provides information on out-of-limit RGB values and RGB saturation. Values greater than 1 for ‘Final RGB Max’ and ‘Final Saturation Max’ clearly indicate that we are out of gamut whereas for values less than 1, we cannot say whether the image is within gamut or not because it depends, for example, on the luminance. This check is performed at the end of the processing pipeline and takes into account all parameters. Changes made in Color Appearance & Lighting and in Final Gain & Gamut Compression are taken into account.
+
+* Adjusting the Gain (Ev) and Gamut Compression (Target Gamut and Power) settings will allow you to see the impact of these adjustments. You should also observe the histogram, which takes into account the output profile therefore the gamma. This data, which is directly related to the RGB values ​​and Saturation and is in the Working Profile, is in linear mode.
+
+* The data is only displayed if Target Gamut is enabled, or if Gain (Ev) is not equal to 0.
+
 
 #### Contrast Enhancement
 Purpose : This module complements the Tonal Response Curve (TRC) in the Abstract Profile (Color tab) and allows the user to carry out tonal contrast adjustments.
