@@ -716,8 +716,6 @@ width="600" />
 
 ##### Using Generalize Hyperbolic Stretch - GHS
 
-* [GHS] {{< ref "GHSBEGIN" >}}
-
 ##### Recommendations
 
 For portraits and images with low color contrast:
@@ -3656,7 +3654,7 @@ highlights. It is obvious that the responses and therefore the settings
 are dependent on the image, the monitor, and the 6 settings
 
 ### **Generalized Hyperbolic Stretch**
-ref "GHSBEGIN"
+
 #### Introduction
 
 GHS - Generalized Hyperbolic Strectch, brings a new way of processing
@@ -4008,6 +4006,30 @@ point (WP linear) and Black point (BP linear) settings must be
 different. For example, a value of 1.8 for (WP linear) will be required
 in GHS mode and perhaps 0.8 in Inverse GHS mode. In addition, there is
 interaction between the two settings.
+
+##### Matrix
+Use the LMS (Long, Medium, Short) transformation, depending on the user's selection. LMS is a color space transform which represents the response of the three types of cone cells of the human eye, named for their responsivity (sensitivity) peaks at long, medium, and short wavelengths.
+
+These transformations, in the form of matrix, modify each R, G and B channel for each pixel, giving priority to certain dominant colors according to your choice.
+* None - leaves the data unchanged (default).
+* Agx - accentuates each R, G, B channel quite strongly so that the LMS data is perceived as more colorful.
+* JzAzBz (XYZ High dynamic) - modifies the LMS distribution, by acting on X, Y, Z to better account for images with a high ‘linear WP’.
+* Cat16 (XYZ harmonious) - modifies the LMS distribution, by acting, on X, Y, Z - ensures a more harmonious distribution of colors while respecting the eye/brain interaction.
+* JzAzBz (RGB High dynamic) - modifies the LMS distribution, by acting, like AgX, on the 3 channels R, G, B to better account for images with a high ‘linear WP’.\n * Cat16 (RGB harmonious) - modifies the LMS distribution, by acting, like AgX, on the 3 channels R, G and B - ensures a more harmonious distribution of colors while respecting the eye/brain interaction.
+
+For JzAzBz and Cat16, the XYZ mode : JzAzBz (XYZ High dynamic) and Cat16 (XYZ harmonious) should ensure better color and luminance fidelity.
+
+This transformation only affects the modifications made by GHS: 'linear WP', 'linear BP', 'Symmetry point (SP)' and of course the action on Stretch factor (D) and Local intensity (b). It is imperative to review the GHS settings each time the matrix is ​​changed. It is strongly recommended to activate 'Auto Black point and White point' (except in Inverse mode). Observe the histogram in the two modes 'Working profile - linear' and 'Gamma - corrected output profile'.
+
+Be careful :
+* Not to confuse Cat16 with CIECAM. Cat16 is only the conversion matrix, while CIECAM (Color Appearance and Lighting) is a complete colorimetry process that takes physiological aspects into account.
+* The JzAzBz matrix here, does not take into account the notions of 'Absolute luminance' and so does not use the notion of PQ (Perceptual Quantizer). Do not confuse with the module in Selective Editing > JzCzHz.
+
+**Comments**
+Performs the entire GHS processing, including Matrix conversion either AgX or JzAzBz or Cat16. For JzAzBz and Cat16 you have the choice between a transformation in RGB mode or in XYZ mode (preferably).
+* To allow this matrix to be enabled or disabled, the 'Stretch factor (D)' must be between 0.001 and 0.002 and 'Auto Black point and White point' disabled.
+* You need to re-enable 'Auto Black point and White point' to recalculate the values ​​of 'linear BP', 'linear WP' and 'Symmetry point (SP)'.
+
 
 ###### First image in Neutral mode, without Black Point (linear BP) and White Point (linear WP) retouching
 
