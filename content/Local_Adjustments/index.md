@@ -3656,7 +3656,7 @@ highlights. It is obvious that the responses and therefore the settings
 are dependent on the image, the monitor, and the 6 settings
 
 ### **Generalized Hyperbolic Stretch**
-ref GHSBEGIN
+ref "GHSBEGIN"
 #### Introduction
 
 GHS - Generalized Hyperbolic Strectch, brings a new way of processing
