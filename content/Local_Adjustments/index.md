@@ -715,7 +715,7 @@ width="600" />
 </figure>
 
 ##### Using Generalize Hyperbolic Stretch - GHS
-
+[GHS]({{% relref "Local_Adjustments#generalized_hyperbolic_stretch_and_michaelis-_menten" %}})
 ##### Recommendations
 
 For portraits and images with low color contrast:
@@ -3653,7 +3653,7 @@ luminance (Yb%)", affect the distribution between the shadows and the
 highlights. It is obvious that the responses and therefore the settings
 are dependent on the image, the monitor, and the 6 settings
 
-### **Generalized Hyperbolic Stretch (GHS)  & Michaelis-Menten (MM)**
+### Generalized_Hyperbolic_Stretch_and_Michaelis-_Menten
 
 #### Introduction
 
