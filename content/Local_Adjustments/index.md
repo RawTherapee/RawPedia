@@ -715,7 +715,7 @@ width="600" />
 </figure>
 
 ##### Using Generalize Hyperbolic Stretch - GHS
-[GHS]({{% relref "Local_Adjustments#generalized_hyperbolic_stretch_and_michaelis-_menten" %}})
+[GHS]({{% relref "Local_Adjustments#generalized_hyperbolic_stretch_and_michaelis-menten" %}})
 ##### Recommendations
 
 For portraits and images with low color contrast:
