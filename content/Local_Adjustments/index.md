@@ -560,7 +560,7 @@ alt="Dodgeburnmodif1.jpg" /> A similar algorithm is used in the Dynamic
 Range & Exposure tool. It can be used to process images with large
 differences in exposure that are often globally underexposed.
 
-#### Making a graduated filter based on luminance, chrominance and hue (gradient filter)
+#### Making_A_Graduated_Filter_Based_On_Luminance_Chrominance_And_Hue
 
 ##### Preparation
 
@@ -5101,7 +5101,9 @@ gradient), this tool adds two additional gradients:
 Example using a Graduated Filter to produce variations in luminance,
 chrominance and hue: [Example in Getting started - Graduated Filter
 based on Luminance Chrominance and
-Hue](Local_Adjustments#Making_a_graduated_filter_based_on_luminance.2C_chrominance_and_hue_.28gradient_filter.29.md)
+Hue]({{% relref "Local_Adjustments#making_a_graduated_filter_based_on_luminance_chrominance_and_hue" %}})
+
+
 The following tools include a graduated filter module:
 
 - Color & Light: luminance, chrominance and hue
