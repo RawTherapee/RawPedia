@@ -465,18 +465,29 @@ When one of the primaries is outside the limits of human vision we speak
 of imaginary colors.
 
 ### Use of data from the "CIE xy" diagram in Abstract profiles.
-
+You have a new way to influence the primaries since 2026. There are currently 3 possibilities:
+* Custom (Linear sliders)
 <figure>
-<img src="/images/cie-abstract_graph3.jpg" title="cie-abstract_graph3.jpg"
-width="600" />
-<figcaption>cie-abstract_graph3.jpg</figcaption>
+<img src="cie-abstract_graph_slider.jpg" title="cie-abstract_graph_slider.jpg"
+width="300" />
+<figcaption>cie-abstract_graph_slider.jpg</figcaption>
+</figure>
+* Custom (CIExy Diagram)
+<figure>
+<img src="cie-abstract_graph_diagram.jpg" title="cie-abstract_graph_diagram.jpg"
+width="300" />
+<figcaption>cie-abstract_graph_diagram.jpg</figcaption>
+</figure>
+* Custom (Polar sliders)
+<figure>
+<img src="cie-abstract_graph_polar.jpg" title="cie-abstract_graph_polar.jpg"
+width="300" />
+<figcaption>cie-abstract_graph_polar.jpg</figcaption>
 </figure>
 
-You can modify the 3 components of the virtual profile as you wish. The
-screen capture represents a configuration allowing you to improve the
-"calibration" of the Input profile.
+You can modify the 3 components of the virtual profile as you wish. 
 
-- In this example, the Working profile is Prophoto, where the primaries
+- In this example, the Working profile is Rec2020, where the primaries
   have not been modified. When you choose "Destination primaries” \>
   Custom the algorithm will by default choose this particular Working
   profile to build the Abstract or Virtual profile.
@@ -484,7 +495,7 @@ screen capture represents a configuration allowing you to improve the
   used for the Working profile you can create special effects similar to
   those produced in the more familiar Color Toning or Channel Mixer
   modules.
-- You can change the D50 Illuminant to another value, either to create
+- You can change the D65 Illuminant to another value, either to create
   or amplify some special effect, or adapt the illuminant to a specific
   case.
 
@@ -501,13 +512,14 @@ some other option (e.g. BT709 etc.), the CIE xy diagram will display:
   "Destination primaries" combobox.
 
 In addition to the profile options in the "Destination primaries"
-combobox there are also two custom options.
+combobox there are also three custom options.
 
-- Custom (sliders):
+- Custom (Linear sliders):
   - The sliders Red (X, Y), Green (X, Y) & Blue (X, Y) will be active.
   - The combobox Illuminant will be active.
+  - No changes will be made to Custom (Polar sliders)
   - Any changes to the slider values will be shown in the CIE xy
-    diagram. Note that the "Custom (sliders)" option does not allow you
+    diagram. Note that the "Custom (linear sliders)" option does not allow you
     to make changes directly on the graph.
 
 <!-- -->
@@ -518,9 +530,24 @@ combobox there are also two custom options.
     sliders. Note that in this case you can only modify the slider
     positions by moving the points on the graph.
   - The illuminant cannot be changed.
+  - No changes will be made to Custom (Polar sliders)
+  - Changes will be made to Custom (linear sliders)
+  - The sliders Red (X, Y), Green (X, Y) & Blue (X, Y) will be inactive.
+
+<!-- -->
+
+- Custom (Polar sliders):
+  - The sliders R.rot, G.rot, B.rot and R.sat, G.sat, B.sat will be active
+  - R.rot, G.rot, B.rot performs a rotation in degrees around the chosen white point.
+  - R.sat, G.sat, B.sat modify the distance between the primary and the white point, leading to either a reduction or an apparent increase in 'saturation'
+  - the changes will be made automatically to the graph.
+  - The illuminant cannot be changed.
+  - Linear sliders are hidden
+
+In all three cases, there are no gamut controls or image color creation if you deviate from the CIExy diagram. These are very delicate operations to be reserved for specific cases (LED illuminants, etc.).
 
 Note: If we take the example shown in the screen capture above (with the
-sliders set to the ProPhoto primary values):
+sliders set to the Rec2020 primary values):
 
 - When you move the red primary vertically upwards, reds will move
   towards magenta.
@@ -969,33 +996,13 @@ Lightroom. For small deviations from the original primaries, the results
 are fairly predictable. On the other hand, if we make big changes, the
 results will be less so.
 
-### Several improvements have been made - March 2024
-
-These improvements concern:
-
-- GUI interface;
-- the number of primaries and illuminants;
-- the possibility of acting on the dominant color from the CIExy diagram
-
+#### The user interface, without the primaries
 <figure>
-<img src="/images/cie-abstract_graph4.jpg" title="cie-abstract_graph4.jpg"
-width="600" />
-<figcaption>cie-abstract_graph4.jpg</figcaption>
+<img src="abs-prof.jpg" title="abs-prof.jpg"
+width="300" />
+<figcaption>abs-prof.jpg</figcaption>
 </figure>
 
-You can find the description of these features in "Local Adjustments" -
-"Color Appearance (Cam16 & JzCzHz)
-
-[Local Adjustments - Cam16 with HDR](local_adjustments#cam16_tutorial_with_an_hdr_image)
-
-### Others several improvements have been made - 2025
-
-<figure>
-<img src="/images/AP-improv.jpg" title="Abstract Profile" width="600" />
-<figcaption>AP-improv.jpg</figcaption>
-</figure>
-
-These improvements concern:
 #### Saturation - Midtones & Attenuation threshold
 
 In the section relating to the TRC (Tone Response Curve), which until now consisted of the two sliders Gamma and Slope, two components have been added:
@@ -1004,6 +1011,31 @@ In the section relating to the TRC (Tone Response Curve), which until now consis
   It aims to compensate for the desaturation caused by significant luminance variations.
   Values ​​between 0.2 and 1.0 are often sufficient.
 - The ability to attenuate highlights using an exponential function : slider Attenuation threshold
+
+#### Final Gain & Gamut Compression
+
+* **Gain (Ev)**
+Modifies global image appearance, similar to the Exposure slider, by applying a positive or negative Ev adjustment to the RGB data. This allows for better control of either the color gamut or the saturation; for the latter, small values ​​of plus or minus 0.1 to 0.4 are sufficient. Higher gain values ​​allow for future use with HDR displays.
+
+* **Target Gamut**
+Placed at the end of the processing pipeline, this tool allows you to compress the data to fit into the output profile, for example. If Color Appearance & Lighting is enabled, it will take the compression into account.
+
+This output gamut compression is much simpler than at the beginning of the processing pipeline because unless the user has exaggerated the settings, the gamut will already be close to the Working Profile, hence the simplified graphical interface.
+
+More often than not, you will not see any changes to the image or the histogram when using Gamut Compression. This is because it does not convert the data from Working profile (often Rec2020) to Target Gamut (often sRGB), but compresses it to fit the Target gamut (often sRGB) while remaining in Working profile (often Rec2020), and the upstream treatments must have preserved the gamut. The effect is visible on Led’s, flowers with high saturation. On a normal landscape or portrait, there is most often no change.
+
+#### The 3 labels: RGB Max - Final RGB Max - Final Saturation Max
+* **RGB Max** :
+Provides information on out-of-limit RGB values. Values greater than 1 clearly indicate that we are out of gamut whereas for values less than 1, we cannot say whether the image is within gamut or not because it depends, for example, on the luminance. This check is performed at the end of the Abstract Profile and takes into account all parameters. The ‘Attenuation threshold’ slider can be used to limit the RGB values.
+Changes made to 'Color Appearance and Lighting', 'Final Gain and Gamut Compression' are not taken into account. 
+
+* **Final RGB Max - Final Saturation Max**
+* Provides information on out-of-limit RGB values and RGB saturation. Values greater than 1 for ‘Final RGB Max’ and ‘Final Saturation Max’ clearly indicate that we are out of gamut whereas for values less than 1, we cannot say whether the image is within gamut or not because it depends, for example, on the luminance. This check is performed at the end of the processing pipeline and takes into account all parameters. Changes made in Color Appearance & Lighting and in Final Gain & Gamut Compression are taken into account.
+
+* Adjusting the Gain (Ev) and Gamut Compression (Target Gamut and Power) settings will allow you to see the impact of these adjustments. You should also observe the histogram, which takes into account the output profile therefore the gamma. This data, which is directly related to the RGB values ​​and Saturation and is in the Working Profile, is in linear mode.
+
+* The data is only displayed if Target Gamut is enabled, or if Gain (Ev) is not equal to 0.
+
 
 #### Contrast Enhancement
 Purpose : This module complements the Tonal Response Curve (TRC) in the Abstract Profile (Color tab) and allows the user to carry out tonal contrast adjustments.
