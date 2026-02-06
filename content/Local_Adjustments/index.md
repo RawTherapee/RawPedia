@@ -1603,7 +1603,7 @@ Attribution-share Alike 4.0):
 <figcaption>texture-wav1.jpg</figcaption>
 </figure>
 
-#### Merging layers using blend modes
+#### Merging_Layers_Using_Blend_Modes
 
 You can use "Merge file" in the Color & Light tool (Advanced mode) to
 simulate the effect of merging layers. Each RT-spot can be thought of as
@@ -5122,10 +5122,8 @@ Applying a gradient does not affect the Transition or Scope settings.
 
 ### Complementary algorithm – "Merge file"
 
-Example using the merge-file function (Color & Light):[Example in
-Getting Started Merge
-File](Local_Adjustments#Merging_layers_using_blend_modes.md) In
-Color & light there are 4 options in the "Merge file" drop-down menu:
+Example using the merge-file function (Color & Light): [Example in Getting Started Merge File]({{% relref "Local_Adjustments#merging_layers_using_blend_modes" %}})
+ In Color & light there are 4 options in the "Merge file" drop-down menu:
 
 - None: All of the usual Rawtherapee functions, including masks, operate
   normally.
