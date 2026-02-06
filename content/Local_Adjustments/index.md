@@ -225,8 +225,6 @@ alt="prepare1.jpg" /> Raw file (Jacques Desmis - Creative Common
 Attribution-share Alike 4.0):
 [1](https://drive.google.com/file/d/1X2g73FqzQl7-WRfzhF7zHa7XWwnKcwtx/view?usp=sharing)
 
-</ul>
-</div>
 
 #### Adding_The_Color_And_Light_Tool
 
