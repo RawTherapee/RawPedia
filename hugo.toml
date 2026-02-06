@@ -58,9 +58,9 @@ defaultContentLanguage = 'en'
   [markup.highlight]
     style =  'algol_nu'
   [markup.tableOfContents]
-    endLevel = 3
+    endLevel = 4
     ordered = false
-    startLevel = 1
+    startLevel = 2
   [markup.goldmark.renderer]
     hardWraps = false
     unsafe = true

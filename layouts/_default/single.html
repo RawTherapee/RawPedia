@@ -8,6 +8,14 @@
               {{ .Title | markdownify }}
     </h1>
 
+    {{ if .Params.toc }}
+      <button class='btn btn-sm btn-outline-secondary' type='button' data-bs-toggle='collapse' data-bs-target='#toc' role='button' aria-expanded='false' aria-controls='toc'>Table of Contents</button>
+      <div class='collapse border rounded bg-light' id='toc'>
+        {{ .TableOfContents }}
+      </div>
+      <div class='mb-3'></div>
+    {{ end }}
+
     {{ .Content }}
 
     {{ if .IsTranslated }}

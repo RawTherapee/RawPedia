@@ -6,9 +6,11 @@ contributors:
 tags:
   - 'Tool Description'
   - 'Selective Editing'
+toc: true
 ---
 
 February 2026
+
 
 ## Introduction
 
