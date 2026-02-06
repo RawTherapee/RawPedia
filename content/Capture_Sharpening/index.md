@@ -2,6 +2,7 @@
 title: Capture Sharpening
 contributors:
   - XavAL
+  - jdc
 tags:
   - 'Tool Description'
   - 'Raw Tab'
@@ -198,7 +199,7 @@ It has become nearly impossible to know which mask is active. Hence the presence
 
 ## Capture Sharpening: Presharpening denoise and Postsharpening denoise
 
-<img src="/images/CS-pre-post.jpg" title="Capture Sharpening" width="600"
+<img src="/images/CS-pre-post.jpg" title="Capture Sharpening" width="300"
 alt="CS-pre-post.jpg" />
 
 ### Presharpening denoise:
