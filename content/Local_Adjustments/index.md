@@ -8,7 +8,7 @@ tags:
   - 'Selective Editing'
 ---
 
-3 February 2026
+February 2026
 
 ## Introduction
 
@@ -202,8 +202,8 @@ text.
 
 #### Choose the type of Spot
 
-[The four types of RT-spot](local_adjustments#the_4_types_of_rt-spot)
 
+[The four types of RT-spot]({{% relref "Local_Adjustments#the_four_types_of_rt-spot" %}})
 #### Preparation
 
 Position the RT-spot at the desired location. In this case, we want to
@@ -228,7 +228,7 @@ Attribution-share Alike 4.0):
 </ul>
 </div>
 
-#### Adding the Color & Light tool
+#### Adding_The_Color_And_Light_Tool
 
 In the settings menu, choose "Add tool to current spot".
 
@@ -684,7 +684,7 @@ width="600" />
 <figcaption>shadows-trc1.jpg</figcaption>
 </figure>
 
-##### Using Log Encoding
+##### Using_Log_Encoding
 
 - “Add tool to current spot” \> Log Encoding.
 - Note that the Scope slider in this case is in the Log Encoding tool:
@@ -747,7 +747,7 @@ change the parameters of "Shape detection" in Settings as follows:
 - Set "ab-L balance (ΔE)" to L.
 - Adjust "Scope (color tools)" if necessary.
 
-##### An evaluation of the dynamic-range capabilities of tools in Selective Editing
+##### An_Evaluation_Of_The_Dynamic-range_Capabilities_Of_Tools_In_Selective_Editing
 
 TIF file (Creative Common Attribution-share Alike 4.0):
 [4](https://drive.google.com/file/d/1vAzFY7Qh8MdJ882J_4JeO_cnpGELzD8D/view?usp=sharing)
@@ -1703,7 +1703,7 @@ width="600" />
 <figcaption>mergeorigsoftlight1.jpg</figcaption>
 </figure>
 
-#### Using a simple mask to improve color selection
+#### Using_A_Simple_Mask_To_Improve_Color_Selection
 
 ##### Preparation
 
@@ -2599,7 +2599,7 @@ width="600" alt="ciecam_light_prepa.jpg" />
 
 Create a full-image spot and then "Add tool to current spot" \> Log
 Encoding. For this example, and for comparison with
-[Lift the shadows](local_adjustments#using_log_encoding), the following
+[Lift the shadows]({{% relref "Local_Adjustments#using_log_encoding" %}}), the following
 arbitrary settings are used:
 
 - Set the value of Scope = 79
@@ -2959,7 +2959,7 @@ described in the two previous paragraphs, it was decided:
     when it isn’t necessary can lead to a change in the overall
     colorimetry that is not always easy to recover. The "Brightness
     compression" slider is used to limit the action for high luminance
-    values.[An evaluation of the dynamic-range capabilities of tools](local_adjustments#an_evaluation_of_the_dynamic-range_capabilities_of_tools_in_the_%e2%80%9clacam16%e2%80%9d_development_branch)
+    values.[An evaluation of the dynamic-range capabilities of tools]({{% relref "Local_Adjustments#an_evaluation_of_the_dynamic-range_capabilities_of_tools_in_selective_editing" %}})
   - Tone Response Curve (TRC) & Midtones: in the majority of cases, this
     module allows you to modify underexposed images (with deep shadows),
     or images where there are problems with luminance balance. This
@@ -3600,9 +3600,7 @@ Where:
 
 #### HDR tools Sigmoid Jz and Log Encoding
 
-The Jz version of Log Encoding is similar in concept to the [Log
-Encoding
-module](Local_Adjustments#Log_Encoding_and_Ciecam02_Tutorial.md).
+The Jz version of Log Encoding is similar in concept to the Log Encoding Module
 The main difference is the way luminance is evaluated. In Log Encoding,
 the module works in RGB mode and can produce hue shifts if the
 evaluation is not perfect.
@@ -4672,7 +4670,7 @@ Mapping, etc.), many of which also have their own graduated filter
 function. In all cases the center C of the RT-spot is the reference
 point for the start of the gradient.
 
-### The 4 types of RT-spot
+### The_Four_Types_Of_RT-spot
 
 Four types of RT-spot are available:
 
@@ -5229,8 +5227,7 @@ function to work.
 ### Complementary algorithm - Mask and Modifications
 
 Example using a mask:
-[Example in Getting started to improve color selection](local_adjustments#using_a_simple_mask_to_improve_color_selection)
-
+[Example in Getting started to improve color selection]({{% relref "Local_Adjustments#using_a_simple_mask_to_improve_color_selection" %}})
 #### Preamble
 
 The mask concepts used in Local Adjustments have been designed by
@@ -5772,8 +5769,8 @@ functions in the rest of RawTherapee.
   differences in rendering.
 
 An example with Color & Light:
-[Example in first steps with Color & Light](local_adjustments#adding_the_color_&_light_tool)
 
+[Example in first steps with Color & Light]({{% relref "Local_Adjustments#adding_the_color_and_light_tool" %}})
 <img src="colorspace_flowers.jpg" title="Colorspace_flowers.jpg"
 width="300" alt="Colorspace_flowers.jpg" />
 <img src="colorspace_flowers-grid2.jpg"
