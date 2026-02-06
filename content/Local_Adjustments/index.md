@@ -4451,13 +4451,13 @@ These transformations are matrices that modify each of the R G B channels for ea
 * JDx: accentuates each of the R G B channels by acting on X Y Z such that the LMS data is perceived as being more colorful.
 
 JDx Matrix: How it works ? I'm attaching part of the code.
-
-     Matrix lms_mat = {{//JDx - Jacques Desmis Matrix XYZ -> LMS - Simple matrix that amplifies the current channel.
+```
+Matrix lms_mat = {{//JDx - Jacques Desmis Matrix XYZ -> LMS - Simple matrix that amplifies the current channel.
                         { 0.83, 0.1, 0.07 },//Red (L) predominant in LMS with a little more green
                         { 0.12, 0.78, 0.1 },//Green (M) almost neutral, with a little more red
                         { 0.11, 0.09, 0.80 }//Blue (S) almost neutral, with a little more red
-                    }};
-
+                 }};
+```
 As you can see, it's a kind of table (a matrix with 9 numbers). Its use is simple. If you observe the pixels of each image, they will have (we'll stick with a simple case) values ​​like this for a pixel: X=0.4, Y=0.2, Z=0.7.
 To obtain the value of 'L', we multiply the coefficients of the first line with the values ​​X, then Y, then Z respectively, by adding them together
 This will give for ‘L’ : 0.83 * 0.4 + 0.1 * 0.2 + 0.07 * 0.7 = 0.401. This value will become the new data used. We do the same for 'M' and 'S' with the second and third lines.
