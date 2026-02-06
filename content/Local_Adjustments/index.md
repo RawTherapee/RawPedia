@@ -1282,7 +1282,7 @@ curve, “Structure mask strength”, “Smooth radius”, etc...
 </figure>
 
 <figure>
-<img src="mulot_mask2.jpg" title="mulot_mask2.jpg" width="600" />
+<img src="mulot_mask2.jpg" title="mulot_mask2.jpg" width="300" />
 <figcaption>mulot_mask2.jpg</figcaption>
 </figure>
 
@@ -1339,7 +1339,7 @@ For other images it may be necessary to adjust:
     loss of detail compared to filters that use local averaging.
 
 <figure>
-<img src="mulot_nlmeans.jpg" title="mulot_nlmeans.jpg" width="600" />
+<img src="mulot_nlmeans.jpg" title="mulot_nlmeans.jpg" width="300" />
 <figcaption>mulot_nlmeans.jpg</figcaption>
 </figure>
 
@@ -1462,7 +1462,7 @@ The ratio flat-structured areas allows you to correct the action between the two
 
 On noisy images and in Raw format, you should use the 'Presharpening denoise' and ‘Postsharpening denoise’ functions for more effective mask action.
 
-<img src="denoise-contrast.jpg" title="Denoise contrast mask" width="600"
+<img src="denoise-contrast.jpg" title="Denoise contrast mask" width="300"
 alt="Denoise-contrast.jpg" />
 
 ###### Locks MadL noise evaluation
@@ -1490,7 +1490,9 @@ Allows you to manually control MadL values. Be careful: this function assumes ma
 
 Be careful not to confuse the action on MadL which is a noise estimation only used in Wavelet Denoise where the strength is set in Selective Editing using a curve and a selected level (Aggressive / Conservative). The MadL scale is exponential and not linear.
 The first levels of wavelet decomposition provide visible noise reduction, whereas the higher levels have more affect on banding.
-<img src="denoise-manual.jpg" title="Denoise Manual settings" width="600"
+
+
+<img src="denoise-manual.jpg" title="Denoise Manual settings" width="300"
 alt="Denoise-manual.jpg" />
 
 ######  Selective Editing – Blur/Grain & Denoise > Blur & Noise
@@ -3207,7 +3209,7 @@ In Primaries & Illuminant - go to “Dominant color”:
 - pp3 file 2 ![Truck-tunnel.pp3 - 2  spots](/images/Truck-tunnel-2.pp3 "Truck-tunnel.pp3 - 2 spots")
 - pp3 file 3 ![Truck-tunnel.pp3 - Surround](/images/Truck-tunnel-3.pp3 "Truck-tunnel.pp3 - Surround")
 
-###### Image d'origine
+###### Original Image
 
 <figure>
 <img src="van-tunnel-0.jpg" title="Van-tunnel-0.jpg" width="600" />
@@ -6566,7 +6568,7 @@ The results in the TIF/JPG outputs correspond to those in the 'fit to screen' vi
 
 The minimum size of the RT-spot is 150x150.
 
-<img src="capture-decon.jpg" title="Capture deconvolution" width="600"
+<img src="capture-decon.jpg" title="Capture deconvolution" width="300"
 alt="Capture-decon.jpg" />
 
 #### Associated Tooltip
