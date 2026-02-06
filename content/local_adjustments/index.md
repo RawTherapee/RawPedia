@@ -203,7 +203,9 @@ text.
 #### Choose the type of Spot
 
 
-[The four types of RT-spot]({{% relref "Local_Adjustments#the_four_types_of_rt-spot" %}})
+[The four types of RT-spot]({{% relref "#the-four-types-of-rt-spot" %}})
+
+
 #### Preparation
 
 Position the RT-spot at the desired location. In this case, we want to
@@ -226,7 +228,7 @@ Attribution-share Alike 4.0):
 [1](https://drive.google.com/file/d/1X2g73FqzQl7-WRfzhF7zHa7XWwnKcwtx/view?usp=sharing)
 
 
-#### Adding_The_Color_And_Light_Tool
+#### Adding The Color And Light Tool
 
 In the settings menu, choose "Add tool to current spot".
 
@@ -558,7 +560,7 @@ alt="Dodgeburnmodif1.jpg" /> A similar algorithm is used in the Dynamic
 Range & Exposure tool. It can be used to process images with large
 differences in exposure that are often globally underexposed.
 
-#### Making_A_Graduated_Filter_Based_On_Luminance_Chrominance_And_Hue
+#### Making A Graduated Filter Based On Luminance Chrominance And Hue
 
 ##### Preparation
 
@@ -682,7 +684,7 @@ width="600" />
 <figcaption>shadows-trc1.jpg</figcaption>
 </figure>
 
-##### Using_Log_Encoding
+##### Using Log Encoding
 
 - “Add tool to current spot” \> Log Encoding.
 - Note that the Scope slider in this case is in the Log Encoding tool:
@@ -713,7 +715,7 @@ width="600" />
 </figure>
 
 ##### Using Generalize Hyperbolic Stretch - GHS
-[GHS]({{% relref "Local_Adjustments#generalized_hyperbolic_stretch_and_michaelis-menten" %}})
+[GHS]({{% relref "#generalized-hyperbolic-stretch-and-michaelis-menten" %}})
 ##### Recommendations
 
 For portraits and images with low color contrast:
@@ -745,7 +747,7 @@ change the parameters of "Shape detection" in Settings as follows:
 - Set "ab-L balance (ΔE)" to L.
 - Adjust "Scope (color tools)" if necessary.
 
-##### An_Evaluation_Of_The_Dynamic-range_Capabilities_Of_Tools_In_Selective_Editing
+##### An Evaluation Of The Dynamic-range Capabilities Of Tools In Selective Editing
 
 TIF file (Creative Common Attribution-share Alike 4.0):
 [4](https://drive.google.com/file/d/1vAzFY7Qh8MdJ882J_4JeO_cnpGELzD8D/view?usp=sharing)
@@ -1603,7 +1605,7 @@ Attribution-share Alike 4.0):
 <figcaption>texture-wav1.jpg</figcaption>
 </figure>
 
-#### Merging_Layers_Using_Blend_Modes
+#### Merging Layers Using Blend Modes
 
 You can use "Merge file" in the Color & Light tool (Advanced mode) to
 simulate the effect of merging layers. Each RT-spot can be thought of as
@@ -1703,7 +1705,7 @@ width="600" />
 <figcaption>mergeorigsoftlight1.jpg</figcaption>
 </figure>
 
-#### Using_A_Simple_Mask_To_Improve_Color_Selection
+#### Using A Simple Mask To Improve Color Selection
 
 ##### Preparation
 
@@ -2599,7 +2601,7 @@ width="600" alt="ciecam_light_prepa.jpg" />
 
 Create a full-image spot and then "Add tool to current spot" \> Log
 Encoding. For this example, and for comparison with
-[Lift the shadows]({{% relref "Local_Adjustments#using_log_encoding" %}}), the following
+[Lift the shadows]({{% relref "#using-log-encoding" %}}), the following
 arbitrary settings are used:
 
 - Set the value of Scope = 79
@@ -2959,7 +2961,7 @@ described in the two previous paragraphs, it was decided:
     when it isn’t necessary can lead to a change in the overall
     colorimetry that is not always easy to recover. The "Brightness
     compression" slider is used to limit the action for high luminance
-    values.[An evaluation of the dynamic-range capabilities of tools]({{% relref "Local_Adjustments#an_evaluation_of_the_dynamic-range_capabilities_of_tools_in_selective_editing" %}})
+    values. [An evaluation of the dynamic-range capabilities of tools]({{% relref "#an-evaluation-of-the-dynamic-range-capabilities-of-tools-in-selective-editing" %}}).
   - Tone Response Curve (TRC) & Midtones: in the majority of cases, this
     module allows you to modify underexposed images (with deep shadows),
     or images where there are problems with luminance balance. This
@@ -3651,7 +3653,7 @@ luminance (Yb%)", affect the distribution between the shadows and the
 highlights. It is obvious that the responses and therefore the settings
 are dependent on the image, the monitor, and the 6 settings
 
-### Generalized_Hyperbolic_Stretch_and_Michaelis-Menten
+### Generalized Hyperbolic Stretch and Michaelis-Menten
 
 #### Introduction
 
@@ -4670,7 +4672,7 @@ Mapping, etc.), many of which also have their own graduated filter
 function. In all cases the center C of the RT-spot is the reference
 point for the start of the gradient.
 
-### The_Four_Types_Of_RT-spot
+### The Four Types Of RT-spot
 
 Four types of RT-spot are available:
 
@@ -5099,7 +5101,7 @@ gradient), this tool adds two additional gradients:
 Example using a Graduated Filter to produce variations in luminance,
 chrominance and hue: [Example in Getting started - Graduated Filter
 based on Luminance Chrominance and
-Hue]({{% relref "Local_Adjustments#making_a_graduated_filter_based_on_luminance_chrominance_and_hue" %}})
+Hue]({{% relref "#making-a-graduated-filter-based-on-luminance-chrominance-and-hue" %}})
 
 
 The following tools include a graduated filter module:
@@ -5120,7 +5122,7 @@ Applying a gradient does not affect the Transition or Scope settings.
 
 ### Complementary algorithm – "Merge file"
 
-Example using the merge-file function (Color & Light): [Example in Getting Started Merge File]({{% relref "Local_Adjustments#merging_layers_using_blend_modes" %}})
+Example using the merge-file function (Color & Light): [Example in Getting Started Merge File]({{% relref "#merging-layers-using-blend-modes" %}})
  In Color & light there are 4 options in the "Merge file" drop-down menu:
 
 - None: All of the usual Rawtherapee functions, including masks, operate
@@ -5227,7 +5229,7 @@ function to work.
 ### Complementary algorithm - Mask and Modifications
 
 Example using a mask:
-[Example in Getting started to improve color selection]({{% relref "Local_Adjustments#using_a_simple_mask_to_improve_color_selection" %}})
+[Example in Getting started to improve color selection]({{% relref "#using-a-simple-mask-to-improve-color-selection" %}})
 #### Preamble
 
 The mask concepts used in Local Adjustments have been designed by
@@ -5770,7 +5772,8 @@ functions in the rest of RawTherapee.
 
 An example with Color & Light:
 
-[Example in first steps with Color & Light]({{% relref "Local_Adjustments#adding_the_color_and_light_tool" %}})
+[Example in first steps with Color & Light]({{% relref "#adding-the-color-and-light-tool" %}})
+
 <img src="colorspace_flowers.jpg" title="Colorspace_flowers.jpg"
 width="300" alt="Colorspace_flowers.jpg" />
 <img src="colorspace_flowers-grid2.jpg"
@@ -6959,7 +6962,7 @@ with a Graduated Filter equipped with 2 sliders: “Gradient strength” and
 ### Color appearance (Cam16 & JzCzHz)
 
 Example using Color Appearance and HDR functions:
-[HDR-SDR First approach: Log encoding – Cam16 – JzCzHz – Sigmoid](Local_Adjustments#HDR_to_SDR:_A_First_Approach_(Log_Encoding_-_CAM16_-_JzCzHz_-_Sigmoid) "wikilink")
+[HDR-SDR First approach: Log encoding – Cam16 – JzCzHz – Sigmoid](#HDR_to_SDR:_A_First_Approach_(Log_Encoding_-_CAM16_-_JzCzHz_-_Sigmoid) "wikilink")
 
 The Color appearance module (Cam16 & JzCzHz) is both:
 
