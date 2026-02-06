@@ -3205,9 +3205,9 @@ In Primaries & Illuminant - go to “Dominant color”:
 - Raw file(Copyright - Roberto Posadas - Common Attribution-share Alike
   4.0):
   [28](https://drive.google.com/open?id=1RXoXp-AHWzo6mzbd-VyRTRvmRlFtyZDq)
-- pp3 file ![Truck-tunnel.pp3](/images/Truck-tunnel-1.pp3 "Truck-tunnel.pp3")
-- pp3 file 2 ![Truck-tunnel.pp3 - 2  spots](/images/Truck-tunnel-2.pp3 "Truck-tunnel.pp3 - 2 spots")
-- pp3 file 3 ![Truck-tunnel.pp3 - Surround](/images/Truck-tunnel-3.pp3 "Truck-tunnel.pp3 - Surround")
+- pp3 file [truck-tunnel-1.pp3](truck-tunnel-1.pp3 "truck-tunnel.pp3")
+- pp3 file [truck-tunnel-2.pp3 - 2 spots](truck-tunnel-2.pp3 "truck-tunnel.pp3")
+- pp3 file [truck-tunnel-3.pp3 - surround](truck-tunnel-3.pp3 "truck-tunnel.pp3")
 
 ###### Original Image
 
