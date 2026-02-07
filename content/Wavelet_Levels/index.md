@@ -193,7 +193,7 @@ be what is left after the details in each of the levels have been
 removed (regardless of whether they have been modified).
 
 Note that if you want to use the Wavelet Levels tool at the same time as
-[the CIECAM tool](ciecam02), you may get artifacts due to the
+the CIECAM tool, you may get artifacts due to the
 fact that the CIECAM color model uses specific values that are close to,
 but different from the values of the Lab color space. Because of the way
 the tool is coded these artifacts are unavoidable, but their appearance
