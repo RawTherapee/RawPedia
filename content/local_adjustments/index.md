@@ -5955,7 +5955,7 @@ Tips:
 
 Example using Shadows/Highlights & Tone Equalizer \> Tone Response
 Curve(TRC):
-[Example in First Steps](local_adjustments#five_ways_to_change_the_exposure_and_lift_the_shadows)
+[Example in First Steps 2]({{% relref "#six-ways-to-change-the-exposure-and-lift-the-shadows" %}})
 
 The module also includes:
 
@@ -6245,9 +6245,7 @@ operate on the edges. The action of the curve is based on the luminance.
 
 ###### Wavelet level tone mapping
 
-Example to enhance the texture: [Example in Getting started - with
-Wavelets Tone
-mapping](Local_Adjustments#Three_ways_of_increasing_texture.md)
+Example to enhance the texture: [Example in Getting started - with Wavelets Tone mapping]({{% relref "#three-ways-of-increasing-texture" %}})
 
 This module uses wavelets only with a compression algorithm that can be
 applied to each decomposition level and the residual image. A guided
@@ -6293,7 +6291,7 @@ close to the mean are amplified more than the lower and higher values.
 ### Tone Mapping
 
 Example increasing texture:
-[Example in First steps - increasing texture with Tone mapping](local_adjustments#three_ways_of_increasing_texture)
+[Example in First step  - increasing texture with Tone mapping]({{% relref "#three-ways-of-increasing-texture" %}})
 
 - Masking and "Recovery based on luminance mask" available in Standard
   and Advanced modes.
