@@ -13,7 +13,7 @@ toc: true
 
 ## Introduction
 
-Local editing in RawTherapee is based on RT-spots, which are similar in
+Local editing (Selective Editing) in RawTherapee is based on RT-spots, which are similar in
 principle to the U-Point concept originally used in Nikon Capture NX2
 and subsequently in the Nik Collection, DxO PhotoLab and Capture NXD.
 RT-spots use algorithms developed specifically for RawTherapee by
