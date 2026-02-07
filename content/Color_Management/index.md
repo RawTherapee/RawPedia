@@ -115,9 +115,13 @@ the exact name of the camera (case-sensitive) as is present in the image
 metadata.
 
 Most provided DCP profiles are dual-illuminant (see
-[below](color_management#dcp_illuminant)) and some provide
+[below)]({{% relref "color_management/#dcp-illuminant" %}})
+
+and some provide
 tone curves and looks as well. New profiles are added exclusively based
-on user submission. Please read [How to create DCP color profiles](how_to_create_dcp_color_profiles) for further
+on user submission. Please read [How to create DCP color profiles](how_to_create_dcp_color_profiles) 
+
+for further
 instructions in case you want to contribute.
 
 #### Custom

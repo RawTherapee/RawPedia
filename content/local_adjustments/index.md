@@ -5601,7 +5601,7 @@ The Retinex module is similar to the other tools, however:
 ### Common Color Mask
 
 Example using a Common Color Mask:
-[Example in First Steps, Common Color Mask](local_lab_controls/fr#how_to_use_a_common_color_mask_and_example_merging_2_rt-spots)
+[Example in First Steps, Common Color Mask]({{% relref "#how-to-use-the-common-color-mask-and-an-example-of-how-to-blend-2-rt-spots" %}})
 
 The tools in this mask have the same characteristics as the other masks
 mentioned above. However the mask is based on different principles and
@@ -6096,7 +6096,7 @@ or 1).
 #### Wavelets
 
 A simple application of wavelets (without using the pyramid):
-[Exemple dans Premiers pas d'utilisation de Wavelet](local_lab_controls/fr#un_moment_de_folie_-_utiliser_wavelet)
+[A moment of madness - try Wavelets]({{% relref "#a-moment-of-madness---try-wavelets" %}})
 
 Available controls:
 
