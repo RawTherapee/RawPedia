@@ -3003,8 +3003,7 @@ described in the two previous paragraphs, it was decided:
       changed.
 
 Some of these tools are similar to the Abstract Profile concept.
-[Abstract Profiles](color_management#abstract_profiles)
-
+[Abstract Profiles]({{% relref "Color_Management#abstract-profiles" %}})
 ##### Source Data Adjustments and Scene conditions
 
 I won't go back over what Scene Conditions does (see the tutorials on
@@ -3020,7 +3019,7 @@ luminance of the background (in full sunlight, in a dark room, etc.). Be
 careful not to misuse the Viewing Conditions settings to compensate for
 imperfect Scene Conditions or Source Data Adjustments settings.
 
-[Color Appearance & Lighting (CIECAM02/16) et Color Appearance (Cam16 & JzCzHz) - Tutorial](ciecam02#color_appearance_.26_lighting_.28ciecam02.2f16.29_et_color_appearance_.28cam16_.26_jzczhz.29_-_tutorial)
+[Tutorial Color Appearance & Lighting (CIECAM02/16) and Color Appearance (Cam16 &  JzCzHz)]({{% relref "CIECAM02#color-appearance--lighting-ciecam0216-et-color-appearance-cam16--jzczhz---tutorial" %}})
 
 ###### What principles do "Log encoding" and Scene Conditions use to render an image prior to Cam16?
 
@@ -3425,8 +3424,7 @@ physiological aspects due to the perception of the eye and the brain.
 
 Further information, albeit incomplete, on the effects taken into
 account by the two versions of Ciecam implemented in RT can be found
-here: [Ciecam History -
-effects](CIECAM02#Introduction_-_history.md)
+here: [Ciecam History - effects]({{% relref "ciecam02#introduction---history" %}})
 
 Most of the effects are automatically taken into account by the
 software. Particularly in Source Data Adjustments.
@@ -3530,22 +3528,24 @@ Processing Challenge -March and April 2024.
 
 ### **Ciecam -JzCzHz Tutorial**
 
-[Color Appearance & Lighting (CIECAM02/16) et Color Appearance (Cam16 & JzCzHz) - Tutorial](ciecam02#color_appearance_.26_lighting_.28ciecam02.2f16.29_et_color_appearance_.28cam16_.26_jzczhz.29_-_tutorial)
+[Tutorial Color Appearance & Lighting (CIECAM02/16) and Color Appearance (Cam16 &  JzCzHz)]({{% relref "ciecam02#color-appearance--lighting-ciecam0216-et-color-appearance-cam16--jzczhz---tutorial" %}})
 
 ### **An experimental JzCzHz module**
 
 For a brief explanation of this module, see the following:
-[Experimental tool - JzCzHz](ciecam02#jzazbz_-_a_new_experimental_cam.3f_.28cam16_.26_jzczhz.29)
+[Experimental tool - JzCzHz]({{% relref "ciecam02#jzazbz---a-new-experimental-cam-cam16--jzczhz" %}})
 
 #### Understanding the CAM - SDR - HDR settings - General
 
-For a brief explanation of this module, see the following
-:[CIECAM02#Understanding_the_CAM_-_SDR_-_HDR_settings_-_General](/images/ciecam02#understanding_the_cam_-_sdr_-_hdr_settings_-_general)
+For a brief explanation of this module, see the following:
+[CIECAM02#Understanding_the_CAM_-_SDR_-_HDR_settings_-_General]({{% relref "ciecam02#understanding-the-cam---sdr---hdr-settings---general" %}})
 
 #### Understanding the CAM - SDR - HDR settings -Introduction
 
 For a brief explanation of this module, see the following
-[CIECAM02#Understanding_the_CAM_-_SDR_-_HDR_settings_-_Introduction](ciecam02#understanding_the_cam_-_sdr_-_hdr_settings_-_introduction)
+[Understanding_the_CAM_-_SDR_-_HDR_settings_-_General]({{% relref "ciecam02#understanding-the-cam---sdr---hdr-settings---introduction" %}})
+
+[Experimental tool - JzCzHz]({{% relref "ciecam02#understanding-the-cam---sdr---hdr-settings---general" %}})
 
 ##### Jz in practice
 
@@ -3636,7 +3636,8 @@ luminance (Yb%)".
 <img src="sigmoidjz1.jpg" title="Sigmoidjz1.jpg" width="600"
 alt="Sigmoidjz1.jpg" />
 
-- See [Sigmoid Jz - principles](ciecam02#sigmoid_jz)
+- See [Sigmoid Jz - principles]({{% relref "ciecam02#sigmoid-jz" %}})
+
 - Raw file (Rawtherapee - Creative Common Attribution-share Alike 4.0):
   [29](https://drive.google.com/file/d/1ziux382pWgdYa4jySimwKaKnK_KdDhno/view?usp=sharing)
 
@@ -4574,7 +4575,8 @@ major differences:
   Light & Original Retinex, Blur/Grain & Denoise, Tone Mapping, Dehaze &
   Retinex, Sharpening, Local Contrast & Wavelets, Contrast by Detail
   Levels. There is also a Cam16 & JzCzHz Color Appearance module. See
-  [Tutorial Color Appearance & Lighting (CIECAM02/16) et Color Appearance (Cam16 &  JzCzHz)](ciecam02#color_appearance_.26_lighting_.28ciecam02.2f16.29_et_color_appearance_.28cam16_.26_jzczhz.29_-_tutorial)
+  [Tutorial Color Appearance & Lighting (CIECAM02/16) and Color Appearance (Cam16 &  JzCzHz)]({{% relref "ciecam02#color-appearance--lighting-ciecam0216-et-color-appearance-cam16--jzczhz---tutorial" %}})
+
 - Each RT-spot creates an additional "layer" similar to the way layers
   are added in bit-map editors. Each new RT-spot is transparent and
   allows the user to see any previous modifications. The Excluding Spot
@@ -6991,7 +6993,7 @@ For a presentation of JzCzHz:
 [Experimental JzCzHz module]({{% relref "#an-experimental-jzczhz-module" %}})
 
 To see the tutorial:
-[Tutorial Color Appearance & Lighting (CIECAM02/16) and Color Appearance (Cam16 &  JzCzHz)](CIECAM02#Color_Appearance_&_Lighting_(CIECAM02/16)_et_Color_Appearance_(Cam16_&_JzCzHz)_-_Tutorial "wikilink")
+[Tutorial Color Appearance & Lighting (CIECAM02/16) and Color Appearance (Cam16 &  JzCzHz)]({{% relref "CIECAM02#color-appearance--lighting-ciecam0216-et-color-appearance-cam16--jzczhz---tutorial" %}})
 It should be noted that the JzCzHz module contains all the tools
 necessary to replace Lab:
 
