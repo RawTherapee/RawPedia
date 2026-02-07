@@ -5,8 +5,11 @@
 <div class="row page justify-content-center">
   <article class="{{ .Title | urlize }}-page col-lg-8">
     <h1 class="title">
-              {{ .Title | markdownify }}
+      {{ .Title | markdownify }}
     </h1>
+    {{ with .Date }}
+      <time class='d-block mb-3' datetime='{{.}}'>{{. | time.Format ":date_long" }}</time>
+    {{ end }}
 
     {{ if .Params.toc }}
       <button class='btn btn-sm btn-outline-secondary' type='button' data-bs-toggle='collapse' data-bs-target='#toc' role='button' aria-expanded='false' aria-controls='toc'>Table of Contents</button>

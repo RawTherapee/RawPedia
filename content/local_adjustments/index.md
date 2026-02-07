@@ -1,5 +1,6 @@
 ---
 title: Local Adjustments
+date: 2026-02-06
 contributors:
   - Jdc
   - DrSlony
@@ -8,8 +9,6 @@ tags:
   - 'Selective Editing'
 toc: true
 ---
-
-February 2026
 
 
 ## Introduction
