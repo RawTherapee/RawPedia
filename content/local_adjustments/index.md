@@ -6318,7 +6318,7 @@ Soft Light is the same as the main-menu function.
 
 #### Original Retinex
 
-Example: [Dodge and Burn example in First Steps](local_adjustments#dodging_and_burning)
+Example: [Dodge and Burn example in First Steps]({{% relref "#dodging-and-burning" %}})
 
 Tests on the original Retinex algorithm (based on the work carried out
 by IPOL) have shown that it has some useful features for local editing.
@@ -6383,8 +6383,7 @@ with Retinex for better results.
 #### Retinex: Important differences with the main-menu module
 
 Example using it to increase texture:
-[Example in First steps - increasing texture with Retinex](local_adjustments#three_ways_of_increasing_texture)
-
+[Example in First steps - increasing texture with Retinex]({{% relref "#three-ways-of-increasing-texture" %}})
 In Local adjustments, Retinex is similar to the main-menu
 implementation, however there are some differences.
 
@@ -6646,7 +6645,7 @@ in addition to the Denoise module for difficult images.
 
 ### Denoise
 
-Example: [Example in Getting started - Using Denoise module](local_adjustments#using_the_denoise_module)
+Example: [Example in Getting started - Using Denoise module]({{% relref "#using-the-denoise-module" %}})
 
 This module is quite different from the main-menu noise reduction module
 for several reasons:
@@ -6843,12 +6842,9 @@ filter other types of impulse noise.
 
 Example showing how it can be used:
 
-[Log Encoding](local_adjustments#log_encoding)
-
-[Log Encoding and highlight recovery](local_adjustments#log_encoding_and_highlight_recovery)
-
-[Other examples using Log Encoding](local_adjustments#other_examples_log_encoding)
-
+[Log Encoding]({{% relref "#log-encoding" %}})
+[Log Encoding and highlight recovery]({{% relref "#log-encoding-and-highlight-recovery" %}})
+[Other examples using Log Encoding]({{% relref "#other-examples-log-encoding" %}})
 #### Introduction
 
 This module is derived from the excellent module developped by Alberto
@@ -6989,10 +6985,10 @@ possibilities of Local Adjustments i.e. deltaE, Scope, Transition
 Gradients, Excluding spots, etc.
 
 For an overview of Cam16:
-[Using_Cam16_and_HDR_features](local_adjustments#using_the_cam16_and_hdr_functions)
+[Using_Cam16_and_HDR_features]({{% relref "#using-the-cam16-and-hdr-functions" %}})
 
 For a presentation of JzCzHz:
-[Experimental JzCzHz module](local_adjustments#an_experimental_jzczhz_module)
+[Experimental JzCzHz module]({{% relref "#an-experimental-jzczhz-module" %}})
 
 To see the tutorial:
 [Tutorial Color Appearance & Lighting (CIECAM02/16) and Color Appearance (Cam16 &  JzCzHz)](CIECAM02#Color_Appearance_&_Lighting_(CIECAM02/16)_et_Color_Appearance_(Cam16_&_JzCzHz)_-_Tutorial "wikilink")
