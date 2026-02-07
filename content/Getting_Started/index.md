@@ -23,7 +23,7 @@ manager, such as digiKam.
 
 ## Get RawTherapee
 
-Head over to the [Download](download) page to get stable
+Head over to the [Download](/download) page to get stable
 builds for production use or unstable development builds for testing.
 
 ## Start RawTherapee
