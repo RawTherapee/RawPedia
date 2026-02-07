@@ -21,6 +21,7 @@ processing photographs. It works very well in conjunction with raster
 graphics editors, such as Photoshop or GIMP, and a digital asset
 manager, such as digiKam.
 
+
 ## Get RawTherapee
 
 Head over to the [Download](/download) page to get stable
