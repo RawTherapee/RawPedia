@@ -77,9 +77,10 @@ Some examples of color phenomena that can be addressed with a CAM:
 
 ### Variables - data and vocabulary used by CIECAM
 
-[Variables - data](ciecam02#data)
+[Variables - datas)]({{% relref "ciecam02/#data" %}})
 
-[Definitions](ciecam02#some_definitions)
+[Definitions]({{% relref "ciecam02/#some-definitions" %}})
+
 
 ### CIECAM02/16 consists of 3 processes:
 
@@ -398,7 +399,7 @@ stage, it is not known whether these problems are:
   is capable of taking this into account and that it is possible to
   increase the accuracy of the screen profile calculations!
 
-[About L\*a\*b\*](toolchain_pipeline#l.2aa.2ab.2a)
+[About Lab]({{% relref "toolchain_pipeline/#the-importance-of-ciecam-and-lab" %}})
 
 - I don't have an HDR monitor (HDR monitors have luminance peaks of up
   to 6000 cd/m2 or more), nor do I have suitable ICC profiles or a
