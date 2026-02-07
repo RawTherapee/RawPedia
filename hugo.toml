@@ -65,6 +65,9 @@ defaultContentLanguage = 'en'
     hardWraps = false
     unsafe = true
     xhtml = false
+  [markup.goldmark.renderHooks]
+    [markup.goldmark.renderHooks.link]
+      useEmbedded = 'auto'
 [outputs]
   home = ['html', 'rss', 'json']
   section = ['html']
