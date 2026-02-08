@@ -5,6 +5,7 @@ contributors:
   - XavAL
 tags:
   - 'Localization'
+toc: true
 ---
 
 This article explains how you can help translate RawTherapee's

@@ -7,6 +7,7 @@ contributors:
 tags:
   - 'Tool Description'
   - 'Color Tab'
+toc: true
 ---
 
 <img src="/images/Rt_haldclut_london.jpg" title="Rt_haldclut_london.jpg"

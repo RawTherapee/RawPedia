@@ -5,6 +5,7 @@ contributors:
   - XavAL
 tags:
   - 'General Photography'
+toc: true
 ---
 
 You can easily create LCP (Lens Correction Profile) profiles using Adobe

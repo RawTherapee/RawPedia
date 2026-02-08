@@ -5,6 +5,7 @@ contributors:
   - Lebarhon
 tags:
   - 'Bundled Processing Profiles'
+toc: true
 ---
 
 ## Introduction

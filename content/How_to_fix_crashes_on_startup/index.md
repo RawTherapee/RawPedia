@@ -6,6 +6,7 @@ contributors:
   - XavAL
 tags:
   - 'Troubleshooting'
+toc: true
 ---
 
 RawTherapee might crash immediately after starting for several reasons,

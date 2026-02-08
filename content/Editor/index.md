@@ -9,6 +9,7 @@ contributors:
   - Benitoite
 tags:
   - 'General Information'
+toc: true
 ---
 
 <figure>

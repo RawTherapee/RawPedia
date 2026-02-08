@@ -6,6 +6,7 @@ contributors:
 tags:
   - 'Tool Description'
   - 'Color Tab'
+toc: true
 ---
 
 ![](/images/HSV_color_solid_cylinder_alpha_lowgamma.png "HSV_color_solid_cylinder_alpha_lowgamma.png")

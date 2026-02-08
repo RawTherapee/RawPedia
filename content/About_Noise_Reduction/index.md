@@ -5,6 +5,7 @@ contributors:
   - DrSlony
 tags:
   - 'General Information'
+toc: true
 ---
 
 # Comparison of the RawTherapee noise reduction tools

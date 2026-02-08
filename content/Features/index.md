@@ -5,6 +5,7 @@ contributors:
 tags:
   - 'General Information'
 weight: 2
+toc: true
 ---
 
 - Open-source, cross-platform.

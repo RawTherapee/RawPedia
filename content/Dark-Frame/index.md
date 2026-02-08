@@ -6,6 +6,7 @@ contributors:
 tags:
   - 'Tool Description'
   - 'Raw Tab'
+toc: true
 ---
 
 [Dark-frame subtraction](https://en.wikipedia.org/wiki/Dark-frame_subtraction) is a

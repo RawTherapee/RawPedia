@@ -8,7 +8,6 @@ tags:
   - 'Advanced Tab'
 toc: true
 ---
-
 2022 - 2026
 //Jacques Desmis jdesmis@gmail.com
 

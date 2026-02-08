@@ -6,6 +6,7 @@ contributors:
 tags:
   - 'Tool Description'
   - 'Detail Tab'
+toc: true
 ---
 
 ![](/images/Rt55_haze_removal_1.png "Rt55_haze_removal_1.png")

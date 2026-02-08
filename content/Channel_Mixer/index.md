@@ -6,6 +6,7 @@ contributors:
 tags:
   - 'Tool Description'
   - 'Color Tab'
+toc: true
 ---
 
 The *Channel Mixer* is used for special effects, for color and

@@ -6,6 +6,7 @@ contributors:
 tags:
   - 'Tool Description'
   - 'Transform Tab'
+toc: true
 ---
 
 Cropping in RawTherapee does not discard the cropped-off area, it just

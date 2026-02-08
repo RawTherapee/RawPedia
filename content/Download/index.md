@@ -7,6 +7,7 @@ contributors:
 tags:
   - 'General Information'
 weight: 3
+toc: true
 ---
 
 ## Stable Releases

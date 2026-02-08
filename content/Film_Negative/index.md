@@ -6,6 +6,7 @@ contributors:
 tags:
   - 'Tool Description'
   - 'Color Tab'
+toc: true  
 ---
 
 ## Introduction

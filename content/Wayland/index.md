@@ -5,6 +5,7 @@ contributors:
   - XavAL
 tags:
   - 'Troubleshooting'
+toc: true
 ---
 
 Users of the Wayland, a computer protocol which specifies the

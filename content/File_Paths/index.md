@@ -5,6 +5,7 @@ contributors:
   - Benitoite
 tags:
   - 'General Information'
+toc: true
 ---
 
 RawTherapee makes use of a "cache" folder to store temporary files which

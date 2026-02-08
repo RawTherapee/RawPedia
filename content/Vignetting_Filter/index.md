@@ -5,6 +5,7 @@ contributors:
 tags:
   - 'Tool Description'
   - 'Exposure Tab'
+toc: true
 ---
 
 The vignette filter is intended for adding artistic vignetting to your

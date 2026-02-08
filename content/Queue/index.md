@@ -5,6 +5,7 @@ contributors:
   - Thanatomanic
 tags:
   - 'General Information'
+toc: true
 ---
 
 ## Introduction

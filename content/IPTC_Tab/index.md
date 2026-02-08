@@ -7,6 +7,7 @@ contributors:
 tags:
   - 'Tool Description'
   - 'Metadata Tab'
+toc: true
 ---
 
 [IPTC](https://en.wikipedia.org/wiki/IPTC_Information_Interchange_Model)

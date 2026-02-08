@@ -7,6 +7,7 @@ contributors:
   - Benitoite
 tags:
   - 'General Information'
+toc: true
 ---
 
 You can access the Preferences window by clicking on the Preferences

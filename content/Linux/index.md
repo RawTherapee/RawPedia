@@ -10,6 +10,7 @@ contributors:
   - Jdc
 tags:
   - 'Compiling'
+toc: true
 ---
 
 This page details instructions for compiling RawTherapee on

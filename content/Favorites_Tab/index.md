@@ -6,6 +6,7 @@ contributors:
   - Benitoite
 tags:
   - 'Tool Description'
+toc: true
 ---
 
 ## Favorites

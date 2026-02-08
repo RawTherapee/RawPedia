@@ -6,6 +6,7 @@ contributors:
 tags:
   - 'Tool Description'
   - 'Detail Tab'
+toc: true
 ---
 
 *Contrast by Detail Levels* uses wavelet decomposition to decompose the

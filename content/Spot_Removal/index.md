@@ -5,6 +5,7 @@ contributors:
 tags:
   - 'Tool Description'
   - 'Detail Tab'
+toc: true
 ---
 
 The spot removal tool can be used to mask portions of an image (e.g.

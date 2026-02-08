@@ -5,6 +5,7 @@ contributors:
 tags:
   - 'Tool Description'
   - 'Exposure Tab'
+toc: true
 ---
 
 The effects of this tool are visible at any zoom level. However, due to

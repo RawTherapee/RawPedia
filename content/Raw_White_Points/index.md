@@ -6,6 +6,7 @@ contributors:
 tags:
   - 'Tool Description'
   - 'Raw Tab'
+toc: true
 ---
 
 It is unlikely you will ever need to use the Raw White Points tool other

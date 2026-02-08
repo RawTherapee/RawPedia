@@ -7,6 +7,7 @@ contributors:
 tags:
   - 'Tool Description'
   - 'Color Tab'
+toc: true
 ---
 
 *Vibrance* is an intelligent saturation adjustment tuned to correlate

@@ -6,6 +6,7 @@ contributors:
 tags:
   - 'Tool Description'
   - 'Metadata Tab'
+toc: true
 ---
 
 <div class="pagetitle">

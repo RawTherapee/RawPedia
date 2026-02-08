@@ -7,6 +7,7 @@ contributors:
 tags:
   - 'Tool Description'
   - 'Detail Tab'
+toc: true
 ---
 
 Suppresses salt-and-pepper noise - sudden white and black pixels, which
