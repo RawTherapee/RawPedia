@@ -63,13 +63,14 @@ MSYS2 uses the package manager `pacman` to install software and
 components. Please refer to the [pacman
 manual](https://wiki.archlinux.org/index.php/pacman) for details.
 
+ 
 First, install a few miscellaneous tools:
 
     $ pacman -S tar gzip nano make diffutils intltool git
 
 Then install the necessary development tools and the required libraries:
 
-    $ pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-gdb mingw-w64-x86_64-make mingw-w64-x86_64-pkg-config mingw-w64-x86_64-cmake mingw-w64-x86_64-ninja mingw-w64-x86_64-gtkmm3 mingw-w64-x86_64-lcms2 mingw-w64-x86_64-fftw mingw-w64-x86_64-exiv2 mingw-w64-x86_64-lensfun mingw-w64-x86_64-libiptcdata
+    $ pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-gdb mingw-w64-x86_64-make mingw-w64-x86_64-pkg-config mingw-w64-x86_64-cmake mingw-w64-x86_64-ninja mingw-w64-x86_64-gtkmm3 mingw-w64-x86_64-lcms2 mingw-w64-x86_64-fftw mingw-w64-x86_64-exiv2 mingw-w64-x86_64-lensfun mingw-w64-x86_64-libiptcdata mingw-w64-x86_64-libraw mingw-w64-x86_64-libjxl
 
 ### Updating Lensfun database
 
@@ -123,17 +124,17 @@ Finally build and install the library:
 ### Clone RawTherapee's git repository.
 
 RawTherapee's source code can be cloned from [the official GitHub
-repository](https://github.com/Beep6581/RawTherapee):
+repository](https://github.com/Rawtherapee/RawTherapee):
 
     $ cd ~
-    $ git clone git://github.com/Beep6581/RawTherapee.git
+    $ git clone git://github.com/Rawtherapee/RawTherapee.git
     $ cd RawTherapee
 
 ### Switching branches
 
 After cloning you will automatically have checked out the `dev` branch.
 This is the main development branch of RawTherapee and probably what you
-want to use. To switch to a [different branch](https://github.com/Beep6581/RawTherapee/branches), do the
+want to use. To switch to a [different branch](https://github.com/Rawtherapee/RawTherapee/branches), do the
 following:
 
     $ git checkout branchname # replace with another available branch name
@@ -158,11 +159,15 @@ following commands:
     $ cmake -G "Ninja" -DLENSFUNDBDIR=put/your/lensfun/directory/here -DCMAKE_BUILD_TYPE="release" -DWITH_SYSTEM_LIBRAW="ON" -DPROC_TARGET_NUMBER="2" -DCACHE_NAME_SUFFIX="5-dev" ..
     $ cmake --build . --target install
 
+If you want to fully utilize the Libraw functionality (the library integrated into Rawtherapee)
+
+    $ cmake -G "Ninja" -DLENSFUNDBDIR=put/your/lensfun/directory/here -DCMAKE_BUILD_TYPE="release" -DWITH_SYSTEM_LIBRAW="OFF" -DPROC_TARGET_NUMBER="2" -DCACHE_NAME_SUFFIX="5-dev" ..-DCACHE_NAME_SUFFIX="5-dev" ..
+    $ cmake --build . --target install
 Make sure to replace the path to the Lensfun database with the actual
 path obtained a few steps before. See the [Linux
 article](Linux#CMake.md) for more details on the various
 options. Depending on your system, the build process may take anywhere
-between 5 and 25 minutes.
+between 3 and 25 minutes.
 
 - JPEG XL read support depends on libjxl. By default, RawTherapee builds
   with JPEG XL support if and only if libjxl is present. Use
@@ -175,7 +180,7 @@ between 5 and 25 minutes.
 There may be warnings during the build process which you can safely
 ignore. Errors that are not traceable to a mistake when following this
 guide should be reported
-[here](https://github.com/Beep6581/RawTherapee/issues/new?assignees=&labels=&template=bug_report.md&title=).
+[here](https://github.com/Rawtherapee/RawTherapee/issues/new?assignees=&labels=&template=bug_report.md&title=).
 
 ### Starting RawTherapee
 
@@ -225,6 +230,7 @@ Copy the content of
 `c:\code\repo-rt\build\<debug|release|relwithdebinfo>` into `.`.
 
 ### Copy the dependencies
+(jdc) I am not at all a specialist (I think missing files ...)
 
 Copy the necessary DLLs and exe from <prefix>`\bin` into `.`. The
 current list of required DLLs and EXE is:
