@@ -32,7 +32,7 @@ disponibles.
 
 Si vous souhaitez participer aux tests de la version de dernière minute,
 voir l'article [Téléchargement - Versions de
-développement](Download/fr#Versions_de_développement.md).
+développement](/download#versions_de_développement).
 
 ## Démarrage de RawTherapee
 
@@ -52,7 +52,7 @@ pour appliquer un profil de traitement à tous les fichiers
 sélectionnés).\]\]
 
 Lorsque vous démarrez RawTherapee, vous voyez [Le Navigateur de
-fichiers](The_File_Browser_Tab/fr.md), et il se peut qu'il soit
+fichiers](/The_File_Browser_Tab), et il se peut qu'il soit
 vide. Vous devez préciser à RawTherapee l'endroit où sont stockées vos
 photos raw. Utiliser la navigation dans l'arborescence des fichiers, sur
 la gauche dans l'onglet "Navigateur de fichiers", pour rechercher votre
@@ -78,18 +78,18 @@ point de départ pour les ajustements ultérieurs et RawTherapee rend cela
 possible.
 
 Lors de l'affichage dans [Le Navigateur de
-fichiers](The_File_Browser_Tab/fr.md) d'une photo raw qui n'a
+fichiers](/The_File_Browser_Tab) d'une photo raw qui n'a
 jamais encore été éditée dans RawTherapee, la vignette de la photo
 s'appuie sur l'image JPEG intégrée dans le fichier raw, c'est exactement
 la même image que vous voyez affichée sur votre appareil photo et dans
 la plupart des autres logiciels. Une fois cette photo ouverte dans
-[L’Éditeur](the_image_editor_tab/fr), RawTherapee crée une
+[L’Éditeur](the_image_editor_tab), RawTherapee crée une
 nouvelle vignette basée sur les données raw actuelles. Puisque la
 création d'une image depuis les données raw demande de la "préparation",
 et puisque vous n'avez pas encore édité manuellement cette image,
 RawTherapee la traite en utilisant les paramètres du [profil de
 traitement par défaut pour les photos
-raw](Preferences/fr#Paramètres_de_traitement_d'image_par_défaut.md).
+raw](/Preferences#Paramètres_de_traitement_d'image_par_défaut).
 A partir de ce moment, la vignette de la photo n'est plus basée sur le
 JPEG intégré mais sur les données raw actuelles. La vignette reflète
 maintenant les modifications que vous faites sur l'image dans l’Éditeur.
@@ -101,7 +101,7 @@ graphiques, ou peut-être plus simplement pour apporter les premiers
 soins à vos prises de vues. Lors de l'ouverture d'une photo raw dans
 l'Éditeur pour la première fois, le [profil de traitement par défaut
 pour les photos
-raw](Preferences/fr#Paramètres_de_traitement_d'image_par_défaut.md)
+raw](/Preferences#paramètres-de-traitement-dimage-par-défaut)
 est appliqué, lequel depuis RawTherapee 5.4 est réglé sur "Auto-Matched
 Curve - ISO Low" (a moins que vous ne l'ayez changé dans les
 Préférences) et il règle automatiquement votre photo raw pour qu'elle
@@ -110,7 +110,7 @@ analysant l'image JPEG créée par l'appareil et qui est intégrée dans le
 fichier raw, et en adaptant la courbe tonale pour y correspondre. La
 plupart du temps, la correspondance est très proche. Dans de rares cas,
 cela peut échouer. Voir l'article [Auto-Matched
-Curve](Auto-Matched_Curve.md) pour plus de détailes.
+Curve](/auto-matched_curve) pour plus de détailes.
 
 <figure>
 <img src="/images/Rt_setm_editor.png" title="Rt_setm_editor.png" />
@@ -141,7 +141,7 @@ triangulaire
 d'ouverture/fermeture de l'outil. Lire le chapitre [Outils de la page
 Commentaires généraux à propos de certains éléments d'interface
 grapPowerhique (Widgets) de la boite à
-outils](General_Comments_About_Some_Toolbox_Widgets/fr#Outils.md)
+outils](/General_Comments_About_Some_Toolbox_Widgets/#outils)
 pour des explications détaillées.
 
 Naviguez au travers des onglets et des panneaux jusqu'à vous sentir
@@ -157,16 +157,16 @@ vous aider à protéger vos images :
   fichier raw lui-même. Toutes les modifications sont enregistrées dans
   des fichiers accolés. Vous pouvez en savoir plus à ce sujet dans la
   page de Rawpedia [Fichiers accolés – Profils de
-  traitement](Sidecar_Files_-_Processing_Profiles/fr.md).
+  traitement](/Sidecar_Files_-_Processing_Profiles).
 - Lors de l'utilisation de l'Editeur, vous pouvez voir le panneau
-  [Historique](the_image_editor_tab/fr#historique) sur la
+  [Historique](/the_image_editor_tab#historique) sur la
   gauche. Ce panneau affiche la pile de l'historique de tous les
   changements réalisés sur l'image. Pour revenir à n'importe quelle
   étape des modifications (y compris celle originale du premier
   chargement de l'image), il suffit de cliquer sur la ligne
   correspondante dans le panneau de l'historique.
 - Sous le panneau Historique, il y a le panneau
-  [Captures](the_image_editor_tab/fr#captures). Vous pouvez
+  [Captures](/the_image_editor_tab#captures). Vous pouvez
   l'oublier pour l'instant, mais vous le trouverez pratique avec un peu
   plus d'expérience de RawTherapee. Ce panneau enregistre l'état de tous
   les outils à un moment donné sous forme d'une "capture". Cela vous
@@ -188,9 +188,9 @@ vous aider à protéger vos images :
     satisfait, vous avez terminé. Sinon, continuez la lecture.
 2.  Cliquer sur l'onglet Couleur
     ![<File:Color-circles.png>](Color-circles.png "File:Color-circles.png")
-    puis ouvrir l'outil [Balance de blancs](white_balance/fr)
+    puis ouvrir l'outil [Balance de blancs](/white_balance)
     par un clic droit (ou utilisez le [raccourci
-    clavier](Keyboard_Shortcuts/fr.md) ). RawTherapee va
+    clavier](/Keyboard_Shortcuts) ). RawTherapee va
     démarrer avec la balance des blancs utilisée par votre appareil
     photo. Le plus souvent, le réglage de la balance Powerdes blancs
     exige d'agir sur les curseurs Température et Teinte, ou d'utiliser
@@ -199,7 +199,7 @@ vous aider à protéger vos images :
     sur une zone sans couleur (gris neutre). Ajuster à son goût.
 3.  Ensuite, régler l'exposition en allant dans l'onglet Exposition
     ![<File:Exposure.png>](Exposure.png "File:Exposure.png") ouvrir
-    l'outil [Exposition](exposure/fr) et ajuster à son goût.
+    l'outil [Exposition](/exposure) et ajuster à son goût.
     Pour l'instant, se limiter aux curseurs Compensation d'exposition et
     Saturation.
 4.  Si votre photo est bruitée, passez sur l'onglet Détail
@@ -209,13 +209,13 @@ vous aider à protéger vos images :
     ou à l'aide du raccourci clavier , car les effets des outils de cet
     onglet ne sont visibles dans l'aperçu que si celui-ci est zoomé à
     100% (et visibles aussi bien sûr dans l'image sauvegardée), et
-    activez l'outil [Réduction du bruit](noise_reduction/fr)
+    activez l'outil [Réduction du bruit](/noise_reduction)
     en cliquant sur le bouton d'activation
     ![<File:Power-on-small.png>](Power-on-small.png "File:Power-on-small.png"),
     laissant pour l'instant les paramètres à leur valeur par défaut.
     RawTherapee a enlevé automatiquement le bruit de couleur
     (chrominance). Le bruit de Luminance est retiré
-    [manuellement](noise_reduction/fr#usage), mais laissez le
+    [manuellement](/noise_reduction#usage), mais laissez le
     pour l'instant, car le bruit de luminance procure un bel aspect
     présentant du grain comme avec le film. En règle générale, avec
     l'utilisation de la réduction du bruit, ne pas utiliser l'outil
@@ -224,7 +224,7 @@ vous aider à protéger vos images :
     ![<File:Magnifier-fit.png>](Magnifier-fit.png "File:Magnifier-fit.png")
     ou avec la raccourci clavier .
 5.  Maintenant on peut passer à l'amélioration de la
-    [géométrie](lens/geometry/fr) et de la composition de la
+    [géométrie](/lens/geometry) et de la composition de la
     photo.
     - Commencer par régler l'horizon, ou bien des choses qui doivent
       être verticales comme des lampadaires de rue ou des arêtes
@@ -239,7 +239,7 @@ vous aider à protéger vos images :
     - Pour recadrer la photo, appuyer sur le raccourci clavier (ou bien
       utiliser le bouton ![<File:Crop.png>](Crop.png "File:Crop.png"))
       et cliquer-glisser sur l'aperçu pour former le cadre; vous
-      remarquerez que l'outil [Recadrage](crop/fr) s'active
+      remarquerez que l'outil [Recadrage](/crop) s'active
       automatiquement. Il est inutile d'"appliquer" un recadrage, il
       prend effet dès l'instant où il est tracé. Pour adapter la vue à
       la zone recadrée, vous pouvez zoomer en utilisant le raccourci
@@ -247,14 +247,14 @@ vous aider à protéger vos images :
       "Aucun" pour le "Type de guide" s'il pose problème.
     - Enfin, vous pouvez diminuer la résolution car vous ne pouvez pas
       envoyer une image JPEG de 10Mo sur votre réseau social. Activez
-      l'outil [Redimensionnement](resize/fr) et l'outil
+      l'outil [Redimensionnement](/resize) et l'outil
       [Netteté après
-      redimensionnement](Resize/fr#Netteté_après_redimensionnement.md)
+      redimensionnement](/Resize#netteté-après-redimensionnement)
       et laissez les valeurs par défaut. Le redimensionnement n'est
       appliqué que sur l'image enregistrée, pas sur l'aperçu, aussi vous
       ne verrez aucun changement dans l'aperçu lors de l'activation de
       ces outils.
-6.  Vous en avez terminé, [Enregistrez](saving/fr) dès
+6.  Vous en avez terminé, [Enregistrez](/saving) dès
     maintenant. Cliquez sur le bouton Enregistrer l'image courante
     ![<File:save.png>](save.png "File:save.png"), ou bien utilisez le
     raccourci clavier +. Enregistrez au format JPG en gardant les
@@ -264,7 +264,7 @@ vous aider à protéger vos images :
     secondes votre fichier sera prêt dans le dossier choisi. Si vous
     fermez RawTherapee, les paramètres utilisés seront enregistrés dans
     un [fichier accolé
-    PP3](Sidecar_Files_-_Processing_Profiles/fr.md) placé auprès
+    PP3](/Sidecar_Files_-_Processing_Profiles) placé auprès
     du fichier raw, ainsi, à l'avenir vous pouvez ré-ouvrir la photo raw
     et reprendre les paramètres des outils utilisés.
 
@@ -281,7 +281,7 @@ des concepts généraux non spécifiques à RawTherapee est laissée à
 l'initiative des utilisateurs avec l'aide de Wikipedia ou autre.
 
 Bien connaître les [Raccourcis
-clavier](Keyboard_Shortcuts/fr.md).
+clavier](/Keyboard_Shortcuts).
 
 L'ordre de traitement des outils à l'intérieur du pipeline du moteur de
 RawTherapee est codé en dur, ainsi, de ce point de vue, cela n'a pas
@@ -304,9 +304,9 @@ suivre cet ordre général des opérations :
       de RawTherapee.
     - Vous assurer que l'outil Gestion de la couleur est correctement
       configuré. En général les valeurs par défaut conviennent. Lire les
-      pages [Gestion de la couleur](color_management/fr) et
+      pages [Gestion de la couleur](/color_management) et
       [Gestion de la couleur -
-      Supplément](Color_Management_addon/fr.md). Si au lieu
+      Supplément](/Color_Management_addon). Si au lieu
       d'utiliser un profil matrice couleur ou DCP ou ICC livrés avec
       RawTherapee vous décidez d'utiliser un profil externe, par exemple
       un DCP fait par vous même ou bien de chez Adobe, chargez le en
@@ -316,34 +316,34 @@ suivre cet ordre général des opérations :
       faire en sélectionnant "Pas d'ICM : sortie sRGB", vous faites
       erreur.
 2.  Si vous avez l'intention d'utiliser une image [Champ
-    Uniforme](Flat_Field/fr.md) et/ou [Trame
-    Noire](Dark_Frame/fr.md), faites le maintenant pour éviter
+    Uniforme](/Flat_Field) et/ou [Trame
+    Noire](/Dark_Frame), faites le maintenant pour éviter
     de recommencer certains réglages.
 3.  Régler maintenant la [Balance des
-    Blancs](White_Balance/fr.md). Vous pouvez régler
+    Blancs](/White_Balance). Vous pouvez régler
     l'exposition avant si l'image est trop foncée ou trop claire pour
     voir les effets de la balance des blancs.
-4.  Régler maintenant l'[Exposition](exposure/fr), à l'aide
+4.  Régler maintenant l'[Exposition](/exposure), à l'aide
     des curseurs Compensation d'exposition et Noir pour amener l'image
     dans la bonne fourchette. Une fois dans la bonne fourchette,
     continuer en utilisant les deux courbes tonales. Bien lire [le
-    chapitre Courbe Tonale](Exposure/fr#Courbes_tonales.md) dans
+    chapitre Courbe Tonale](/Exposure#courbes-tonales) dans
     la page Exposition pour comprendre la raison pour laquelle il existe
     deux courbes et apprendre à s'en servir. Ce sont de formidables
     outils !
 5.  Dans la section "Fondamentaux" ci-dessus nous avons suggéré
     l'utilisation du curseur
-    [Saturation](exposure/fr#saturation) (dans l'outil
+    [Saturation](/exposure#saturation) (dans l'outil
     Exposition). Maintenant que vous connaissez les fondamentaux et que
     vous explorez des techniques plus évoluées, nous vous conseillons de
     ne plus utiliser le curseur Saturation, mais de le remplacer par la
     plus performante [Courbe
-    CC](Lab_Adjustments/fr#Courbe_CC.md) de l'outil [Ajustements
-    Lab](Lab_Adjustments/fr.md), car elle autorise un contrôle
+    CC](/Lab_Adjustments#courbe-cc) de l'outil [Ajustements
+    Lab](/Lab_Adjustments), car elle autorise un contrôle
     plus fin.
 6.  L'ordre pour le reste n'est pas défini. Certains outils vont
     inévitablement en influencer d'autres. Continuer avec l'outil
-    [Ajustements Lab](lab_adjustments/fr) puis le reste des
+    [Ajustements Lab](/lab_adjustments) puis le reste des
     outils de l'onglet Exposition.
 7.  Puis les outils de l'onglet Couleur
     ![<File:Color-circles.png>](Color-circles.png "File:Color-circles.png").
@@ -364,12 +364,12 @@ suivre cet ordre général des opérations :
     plus haute qualité.
 10. Vous pouvez à tout moment éditer les métadonnées dans l'onglet
     ![<File:Metadata.png>](Metadata.png "File:Metadata.png")
-    [Meta](metadata_copy_mode/fr) a tout moment avant de
+    [Meta](/metadata_copy_mode) a tout moment avant de
     sauvegarder.
 11. Enregistrer, soit directement
     [<file:save.png>](file:save.png) lorsque vous désirez
     enregistrer une photo seule, ou bien via
     [<file:gears.png>](file:gears.png) [La file
-    d'attente](The_Batch_Queue/fr.md) lorsqu'il y a plusieurs
+    d'attente](/the_batch_queue) lorsqu'il y a plusieurs
     photos. Voir l'article [Enregistrer les
-    images](Saving_Images/fr.md)
+    images](/saving_images)
