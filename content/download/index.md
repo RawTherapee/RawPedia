@@ -23,7 +23,7 @@ repository**](https://github.com/Beep6581/RawTherapee/releases/tag/nightly-githu
 
 Development build filenames follow this structure:
 
-`RawTherapee_`<branch>`_[operating-system]_`<build-type>`.`<extension>
+`RawTherapee_<branch>_[operating-system]_<build-type>.<extension>`
 
 Branch  
 Each commit happens on a branch. The main branch is called `dev`. New
@@ -54,7 +54,7 @@ forum](https://discuss.pixls.us/c/software/rawtherapee/).
 
 Development builds are **not intended for production use** and we
 provide **no backward or forward compatibility for [sidecar files
-(pp3)](Sidecar_Files_-_Processing_Profiles.md)** created using a
+(pp3)](/Sidecar_Files_-_Processing_Profiles)** created using a
 development build! That means that a sidecar file created using a dev
 build will very likely lead to different results when used in a stable
 release or in another dev build. If stability and compatibility are key
