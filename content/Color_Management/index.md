@@ -10,7 +10,10 @@ contributors:
 tags:
   - 'Tool Description'
   - 'Color Tab'
+toc: true
 ---
+
+## Introduction
 
 Color management comprises all tasks to ensure a faithful representation
 of colors from scene to intermediate formats, editors and various output

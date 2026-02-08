@@ -8,6 +8,7 @@ contributors:
 tags:
   - 'Tool Description'
   - 'Advanced Tab'
+toc: true
 ---
 
 <figure>
