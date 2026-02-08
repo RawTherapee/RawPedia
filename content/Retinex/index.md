@@ -4,9 +4,11 @@ contributors:
   - Lebarhon
   - DrSlony
   - XavAL
+  - jdc
 tags:
   - 'Tool Description'
   - 'Advanced Tab'
+toc: true
 ---
 
 __NOTOC__ Note: This translation of the "Retinex" French page is a

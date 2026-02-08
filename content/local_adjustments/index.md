@@ -3003,8 +3003,7 @@ described in the two previous paragraphs, it was decided:
       changed.
 
 Some of these tools are similar to the Abstract Profile concept.
-[Abstract Profiles](color_management#abstract_profiles)
-
+[Abstract Profiles]({{% relref "Color_Management#abstract-profiles" %}})
 ##### Source Data Adjustments and Scene conditions
 
 I won't go back over what Scene Conditions does (see the tutorials on
@@ -3020,7 +3019,7 @@ luminance of the background (in full sunlight, in a dark room, etc.). Be
 careful not to misuse the Viewing Conditions settings to compensate for
 imperfect Scene Conditions or Source Data Adjustments settings.
 
-[Color Appearance & Lighting (CIECAM02/16) et Color Appearance (Cam16 & JzCzHz) - Tutorial](ciecam02#color_appearance_.26_lighting_.28ciecam02.2f16.29_et_color_appearance_.28cam16_.26_jzczhz.29_-_tutorial)
+[Tutorial Color Appearance & Lighting (CIECAM02/16) and Color Appearance (Cam16 &  JzCzHz)]({{% relref "CIECAM02#color-appearance--lighting-ciecam0216-et-color-appearance-cam16--jzczhz---tutorial" %}})
 
 ###### What principles do "Log encoding" and Scene Conditions use to render an image prior to Cam16?
 
@@ -3425,8 +3424,7 @@ physiological aspects due to the perception of the eye and the brain.
 
 Further information, albeit incomplete, on the effects taken into
 account by the two versions of Ciecam implemented in RT can be found
-here: [Ciecam History -
-effects](CIECAM02#Introduction_-_history.md)
+here: [Ciecam History - effects]({{% relref "ciecam02#introduction---history" %}})
 
 Most of the effects are automatically taken into account by the
 software. Particularly in Source Data Adjustments.
@@ -3530,22 +3528,24 @@ Processing Challenge -March and April 2024.
 
 ### **Ciecam -JzCzHz Tutorial**
 
-[Color Appearance & Lighting (CIECAM02/16) et Color Appearance (Cam16 & JzCzHz) - Tutorial](ciecam02#color_appearance_.26_lighting_.28ciecam02.2f16.29_et_color_appearance_.28cam16_.26_jzczhz.29_-_tutorial)
+[Tutorial Color Appearance & Lighting (CIECAM02/16) and Color Appearance (Cam16 &  JzCzHz)]({{% relref "ciecam02#color-appearance--lighting-ciecam0216-et-color-appearance-cam16--jzczhz---tutorial" %}})
 
 ### **An experimental JzCzHz module**
 
 For a brief explanation of this module, see the following:
-[Experimental tool - JzCzHz](ciecam02#jzazbz_-_a_new_experimental_cam.3f_.28cam16_.26_jzczhz.29)
+[Experimental tool - JzCzHz]({{% relref "ciecam02#jzazbz---a-new-experimental-cam-cam16--jzczhz" %}})
 
 #### Understanding the CAM - SDR - HDR settings - General
 
-For a brief explanation of this module, see the following
-:[CIECAM02#Understanding_the_CAM_-_SDR_-_HDR_settings_-_General](/images/ciecam02#understanding_the_cam_-_sdr_-_hdr_settings_-_general)
+For a brief explanation of this module, see the following:
+[CIECAM02#Understanding_the_CAM_-_SDR_-_HDR_settings_-_General]({{% relref "ciecam02#understanding-the-cam---sdr---hdr-settings---general" %}})
 
 #### Understanding the CAM - SDR - HDR settings -Introduction
 
 For a brief explanation of this module, see the following
-[CIECAM02#Understanding_the_CAM_-_SDR_-_HDR_settings_-_Introduction](ciecam02#understanding_the_cam_-_sdr_-_hdr_settings_-_introduction)
+[Understanding_the_CAM_-_SDR_-_HDR_settings_-_General]({{% relref "ciecam02#understanding-the-cam---sdr---hdr-settings---introduction" %}})
+
+[Experimental tool - JzCzHz]({{% relref "ciecam02#understanding-the-cam---sdr---hdr-settings---general" %}})
 
 ##### Jz in practice
 
@@ -3636,7 +3636,8 @@ luminance (Yb%)".
 <img src="sigmoidjz1.jpg" title="Sigmoidjz1.jpg" width="600"
 alt="Sigmoidjz1.jpg" />
 
-- See [Sigmoid Jz - principles](ciecam02#sigmoid_jz)
+- See [Sigmoid Jz - principles]({{% relref "ciecam02#sigmoid-jz" %}})
+
 - Raw file (Rawtherapee - Creative Common Attribution-share Alike 4.0):
   [29](https://drive.google.com/file/d/1ziux382pWgdYa4jySimwKaKnK_KdDhno/view?usp=sharing)
 
@@ -4574,7 +4575,8 @@ major differences:
   Light & Original Retinex, Blur/Grain & Denoise, Tone Mapping, Dehaze &
   Retinex, Sharpening, Local Contrast & Wavelets, Contrast by Detail
   Levels. There is also a Cam16 & JzCzHz Color Appearance module. See
-  [Tutorial Color Appearance & Lighting (CIECAM02/16) et Color Appearance (Cam16 &  JzCzHz)](ciecam02#color_appearance_.26_lighting_.28ciecam02.2f16.29_et_color_appearance_.28cam16_.26_jzczhz.29_-_tutorial)
+  [Tutorial Color Appearance & Lighting (CIECAM02/16) and Color Appearance (Cam16 &  JzCzHz)]({{% relref "ciecam02#color-appearance--lighting-ciecam0216-et-color-appearance-cam16--jzczhz---tutorial" %}})
+
 - Each RT-spot creates an additional "layer" similar to the way layers
   are added in bit-map editors. Each new RT-spot is transparent and
   allows the user to see any previous modifications. The Excluding Spot
@@ -5599,7 +5601,7 @@ The Retinex module is similar to the other tools, however:
 ### Common Color Mask
 
 Example using a Common Color Mask:
-[Example in First Steps, Common Color Mask](local_lab_controls/fr#how_to_use_a_common_color_mask_and_example_merging_2_rt-spots)
+[Example in First Steps, Common Color Mask]({{% relref "#how-to-use-the-common-color-mask-and-an-example-of-how-to-blend-2-rt-spots" %}})
 
 The tools in this mask have the same characteristics as the other masks
 mentioned above. However the mask is based on different principles and
@@ -5955,7 +5957,7 @@ Tips:
 
 Example using Shadows/Highlights & Tone Equalizer \> Tone Response
 Curve(TRC):
-[Example in First Steps](local_adjustments#five_ways_to_change_the_exposure_and_lift_the_shadows)
+[Example in First Steps 2]({{% relref "#six-ways-to-change-the-exposure-and-lift-the-shadows" %}})
 
 The module also includes:
 
@@ -6094,7 +6096,7 @@ or 1).
 #### Wavelets
 
 A simple application of wavelets (without using the pyramid):
-[Exemple dans Premiers pas d'utilisation de Wavelet](local_lab_controls/fr#un_moment_de_folie_-_utiliser_wavelet)
+[A moment of madness - try Wavelets]({{% relref "#a-moment-of-madness---try-wavelets" %}})
 
 Available controls:
 
@@ -6245,9 +6247,7 @@ operate on the edges. The action of the curve is based on the luminance.
 
 ###### Wavelet level tone mapping
 
-Example to enhance the texture: [Example in Getting started - with
-Wavelets Tone
-mapping](Local_Adjustments#Three_ways_of_increasing_texture.md)
+Example to enhance the texture: [Example in Getting started - with Wavelets Tone mapping]({{% relref "#three-ways-of-increasing-texture" %}})
 
 This module uses wavelets only with a compression algorithm that can be
 applied to each decomposition level and the residual image. A guided
@@ -6293,7 +6293,7 @@ close to the mean are amplified more than the lower and higher values.
 ### Tone Mapping
 
 Example increasing texture:
-[Example in First steps - increasing texture with Tone mapping](local_adjustments#three_ways_of_increasing_texture)
+[Example in First step  - increasing texture with Tone mapping]({{% relref "#three-ways-of-increasing-texture" %}})
 
 - Masking and "Recovery based on luminance mask" available in Standard
   and Advanced modes.
@@ -6320,7 +6320,7 @@ Soft Light is the same as the main-menu function.
 
 #### Original Retinex
 
-Example: [Dodge and Burn example in First Steps](local_adjustments#dodging_and_burning)
+Example: [Dodge and Burn example in First Steps]({{% relref "#dodging-and-burning" %}})
 
 Tests on the original Retinex algorithm (based on the work carried out
 by IPOL) have shown that it has some useful features for local editing.
@@ -6385,8 +6385,7 @@ with Retinex for better results.
 #### Retinex: Important differences with the main-menu module
 
 Example using it to increase texture:
-[Example in First steps - increasing texture with Retinex](local_adjustments#three_ways_of_increasing_texture)
-
+[Example in First steps - increasing texture with Retinex]({{% relref "#three-ways-of-increasing-texture" %}})
 In Local adjustments, Retinex is similar to the main-menu
 implementation, however there are some differences.
 
@@ -6648,7 +6647,7 @@ in addition to the Denoise module for difficult images.
 
 ### Denoise
 
-Example: [Example in Getting started - Using Denoise module](local_adjustments#using_the_denoise_module)
+Example: [Example in Getting started - Using Denoise module]({{% relref "#using-the-denoise-module" %}})
 
 This module is quite different from the main-menu noise reduction module
 for several reasons:
@@ -6845,12 +6844,9 @@ filter other types of impulse noise.
 
 Example showing how it can be used:
 
-[Log Encoding](local_adjustments#log_encoding)
-
-[Log Encoding and highlight recovery](local_adjustments#log_encoding_and_highlight_recovery)
-
-[Other examples using Log Encoding](local_adjustments#other_examples_log_encoding)
-
+[Log Encoding]({{% relref "#log-encoding" %}})
+[Log Encoding and highlight recovery]({{% relref "#log-encoding-and-highlight-recovery" %}})
+[Other examples using Log Encoding]({{% relref "#other-examples-log-encoding" %}})
 #### Introduction
 
 This module is derived from the excellent module developped by Alberto
@@ -6991,13 +6987,13 @@ possibilities of Local Adjustments i.e. deltaE, Scope, Transition
 Gradients, Excluding spots, etc.
 
 For an overview of Cam16:
-[Using_Cam16_and_HDR_features](local_adjustments#using_the_cam16_and_hdr_functions)
+[Using_Cam16_and_HDR_features]({{% relref "#using-the-cam16-and-hdr-functions" %}})
 
 For a presentation of JzCzHz:
-[Experimental JzCzHz module](local_adjustments#an_experimental_jzczhz_module)
+[Experimental JzCzHz module]({{% relref "#an-experimental-jzczhz-module" %}})
 
 To see the tutorial:
-[Tutorial Color Appearance & Lighting (CIECAM02/16) and Color Appearance (Cam16 &  JzCzHz)](CIECAM02#Color_Appearance_&_Lighting_(CIECAM02/16)_et_Color_Appearance_(Cam16_&_JzCzHz)_-_Tutorial "wikilink")
+[Tutorial Color Appearance & Lighting (CIECAM02/16) and Color Appearance (Cam16 &  JzCzHz)]({{% relref "CIECAM02#color-appearance--lighting-ciecam0216-et-color-appearance-cam16--jzczhz---tutorial" %}})
 It should be noted that the JzCzHz module contains all the tools
 necessary to replace Lab:
 
