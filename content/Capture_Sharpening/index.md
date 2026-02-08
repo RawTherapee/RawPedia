@@ -234,4 +234,9 @@ For raw images, allows you initial denoising after Capture Sharpening taking int
 - Its main use is to separate the action between structured areas where the noise is barely visible and the often plain background (flat areas) where the noise is very visible.
 - Be careful not to use values that are too high, you can fine-tune the noise reduction later.
 
-
+## How to process TIF/JPG files
+In Selective Editing, you will find the following options:
+* Ability to apply Capture Sharpening to non-raw files
+* Compensating for the loss of sharpness due to noise reduction
+* Use a different algorithm, at the local level, to modify the sharpening
+[Selective Editing - Capture Deconvolution]({{% relref "local_adjustments/#capture-deconvolution" %}})

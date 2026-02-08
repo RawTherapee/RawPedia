@@ -6562,6 +6562,7 @@ well worth the effort, especially when working on the local contrast.
 #### Capture deconvolution
 
 Capture Deconvolution, which is an adaptation of Capture Sharpening in the Raw tab for use in ‘Selective Editing’, and allows you to use this algorithm either in standalone mode or after denoising to restore the image's vigor. See the Raw section of Capture Sharpening for more details on understanding. The algorithm is essentially the same, but the code had to be broken down into smaller parts, and of course, the data to be processed is of a different nature.
+[Capture Sharpening Raw](/capture_sharpening/)
 
 Capture Sharpening's capabilities allow for finer sharpening control by allowing you to soften the corner sharpness to enhance focus on the main subject. 
 
