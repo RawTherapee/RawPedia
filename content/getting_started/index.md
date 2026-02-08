@@ -10,8 +10,6 @@ tags:
 weight: 1
 ---
 
-[features](/features)
-
 ## Scope
 
 RawTherapee is a powerful cross-platform raw image processing program,
