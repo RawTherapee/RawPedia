@@ -16,8 +16,8 @@ Todo-List / State:
 
 Ready for publishing: no
 
-Page added for referencing. --[fherb](user:fherb)
-([talk](user_talk:fherb)) 13:08, 14 March 2017 (MST)
+Page added for referencing. -- fherb
+13:08, 14 March 2017 (MST)
 
 ------------------------------------------------------------------------
 

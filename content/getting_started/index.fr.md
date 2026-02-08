@@ -8,6 +8,8 @@ tags:
 weight: 1
 ---
 
+[features](/features)
+
 <div class="pagetitle">
 
 Premiers pas
