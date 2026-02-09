@@ -4576,7 +4576,7 @@ The important point to consider is that most of the time we ignore the distribut
 + One point to consider is that a camera, however sophisticated, is not the human eye. 
 
 ##### Our eye
-Our eye is made up of cones and rods. It is capable of adapting to strong variations in brightness in a few seconds, and its Dynamic Range is around 20 to 25 EV, but dynamically, meaning that this area 'adapts' to the environment.
+Our eye is made up of cones and rods. It is capable of adapting to strong variations in brightness in a few seconds, and its Dynamic Range is around 20 to 25 Ev, but dynamically, meaning that this area 'adapts' to the environment.
 + It has characteristics known and measured since 1931, leading, for example, to LMS representations, or to the concept of CIE XYZ standard observer color-matching functions (Observer 2° - Observer 10°)
 + The colors perceived by our eye depend on 3 factors - which are expressed as matrices of spectral data:
 + The true colors (measured with a spectrograph) of a flower, an object, or skin. They are expressed between 350 nm and 830 nm. For example for a Red Petunia:
@@ -4649,7 +4649,7 @@ Cameras have a dynamic range that, depending on their age and shooting condition
 
 ##### Algorithms
 
-The key point of all algorithms (GHS, Michaelous, Sigmoid, etc., and also AgX, not included in Rawtherapee) is: how to take the data into account, how to evaluate it, how to ensure that shadows and highlights are taken into account without disturbing the 'normal' colors.
+The key point of all algorithms (GHS, Michaelis-Menten, Sigmoid, etc., and also AgX, not included in Rawtherapee) is: how to take the data into account, how to evaluate it, how to ensure that shadows and highlights are taken into account without disturbing the 'normal' colors.
 
 The problem is not simple – beyond the location of the calculations, which is 'THE' fundamental point, and the processing algorithm, what is taken into account as systemic modeling? Do we use:
 + Each of the 3 channels R, G and B equally, but simultaneously.
