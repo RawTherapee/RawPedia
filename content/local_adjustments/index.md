@@ -1,6 +1,6 @@
 ---
 title: Local Adjustments
-date: 2026-02-06
+date: 2026-02-09
 contributors:
   - Jdc
   - DrSlony
@@ -4566,6 +4566,87 @@ To modify the primaries or adjust the 'Dominant colors', you must change the sel
   Color Appearance (CAM16) and Selective Editing > Local contrast & Wavelets > Wavelets, especially if the modifications only concern
   a part of the image, or a second GHS Spot, in 'Normal Spot'.
 - You can also use Color Appearance & Lighting (CIECAM) to take into account the physiological aspects of human vision and viewing conditions.
+
+#### Generalized Hyperbolic Stretch & Michaelis-Menten : what type of data to use ?
+
+The question is not trivial and concerns other algorithms such as Sigmoid, or Slope based, etc.
+
+#### What data is taken into account?
+The important point to consider is that most of the time we ignore the distribution and nature of the data once we step outside the Working Profile (and in some cases, even within the Working Profile).
++ One point to consider is that a camera, however sophisticated, is not the human eye. 
+
+##### Our eye
+Our eye is made up of cones and rods. It is capable of adapting to strong variations in brightness in a few seconds, and its Dynamic Range is around 20 to 25 EV, but dynamically, meaning that this area 'adapts' to the environment.
++ It has characteristics known and measured since 1931, leading, for example, to LMS representations, or to the concepts of Observer 2° or 10°, and CIE XYZ standard observer color-matching functions.
++ The colors perceived by our eye depend on 3 factors - which are expressed as matrices of spectral data:
++ The true colors (measured with a spectrograph) of a flower, an object, or skin. They are expressed between 350 nm and 830 nm. For example for a Red Petunia
+```
+const double ColorTemp::ColorRedpetunia_spect[97] = {
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.1890, 0.1097,  0.0855,  0.0899,  0.0987,  0.0881,  0.0807,  0.0804,  0.0787,  0.0691,  0.0643,  0.0549,  0.0465,  0.0404,  0.0385,
+    0.0302,  0.0244,  0.0195,  0.0165,  0.0159,  0.0123,  0.0129,  0.0108,  0.0111,  0.0114,  0.0126,  0.0126,  0.0134,  0.0162,  0.0170,
+    0.0213,  0.0248,  0.0279,  0.0351,  0.0412,  0.0566,  0.0752,  0.0909, 0.1069, 0.1270, 0.1526, 0.1707, 0.1858, 0.1999, 0.2112,
+    0.2293, 0.2422, 0.2471, 0.2611, 0.2718, 0.2710, 0.2778, 0.2807, 0.2825, 0.2856, 0.2909, 0.2901, 0.2974, 0.3042, 0.3044, 0.3075,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+};
+```
++ The illuminant's value can be a complex calculation, such as daylight or a Solux studio lamp. Here, for example, are the specifications for Solux 4700K.
+```
+//spectral data for Solux lamp : near Daylight (for example  "Musée d'Orsay") - 4700K
+const double ColorTemp::Solux4700_spect[97] = {
+    0.4590, 0.83, 1.2011, 1.53, 1.8647, 2.15, 2.5338, 3.06, 3.5809, 3.99, 4.4137, 4.82, 5.2228, 5.63, 6.0387, 6.53, 6.9944, 7.55, 8.0266, 8.475, 8.9276, 8.90, 9.7840, 10.20, 10.6390, 11.00, 11.3600, 11.75, 12.1340, 12.36, 12.5880, 12.74, 12.8790,
+    13.07, 13.2560, 13.38, 13.5220, 13.41, 13.3070, 13.35, 13.3990, 13.37, 13.3420, 13.39, 13.4220, 13.65, 13.2710, 13.25, 13.2330, 13.12, 13.0110, 12.93, 12.8470, 12.805, 12.7630, 12.66, 12.5760, 12.563, 12.5490,
+    12.59, 12.6330, 12.617, 12.6010, 12.616, 12.6310, 12.6275, 12.6240, 12.70, 12.7710, 12.776, 12.7810, 12.786, 12.7950, 12.74, 12.6850, 12.64, 12.5950, 12.55, 12.5420, 12.43, 12.3180, 12.07, 11.8340, 11.72, 11.6190, 11.55, 11.5020,
+    11.32, 11.1510, 11.05, 10.9530, 10.80, 10.6550, 10.495, 10.4390, 10.31, 10.1790
+};
+```
++ The Observer is the human-eye representation of the CIExy diagram. Note that scientists say it would be better to use Observer 10° rather than Observer 2°, but since equipment (cameras, TVs, etc.) uses Observer 2°, we stick with the latter. This Observer has three components. I'm not giving the spectral values ​​because that would be a lot of data.
++ The color perceived by our eye in XYZ data is given by a matrix calculation with the code below (one case among others)
+```
+//calculate XYZ from spectrum data (color) and illuminant : J.Desmis December 2011
+void ColorTemp::spectrum_to_color_xyz_preset(const double* spec_color, const double* spec_intens, double &xx, double &yy, double &zz, const color_match_type &color_match)
+{
+    int i;
+    double lambda, X = 0, Y = 0, Z = 0, Yo = 0;
+
+    for (i = 0, lambda = 350; lambda < 830.1; i++, lambda += 5) {
+
+        double Me;
+        double Mc;
+
+        Me = get_spectral_color(lambda, spec_color);
+        Mc = get_spectral_color(lambda, spec_intens);
+        X += Mc * color_match[i][0] * Me;
+        Y += Mc * color_match[i][1] * Me;
+        Z += Mc * color_match[i][2] * Me;
+    }
+
+    for (i = 0, lambda = 350; lambda < 830.1; i++, lambda += 5) {
+
+        double Ms;
+
+        Ms = get_spectral_color(lambda, spec_intens);
+        Yo += color_match[i][1] * Ms;
+    }
+
+    xx = X / Yo;
+    yy = Y / Yo;
+    zz = Z / Yo;
+}
+```
+##### The Camera
+Cameras have a dynamic range that, depending on their age and shooting conditions, is around 10 to 15 EV. But they are incapable of adapting like our eyes. It's up to the photographer to master these things... if they can.
++ It functions 'like' our eye... and performs calculations
++ Their 'Observer' is different from the human eye and varies depending on the brand and camera body. Furthermore, what happens when you exceed the sensor's limits, either in the shadows or the highlights? The data is 'lost'... This is where the software can try to repair it, particularly with 'Raw Black Point' and 'Highlight Reconstruction'. In both cases, it tries to reconstruct what no longer exists.
++ The performance of the algorithms varies considerably. The most efficient is the one devised by Emil Martinec in 2012. It works in the majority of cases, and allows, for example, for a sunset, it to 'retrieve' data up to 4 times the limit of the Working Profile (in comparison, Inpaint Opposed, which is less resource-intensive, only retrieves 2.5 times).
++ Another point to consider is that the manufacturer or those who have carried out tests provide a matrix to convert the sensor data into usable values. For example, for a Canon EOS77d:
+```
+"dcraw_matrix": [ 6969,-512,-968,-4425,12161,2553,-739,1981,5601 ], // DNG v13.2
+```
++ A very important point to note is that these values ​​are for a D65 illuminant and a Observer 2°. What happens if you are not in these conditions at the time of shooting? The calculations are incorrect.
+
+##### Algorithms
+
 
 ## General principles and settings
 
