@@ -5,7 +5,6 @@ contributors:
   - XavAL
 tags:
   - 'General Photography'
-toc: true
 ---
 
 Capture NX-D, Capture NX 2 and ViewNX-i are proprietary Windows programs

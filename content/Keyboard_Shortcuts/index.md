@@ -6,7 +6,6 @@ contributors:
   - Thanatomanic
 tags:
   - 'General Information'
-toc: true
 ---
 
 ![](KB_United_States-NoAltGr.svg "KB_United_States-NoAltGr.svg") Note

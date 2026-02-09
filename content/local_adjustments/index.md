@@ -2,7 +2,7 @@
 title: Local Adjustments
 date: 2026-02-09
 contributors:
-  - Jdc
+  - Jdc - Jacques Desmis
   - DrSlony
 tags:
   - 'Tool Description'

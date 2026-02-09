@@ -1,15 +1,14 @@
 ---
 title: CIECAM02
+date: 2026-02-09
 contributors:
-  - Jdc
+  - Jdc - Jacques Desmis
   - XavAL
 tags:
   - 'Tool Description'
   - 'Advanced Tab'
 toc: true
 ---
-2022 - 2026
-//Jacques Desmis jdesmis@gmail.com
 
 ## Color Appearance & Lighting (CIECAM02/16) et Color Appearance (Cam16 & JzCzHz) - Tutorial
 

@@ -6,7 +6,6 @@ contributors:
 tags:
   - 'Tool Description'
   - 'Metadata Tab'
-toc: true
 ---
 
 RawTherapee let's you decide which of three things should happen to

@@ -5,7 +5,6 @@ contributors:
   - XavAL
 tags:
   - 'General Photography'
-toc: true
 ---
 
 The following free, cross-platform software can be used for visually

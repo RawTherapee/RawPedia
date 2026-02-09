@@ -4,7 +4,6 @@ contributors:
   - DrSlony
 tags:
   - 'General Information'
-toc: true
 ---
 
 ![](/images/RGB_Cube_Show_lowgamma_cutout_b.png "RGB_Cube_Show_lowgamma_cutout_b.png")

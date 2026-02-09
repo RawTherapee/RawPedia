@@ -4,7 +4,6 @@ contributors:
   - DrSlony
 tags:
   - 'Processing Profile Scripts'
-toc: true
 ---
 
 The **RTProfileSelector** is a RawTherapee plugin that automatically

@@ -5,7 +5,6 @@ contributors:
   - DrSlony
 tags:
   - 'Processing Profiles'
-toc: true
 ---
 
 <figure>
