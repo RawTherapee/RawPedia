@@ -3828,11 +3828,12 @@ There are several types of hyperbolic functions, all sharing, despite their diff
 * A similar function is used in 'Gamma based' and 'Slope based' in Selective Editing > Color Appearance (CAM16 & JzCzHz). In the form: dr * (x / (x + b)) + c) * kmid.  With (dr  = dynamic range)
 
 The special case of **Log encoding** functions. 
-These are not asymptotic functions (but they do compress the data). 
-In short, we measure the minimum and maximum values ​​of the data (linearly), divide the minimum value by 2 (minVal), and multiply the maximum value by 1.5 (maxVal) to give the logarithmic function some 'margin'. 
-We try to find (not easy) the value of the real Middle Grey – which is often around 0.04 or 0.07, far from the reference value of 0.18. From the modified real data, we obtain a Dynamic Range (DR), a Middle Grey (MG source), and we take a reference Middle Grey (MG destination), which by default is 0.18. These three values ​​(DR, MG source, MG destination) are used to calculate the logarithmic base. We apply it before processing, and then its 'inverse to linear' after. The only drawback is that for complex images, there is no asymptote. Hence the addition of a hyperbolic tangent function with the 'Brightness compression' slider.
-In the case of Rawtherapee, these calculations are not performed on data just before the 'logarithmic' conversion, but much earlier. Hence the potential for significant differences (especially if processing has been done in between).
-The values ​​are expressed in Ev, which is simply a base-2 logarithm transformation:
+* These are not asymptotic functions (but they do compress the data). 
+* In short, we measure the minimum and maximum values ​​of the data (linearly), divide the minimum value by 2 (minVal), and multiply the maximum value by 1.5 (maxVal) to give the logarithmic function some 'margin'. 
+* We try to find (not easy) the value of the real Middle Grey – which is often around 0.04 or 0.07, far from the reference value of 0.18. From the modified real data, we obtain a Dynamic Range (DR), a Middle Grey (MG source), and we take a reference Middle Grey (MG destination), which by default is 0.18. These three values ​​(DR, MG source, MG destination) are used to calculate the logarithmic base. We apply it before processing, and then its 'inverse to linear' after. The only drawback is that for complex images, there is no asymptote. Hence the addition of a hyperbolic tangent function with the 'Brightness compression' slider.
+* In the case of Rawtherapee, these calculations are not performed on data just before the 'logarithmic' conversion, but much earlier. Hence the potential for significant differences (especially if processing has been done in between).
+* The values ​​are expressed in Ev, which is simply a base-2 logarithm transformation:
+
 ```
 const float dynamic_range = -xlogf(minVal / maxVal) / log2;
 ```
