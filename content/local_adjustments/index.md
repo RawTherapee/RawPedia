@@ -4601,7 +4601,7 @@ const double ColorTemp::Solux4700_spect[97] = {
 };
 ```
 + The Observer is the human-eye representation of the CIExy diagram. Note that scientists say it would be better to use Observer 10° rather than Observer 2°, but since equipment (cameras, TVs, etc.) uses Observer 2°, we stick with the latter. This Observer has three components. I'm not giving the spectral values ​​because that would be a lot of data.
-+ The color perceived by our eye in XYZ data is given by a matrix calculation with the code below (one case among others)
++ The color perceived by our eye in XYZ data (It's a simplification, a systemic model, but it works nonetheless), is given by a matrix calculation with the code below (one case among others)
 ```
 //calculate XYZ from spectrum data (color) and illuminant : J.Desmis December 2011
 void ColorTemp::spectrum_to_color_xyz_preset(const double* spec_color, const double* spec_intens, double &xx, double &yy, double &zz, const color_match_type &color_match)
@@ -4634,6 +4634,8 @@ void ColorTemp::spectrum_to_color_xyz_preset(const double* spec_color, const dou
     zz = Z / Yo;
 }
 ```
++ This is the type of calculation used in White Balance auto (Temperature correlation), with a (somewhat...very) complex algorithm that compares up to 237 colors in the image and 429 spectral data points.
+
 ##### The Camera
 Cameras have a dynamic range that, depending on their age and shooting conditions, is around 10 to 15 EV. But they are incapable of adapting like our eyes. It's up to the photographer to master these things... if they can.
 + It functions 'like' our eye... and performs calculations
@@ -4641,11 +4643,85 @@ Cameras have a dynamic range that, depending on their age and shooting condition
 + The performance of the algorithms varies considerably. The most efficient is the one devised by Emil Martinec in 2012. It works in the majority of cases, and allows, for example, for a sunset, it to 'retrieve' data up to 4 times the limit of the Working Profile (in comparison, Inpaint Opposed, which is less resource-intensive, only retrieves 2.5 times).
 + Another point to consider is that the manufacturer or those who have carried out tests provide a matrix to convert the sensor data into usable values. For example, for a Canon EOS77d:
 ```
-"dcraw_matrix": [ 6969,-512,-968,-4425,12161,2553,-739,1981,5601 ], // DNG v13.2
+        "dcraw_matrix": [ 6969,-512,-968,-4425,12161,2553,-739,1981,5601 ], // DNG v13.2
 ```
 + A very important point to note is that these values ​​are for a D65 illuminant and a Observer 2°. What happens if you are not in these conditions at the time of shooting? The calculations are incorrect.
 
 ##### Algorithms
+
+The key point of all algorithms (GHS, Michaelous, Sigmoid, etc., and also AgX, not included in Rawtherapee) is: how to take the data into account, how to evaluate it, how to ensure that shadows and highlights are taken into account without disturbing the 'normal' colors.
+
+The problem is not simple – beyond the location of the calculations, which is 'THE' fundamental point, and the processing algorithm, what is taken into account as systemic modeling? Do we use:
++ Each of the 3 channels R, G and B equally, but simultaneously.
++ Each of the three channels (R, G, and B) is processed independently. This leads to the problem of out-of-gamut colors and asymptotes in the very highlights.
++ Try to find a "Luminance" channel, which is actually the one we're interested in for the asymptotic function. As a reminder, the most advanced models to date are Cam16 and JzAzBz which use, albeit in a different way, the 'Brightness' channel (Q for Cam16), (Jz for JzAzBz)
++ In RawTherapee, all three cases are available. For example, the R, G, and B channels are separated in Selective Editing > Color Appearance (CAM16) > RGB channel Slope or TRC based
++ The simplest solution to implement (but not necessarily the most effective) is the first '3 channels R, G and B equally'
+
+In GHS you will find several possible solutions:
++ RGB Standard: The 3 channels R, G and B equally.
++ RGB Luminance : The system is 'guided' by an equivalent luminance (I'll come back to that) to better account for very low light and out-of-gamut light.
++ Lightness and Chromaticity: we use Lab data.. Certainly this is good in theory (I think PixInsight uses it) but how does 'L' behave out of gamut?
++ Luminance HSL: I think, perhaps wrongly, that it's the least good. RGB to HSL conversion has never been designed for data more than 4 times greater than 'normal'.
++ The problem is, without sophisticated equipment - I have nothing, no more than the photographer in the field who isn't going to use sophisticated devices to measure the spectral data of the flowers or the illuminant, so I have nothing to assess what's going on (maybe some research laboratories do).
++ How I did it. There are two formulas that are widely available. The equivalent luminance using the RGB > XYZ conversion matrix in the working profile.
+    - Taking the components of the matrix diagonal and applying them to the data... A small problem: this worked as expected in 1931, but not for data outside the Working Profile (here Rec2020).
+       ```
+       constexpr double xyz_rec2020[3][3] = {
+        {0.6734241,  0.1656411,  0.1251286},
+        {0.2790177,  0.6753402,  0.0456377},
+        { -0.0019300,  0.0299784, 0.7973330}
+        };
+       ```
+    - try to take into account what is outside, for example with:
+        ```
+        // taken from darktable
+        inline float power_norm(float r, float g, float b)
+        {
+            r = std::abs(r);
+            g = std::abs(g);
+            b = std::abs(b);
+
+            float r2 = SQR(r);
+            float g2 = SQR(g);
+            float b2 = SQR(b);
+  
+            float d = r2 + g2 + b2;
+            float n = r * r2 + g * g2 + b * b2;
+
+            return n / std::max(d, 1e-12f);
+        }
+        ```
+        But it works reasonably well (very difficult to verify) for 'reasonable' Gamut overshoots.
+    - Trying to solve the squaring of the circle with my latest (finalized) attempts after user feedback
+        ```
+        inline float norm_3(float r, float g, float b, TMatrix ws, float raplim)//lowers the equivalent luminance if the white point is high
+            {
+                constexpr float hi = std::numeric_limits<float>::max() / 100.f;
+                float pwn = 0.5f;//standard repartition between XYZ luminance and Out of gamut values 
+                if (raplim < 1.2f) {//raplim : ratio between the normal value 'reasonable_limit_white_point' and reality
+                    pwn = 0.55f;//Tested on images with WP linear close to 4 - Near Sunset
+                } else if (raplim < 1.5f) {//Very high White point
+                    pwn = 0.75f;//Tested on images with WP linear close to 5 or 6
+                } else {
+                    pwn = 0.85f;//Tested on images with WP linear close to 6 and above //LEDs
+                }    
+                return std::min(hi, (1.f - pwn) * power_norm(r, g, b) + pwn * Color::rgbLuminance(r, g, b, ws));//I reversed the action of the two components to better account for what happens out of gamut.
+            }
+        ```
+##### Summary - what are the key takeaways?
+The matter is anything but simple. 
+The "pre-tone mapper" principle in RawTherapee allows for the separation of processing steps, within the concept of a "game changer." We try to make the data "acceptable" as early as possible in the process, but all data is taken into account. In this sense, "GHS" is superior to "MM," which, without using the "Subtract Linear Black" and "Linear Dynamic Range" functions, would be unable to process certain images where the black point is "misplaced" (these are two features I added to original MM). For these images, this is also the case for Log encoding, Sigmoid,.. which do (very) poorly.
+
+The concept of linear processing is very often misinterpreted; I think it stems from a confusion. A few years ago (but I have no proof, no code...) Adobe used a suffix 'Melissa' for its Raw processing (I think from the developer's first name), which in fact, instead of using the linear 'Working profile', used the same one with the sRGB gamma (Slope=12.92 gamma=2.4).
+
+As for the rest, Rawtherapee's code is entirely 32-bit or 64-bit, and I think (I'm sure) that it makes little to no difference. As soon as anything is done (white balance, input profiles, etc.), the initial data is changed... is it important to 'monitor' the level of change? I don't think so. The important thing is not to lose any data, and to ensure that the black point is as close to zero as possible and that the white point has an asymptotic function. These two values ​​should be calculated as close as possible to their actual use and not assigned arbitrarily.
+
+The debate surrounding middle grey needs to be understood by users. We're not talking about the same thing when analyzing data 'before' processing, or when using it for output. The differences can be enormous. GHS elegantly resolves the issue by referring to the 'Symmetry Point' (the peak of the histogram in linear mode).
+
+Game changer allows you to separate the data retrieval phase from the final processing phase. The two algorithms located at the end of the process allow:
++ With Abstract profile (which is not a gadget...) you can adjust/balance shadows and lights, increase 'local contrast' (even though I don't like this term), act if necessary (and only if necessary) on the Illuminants and primaries, which are delicate to implement.
++ With Color Appearance & Lighting (CIECAM), you take into account the concepts of 'scene' (source) and 'display' (viewing). You consider a significant number of physiological aspects, and above all, you take into account the shooting conditions (finally!), and the conditions under which you view your images (examining them in the dark is not the same as viewing them in a well-lit office...). Furthermore, in the final stage, without having to return to the beginning, you can adjust each R, G, and B channel, much like the process of primary colors or a film simulation.
 
 
 ## General principles and settings
