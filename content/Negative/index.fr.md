@@ -53,7 +53,7 @@ possibles de contournement :
     négatif. La méthode est détaillée ci-dessous. Si vous ne désirez pas
     réaliser votre propre DCP inversé, un échantillon peut être
     téléchargé ici : [Linear
-    inverted.dcp](:File:Linear_inverted.dcp.md)
+    inverted.dcp](Linear_inverted.dcp.md)
 
 ## Création d'un DCP pour négatifs
 

@@ -30,12 +30,12 @@ Propriétés
   [ICC](https://en.wikipedia.org/wiki/ICC_profile)
 - Supporte la plupart des formats raw, ainsi que les images en HDR à
   virgule flottante du format DNG. Supporte aussi le JPEG, TIFF et PNG.
-- Supporte le [film négatif](film_negative/fr) et les
+- Supporte le [film négatif](/film_negative) et les
   appareils photo
-  [monochromes](demosaicing/fr#appareils_photo_monochromes).
+  [monochromes](/demosaicing#appareils-photo-monochromes).
 - Place vos photos en file d'attente en vue d'un export ultérieur,
   libérant ainsi votre CPU pour un travail plus véloce avec l'aperçu.
-- [Classe](the_file_browser_tab/fr#classement) les photos
+- [Classe](/the_file_browser_tab#classement) les photos
   avec un système de 0 à 5 étoiles (le classement est lu dans les
   métadonnées incorporées Exif et XMP), ajoute un label couleur, filtre
   par nom de fichier et métadonnées.

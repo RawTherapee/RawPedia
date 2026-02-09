@@ -11,7 +11,7 @@ Todo: übersetzen
 
 Seite erst nur angelegt, um sie referenzieren zu können
 
-[fherb](user:fherb) ([talk](user_talk:fherb))
+fherb
 12.3.2017
 
 ------------------------------------------------------------------------

@@ -1,58 +1,59 @@
-baseURL = 'https://rawpedia.rawtherapee.com/'
-languageCode = 'en-us'
+# baseURL = 'https://rawpedia.rawtherapee.com/'
+baseURL = ''
+languageCode = 'en'
 title = 'RawPedia'
 theme = ['hugo-bootstrap-bare']
+
 defaultContentLanguage = 'en'
 
-[languages]
-  [languages.en]
-    languageCode = 'en-US'
-    languageName = 'English'
-    timeZone = 'America/New_York'
-    title = 'RawPedia'
-    weight = 1
-    [languages.en.pagination]
-      path = 'page'
-  [languages.fr]
-    languageCode = 'fr'
-    languageName = 'Français'
-    timeZone = 'America/New_York'
-    title = 'RawPedia'
-    weight = 1
-    [languages.fr.pagination]
-      path = 'page'
-  [languages.de]
-    languageCode = 'de'
-    languageName = 'Deutsch'
-    timeZone = 'America/New_York'
-    title = 'RawPedia'
-    weight = 1
-    [languages.de.pagination]
-      path = 'page'
-  [languages.ca]
-    languageCode = 'ca'
-    languageName = 'Català'
-    timeZone = 'America/New_York'
-    title = 'RawPedia'
-    weight = 1
-    [languages.ca.pagination]
-      path = 'page'
-  [languages.es]
-    languageCode = 'es'
-    languageName = 'Español'
-    timeZone = 'America/New_York'
-    title = 'RawPedia'
-    weight = 1
-    [languages.es.pagination]
-      path = 'page'
-  [languages.it]
-    languageCode = 'it'
-    languageName = 'Italiano'
-    timeZone = 'America/New_York'
-    title = 'RawPedia'
-    weight = 1
-    [languages.it.pagination]
-      path = 'page'
+[languages.en]
+  languageCode = 'en-US'
+  languageName = 'English'
+  timeZone = 'America/New_York'
+  title = 'RawPedia'
+  # weight = 1
+  # [languages.en.pagination]
+  #   path = 'page'
+[languages.fr]
+  languageCode = 'fr-FR'
+  languageName = 'Français'
+  timeZone = 'America/New_York'
+  title = 'RawPedia'
+  # weight = 2
+  # [languages.fr.pagination]
+  #   path = 'page'
+# [languages.de]
+#   languageCode = 'de'
+#   languageName = 'Deutsch'
+#   timeZone = 'America/New_York'
+#   title = 'RawPedia'
+#   weight = 3
+#   [languages.de.pagination]
+#     path = 'page'
+# [languages.ca]
+#   languageCode = 'ca'
+#   languageName = 'Català'
+#   timeZone = 'America/New_York'
+#   title = 'RawPedia'
+#   weight = 4
+#   [languages.ca.pagination]
+#     path = 'page'
+# [languages.es]
+#   languageCode = 'es'
+#   languageName = 'Español'
+#   timeZone = 'America/New_York'
+#   title = 'RawPedia'
+#   weight = 5
+#   [languages.es.pagination]
+#     path = 'page'
+# [languages.it]
+#   languageCode = 'it'
+#   languageName = 'Italiano'
+#   timeZone = 'America/New_York'
+#   title = 'RawPedia'
+#   weight = 6
+#   [languages.it.pagination]
+#     path = 'page'
 
 [markup]
   [markup.highlight]
@@ -65,9 +66,10 @@ defaultContentLanguage = 'en'
     hardWraps = false
     unsafe = true
     xhtml = false
-  [markup.goldmark.renderHooks]
-    [markup.goldmark.renderHooks.link]
-      useEmbedded = 'auto'
+
+  [markup.goldmark.renderHooks.link]
+    useEmbedded = 'always'
+
 [outputs]
   home = ['html', 'rss', 'json']
   section = ['html']

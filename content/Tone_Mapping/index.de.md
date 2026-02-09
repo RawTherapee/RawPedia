@@ -16,8 +16,8 @@ Todo-List / State:
 
 Ready for publishing: no
 
-Page prepared for referencing only. --[fherb](user:fherb)
-([talk](user_talk:fherb)) 12:48, 14 March 2017 (MST)
+Page prepared for referencing only. -- fherb
+12:48, 14 March 2017 (MST)
 
 ------------------------------------------------------------------------
 
