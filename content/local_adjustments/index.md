@@ -4507,7 +4507,7 @@ the only way to make in-depth color correction adjustments.
 To simplify the explanation, I'll use the module located in Abstract Profiles (Color Tab), which is (slightly) more comprehensive and easier to use.
 
 <figure>
-<img src="ap-prim-dom.jpg" title="Primaries - Illuminants - Dominant Color" width="600" />
+<img src="ap-prim-dom.jpg" title="Primaries - Illuminants - Dominant Color" width="300" />
 <figcaption>AP-prim-dom.jpg</figcaption>
 </figure>
 
@@ -4579,7 +4579,7 @@ The important point to consider is that most of the time we ignore the distribut
 Our eye is made up of cones and rods. It is capable of adapting to strong variations in brightness in a few seconds, and its Dynamic Range is around 20 to 25 EV, but dynamically, meaning that this area 'adapts' to the environment.
 + It has characteristics known and measured since 1931, leading, for example, to LMS representations, or to the concept of CIE XYZ standard observer color-matching functions (Observer 2° - Observer 10°)
 + The colors perceived by our eye depend on 3 factors - which are expressed as matrices of spectral data:
-+ The true colors (measured with a spectrograph) of a flower, an object, or skin. They are expressed between 350 nm and 830 nm. For example for a Red Petunia
++ The true colors (measured with a spectrograph) of a flower, an object, or skin. They are expressed between 350 nm and 830 nm. For example for a Red Petunia:
 ```
     const double ColorTemp::ColorRedpetunia_spect[97] = {
         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
