@@ -3818,14 +3818,25 @@ direct mode. As we'll see later, (GHS) + (SE) makes it easy to combine
 several 'stretches' in normal GHS or inverse GHS, in 'Global', 'Full
 image' or 'Normal spot' mode. MM is much simpler mathematically and has a simpler user interface. It gives the correct result (almost) with the default settings (or with few changes). It should be suitable in most cases. However, it lacks an Inverse mode and is less efficient in extreme cases. There's nothing stopping you from mixing them, a first RT-spot with MM, and a second with GHS, for example in 'Inverse' mode to mitigate the effects in an area that's too heavily modified (sky, sun...).
 
-#### Hyperbolics
+#### Hyperbolics and others asymptotiques
 Both GHS and MM use hyperbolic functions, but of a different nature. Michaelis' function can work without problems in any data range (it's best to put it in [0, 1]). GHS assumes the data is in [0, 1] otherwise it clips the data, which is unfortunate. This has significant consequences in terms of code and for users.
 
 There are several types of hyperbolic functions, all sharing, despite their different mathematical principles, the common characteristic of implementing asymptotic functions that approach a value without ever reaching it (a typical example being highlights):
 * Those that use the usual functions 'sinh' (hyperbolic sinus) , 'cosh' (hyperbolic cosinus) , 'tanh' (hyperbolic tangent), or even compositions of functions exp(x) and exp(-x). GHS falls into this category. Its distinctive feature (hence the term 'Generalized') is that the formula changes seamlessly depending on the settings... this is what makes it remarkable. I've attached the ‘Desmos’ demonstration (feel free to expand the left panel to see the formulas). But it is complex to implement and for users  [GHS - Desmos](https://www.desmos.com/calculator/xufftbzks6?lang=fr)
 * Sigmoid can also be considered a hyperbolic function for the 'highlight' part, even if its use is more in the field of statistics or AI, basically it is a model of the normal Gaussian function.
 * Michaelis-Menten : this function uses the Michaelis-Menten equation, which is borrowed from biochemistry to describe enzyme kinetics. It is simple and comes in the form : (S * x) / (K +  x). Where ‘S’ is ‘Output scale’ and ‘K’ is ‘Knee strength’. It has the advantage of being easy to use and gives good results, more easily than GHS. However, it is not reversible.
-* A similar function is used in 'Gamma based' and 'Slope based' in Selective Editing > Color Appearance (CAM16 & JzCzHz)
+* A similar function is used in 'Gamma based' and 'Slope based' in Selective Editing > Color Appearance (CAM16 & JzCzHz). In the form: dr * (x / (x + b)) + c) * kmid.  With (dr  = dynamic range)
+
+The special case of **Log encoding** functions. 
+These are not asymptotic functions (but they do compress the data). 
+In short, we measure the minimum and maximum values ​​of the data (linearly), divide the minimum value by 2 (minVal), and multiply the maximum value by 1.5 (maxVal) to give the logarithmic function some 'margin'. 
+We try to find (not easy) the value of the real Middle Grey – which is often around 0.04 or 0.07, far from the reference value of 0.18. From the modified real data, we obtain a Dynamic Range (DR), a Middle Grey (MG source), and we take a reference Middle Grey (MG destination), which by default is 0.18. These three values ​​(DR, MG source, MG destination) are used to calculate the logarithmic base. We apply it before processing, and then its 'inverse to linear' after. The only drawback is that for complex images, there is no asymptote. Hence the addition of a hyperbolic tangent function with the 'Brightness compression' slider.
+In the case of Rawtherapee, these calculations are not performed on data just before the 'logarithmic' conversion, but much earlier. Hence the potential for significant differences (especially if processing has been done in between).
+The values ​​are expressed in Ev, which is simply a base-2 logarithm transformation:
+```
+const float dynamic_range = -xlogf(minVal / maxVal) / log2;
+```
+
 
 #### Generalized Hyperbolic Strech - GHS - origin
 
@@ -6565,6 +6576,8 @@ Capture Deconvolution, which is an adaptation of Capture Sharpening in the Raw t
 [Capture Sharpening Raw](/capture_sharpening/)
 
 Capture Sharpening's capabilities allow for finer sharpening control by allowing you to soften the corner sharpness to enhance focus on the main subject. 
+
+But be careful, this algorithm, even though very efficient, does not replace other 'Sharpening' tools, nor anything that falls under the term 'Local contrast'.
 
 The results in the TIF/JPG outputs correspond to those in the 'fit to screen' view.
 
