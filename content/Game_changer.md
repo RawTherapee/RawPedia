@@ -9,7 +9,7 @@ toc: true
 
 ## Introduction : What is a "Game changer"?
 
-‘Game changer’ - in French, the term ‘bouleverseur’ suits me well as a translation: it aims to change the usual way of thinking and acting in terms of image processing. Before changing the way we do things, we must first agree on the way we see things. In french a great sociologist, now deceased, said : 'L'accord sur ma manière de faire est avant tout un accord sur la manière de voir" (Jean-Daniel Reynaud : 1926 - 2019).
+‘Game changer’ - in French, the term ‘bouleverseur’ suits me well as a translation: it aims to change the usual way of thinking and acting in terms of image processing. Before changing the way we do things, we must first agree on the way we see things. In french a great sociologist, now deceased, said : "L'accord sur ma manière de faire est avant tout un accord sur la manière de voir" (Jean-Daniel Reynaud : 1926 - 2019).
 
 This concept isn't about forcing you to change your image processing methods, but rather about trying a different approach based on principles that solve (at least partially, I believe) difficult image processing problems, using new concepts and methods. I'm not talking about tools here, but meta-methods: how to proceed and why this processing method is preferable to another for this type of image. There isn't a single method that works in all cases, but rather principles based on specific objectives.
 
@@ -28,9 +28,32 @@ This concept isn't about forcing you to change your image processing methods, bu
   - The highest measurable values ​​on the sensor must be recorded at the White Point. Furthermore, it is desirable to be able to recover, as best as possible, the data lost when values ​​created by overexposure have saturated the sensor.
 + Finding the best color balance is crucial before starting any treatments. The longer you wait, the greater the risk of 'contaminating' other methods.
 + Make the most of the possibilities in Raw mode, whether it be the demosaicing method, the improvement of sharpness and noise treatment, the correction of black points and chromatic aberrations, etc.
++ Control (and compress if necessary) the gamut at the beginning and end of the process.
 + Using the concept of a pre-tone mapper, which makes an image usable or (acceptable) for further processing. That is to say:
   - Bring the black point close to zero, to increase contrast and use the entire range of data.
   - Bring the White point as close as possible to 1: out-of-gamut data can have very high values ​​(3, 5 or 10), and all methods are more efficient when in the interval [0 1]
+  - Implementing an asymptotic process that allows us to get closer to the white point, without reaching it - and even less going beyond it.
++ Towards the end of the process, it is possible to adjust the tones and contrasts, assuming that the image at this stage has no major defects (with the exception of images taken with exotic illuminants such as LEDs, which may require the use of primaries). This method should allow visualization of the effects on the acceptable limits for the data and the gamut.
++ At the very end of the process, it allows the implementation of the concepts of 'Scene' (source) and Viewing (display): taking into account the conditions of shooting and final viewing, taking into account the physiological aspects, allowing each R, G, B channel to be retouched to better balance or modify the colors.
+
+Some current tools should be avoided – or at the very least, the user should be aware of the consequences of their choices:
++ Exposure compensation.
++ Auto-Matched Tone Curve.
++ Tone curve.
++ ...
+
+Other tools must be used with caution, as they can interfere - it is almost impossible to review the pipeline - on Game Changer:
++ Haze removal
++ Contrast By Detail Levels
++ ... 
+
+Prefer their equivalent in Selective Editing, taking care to place them "after" the pre-tone mapper.
+
+You can use the tools to reduce noise, make crops, modify geometry, etc.
+
+But of course, there are no prohibitions; these are only general recommendations. Each image may be a special case.
+
+
 
 
 
