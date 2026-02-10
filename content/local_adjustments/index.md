@@ -4490,7 +4490,7 @@ The concept is completely similar to that of GHS; I've just simplified the inter
 **The label at the bottom of the page**
 Allows you to see the effect of the two checkboxes:
 * Subtract black: reduces the value of the linear black point to almost zero by subtracting the indicated value.
-* White point: after subtracting the black point, the RGB values ​​are divided by the ‘Linear dynamic range’ (i.e. the displayed white point value minus the new black point).
+* White point: after subtracting the black point, the RGB values ​​are divided by the ‘Linear dynamic range’ (i.e. the displayed white point value minus the old black point).
 
 Reducing the black point to almost zero and taking into account the linear dynamic range as described allows the algorithm to produce better contrast and better consideration of the real gamut).
 
