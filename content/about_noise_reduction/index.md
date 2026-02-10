@@ -8,7 +8,6 @@ tags:
 toc: true
 ---
 
-# Comparison of the RawTherapee noise reduction tools
 
 ## Preamble
 
