@@ -3,6 +3,8 @@ title: Watermarking
 contributors:
   - DrSlony
   - XavAL
+tags:
+  - 'General Photography'
 ---
 
 The following free, cross-platform software can be used for visually

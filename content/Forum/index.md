@@ -5,6 +5,7 @@ contributors:
   - XavAL
 tags:
   - 'Interact'
+toc: true
 ---
 
 Visit our forum at <https://discuss.pixls.us/c/software/rawtherapee>

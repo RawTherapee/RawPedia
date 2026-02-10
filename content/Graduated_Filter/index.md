@@ -5,6 +5,7 @@ contributors:
 tags:
   - 'Tool Description'
   - 'Exposure Tab'
+toc: true
 ---
 
 The graduated filter tool simulates a real neutral density graduated

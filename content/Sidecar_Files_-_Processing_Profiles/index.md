@@ -5,6 +5,7 @@ contributors:
   - Thanatomanic
 tags:
   - 'Processing Profiles'
+toc: true
 ---
 
 ## Introduction

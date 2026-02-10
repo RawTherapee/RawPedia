@@ -5,6 +5,7 @@ contributors:
   - Fherb
 tags:
   - 'General Information'
+toc: true
 ---
 
 The "*Edit current image in external editor*" feature allows you to have

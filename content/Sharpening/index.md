@@ -6,6 +6,7 @@ contributors:
 tags:
   - 'Tool Description'
   - 'Detail Tab'
+toc: true
 ---
 
 This article describes the tool called "Sharpening", however RawTherapee

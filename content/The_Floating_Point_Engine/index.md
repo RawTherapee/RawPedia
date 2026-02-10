@@ -5,6 +5,7 @@ contributors:
   - DrSlony
 tags:
   - 'General Information'
+toc: true
 ---
 
 RawTherapee performs all calculations in 32-bit [floating point](https://en.wikipedia.org/wiki/Floating_point) precision (in

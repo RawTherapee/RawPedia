@@ -3,6 +3,9 @@ title: Image file formats and compression
 contributors:
   - DrSlony
   - XavAL
+tags:
+  - 'General Photography'
+toc: true
 ---
 
 ## Obsolete

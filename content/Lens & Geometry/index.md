@@ -6,6 +6,7 @@ contributors:
 tags:
   - 'Tool Description'
   - 'Transform Tab'
+toc: true
 ---
 
 To keep the preview fast, RawTherapee uses the preview image of the

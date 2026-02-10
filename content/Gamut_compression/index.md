@@ -2,6 +2,10 @@
 title: Gamut Compression
 contributors:
   - Jdc
+tags:
+  - 'Tool Description'
+  - 'Color Tab'
+toc: true
 ---
 
 Gamut Compression is a tool that allows you to compress highly chromatic camera-source colorimetric data into a smaller gamut.

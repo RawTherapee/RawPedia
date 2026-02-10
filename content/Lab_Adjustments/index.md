@@ -6,6 +6,7 @@ contributors:
 tags:
   - 'Tool Description'
   - 'Exposure Tab'
+toc: true
 ---
 
 ![](/images/Lab_color_space.png "Lab_color_space.png")

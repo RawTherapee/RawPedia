@@ -5,6 +5,7 @@ contributors:
   - Hombre
 tags:
   - 'General Information'
+toc: true
 ---
 
 RawTherapee and the cache folder can be stored "self-contained" on a USB

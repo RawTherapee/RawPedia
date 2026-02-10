@@ -4,6 +4,7 @@ contributors:
   - DrSlony
 tags:
   - 'General Information'
+toc: true
 ---
 
 RawTherapee lets you batch-adjust, or sync, the processing settings in

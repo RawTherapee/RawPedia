@@ -5,6 +5,7 @@ contributors:
   - Hombre
 tags:
   - 'General Information'
+toc: true
 ---
 
 ## Explanation

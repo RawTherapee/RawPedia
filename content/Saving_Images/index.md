@@ -4,6 +4,7 @@ contributors:
   - DrSlony
 tags:
   - 'General Information'
+toc: true
 ---
 
 Your original raw file will never be altered by RawTherapee.

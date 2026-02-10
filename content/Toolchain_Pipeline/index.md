@@ -6,6 +6,7 @@ contributors:
   - Jdc
 tags:
   - 'General Information'
+toc: true
 ---
 
 ## Toolchain Pipeline
@@ -380,7 +381,7 @@ use it to process images using tools such as:
 - Lightness, Brightness (and their corresponding contrast parameters),
   Chroma, Saturation, Colorfulness, etc.
 
-[Selective Editing - Cam16 and HDR functions](local_adjustments#using_the_cam16_and_hdr_functions)
+[Selective Editing - Cam16 and HDR functions]({{% relref "local_adjustments/#using-the-cam16-and-hdr-functions" %}})
 
 As mentioned above, colorimetry is not an exact science so you should
 use whichever tools give a result that is pleasing to your eye.
@@ -446,8 +447,7 @@ are concerned:
   or 15 Ev. HDR software that produces a DNG image from several
   bracketed images should be able to reach around 20 Ev.
 
-[An evaluation of the dynamic-range capabilities of tools in Selective_Editing](local_adjustments#an_evaluation_of_the_dynamic-range_capabilities_of_tools_in_selective_editing)
-
+[An evaluation of the dynamic-range capabilities of tools in Selective_Editing 2](/local_adjustments/#an-evaluation-of-the-dynamic-range-capabilities-of-tools-in-selective-editing)
 #### The principle of calculating Dynamic Range (DR)
 
 Three algorithms use the concepts associated with Dynamic Range i.e.
@@ -564,7 +564,7 @@ account (as much as possible).
   either with ‘Ev- based’ or ‘Gamma-based’. If you want to increase the
   overall contrast you can activate ‘Slope-based’ or Sigmoid.
 
-[Rawtherapee Processing Challenge April 2024](rawtherapee_processing_challenge_feedback)
+[Rawtherapee Processing Challenge April 2024](/rawtherapee_processing_challenge_feedback)
 
 ### Local Contrast
 
@@ -578,7 +578,7 @@ animals, etc.) and then add some local contrast. This can take 2 forms:
   - In the Abstract Profile module you have Contrast Enhancement based
     on the notion of contrast profiles.
 
-<img src="/images/APwav.jpg" title="APwav.jpg" width="600" alt="APwav.jpg" />
+<img src="/images/APwav.jpg" title="APwav.jpg" width="300" alt="APwav.jpg" />
 
 - In Selective Editing, there is the Local Contrast & Wavelets tool,
   which in Basic mode allows you to adjust the local contrast (by
@@ -586,6 +586,6 @@ animals, etc.) and then add some local contrast. This can take 2 forms:
   Clarity function.
 
 <figure>
-<img src="/images/locwav.jpg" title="locwav.jpg" width="600" />
+<img src="/images/locwav.jpg" title="locwav.jpg" width="300" />
 <figcaption>locwav.jpg</figcaption>
 </figure>

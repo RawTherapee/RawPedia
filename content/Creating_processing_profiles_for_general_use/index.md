@@ -4,6 +4,7 @@ contributors:
   - DrSlony
 tags:
   - 'Processing Profiles'
+toc: true
 ---
 
 In RawTherapee, we call the sidecar files 'processing profiles'. We

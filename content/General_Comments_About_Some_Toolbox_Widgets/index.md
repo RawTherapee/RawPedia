@@ -4,6 +4,7 @@ contributors:
   - DrSlony
 tags:
   - 'Tool Description'
+toc: true
 ---
 
 This article will enable you to use RawTherapee more efficiently and to

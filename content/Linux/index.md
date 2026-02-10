@@ -10,6 +10,7 @@ contributors:
   - Jdc
 tags:
   - 'Compiling'
+toc: true
 ---
 
 This page details instructions for compiling RawTherapee on
@@ -138,7 +139,7 @@ Current versions of these distributions work well out of the box (Debian
 Instructions below assume a fully updated system. Additional packages
 may need to be installed on your particular system.
 
-    sudo apt install git build-essential cmake curl pkg-config libgtk-3-dev libgtkmm-3.0-dev liblensfun-dev librsvg2-dev liblcms2-dev libfftw3-dev libiptcdata0-dev libtiff5-dev libcanberra-gtk3-dev libexiv2-dev
+    sudo apt install git build-essential cmake curl pkg-config libgtk-3-dev libgtkmm-3.0-dev liblensfun-dev librsvg2-dev liblcms2-dev libfftw3-dev libiptcdata0-dev libtiff5-dev libcanberra-gtk3-dev libexiv2-dev libraw-dev libjxl-dev
 
 #### Ubuntu 16.04 LTS (Xenial)
 
@@ -305,7 +306,7 @@ First, you need to clone RawTherapee's source code repository. Bring up
 your console and run this:
 
     mkdir -p ~/programs
-    git clone https://github.com/Beep6581/RawTherapee ~/programs/code-rawtherapee
+    git clone https://github.com/Rawtherapee/RawTherapee ~/programs/code-rawtherapee
     cd ~/programs/code-rawtherapee
 
 #### Choose a branch
@@ -339,6 +340,9 @@ officially ended on 2 February 2017 - refer to the archived
 
 Compiling old versions of RawTherapee will fail on a modern system, as
 you will be missing the old dependencies.
+
+
+
 
 #### Compile RawTherapee
 
@@ -551,6 +555,8 @@ platforms or distributions.
 - RawTherapee builds with a custom version of LibRaw by default. To use
   the system LibRaw, use -DWITH_SYSTEM_LIBRAW="ON". Requires LibRaw \>=
   0.21.
+  
+
 
 ##### Make
 
@@ -585,6 +591,8 @@ Compile:
         ..
 
     make --jobs=4
+    or:
+    make --jobs=16 //if your processor support 16 threads
     make install
 
 #### Run RawTherapee

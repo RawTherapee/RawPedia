@@ -6,6 +6,7 @@ contributors:
 tags:
   - 'Tool Description'
   - 'Color Tab'
+toc: true
 ---
 
 <img src="/images/Rt_ba_bw_1.jpg" title="Rt_ba_bw_1.jpg" width="900"

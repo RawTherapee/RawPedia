@@ -5,6 +5,7 @@ contributors:
   - XavAL
 tags:
   - 'General Photography'
+toc: true
 ---
 
 ## What Are DCP Profiles and Why Do I Need Them?

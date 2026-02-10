@@ -8,6 +8,7 @@ contributors:
 tags:
   - 'Tool Description'
   - 'Exposure Tab'
+toc: true
 ---
 
 ## Auto Levels

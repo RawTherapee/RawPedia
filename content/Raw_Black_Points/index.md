@@ -7,6 +7,7 @@ contributors:
 tags:
   - 'Tool Description'
   - 'Raw Tab'
+toc: true
 ---
 
 It is unlikely you will ever need to use the Raw Black Points tool other

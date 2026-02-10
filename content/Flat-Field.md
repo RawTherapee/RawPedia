@@ -6,6 +6,7 @@ contributors:
 tags:
   - 'Tool Description'
   - 'Raw Tab'
+toc: true
 ---
 
 [thumb](/images/flatfield_landscape.jpg) [Flat-field correction](https://en.wikipedia.org/wiki/Flat-field_correction) is used

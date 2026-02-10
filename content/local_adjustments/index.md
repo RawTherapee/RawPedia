@@ -1,8 +1,8 @@
 ---
 title: Local Adjustments
-date: 2026-02-06
+date: 2026-02-09
 contributors:
-  - Jdc
+  - Jdc - Jacques Desmis
   - DrSlony
 tags:
   - 'Tool Description'
@@ -3003,8 +3003,7 @@ described in the two previous paragraphs, it was decided:
       changed.
 
 Some of these tools are similar to the Abstract Profile concept.
-[Abstract Profiles](color_management#abstract_profiles)
-
+[Abstract Profiles]({{% relref "Color_Management#abstract-profiles" %}})
 ##### Source Data Adjustments and Scene conditions
 
 I won't go back over what Scene Conditions does (see the tutorials on
@@ -3020,7 +3019,7 @@ luminance of the background (in full sunlight, in a dark room, etc.). Be
 careful not to misuse the Viewing Conditions settings to compensate for
 imperfect Scene Conditions or Source Data Adjustments settings.
 
-[Color Appearance & Lighting (CIECAM02/16) et Color Appearance (Cam16 & JzCzHz) - Tutorial](ciecam02#color_appearance_.26_lighting_.28ciecam02.2f16.29_et_color_appearance_.28cam16_.26_jzczhz.29_-_tutorial)
+[Tutorial Color Appearance & Lighting (CIECAM02/16) and Color Appearance (Cam16 &  JzCzHz)]({{% relref "CIECAM02#color-appearance--lighting-ciecam0216-et-color-appearance-cam16--jzczhz---tutorial" %}})
 
 ###### What principles do "Log encoding" and Scene Conditions use to render an image prior to Cam16?
 
@@ -3425,8 +3424,7 @@ physiological aspects due to the perception of the eye and the brain.
 
 Further information, albeit incomplete, on the effects taken into
 account by the two versions of Ciecam implemented in RT can be found
-here: [Ciecam History -
-effects](CIECAM02#Introduction_-_history.md)
+here: [Ciecam History - effects]({{% relref "ciecam02#introduction---history" %}})
 
 Most of the effects are automatically taken into account by the
 software. Particularly in Source Data Adjustments.
@@ -3530,22 +3528,24 @@ Processing Challenge -March and April 2024.
 
 ### **Ciecam -JzCzHz Tutorial**
 
-[Color Appearance & Lighting (CIECAM02/16) et Color Appearance (Cam16 & JzCzHz) - Tutorial](ciecam02#color_appearance_.26_lighting_.28ciecam02.2f16.29_et_color_appearance_.28cam16_.26_jzczhz.29_-_tutorial)
+[Tutorial Color Appearance & Lighting (CIECAM02/16) and Color Appearance (Cam16 &  JzCzHz)]({{% relref "ciecam02#color-appearance--lighting-ciecam0216-et-color-appearance-cam16--jzczhz---tutorial" %}})
 
 ### **An experimental JzCzHz module**
 
 For a brief explanation of this module, see the following:
-[Experimental tool - JzCzHz](ciecam02#jzazbz_-_a_new_experimental_cam.3f_.28cam16_.26_jzczhz.29)
+[Experimental tool - JzCzHz]({{% relref "ciecam02#jzazbz---a-new-experimental-cam-cam16--jzczhz" %}})
 
 #### Understanding the CAM - SDR - HDR settings - General
 
-For a brief explanation of this module, see the following
-:[CIECAM02#Understanding_the_CAM_-_SDR_-_HDR_settings_-_General](/images/ciecam02#understanding_the_cam_-_sdr_-_hdr_settings_-_general)
+For a brief explanation of this module, see the following:
+[CIECAM02#Understanding_the_CAM_-_SDR_-_HDR_settings_-_General]({{% relref "ciecam02#understanding-the-cam---sdr---hdr-settings---general" %}})
 
 #### Understanding the CAM - SDR - HDR settings -Introduction
 
 For a brief explanation of this module, see the following
-[CIECAM02#Understanding_the_CAM_-_SDR_-_HDR_settings_-_Introduction](ciecam02#understanding_the_cam_-_sdr_-_hdr_settings_-_introduction)
+[Understanding_the_CAM_-_SDR_-_HDR_settings_-_General]({{% relref "ciecam02#understanding-the-cam---sdr---hdr-settings---introduction" %}})
+
+[Experimental tool - JzCzHz]({{% relref "ciecam02#understanding-the-cam---sdr---hdr-settings---general" %}})
 
 ##### Jz in practice
 
@@ -3636,7 +3636,8 @@ luminance (Yb%)".
 <img src="sigmoidjz1.jpg" title="Sigmoidjz1.jpg" width="600"
 alt="Sigmoidjz1.jpg" />
 
-- See [Sigmoid Jz - principles](ciecam02#sigmoid_jz)
+- See [Sigmoid Jz - principles]({{% relref "ciecam02#sigmoid-jz" %}})
+
 - Raw file (Rawtherapee - Creative Common Attribution-share Alike 4.0):
   [29](https://drive.google.com/file/d/1ziux382pWgdYa4jySimwKaKnK_KdDhno/view?usp=sharing)
 
@@ -3817,14 +3818,26 @@ direct mode. As we'll see later, (GHS) + (SE) makes it easy to combine
 several 'stretches' in normal GHS or inverse GHS, in 'Global', 'Full
 image' or 'Normal spot' mode. MM is much simpler mathematically and has a simpler user interface. It gives the correct result (almost) with the default settings (or with few changes). It should be suitable in most cases. However, it lacks an Inverse mode and is less efficient in extreme cases. There's nothing stopping you from mixing them, a first RT-spot with MM, and a second with GHS, for example in 'Inverse' mode to mitigate the effects in an area that's too heavily modified (sky, sun...).
 
-#### Hyperbolics
+#### Hyperbolics and others asymptotiques
 Both GHS and MM use hyperbolic functions, but of a different nature. Michaelis' function can work without problems in any data range (it's best to put it in [0, 1]). GHS assumes the data is in [0, 1] otherwise it clips the data, which is unfortunate. This has significant consequences in terms of code and for users.
 
 There are several types of hyperbolic functions, all sharing, despite their different mathematical principles, the common characteristic of implementing asymptotic functions that approach a value without ever reaching it (a typical example being highlights):
 * Those that use the usual functions 'sinh' (hyperbolic sinus) , 'cosh' (hyperbolic cosinus) , 'tanh' (hyperbolic tangent), or even compositions of functions exp(x) and exp(-x). GHS falls into this category. Its distinctive feature (hence the term 'Generalized') is that the formula changes seamlessly depending on the settings... this is what makes it remarkable. I've attached the ‘Desmos’ demonstration (feel free to expand the left panel to see the formulas). But it is complex to implement and for users  [GHS - Desmos](https://www.desmos.com/calculator/xufftbzks6?lang=fr)
 * Sigmoid can also be considered a hyperbolic function for the 'highlight' part, even if its use is more in the field of statistics or AI, basically it is a model of the normal Gaussian function.
 * Michaelis-Menten : this function uses the Michaelis-Menten equation, which is borrowed from biochemistry to describe enzyme kinetics. It is simple and comes in the form : (S * x) / (K +  x). Where ‘S’ is ‘Output scale’ and ‘K’ is ‘Knee strength’. It has the advantage of being easy to use and gives good results, more easily than GHS. However, it is not reversible.
-* A similar function is used in 'Gamma based' and 'Slope based' in Selective Editing > Color Appearance (CAM16 & JzCzHz)
+* A similar function is used in 'Gamma based' and 'Slope based' in Selective Editing > Color Appearance (CAM16 & JzCzHz). In the form: dr * (x / (x + b)) + c) * kmid.  With (dr  = dynamic range)
+
+The special case of **Log encoding** functions. 
+* These are not asymptotic functions (but they do compress the data). 
+* In short, we measure the minimum and maximum values ​​of the data (linearly), divide the minimum value by 2 (minVal), and multiply the maximum value by 1.5 (maxVal) to give the logarithmic function some 'margin'. 
+* We try to find (not easy) the value of the real Middle Grey – which is often around 0.04 or 0.07, far from the reference value of 0.18. From the modified real data, we obtain a Dynamic Range (DR), a Middle Grey (MG source), and we take a reference Middle Grey (MG destination), which by default is 0.18. These three values ​​(DR, MG source, MG destination) are used to calculate the logarithmic base. We apply it before processing, and then its 'inverse to linear' after. The only drawback is that for complex images, there is no asymptote. Hence the addition of a hyperbolic tangent function with the 'Brightness compression' slider.
+* In the case of Rawtherapee, these calculations are not performed on data just before the 'logarithmic' conversion, but much earlier. Hence the potential for significant differences (especially if processing has been done in between).
+* The values ​​are expressed in Ev, which is simply a base-2 logarithm transformation:
+
+```
+    const float dynamic_range = -xlogf(minVal / maxVal) / log2;
+```
+
 
 #### Generalized Hyperbolic Strech - GHS - origin
 
@@ -4494,7 +4507,7 @@ the only way to make in-depth color correction adjustments.
 To simplify the explanation, I'll use the module located in Abstract Profiles (Color Tab), which is (slightly) more comprehensive and easier to use.
 
 <figure>
-<img src="ap-prim-dom.jpg" title="Primaries - Illuminants - Dominant Color" width="600" />
+<img src="ap-prim-dom.jpg" title="Primaries - Illuminants - Dominant Color" width="300" />
 <figcaption>AP-prim-dom.jpg</figcaption>
 </figure>
 
@@ -4554,6 +4567,163 @@ To modify the primaries or adjust the 'Dominant colors', you must change the sel
   a part of the image, or a second GHS Spot, in 'Normal Spot'.
 - You can also use Color Appearance & Lighting (CIECAM) to take into account the physiological aspects of human vision and viewing conditions.
 
+#### Generalized Hyperbolic Stretch & Michaelis-Menten : what type of data to use ?
+
+The question is not trivial and concerns other algorithms such as Sigmoid, or Slope based, etc.
+
+#### What data is taken into account?
+The important point to consider is that most of the time we ignore the distribution and nature of the data once we step outside the Working Profile (and in some cases, even within the Working Profile).
++ One point to consider is that a camera, however sophisticated, is not the human eye. 
+
+##### Our eye
+Our eye is made up of cones and rods. It is capable of adapting to strong variations in brightness in a few seconds, and its Dynamic Range is around 20 to 25 Ev, but dynamically, meaning that this area 'adapts' to the environment.
++ It has characteristics known and measured since 1931, leading, for example, to LMS representations, or to the concept of CIE XYZ standard observer color-matching functions (Observer 2° - Observer 10°)
++ The colors perceived by our eye depend on 3 factors - which are expressed as matrices of spectral data:
++ The true colors (measured with a spectrograph) of a flower, an object, or skin. They are expressed between 350 nm and 830 nm. For example for a Red Petunia:
+```
+    const double ColorTemp::ColorRedpetunia_spect[97] = {
+        0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+        0.1890, 0.1097,  0.0855,  0.0899,  0.0987,  0.0881,  0.0807,  0.0804,  0.0787,  0.0691,  0.0643,  0.0549,  0.0465,  0.0404,  0.0385,
+        0.0302,  0.0244,  0.0195,  0.0165,  0.0159,  0.0123,  0.0129,  0.0108,  0.0111,  0.0114,  0.0126,  0.0126,  0.0134,  0.0162,  0.0170,
+        0.0213,  0.0248,  0.0279,  0.0351,  0.0412,  0.0566,  0.0752,  0.0909, 0.1069, 0.1270, 0.1526, 0.1707, 0.1858, 0.1999, 0.2112,
+        0.2293, 0.2422, 0.2471, 0.2611, 0.2718, 0.2710, 0.2778, 0.2807, 0.2825, 0.2856, 0.2909, 0.2901, 0.2974, 0.3042, 0.3044, 0.3075,
+        0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+    };
+```
++ The illuminant's value can be a complex calculation, such as daylight or a Solux studio lamp. Here, for example, are the specifications for Solux 4700K.
+```
+    //spectral data for Solux lamp : near Daylight (for example  "Musée d'Orsay") - 4700K
+    const double ColorTemp::Solux4700_spect[97] = {
+        0.4590, 0.83, 1.2011, 1.53, 1.8647, 2.15, 2.5338, 3.06, 3.5809, 3.99, 4.4137, 4.82, 5.2228, 5.63, 6.0387, 6.53, 6.9944, 7.55, 8.0266, 8.475, 8.9276, 8.90, 9.7840, 10.20, 10.6390, 11.00, 11.3600, 11.75, 12.1340, 12.36, 12.5880, 12.74, 12.8790,
+        13.07, 13.2560, 13.38, 13.5220, 13.41, 13.3070, 13.35, 13.3990, 13.37, 13.3420, 13.39, 13.4220, 13.65, 13.2710, 13.25, 13.2330, 13.12, 13.0110, 12.93, 12.8470, 12.805, 12.7630, 12.66, 12.5760, 12.563, 12.5490,
+        12.59, 12.6330, 12.617, 12.6010, 12.616, 12.6310, 12.6275, 12.6240, 12.70, 12.7710, 12.776, 12.7810, 12.786, 12.7950, 12.74, 12.6850, 12.64, 12.5950, 12.55, 12.5420, 12.43, 12.3180, 12.07, 11.8340, 11.72, 11.6190, 11.55, 11.5020,
+        11.32, 11.1510, 11.05, 10.9530, 10.80, 10.6550, 10.495, 10.4390, 10.31, 10.1790
+    };
+```
++ The Observer is the human-eye representation of the CIExy diagram. Note that scientists say it would be better to use Observer 10° rather than Observer 2°, but since equipment (cameras, TVs, etc.) uses Observer 2°, we stick with the latter. This Observer has three components. I'm not giving the spectral values ​​because that would be a lot of data.
++ The color perceived by our eye in XYZ data (It's a simplification, a systemic model, but it works nonetheless), is given by a matrix calculation with the code below (one case among others)
+```
+    //calculate XYZ from spectrum data (color) and illuminant : J.Desmis December 2011
+    void ColorTemp::spectrum_to_color_xyz_preset(const double* spec_color, const double* spec_intens, double &xx, double &yy, double &zz, const color_match_type &color_match)
+    {
+        int i;
+        double lambda, X = 0, Y = 0, Z = 0, Yo = 0;
+
+        for (i = 0, lambda = 350; lambda < 830.1; i++, lambda += 5) {
+
+            double Me;
+            double Mc;
+
+            Me = get_spectral_color(lambda, spec_color);
+            Mc = get_spectral_color(lambda, spec_intens);
+            X += Mc * color_match[i][0] * Me;
+            Y += Mc * color_match[i][1] * Me;
+            Z += Mc * color_match[i][2] * Me;
+        }
+
+        for (i = 0, lambda = 350; lambda < 830.1; i++, lambda += 5) {
+
+            double Ms;
+
+            Ms = get_spectral_color(lambda, spec_intens);
+            Yo += color_match[i][1] * Ms;
+        }
+
+        xx = X / Yo;
+        yy = Y / Yo;
+        zz = Z / Yo;
+    }
+```
++ This is the type of calculation used in White Balance auto (Temperature correlation), with a (somewhat...very) complex algorithm that compares up to 237 colors in the image and 429 spectral data points.
+
+##### The Camera
+Cameras have a dynamic range that, depending on their age and shooting conditions, is around 10 to 15 EV. But they are incapable of adapting like our eyes. It's up to the photographer to master these things... if they can.
++ It functions 'like' our eye... and performs calculations
++ Their 'Observer' is different from the human eye and varies depending on the brand and camera body. Furthermore, what happens when you exceed the sensor's limits, either in the shadows or the highlights? The data is 'lost'... This is where the software can try to repair it, particularly with 'Raw Black Point' and 'Highlight Reconstruction'. In both cases, it tries to reconstruct what no longer exists.
++ The performance of the algorithms varies considerably. The most efficient is the one devised by Emil Martinec in 2012. It works in the majority of cases, and allows, for example, for a sunset, it to 'retrieve' data up to 4 times the limit of the Working Profile (in comparison, Inpaint Opposed, which is less resource-intensive, only retrieves 2.5 times).
++ Another point to consider is that the manufacturer or those who have carried out tests provide a matrix to convert the sensor data into usable values. For example, for a Canon EOS77d:
+```
+        "dcraw_matrix": [ 6969,-512,-968,-4425,12161,2553,-739,1981,5601 ], // DNG v13.2
+```
++ A very important point to note is that these values ​​are for a D65 illuminant and a Observer 2°. What happens if you are not in these conditions at the time of shooting? The calculations are incorrect.
+
+##### Algorithms
+
+The key point of all algorithms (GHS, Michaelis-Menten, Sigmoid, etc., and also AgX, not included in Rawtherapee) is: how to take the data into account, how to evaluate it, how to ensure that shadows and highlights are taken into account without disturbing the 'normal' colors.
+
+The problem is not simple – beyond the location of the calculations, which is 'THE' fundamental point, and the processing algorithm, what is taken into account as systemic modeling? Do we use:
++ Each of the 3 channels R, G and B equally, but simultaneously.
++ Each of the three channels (R, G, and B) is processed independently. This leads to the problem of out-of-gamut colors and asymptotes in the very highlights.
++ Try to find a "Luminance" channel, which is actually the one we're interested in for the asymptotic function. As a reminder, the most advanced models to date are Cam16 and JzAzBz which use, albeit in a different way, the 'Brightness' channel (Q for Cam16), (Jz for JzAzBz)
++ In RawTherapee, all three cases are available. For example, the R, G, and B channels are separated in Selective Editing > Color Appearance (CAM16) > RGB channel Slope or TRC based
++ The simplest solution to implement (but not necessarily the most effective) is the first '3 channels R, G and B equally'
+
+In GHS you will find several possible solutions:
++ RGB Standard: The 3 channels R, G and B equally.
++ RGB Luminance : The system is 'guided' by an equivalent luminance (I'll come back to that) to better account for very low light and out-of-gamut light.
++ Lightness and Chromaticity: we use Lab data.. Certainly this is good in theory (I think PixInsight uses it) but how does 'L' behave out of gamut?
++ Luminance HSL: I think, perhaps wrongly, that it's the least good. RGB to HSL conversion has never been designed for data more than 4 times greater than 'normal'.
++ The problem is, without sophisticated equipment - I have nothing, no more than the photographer in the field who isn't going to use sophisticated devices to measure the spectral data of the flowers or the illuminant, so I have nothing to assess what's going on (maybe some research laboratories do).
++ How I did it. There are two formulas that are widely available. The equivalent luminance using the RGB > XYZ conversion matrix in the working profile.
+    - Taking the components of the matrix diagonal and applying them to the data... A small problem: this worked as expected in 1931, but not for data outside the Working Profile (here Rec2020).
+       ```
+       constexpr double xyz_rec2020[3][3] = {
+        {0.6734241,  0.1656411,  0.1251286},
+        {0.2790177,  0.6753402,  0.0456377},
+        { -0.0019300,  0.0299784, 0.7973330}
+        };
+       ```
+    - try to take into account what is outside, for example with:
+        ```
+        // taken from darktable
+        inline float power_norm(float r, float g, float b)
+        {
+            r = std::abs(r);
+            g = std::abs(g);
+            b = std::abs(b);
+
+            float r2 = SQR(r);
+            float g2 = SQR(g);
+            float b2 = SQR(b);
+  
+            float d = r2 + g2 + b2;
+            float n = r * r2 + g * g2 + b * b2;
+
+            return n / std::max(d, 1e-12f);
+        }
+        ```
+        But it works reasonably well (very difficult to verify) for 'reasonable' Gamut overshoots.
+    - Trying to solve the squaring of the circle with my latest (finalized) attempts after user feedback
+        ```
+        inline float norm_3(float r, float g, float b, TMatrix ws, float raplim)//lowers the equivalent luminance if the white point is high
+            {
+                constexpr float hi = std::numeric_limits<float>::max() / 100.f;
+                float pwn = 0.5f;//standard repartition between XYZ luminance and Out of gamut values 
+                if (raplim < 1.2f) {//raplim : ratio between the normal value 'reasonable_limit_white_point' and reality
+                    pwn = 0.55f;//Tested on images with WP linear close to 4 - Near Sunset
+                } else if (raplim < 1.5f) {//Very high White point
+                    pwn = 0.75f;//Tested on images with WP linear close to 5 or 6
+                } else {
+                    pwn = 0.85f;//Tested on images with WP linear close to 6 and above //LEDs
+                }    
+                return std::min(hi, (1.f - pwn) * power_norm(r, g, b) + pwn * Color::rgbLuminance(r, g, b, ws));//I reversed the action of the two components to better account for what happens out of gamut.
+            }
+        ```
+##### Summary - what are the key takeaways?
+The matter is anything but simple. 
+The "pre-tone mapper" principle in RawTherapee allows for the separation of processing steps, within the concept of a "game changer." We try to make the data "acceptable" as early as possible in the process, but all data is taken into account. In this sense, "GHS" is superior to "MM," which, without using the "Subtract Linear Black" and "Linear Dynamic Range" functions, would be unable to process certain images where the black point is "misplaced" (these are two features I added to original MM). For these images, this is also the case for Log encoding, Sigmoid,.. which do (very) poorly.
+
+The concept of linear processing is very often misinterpreted; I think it stems from a confusion. A few years ago (but I have no proof, no code...) Adobe used a suffix 'Melissa' for its Raw processing (I think from the developer's first name), which in fact, instead of using the linear 'Working profile', used the same one with the sRGB gamma (Slope=12.92 gamma=2.4).
+
+As for the rest, Rawtherapee's code is entirely 32-bit or 64-bit, and I think (I'm sure) that it makes little to no difference. As soon as anything is done (white balance, input profiles, etc.), the initial data is changed... is it important to 'monitor' the level of change? I don't think so. The important thing is not to lose any data, and to ensure that the black point is as close to zero as possible and that the white point has an asymptotic function. These two values ​​should be calculated as close as possible to their actual use and not assigned arbitrarily.
+
+The debate surrounding middle grey needs to be understood by users. We're not talking about the same thing when analyzing data 'before' processing, or when using it for output. The differences can be enormous. GHS elegantly resolves the issue by referring to the 'Symmetry Point' (the peak of the histogram in linear mode).
+
+Game changer allows you to separate the data retrieval phase from the final processing phase. The two algorithms located at the end of the process allow:
++ With Abstract profile (which is not a gadget...) you can adjust/balance shadows and lights, increase 'local contrast' (even though I don't like this term), act if necessary (and only if necessary) on the Illuminants and primaries, which are delicate to implement.
++ With Color Appearance & Lighting (CIECAM), you take into account the concepts of 'scene' (source) and 'display' (viewing). You consider a significant number of physiological aspects, and above all, you take into account the shooting conditions (finally!), and the conditions under which you view your images (examining them in the dark is not the same as viewing them in a well-lit office...). Furthermore, in the final stage, without having to return to the beginning, you can adjust each R, G, and B channel, much like the process of primary colors or a film simulation.
+
+
 ## General principles and settings
 
 ### The RT-spot object
@@ -4574,7 +4744,8 @@ major differences:
   Light & Original Retinex, Blur/Grain & Denoise, Tone Mapping, Dehaze &
   Retinex, Sharpening, Local Contrast & Wavelets, Contrast by Detail
   Levels. There is also a Cam16 & JzCzHz Color Appearance module. See
-  [Tutorial Color Appearance & Lighting (CIECAM02/16) et Color Appearance (Cam16 &  JzCzHz)](ciecam02#color_appearance_.26_lighting_.28ciecam02.2f16.29_et_color_appearance_.28cam16_.26_jzczhz.29_-_tutorial)
+  [Tutorial Color Appearance & Lighting (CIECAM02/16) and Color Appearance (Cam16 &  JzCzHz)]({{% relref "ciecam02#color-appearance--lighting-ciecam0216-et-color-appearance-cam16--jzczhz---tutorial" %}})
+
 - Each RT-spot creates an additional "layer" similar to the way layers
   are added in bit-map editors. Each new RT-spot is transparent and
   allows the user to see any previous modifications. The Excluding Spot
@@ -5599,7 +5770,7 @@ The Retinex module is similar to the other tools, however:
 ### Common Color Mask
 
 Example using a Common Color Mask:
-[Example in First Steps, Common Color Mask](local_lab_controls/fr#how_to_use_a_common_color_mask_and_example_merging_2_rt-spots)
+[Example in First Steps, Common Color Mask]({{% relref "#how-to-use-the-common-color-mask-and-an-example-of-how-to-blend-2-rt-spots" %}})
 
 The tools in this mask have the same characteristics as the other masks
 mentioned above. However the mask is based on different principles and
@@ -5955,7 +6126,7 @@ Tips:
 
 Example using Shadows/Highlights & Tone Equalizer \> Tone Response
 Curve(TRC):
-[Example in First Steps](local_adjustments#five_ways_to_change_the_exposure_and_lift_the_shadows)
+[Example in First Steps 2]({{% relref "#six-ways-to-change-the-exposure-and-lift-the-shadows" %}})
 
 The module also includes:
 
@@ -6094,7 +6265,7 @@ or 1).
 #### Wavelets
 
 A simple application of wavelets (without using the pyramid):
-[Exemple dans Premiers pas d'utilisation de Wavelet](local_lab_controls/fr#un_moment_de_folie_-_utiliser_wavelet)
+[A moment of madness - try Wavelets]({{% relref "#a-moment-of-madness---try-wavelets" %}})
 
 Available controls:
 
@@ -6245,9 +6416,7 @@ operate on the edges. The action of the curve is based on the luminance.
 
 ###### Wavelet level tone mapping
 
-Example to enhance the texture: [Example in Getting started - with
-Wavelets Tone
-mapping](Local_Adjustments#Three_ways_of_increasing_texture.md)
+Example to enhance the texture: [Example in Getting started - with Wavelets Tone mapping]({{% relref "#three-ways-of-increasing-texture" %}})
 
 This module uses wavelets only with a compression algorithm that can be
 applied to each decomposition level and the residual image. A guided
@@ -6293,7 +6462,7 @@ close to the mean are amplified more than the lower and higher values.
 ### Tone Mapping
 
 Example increasing texture:
-[Example in First steps - increasing texture with Tone mapping](local_adjustments#three_ways_of_increasing_texture)
+[Example in First step  - increasing texture with Tone mapping]({{% relref "#three-ways-of-increasing-texture" %}})
 
 - Masking and "Recovery based on luminance mask" available in Standard
   and Advanced modes.
@@ -6320,7 +6489,7 @@ Soft Light is the same as the main-menu function.
 
 #### Original Retinex
 
-Example: [Dodge and Burn example in First Steps](local_adjustments#dodging_and_burning)
+Example: [Dodge and Burn example in First Steps]({{% relref "#dodging-and-burning" %}})
 
 Tests on the original Retinex algorithm (based on the work carried out
 by IPOL) have shown that it has some useful features for local editing.
@@ -6385,8 +6554,7 @@ with Retinex for better results.
 #### Retinex: Important differences with the main-menu module
 
 Example using it to increase texture:
-[Example in First steps - increasing texture with Retinex](local_adjustments#three_ways_of_increasing_texture)
-
+[Example in First steps - increasing texture with Retinex]({{% relref "#three-ways-of-increasing-texture" %}})
 In Local adjustments, Retinex is similar to the main-menu
 implementation, however there are some differences.
 
@@ -6563,8 +6731,11 @@ well worth the effort, especially when working on the local contrast.
 #### Capture deconvolution
 
 Capture Deconvolution, which is an adaptation of Capture Sharpening in the Raw tab for use in ‘Selective Editing’, and allows you to use this algorithm either in standalone mode or after denoising to restore the image's vigor. See the Raw section of Capture Sharpening for more details on understanding. The algorithm is essentially the same, but the code had to be broken down into smaller parts, and of course, the data to be processed is of a different nature.
+[Capture Sharpening Raw](/capture_sharpening/)
 
 Capture Sharpening's capabilities allow for finer sharpening control by allowing you to soften the corner sharpness to enhance focus on the main subject. 
+
+But be careful, this algorithm, even though very efficient, does not replace other 'Sharpening' tools, nor anything that falls under the term 'Local contrast'.
 
 The results in the TIF/JPG outputs correspond to those in the 'fit to screen' view.
 
@@ -6648,7 +6819,7 @@ in addition to the Denoise module for difficult images.
 
 ### Denoise
 
-Example: [Example in Getting started - Using Denoise module](local_adjustments#using_the_denoise_module)
+Example: [Example in Getting started - Using Denoise module]({{% relref "#using-the-denoise-module" %}})
 
 This module is quite different from the main-menu noise reduction module
 for several reasons:
@@ -6845,12 +7016,9 @@ filter other types of impulse noise.
 
 Example showing how it can be used:
 
-[Log Encoding](local_adjustments#log_encoding)
-
-[Log Encoding and highlight recovery](local_adjustments#log_encoding_and_highlight_recovery)
-
-[Other examples using Log Encoding](local_adjustments#other_examples_log_encoding)
-
+[Log Encoding]({{% relref "#log-encoding" %}})
+[Log Encoding and highlight recovery]({{% relref "#log-encoding-and-highlight-recovery" %}})
+[Other examples using Log Encoding]({{% relref "#other-examples-log-encoding" %}})
 #### Introduction
 
 This module is derived from the excellent module developped by Alberto
@@ -6991,13 +7159,13 @@ possibilities of Local Adjustments i.e. deltaE, Scope, Transition
 Gradients, Excluding spots, etc.
 
 For an overview of Cam16:
-[Using_Cam16_and_HDR_features](local_adjustments#using_the_cam16_and_hdr_functions)
+[Using_Cam16_and_HDR_features]({{% relref "#using-the-cam16-and-hdr-functions" %}})
 
 For a presentation of JzCzHz:
-[Experimental JzCzHz module](local_adjustments#an_experimental_jzczhz_module)
+[Experimental JzCzHz module]({{% relref "#an-experimental-jzczhz-module" %}})
 
 To see the tutorial:
-[Tutorial Color Appearance & Lighting (CIECAM02/16) and Color Appearance (Cam16 &  JzCzHz)](CIECAM02#Color_Appearance_&_Lighting_(CIECAM02/16)_et_Color_Appearance_(Cam16_&_JzCzHz)_-_Tutorial "wikilink")
+[Tutorial Color Appearance & Lighting (CIECAM02/16) and Color Appearance (Cam16 &  JzCzHz)]({{% relref "CIECAM02#color-appearance--lighting-ciecam0216-et-color-appearance-cam16--jzczhz---tutorial" %}})
 It should be noted that the JzCzHz module contains all the tools
 necessary to replace Lab:
 

@@ -6,6 +6,7 @@ contributors:
 tags:
   - 'Tool Description'
   - 'Color Tab'
+toc: true
 ---
 
 RGB curves allow to apply a curve adjustment individually to each of the

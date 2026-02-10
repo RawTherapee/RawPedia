@@ -1,15 +1,14 @@
 ---
 title: CIECAM02
+date: 2026-02-09
 contributors:
-  - Jdc
+  - Jdc - Jacques Desmis
   - XavAL
 tags:
   - 'Tool Description'
   - 'Advanced Tab'
+toc: true
 ---
-
-2022 - 2026
-//Jacques Desmis jdesmis@gmail.com
 
 ## Color Appearance & Lighting (CIECAM02/16) et Color Appearance (Cam16 & JzCzHz) - Tutorial
 
@@ -30,7 +29,7 @@ is considerably improved with Ciecam16.
 The Color Appearance module (Cam16 & JzCzHz) combines a real CAM (Cam16)
 and JzCzHz which is not a real CAM, but has some of its characteristics.
 
-[HDR to SDR: A First Approach (Log Encoding - CAM16 - JzCzHz - Sigmoid)](local_adjustments#hdr_to_sdr:_a_first_approach_.28log_encoding_-_cam16_-_jzczhz_-_sigmoid.29)
+[HDR to SDR: A First Approach (Log Encoding - CAM16 - JzCzHz - Sigmoid)]({{% relref "local_adjustments/#hdr-to-sdr-a-first-approach-log-encoding---cam16---jzczhz---sigmoid" %}})
 
 ### Definition of a color appearance model (CAM)
 
@@ -77,9 +76,10 @@ Some examples of color phenomena that can be addressed with a CAM:
 
 ### Variables - data and vocabulary used by CIECAM
 
-[Variables - data](ciecam02#data)
+[Variables - datas)]({{% relref "ciecam02/#data" %}})
 
-[Definitions](ciecam02#some_definitions)
+[Definitions]({{% relref "ciecam02/#some-definitions" %}})
+
 
 ### CIECAM02/16 consists of 3 processes:
 
@@ -114,13 +114,13 @@ Adjustments tab
   simplified set of Cam16 tools and a first approach to JzCzHz. The user
   can select three levels of complexity:
   - Basic: provides the basic tools and variables used by Cam16.
-  - Standard: provides additional Cam16 tools to take into account all
+  - Standard: provides additional Cam16 tools to take into account allFtutorial
     the perceptual aspects of human color vision. It also includes a
     mask.
   - Advanced: adds additional Cam16 tools and variables and a JzCzHz
     module.
 
-[HDR to SDR: A First Approach (Log Encoding - CAM16 - JzCzHz - Sigmoid)](local_adjustments#hdr_to_sdr:_a_first_approach_.28log_encoding_-_cam16_-_jzczhz_-_sigmoid.29)
+[HDR to SDR: A First Approach (Log Encoding - CAM16 - JzCzHz - Sigmoid)]({{% relref "local_adjustments/#hdr-to-sdr-a-first-approach-log-encoding---cam16---jzczhz---sigmoid" %}})
 
 ### Some examples of CIECAM02/16
 
@@ -292,7 +292,8 @@ Note1: PQ =  Perceptual Quantizer
 
 ## Jzazbz - a new experimental CAM? (Cam16 & JzCzHz)
 
-See the possible use in Local Adjustments: [An experimental JzCzHz module](local_adjustments#an_experimental_jzczhz_module)
+See the possible use in Local Adjustments:
+[An experimental JzCzHz module]({{% relref "local_adjustments#an-experimental-jzczhz-module" %}})
 
 ### General
 
@@ -397,7 +398,7 @@ stage, it is not known whether these problems are:
   is capable of taking this into account and that it is possible to
   increase the accuracy of the screen profile calculations!
 
-[About L\*a\*b\*](toolchain_pipeline#l.2aa.2ab.2a)
+[About Lab]({{% relref "toolchain_pipeline/#the-importance-of-ciecam-and-lab" %}})
 
 - I don't have an HDR monitor (HDR monitors have luminance peaks of up
   to 6000 cd/m2 or more), nor do I have suitable ICC profiles or a
@@ -825,7 +826,7 @@ better white balance through a comparison/iteration process". I also
 worked on the concept of CRI (Color rendering index) which reflects the
 difference of illuminants compared to a base illuminant... The lower the
 CRI is, worse the rendering will be with an identical color temperature
-see : [Color_Management/fr](color_management/fr))
+see : [Color Management)]({{% relref "color_management/#introduction" %}})
 
 Based on CIECAM02, the patch contains the necessary basic elements to
 work these two points, but it lacks an essential element, not easy to
