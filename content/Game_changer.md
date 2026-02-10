@@ -40,7 +40,7 @@ Some current tools should be avoided – or at the very least, the user should b
 + Exposure compensation.
 + Auto-Matched Tone Curve.
 + Tone curve.
-+ ...
++ Auto Levels.
 
 Other tools must be used with caution, as they can interfere - it is almost impossible to review the pipeline - on Game Changer:
 + Haze removal
@@ -56,17 +56,17 @@ But of course, there are no prohibitions; these are only general recommendations
 ### Specific tools used
 As of February 2026 - to be updated.
 Apart from tools that have been around for many years, but are not always well known, I highlight new ones, or those that seem preferable to me:
-+ Capture Sharpening (Raw Tab) - With Pre and Post sharpening denoise
-+ Color Propagation in Highlight reconstruction (Exposure Tab)
-+ White Balance > Automatic & Refinement > Temperature correlation (Color Tab)
-+ Gamut Compression (Color Tab)
-+ Selective Editing > Equalization & Pre-Tone Mapping : Generalized Hyperbolic Stretch (GHS) & Michaelis-Menten (MM)
-+ Abstract Profile (Color Tab)
-+ Color Appearance & Ligting (Advanced Tab)
++ Capture Sharpening (Raw Tab) - With Pre and Post sharpening denoise  [Capture Sharpening](/capture_sharpening/)
++ Color Propagation in Highlight reconstruction (Exposure Tab) [Highlight Reconstruction](/exposure/#highlight-reconstruction)
++ White Balance > Automatic & Refinement > Temperature correlation (Color Tab) [Temperature Correlation](/white_balance/#the-temperature-correlation-algorithm)
++ Gamut Compression (Color Tab) [Gamut Compression](/gamut_compression)
++ Selective Editing > Equalization & Pre-Tone Mapping : Generalized Hyperbolic Stretch (GHS) & Michaelis-Menten (MM) [GHS & MM](/local_adjustments/#generalized-hyperbolic-stretch-and-michaelis-menten)
++ Abstract Profile (Color Tab) [AP](/color_management/#abstract-profiles)
++ Color Appearance & Ligting (Advanced Tab) [CIECAM](/ciecam02)
 
 ## The tutorials
 
-### Game Changer - How to Provcess a Sunset
+### Game Changer - How to Process a Sunset
 To do
 
 ### Game Changer - Using LED's image
