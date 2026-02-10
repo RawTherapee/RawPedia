@@ -3,6 +3,7 @@ title: Game Changer
 contributors:
   - Jdc
 tags:
+  - 'Tool Description'
   - 'Tutorials'
 toc: true
 ---
@@ -81,8 +82,48 @@ To do
 ### Game Changer - Using harvest mouse
 To do
 
+### Game Changer 
+
 ### Game Changer - Best Shadow & Higlight techniques 
-I will begin
+In this tutorial, we will see how to use various tools to avoid or remove artifacts. Propose one solution among others to simultaneously brighten shadows, control highlights, and create a dramatic effect.
+The image is difficult, and the question is: what should be done with it? Emphasize the dramatic aspect? Lighten or darken the shadows? There are as many answers as there are people.
+
+**Image selection**
+
++ [Raw Image](https://discuss.pixls.us/t/show-your-best-shadow-highlight-techniques/55731)
++ This file is licensed [Creative Commons, By-Attribution, Share-Alike](https://creativecommons.org/licenses/by-sa/4.0/).
+
+**Learning objective:**
+
+The user will understand the ‘Game changer’ approach discussed in this tutorial:
++ The role of Raw Tabs tools.
++ The importance of Gamut Compression.
++ White Balance optimization - Temperature correlation.
++ The role of Graduated Filter.
++ The importance and settings of Abstract Profile
++ The combined use of Selective Editing > Generalized Hyperbolic Stretch (GHS) & Michaelis-Menten (MM) and 2 Exluding Spots.
++ The use of Color Appearance & Lighting and the possible corrections of the 3 channels R, G, B.
+
+#### Raw tools
+
+**Demosaicing**
++ The choice of Amaze+VNG4 allows for good detail rendering of structures and a possible reduction of artifacts in flat areas.
++ False color suppresion steps: setting it to 4 slightly reduces artifacts
+
+**Raw Black points**
++ First, try the "Dehaze" checkbox; you'll see the sliders move to the right, the histogram expands, especially to the left (the shadow areas), and the image is brighter and more colorful.
++ Second, increase the settings (by unchecking the 'Dehaze' box) : Red:+3, Green 1:+14, Green 2:+8, Blue:+5. You will again notice a more vivid image, a better utilized histogram, and a reduction in artifacts.
+
+<figure>
+<img src="raw-tools.jpg" title="raw-tools.jpg" width="300" />
+<figcaption>raw-tools.jpg</figcaption>
+</figure>
+
+
+
+
+
+
 
 
 
