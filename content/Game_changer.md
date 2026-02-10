@@ -29,9 +29,9 @@ This concept isn't about forcing you to change your image processing methods, bu
 + Finding the best color balance is crucial before starting any treatments. The longer you wait, the greater the risk of 'contaminating' other methods.
 + Make the most of the possibilities in Raw mode, whether it be the demosaicing method, the improvement of sharpness and noise treatment, the correction of black points and chromatic aberrations, etc.
 + Control (and compress if necessary) the gamut at the beginning and end of the process.
-+ Using the concept of a pre-tone mapper, which makes an image usable or (acceptable) for further processing. That is to say:
++ Using the concept of a pre-tone mapping, which makes an image usable or (acceptable) for further processing. That is to say:
   - Bring the black point close to zero, to increase contrast and use the entire range of data.
-  - Bring the White point as close as possible to 1: out-of-gamut data can have very high values ​​(3, 5 or 10), and all methods are more efficient when in the interval [0 1]
+  - Bring the White point as close as possible to 1: out-of-gamut data can have very high values ​​(3, 5 or 10), and all methods are more efficient when in the interval [0 1].
   - Implementing an asymptotic process that allows us to get closer to the white point, without reaching it - and even less going beyond it.
 + Towards the end of the process, it is possible to adjust the tones and contrasts, assuming that the image at this stage has no major defects (with the exception of images taken with exotic illuminants such as LEDs, which may require the use of primaries). This method should allow visualization of the effects on the acceptable limits for the data and the gamut.
 + At the very end of the process, it allows the implementation of the concepts of 'Scene' (source) and Viewing (display): taking into account the conditions of shooting and final viewing, taking into account the physiological aspects, allowing each R, G, B channel to be retouched to better balance or modify the colors.
@@ -47,11 +47,43 @@ Other tools must be used with caution, as they can interfere - it is almost impo
 + Contrast By Detail Levels
 + ... 
 
-Prefer their equivalent in Selective Editing, taking care to place them "after" the pre-tone mapper.
+Prefer their equivalent in Selective Editing, taking care to place them "after" the pre-tone mapping.
 
 You can use the tools to reduce noise, make crops, modify geometry, etc.
 
 But of course, there are no prohibitions; these are only general recommendations. Each image may be a special case.
+
+### Specific tools used
+As of February 2026 - to be updated.
+Apart from tools that have been around for many years, but are not always well known, I highlight new ones, or those that seem preferable to me:
++ Capture Sharpening (Raw Tab) - With Pre and Post sharpening denoise
++ Color Propagation in Highlight reconstruction (Exposure Tab)
++ White Balance > Automatic & Refinement > Temperature correlation (Color Tab)
++ Gamut Compression (Color Tab)
++ Selective Editing > Equalization & Pre-Tone Mapping : Generalized Hyperbolic Stretch (GHS) & Michaelis-Menten (MM)
++ Abstract Profile (Color Tab)
++ Color Appearance & Ligting (Advanced Tab)
+
+## The tutorials
+
+### Game Changer - How to Provcess a Sunset
+To do
+
+### Game Changer - Using LED's image
+To do
+
+### Game Changer - Noisy Image
+To do
+
+### Game Changer - A complete process on a user Rocks image
+To do
+
+### Game Changer - Using harvest mouse
+To do
+
+### Game Changer - Best Shadow & Higlight techniques 
+I will begin
+
 
 
 
