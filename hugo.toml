@@ -11,17 +11,17 @@ defaultContentLanguage = 'en'
   languageName = 'English'
   timeZone = 'America/New_York'
   title = 'RawPedia'
-  # weight = 1
-  # [languages.en.pagination]
-  #   path = 'page'
+  weight = 1
+  [languages.en.pagination]
+    path = 'page'
 [languages.fr]
   languageCode = 'fr-FR'
   languageName = 'Français'
   timeZone = 'America/New_York'
   title = 'RawPedia'
-  # weight = 2
-  # [languages.fr.pagination]
-  #   path = 'page'
+  weight = 2
+  [languages.fr.pagination]
+    path = 'page'
 # [languages.de]
 #   languageCode = 'de'
 #   languageName = 'Deutsch'
