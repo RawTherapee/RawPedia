@@ -1122,6 +1122,42 @@ The nature and intensity of this attenuation depends on the preset and whether o
 
 Each preset also contains information used to weight the overall level data to either attenuate the data for the first level (to reduce noise) or to progressively attenuate it for the higher levels. 
 -the resulting data from each decomposition level is then sent to the curve, which should be preferably “bell shaped” to concentrate the action on the useful levels and attenuate the action at the extremities.
+ A code snippet to help understand:
++ First :Initialize the number of decomposition levels to establish a reference. There are 10 levels, from 0 to 9. I chose 7, allowing a value of +2 to reach 9 and -3 to reach 4 (which corresponds roughly to the "Contrast By Detail Levels" setting). 
+```
+    const int wavelet_lev = 7;//default
+```
++ Second : Initialize 6 presets. In this code, 'level_bl' is the reference for the decomposition level positioned in the bottom left corner. 'level_hl' is the one in the top left corner. If the numbers are different, there will be a transition between these two levels.
+```
+            //6 contrast profiles to change range levels and rolloff for high contrast positive and negative - of course we can add anothers
+            //I change only values for LUT for high contrast values and not for low levels, but we can...
+            //These parameters are passed to Inval, to focus more or less on the "center" of the signal.
+            float inva5 = 0.8f;
+            float inva6 = 0.7f;
+            float inva7 = 0.5f;
+            float inva8 = 0.4f;
+            float inva9 = 0.3f;
+            float inva10 = 0.1f;
+
+            if (pyrwav == 1) {//low contrast
+                level_bl = 0;
+                level_hl = 1;
+                level_br = wavelet_lev - 3;
+                level_hr = wavelet_lev - 2;
+            } else if (pyrwav == 2) {
+                level_bl = 0;
+                level_hl = 0;
+                level_br = wavelet_lev - 3;
+                level_hr = wavelet_lev - 1;
+                if (!cmparams.wsmoothcie) {
+                    inva5 = 1.f;
+                    inva6 = 0.8f;
+                    inva7 = 0.65f;
+                    inva8 = 0.5f;
+                    inva9 = 0.3f;
+                    inva10 = 0.2f;
+                }
+```
 
 ##### The Contrast Enhancement module has the following characteristics:
 
@@ -1141,6 +1177,94 @@ These presets are classified :
 The **Variable contrast” curve** , which is the heart of the system, is used to modify the existing contrast values, based on the size of the pixel groups, their contrast and possible artefacts. The information contained in the presets determines the behaviour of the curve. However, whatever the preset and the level of detail: a) the mid-point of the x-axis corresponds to the most important contrast value for the action; b) the maximum point, to the right of x-axis, corresponds to the maximum contrast found. It is recommended to reduce the variable contrast beyond the mean value.
 
 A **Refinement expander**, which can be used to modify: a) the distribution of the action between the low, medium and high values of the “Variable contrast” curve, in particular by widening or narrowing the effects of the width of the curve; b) adjust the residual image after decomposition to compensate for excessive effects linked to the action of the curve and the presets.
+
+- Part of the code that allows you to see : the influence of the preset, the curve, attenuation response, offset, the attenuation of the signal decomposed into 10 parts with the coefficients 'inva', etc. 
+- This excerpt does not include decomposition (with its vanishing moments), recomposition, attenuation for shadows and highlights, nor processing of the residual image. Of course, there are no masks or layers; this is simply a model of the signal processing.
+```
+    if (level_hr != level_br) {//transitions high levels
+        ahigh = 1.f / (level_hr - level_br);
+        bhigh =  -ahigh * level_br;
+    }
+        //What follows is a model of a complex phenomenon, simplifying the signal shape. The action is a function of the contrast (in the wavelet sense), calculating a mean and a standard deviation (which are not actually mean and standard deviations).
+        for (int dir = 1; dir < 4; dir++) {//for each direction
+            for (int level = level_bl; level < maxlvl; ++level) {//for each levels
+                int W_L = wdspot->level_W(level);
+                int H_L = wdspot->level_H(level);
+                float* const* wav_L = wdspot->level_coeffs(level);
+                //sigmafin = attenuation response to change signal shape
+                // I use only positives values to simplify calculations... possible improvment.
+                if (MaxP[level] > 0.f && mean[level] != 0.f && sigma[level] != 0.f) {
+                    float insigma = 0.666f; //SD standard deviation (modelisation)
+                    float logmax = log(MaxP[level]); //log Max
+                    float rapX = (offset * mean[level] + sigmafin * sigma[level]) / MaxP[level];//rapport between SD / max
+                    //offset move mean location in signal
+                    float inx = log(insigma);
+                    float iny = log(rapX);
+                    float rap = inx / iny;
+                    //transitions
+                    float asig = 0.166f / (sigma[level] * sigmafin);
+                    float bsig = 0.5f - asig * (mean[level] * offset);
+                    float amean = 0.5f / (mean[level] * offset);
+                    const float effect = sigmafin;
+                    float mea[10];//simulation using mean and sigma, to evaluate signal
+                    calceffect(level, mean, sigma, mea, effect, offset);
+                    float klev = 1.f;
+                    if (level >= level_hl && level <= level_hr) {
+                        klev = 1.f;
+                    }
+                    //change klev with real change in levels - see contrast profiles
+                    //transition in beginning low levels
+                    if (level_hl != level_bl) {
+                        if (level >= level_bl && level < level_hl) {
+                            klev = alow * level + blow;
+                        }
+                    }
+                    //transition in max levels
+                    if (level_hr != level_br) {
+                        if (level > level_hr && level <= level_br) {
+                            klev = ahigh * level + bhigh;
+                        }
+                    }
+                    const float threshold = offset * mean[level] + sigmafin * sigma[level];//base signal calculation.
+                    float lutFactor;//inva5, inva6, inva7, inva8, inva9, inva10 are define in Contrast profiles.
+                    float inVals[] = {0.05f, 0.2f, 0.7f, 1.f, 1.f, inva5, inva6, inva7, inva8, inva9, inva10};//values to give for calculate LUT along signal : minimal near 0 or MaxP
+                    const auto meaLut = buildMeaLut(inVals, mea, lutFactor);//build LUT
+                    
+
+#ifdef _OPENMP
+                    #pragma omp parallel for if (multiThread)
+#endif
+
+                    for (int y = 0; y < H_L; y++) {
+                        for (int x = 0; x < W_L; x++) {//for each pixel
+                            if (cmOpacityCurveWL) {//if curve enable
+                                float absciss;//position in curve and signal
+                                float &val = wav_L[dir][y * W_L + x];
+                                const float WavCL = std::fabs(wav_L[dir][y * W_L + x]);
+                                if (WavCL >= threshold) { //for max take into account attenuation response and offset
+                                    float valcour = xlogf(fabsf(val));
+                                    float valc = valcour - logmax;
+                                    float vald = valc * rap;
+                                    absciss = xexpf(vald);
+                                } else if (WavCL >= offset * mean[level]) {//offset only
+                                    absciss = asig * WavCL + bsig;
+                                } else {
+                                    absciss = amean * WavCL;
+                                }
+                                float kc = klev * (cmOpacityCurveWL[absciss * 500.f] - 0.5f);
+                                float amplieffect = kc <= 0.f ? 1.f : 1.7f;//we can change 1.5 - to 1.7 or more or less
+                                float kinterm = 1.f + amplieffect * kc;
+                                kinterm = kinterm <= 0.f ? 0.01f : kinterm;
+                                val *= (1.f + (kinterm - 1.f) * (*meaLut)[WavCL * lutFactor]);//change signal (contrast) for each level, direction, with LUT.
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+```
+
 
 ## Output Profile
 
