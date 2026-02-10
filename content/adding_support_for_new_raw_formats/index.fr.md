@@ -1,5 +1,5 @@
 ---
-title: Adding Support for New Raw Formats
+title: Ajouter la prise en charge de nouveaux formats raw 
 contributors:
   - Lebarhon
   - DrSlony
@@ -7,11 +7,6 @@ tags:
   - 'General Information'
 ---
 
-<div class="pagetitle">
-
-Ajouter la prise en charge de nouveaux formats raw
-
-</div>
 
 ## Introduction
 
@@ -51,7 +46,7 @@ places :
 Les informations sont collectées depuis ces trois places et les données
 de `camconst.json` sont prioritaires sur les autres sources. Il y a une
 exception concernant la [matrice de couleur
-d'entrée](Color_Management/fr#Input_Profile.md) en ce sens que
+d'entrée](color_management#profil-dentrée) en ce sens que
 si le fichier raw est en format DNG et que la métadonnée Exif `Software`
 (`0x0131`) ne commence pas par la chaîne de caractères "Adobe DNG
 Converter" et que le fichier contient bien une balise `ColorMatrix2`,
@@ -196,7 +191,7 @@ aucune photo supplémentaire n'est nécessaire.
 Un profil d'entrée est nécessaire pour reproduire les couleurs avec
 précision. Une photo est exigée par modèle d'appareil photo. Lire
 l'article "[Comment créer des profils de couleur
-DCP](How_to_create_DCP_color_profiles/fr.md)" pour connaître les
+DCP](/how_to_create_dcp_color_profiles)" pour connaître les
 différents types de profils d'entrée et comment photographier une cible
 de couleur afin que nous puissions créer un profil d'entrée pour votre
 modèle d'appareil photo.

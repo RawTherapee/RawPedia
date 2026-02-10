@@ -41,7 +41,7 @@ details, but not the input profile) in three places:
 
 Information is gathered from all three places, and values from
 `camconst.json` are prioritized above those from other sources. There is
-an exception for the [input color matrix](color_management#input_profile), in that if the raw
+an exception for the [input color matrix](color_management#input-profile), in that if the raw
 file is in the DNG format and the `Software` Exif tag (`0x0131`) does
 not begin with the string `Adobe DNG Converter` and the file does
 contain a `ColorMatrix2` tag, then the value from this tag is
