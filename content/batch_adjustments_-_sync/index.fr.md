@@ -1,22 +1,17 @@
 ---
-title: Batch Adjustments - Sync
+title: Ajustements par lot - Sync
 contributors:
   - Lebarhon
 tags:
   - 'General Information'
 ---
 
-<div class="pagetitle">
-
-Ajustements par lot - Sync
-
-</div>
 
 RawTherapee autorise la définition des paramètres pour le traitement de
 nombreuses photos en même temps lors des ajustements par lots, ou sync,
 généralement selon deux méthodes. Il permet le copier-coller, partiel ou
 total, d'un [profil de
-traitement](Sidecar_Files_-_Processing_Profiles/fr.md) (une
+traitement](/sidecar_files_-_processing_profiles) (une
 collection de paramétrages d'outils), à un nombre quelconque d'images.
 Il permet aussi de sélectionner un nombre quelconque d'images et
 d'appliquer n'importe quel outil à l'ensemble d'entre elles en une fois
@@ -28,12 +23,12 @@ l'aide des combinaisons standard de touches : Shift + clic pour
 sélectionner une suite d'images, Ctrl + clic pour sélectionner des
 images individuellement, ou Ctrl + A pour tout sélectionner. Les deux
 méthodes sont réalisées depuis [L'onglet Navigateur de
-fichiers](The_File_Browser_Tab/fr.md). La méthode
+fichiers](/the_file_browser_tab). La méthode
 "copier-coller" peut aussi se faire depuis [La bande
-film](The_Image_Editor_Tab/fr#La_bande_film.md).
+film](/The_Image_Editor_Tab/#la-bande-film).
 
-<noinclude>== Copier-coller ==</noinclude> <includeonly>===
-Copier-coller ===</includeonly> Copier et coller un profil de traitement
+## Copier-coller
+Copier et coller un profil de traitement
 sur une sélection d'images est une tâche très commune. Supposons une
 série de photos, par exemple des prises en studio, des portraits de
 mariage, ou des photos macro brackétées. toutes les images d'une même
@@ -43,10 +38,10 @@ qu'elles nécessitent les mêmes paramètres de traitement, la même
 réduction de bruit, la même reprise de netteté et de distorsion, etc.
 Pour traiter le lot, ce qui se fait en général est d'ouvrir n'importe
 quelle image de la série dans [L'onglet
-Editeur](The_Image_Editor_Tab/fr.md) et de la peaufiner à votre
+Editeur](/The_Image_Editor_Tab) et de la peaufiner à votre
 goût. Cela fait, vous allez appliquer le profil de traitement de cette
 image à toutes les autres de la même série. Pour cela, allez dans
-[L'onglet Navigateur de fichiers](the_file_browser_tab/fr),
+[L'onglet Navigateur de fichiers](the_file_browser_tab),
 cliquer droit sur cette photo et sélectionner "*Opérations sur les
 profils \> Copier le profil*", puis sélectionner les images auxquelles
 on souhaite appliquer ce profil, clic droit sur n'importe laquelle
@@ -59,8 +54,8 @@ exemple seulement l'outil de redimensionnement. Pour cela choisir
 "*Opérations sur les profils \> Coller partiellement* au lieu de
 "Coller".
 
-<noinclude>== Sync ==</noinclude> <includeonly>=== Sync
-===</includeonly> RawTherapee permet aussi d'appliquer instantanément un
+## Sync
+RawTherapee permet aussi d'appliquer instantanément un
 outil à une sélection d'images. La fonctionnalité équivalente est
 appelée "Sync" dans d'autres logiciels. cette méthode est intéressante
 lorsque vous n'avez pas besoin d'avoir un aperçu précis des
@@ -84,4 +79,4 @@ d'exposition de + 1,6 IL en mode "Ajoute" et de + 0,6 IL en mode
 0,6 IL dans les deux modes. Vous pouvez décider quels outils doivent
 fonctionner en mode "Ajoute" et en mode "Remplace" dans l'onglet
 [Traitement par lot de la fenêtre
-Préférences](Preferences/fr#L'onglet_Traitement_par_lot.md).
+Préférences](preferences#longlet-traitement-par-lot).
