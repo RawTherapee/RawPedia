@@ -56,6 +56,19 @@ You can use the tools to reduce noise, make crops, modify geometry, etc.
 
 But of course, there are no prohibitions; these are only general recommendations. Each image may be a special case.
 
+**Recommendations**
++ It is best to alternate between viewing the histogram in linear mode with the Working profile, and in Output profile mode with a gamma.
+<figure>
+<img src="hist-lin-gam.jpg" title="hist-lin-gam.jpg" width="300" />
+<figcaption>Histogram Linear or Gamma</figcaption>
+</figure>
+
++ It is advisable to observe gamut spillovers with Softproofing - set to your personal profile.
+<figure>
+<img src="out-gamut.jpg" title="out-gamut.jpg" width="300" />
+<figcaption>Softproofing out-of-gamut colors</figcaption>
+</figure>
+
 ### Specific tools used
 As of February 2026 - to be updated.
 Apart from tools that have been around for many years, but are not always well known, I highlight new ones, or those that seem preferable to me:
