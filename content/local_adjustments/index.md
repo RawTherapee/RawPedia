@@ -31,10 +31,14 @@ rectangle spot can also be used in full-image mode which automatically
 sets the control points outside the image preview area. Future
 developments will provide enhanced shape manipulation.
 
-
-![](ellipse.jpg)
-![](rectangle.jpg)
-
+<figure>
+<img src="ellipse.jpg" title="ellipse.jpg" width="200" />
+<figcaption>Ellipse</figcaption>
+</figure>
+<figure>
+<img src="rectangle.jpg" title="rectangle.jpg" width="200" />
+<figcaption>Rectangle</figcaption>
+</figure>
 
 The RT-spot algorithm uses shape detection based on ΔE (the change in
 the visual perception of two given colors) to select the parts of the

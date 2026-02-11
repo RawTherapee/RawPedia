@@ -42,6 +42,8 @@ Some current tools should be avoided – or at the very least, the user should b
 + Auto-Matched Tone Curve.
 + Tone curve.
 + Auto Levels.
++ All sliders below 'Exposure compensation'
++ ...
 
 Other tools must be used with caution, as they can interfere - it is almost impossible to review the pipeline - on Game Changer:
 + Haze removal
@@ -111,25 +113,25 @@ The user will understand the ‘Game changer’ approach discussed in this tutor
 + False color suppresion steps: setting it to 4 slightly reduces artifacts
 
 **Raw Black points**
-+ First, try the "Dehaze" checkbox; you'll see the sliders move to the right, the histogram expands, especially to the left (the shadow areas), and the image is brighter and more colorful.
++ First, try the "Dehaze" checkbox; you'll see the sliders move to the right, the histogram expands, especially to the left (the shadow areas), and the image is brighter and more colorful: Red:+1, Green 1:+7, Green 2:+7, Blue:+2.
 + Second, increase the settings (by unchecking the 'Dehaze' box) : Red:+3, Green 1:+14, Green 2:+8, Blue:+5. You will again notice a more vivid image, a better utilized histogram, and a reduction in artifacts.
 
 <figure>
 <img src="raw-tools.jpg" title="raw-tools.jpg" width="300" />
-<figcaption>raw-tools.jpg</figcaption>
+<figcaption>Demosaicing & Raw Black Points</figcaption>
 </figure>
 
+Below, you can see the influence of Raw Black Point on the image at the end of the process.
++ Note the difference on the horizontal axis, close to zero.
++ Note that the overall histogram is better filled.
+<figure>
+<img src="rawblack-0.jpg" title="rawblack-0.jpg" width="300" />
+<figcaption>Histogram without Raw Black point</figcaption>
+</figure>
 
+<figure>
+<img src="rawblack-1.jpg" title="rawblack-1.jpg" width="300" />
+<figcaption>Histogram with Raw Black point</figcaption>
+</figure>
 
-
-
-
-
-
-
-
-
-
-
-
-
++ Be **very careful**, these settings are very sensitive and can contribute to making the images unusable.
