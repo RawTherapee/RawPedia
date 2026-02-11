@@ -4,7 +4,7 @@
 | About Noise Reduction                                 | ✅  | 🔺  | 🔺  | 🔺  | 🔺  | 🔺  | 🔺  | 🔺  |
 | Adding Support for New Raw Formats                    | ✅  | ✅  |     | 🔺  |     |     |     | 🔺  |
 | Batch Adjustments - Sync                              | ✅  | ✅  |     | 🔺  |     |     |     | 🔺  |
-| Batch Processing Tab                                  |     |     |     |     |     |     |     |     |
+| Batch Processing Tab                                  | ✅  | ✅  | 🔺  | 🔺  |     | 🔺  |     | 🔺  |
 | Batch-Syncs                                           |     |     |     |     |     |     |     |     |
 | Bit Depth                                             |     |     |     |     |     |     |     |     |
 | Black-and-White                                       |     |     |     |     |     |     |     |     |
@@ -21,7 +21,7 @@
 | Color Management addon                                |     |     |     |     |     |     |     |     |
 | Color Management Tab                                  |     |     |     |     |     |     |     |     |
 | Color Toning                                          |     |     |     |     |     |     |     |     |
-| Command-Line Options                                  |     |     |     |     |     |     |     |     |
+| Command-Line Options                                  | ✅  | ✅  |     | 🔺  |     |     |     | 🔺  |
 | Comparison_of_the_3_RawTherapee_noise_reduction_tools |     |     |     |     |     |     |     |     |
 | Contrast by Detail Levels                             |     |     |     |     |     |     |     |     |
 | Contributing                                          |     |     |     |     |     |     |     |     |
@@ -37,8 +37,8 @@
 | Dynamic processing profiles                           |     |     |     |     |     |     |     |     |
 | Dynamic Range Compression                             |     |     |     |     |     |     |     |     |
 | Edges and Microcontrast                               |     |     |     |     |     |     |     |     |
-| Edit Current Image in External Editor                 |     |     |     |     |     |     |     |     |
-| Editor                                                |     |     |     |     |     |     |     |     |
+| Edit Current Image in External Editor                 | ✅  | ✅  |     | 🔺  |     |     |     | 🔺  |
+| Editor                                                | ✅  | 🔺  | 🔺  | 🔺  |     | 🔺  | 🔺  | 🔺  |
 | Editor Tab Modes                                      |     |     |     |     |     |     |     |     |
 | Exif Tab                                              |     |     |     |     |     |     |     |     |
 | Exposure                                              |     |     |     |     |     |     |     |     |

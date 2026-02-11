@@ -1,5 +1,5 @@
 ---
-title: Command-Line Options
+title: Options en ligne de commande
 contributors:
   - Lebarhon
   - Hombre
@@ -7,18 +7,12 @@ tags:
   - 'General Information'
 ---
 
-<div class="pagetitle">
-
-Options en ligne de commande
-
-</div>
 
 ## Explication
 
-  
-`<`Chevrons`>` indiquent des paramètres que vous pouvez changer.
+`<Chevrons>` indiquent des paramètres que vous pouvez changer.
 
-`[`Crochets`]` signifie que le paramètre est facultatif.
+`[Crochets]` signifie que le paramètre est facultatif.
 
 Le symbole du tube `|` indique un choix de l'un ou l'autre.
 
@@ -35,16 +29,16 @@ graphique.
 Utilisation :
 
   
-`rawtherapee [`<répertoire sélectionné>`]`
+`rawtherapee [<répertoire sélectionné>]`
 
   
-Lance le [Navigateur de fichiers](the_file_browser_tab/fr) à
+Lance le [Navigateur de fichiers](/the_file_browser_tab) à
 l'intérieur du répertoire.
 
 `rawtherapee `<fichier>
 
   
-Lance l'[Editeur](the_image_editor_tab/fr) avec le fichier
+Lance l'[Editeur](/the_image_editor_tab) avec le fichier
 chargé.
 
 `-w`
@@ -63,20 +57,14 @@ une séquence, par exemple dans un script PowerShell. Notez que `-w`
 n'aura aucun effet pour les versions "Debug" où une console sera ouverte
 à moins que vous ne démarriez RawTherapee déjà depuis une console.
 
-<!-- -->
 
-  
 `-v`
 
-  
 affiche le numéro de version de RawTherapee et quitte.
 
-<!-- -->
 
-  
 `-R`
 
-  
 mode "Remote", disponible depuis RawTherapee 5.2. Lors de l'ouverture
 d'une image en utilisant "Ouvrir avec" ou bien en donnant son nom comme
 argument, sans l'option `-R`, RawTherapee l'ouvre en mode
@@ -91,13 +79,11 @@ stabilité moins bonne. Maintenant que le besoin en RAM de RawTherapee
 est optimisé et qu'il peut ouvrir des répertoires contenant des milliers
 d'images, on peut préférer utiliser le mode `-R` par défaut.
 
-<!-- -->
 
-  
 `-h -?`
 
-  
 Affiche ces commandes
+
 
 ### RawTherapee CLI
 
@@ -107,19 +93,14 @@ vos photos sans aucune interface graphique.
 
 Utilisation :
 
-  
-`rawtherapee-cli `<options>` -c `<répertoire>`|`<fichiers>
+`rawtherapee-cli <options> -c <répertoire>|<fichiers>`
 
-  
 Traite les fichiers par lots avec les paramètres par défaut si aucune
-<options> n'est spécifiée.
+`<options>` n'est spécifiée.
 
-<!-- -->
 
-  
 `-w`
 
-  
 Ne pas ouvrir la console Windows. Cette option n'est possible que dans
 Windows. Si vous passez des paramètres à l'exécutable RawTherapee, il
 affiche une console afin que vous puissiez voir les commentaires de
@@ -133,15 +114,11 @@ dans une séquence, par exemple dans un script PowerShell.
 
 Autres options utilisées avec `-c` :
 
-  
-`rawtherapee-cli [-o `<sortie>`|-O `<sortie>`] [-q] [-a] [-s|-S] [-p `<fichiers>`] [-d] [-j[1-100] [-js<1-3>]|[-b<8|16>] <[-t[z] | [-n]]] [-Y] [-f] -c `<entrée>
+`rawtherapee-cli [-o <sortie>|-O <sortie>] [-q] [-a] [-s|-S] [-p <fichiers>] [-d] [-j[1-100] [-js<1-3>]|[-b<8|16>] <[-t[z] | [-n]]] [-Y] [-f] -c <entrée>`
 
-<!-- -->
 
-  
-`-c `<fichiers>
+`-c <fichiers>`
 
-  
 Spécifie un ou plusieurs fichiers ou répertoires d'entrée.
 
 Lors de la spécification de répertoires, RawTherapee cherchera des
@@ -150,89 +127,65 @@ fichiers images qui respectent les extensions considérées sélectionnées
 
 L'option `-c` doit toujours être la dernière.
 
-<!-- -->
 
-  
-`-o `<fichier>`|`<rép>
+`-o <fichier>|<rép>`
 
-  
 Sélectionne le fichier ou le répertoire de sortie.
 
 Enregistre le fichier de sortie à côté du fichier d'entrée si -o n'est
 pas spécifié
 
-<!-- -->
 
-  
-`-O `<fichier>`|`<rép>
+`-O <fichier>|<rép>`
 
-  
 Sélectionne le fichier ou le répertoire de sortie et copie le fichier
 pp3 à l'intérieur.
 
 Enregistre le fichier de sortie à côté du fichier d'entrée si -O n'est
 pas spécifié
 
-<!-- -->
 
-  
-`-q`<fichier>`|`<rép>
+`-q <fichier>|<rép>`
 
-  
 Mode démarrage rapide. Ne charge pas les fichiers cachés pour accélérer
 le démarrage
 
-<!-- -->
 
-  
-`-a`<fichier>`|`<rép>
+`-a<fichier>|<rép>`
 
-  
 Traite tous les types de fichiers images supportés dans le répertoire
 spécifié, même ceux qui ne sont pas actuellement sélectionnés dans
 Préférences \> Navigateur de fichiers \> Extensions considérées
 
-<!-- -->
 
-  
 `-s`
 
-  
 Utilise le fichier accolé existant pour construire les paramètres de
 traitement, par ex pour photo.raw, il devrait y avoir un fichier
 photo.raw.pp3 dans le même répertoire. Si le fichier accolé n'existe
 pas, les valeurs par défaut (neutral) seront utilisées.
 
-<!-- -->
 
-  
 `-S`
 
-  
 Comme `-s` mais abandonne si le fichier accolé n'est pas trouvé.
 
-<!-- -->
 
-  
 `-p <fichier.pp3>`
 
-  
 Spécifie le profil de traitement devant être utilisé pour toutes les
 conversions. Il est possible de spécifier autant de jeux d'options `-p`
 que désirés, chacun sera construit au-dessus du précédent, comme
 expliqué ci-dessous.
 
-<!-- -->
 
-  
 `-d`
 
-  
 Utilise le fichier pp3 raw ou non-raw comme défini dans
-"[Préférences](main_page/fr#préférences) \> [Traitement de
-l'image](Preferences/fr#L'onglet_Traitement_de_l'image.md) \>
+"[Préférences](/) \> [Traitement de
+l'image](/preferences#longlet-traitement-de-limage) \>
 [Paramètres de traitement d'image par
-défaut](Preferences/fr#Paramètres_de_traitement_d'image_par_défaut.md)"
+défaut](preferences#paramètres-de-traitement-dimage-par-défaut)"
 
 <!-- -->
 

@@ -1,16 +1,11 @@
 ---
-title: Edit Current Image in External Editor
+title: Éditer l'image courante dans un éditeur externe
 contributors:
   - Lebarhon
 tags:
   - 'General Information'
 ---
 
-<div class="pagetitle">
-
-Éditer l'image courante dans un éditeur externe
-
-</div>
 
 La fonction "*Editer l'image courante dans l'éditeur externe*" a pour
 effet le traitement complet de l'image courante par RawTherapee et son
@@ -25,7 +20,7 @@ Le bouton pour envoyer l'image dans un éditeur externe
 est situé en bas à gauche du panneau d'aperçu. Lors de l'utilisation de
 cette fonction, Rawtherapee traite votre image et l’enregistre au format
 TIFF 16 bits entiers codé gamma dans le [dossier
-temporaire](File_Paths/fr#Dossier_temporaire.md). Ces fichiers
+temporaire](/file_paths#dossier-temporaire). Ces fichiers
 intermédiaires, destinés à quitter le contrôle de Rawtherapee, ne sont
 pas automatiquement effacés quand RawTherapee est fermé, ne perdez pas
 cela de vue et effacez les manuellement.
@@ -40,6 +35,6 @@ les métadonnées et est quasi stable, on vous encourage donc à vous
 procurer [GIMP 2.9 ou plus](http://www.gimp.org/downloads/).
 
 Spécifiez votre éditeur externe préféré dans "*[Préférences \> Général
-\> Editeur externe](Preferences/fr#Editeur_externe.md)*".
+\> Editeur externe](/preferences#editeur-externe)*".
 Cliquer sur le lien pour obtenir des informations sur la spécification
 d'un éditeur externe.

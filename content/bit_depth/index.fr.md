@@ -168,9 +168,9 @@ serviteur - RawTherapee.
 ## Après RawTherapee
 
 Après la retouche d'une photo avec Rawtherapee, que vous êtes prêt à
-l'[enregistrer](saving_images/fr), vous faites face au choix
-des [profil de sortie, profondeur de couleur](color_management/fr#profil_de_sortie),
-[espace colorimétrique et correction gamma](color_management_addon/fr#espace_de_sortie_"output_profile").
+l'[enregistrer](/saving_images), vous faites face au choix
+des [profil de sortie, profondeur de couleur](/color_management#profil-de-sortie),
+[espace colorimétrique et correction gamma](color_management_addon#espace-de-sortie-output-profile).
 Si vous envisagez de post-traiter vos photos après Rawtherapee dans un
 programme d'édition d'images 16 bits, il est préférable de les
 enregistrer dans un format 16 bits sans pertes. RawTherapee peut

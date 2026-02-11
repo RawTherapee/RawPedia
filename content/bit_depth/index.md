@@ -149,9 +149,9 @@ truly - RawTherapee.
 ## After RawTherapee
 
 Once you have adjusted a photo in RawTherapee and are ready to
-[save](saving_images), you are faced with a choice of
-[output format, per-channel bit depth](color_management#output_profile),
-[color space and gamma encoding](color_management_addon#output_space_.22output_profile.22).
+[save](/saving_images), you are faced with a choice of
+[output format, per-channel bit depth](/color_management#output-profile),
+[color space and gamma encoding](/color_management_addon#output-space-output-profile).
 If you plan to post-process your photos after RawTherapee in a
 16-bit-capable image editing program, it is better to save them in a
 lossless 16-bit format. RawTherapee can save images in 16-bit integer

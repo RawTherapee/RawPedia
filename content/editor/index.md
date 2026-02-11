@@ -22,8 +22,8 @@ toc: true
 The Image Editor tab is where you tweak your photos. By default
 RawTherapee is in "Single Editor Tab Mode, Vertical Tabs" (SETM/VT)
 which is more memory-efficient and lets you use the
-[Filmstrip](editor#the_filmstrip) (described below). You can
-switch to "Multiple Editor Tabs Mode" (METM) by going to "[Preferences \> General \> Layout](preferences#layout)", however each
+[Filmstrip](#the-filmstrip) (described below). You can
+switch to "Multiple Editor Tabs Mode" (METM) by going to "[Preferences \> General \> Layout](/preferences#layout)", however each
 Editor tab will require a specific amount of RAM relative to the image
 size and the tools you use, and also the Filmstrip is hidden in this
 mode, so we recommend you first give SETM a try.
@@ -33,7 +33,7 @@ mode, so we recommend you first give SETM a try.
 The central panel shows a preview of the image being edited. This
 preview is generated from raw data if such is available. It reflects the
 adjustments made by the tools in the
-[Toolbox](editor#toolbox). Note that the effects of some
+[Toolbox](#toolbox). Note that the effects of some
 tools are only accurately visible when you are zoomed in to 1:1 (100%)
 or more; these tools are marked in the interface with a "1:1" icon
 ![Zoom 1:1](One-to-one-small.png "Zoom 1:1") alongside the tool's name.
@@ -41,10 +41,10 @@ or more; these tools are marked in the interface with a "1:1" icon
 When opening an image, RawTherapee loads the tool settings from the
 sidecar file if one exists, else it applies a default sidecar file as
 specified in "[Preferences \> Image Processing \> Default Processing
-Profile](Preferences#Default_Processing_Profile.md)". When you
+Profile](/preferences#default-processing-profile)". When you
 close the image (which happens automatically if you open a different
 image or if you close RawTherapee) the current tool settings are
-automatically saved to a sidecar file as specified in "[Preferences \> Image Processing \> Processing Profile Handling](preferences#processing_profile_handling)".
+automatically saved to a sidecar file as specified in "[Preferences \> Image Processing \> Processing Profile Handling](/preferences#processing-profile-handling)".
 
 ### Eek! My Raw Photo Looks Different than the Camera JPEG
 
@@ -165,8 +165,8 @@ three formats:
 
 RawTherapee 5.1 onward can show the real raw photosite values. To see
 them, set the Navigator to use the \[0-255\] range, apply the
-[Neutral](neutral) [processing profile](sidecar_files_-_processing_profiles), then set the
-[Demosaicing](demosaicing) method to "None". The Navigator
+Neutral [processing profile](/sidecar_files_-_processing_profiles), then set the
+[Demosaicing](/demosaicing) method to "None". The Navigator
 will show the real raw photosite values after black level subtraction
 within the range of the original raw data.
 
@@ -191,7 +191,7 @@ entry, and then continue adjusting the curve.
 
 The history stack is not saved - it is lost as soon as you close the
 Editor tab. None of your adjustments are lost though, as the final state
-of all tools is saved in the [sidecar file](sidecar_files_-_processing_profiles), ready to be used
+of all tools is saved in the [sidecar file](/sidecar_files_-_processing_profiles), ready to be used
 the next time you open that image.
 
 ### Snapshots
@@ -212,8 +212,8 @@ photo in the *Image Editor* or close RawTherapee.
 To the right is a panel which optionally shows the main histogram and
 *Processing Profiles* selector ("*Preferences \> General \> Layout \>
 Histogram in left panel*"), and always shows the
-[Toolbox](toolbox). You can hide this panel using the ![Hide right panel icon](panel-to-right.png "Hide right panel icon") hide icon,
-or its [keyboard shortcut](keyboard_shortcuts).
+[Toolbox](#toolbox). You can hide this panel using the ![Hide right panel icon](panel-to-right.png "Hide right panel icon") hide icon,
+or its [keyboard shortcut](/keyboard_shortcuts).
 
 ### Processing Profile Selector
 
@@ -227,7 +227,7 @@ title="Processing-profiles-selector.png" />
 </figure>
 
 Read the [Sidecar Files / Processing
-Profiles](Sidecar_Files_-_Processing_Profiles.md) page for more
+Profiles](/sidecar_files_-_processing_profiles) page for more
 information.
 
 ### Toolbox
@@ -242,17 +242,17 @@ RawTherapee allows you to work on photos in two modes:
 - *Single Editor Tab Mode* (SETM), where you work only on one photo at a
   time, and each photo is opened in the same *Editor* tab. There is a
   horizontal panel called the
-  *[Filmstrip](the_image_editor_tab#the_filmstrip)* at the
-  top of the *[Editor](the_image_editor_tab#the_filmstrip)*
+  *[Filmstrip](#the-filmstrip)* at the
+  top of the *[Editor](#the-filmstrip)*
   tab showing the rest of the photos in that folder for easy access.
   There are *Previous Image* and *Next Image*
   ![<File:Nav-prev.png>](Nav-prev.png "File:Nav-prev.png")
   ![<File:Nav-next.png>](Nav-next.png "File:Nav-next.png") buttons in
-  the bottom toolbar (and [keyboard shortcuts](keyboard_shortcuts) for them) to switch to the
+  the bottom toolbar (and [keyboard shortcuts](/keyboard_shortcuts) for them) to switch to the
   previous/next image.
 - *Multiple Editor Tabs Mode* (METM), where each photo is opened in its
-  own *[Editor](the_image_editor_tab#the_filmstrip)* tab. The
-  *[Filmstrip](the_image_editor_tab#the_filmstrip)* is hidden
+  own *[Editor](#the-filmstrip)* tab. The
+  *[Filmstrip](#the-filmstrip)* is hidden
   in this mode and there are no previous/next buttons. Having multiple
   photos opened at the same time requires more RAM.
 
@@ -285,16 +285,16 @@ If you use *Single Editor Tab Mode* ("*Preferences \> General \>
 Layout*") you can display a horizontal panel above the preview, this is
 called the *Filmstrip*. It contains thumbnails of all images in the
 currently opened album, and is synchronized with the currently opened
-image so that you can use [keyboard shortcuts](keyboard_shortcuts) or the previous ![Open previous image icon](nav-prev.png "Open previous image icon") and next
+image so that you can use [keyboard shortcuts](/keyboard_shortcuts) or the previous ![Open previous image icon](nav-prev.png "Open previous image icon") and next
 ![Open next image icon](nav-next.png "Open next image icon") image
 buttons to open the previous/next image without needing to go back to
-the *[File Browser](the_file_browser_tab)* tab.
+the *[File Browser](/file_browser)* tab.
 
 As of RawTherapee version 4.2.10, you can hide the Filmstrip's toolbar
 to save screen space. There are two ways of doing this: one way just
 toggles the toolbar on/off without resizing the filmstrip to the new
 height, and the other way does the same but also automatically resizes
-the filmstrip's height. Both are invoked via [keyboard shortcuts](keyboard_shortcuts) only. As resizing the
+the filmstrip's height. Both are invoked via [keyboard shortcuts](/keyboard_shortcuts) only. As resizing the
 filmstrip's height will trigger a refresh of the image preview and this
 might take a while if using CPU-hungry tools like noise reduction while
 zoomed in at 100%, the mode that doesn't resize has been implemented for
@@ -311,7 +311,7 @@ wide gamut. Note: OS X users are limited to sRGB and will not get an
 accurate preview otherwise ([see discussion](https://discuss.pixls.us/t/wide-gamut-preview-in-os-x/2481)),
 while users of Linux and Windows will get a correct wide-gamut preview.
 
-Go to Preferences \> [Color Management](preferences#color_management_tab) and point the
+Go to Preferences \> [Color Management](/preferences#color-management-tab) and point the
 "Directory containing color profiles" to the folder into which you saved
 your monitor and printer ICC profile. Restart RawTherapee for the
 changes to take effect. Now you will be able to select your monitor's
@@ -321,7 +321,7 @@ Colorimetric" rendering intent unless you have a good reason otherwise.
 One can also enable soft-proofing of the preview. This will show you
 what your image will look like once it gets transformed by the printer
 profile set in Preferences \> [Color
-Management](Preferences#Color_Management_Tab.md). If you want to
+Management](/preferences#color-management-tab). If you want to
 adjust an image for printing and you have an ICC profile for your
 printer-paper combination you could set that as your output profile,
 enable "Black point compensation" in Preferences so that the blackest
@@ -339,7 +339,7 @@ You should have a calibrated and profiled monitor in order for the
 soft-proofing preview to be accurate.
 
 The items you see in the monitor profile combo-box (under the main
-preview) and in the printer profile combobox (in Preferences \> [Color Management](preferences#color_management_tab)) are ICC files
+preview) and in the printer profile combobox (in Preferences \> [Color Management](/preferences#color-management-tab)) are ICC files
 located in a folder which you can point RawTherapee to by going to
-"[Preferences](preferences) \> [Color Management](preferences#color_management_tab) \> Directory
+"[Preferences](/preferences) \> [Color Management](/preferences#color-management-tab) \> Directory
 containing color profiles".

@@ -21,11 +21,11 @@ clicked, the image will be processed and sent to the currently selected
 external application. The button's icon and tooltip reflect the current
 external application. To select a different application, click on the
 drop-down arrow and select an item from the list (this list can be
-configured via [Preferences \> External Editor](preferences#external_editor)). Note that the last
+configured via [Preferences \> External Editor](/preferences#external-editor)). Note that the last
 entry in the list is "Other". If this option is selected, clicking the
 button will open a list of installed applications. RawTherapee will then
 send the processed image to the chosen application.
 
 When using this feature, RawTherapee processes your image and saves it
 as a gamma-encoded 16-bit integer TIFF to the temporary folder as
-specified in [Preferences \> External Editor \> Output Directory](preferences#external_editor).
+specified in [Preferences \> External Editor \> Output Directory](/preferences#external-editor).
