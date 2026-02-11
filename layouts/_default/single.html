@@ -2,7 +2,7 @@
 {{ define "main" }}
 {{ $dateFormat := default "Mon Jan 2, 2006" (index .Site.Params "date_format") }}
 
-<div class="row page justify-content-center">
+<div class="row page justify-content-center mt-5">
   <article class="{{ .Title | urlize }}-page col-lg-8">
     <h1 class="title">
       {{ .Title | markdownify }}
@@ -12,7 +12,7 @@
     {{ end }}
 
     {{ if .Params.toc }}
-      <button class='btn btn-sm btn-outline-secondary' type='button' data-bs-toggle='collapse' data-bs-target='#toc' role='button' aria-expanded='false' aria-controls='toc'>Table of Contents</button>
+      <button class='btn btn-sm btn-outline-primary' type='button' data-bs-toggle='collapse' data-bs-target='#toc' role='button' aria-expanded='false' aria-controls='toc'>Table of Contents</button>
       <div class='collapse border rounded bg-light' id='toc'>
         {{ .TableOfContents }}
       </div>
