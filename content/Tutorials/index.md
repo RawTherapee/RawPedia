@@ -26,7 +26,7 @@ This concept isn't about forcing you to change your image processing methods, bu
 + Start processing an image with no settings other than the default ones in 'Neutral', to avoid any side effects.
 + Use the maximum possible range for Raw data, this means that: 
   - The Black Point at the beginning of processing should be as close as possible to what the sensor allows.
-  - The highest measurable values ​​on the sensor must be recorded at the White Point. Furthermore, it is desirable to be able to recover, as best as possible, the data lost when values ​​created by overexposure have saturated the sensor.
+  - The highest measurable values ​​on the sensor must be recorded at the White Point. Furthermore, it is desirable to be able to recover, as best as possible, the data lost when values ​​created by overexposure have saturated the sensor (see: Highlight reconstruction > Color Propagation)
 + Finding the best color balance is crucial before starting any treatments. The longer you wait, the greater the risk of 'contaminating' other methods.
 + Make the most of the possibilities in Raw mode, whether it be the demosaicing method, the improvement of sharpness and noise treatment, the correction of black points and chromatic aberrations, etc.
 + Control (and compress if necessary) the gamut at the beginning and end of the process.
@@ -52,7 +52,7 @@ Other tools must be used with caution, as they can interfere - it is almost impo
 
 Prefer their equivalent in Selective Editing, taking care to place them "after" the pre-tone mapping.
 
-You can use the tools to reduce noise, make crops, modify geometry, etc.
+You can use the tools to reduce noise, make crops, modify geometry, wavelets, etc.
 
 But of course, there are no prohibitions; these are only general recommendations. Each image may be a special case.
 
@@ -67,6 +67,21 @@ But of course, there are no prohibitions; these are only general recommendations
 <figure>
 <img src="out-gamut.jpg" title="out-gamut.jpg" width="300" />
 <figcaption>Softproofing out-of-gamut colors</figcaption>
+</figure>
+
++ You can control the data at the time you implement a tool, these are just possible examples of values (uncorrelated with each other):
+  - Gamut Compression: Maximium achromatique value: 3.2, then R:3.2 G:1.4 B=1.8 -- Estimated Cyan:1.5 Magenta:2.2 Yellow:2.8
+  - Michaelis-Menten : Subtrack black = 0.05 White point=3.1
+  - Generalized Hyperbolic Strech: RGB values- R:3.3 G:1.2 B=1.9
+  - Abstract Profiles : RGB max = 0.92 - Final RGB Max = 0.62 - Final Saturation Max = 0.75
++ 'Normally', if everything was within the gamut, and if no processing caused it to be exceeded, the values ​​should all be within the interval [0 1]
++ If you find values (for the maximum) ​​for Gamut Compression, Michaelis-Menten, Generalized Hyperbolic Stretch:
+  - That are less than 1 or close to 1. It's likely that Highlight reconstruction > Color Propagation (or Inpaint Opposed) won't help. In that case, disable it.
+  - If these same values ​​are much greater than 1, for example 3.5 or 8, or more, the use of Color Propagation is recommended, and consequently it should not be disabled.
+  - In the latter case, make sure that "Clip out-of-gamut colors" is disabled.
+<figure>
+<img src="color-propag.jpg" title="color-propag.jpg" width="300" />
+<figcaption>Color Propagation - Clip out-of-gamut colors</figcaption>
 </figure>
 
 ### Specific tools used
