@@ -178,11 +178,11 @@ Below, you can see the influence of Raw Black Point on the image at the end of t
 <figcaption>Capture Sharpening</figcaption>
 </figure>
 
-### Color Propagation
+#### Color Propagation
 + Observing the reaction of the modules mentioned in the recommendations, the contribution of "Color Propagation" is small, but not negligible. I'm leaving it enabled, but you could disable it.
   - [Recommandations](/tutorials/#recommendations)
 
-### White Balance - Temperature correlation
+#### White Balance - Temperature correlation
 + To fully utilize the capabilities of "White Balance Auto temperature correlation", you can activate the corresponding checkbox in Preferences > Color Management
 <figure>
 <img src="prefer-wbauto.jpg" title="prefer-wbauto.jpg" width="500" />
