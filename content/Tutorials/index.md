@@ -56,7 +56,7 @@ You can use the tools to reduce noise, make crops, modify geometry, wavelets, et
 
 But of course, there are no prohibitions; these are only general recommendations. Each image may be a special case.
 
-**Recommendations**
+#### Recommendations
 + It is best to alternate between viewing the histogram in linear mode with the Working profile, and in Output profile mode with a gamma.
 <figure>
 <img src="hist-lin-gam.jpg" title="hist-lin-gam.jpg" width="300" />
@@ -78,7 +78,7 @@ But of course, there are no prohibitions; these are only general recommendations
 + If you find values (for the maximum) ​​for Gamut Compression, Michaelis-Menten, Generalized Hyperbolic Stretch:
   - That are less than 1 or close to 1. It's likely that Highlight reconstruction > Color Propagation (or Inpaint Opposed) won't help. In that case, disable it.
   - If these same values ​​are much greater than 1, for example 3.5 or 8, or more, the use of Color Propagation is recommended, and consequently it should not be disabled.
-  - In the latter case, make sure that "Clip out-of-gamut colors" is disabled.
+  - In the latter case, make sure that 'Clip out-of-gamut colors' is disabled.
 <figure>
 <img src="color-propag.jpg" title="color-propag.jpg" width="300" />
 <figcaption>Color Propagation - Clip out-of-gamut colors</figcaption>
@@ -130,17 +130,17 @@ The user will understand the ‘Game changer’ approach discussed in this tutor
 + The importance of Gamut Compression.
 + White Balance optimization - Temperature correlation.
 + The role of Graduated Filter.
-+ The importance and settings of Abstract Profile
++ The importance and settings of Abstract Profile - with a reasoned use of primaries
 + The combined use of Selective Editing > Generalized Hyperbolic Stretch (GHS) & Michaelis-Menten (MM) and 2 Exluding Spots.
 + The use of Color Appearance & Lighting and the possible corrections of the 3 channels R, G, B.
 
 #### Raw tools
 
-**Demosaicing**
+##### Demosaicing
 + The choice of Amaze+VNG4 allows for good detail rendering of structures and a possible reduction of artifacts in flat areas.
 + False color suppresion steps: setting it to 4 slightly reduces artifacts
 
-**Raw Black points**
+##### Raw Black points
 + First, try the "Dehaze" checkbox; you'll see the sliders move to the right, the histogram expands, especially to the left (the shadow areas), and the image is brighter and more colorful: Red:+1, Green 1:+7, Green 2:+7, Blue:+2.
 + Second, increase the settings (by unchecking the 'Dehaze' box) : Red:+3, Green 1:+14, Green 2:+8, Blue:+5. You will again notice a more vivid image, a better utilized histogram, and a reduction in artifacts.
 
@@ -163,3 +163,35 @@ Below, you can see the influence of Raw Black Point on the image at the end of t
 </figure>
 
 + Be **very careful**, these settings are very sensitive and can contribute to making the images unusable.
+
+##### Chromatique Aberration Correction
++ We can reduce some minor artifacts caused by Chromatic Aberration by manually adjusting the red and blue channels
+<figure>
+<img src="chromatic-aber.jpg" title="chromatic-aber.jpg" width="300" />
+<figcaption>Chromatic Aberration Correction</figcaption>
+</figure>
+
+##### Capture Sharpening
++ Activating Capture Sharpening works without any problems. The contrast threshold is not set to zero. It will recover details lost due to in-camera blurring.
+<figure>
+<img src="capture-shar.jpg" title="captur-shar.jpg" width="300" />
+<figcaption>Capture Sharpening</figcaption>
+</figure>
+
+### Color Propagation
++ Observing the reaction of the modules mentioned in the recommendations, the contribution of "Color Propagation" is small, but not negligible. I'm leaving it enabled, but you could disable it.
+  - [Recommandations](/tutorials/#recommendations)
+
+### White Balance - Temperature correlation
++ To fully utilize the capabilities of "White Balance Auto temperature correlation", you can activate the corresponding checkbox in Preferences > Color Management
+<figure>
+<img src="prefer-wbauto.jpg" title="prefer-wbauto.jpg" width="500" />
+<figcaption>Preferences - Color Management</figcaption>
+</figure>
+
++ Once this choice is made, you can select 'Close to full CIE diagram', because clearly with this sky we are beyond the reflected colors and the default selection 'Medium sampling - near Pointers's Gamut.
++ You can also check 'Remove 2 pass algorithms' which seems to give a slightly more 'dramatic' result (but that's a matter of perspective).
+<figure>
+<img src="white-bal-auto-1.jpg" title="white-bal-auto-1.jpg" width="300" />
+<figcaption>White Balance - Temperature correlation</figcaption>
+</figure>
