@@ -123,6 +123,10 @@ To do
 In this tutorial, we will see how to use various tools to avoid or remove artifacts. Propose one solution among others to simultaneously brighten shadows, control highlights, and create a dramatic effect.
 The image is difficult, and the question is: what should be done with it? Emphasize the dramatic aspect? Lighten or darken the shadows? There are as many answers as there are people.
 
+This image is a real challenge: usually we struggle with highlights, but here there are both highlights and, above all, very (very) low highlights, where the values ​​are very close to zero, even at zero for the Red channel, the Green channel, and a very small value for the Blue channel, or even at zero for all three channels.
+
+Beyond the aesthetic aspect of the result, there is above all a technical challenge in terms of methods.
+
 **Image selection**
 
 + [Raw Image](https://discuss.pixls.us/t/show-your-best-shadow-highlight-techniques/55731)
@@ -138,7 +142,8 @@ The image is difficult, and the question is: what should be done with it? Emphas
 **Learning objective:**
 
 The user will understand the ‘Game changer’ approach discussed in this tutorial:
-+ The role of Raw Tabs tools.
++ The role of Raw Tabs tools, in particular to combat artifacts
++ The importance of Color Propagation, including in (very) deep shadows.
 + The importance of Gamut Compression.
 + White Balance optimization - Temperature correlation.
 + The role of Graduated Filter.
