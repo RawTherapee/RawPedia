@@ -19,6 +19,7 @@ This concept isn't about forcing you to change your image processing methods, bu
 * RT was conceived and created by a single man, Gabor Horvatz, in 2006. This is a fantastic achievement. However, this has consequences: the GUI interface has remained the same, prioritizing what was good, given the knowledge available at the time in 2006. 
 * Today, the powerful modules are scattered across the different Tabs, and for my part, I almost never use them (with the exception of 'Highlight reconstruction') in the first two 'Tabs'.
 * Other improvements have made some modules that were very good 10 years ago a little less so. I'm thinking of the excellent "Dynamic Range Compression" (which is mathematically complex), which is slow and resource-intensive...
+* A persistent problem, once you're no longer in Raw mode, is that the 'Preview', apart from 'fit to screen', is often different from the TIF/JPG output. Furthermore, the appearance varies significantly depending on the zoom level and the tools used. This is a pipeline design flaw... that hasn't been resolved (the consolation is that this problem, to varying degrees, is found in other software as well)... So you just have to live with it.
 * There are also the effects of fads; yesterday everyone was talking about "XXX", then "YYY"...and now "ZZZ", and since it's present elsewhere, why isn't it being developed in RT? This doesn't mean that "ZZZ" is better than "XXX".
 * RT also has the unique characteristic of employing certain specific algorithms or processing methods. People may like it or dislike it, criticize it or approve of it, and compare it to what exists elsewhere. Before condemning, compare apples to apples (you wouldn't compare a chicken and a fish). I'm referring in particular to: CIECAM, Auto WB temperature correlation, Selective Editing, Wavelets, Abstract Profiles, etc.
 
@@ -26,7 +27,7 @@ This concept isn't about forcing you to change your image processing methods, bu
 + Start processing an image with no settings other than the default ones in 'Neutral', to avoid any side effects.
 + Use the maximum possible range for Raw data, this means that: 
   - The Black Point at the beginning of processing should be as close as possible to what the sensor allows.
-  - The highest measurable values ​​on the sensor must be recorded at the White Point. Furthermore, it is desirable to be able to recover, as best as possible, the data lost when values ​​created by overexposure have saturated the sensor (see: Highlight reconstruction > Color Propagation)
+  - The highest measurable values ​​on the sensor must be recorded at the White Point. Furthermore, it is desirable to be able to recover, as best as possible, the data lost when values ​​created by overexposure have saturated the sensor (see: Highlight reconstruction > Color Propagation  - which, contrary to what its name suggests, also allows data to be retrieved in very low light conditions).
 + Finding the best color balance is crucial before starting any treatments. The longer you wait, the greater the risk of 'contaminating' other methods.
 + Make the most of the possibilities in Raw mode, whether it be the demosaicing method, the improvement of sharpness and noise treatment, the correction of black points and chromatic aberrations, etc.
 + Control (and compress if necessary) the gamut at the beginning and end of the process.
@@ -197,7 +198,7 @@ I chose "Camera" which seems to give a better result. During the Raw pre-process
 </figure>
 
 #### Color Propagation
-+ Observing the reaction of the modules mentioned in the recommendations, the contribution of "Color Propagation" is small, but not negligible. I'm leaving it enabled, but you could disable it.
++ Observing the reaction of the modules mentioned in the recommendations, the contribution of "Color Propagation" is small on the 'numbers', but not negligible. On the other hand, and this is its initial role, it allows the recovery of 'lost' data in highlight, but also in very low light.
   - [Recommandations](/tutorials/#recommendations)
 
 #### White Balance - Temperature correlation
@@ -218,10 +219,10 @@ I chose "Camera" which seems to give a better result. During the Raw pre-process
 + The automatic calculation always performs two passes: the first with the base results, and a second to try to get closer to D50, thus avoiding color adaptation (which can be done in "Automatic Symmetric" mode using Color Appearance & Lighting). The choice is up to the user. Among the criteria is the 'Correlation factor'; the smaller it is, the better. The other criterion is the 'Size', which is the number of colors found to be significant for comparison with the reference spectral colors (approximately 400). The larger the 'Size', the better.
 
 #### Gamut Compression
-+ As a reminder, this algorithm does not perform a "conversion," but compresses the data to the output profile (in linear mode, without gamma). It will ensure, at _a minima_, that the data will be within the gamut. Hence the importance of examining the histogram in mode 'gamma-corrected output profile'
++ As a reminder, this algorithm does not perform a "conversion" but compresses the data to the output profile (in linear mode, without gamma). It will ensure, at _a minima_, that the data will be within the gamut. Hence the importance of examining the histogram in mode 'gamma-corrected **output profile**'
 <figure>
 <img src="gamut-comp-1.jpg" title="gamut-comp-1.jpg" width="300" />
 <figcaption>Gamut Compression</figcaption>
 </figure>
 
-+ I only changed 'Maximum Distance Limits > Cyan', but you can try modifying all 3 'Threshold' values ​​as well as 'Rolloff & Power'.
++ I made a few small changes to the default settings, but you can try modifying all 3 'Threshold' values ​​as well as 'Rolloff & Power'.
