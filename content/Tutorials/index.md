@@ -123,6 +123,13 @@ The image is difficult, and the question is: what should be done with it? Emphas
 + [Raw Image](https://discuss.pixls.us/t/show-your-best-shadow-highlight-techniques/55731)
 + This file is licensed [Creative Commons, By-Attribution, Share-Alike](https://creativecommons.org/licenses/by-sa/4.0/).
 
+**Image : neutral**
++ Here is a screenshot of the image in 'neutral' mode with 'Lockable Color Pickers'. You can immediately see that the photographer has underexposed the overall frame to avoid overexposing the sunset sky. Despite this choice, potential artifacts are already appearing in the area of ​​the sky near the power pole. See also the histogram in 'linear' mode.
+<figure>
+<img src="neutral-1.jpg" title="neutral-1.jpg" width="500" />
+<figcaption>Image - Neutral</figcaption>
+</figure>
+
 **Learning objective:**
 
 The user will understand the ‘Game changer’ approach discussed in this tutorial:
@@ -171,6 +178,13 @@ Below, you can see the influence of Raw Black Point on the image at the end of t
 <figcaption>Chromatic Aberration Correction</figcaption>
 </figure>
 
+##### Preprocess White Balance
+I chose "Camera" which seems to give a better result. During the Raw pre-processing, when nothing is determined, it's necessary to choose a temperature to quantify the data. This is either the 'Camera' value present in the Exif, or a rough calculation done with 'Automatic RG Grey'.
+<figure>
+<img src="prepro-wb-1.jpg" title=prepro-wb1.jpg" width="300" />
+<figcaption>Preprocess WB</figcaption>
+</figure>
+
 ##### Capture Sharpening
 + Activating Capture Sharpening works without any problems. The contrast threshold is not set to zero. It will recover details lost due to in-camera blurring.
 <figure>
@@ -190,8 +204,10 @@ Below, you can see the influence of Raw Black Point on the image at the end of t
 </figure>
 
 + Once this choice is made, you can select 'Close to full CIE diagram', because clearly with this sky we are beyond the reflected colors and the default selection 'Medium sampling - near Pointers's Gamut.
-+ You can also check 'Remove 2 pass algorithms' which seems to give a slightly more 'dramatic' result (but that's a matter of perspective).
++ You can also check 'Remove 2 pass algorithms' which seems to give a slightly more 'dramatic' result (but that's a matter of perspective). 
++ You could also, but it doesn't seem necessary here, use 'Green refinement' which can in some cases compensate for the algorithm's shortcomings.
 <figure>
 <img src="white-bal-auto-1.jpg" title="white-bal-auto-1.jpg" width="300" />
 <figcaption>White Balance - Temperature correlation</figcaption>
 </figure>
++ The automatic calculation always performs two passes: the first with the base results, and a second to try to get closer to D50, thus avoiding color adaptation (which can be done in "Automatic Symmetric" mode using Color Appearance & Lighting). The choice is up to the user. Among the criteria is the 'Correlation factor'; the smaller it is, the better. The other criterion is the 'Size', which is the number of colors found to be significant for comparison with the reference spectral colors (approximately 400). The larger the 'Size', the better.
