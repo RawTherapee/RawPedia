@@ -50,7 +50,11 @@ Other tools must be used with caution, as they can interfere - it is almost impo
 + Contrast By Detail Levels
 + ... 
 
+
 Prefer their equivalent in Selective Editing, taking care to place them "after" the pre-tone mapping.
+
+This is partly due to the pipeline - the order in which operations are actually carried out, not the order in which you do them.
+[Pipeline](/toolchain_pipeline)
 
 You can use the tools to reduce noise, make crops, modify geometry, wavelets, etc.
 
@@ -210,4 +214,14 @@ I chose "Camera" which seems to give a better result. During the Raw pre-process
 <img src="white-bal-auto-1.jpg" title="white-bal-auto-1.jpg" width="300" />
 <figcaption>White Balance - Temperature correlation</figcaption>
 </figure>
+
 + The automatic calculation always performs two passes: the first with the base results, and a second to try to get closer to D50, thus avoiding color adaptation (which can be done in "Automatic Symmetric" mode using Color Appearance & Lighting). The choice is up to the user. Among the criteria is the 'Correlation factor'; the smaller it is, the better. The other criterion is the 'Size', which is the number of colors found to be significant for comparison with the reference spectral colors (approximately 400). The larger the 'Size', the better.
+
+#### Gamut Compression
++ As a reminder, this algorithm does not perform a "conversion," but compresses the data to the output profile (in linear mode, without gamma). It will ensure, at _a minima_, that the data will be within the gamut. Hence the importance of examining the histogram in mode 'gamma-corrected output profile'
+<figure>
+<img src="gamut-comp-1.jpg" title="gamut-comp-1.jpg" width="300" />
+<figcaption>Gamut Compression</figcaption>
+</figure>
+
++ I only changed 'Maximum Distance Limits > Cyan', but you can try modifying all 3 'Threshold' values ​​as well as 'Rolloff & Power'.
