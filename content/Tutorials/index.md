@@ -98,7 +98,11 @@ Apart from tools that have been around for many years, but are not always well k
 + Gamut Compression (Color Tab) [Gamut Compression](/gamut_compression)
 + Selective Editing > Equalization & Pre-Tone Mapping : Generalized Hyperbolic Stretch (GHS) & Michaelis-Menten (MM) [GHS & MM](/local_adjustments/#generalized-hyperbolic-stretch-and-michaelis-menten)
 + Abstract Profile (Color Tab) [AP](/color_management/#abstract-profiles)
-+ Color Appearance & Ligting (Advanced Tab) [CIECAM](/ciecam02)
+  - Tone Response Curve [AP - TRC](/color_management/#trc---tone-response-curve)
+  - Contrast Enhancement [AP-CE](/color_management/#contrast-enhancement), in particular how it works [Presets](/color_management/#each-preset-contains-a-selection-of-decomposition-levels), and [Characteristics](/color_management/#the-contrast-enhancement-module-has-the-following-characteristics)
+  - Illuminant White Point [AP - IWP](/color_management/#illuminant---white-point)
+  - Primaries [AP - Prim](/color_management/#primaries)
++ Color Appearance & Lighting (Advanced Tab) [CIECAM](/ciecam02)
 
 ## The tutorials
 
@@ -126,6 +130,8 @@ The image is difficult, and the question is: what should be done with it? Emphas
 This image is a real challenge: usually we struggle with highlights, but here there are both highlights and, above all, very (very) low highlights, where the values ​​are very close to zero, even at zero for the Red channel, the Green channel, and a very small value for the Blue channel, or even at zero for all three channels.
 
 Beyond the aesthetic aspect of the result, there is above all a technical challenge in terms of methods.
+
+I deliberately chose extreme settings to show that even with a 'degraded' starting image it is possible to obtain a more than acceptable result, for example the "Contrast Enhancement" values ​​are huge.
 
 **Image selection**
 
@@ -166,6 +172,8 @@ The user will understand the ‘Game changer’ approach discussed in this tutor
 I will present two possible processing methods using two pp3 files. I will describe the first; the reader can discover the second for themselves. The essential difference lies in the 'Color Propagation' and 'Raw Black Points' settings.
 
 I've separated the tools as they appear in the interface, but it would be more accurate to refer to them as Raw processes. From my perspective, tools like 'Color Propagation', which is activated immediately after assigning the 'Working Profile', and 'White balance Temperature correlation', which is activated immediately after demosaicing, fall under the 'Raw' category.
+
+Do not attempt to reduce noise, whether using in 'Cature Sharpening', 'Pressharpening denoise', 'Postsharpening denoise', or 'Noise reduction' (Detail tab); you will only degrade the image. The only option, if desired, is to add an additional RT-Spot to the sky (or part of the sky) using 'Selective Editing > Blur/Grain & Denoise > Denoise'.
 
 #### Raw tools
 
@@ -220,6 +228,7 @@ I chose "Camera" which seems to give a better result. During the Raw pre-process
 <figcaption>Capture Sharpening</figcaption>
 </figure>
 
+
 #### Color Propagation
 + Observing the reaction of the modules mentioned in the recommendations, the contribution of "Color Propagation" is small on the 'numbers', but not negligible. On the other hand, and this is its initial role, it allows the recovery of 'lost' data in highlight, but also in very low light.
 + If you try another tool in 'Highlight reconstruction', such as 'Inpaint opposed' you will see that it has no effect on very low lights.
@@ -251,3 +260,16 @@ I chose "Camera" which seems to give a better result. During the Raw pre-process
 </figure>
 
 + I made a few small changes to the default settings, but you can try modifying all 3 'Threshold' values ​​as well as 'Rolloff & Power'.
+
+#### Selective Editing - Five RT-Spots
+
+##### The first - Equalization & Pre-Tone Mapping - Michaelis-Menten (MM)
+<figure>
+<img src="michaelis-1.jpg" title="michaelis-1.jpg" width="300" />
+<figcaption>Michaelis-Menten Global mode</figcaption>
+</figure>
+
++ I used this module (MM) rather than (GHS), not because it's simpler, but because, unlike GHS, it doesn't rely on an algorithm to calculate Linear White Point, and especially Linear Black point  in this case. When I designed GHS, I assumed that a reduced value of 0.001 was negligible; however, it isn't here, in this very specific image, and necessitates a manual correction (in negative) of the Black point. A smaller value, for example 0.000001, should have been used, but that would break compatibility.
++ Note the preferred use of the two 'hyperbolic' parameters - Output scale (S) and Knee strength (K). Exposure (Ev) is considered only as an adjustment.
++ Note the use of checkboxes (uncheck them all first). Start with 'Subtract linear black'; you'll see the histogram compress towards the left, even with the work done beforehand in the Raw section. Then activate 'Linear dynamic range'; the histogram will be compressed by roughly 1.18 (see the values ​​displayed below). The asymptote for highlights will be better defined, and contrast and saturation will increase.
++ The other settings - which are also important - are part of the chain of mastering gamut and artifacts.
