@@ -139,6 +139,15 @@ Beyond the aesthetic aspect of the result, there is above all a technical challe
 <figcaption>Image - Neutral</figcaption>
 </figure>
 
+If you examine:
++ The Raw histogram, it's not 'abnormal' except for very few values ​​outside the shadows. The blue channel is dominant.
++ The Metadata: the camera used is a recent 24x36 camera - Canon EOS R6 with a good quality 50mm f/1.8 lens, open to 2.8. ISO = 100. Shooting in 'auto' mode.
++ The data is in the 'black' part of the image. In short, there are two groups: values ​​with R=0.4%, G=0.4%, and B=0.4%, and others with R=0%, B=0%, and G=0%. In Lab mode, there are values ​​with L=0, a=1, and b=-4 (which is theoretically impossible).
++ As soon as we want to act on something, we see (of course, with the help of the hitogram, the soft proofing, and of course, the examination of the image), many artifacts appear:
+  - In the deep shadows, numerous 'green dots' appear.
+  - The area near sunset is dotted with artifacts of several types.
+  - The transition zones in the sky, between the reddish clouds and the blue, show very poor transitions.
+
 **Learning objective:**
 
 The user will understand the ‘Game changer’ approach discussed in this tutorial:
@@ -151,6 +160,10 @@ The user will understand the ‘Game changer’ approach discussed in this tutor
 + The combined use of Selective Editing > Generalized Hyperbolic Stretch (GHS) & Michaelis-Menten (MM) and 2 Exluding Spots.
 + The use of Color Appearance & Lighting and the possible corrections of the 3 channels R, G, B.
 
+I will present two possible processing methods using two pp3 files. I will describe the first; the reader can discover the second for themselves. The essential difference lies in the 'Color Propagation' and 'Raw Black Points' settings.
+
+I've separated the tools as they appear in the interface, but it would be more accurate to refer to them as Raw processes. From my perspective, tools like 'Color Propagation', which is activated immediately after assigning the 'Working Profile', and 'White balance Temperature correlation', which is activated immediately after demosaicing, fall under the 'Raw' category.
+
 #### Raw tools
 
 ##### Demosaicing
@@ -158,6 +171,8 @@ The user will understand the ‘Game changer’ approach discussed in this tutor
 + False color suppresion steps: setting it to 4 slightly reduces artifacts
 
 ##### Raw Black points
+The 'Dehaze' system designed by Ingo Weirich suggests here, due to the difference between the values ​​R=0, G=0, B=0 and the very low values ​​R=0.4%, G=0.4%, B=0.4%, that it's a haze problem... I think that's not the case. We're dealing with data corruption here... just like what happens in highlights.
+
 + First, try the "Dehaze" checkbox; you'll see the sliders move to the right, the histogram expands, especially to the left (the shadow areas), and the image is brighter and more colorful: Red:+1, Green 1:+7, Green 2:+7, Blue:+2.
 + Second, increase the settings (by unchecking the 'Dehaze' box) : Red:+3, Green 1:+14, Green 2:+8, Blue:+5. You will again notice a more vivid image, a better utilized histogram, and a reduction in artifacts.
 
@@ -204,6 +219,8 @@ I chose "Camera" which seems to give a better result. During the Raw pre-process
 
 #### Color Propagation
 + Observing the reaction of the modules mentioned in the recommendations, the contribution of "Color Propagation" is small on the 'numbers', but not negligible. On the other hand, and this is its initial role, it allows the recovery of 'lost' data in highlight, but also in very low light.
++ If you try another tool in 'Highlight reconstruction', such as 'Inpaint opposed' you will see that it has no effect on very low lights.
++ The first example is without the 'Blur' slider in 'Color Propagation' being activated. This slider allows you to adjust the transitions between 'recovered' (and therefore lost) areas and healthy areas. This also led to a change in the 'Raw Black Points' setting.
   - [Recommandations](/tutorials/#recommendations)
 
 #### White Balance - Temperature correlation
