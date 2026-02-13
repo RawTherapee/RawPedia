@@ -273,3 +273,41 @@ I chose "Camera" which seems to give a better result. During the Raw pre-process
 + Note the preferred use of the two 'hyperbolic' parameters - Output scale (S) and Knee strength (K). Exposure (Ev) is considered only as an adjustment.
 + Note the use of checkboxes (uncheck them all first). Start with 'Subtract linear black'; you'll see the histogram compress towards the left, even with the work done beforehand in the Raw section. Then activate 'Linear dynamic range'; the histogram will be compressed by roughly 1.18 (see the values ​​displayed below). The asymptote for highlights will be better defined, and contrast and saturation will increase.
 + The other settings - which are also important - are part of the chain of mastering gamut and artifacts.
+
+##### The second - Equalization & Pre-Tone Mapping - Generalized Hyperbolic Stretch (GHS)
+<figure>
+<img src="ghs-plus-1.jpg" title="ghs-plus-1.jpg" width="600" />
+<figcaption>GHS lightens the shadows</figcaption>
+</figure>
+
++ Choose a Normal RT-Spot 'Rectangle', with a small Scope value, so as not to interfere with the sky.Of course, DeltaE and transitions apply; the limits of the RT-spot are of little importance.
++ Due to RT issues with the Preview, set the image to 'fit to screen', and enable 'Auto Black point & White point'. Then disable it.
++ Activate 'Auto Symmetry point (SP)'.
++ Adjust 'Stretch factor (D)' and 'Local intensity (b)' to achieve the desired effect.
+
+##### The third - Color & Light - Excluding Spot
+<figure>
+<img src="color-light-excl-1.jpg" title="color-light-excl-1.jpg" width="600" />
+<figcaption>Excluding spot - remove artefacts - changes color</figcaption>
+</figure>
+
++ This Spot Exclusion will undo all changes and allow you to add more. It will remove (at least partially) some of the artifacts and amplify the sky color to make it more dramatic.
++ Note the use of 'Color correction grid'
+
+
+##### The fourth - to reduce artifacts
+<figure>
+<img src="exclu-1.jpg" title="exclu-1.jpg" width="400" />
+<figcaption>Excluding spot - remove artefacts</figcaption>
+</figure>
+
+##### The fifth Equalization & Pre-Tone Mapping - Standard - (GHS) increases the dramatic aspect of the sky
+<figure>
+<img src="ghs-moins-1.jpg" title="ghs-moins-1.jpg" width="600" />
+<figcaption>GHS - Inverse mode - increases the dramatic aspect of the sky</figcaption>
+</figure>
+
++ To enhance the dramatic effect of the sky, I used GHS's 'Inverse' mode, which allows it to either reverse the image or reduce contrast and highlights. That's what was done here.
++ Note the need to switch the complexity mode to 'Standard' to have the 'Inverse' mode available.
++ Activate 'Auto Symmetry point (SP)'.
++ Adjust 'Stretch factor (D)' and 'Local intensity (b)' to achieve the desired effect.
