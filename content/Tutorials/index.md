@@ -132,6 +132,9 @@ Beyond the aesthetic aspect of the result, there is above all a technical challe
 + [Raw Image](https://discuss.pixls.us/t/show-your-best-shadow-highlight-techniques/55731)
 + This file is licensed [Creative Commons, By-Attribution, Share-Alike](https://creativecommons.org/licenses/by-sa/4.0/).
 
+- pp3 file 1: [First example with Color Propagation](1q8a5461.cr3-jd-std.pp3 "first-cp.pp3")
+- pp3 file 2: [Second example with Color Propagation and blur](1q8a5461.cr3-jd-blur.pp3 "second-cp-blur.pp3")
+
 **Image : neutral**
 + Here is a screenshot of the image in 'neutral' mode with 'Lockable Color Pickers'. You can immediately see that the photographer has underexposed the overall frame to avoid overexposing the sunset sky. Despite this choice, potential artifacts are already appearing in the area of ​​the sky near the power pole. See also the histogram in 'linear' mode.
 <figure>
@@ -142,8 +145,8 @@ Beyond the aesthetic aspect of the result, there is above all a technical challe
 If you examine:
 + The Raw histogram, it's not 'abnormal' except for very few values ​​outside the shadows. The blue channel is dominant.
 + The Metadata: the camera used is a recent 24x36 camera - Canon EOS R6 with a good quality 50mm f/1.8 lens, open to 2.8. ISO = 100. Shooting in 'auto' mode.
-+ The data is in the 'black' part of the image. In short, there are two groups: values ​​with R=0.4%, G=0.4%, and B=0.4%, and others with R=0%, B=0%, and G=0%. In Lab mode, there are values ​​with L=0, a=1, and b=-4 (which is theoretically impossible).
-+ As soon as we want to act on something, we see (of course, with the help of the hitogram, the soft proofing, and of course, the examination of the image), many artifacts appear:
++ The data is in the 'black' part of the image: in short, there are two groups: values ​​with R=0.4%, G=0.4%, and B=0.4%, and others with R=0%, B=0%, and G=0%. In Lab mode, there are values ​​with L=0, a=1, and b=-4 (which is theoretically impossible).
++ As soon as we want to act on something, we see (of course, with the help of the histogram, the soft proofing, and of course, the examination of the image), many artifacts appear:
   - In the deep shadows, numerous 'green dots' appear.
   - The area near sunset is dotted with artifacts of several types.
   - The transition zones in the sky, between the reddish clouds and the blue, show very poor transitions.
