@@ -166,14 +166,14 @@ The user will understand the ‘Game changer’ approach discussed in this tutor
 + White Balance optimization - Temperature correlation.
 + The role of Graduated Filter.
 + The importance and settings of Abstract Profile - with a reasoned use of primaries
-+ The combined use of Selective Editing > Generalized Hyperbolic Stretch (GHS) & Michaelis-Menten (MM) and 2 Exluding Spots.
++ The combined use of Selective Editing > Generalized Hyperbolic Stretch (GHS) & Michaelis-Menten (MM) and 2 Excluding Spots.
 + The use of Color Appearance & Lighting and the possible corrections of the 3 channels R, G, B.
 
 I will present two possible processing methods using two pp3 files. I will describe the first; the reader can discover the second for themselves. The essential difference lies in the 'Color Propagation' and 'Raw Black Points' settings.
 
 I've separated the tools as they appear in the interface, but it would be more accurate to refer to them as Raw processes. From my perspective, tools like 'Color Propagation', which is activated immediately after assigning the 'Working Profile', and 'White balance Temperature correlation', which is activated immediately after demosaicing, fall under the 'Raw' category.
 
-Do not attempt to reduce noise, whether using in 'Cature Sharpening', 'Pressharpening denoise', 'Postsharpening denoise', or 'Noise reduction' (Detail tab); you will only degrade the image. The only option, if desired, is to add an additional RT-Spot to the sky (or part of the sky) using 'Selective Editing > Blur/Grain & Denoise > Denoise'.
+Do not attempt to reduce noise, whether using in 'Capture Sharpening', 'Presharpening denoise', 'Postsharpening denoise', or 'Noise reduction' (Detail tab); you will only degrade the image. The only option, if desired, is to add an additional RT-Spot to the sky (or part of the sky) using 'Selective Editing > Blur/Grain & Denoise > Denoise'.
 
 #### Raw tools
 
@@ -215,7 +215,7 @@ Below, you can see the influence of Raw Black Point on the image at the end of t
 </figure>
 
 ##### Preprocess White Balance
-I chose "Camera" which seems to give a better result. During the Raw pre-processing, when nothing is determined, it's necessary to choose a temperature to quantify the data. This is either the 'Camera' value present in the Exif, or a rough calculation done with 'Automatic RG Grey'.
+I chose "Camera" which seems to give a better result. During the Raw pre-processing, when nothing is determined, it's necessary to choose a temperature to quantify the data. This is either the 'Camera' value present in the Exif, or a rough calculation done with 'Automatic RGB Grey'.
 <figure>
 <img src="prepro-wb-1.jpg" title=prepro-wb1.jpg" width="300" />
 <figcaption>Preprocess WB</figcaption>
@@ -242,7 +242,7 @@ I chose "Camera" which seems to give a better result. During the Raw pre-process
 <figcaption>Preferences - Color Management</figcaption>
 </figure>
 
-+ Once this choice is made, you can select 'Close to full CIE diagram', because clearly with this sky we are beyond the reflected colors and the default selection 'Medium sampling - near Pointers's Gamut.
++ Once this choice is made, you can select 'Close to full CIE diagram', because clearly with this sky we are beyond the reflected colors and the default selection 'Medium sampling - near Pointers's Gamut'.
 + You can also check 'Remove 2 pass algorithms' which seems to give a slightly more 'dramatic' result (but that's a matter of perspective). 
 + You could also, but it doesn't seem necessary here, use 'Green refinement' which can in some cases compensate for the algorithm's shortcomings.
 <figure>
@@ -269,7 +269,7 @@ I chose "Camera" which seems to give a better result. During the Raw pre-process
 <figcaption>Michaelis-Menten Global mode</figcaption>
 </figure>
 
-+ I used this module (MM) rather than (GHS), not because it's simpler, but because, unlike GHS, it doesn't rely on an algorithm to calculate Linear White Point, and especially Linear Black point  in this case. When I designed GHS, I assumed that a reduced value of 0.001 was negligible; however, it isn't here, in this very specific image, and necessitates a manual correction (in negative) of the Black point. A smaller value, for example 0.000001, should have been used, but that would break compatibility.
++ I used this module (MM) rather than (GHS), not because it's simpler, but because, unlike GHS, it doesn't rely on an algorithm to calculate 'Linear White Point', and especially 'Linear Black point' in this case. When I designed GHS, I assumed that a reduced value of 0.001 was negligible; however, it isn't here, in this very specific image, and necessitates a manual correction (in negative) of the Black point. A smaller value, for example 0.000001, should have been used, but that would break compatibility.
 + Note the preferred use of the two 'hyperbolic' parameters - Output scale (S) and Knee strength (K). Exposure (Ev) is considered only as an adjustment.
 + Note the use of checkboxes (uncheck them all first). Start with 'Subtract linear black'; you'll see the histogram compress towards the left, even with the work done beforehand in the Raw section. Then activate 'Linear dynamic range'; the histogram will be compressed by roughly 1.18 (see the values ​​displayed below). The asymptote for highlights will be better defined, and contrast and saturation will increase.
 + The other settings - which are also important - are part of the chain of mastering gamut and artifacts.
@@ -280,7 +280,7 @@ I chose "Camera" which seems to give a better result. During the Raw pre-process
 <figcaption>GHS lightens the shadows</figcaption>
 </figure>
 
-+ Choose a Normal RT-Spot 'Rectangle', with a small Scope value, so as not to interfere with the sky.Of course, DeltaE and transitions apply; the limits of the RT-spot are of little importance.
++ Choose a Normal RT-Spot 'Rectangle', with a small Scope value, so as not to interfere with the sky. Of course, DeltaE and transitions apply; the limits of the RT-spot are of little importance.
 + Due to RT issues with the Preview, set the image to 'fit to screen', and enable 'Auto Black point & White point'. Then disable it.
 + Activate 'Auto Symmetry point (SP)'.
 + Adjust 'Stretch factor (D)' and 'Local intensity (b)' to achieve the desired effect.
@@ -332,7 +332,7 @@ I'll proceed in two steps. First, adjust the tones and check for any potential e
 
 + Note the gamma and slope settings (which is a seamless function) that connect a straight line with a slope value of 'Slope' to a parabolic curve with a 'Gamma' value. You are manipulating the balance of shadows and highlights.
 + The other settings are fairly intuitive. Note the importance of 'Attenuation threshold' which acts asymptotically on highlights.
-+ For Contrast Enhancement, note the very high value of both Contrast profile (5), which leads to modifying the contrast from 2x2 pixel groups up to 1014x1024 (if the size of your Preview allows it), and the curve which is almost at its maximum. The system uses only wavelets, and only for signal processing. 'Normally' as it is designed, it should not (or very little) generate artifacts. The goal here is to make the whole image more dramatic (it is certain that for a portrait, or traditional images, the basic settings are sufficient).
++ For Contrast Enhancement, note the very high value of both Contrast profile (5), which leads to modifying the contrast from 2x2 pixel groups up to 1024x1024 (if the size of your Preview allows it), and the curve which is almost at its maximum. The system uses only wavelets, and only for signal processing. 'Normally' as it is designed, it should not (or very little) generate artifacts. The goal here is to make the whole image more dramatic (it is certain that for a portrait, or traditional images, the basic settings are sufficient).
 
 ##### Primaries & Illuminants
 The objective here is twofold:
