@@ -311,3 +311,90 @@ I chose "Camera" which seems to give a better result. During the Raw pre-process
 + Note the need to switch the complexity mode to 'Standard' to have the 'Inverse' mode available.
 + Activate 'Auto Symmetry point (SP)'.
 + Adjust 'Stretch factor (D)' and 'Local intensity (b)' to achieve the desired effect.
+
+#### Graduated Filter
+<figure>
+<img src="grad-fil-1.jpg" title="grad-fil-1.jpg" width="600" />
+<figcaption>Graduated Filter - increases the dramatic aspect of the sky</figcaption>
+</figure>
+
++ Nothing new here, I'm using a tool that's been around in RT for a long time. I could have used the same tool found in Selective Editing associated with each tool, but except for 'fit to screen', it's sensitive to the Preview's dimensions.
++ I positioned it to increase the contrast (more dramatic effect) between the clouds and the rest of the image.
+
+#### Abstract Profile
+I'll proceed in two steps. First, adjust the tones and check for any potential excesses in the histogram and gamut. Second, have some fun with the 'Primaries & Illuminants' module.
+
+##### TRC Adjust the tones - Contrast Enhancement
+<figure>
+<img src="ap-trc-contrast-1.jpg" title="ap-trc-contrast-1.jpg" width="600" />
+<figcaption>Abstract Profiles - TRC and Contrast Enhancement</figcaption>
+</figure>
+
++ Note the gamma and slope settings (which is a seamless function) that connect a straight line with a slope value of 'Slope' to a parabolic curve with a 'Gamma' value. You are manipulating the balance of shadows and highlights.
++ The other settings are fairly intuitive. Note the importance of 'Attenuation threshold' which acts asymptotically on highlights.
++ For Contrast Enhancement, note the very high value of both Contrast profile (5), which leads to modifying the contrast from 2x2 pixel groups up to 1014x1024 (if the size of your Preview allows it), and the curve which is almost at its maximum. The system uses only wavelets, and only for signal processing. 'Normally' as it is designed, it should not (or very little) generate artifacts. The goal here is to make the whole image more dramatic (it is certain that for a portrait, or traditional images, the basic settings are sufficient).
+
+##### Primaries & Illuminants
+The objective here is twofold:
++ Accentuate the dramatic aspect of the image by strongly increasing the colors in the reds and yellows.
++ To show that primaries can also be used in RT (this was initially one of the goals of Abstract profile, to allow color effects).
+<figure>
+<img src="ap-prim-1.jpg" title="ap-prim-1.jpg" width="300" />
+<figcaption>Abstract Profiles - Primaries & Illuminants</figcaption>
+</figure>
+
++ Note that I used polar coordinates to make this modification of the primaries. I could have done it directly with the CIExy diagram, or in linear mode.
++ Note that if instead of increasing the saturation, I had reduced it, we would have gone outside the CIExy diagram, hence the generation of imaginary colors.
++ Note that I've changed the 'White point' of the internal ICC profile to D41. When you change it, you change the dominant color. The primary rotation is done from this 'new' White point.
+
+#### Color Appearance & Lighting
+I would like to remind you that this concept is one of the most advanced methods for color management. It is a Color Appearance Model, based on the work of researchers from around the world; its first version (in the form of an Excel spreadsheet) dates back to 1997. Its current name is CIECAM16 (published in 2020).
+
++ It takes into account (I'm simplifying drastically):
+  - The concepts of 'scene' (source) and 'viewing' (display)
+  - The separation into 3 processes, with image processing in the middle.
+  - The shooting conditions (e.g., Absolute luminance), viewing conditions (the image does not look the same in a dark or bright environment...)
+  - Numerous physiological aspects such as simultaneous contrast, etc.
+
+In this tutorial, I will present it briefly in 2 parts: the main settings, and those dedicated to modifying each R, G, B channel to finely retouch colors or simulate films.
+
+##### CIECAM - main settings
+<figure>
+<img src="ciecam-scene-images-1.jpg" title="ciecam-scene-images-1.jpg" width="300" />
+<figcaption>CIECAM Scene & Image Adjustments</figcaption>
+</figure>
+
++ I chose not to adjust the automatic settings (Chromatic Adaptation Scene, Absolute luminance, Mean Luminance (Yb%)).
++ I chose 'Lightness + Chroma' and modified the values ​​as shown in the attached image.
+
+<figure>
+<img src="ciecam-curves-viewing-1.jpg" title="ciecam-curves-viewing-1.jpg" width="300" />
+<figcaption>CIECAM Curves & Viewing Conditions</figcaption>
+</figure>
+
++ I chose not to adjust the automatic settings (Chromatic Adaptation Viewing, Absolute luminance, Mean Luminance (Yb%), Surround).
+
+##### CIECAM - Red Green Blue
++  You can modify each R, G, B channel to finely retouch colors or simulate films:
+  - Rotate each color by degrees.
+  - Change the saturation(s) in the sense of a CAM (Color Appearance Model)
+  - Change the brightness with a curve that allows you to adapt the contrast and brightness to each situation.
+
++ As a reminder, in CIECAM there are a total of 9 variables, 6 of which are accessible to the user in RT: Lightness (J), Brightness (Q), Saturation (s), Chroma (C), Colorlness (M), and Hue rotation (h). They are interdependent.
+
+<figure>
+<img src="red-green-blue-1.jpg" title="red-green-blue-1.jpg" width="300" />
+<figcaption>CIECAM Red Green Blue</figcaption>
+</figure>
+
++ For this challenging image, I made a point of moderating the settings to avoid artifacts.
+
+#### Appearance of the result at the end of treatment
++ Of course, nothing is perfect, and there remain small artifacts only visible during softproofing.
++ I wanted to make the image as dramatic as possible, perhaps even going too far. But let's remember the objectives; this is first and foremost an educational approach.
+
+<figure>
+<img src="final-1.jpg" title="final-1.jpg" width="800" />
+<figcaption>Game Changer - Final Image</figcaption>
+</figure>
+
