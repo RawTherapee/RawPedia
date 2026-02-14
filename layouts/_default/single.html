@@ -2,7 +2,7 @@
 {{ define "main" }}
 {{ $dateFormat := default "Mon Jan 2, 2006" (index .Site.Params "date_format") }}
 
-<div class="row page justify-content-center mt-5">
+<div class="row page justify-content-center mt-3 mt-lg-5">
   <article class="{{ .Title | urlize }}-page col-lg-8">
     <h1 class="title">
       {{ .Title | markdownify }}
