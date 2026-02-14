@@ -57,7 +57,10 @@ defaultContentLanguage = 'en'
 
 [markup]
   [markup.highlight]
-    style =  'algol_nu'
+    # style =  'algol_nu'
+    style =  'catppuccin-latte'
+    # style =  'friendly'
+    # style =  'monokailight'
   [markup.tableOfContents]
     endLevel = 5
     ordered = false
