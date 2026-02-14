@@ -32,11 +32,20 @@
 }
 
 
+
 /* IMPORT BOOTSTRAP HERE */
 /* So set any bootstrap variables _before_ here */
 @import 'bootstrap';
 
 /* Our custom SASS imports */
+
+/* Give room for mobile users to touch TOC entries */
+@include media-breakpoint-down(lg) {
+  #TableOfContents a {
+    display: inline-block;
+    padding: 0.25rem 0;
+  }
+}
 
 
 /* --------------------------------------- */
