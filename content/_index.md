@@ -19,7 +19,7 @@ title="08_rt57_mushroom_blades_rawpedia.png" width="" />
 <!-- <figcaption>08_rt57_mushroom_blades_rawpedia.png</figcaption> -->
 </figure>
 
-Welcome to **RawTherapee's** documentation!
+Welcome to **[RawTherapee](https://rawtherapee.com)'s** documentation!
 
 If you're a new user, don't miss the [Getting Started](getting_started) page to quickly learn your way
 around this awesome raw image processing program.
