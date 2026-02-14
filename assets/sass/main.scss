@@ -44,3 +44,10 @@
 /* --------------------------------------- */
 p { font-size: 18px; }
 img { max-width: 100%; }
+
+
+/* Code block padding */
+div.highlight pre {
+  padding: 0.5rem 0.5rem;
+}
+
