@@ -107,19 +107,28 @@ Apart from tools that have been around for many years, but are not always well k
 ## The tutorials
 
 ### Game Changer - How to Process a Sunset
-To do
+This first tutorial aims to explain the concept of a ‘Game changer’ here applied to a sunset.
 
-### Game Changer - Using LED's image
-To do
+In this tutorial, we will see how to use:
++ Generalized Hyperbolic Stretch (GHS) in 2 modes: RGB Standard & RGB Luminance.
++ Michaelis-Menten (MM).
++ Abstract Profile (AP).
++ Color Appearance & Lighting.
 
-### Game Changer - Noisy Image
-To do
+Of course, other tools are necessary; we will see them later.
 
-### Game Changer - A complete process on a user Rocks image
-To do
+Image selection:
+Image n°5 IMGP2426.DNG from the Rawtherapee Processing Challenge feedback (begin 2024)
 
-### Game Changer - Using harvest mouse
-To do
+[Raw Image](https://drive.google.com/file/d/17R3iBq08s71DuDRiv9T6TzlJVsxqBISo/view)
+
+Raw file (Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License)
+
+This image seems innocuous at first glance, a typical sunset. The image is generally underexposed, and the sun doesn’t appear overexposed.
+
+- pp3 file 1: [First example with Michaelis-Menten](i2426-mm.pp3 "i2426-mm.pp3")
+- pp3 file 2: [Second example with Generalized Hyperbolic Strech - RGB Standard](i2426-ghs-std.pp3 "i2426-ghs-std.pp3")
+- pp3 file 3: [Third example with Generalized Hyperbolic Strech - RGB Luminance](i2426-ghs-lum.pp3 "i2426-ghs-lum.pp3")
 
 ### Game Changer - Best Shadow & Higlight techniques 
 
@@ -133,7 +142,6 @@ Beyond the aesthetic aspect of the result, there is above all a technical challe
 I deliberately chose extreme settings to show that even with a 'degraded' starting image it is possible to obtain a more than acceptable result, for example the "Contrast Enhancement" values ​​are huge.
 
 **Image selection**
-
 + [Raw Image](https://discuss.pixls.us/t/show-your-best-shadow-highlight-techniques/55731)
 + This file is licensed [Creative Commons, By-Attribution, Share-Alike](https://creativecommons.org/licenses/by-sa/4.0/).
 
