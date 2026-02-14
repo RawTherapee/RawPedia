@@ -43,6 +43,8 @@ was done to reduce the number of files needed to be stored in the
 
 ## Highlight Reconstruction
 
+And also for 'Color Propagation' - Lowlight Reconstruction
+
 Use *Highlight Reconstruction* (HR) to try to restore overexposed
 highlights in raw files. It attempts to restore clipped (blown-out)
 regions in the raw image relying on the fact that the three channels in
@@ -76,6 +78,10 @@ Four different methods of highlight reconstruction are available:
     elements surrounding the blown highlights, or the colors can bleed
     into undesirable patterns. It is also computationally intensive and
     is therefore slower than the other methods.
+
+    Note that 'Color Propagation' also allows data to be restored in very low light, when the values ​​in the blacks are around zero.
+
+    In both cases, the 'Blur' slider allows for a smoother transition between restored areas and those that are unchanged.
 
     Works well even with very high "*Highlight Compression*" values
     (under 500). A tool to avoid when using "Game Changer"[Game Changer](/game_changer)
