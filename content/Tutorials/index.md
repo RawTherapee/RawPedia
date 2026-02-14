@@ -121,9 +121,8 @@ To do
 ### Game Changer - Using harvest mouse
 To do
 
-### Game Changer 
-
 ### Game Changer - Best Shadow & Higlight techniques 
+
 In this tutorial, we will see how to use various tools to avoid or remove artifacts. Propose one solution among others to simultaneously brighten shadows, control highlights, and create a dramatic effect.
 The image is difficult, and the question is: what should be done with it? Emphasize the dramatic aspect? Lighten or darken the shadows? There are as many answers as there are people.
 
@@ -334,6 +333,19 @@ I'll proceed in two steps. First, adjust the tones and check for any potential e
 + The other settings are fairly intuitive. Note the importance of 'Attenuation threshold' which acts asymptotically on highlights.
 + For Contrast Enhancement, note the very high value of both Contrast profile (5), which leads to modifying the contrast from 2x2 pixel groups up to 1024x1024 (if the size of your Preview allows it), and the curve which is almost at its maximum. The system uses only wavelets, and only for signal processing. 'Normally' as it is designed, it should not (or very little) generate artifacts. The goal here is to make the whole image more dramatic (it is certain that for a portrait, or traditional images, the basic settings are sufficient).
 
+###### RGB Max - informations
+Provides information on out-of-limit RGB values. Values greater than 1 clearly indicate that we are out of gamut whereas for values less than 1, we cannot say whether the image is within gamut or not because it depends, for example, on the luminance. This check is performed at the end of the Abstract Profile and takes into account all parameters. The ‘Attenuation threshold’ slider can be used to limit the RGB values.
+
+Changes made to 'Color Appearance and Lighting', 'Final Gain and Gamut Compression' are not taken into account. 
+
+###### Final RGB Max & Final Saturation Max - informations
+Provides information on out-of-limit RGB values and RGB saturation. Values greater than 1 for ‘Final RGB Max’ and ‘Final Saturation Max’ clearly indicate that we are out of gamut whereas for values less than 1, we cannot say whether the image is within gamut or not because it depends, for example, on the luminance. This check is performed at the end of the processing pipeline and takes into account all parameters. Changes made in Color Appearance & Lighting and in Final Gain & Gamut Compression are taken into account.
+
+Adjusting the Gain (Ev) and Gamut Compression (Target Gamut and Power) settings will allow you to see the impact of these adjustments. You should also observe the histogram, which takes into account the output profile therefore the gamma. This data, which is directly related to the RGB values ​​and Saturation and is in the Working Profile, is in linear mode.
+
+The data is only displayed if Target Gamut is enabled, or if Gain (Ev) is not equal to 0.
+
+
 ##### Primaries & Illuminants
 The objective here is twofold:
 + Accentuate the dramatic aspect of the image by strongly increasing the colors in the reds and yellows.
@@ -351,12 +363,14 @@ The objective here is twofold:
 I would like to remind you that this concept is one of the most advanced methods for color management. It is a Color Appearance Model, based on the work of researchers from around the world; its first version (in the form of an Excel spreadsheet) dates back to 1997. Its current name is CIECAM16 (published in 2020).
 
 + It takes into account (I'm simplifying drastically):
-  - The concepts of 'scene' (source) and 'viewing' (display)
+  - The concepts of 'scene' (source) and 'viewing' (display).
   - The separation into 3 processes, with image processing in the middle.
-  - The shooting conditions (e.g., Absolute luminance), viewing conditions (the image does not look the same in a dark or bright environment...)
+  - The shooting conditions (e.g., Absolute luminance), viewing conditions (the image does not look the same in a dark or bright environment...).
   - Numerous physiological aspects such as simultaneous contrast, etc.
 
-In this tutorial, I will present it briefly in 2 parts: the main settings, and those dedicated to modifying each R, G, B channel to finely retouch colors or simulate films.
+In this tutorial, I will present it briefly in 2 parts: 
++ The main settings.
++ Those dedicated to modifying each R, G, B channel to finely retouch colors or simulate films.
 
 ##### CIECAM - main settings
 <figure>
@@ -364,7 +378,7 @@ In this tutorial, I will present it briefly in 2 parts: the main settings, and t
 <figcaption>CIECAM Scene & Image Adjustments</figcaption>
 </figure>
 
-+ I chose not to adjust the automatic settings (Chromatic Adaptation Scene, Absolute luminance, Mean Luminance (Yb%)).
++ I chose not to adjust the automatic settings (Chromatic Adaptation Scene, Absolute luminance, Mean Luminance (Yb%), Surround).
 + I chose 'Lightness + Chroma' and modified the values ​​as shown in the attached image.
 
 <figure>
@@ -372,15 +386,15 @@ In this tutorial, I will present it briefly in 2 parts: the main settings, and t
 <figcaption>CIECAM Curves & Viewing Conditions</figcaption>
 </figure>
 
-+ I chose not to adjust the automatic settings (Chromatic Adaptation Viewing, Absolute luminance, Mean Luminance (Yb%), Surround).
++ I chose not to adjust the automatic settings (Chromatic Adaptation Viewing, Absolute luminance, Mean Luminance (Yb%), Surround). But this is where you can (must) adapt the image you see to the Viewing conditions (yours).
 
 ##### CIECAM - Red Green Blue
 +  You can modify each R, G, B channel to finely retouch colors or simulate films:
   - Rotate each color by degrees.
-  - Change the saturation(s) in the sense of a CAM (Color Appearance Model)
-  - Change the brightness with a curve that allows you to adapt the contrast and brightness to each situation.
+  - Change the saturation (s) in the sense of a CAM (Color Appearance Model).
+  - Change the brightness (Q) with a curve that allows you to adapt the contrast and brightness to each situation.
 
-+ As a reminder, in CIECAM there are a total of 9 variables, 6 of which are accessible to the user in RT: Lightness (J), Brightness (Q), Saturation (s), Chroma (C), Colorlness (M), and Hue rotation (h). They are interdependent.
++ As a reminder, in CIECAM there are a total of 9 variables, 6 of which are accessible to the user in RT: Lightness (J), Brightness (Q), Saturation (s), Chroma (C), Colorlness (M), and Hue rotation (h). They are interdependent. For example Chroma = saturation * saturation * brightness.
 
 <figure>
 <img src="red-green-blue-1.jpg" title="red-green-blue-1.jpg" width="300" />
