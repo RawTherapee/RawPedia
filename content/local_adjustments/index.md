@@ -31,10 +31,14 @@ rectangle spot can also be used in full-image mode which automatically
 sets the control points outside the image preview area. Future
 developments will provide enhanced shape manipulation.
 
-
-![](ellipse.jpg)
-![](rectangle.jpg)
-
+<figure>
+<img src="ellipse.jpg" title="ellipse.jpg" width="200" />
+<figcaption>Ellipse</figcaption>
+</figure>
+<figure>
+<img src="rectangle.jpg" title="rectangle.jpg" width="200" />
+<figcaption>Rectangle</figcaption>
+</figure>
 
 The RT-spot algorithm uses shape detection based on ΔE (the change in
 the visual perception of two given colors) to select the parts of the
@@ -4490,7 +4494,7 @@ The concept is completely similar to that of GHS; I've just simplified the inter
 **The label at the bottom of the page**
 Allows you to see the effect of the two checkboxes:
 * Subtract black: reduces the value of the linear black point to almost zero by subtracting the indicated value.
-* White point: after subtracting the black point, the RGB values ​​are divided by the ‘Linear dynamic range’ (i.e. the displayed white point value minus the new black point).
+* White point: after subtracting the black point, the RGB values ​​are divided by the ‘Linear dynamic range’ (i.e. the displayed white point value minus the old black point).
 
 Reducing the black point to almost zero and taking into account the linear dynamic range as described allows the algorithm to produce better contrast and better consideration of the real gamut).
 
