@@ -507,8 +507,26 @@ As in GHS, these two settings, which I wanted to be simpler, are essential for t
 In addition:
 + Attenuation threshold: uses an exponential function to reduce highlights likely to cause gamut overshoot.
 
+#### A preview at the end of Game Changer
+To give the user a glimpse of the possibilities of each of these 'pre-tone mappers', here is the result at the end of the Game Changer process. We will then see how to process Abstract Profile and Color Appearance & Lighting.
 
+##### Sunset GHS - RGB Luminance
+<figure>
+<img src="sunset-ghs-lum.jpg" title="sunset-ghs-lum.jpg" width="600" />
+<figcaption>Sunset GHS RGB Luminance</figcaption>
+</figure>
 
+##### Sunset GHS - RGB Standard
+<figure>
+<img src="sunset-ghs-std.jpg" title="sunset-ghs-std.jpg" width="600" />
+<figcaption>Sunset GHS RGB Standard</figcaption>
+</figure>
+
+##### Sunset MM
+<figure>
+<img src="sunset-mm.jpg" title="sunset-mm.jpg" width="600" />
+<figcaption>Sunset MM</figcaption>
+</figure>
 
 
 
