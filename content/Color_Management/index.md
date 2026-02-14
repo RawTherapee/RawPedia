@@ -845,7 +845,7 @@ Raw file: (Brian Poindexter - Creative Common Attribution-share Alike
 #### Original image (Rawtherapee - default)
 
 <figure>
-<img src="/images/flowerT.jpg" title="flowerT.jpg" width="600" />
+<img src="flowert.jpg" title="flowert.jpg" width="600" />
 <figcaption>flowerT.jpg</figcaption>
 </figure>
 
