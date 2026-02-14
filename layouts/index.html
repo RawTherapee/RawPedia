@@ -1,7 +1,18 @@
 {{ define "main" }}
-  <!-- <h1>{{ .Title }}</h1> -->
-  {{ .Content }}
 
+
+<div class='row justify-content-center'>
+  <div class='col-lg-8'>
+    <h1 class='mt-4'>RawPedia</h1>
+    <h2>{{ .Title }}</h2>
+
+    {{ .Content }}
+  </div>
+</div>
+
+
+<div class='row justify-content-center'>
+  <div class='col-lg-8'>
 
   {{ $category := "General Information" }}
   <a href='#{{ $category | urlize }}'>
@@ -282,4 +293,6 @@
       </ul>
     {{ end }}
 
+  </div>
+</div>
 {{ end }}
