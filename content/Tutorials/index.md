@@ -38,6 +38,7 @@ This concept isn't about forcing you to change your image processing methods, bu
   - This principle is included in 'Selective Editing > Equalization & Pre-tone mapping': The first RT-spot used must always be (if of course there is a need) a Pre-tone mapper in Global mode.
 + Towards the end of the process, it is possible to adjust the tones and contrasts, assuming that the image at this stage has no major defects (with the exception of images taken with exotic illuminants such as LEDs, which may require the use of primaries). This method should allow visualization of the effects on the acceptable limits for the data and the gamut.
 + At the very end of the process, it allows the implementation of the concepts of 'Scene' (source) and Viewing (display): taking into account the conditions of shooting and final viewing, taking into account the physiological aspects, allowing each R, G, B channel to be retouched to better balance or modify the colors.
++ You may notice that throughout 'Game changer' (except for a few rare cases, where they are 'automatics' as in Capture Sharpening, or for a very specific use), I never use masks and layers, or Primaries. And it is unlikely that you will find these methods and tools anywhere other than in Rawtherapee (of course not all of them).
 
 Some current tools should be avoided – or at the very least, the user should be aware of the consequences of their choices:
 + Exposure compensation.
@@ -148,6 +149,7 @@ If you examine:
   - In the deep shadows, numerous 'green dots' appear.
   - The area near sunset is dotted with artifacts of several types.
   - The transition zones in the sky, between the reddish clouds and the blue, show very poor transitions.
++ It is not mentioned that the author has access to 'Dark frame' [Dark Frame](/dark-frame) or 'Flat field' [Flat field](/flat-field) which might have solved (perhaps) this problem. Nevertheless, this 'absence' is pedagogically interesting.
 
 **Learning objective:**
 
