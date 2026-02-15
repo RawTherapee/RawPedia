@@ -118,6 +118,10 @@ Beyond the aesthetic aspect of the result, there is above all a technical challe
 
 I deliberately chose extreme settings to show that even with a 'degraded' starting image it is possible to obtain a more than acceptable result, for example the "Contrast Enhancement" values ​​are huge.
 
+ [Recommandations](/tutorials/#recommendations)
+
+ [Specific tools used](/tutorials/#specific-tools-used)
+
 **Image selection**
 + [Raw Image](https://discuss.pixls.us/t/show-your-best-shadow-highlight-techniques/55731)
 + This file is licensed [Creative Commons, By-Attribution, Share-Alike](https://creativecommons.org/licenses/by-sa/4.0/).
@@ -421,7 +425,10 @@ This image seems innocuous at first glance, a typical sunset. The image is gener
 - pp3 file 1: [First example with Generalized Hyperbolic Strech - RGB Luminance](i2426-ghs-lum.pp3 "i2426-ghs-lum.pp3")
 - pp3 file 2: [Second example with Generalized Hyperbolic Strech - RGB Standard](i2426-ghs-std.pp3 "i2426-ghs-std.pp3")
 - pp3 file 3: [Third example with Michaelis-Menten](i2426-mm.pp3 "i2426-mm.pp3")
+ 
+ [Recommandations](/tutorials/#recommendations)
 
+ [Specific tools used](/tutorials/#specific-tools-used)
 
 **Learning objective**
 
@@ -460,6 +467,18 @@ Rather than attempting a single stretch, in the case of images with a high WP (3
 + In ‘Stretch Regularization & Midtones’, you ca set the value (LC) – the local contrast – to zero to avoid artifacts in the sun area. Local contrast can be addressed later in Abstract Profile.
 + To see the effects, instead of a single ‘Stretch factor (D)’ with high values, you can try constructing the stretch using two RT-spots. The first with lower (D) and (b) values. The second with values ​​adjusted to your preference. You’ll see that for this second RT-spot, the values ​​of (BP) will be close to zero, and those of (WP) very close to 1.0 (minor adjustments are possible). The image will be different, the sun less prominent.
 
+###### First Spot - GHS
+<figure>
+<img src="first-ghs-2.jpg" title="first-ghs-2.jpg" width="300" />
+<figcaption>GHS - first spot - Low Strech factor</figcaption>
+</figure>
+
+###### Second Spot - GHS
+<figure>
+<img src="second-ghs-2.jpg" title="second-ghs-2.jpg" width="300" />
+<figcaption>GHS - second spot</figcaption>
+</figure>
+
 ##### Inverse GHS
 This function, not available in Selective Editing’s ‘Basic’ complexity mode, allows you to undo previous actions on all (somewhat oddly) or part of the image. It works similarly to ‘negative space’.
 
@@ -467,6 +486,11 @@ The selection of the ‘WP’ and ‘BP’ is manual… Move closer to [0, 1] if
 In the case of the processed image, I created a second RT-spot in normal mode, in the form of a rectangle. Its purpose is to reduce the effect in the sky area without significantly affecting the sun. It resembles (somewhat) a Graduated Filter. The center was placed on a cloud, with the Scope set to 25. The center of the spot is positioned relatively far in the image. Of course, you can change the position of the RT-spot, Scope, and Transition in Selective Editing > Settings.
 
 Sliders like ‘Stretch factor (D)’ work in reverse. They reduce contrast, darkening the image.
+
+<figure>
+<img src="inv-ghs-2.jpg" title="inv-ghs-2.jpg" width="300" />
+<figcaption>GHS - Inverse</figcaption>
+</figure>
 
 ##### Six methods available - two recommended
 Six methods available (RGB Luminance, RGB Standard, Lightness & chromaticity (Lab),Luminance (HSL), Saturation (HSL), Hue (HSL)). Two are recommanded:
