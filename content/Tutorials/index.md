@@ -476,8 +476,8 @@ I won’t compare it to other tone mappers in RawTherapee or other software, usi
 ##### The advantage of doing multiple stretches
 Rather than attempting a single stretch, in the case of images with a high WP (3 to 5), which will require a high 'Stretch factor (D)', or where the user will have difficulty locating the area where action should be prioritized, it is better to perform two stretches. The first, with moderate values, will place the data in the interval [0-1], while the second will allow for better localization of the action.
 
-+ Note that GHS settings can cause data (depending on the GHS settings) to fall outside the [0, 1] range, both in linear and output data. Constantly monitor the histogram in both modes (working profile - linear and output profile - gamma) and make any necessary corrections.
-+ In ‘Stretch Regularization & Midtones’, you ca set the value (LC) – the local contrast – to zero to avoid artifacts in the sun area. Local contrast can be addressed later in Abstract Profile.
++ Note that GHS settings can cause data (depending on the GHS settings) to fall outside the [0, 1] range, both in linear and output data. Constantly monitor the histogram in both modes (working profile - linear and output profile - gamma) and make any necessary corrections. In reality, to give the GHS algorithm some leeway, I added 0.1 to the calculations. This means that if you open a second RT-Spot, you'll see the WP value as 1.1, not 1.
++ In ‘Stretch Regularization & Midtones’, you can set the value (LC) – the local contrast – to zero to avoid artifacts in the sun area. Local contrast can be addressed later in Abstract Profile.
 + To see the effects, instead of a single ‘Stretch factor (D)’ with high values, you can try constructing the stretch using two RT-spots. The first with lower (D) and (b) values. The second with values ​​adjusted to your preference. You’ll see that for this second RT-spot, the values ​​of (BP) will be close to zero, and those of (WP) very close to 1.0 (minor adjustments are possible). The image will be different, the sun less prominent.
 
 ###### First Spot - GHS
@@ -506,7 +506,7 @@ Sliders like ‘Stretch factor (D)’ work in reverse. They reduce contrast, dar
 </figure>
 
 ##### Six methods available - two recommended
-Six methods available (RGB Luminance, RGB Standard, Lightness & chromaticity (Lab),Luminance (HSL), Saturation (HSL), Hue (HSL)). Two are recommanded:
+Six methods available (RGB Luminance, RGB Standard, Lightness & chromaticity (Lab), Luminance (HSL), Saturation (HSL), Hue (HSL)). Two are recommanded:
 + RGB Luminance : the three channels R, G, B are used equally. To control the system, an equivalent luminance is calculated, attempting to take into account WP values ​​above 1.
 + RGB Standard (default) : the three channels R, G, B are used equally.
 
@@ -515,8 +515,8 @@ An example in RGB Luminance mode for the first RT-spot
 
 ##### LMS Matrix conversion
 Performs the entire GHS processing, including Matrix conversion either AgX or JzAzBz or Cat16. For JzAzBz and Cat16 you have the choice between a transformation in RGB mode or in XYZ mode (preferably).
-* To allow this matrix to be enabled or disabled, the 'Stretch factor (D)' must be between 0.001 and 0.002 and 'Auto Black point and White point' disabled.
-* You need to re-enable 'Auto Black point and White point' to recalculate the values ​​of 'BP', 'WP' and 'Symmetry point (SP)'.
+* To allow this matrix to be enabled or disabled, the 'Stretch factor (D)' must be between 0.001 and 0.002 and 'Auto Black point & White point' disabled.
+* You need to re-enable 'Auto Black point & White point' to recalculate the values ​​of 'BP', 'WP' and 'Symmetry point (SP)'.
 
 #### Using Michaelis-Menten (MM)
 This algorithm is much simpler than GHS. It often provides almost the correct settings on the first try. However, it cannot operate in 'Inverse' mode. Like GHS, it requires adjustments to the 'Black points (linear)' and 'White points (linear)'. 
@@ -577,11 +577,11 @@ To give the user a glimpse of the possibilities of each of these 'pre-tone mappe
 </figure>
 
 #### Abstract Profile – A Possible Approach to Preparing Output
-+ I won’t go over this somewhat unconventional concept again, which was presented four years ago. Consulting the old Rawpedia documentation should suffice for an overview.
++ I won’t go over this somewhat unconventional concept again, which was presented four years ago.
 + However, some improvements have been made recently:
-+ A ‘Saturation’ slider has been added, allowing compensation for saturation loss, particularly related to high Slope values.
-+ An ‘Attenuation Threshold’ slider allows for better control of highlights using an exponential function.
-+ Contrast Enhancement is a simplified way for users to utilize wavelets to improve local contrast. Readers interested in more advanced aspects can follow the link below.
+  - A ‘Saturation’ slider has been added, allowing compensation for saturation loss, particularly related to high Slope values.
+  - An ‘Attenuation Threshold’ slider allows for better control of highlights using an exponential function.
+  - Contrast Enhancement is a simplified way for users to utilize wavelets to improve local contrast. Readers interested in more advanced aspects can follow this link: [AP](/tutorials/#specific-tools-used) and go to the 3 links in 'Contrast Enhancement'.
 
 ##### Let’s return to our image.
 
