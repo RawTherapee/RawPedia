@@ -416,7 +416,11 @@ In this tutorial, we will see how to use:
 + Abstract Profile (AP).
 + Color Appearance & Lighting.
 
-Of course, other tools are necessary; we will see them later.
+Of course, other tools are necessary, such as 'Gamut Compression', 'White Balance Auto - Temperature Correlation' (See the first tutorial for more details: of course the settings are different).
+
+[Gamut Compression](/tutorials/#gamut-compression)
+
+[Auto White Balance - Temperature Correlation](/tutorials/#white-balance---temperature-correlation)
 
 Image selection:
 Image n°5 IMGP2426.DNG from the Rawtherapee Processing Challenge feedback (begin 2024)
