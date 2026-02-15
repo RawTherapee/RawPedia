@@ -380,6 +380,7 @@ In this tutorial, I will present it briefly in 2 parts:
 </figure>
 
 + I chose not to adjust the automatic settings (Chromatic Adaptation Viewing, Absolute luminance, Mean Luminance (Yb%), Surround). But this is where you can (must) adapt the image you see to the Viewing conditions (yours).
++ Just try changing 'Surround' from 'Average' to 'Dim'
 
 ##### CIECAM - Red Green Blue
 +  You can modify each R, G, B channel to finely retouch colors or simulate films:
@@ -569,6 +570,67 @@ To give the user a glimpse of the possibilities of each of these 'pre-tone mappe
 <figcaption>Sunset MM</figcaption>
 </figure>
 
+#### Abstract Profile – A Possible Approach to Preparing Output
++ I won’t go over this somewhat unconventional concept again, which was presented four years ago. Consulting the old Rawpedia documentation should suffice for an overview.
++ However, some improvements have been made recently:
++ A ‘Saturation’ slider has been added, allowing compensation for saturation loss, particularly related to high Slope values.
++ An ‘Attenuation Threshold’ slider allows for better control of highlights using an exponential function.
++ Contrast Enhancement is a simplified way for users to utilize wavelets to improve local contrast. Readers interested in more advanced aspects can follow the link below.
 
+##### Let’s return to our image.
 
+The image obtained after GHS or MM is perfectly acceptable. I could have added a series of add-ons to GHS/MM to avoid using another module, such as ‘Contrast Enhancement’ or ‘Gamma & Slope’, but that would have complicated the tool.
 
+###### Abstract Profile
+
++ I modified ‘Gamma’, ‘Slope’, and ‘Attenuation Threshold’ to create a more balanced image.
++ I activated ‘Contrast Enhancement’ with a value of 3 and slightly increased ‘Residual Contrast’.
++ But, primarily and mainly for educational purposes, I used the ‘Dominant Color’ function (is not included in pp3)
+
+###### Dominant Color
+
+This function, also available in ‘Selective Editing > Color Appearance (CAM16)’, allows you to correct or introduce a dominant color. Without modifying the primaries, which is possible in graphic mode, choose ‘Destination primaries > Custom (CIExy Diagram)’.
+
+In this mode, ‘Dominant Color’ displays the calculated position of the dominant color in gray. The position of the white point (the default illuminant D65 in Rec2020) is shown in white. You can move the dominant color using ‘Shift x’ and ‘Shift y’.
+
+Moving the Refine Colors slider (Illuminant white point) will increase or decrease the purity and saturation of the selected color. Of course, you can also change the illuminant; try different values.
+
+I ‘forgot’ one thing. After ‘Abstract profile’, it is possible (even recommended) to implement ‘CIECAM’ (Color Appearance & Lighting) whether for chromatic adaptation or to adapt the output to viewing conditions (darkness, surround, etc.).
+
+<figure>
+<img src="ap-dominant-2.jpg" title="ap-dominant-2.jpg" width="300" />
+<figcaption>Abstract Profile - Dominant Color</figcaption>
+</figure>
+
+#### Color Appearance & Lighting
+
+We use the same principles as in the first tutorial, but the settings are different. Here, the goal isn't to create a dramatic effect, but to amplify the sunburst.
+[CIECAM - Best shadows & highlights technics](/tutorials/#color-appearance--lighting)
+
+##### CIECAM - Main settings (GHS & MM)
+<figure>
+<img src="ciecam-scene-images-2.jpg" title="ciecam-scene-images-2.jpg" width="300" />
+<figcaption>CIECAM Curves & Viewing Conditions</figcaption>
+</figure>
+
+Here, I used 'Lightness + Saturation (s)' which has a differentiated action on shadows.
+
+<figure>
+<img src="ciecam-curves-viewing-1.jpg" title="ciecam-curves-viewing-1.jpg" width="300" />
+<figcaption>CIECAM Curves & Viewing Conditions</figcaption>
+</figure>
+
++ I chose not to adjust the automatic settings (Chromatic Adaptation Viewing, Absolute luminance, Mean Luminance (Yb%), Surround). But this is where you can (must) adapt the image you see to the Viewing conditions (yours).
+
+##### CIECAM - Red Green Blue (GHS & MM)
++  You can modify each R, G, B channel to finely retouch colors or simulate films:
+  - Rotate each color by degrees.
+  - Change the saturation (s) in the sense of a CAM (Color Appearance Model).
+  - Change the brightness (Q) with a curve that allows you to adapt the contrast and brightness to each situation.
+
++ As a reminder, in CIECAM there are a total of 9 variables, 6 of which are accessible to the user in RT: Lightness (J), Brightness (Q), Saturation (s), Chroma (C), Colorlness (M), and Hue rotation (h). They are interdependent. For example Chroma = saturation * saturation * brightness.
+
+<figure>
+<img src="red-green-blue-2.jpg" title="red-green-blue-2.jpg" width="300" />
+<figcaption>CIECAM Red Green Blue</figcaption>
+</figure>
