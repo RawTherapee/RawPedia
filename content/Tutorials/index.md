@@ -35,6 +35,7 @@ This concept isn't about forcing you to change your image processing methods, bu
   - Bring the black point close to zero, to increase contrast and use the entire range of data.
   - Bring the White point as close as possible to 1: out-of-gamut data can have very high values ​​(3, 5 or 10), and all methods are more efficient when in the interval [0 1].
   - Implementing an asymptotic process that allows us to get closer to the white point, without reaching it - and even less going beyond it.
+  - This principle is included in 'Selective Editing > Equalization & Pre-tone mapping': The first RT-spot used must always be (if of course there is a need) a Pre-tone mapper in Global mode.
 + Towards the end of the process, it is possible to adjust the tones and contrasts, assuming that the image at this stage has no major defects (with the exception of images taken with exotic illuminants such as LEDs, which may require the use of primaries). This method should allow visualization of the effects on the acceptable limits for the data and the gamut.
 + At the very end of the process, it allows the implementation of the concepts of 'Scene' (source) and Viewing (display): taking into account the conditions of shooting and final viewing, taking into account the physiological aspects, allowing each R, G, B channel to be retouched to better balance or modify the colors.
 
@@ -101,7 +102,8 @@ Apart from tools that have been around for many years, but are not always well k
   - Tone Response Curve [AP - TRC](/color_management/#trc---tone-response-curve)
   - Contrast Enhancement [AP-CE](/color_management/#contrast-enhancement), in particular how it works [Presets](/color_management/#each-preset-contains-a-selection-of-decomposition-levels), and [Characteristics](/color_management/#the-contrast-enhancement-module-has-the-following-characteristics)
   - Illuminant White Point [AP - IWP](/color_management/#illuminant---white-point)
-  - Primaries [AP - Prim](/color_management/#primaries)
+  - Primaries [AP - Prim](/color_management/#primaries) 
++ Selective Editing > Blur/Grain & Denoise > Denoise [SE-denoise](/local_adjustments/#selective-editing----blurgrain--denoise--denoise)
 + Color Appearance & Lighting (Advanced Tab) [CIECAM](/ciecam02)
 
 ## The tutorials
@@ -117,6 +119,8 @@ This image is a real challenge: usually we struggle with highlights, but here th
 Beyond the aesthetic aspect of the result, there is above all a technical challenge in terms of methods.
 
 I deliberately chose extreme settings to show that even with a 'degraded' starting image it is possible to obtain a more than acceptable result, for example the "Contrast Enhancement" values ​​are huge.
+
+ [Some principles](/tutorials/#in-summary-some-principles)
 
  [Recommandations](/tutorials/#recommendations)
 
@@ -425,7 +429,9 @@ This image seems innocuous at first glance, a typical sunset. The image is gener
 - pp3 file 1: [First example with Generalized Hyperbolic Strech - RGB Luminance](i2426-ghs-lum.pp3 "i2426-ghs-lum.pp3")
 - pp3 file 2: [Second example with Generalized Hyperbolic Strech - RGB Standard](i2426-ghs-std.pp3 "i2426-ghs-std.pp3")
 - pp3 file 3: [Third example with Michaelis-Menten](i2426-mm.pp3 "i2426-mm.pp3")
- 
+
+ [Some principles](/tutorials/#in-summary-some-principles)
+
  [Recommandations](/tutorials/#recommendations)
 
  [Specific tools used](/tutorials/#specific-tools-used)
@@ -530,6 +536,17 @@ As in GHS, these two settings, which I wanted to be simpler, are essential for t
 
 In addition:
 + Attenuation threshold: uses an exponential function to reduce highlights likely to cause gamut overshoot.
+
+<figure>
+<img src="first-mm-2.jpg" title="first-mm-2.jpg" width="300" />
+<figcaption>First Spot : Michaelis-Menten - Settings</figcaption>
+</figure>
+
+##### MM - Darken the clouds - inverse GHS
+<figure>
+<img src="inv-ghs-mm-2.jpg" title="inv-ghs-mm-2.jpg" width="300" />
+<figcaption>Second Spot : Inverse GHS</figcaption>
+</figure>
 
 #### A preview at the end of Game Changer
 To give the user a glimpse of the possibilities of each of these 'pre-tone mappers', here is the result at the end of the Game Changer process. We will then see how to process Abstract Profile and Color Appearance & Lighting.
