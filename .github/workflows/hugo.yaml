@@ -77,6 +77,9 @@ jobs:
           key: hugo-${{ github.run_id }}
           restore-keys:
             hugo-
+      - name: Bootstrap NPM
+        run: |
+          cd themes/hugo-bootstrap-bare/assets/;npm install;cd ../../../
       - name: Build the site
         run: |
           hugo \
