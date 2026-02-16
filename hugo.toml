@@ -96,3 +96,7 @@ defaultContentLanguage = 'en'
   section = ['html']
   page = ['html']
   rss = ['rss']
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
