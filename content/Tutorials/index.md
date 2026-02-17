@@ -770,3 +770,36 @@ View the image at 100% or 200%, then adjust the ‘Postsharpening denoise’ set
 <img src="capture-shar-2.jpg" title="capture-shar-2.jpg" width="300" />
 <figcaption>Capture Sharpening</figcaption>
 </figure>
+
+#### Second step: Gamut Compression
+
+This step is necessary even with less-than-ideal settings to intervene before GHS & MM and show you the impact of the former. You will see, by enabling or disabling Gamut compression, the minimal impact on the maximum Linear White Point (in GHS or in MM).
+
+This is one of the key points for:
++ make the colors more natural
++ compress them within the output profile gamut
+
+I set it to sRGB*. Note that ‘gamut compression’ doesn’t take into account the gamma of the output profile.
++ Note the very high value of 'Maximum achromatic value', close to 12. That is 12 times the maximum 'normal' value. The chromatic values ​​– those represented in the CIExy daigram – may be 'normal', but the Y component of xyY is enormous.
++ Disable "Color Propagation" and you'll see this value become 'reasonable' (around 4), yet still high. But what's important is to 'retrieve' as much data as possible.
++ Another possible reason is that there are bright spots in the image. We are no longer in 'Pointer's Gamut'.
+<figure>
+<img src="pointer-gamut.jpg" title="pointer-gamut.jpg" width="300" />
+<figcaption>Pointer's Gamut</figcaption>
+</figure>
+
++ The main reason is related to the illuminant, which here is very far from daylight, as one might assume (I don't have the one in the image).There is a 'huge' gap in the spectral distribution which results in color drifts, or even imaginary colors.
+
+<figure>
+<img src="leds.jpg" title="leds.jpg" width="300" />
+<figcaption>LED's illuminants</figcaption>
+</figure>
+
+[common illuminants](/color_management_addon/#white-balance-gaps)
+
+<figure>
+<img src="gamut-comp-2.jpg" title="gamut-comp-2.jpg" width="300" />
+<figcaption>Gamut Compression - LED</figcaption>
+</figure>
+
+I made gradual adjustments starting from the basic settings, leading to the results shown above. I'm not sure if this is optimal.
