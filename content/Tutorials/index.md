@@ -706,3 +706,67 @@ Raw file : (Creative Common Attribution-share Alike 4.0)
 - pp3 file 3: [Led pp3](at001219-ghs-mm.pp3 "at001219-ghs-mm.pp3")
 
 This image is very difficult to grasp, especially if you haven’t seen the show. What colors does the viewer perceive, and how can they be reproduced? Since I don’t know them, what follows is only a series of hypotheses. This process must be seen as a path, not a solution.
+
+Compared to the tutorial presented in November 2025, the changes are significant, including:
++ the abandonment of the use of primaries in favor of 'Red Green Blue' in 'Color Appearance & Lighting'
++ improved gamut integration
+
+[Pixls.us LED's](https://discuss.pixls.us/t/game-changer-using-led-s-image-gamut-compresion-ghs-abstract-profiles-primaries/54245)
+
+ [Some principles](/tutorials/#in-summary-some-principles)
+
+ [Recommandations](/tutorials/#recommendations)
+
+ [Specific tools used](/tutorials/#specific-tools-used)
+
+**Learning objective**
++ The role of GHS & MM, in the linear portion of the data, which can be considered a ‘Pre-tone-mapper’
++ The importance of Highlight reconstruction > Color Propagation
++ The role of Abstract Profile, which prepares the data for use in the output (screen, TIFF/JPG).
++ The role of Capture Sharpening to reduce noise in the flat areas of the image, and of course sharpening.
++ The importance of Selective Editing > Capture deconvolution to recover the sharpening partially lost by Postsharpening denoising (Capture Sharpening)
++ The role of Gamut Compression at the beginning and at the end of the process
+
+**Teaching approach**
+The issue of out-of-gamut or anecdotal colors, due, for example, to LEDs:
+
+To provide some background and help you understand, I’ve included two links (which I already shared during the Gamut Compression presentation in September 2024 ).
+
+[Gamut compress](https://github.com/jedypod/gamut-compress)
+
+[Documentation ACES](https://docs.acescentral.com/rgc/specification/)
+
+Generally speaking, apart from very specific cases, such as the image in this tutorial, the goal of ‘Gamut compression’ is to fit colors into the gamut (for example, the screen’s gamut), while preserving the original working profile for basic processing.
+
+We use the principle of ‘Pointer’s gamut,’ which, within the set of colors perceived by humans (CIExy diagram), corresponds to reflected colors. This includes all cases where there is no light source in the image (sun, incandescent, LED, etc.), which is still the majority of cases.
+
+We had a debate during the development of the code and the Pull Request. Should we provide base values ​​for each working profile (ProPhoto by default, but some choose Rec2020, Adobe RGB, etc.) and the target compression gamut? What are the default values ​​(which need adjusting) for ‘Threshold’ and ‘Maximum Distance Limit’? Given the complexity and uncertainties (especially when light sources are present in the image, or artificial colors are used), we chose to leave the default settings, which are set for Aces AP0 and Aces AP1.
+
+After numerous tests, I've chosen to offer average acceptable values ​​for images with significant or very significant out-of-gamut effects (sunset, LEDs, etc.). For 'Target Compression Gamut' images marked with an asterisk (*), you have pre-calculated values ​​for 'Maximum Distance Limits' and 'Threshold'. These are approximate values. You'll need to fine-tune these presets.
+
+**The image in neutral mode - out-of-gamut areas**
+<figure>
+<img src="neutral-2.jpg" title="neutral-2.jpg" width="600" />
+<figcaption>Neutral Out-of-gamut</figcaption>
+</figure>
+
+The image speaks for itself; not only are the colors unnatural (strong Magenta dominance), but even in 'neutral' mode, we are already out of gamut for half of the image.
+
+#### First step: Capture Sharpening
+
++ Disable everything, switch to ‘Neutral’ mode
++ In the ‘White Balance’ (Color Tab), Leave it on ‘Camera’ in the face of ignorance.
++ Enable ‘Capture Sharpening’ (Raw tab).
++ Verify that ‘Contrast Threshold’ displays a value other than zero
++ At 100% or 200%, you will see noise appear in the background.
++ Enable ‘Show contrast mask’, which is also insensitive to the Preview position. The noise on the black background becomes visible.
+
+##### Remove noise on flat areas
+
+Disable the mask.
+
+View the image at 100% or 200%, then adjust the ‘Postsharpening denoise’ setting, which will take the mask information into account to process the noise. Adjust this denoising to your liking. This action will already have an effect on out-of-gamut.
+<figure>
+<img src="capture-shar-2.jpg" title="capture-shar-2.jpg" width="300" />
+<figcaption>Capture Sharpening</figcaption>
+</figure>
