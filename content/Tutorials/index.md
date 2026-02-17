@@ -752,7 +752,7 @@ After numerous tests, I've chosen to offer average acceptable values ​​for i
 
 The image speaks for itself; not only are the colors unnatural (strong Magenta dominance), but even in 'neutral' mode, we are already out of gamut for half of the image.
 
-#### First step: Capture Sharpening
+#### First step: Neutral & Capture Sharpening
 
 + Disable everything, switch to ‘Neutral’ mode
 + In the ‘White Balance’ (Color Tab), Leave it on ‘Camera’ in the face of ignorance.
@@ -803,3 +803,36 @@ I set it to sRGB*. Note that ‘gamut compression’ doesn’t take into account
 </figure>
 
 I made gradual adjustments starting from the basic settings, leading to the results shown above. I'm not sure if this is optimal.
+
+#### Third step: Generalized Hyperbolic Stretch - GHS & Michaelis-Menten - MM
+
+I chose to perform the 'pre-tone mapping' in 2 steps:
++ The first with GHS, to bring the huge value of the data (linear White point around 11), into the interval [0 1]
++ The second wit MM, to better balance the image.
+
+<figure>
+<img src="ghs-led.jpg" title="ghs-led.jpg" width="300" />
+<figcaption>Generalized Hyperbolic Stretch</figcaption>
+</figure>
+
++ Note the relatively low valuesfor Stretch factor (D)
++ Note the 'Overall strength = 97', to try and reduce some out-of-gamut issues.
+
+<figure>
+<img src="mm-led.jpg" title="mm-led.jpg" width="300" />
+<figcaption>Michaelis-Menten</figcaption>
+</figure>
+
++ Note the 2 values : Ouput scale (S) & Knee strength (K)
++ Note also 'Subtract linear black' and 'Linear dynamic range' enabled.
++ Note : attenuation threshold (b): better histogram, less out-of-gamut data
+
+#### Restore some sharpness to the image
+
++ Postsharpening denoise in Capture Sharpening, despite precautions, slightly reduced the sharpness provided by Capture Sharpening.
++ Capture deconvolution : this algorithm, which is the same as Capture Sharpening but not limited to Raw, allows you to restore some of the lost sharpness to the image. A new RT-Spot is used in Global mode (note that it is sensitive to the preview size – prefer 'fit to screen').
+
+<figure>
+<img src="captur-decon-2.jpg" title="captu-decon-2.jpg" width="300" />
+<figcaption>Capture Deconvolution</figcaption>
+</figure>
