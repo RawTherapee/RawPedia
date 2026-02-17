@@ -836,3 +836,40 @@ I chose to perform the 'pre-tone mapping' in 2 steps:
 <img src="captur-decon-2.jpg" title="captu-decon-2.jpg" width="300" />
 <figcaption>Capture Deconvolution</figcaption>
 </figure>
+
+#### Abstract Profile
+
+Here, I'm not using primaries, nor am I touching the illuminants. We're staying within the settings to adjust the tones, and 'Contrast enhancement'.
+
+<figure>
+<img src="ap-trc-contrast-2.jpg" title="ap-trc-contrast-2.jpg" width="300" />
+<figcaption>Abstract profile - without Primaries</figcaption>
+</figure>
+
++ Note: RGB max = 0.945,  which corresponds to the maximum RGB values ​​before the final 'Color Appearance & Lighting' step
++ Note: Final RGB Max = 0.758 and Final Saturation Max = 0.728 which corresponds to the maximum RGB and Saturation values ​​after the final 'Color Appearance & Lighting' step.
+
+#### Color Appearance & Lighting
+
+Beyond CIECAM's ability to account for shooting conditions, viewing conditions, and physiological effects, it is used here for a similar purpose to primaries: to make colors appear more natural (this is quite subjective), and to maximize contrast and saturation without exceeding the color gamut.
+
+##### Red Green Blue
+
++  You can modify each R, G, B channel to finely retouch colors or simulate films:
+  - Rotate each color by degrees.
+  - Change the saturation (s) in the sense of a CAM (Color Appearance Model).
+  - Change the brightness (Q) with a curve that allows you to adapt the contrast and brightness to each situation.
+
++ As a reminder, in CIECAM there are a total of 9 variables, 6 of which are accessible to the user in RT: Lightness (J), Brightness (Q), Saturation (s), Chroma (C), Colorlness (M), and Hue rotation (h). They are interdependent. For example Chroma = saturation * saturation * brightness.
+
+<figure>
+<img src="red-green-blue-3.jpg" title="red-green-blue-3.jpg" width="300" />
+<figcaption>Red Green Blue - LED</figcaption>
+</figure>
+
+####  Image at the end of Game Changer
+
+<figure>
+<img src="led-image.jpg" title="led-image.jpg" width="800" />
+<figcaption>Image - LED</figcaption>
+</figure>
