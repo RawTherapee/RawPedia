@@ -690,3 +690,19 @@ Here, I used 'Lightness + Saturation (s)' which has a differentiated action on s
 <img src="red-green-blue-2.jpg" title="red-green-blue-2.jpg" width="300" />
 <figcaption>CIECAM Red Green Blue</figcaption>
 </figure>
+
+### Game changer using LED’s image
+
+This third tutorial aims to explain the concept of a ‘Game changer’, with an example using an image of a show with LED lighting and visible spotlights.
+
+In this tutorial, we will see how to use ‘Capture Sharpening’ , ‘Gamut compression’, ‘Selective Editing > Generalized Hyperbolic Stretch’ (GHS) and Michaelis-Menten (MM), ‘Abstract Profile’ (AP), Color Appearance & Lighting . Of course, other tools are necessary, which we will cover later.
+
+Image selection:
+
+Raw file : (Creative Common Attribution-share Alike 4.0)
+
+[Raw File](https://drive.google.com/file/d/1plzKzl789w4DdP_Iyklc87Dw6hPTsKg7/view)
+
+- pp3 file 3: [Led pp3](at001219-ghs-mm.pp3 "at001219-ghs-mm.pp3")
+
+This image is very difficult to grasp, especially if you haven’t seen the show. What colors does the viewer perceive, and how can they be reproduced? Since I don’t know them, what follows is only a series of hypotheses. This process must be seen as a path, not a solution.
