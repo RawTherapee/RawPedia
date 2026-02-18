@@ -894,6 +894,7 @@ When I look and listen to other open-source software around me, all anyone talks
 There are few (if any) references to "..X" in RT, and I don't think that will change (at least not on my end). I'm not saying these aren't good methods (they are), but:
 + there's something equivalent in RT, even if the concepts and vocabulary are different;
 + some tools require implementation work (code modification, downloading and configuring libraries, etc.) that isn't accessible to everyone. These 'custom' tools are certainly relevant, but they only allow exchanges between users who have installed them (and what about updates?). Since its creation, RT has maintained compatibility with previous versions (which is often a drawback) and is delivered as a complete package. Everyone receives the same distributed package, thus ensuring compatibility over time and between users. So, in summary, yes to these tools if they can be fully integrated into the overall code.
++ Note that the color gamut of printed materials, whether CMYK or RGB, is 'small' (often smaller than sRGB, especially in shadows...). So, simulation is possible, but...
 
 This tutorial is not intended to say that other tools are bad, nor to provide a comprehensive overview of colorimetry, but to highlight the latest recently implemented changes.
 
@@ -913,6 +914,12 @@ There are many methods on the market for creating (nostalgia) the colours and ap
 <img src="film-sim.jpg" title="film-sim.jpg" width="600" />
 <figcaption>Film Simulation</figcaption>
 </figure>
+
+ [Some principles](/tutorials/#in-summary-some-principles)
+
+ [Recommandations](/tutorials/#recommendations)
+
+ [Specific tools used](/tutorials/#specific-tools-used)
 
 **In summary:**
 
@@ -935,3 +942,28 @@ Raw file : (Creative Common Attribution-share Alike 4.0)
 
 
 - pp3 file 3: [Blue Horse pp3](2010montr-film3.pp3 "2010montr-film.pp3")
+
+##### Some remarks on histograms and Image
+
+If the image in 'neutral' mode already shows green dots scattered across the screen, then the processing will be difficult.
+
+If the histogram looks like this, there is at the very least a problem with the black point adjustment
+<figure>
+<img src="histo-bp.jpg" title="histo-bp.jpg" width="300" />
+<figcaption>Histogram Black point</figcaption>
+</figure>
+
+If the histogram shows this second aspect, we are probably dealing with a high dynamic range image, where it will be difficult to find a balance between shadows and highlights. This is the domain of "tone mappers".
+<figure>
+<img src="hist-hd.jpg" title="hist-hd.jpg" width="300" />
+<figcaption>Histogram high dynamic range</figcaption>
+</figure>
+
+Fortunately, not all images are like that, and the histogram in 'neutral' mode is usually quite well distributed. For example for ‘The Blue Horse’. However, even in this case, we see that the blue channel 'overflows'...We risk having problems with the gamut.
+<figure>
+<img src="hist-bluehorse.jpg" title="hist-bluehorse.jpg" width="300" />
+<figcaption>Histogram Blue Horse</figcaption>
+</figure>
+
+#### Start of treatment
+
