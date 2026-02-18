@@ -21,7 +21,7 @@ ergo the tool's name.
 
 RawTherapee needs to be able to access these HaldCLUT images in order
 that you can use the tool. You can download our collection, called the
-[RawTherapee Film Simulation Collection](film_simulation#rawtherapee_film_simulation_collection),
+[RawTherapee Film Simulation Collection - HaldCLUT](http://rawtherapee.com/shared/)
 or you can design your own - more on that later on. The first time you
 run this tool you will see a message informing you that you need to
 point RawTherapee to a folder which contains the reference images. Once
