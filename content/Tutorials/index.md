@@ -885,3 +885,27 @@ Beyond CIECAM's ability to account for shooting conditions, viewing conditions, 
 
 I'm finding it difficult to locate areas outside the gamut; perhaps some still exist. The same applies to artifacts.
 Similarly, is there respect for the colours? Difficult to say as I did not attend the show.
+
+### Game changer : Mastery of Colors & Film Simulation
+
+#### Introduction
+
+When I look and listen to other open-source software around me, all anyone talks about is "..X". As we say in French ‘ça tombe comme à Gravelotte’.
+There are few (if any) references to "..X" in RT, and I don't think that will change (at least not on my end). I'm not saying these aren't good methods (they are), but:
++ there's something equivalent in RT, even if the concepts and vocabulary are different;
++ some tools require implementation work (code modification, downloading and configuring libraries, etc.) that isn't accessible to everyone. These 'custom' tools are certainly relevant, but they only allow exchanges between users who have installed them (and what about updates?). Since its creation, RT has maintained compatibility with previous versions (which is often a drawback) and is delivered as a complete package. Everyone receives the same distributed package, thus ensuring compatibility over time and between users. So, in summary, yes to these tools if they can be fully integrated into the overall code.
+
+This tutorial is not intended to say that other tools are bad, nor to provide a comprehensive overview of colorimetry, but to highlight the latest recently implemented changes.
+
+There are many methods on the market for creating (nostalgia) the colours and appearance of black and white, colour and slide films.
++ The latest ones are based on Dynamic Spectral LUTs '..x', which are not easily portable from one user to another.
++ The ones I developed in 2006 with the help of Profile Maker 5.0 (Greta MacBeth), which generates 6 LUTs for each film: 3 for R, G, B colors and 3 for TRCs. It would be too much work to do.
++ The one that has been present for many years in Rawtherapee (Film Simulation) [Film simulation](/film_simulation) is based on HaldCLUT. They are very efficient, but the drawback is that they are 'fixed', meaning that you cannot adjust the reds, blues, or greens to your personal taste, whether it be rotation, saturation or brightness. [HaldCLUT.zip](http://rawtherapee.com/shared/). Simply download and extract the zip file to the folder of your choice and specify this folder in Preferences.
+
+<figure>
+<img src="pref-haldclut.jpg" title="pref-halclut.jpg" width="600" />
+<figcaption>Preferences - HaldCLUT</figcaption>
+</figure>
+
++ I chose to improve this last approach with the new 'Red Green Blue' option in Color Appearance & Lighting, which in fact gives you an addition of at least the equivalent of 9 dynamic LUTs.
+
