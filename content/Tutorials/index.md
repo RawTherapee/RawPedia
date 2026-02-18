@@ -1084,7 +1084,7 @@ I’m going to show you how to process this image; some of the settings might be
 <figcaption>GHS settings</figcaption>
 </figure>
 
-+ activate the checkbox 'Auto black point & White point', and also 'Symmetry point (SP)'
++ activate the checkbox 'Auto black point & White point', and also 'Symmetry point (SP)'.
 + you can see the two settings found by the algorithm which show the underexposure of the image. After these settings, the data is in Rec2020 in the interval [0 1]. BP (linear) = 0.0016, WP (linear) = 0.6662.
 
 ##### First spot : Sharpening
@@ -1119,7 +1119,7 @@ I’m going to show you how to process this image; some of the settings might be
 
 ##### Fourth spot: retouch the colors below the red part of the rock
 + The goal is to shed light on this dark area.
-+ Note : the Excluding Spot
++ Note : the Excluding Spot.
 <figure>
 <img src="cians-grey-5.jpg" title="cians-grey-5.jpg" width="600" />
 <figcaption>Excluding Spot</figcaption>
@@ -1128,16 +1128,16 @@ I’m going to show you how to process this image; some of the settings might be
 ##### Fifth spot: make the little greenery greener
 + for this, I use a full-image Spot.
 + the center of the Spot, whose Spot size I reduced to 4, is located in a small bush above the woman's head, near the red rock (difficult to see).
-+ the Scope value is very low in order to pinpoint that color (the small green bushes)
++ the Scope value is very low in order to pinpoint that color (the small green bushes).
 <figure>
 <img src="green-bush-5.jpg" title="green-bush-5.jpg" width="600" />
 <figcaption>Green bushes</figcaption>
 </figure>
 
 #### Abstract profile
-+ balance the lights in the image
-+ significantly increase local contrast
-+ Adjust gamma and slope to achieve the desired result and Attenuation threshold
++ balance the lights in the image.
++ significantly increase local contrast.
++ Adjust gamma and slope to achieve the desired result and Attenuation threshold.
 + Enable ‘Contrast Enhancement’ - The default settings should be suitable in most cases.
 + The RGBmax indicator should display a value less than 1. If it doesn't, either change the previous AP or GHS settings, or adjust 'Final Gain & Gamut Compression'. You will see the RT process values ​​displayed below the 'Gain (Ev)' and 'Target gamut' settings. To display the data, at least one of the two settings must not be zero or 'None'. I recommend setting 'Target gamut' to sRGB (the same setting you used for Soft Proofing) and in Gamut Compression (Color Tab).
 <figure>
@@ -1174,7 +1174,7 @@ Of course, the settings are quite arbitrary, depending on your tastes.
 
 **Back to Abstract profile**
 
-Check that the data displayed in ‘Final Gain & Gamut Compression’ is within limits, correct it if necessary, but be careful with the gamut
+Check that the data displayed in ‘Final Gain & Gamut Compression’ is within limits, correct it if necessary, but be careful with the gamut.
 
 ####  Image at the end of Game Changer
 
