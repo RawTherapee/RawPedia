@@ -908,4 +908,30 @@ There are many methods on the market for creating (nostalgia) the colours and ap
 </figure>
 
 + I chose to improve this last approach with the new 'Red Green Blue' option in Color Appearance & Lighting, which in fact gives you an addition of at least the equivalent of 9 dynamic LUTs.
++ In this tutorial, I arbitrarily chose Kodak Portra 400 NC 1 film.
+<figure>
+<img src="film-sim.jpg" title="film-sim.jpg" width="600" />
+<figcaption>Film Simulation</figcaption>
+</figure>
 
+**In summary:**
+
+1) Color Appearance & Lighting : by allowing hue rotation (slider) , saturation (slider), brightness (curve) variation for each R, G, and B channel.
+2) Michaelis-Menten (MM) : through use and adjustments of settings, whose default values ​​have become 'neutral'
+3) Abstract profile : a) by using the visualization of maximum R,G,B data or RGB saturation, to guide the action; b) by giving the possibility to act on the 'Gain (Ev)' at the output, as well as a possible compression of the gamut before the output process(es).
+4) And of course, others tools.
+
+**Educational objectives**
+* Demonstrate the use of the new ‘Color Appearance & Lighting tools’ (CIECAM), for: a) To finely control colors in terms of hue, saturation, and brightness for each of the R, G, and B channels, entirely within the second CIECAM process - Image adjustments - in order to adapt the color gamut to specific needs (sky, sun, shadows, flowers, etc.)
+
+* Demonstrate the usefulness of the new indicators in 'Abstract profile' and the 'Gain (Ev)' and 'Gamut compression' settings in the final phase of the RT process, just before output.
+
+* Show the possible association of 1), 3) - and to a lesser degree 2) - above, with the tool already in place in RT (Film simulation - HaldCLUT) to complement it with corrections of hue, saturation, brightness and contrast, while finely controlling the gamut.
+
+Image selection:
+
+Raw file : (Creative Common Attribution-share Alike 4.0)
+  [Raw File - Blue Horse](https://drive.google.com/file/d/1rRcFYYihDjW0ZHadA9S0nNyt3vwxG1Yu/view?usp=drive_link)
+
+
+- pp3 file 3: [Blue Horse pp3](2010montr-film3.pp3 "2010montr-film.pp3")
