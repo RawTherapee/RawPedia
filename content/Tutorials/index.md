@@ -1359,3 +1359,121 @@ Check that the data displayed in ‘Final Gain & Gamut Compression’ is within 
 <img src="harvest-mouse-6.jpg" title="harvest-mouse-6.jpg" width="800" />
 <figcaption>Harvest mouse</figcaption>
 </figure>
+
+### Game changer: Young girl - noisy image
+
+This sixth tutorial aims to explain the concept of ‘Game changer’ on a noisy (very noisy??) image.
+
+In this tutorial, we will see how to use ‘Capture Sharpening’ , ‘Demosaicing method’, 'Gamut Compression', three possible uses at various points in the process to reduce noise, ‘Selective Editing > Generalized Hyperbolic Stretch’ (GHS), ‘Capture Deconvolution’, ‘Abstract Profile’, 'Color Appearance & Lighting' together. Of course, other tools are necessary, which we will cover later.
+
+Image selection:
+
+Raw file :  (Creative Common Attribution-share Alike 4.0)
+
+[Raw File](https://drive.google.com/file/d/1poZporRNILcYfab1Y_f1i-SIEB4acn6L/view)
+
+- pp3 file 3: [Young girl](p3090042-ghs.pp3 "p3090042-ghs.pp3")
+
+ [Some principles](/tutorials/#in-summary-some-principles)
+
+ [Recommandations](/tutorials/#recommendations)
+
+ [Specific tools used](/tutorials/#specific-tools-used)
+
+**Image in Neutral mode**
+<figure>
+<img src="girl-neutral-7.jpg" title="girl-neutral-7.jpg" width="600" />
+<figcaption>Neutral out of gamut</figcaption>
+</figure>
+
+**Learning objectives**
++ See the role of presharpening denoise and postsharpening denoise.
++ The role of Gamut Compression
++ The impact of the demosiacing method and how to compensate for the lack of a contrast mask in this case.
++ The imapct of Abstract Profile - and gamut controls
++ The distribution of denoising along the process.
++ The role of GHS in balancing the image.
++ How to (partially) use the new possibilities of ‘Selective Editing > denoise’.
++ How to restore vitality to the image (Capture deconvolution, abstract profile).
++ The role of Color Appearance & Lighting (Red Green Blue).
+
+#### First step
++ set to Neutral.
++ Set White Balance auto - to Low Sampling & Ignore camera settings : The choice is quite subjective.
+<figure>
+<img src="girl-wb-7.jpg" title="girl-wb-7.jpg" width="300" />
+<figcaption>White Balance auto</figcaption>
+</figure>
+
+#### Capture Sharpening & main denoise
+
++ Verify that ‘Contrast Threshold’ displays a value = 0
++ Enable ‘Show contrast mask’, which is also insensitive to the Preview position.
++ Adjust the ‘Presharpening denoise’ setting until the mask appears (or a little more)
++ Set the demosaicing method to a dual demosaicing system (AMAZE + bilinear). There’s no mask for this system (it’s complicated to implement), but you can use the one from ‘Capture sharpening’. Increase the value in ‘Demosaicing > Contrast threshold’, for example, up to 14 (disabling auto… which remains at 0). Through trial and error, choose the method that minimizes artifacts and noise.
+
+**Remove noise on flat areas**
++ Disable the mask.
++ View the image at 100% or 200%, then adjust the ‘Postsharpening denoise’ setting, which will take the mask information into account to process the noise. Adjust this denoising to your liking.
+<figure>
+<img src="girl-cs-7.jpg" title="girl-cs-7.jpg" width="300" />
+<figcaption>Capture Sharpening</figcaption>
+</figure>
+
+**Second step**
+Use ‘Noise reduction’ sparingly - this isn’t (at least in my opinion) a comprehensive processing step, as it affects the entire image, resulting in a lack of nuance. I’ve chosen relatively low values ​​for ‘Luminance’ and ‘Chominance’ (see pp3 settings)
+
+#### Gamut Compression
+
+This is one of the most important steps for this image: reducing out-of-gamut noise.
+
+The settings I obtain (with Target Compression Gamut = sRGB) clearly show the impact of noise.
+<figure>
+<img src="girl-gc-7.jpg" title="girl-gc-7.jpg" width="300" />
+<figcaption>Gamut Compression</figcaption>
+</figure>
+
+#### Selective Editing - 3 Spots
+
+##### Generalized Hyperbolic Stretch (GHS)
+The goal of this step is to adjust the Linear White Point and Linear Black Point, and at a minimum, to adjust the image contrast.
+
+The choices are fairly arbitrary.
+<figure>
+<img src="girl-ghs-7.jpg" title="girl-ghs-7.jpg" width="300" />
+<figcaption>GHS</figcaption>
+</figure>
+
+##### Adjust the noise reduction to your liking
+At this stage, nothing is clear, everything is arbitrary. We are subject to the constraints of the Preview…and in the current state of the process, there is no ‘proper’ method. So we make do.
++ Add a new RT-spot (Blur/Grain & Denoise > Denoise) in Global mode (of course you can choose Full image and use deltaE, or a normal Spot…, but to simplify the explanation I chose ‘Global’)
++ Enable ‘Contrast threshold’
++ Enable ‘Show contrast mask’
++ Adjust the ‘Denoise contrast mask’ and ‘Equalizer denoise mask’ to isolate areas to be treated or excluded. You can balance the system by adjusting the ‘Ratio flat-structured areas’ slider.
++ Adjust the luminance and chrominance wavelets ‘as best as possible’… there’s no magic bullet.
+
+The importance of ‘Locks MadL noise evaluation’ :
++ Depending on the position in the Preview, the image analysis is performed using the concept of ‘MAD’ - median absolute deviation - which evaluates noise by decomposition level (here from 0 to 6) and by direction (Horizontal, Vertical, Diagonal). Unfortunately, this evaluation is performed here (as in the ‘Noise reduction’ Detail tab) on the Preview and not on the entire image.
++ If you want to see the interaction between the position in the Preview and the zoom level, select ‘Advanced’ for this RT-spot. You will see 21 sliders that display the MadL value. ‘Locks MadL noise evaluation’ must be enabled. Move the image into the Preview and see the MadL changes.
++ Low levels (0, 1, 2, 3, 4) represent the most visible noise, while higher values ​​tend towards ‘banding noise’. Refer to the tooltips; they attempt to explain the (necessarily complex) operation.
++ In this mode (Advanced), you can manually adjust the MadL values ​​and replace the automatic calculation with your own evaluation… not straightforward, but possible nonetheless.
++ Whether in ‘Basic’, ‘Standard’, or ‘Advanced’ mode, when you activate ‘Locks MadL noise evaluation’, the entire image will be processed like the Preview (at least that’s my intention).
++ Note that I could have done the same for chrominance noise (MadC).
+
+Why is there a difference between what’s displayed in ‘Residual Noise Levels’ and the MadL sliders?
++ For the former, these measurements are taken after processing and take into account what is empirically visible (using weighting coefficients).
++ For the latter, they represent the actual values ​​used by the core algorithm designed in 2012 by Emil Martinec (who also created Color Propagation and Amaze). Of course, Ingo and I have significantly enhanced the capabilities of the noise reduction functions.
+
+<figure>
+<img src="girl-seden-7.jpg" title="girl-seden-7.jpg" width="300" />
+<figcaption>Selective Editing Denoise</figcaption>
+</figure>
+
+##### Fifth step - Restore some sharpness using ‘Capture deconvolution’
+
+Open a third RT-Spot in Global mode and choose ‘Add tools to current spot…> Sharpening > Capture Deconvolution’. Can you leave the default settings or change them.
+<figure>
+<img src="girl-capdecon-7.jpg" title="girl-capdecon-7.jpg" width="300" />
+<figcaption>Selective Editing - Capture deconvolution</figcaption>
+</figure>
+
