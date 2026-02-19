@@ -123,6 +123,8 @@ Apart from tools that have been around for many years, but are not always well k
 
 [Harvest mouse](/tutorials/#game-changer-using-harvest-mouse)
 
+[Young girl - noisy image](/tutorials/#game-changer-young-girl---noisy-image)
+
 As a reminder: all these tutorials are designed for teaching, rather than achieving the best possible result (which, by the way, is quite subjective). What I'm fairly certain of is that out-of-gamut data (here, sRGB) is handled 99% of the time, along with various artifacts. It's very easy to create 'flashy' images, but these will be out of bounds.
 
 
