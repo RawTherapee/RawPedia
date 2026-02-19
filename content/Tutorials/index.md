@@ -1054,7 +1054,7 @@ I extracted this tutorial from an ongoing thread, which is referenced with the i
 
 [Original Raw NEF](https://discuss.pixls.us/t/selective-editing/54199)
 
-- pp3 file 3: [Red rocks](tz5_1767-ghs.pp3 "tz5_1767-ghs.pp3")
+- pp3 file: [Red rocks](tz5_1767-ghs.pp3 "tz5_1767-ghs.pp3")
 
 At first, I thought this image was from a Gorge near my home, in the hinterland of Nice in France. It’s less than 100km from where I live. I haven’t been there in a while, but it does somewhat resemble this Middle Eastern landscape. The colors of the rock near Nice are redder. So I tried to recreate this effect (it’s subjective). Here is a link in French, but there are other sites
 
@@ -1185,3 +1185,66 @@ Check that the data displayed in ‘Final Gain & Gamut Compression’ is within 
 
 ### Game changer: using Harvest mouse
 
+#### Introduction
+
+
+This tutorial aims to explain the concept of a ‘Game changer’, with an example using Andy Astbury’s harvest mouse image.
+
+In this tutorial, we will see how to use ‘Capture Sharpening’ and ‘Selective Editing > Capture Deconvolution’, ‘Selective Editing > Generalized Hyperbolic Stretch’ (GHS), ‘Abstract Profile’ (AP), Color Appearance & Lighting together. Of course, other tools are necessary, which we will cover later.
+
+Image selection:
+
+Raw file : (Copyright Andy Astbury - Creative Common Attribution-share Alike 4.0)
+
+[Harvest mouse](https://drive.google.com/file/d/1uND8pqgfxxaBhs554RnCvOS5NI3KsWT5/view)
+
+- pp3 file 3: [harvest](d4d1775-cap-ghs.pp3 "d4d1775-cap-ghs.pp3")
+
+ [Some principles](/tutorials/#in-summary-some-principles)
+
+ [Recommandations](/tutorials/#recommendations)
+
+ [Specific tools used](/tutorials/#specific-tools-used)
+
+**Learning objective**
+
++ The importance of Capture Sharpening and postsharpening denoise to reduce noise in the flat areas of the image, and Selective Editing > Capture Deconvolution
++ The role of GHS in the linear portion of the data, which can be considered a ‘Pre-tone-mapper’.
++ The role of Abstract Profile, which prepares the data for use in the output (screen, TIFF/JPG).
++ The role of Color Appearance & Lighting : Red Green Blue.
+
+#### First steps
++ set to Neutral.
++ Enabling Raw Black Point 'dehaze' does move the green sliders, but it introduces a strong red bias into the image. Deactivate it and return the sliders to zero.
++ Enable White Balance > Auto > Temerature correlation > the default values ​​should be suitable
+
+#### Capture Sharpening
+
++ Enable ‘Capture Sharpening’ (CS) (Raw tab).
++ Verify that ‘Contrast Threshold’ displays a value other than zero, normally 22.It is unnecessary, or even harmful (except in exceptional cases), to change the 'Presharpening denoise' slider. 
++ Enable 'Show contrast mask': Zoom in or out in the Preview; you will see that this has no impact on the result. The processing is performed on the entire image – with the drawback of being relatively slow.
++ At 100% or 200%, the noise on the black background becomes clearly visible.
+
+<figure>
+<img src="harv-mask-6.jpg" title="harv-mask-6.jpg" width="600" />
+<figcaption>Contrast mask - Capture Sharpening</figcaption>
+</figure>
+
+Still in the ‘Raw tab’, go to ‘Demosaicing’ and change the default method ‘Amaze’ to, for example, ‘Amaze + VNG4’ (Thank’s to Ingo). These methods with ‘Double’ demosaicing use a similar contrast mask (before demosaicing). The advantages are: a) less aggressive action on the background (the black areas of the mask) while preserving the main subject, thus reducing the impact of noise; b) a slight reduction in processing time. Of course, this assumes that this mask (not the one you see in (CS), but the one for demosaicing, which isn’t user-accessible) is working and therefore that the image isn’t too noisy.
+
+You can, if you wish, disable the ‘auto’ settings of ‘Contrast threshold’ and ‘Radius’ to adjust them to your liking.
+
+##### Remove background noise
+
+Disable the mask.
+
+View the image at 100% or 200%, then adjust the ‘Postsharpening denoise’ setting, which will take the mask information into account to process the noise. Adjust this denoising to your liking. It’s clear that even with a mask, the denoising action isn’t localized pixel by pixel but rather applied to areas of pixels (here, 64 x 64). Therefore, you will inevitably see denoising in the transition areas.
+
+Note: In the case of this low-noise image, I haven’t enabled ‘Presharpening denoise,’ which is only useful for making CS usable by performing denoising before CS.
+
+For technical information – the denoising uses wavelets with a vanishing moment of 20 to minimize artifacts. This process takes place in three dimensions (horizontal, vertical, and diagonal). The ‘Noise reduction’ function (Detail tab) uses a vanishing moment of 4 in all three dimensions. By comparison, ‘Contrast by Detail Levels’ (which is not used for noise reduction) uses Haar’s method with a vanishing moment of 2.
+
+<figure>
+<img src="daub-wav-6.jpg" title="daub-wav-6.jpg" width="600" />
+<figcaption>Wavelets - vanishing moments</figcaption>
+</figure>
