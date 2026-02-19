@@ -29,7 +29,7 @@ This concept isn't about forcing you to change your image processing methods, bu
 + Use the maximum possible range for Raw data, this means that: 
   - The Black Point at the beginning of processing should be as close as possible to what the sensor allows.
   - The highest measurable values ​​on the sensor must be recorded at the White Point. Furthermore, it is desirable to be able to recover, as best as possible, the data lost when values ​​created by overexposure have saturated the sensor (see: Highlight reconstruction > Color Propagation  - which, contrary to what its name suggests, also allows data to be retrieved in very low light conditions).
-+ Finding the best color balance is crucial before starting any treatments. The longer you wait, the greater the risk of 'contaminating' other methods.
++ Finding the best color balance is crucial before starting any treatments. The longer you wait, the greater the risk of 'contaminating' other methods. Note that it may be affected by chromatic noise.
 + Make the most of the possibilities in Raw mode, whether it be the demosaicing method, the improvement of sharpness and noise treatment, the correction of black points and chromatic aberrations, etc.
 + Control (and compress if necessary) the gamut at the beginning and end of the process.
 + Using the concept of a pre-tone mapping, which makes an image usable or (acceptable) for further processing. That is to say:
@@ -37,7 +37,7 @@ This concept isn't about forcing you to change your image processing methods, bu
   - Bring the White point as close as possible to 1: out-of-gamut data can have very high values ​​(3, 5 or 10), and all methods are more efficient when in the interval [0 1].
   - Implementing an asymptotic process that allows us to get closer to the white point, without reaching it - and even less going beyond it.
   - This principle is included in 'Selective Editing > Equalization & Pre-tone mapping': The first RT-spot used must always be (if of course there is a need) a Pre-tone mapper in Global mode.
-+ Towards the end of the process, it is possible to adjust the tones and contrasts, assuming that the image at this stage has no major defects (with the exception of images taken with exotic illuminants such as LEDs, which may require the use of primaries). This method should allow visualization of the effects on the acceptable limits for the data and the gamut.
++ Towards the end of the process, it is possible to adjust the tones and contrasts, assuming that the image at this stage has no major defects. This method should allow visualization of the effects on the acceptable limits for the data and the gamut. The primaries in Game Changer initially only serve to render special effects.
 + At the very end of the process, it allows the implementation of the concepts of 'Scene' (source) and Viewing (display): taking into account the conditions of shooting and final viewing, taking into account the physiological aspects, allowing each R, G, B channel to be retouched to better balance or modify the colors.
 + You may notice that throughout 'Game changer' (except for a few rare cases, where they are 'automatics' as in Capture Sharpening, or for a very specific use), I never use masks and layers, or Primaries. And it is unlikely that you will find these methods and tools anywhere other than in Rawtherapee (of course not all of them).
 
@@ -180,7 +180,7 @@ The user will understand the ‘Game changer’ approach discussed in this tutor
 + The importance of Gamut Compression.
 + White Balance optimization - Temperature correlation.
 + The role of Graduated Filter.
-+ The importance and settings of Abstract Profile - with a reasoned use of primaries
++ The importance and settings of Abstract Profile - with a reasoned use of primaries.
 + The combined use of Selective Editing > Generalized Hyperbolic Stretch (GHS) & Michaelis-Menten (MM) and 2 Excluding Spots.
 + The use of Color Appearance & Lighting and the possible corrections of the 3 channels R, G, B.
 
@@ -270,7 +270,7 @@ To fully utilize the capabilities of "White Balance Auto temperature correlation
 <figcaption>White Balance - Temperature correlation</figcaption>
 </figure>
 
-+ The automatic calculation always performs two passes: the first with the base results, and a second to try to get closer to D50, thus avoiding color adaptation (which can be done in "Automatic Symmetric" mode using Color Appearance & Lighting). The choice is up to the user. Among the criteria is the 'Correlation factor'; the smaller it is, the better. The other criterion is the 'Size', which is the number of colors found to be significant for comparison with the reference spectral colors (approximately 400). The larger the 'Size', the better.
++ The automatic calculation always performs two passes: the first with the base results, and a second to try to get closer to D50, thus avoiding color adaptation (which can be done in "Automatic Symmetric" mode using Color Appearance & Lighting). The choice is up to the user. Among the criteria is the 'Correlation factor'; the smaller it is, the better. The other criterion is the 'Size', which is the number of colors found to be significant for comparison with the reference spectral colors (approximately 400). The larger the 'Size', the better. Note that it may be affected by chromatic noise.
 
 #### Gamut Compression
 
@@ -1364,7 +1364,7 @@ Check that the data displayed in ‘Final Gain & Gamut Compression’ is within 
 
 ### Game changer: Young girl - noisy image
 
-This sixth tutorial aims to explain the concept of ‘Game changer’ on a noisy (very noisy??) image.
+This seventh tutorial aims to explain the concept of ‘Game changer’ on a noisy (very noisy??) image.
 
 In this tutorial, we will see how to use ‘Capture Sharpening’ , ‘Demosaicing method’, 'Gamut Compression', three possible uses at various points in the process to reduce noise, ‘Selective Editing > Generalized Hyperbolic Stretch’ (GHS), ‘Capture Deconvolution’, ‘Abstract Profile’, 'Color Appearance & Lighting' together. Of course, other tools are necessary, which we will cover later.
 
@@ -1392,7 +1392,7 @@ Raw file :  (Creative Common Attribution-share Alike 4.0)
 + See the role of presharpening denoise and postsharpening denoise.
 + The role of Gamut Compression
 + The impact of the demosiacing method and how to compensate for the lack of a contrast mask in this case.
-+ The imapct of Abstract Profile - and gamut controls
++ The impact of Abstract Profile - and gamut controls
 + The distribution of denoising along the process.
 + The role of GHS in balancing the image.
 + How to (partially) use the new possibilities of ‘Selective Editing > denoise’.
@@ -1401,7 +1401,7 @@ Raw file :  (Creative Common Attribution-share Alike 4.0)
 
 #### First step
 + set to Neutral.
-+ Set White Balance auto - to Low Sampling & Ignore camera settings : The choice is quite subjective.
++ Set White Balance auto - to Low Sampling & Ignore camera settings : The choice is quite subjective (you can 'remove the 2 pass algorithm')
 <figure>
 <img src="girl-wb-7.jpg" title="girl-wb-7.jpg" width="300" />
 <figcaption>White Balance auto</figcaption>
@@ -1428,8 +1428,10 @@ Use ‘Noise reduction’ sparingly - this isn’t (at least in my opinion) a co
 #### Gamut Compression
 
 This is one of the most important steps for this image: reducing out-of-gamut noise.
+You could even say it's a noise reduction tool.
 
 The settings I obtain (with Target Compression Gamut = sRGB) clearly show the impact of noise.
+
 <figure>
 <img src="girl-gc-7.jpg" title="girl-gc-7.jpg" width="300" />
 <figcaption>Gamut Compression</figcaption>
@@ -1449,8 +1451,8 @@ The choices are fairly arbitrary.
 ##### Adjust the noise reduction to your liking
 At this stage, nothing is clear, everything is arbitrary. We are subject to the constraints of the Preview…and in the current state of the process, there is no ‘proper’ method. So we make do.
 + Add a new RT-spot (Blur/Grain & Denoise > Denoise) in Global mode (of course you can choose Full image and use deltaE, or a normal Spot…, but to simplify the explanation I chose ‘Global’)
-+ Enable ‘Contrast threshold’
-+ Enable ‘Show contrast mask’
++ Enable ‘Contrast threshold’.
++ Enable ‘Show contrast mask’.
 + Adjust the ‘Denoise contrast mask’ and ‘Equalizer denoise mask’ to isolate areas to be treated or excluded. You can balance the system by adjusting the ‘Ratio flat-structured areas’ slider.
 + Adjust the luminance and chrominance wavelets ‘as best as possible’… there’s no magic bullet.
 
