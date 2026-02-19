@@ -1477,3 +1477,58 @@ Open a third RT-Spot in Global mode and choose ‘Add tools to current spot…> 
 <figcaption>Selective Editing - Capture deconvolution</figcaption>
 </figure>
 
+#### Abstract Profile : Adjusting Tones – Increasing Local Contrast
+
++ Balance the lights in the image.
++ Significantly increase local contrast.
++ Adjust gamma and slope to achieve the desired result and Attenuation threshold. This is where you can change the background, making it darker or lighter by adjusting the 'Slope' setting.
++ Enable ‘Contrast Enhancement’ - The default settings should be suitable in most cases.
++ The RGBmax indicator should display a value less than 1. If it doesn't, either change the previous AP or GHS settings, or adjust 'Final Gain & Gamut Compression'. You will see the RT process values ​​displayed below the 'Gain (Ev)' and 'Target gamut' settings. To display the data, at least one of the two settings must not be zero or 'None'. I recommend setting 'Target gamut' to sRGB (the same setting you used for Soft Proofing) and in Gamut Compression (Color Tab).
+<figure>
+<img src="ap-trc-contrast-7.jpg" title="ap-trc-contrast-7.jpg" width="300" />
+<figcaption>Abstract Profile</figcaption>
+</figure>
+
++ In principle, there’s no point in using the ‘Primaries & Illuminant’ module here.
++ You can easily see the effect of the last controls in 'Final Gain & Gamut Compression', set 'Target Gamut' to 'None' and you will see the out-of-gamut data appear, also observe the histogram.
+
+
+#### Color Appearance & Lighting
++ Now we'll explore the new 'Red Green Blue' tool, which will allow you to finely control each of the 3 RGB channels.
++ First : enable ‘Color Appearance & Lighting’ and choose ‘Complexity = Advanced’. This gives you more choices among the CIECAM variables. Thus, you have : Lightness (J) and Contrast (J), Brightness (Q) and Contrast (Q), Chroma (C), Saturation (s), Colorfullness (M), hue raotation (h) , and 3 tones curves for Lightness, Brightness, and Color.
++ Note the default 'Scene conditions' settings which you could change if you know exactly the shooting conditions.
++ Note the default 'Viewing conditions' settings which you could change to adapt them to your viewing environment (the room you are in, its ambiance, the 'Absolute luminance' estimate, and Surround…).
++ I chose 'Lightness + Saturation' and slightly increased the overall saturation.
+
+##### Red - Green - Blue
+
++  You can modify each R, G, B channel to finely retouch colors or simulate films:
+    - Rotate each color by degrees.
+    - Change the saturation (s) in the sense of a CAM (Color Appearance Model).
+    - Change the brightness (Q) with a curve that allows you to adapt the contrast and brightness to each situation.
+
++ As a reminder, in CIECAM there are a total of 9 variables, 6 of which are accessible to the user in RT: Lightness (J), Brightness (Q), Saturation (s), Chroma (C), Colorfullness (M), and Hue rotation (h). They are interdependent. For example Chroma = saturation * saturation * brightness.
+
+In the case of the ‘Girl’ I arrived at the settings used in pp3, using ‘Soft proofing’ to control the gamut.
+
+To simplify use, I’ve only included one slider per channel for hue rotation, and one slider per channel for Saturation (s). I could have also included a tone equalizer for the red, green, and blue range; If that proves useful, aside from complicating the interface, it doesn’t pose any problem. Note that the 3 Brightness curves allow you to adjust the brightness and contrast for each color range. Specifically, brightness acts on the perceived chroma via the (s) Saturation function.
+
+Of course, the settings are quite arbitrary, depending on your tastes.
+
+<figure>
+<img src="red-green-blue-7.jpg" title="red-green-blue-7.jpg" width="300" />
+<figcaption>CIECAM Red Green Blue</figcaption>
+</figure>
+
+**Back to Abstract profile**
+
+Check that the data displayed in ‘Final Gain & Gamut Compression’ is within limits, correct it if necessary, but be careful with the gamut. In the case of 'Girl', gamut compression is essential.
+
+####  Image at the end of Game Changer
+
+<figure>
+<img src="girl-final.jpg" title="girl-final.jpg" width="800" />
+<figcaption>Young girl</figcaption>
+</figure>
+
+Obviously, as with any highly noisy image, finding the right balance between respecting the color gamut, visible detail, and noise is difficult; it's all about compromise.
