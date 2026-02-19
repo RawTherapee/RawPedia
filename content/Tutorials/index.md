@@ -1182,3 +1182,6 @@ Check that the data displayed in ‘Final Gain & Gamut Compression’ is within 
 <img src="cians-rocks-5.jpg" title="cians-rocks-5.jpg" width="800" />
 <figcaption>Les Gorges du Cians</figcaption>
 </figure>
+
+### Game changer: using Harvest mouse
+
