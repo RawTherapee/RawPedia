@@ -111,6 +111,21 @@ Apart from tools that have been around for many years, but are not always well k
 
 ## The tutorials
 
+[Best Shadows & Highlight techniques](/tutorials/#game-changer---best-shadows--higlights-techniques)
+
+[How to process a Sunset](/tutorials/#game-changer---how-to-process-a-sunset)
+
+[Using Leds's image](/tutorials/#game-changer-using-leds-image)
+
+[Mastery of colors - Film simulation](/tutorials/#game-changer--mastery-of-colors--film-simulation)
+
+[Rocks image](/tutorials/#game-changer-a-complete-process-on-a-user-rocks-image)
+
+[Harvest mouse](/tutorials/#game-changer-using-harvest-mouse)
+
+As a reminder: all these tutorials are designed for teaching, rather than achieving the best possible result (which, by the way, is quite subjective). What I'm fairly certain of is that out-of-gamut data (here, sRGB) is handled 99% of the time, along with various artifacts. It's very easy to create 'flashy' images, but these will be out of bounds.
+
+
 The first tutorial, 'Best Shadows & Highlights Techniques', is the most detailed in its explanation of each method or tool (except for noise reduction). To avoid overloading the other tutorials with repetition, prior knowledge of the explanations will be assumed.
 
 ### Game Changer - Best Shadows & Higlights techniques 
@@ -1000,7 +1015,7 @@ Check if the histogram changes when you enable or disable it. Of course, choose 
 </figure>
 
 + Adjust gamma and slope to achieve the desired result and Attenuation threshold
-+ Enable ‘Contrast Enhancement’ - The default settings should be suitable in most cases.
++ Enable ‘Contrast Enhancement’ - The default settings should be suitable in most cases. I increased 'Contrast profile' to 3. This means that 1 basic level of Wavelet decomposition is used (to simplify)
 + The RGBmax indicator should display a value less than 1. If it doesn't, either change the previous AP or MM settings, or adjust 'Final Gain & Gamut Compression'. You will see the RT process values ​​displayed below the 'Gain (Ev)' and 'Target gamut' settings. To display the data, at least one of the two settings must not be zero or 'None'. I recommend setting 'Target gamut' to sRGB (the same setting you used for Soft Proofing) and in Gamut Compression (Color Tab).
 
 ####  Color Appearance & Lighting
@@ -1297,7 +1312,7 @@ When ‘Capture Sharpening’ (Raw Tab) is enabled, the ‘Capture Radius’ val
 + Balance the lights in the image.
 + Significantly increase local contrast.
 + Adjust gamma and slope to achieve the desired result and Attenuation threshold. This is where you can change the background, making it darker or lighter by adjusting the 'Slope' setting.
-+ Enable ‘Contrast Enhancement’ - The default settings should be suitable in most cases.I increased 'Contrast profile' to 3. This means that 1 basic level of Wavelet decomposition is used (to simplify).
++ Enable ‘Contrast Enhancement’ - The default settings should be suitable in most cases. I increased 'Contrast profile' to 3. This means that 1 basic level of Wavelet decomposition is used (to simplify).
 + The RGBmax indicator should display a value less than 1. If it doesn't, either change the previous AP or GHS settings, or adjust 'Final Gain & Gamut Compression'. You will see the RT process values ​​displayed below the 'Gain (Ev)' and 'Target gamut' settings. To display the data, at least one of the two settings must not be zero or 'None'. I recommend setting 'Target gamut' to sRGB (the same setting you used for Soft Proofing) and in Gamut Compression (Color Tab).
 <figure>
 <img src="ap-trc-contrast-6.jpg" title="ap-trc-contrast-6.jpg" width="300" />
@@ -1336,7 +1351,7 @@ Of course, the settings are quite arbitrary, depending on your tastes.
 
 **Back to Abstract profile**
 
-Check that the data displayed in ‘Final Gain & Gamut Compression’ is within limits, correct it if necessary, but be careful with the gamut.In the case of 'Harvest mouse', gamut compression is essential.
+Check that the data displayed in ‘Final Gain & Gamut Compression’ is within limits, correct it if necessary, but be careful with the gamut. In the case of 'Harvest mouse', gamut compression is essential.
 
 ####  Image at the end of Game Changer
 
