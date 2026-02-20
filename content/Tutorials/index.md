@@ -11,7 +11,7 @@ toc: true
 ## Introduction : What is a "Game changer"?
 
 ‘Game changer’ - in French, the term ‘bouleverseur’ suits me well as a translation: it aims to change the usual way of thinking and acting in terms of image processing. Before changing the way we do things, we must first agree on the way we see things. In french a great sociologist, now deceased, said : "L'accord sur ma manière de faire est avant tout un accord sur la manière de voir" (Jean-Daniel Reynaud : 1926 - 2019).
-
+grave
 This concept isn't about forcing you to change your image processing methods, but rather about trying a different approach based on principles that solve (at least partially, I believe) difficult image processing problems, using new concepts and methods. I'm not talking about tools here, but meta-methods: how to proceed and why this processing method is preferable to another for this type of image. There isn't a single method that works in all cases, but rather principles based on specific objectives.
 
 
@@ -21,8 +21,8 @@ This concept isn't about forcing you to change your image processing methods, bu
 * Today, the powerful modules are scattered across the different Tabs, and for my part, I almost never use them (with the exception of 'Highlight reconstruction') in the first two 'Tabs'.
 * Other improvements have made some modules that were very good 10 years ago a little less so. I'm thinking of the excellent "Dynamic Range Compression" (which is mathematically complex), which is slow and resource-intensive...
 * A persistent problem, once you're no longer in Raw mode, is that the 'Preview', apart from 'fit to screen', is often different from the TIF/JPG output. Furthermore, the appearance varies significantly depending on the zoom level and the tools used. This is a pipeline design flaw... that hasn't been resolved (the consolation is that this problem, to varying degrees, is found in other software as well)... So you just have to live with it.
-* There are also the effects of fads; yesterday everyone was talking about "XXX", then "YYY"...and now "ZZZ", and since it's present elsewhere, why isn't it being developed in RT? This doesn't mean that "ZZZ" is better than "XXX".
-* RT also has the unique characteristic of employing certain specific algorithms or processing methods. People may like it or dislike it, criticize it or approve of it, and compare it to what exists elsewhere. Before condemning, compare apples to apples (you wouldn't compare a chicken and a fish). I'm referring in particular to: CIECAM, Auto WB temperature correlation, Selective Editing, Wavelets, Abstract Profiles, etc.
+* There are also the effects of fads; yesterday everyone was talking about "XXX", then "YYY"...and now "ZZZ", and since it's present elsewhere, why isn't it being developed in RT? This doesn't mean that "ZZZ" is better than "XXX". As we say in French ‘ça tombe comme à Gravelotte’.
+* RT also has the unique characteristic of employing certain specific algorithms or processing methods. People may like it or dislike it, criticize it or approve of it, and compare it to what exists elsewhere. Before condemning, compare apples to apples (you wouldn't compare a chicken and a fish). I'm referring in particular to: CIECAM, Auto WB temperature correlation, Selective Editing, Wavelets, Abstract Profiles, etc. What I observe today (early 2026) is that what was once heresy has become a focal point; I'm referring to Wavelets in another free software, or even the gamma/slope coupler...(or Abstract Profile).
 
 ### In summary: some principles
 + Start processing an image with no settings other than the default ones in 'Neutral', to avoid any side effects.
@@ -38,6 +38,7 @@ This concept isn't about forcing you to change your image processing methods, bu
   - Bring the White point as close as possible to 1: out-of-gamut data can have very high values ​​(3, 5 or 10), and all methods are more efficient when in the interval [0 1].
   - Implementing an asymptotic process that allows us to get closer to the white point, without reaching it - and even less going beyond it.
   - This principle is included in 'Selective Editing > Equalization & Pre-tone mapping': The first RT-spot used must always be (if of course there is a need) a Pre-tone mapper in Global mode.
+  - The timing of the Linear Black Point and Linear White Point calculations is of paramount importance. Performing these calculations too early in the process does not reflect reality, as processing may have occurred in the interim. Using average values ​​is also not the solution.
 + Towards the end of the process, it is possible to adjust the tones and contrasts, assuming that the image at this stage has no major defects. This method should allow visualization of the effects on the acceptable limits for the data and the gamut. The primaries in Game Changer initially only serve to render special effects.
 + At the very end of the process, it allows the implementation of the concepts of 'Scene' (source) and Viewing (display): taking into account the conditions of shooting and final viewing, taking into account the physiological aspects, allowing each R, G, B channel to be retouched to better balance or modify the colors.
 + You may notice that throughout 'Game changer' (except for a few rare cases, where they are 'automatics' as in Capture Sharpening, or for a very specific use), I never use masks and layers, or Primaries. And it is unlikely that you will find these methods and tools anywhere other than in Rawtherapee (of course not all of them).
@@ -176,7 +177,7 @@ If you examine:
 **Learning objective:**
 
 The user will understand the ‘Game changer’ approach discussed in this tutorial:
-+ The role of Raw Tabs tools, in particular to combat artifacts
++ The role of Raw Tabs tools, in particular to combat artifacts.
 + The importance of Color Propagation, including in (very) deep shadows.
 + The importance of Gamut Compression.
 + White Balance optimization - Temperature correlation.
@@ -253,7 +254,7 @@ I chose "Camera" which seems to give a better result. During the Raw pre-process
 + Observing the reaction of the modules mentioned in the recommendations, the contribution of "Color Propagation" is small on the 'numbers', but not negligible. On the other hand, and this is its initial role, it allows the recovery of 'lost' data in highlight, but also in very low light.
 + If you try another tool in 'Highlight reconstruction', such as 'Inpaint opposed' you will see that it has no effect on very low lights.
 + The first example is without the 'Blur' slider in 'Color Propagation' being activated. This slider allows you to adjust the transitions between 'recovered' (and therefore lost) areas and healthy areas. This also led to a change in the 'Raw Black Points' setting.
-  - [Recommandations](/tutorials/#recommendations)
+  - [Recommendations](/tutorials/#recommendations)
 
 #### White Balance - Temperature correlation
 
@@ -327,7 +328,7 @@ As a reminder, this algorithm does not perform a "conversion" but compresses the
 <figcaption>Excluding spot - remove artefacts</figcaption>
 </figure>
 
-##### The fifth Equalization & Pre-Tone Mapping - Standard - (GHS) increases the dramatic aspect of the sky
+##### The fifth - Equalization & Pre-Tone Mapping - Standard - (GHS) increases the dramatic aspect of the sky
 
 <figure>
 <img src="ghs-moins-1.jpg" title="ghs-moins-1.jpg" width="600" />
@@ -392,10 +393,12 @@ The objective here is twofold:
 + Note that I used polar coordinates to make this modification of the primaries. I could have done it directly with the CIExy diagram, or in linear mode.
 + Note that if instead of increasing the saturation, I had reduced it, we would have gone outside the CIExy diagram, hence the generation of imaginary colors.
 + Note that I've changed the 'White point' of the internal ICC profile to D41. When you change it, you change the dominant color. The primary rotation is done from this 'new' White point.
++ Note that just because a color is in the CIExy diagram does not mean it is in the gamut (there is a 3rd dimension 'Y' - equivalent to luminance). But any color that is outside the diagram is necessarily imaginary.
 
 #### Color Appearance & Lighting
 
 I would like to remind you that this concept is one of the most advanced methods for color management. It is a Color Appearance Model, based on the work of researchers from around the world; its first version (in the form of an Excel spreadsheet) dates back to 1997. Its current name is CIECAM16 (published in 2020).
+[CIECAM](/ciecam02/#color-appearance--lighting-ciecam0216-et-color-appearance-cam16--jzczhz---tutorial)
 
 + It takes into account (I'm simplifying drastically):
   - The concepts of 'scene' (source) and 'viewing' (display).
@@ -428,9 +431,9 @@ In this tutorial, I will present it briefly in 2 parts:
 ##### CIECAM - Red Green Blue
 
 +  You can modify each R, G, B channel to finely retouch colors or simulate films:
-  - Rotate each color by degrees.
-  - Change the saturation (s) in the sense of a CAM (Color Appearance Model).
-  - Change the brightness (Q) with a curve that allows you to adapt the contrast and brightness to each situation.
+    - Rotate each color by degrees.
+    - Change the saturation (s) in the sense of a CAM (Color Appearance Model).
+    - Change the brightness (Q) with a curve that allows you to adapt the contrast and brightness to each situation.
 
 + As a reminder, in CIECAM there are a total of 9 variables, 6 of which are accessible to the user in RT: Lightness (J), Brightness (Q), Saturation (s), Chroma (C), Colorlness (M), and Hue rotation (h). They are interdependent. For example Chroma = saturation * saturation * brightness.
 
@@ -490,7 +493,7 @@ This image seems innocuous at first glance, a typical sunset. The image is gener
 **Learning objective**
 
 The user will understand the ‘Game changer’ approach discussed in this tutorial:
-+ The role of ‘GHS’ or 'MM' in the linear portion of the data, which can be considered a ‘Pre-tone-mapper’
++ The role of ‘GHS’ or 'MM' in the linear portion of the data, which can be considered a ‘Pre-tone-mapper’.
 + The role of ‘Abstract Profile’, which prepares the data for use in the output (screen, TIFF/JPG).
 + Minimize the use of other tools, aside from those essential for the proper functioning of RawTherapee, GHS, MM, and AP, and reduce back-and-forth navigation within the GUI.
 + Highlight the tools to avoid and those that can be beneficial.
@@ -498,7 +501,7 @@ The user will understand the ‘Game changer’ approach discussed in this tutor
 
 #### First step: GHS - MM  and necessary adjustments
 
-+ Deactivate everything, switch to ‘Neutral’ mode
++ Deactivate everything, switch to ‘Neutral’ mode.
 + Activate ‘Capture Sharpening’ (Raw Tab): check that ‘Contrast threshold’ displays a value other than zero. Otherwise, it means it is not operational (noisy image). Resolving this potential problem related to noisy images will be covered in a later tutorial.
 + The image was taken outdoors at sunset, therefore with a daylight illuminant, so there is no problem setting the white balance (Color Tab) to ‘Automatic & refinement > Temperature correlation’.
 + In the Exposure Tab, disable ‘Clip out-of-gamut colors’, enable ‘Highlight reconstruction’, and zoom the image to 100% while examining the sun. Try ‘Inpaint Opposed’, ‘Blend’, and ‘Color Propagation’. For each case, re-enable ‘Clip out-of-gamut colors’ and observe the differences. The image without artifacts (I think?) is with ‘Color Propagation’ and ‘Clip out-of-gamut colors’ disabled. Try ‘Blur’ (Color Propagation) to see if artifacts at transitions appear or disappear. ‘Blur’ is finally set to 0.
@@ -575,7 +578,7 @@ Performs the entire GHS processing, including Matrix conversion either AgX or Jz
 
 #### Using Michaelis-Menten (MM)
 
-This algorithm is much simpler than GHS. It often provides almost the correct settings on the first try. However, it cannot operate in 'Inverse' mode. Like GHS, it requires adjustments to the 'Black points (linear)' and 'White points (linear)'. 
+This algorithm is much simpler than GHS. It often provides almost the correct settings on the first try. However, it cannot operate in 'Inverse' mode. Like GHS, it requires adjustments to the 'Black point (linear)' and 'White point (linear)'. 
 
 For the sake of simplicity, it is only offered in RGB Standard mode, i.e. the 3 channels Red, Green, Blue used in the same way.
 
@@ -746,6 +749,7 @@ Compared to the tutorial presented in November 2025, the changes are significant
 + The role of Gamut Compression at the beginning and at the end of the process.
 
 **Teaching approach**
+
 The issue of out-of-gamut or anecdotal colors, due, for example, to LEDs:
 
 To provide some background and help you understand, I’ve included two links (which I already shared during the Gamut Compression presentation in September 2024 ).
@@ -798,7 +802,7 @@ This is one of the key points for:
 + compress them within the output profile gamut.
 
 I set it to sRGB*. Note that ‘gamut compression’ doesn’t take into account the gamma of the output profile.
-+ Note the very high value of 'Maximum achromatic value', close to 12. That is 12 times the maximum 'normal' value. The chromatic values ​​– those represented in the CIExy daigram – may be 'normal', but the Y component of xyY is enormous.
++ Note the very high value of 'Maximum achromatic value', close to 12. That is 12 times the maximum 'normal' value. The chromatic values ​​– those represented in the CIExy diagram – may be 'normal', but the Y component of xyY is enormous.
 + Disable "Color Propagation" and you'll see this value become 'reasonable' (around 4), yet still high. But what's important is to 'retrieve' as much data as possible.
 + Another possible reason is that there are bright spots in the image. We are no longer in 'Pointer's Gamut'.
 <figure>
@@ -836,7 +840,7 @@ I made gradual adjustments starting from the basic settings, leading to the resu
 #### Third step: Generalized Hyperbolic Stretch - GHS & Michaelis-Menten - MM
 
 I chose to perform the 'pre-tone mapping' in 2 steps:
-+ The first with GHS, to bring the huge value of the data (linear White point around 11), into the interval [0 1]
++ The first with GHS, to bring the huge value of the data (linear White point around 11), into the interval [0 1].
 + The second wit MM, to better balance the image.
 
 GHS:
@@ -921,7 +925,7 @@ Similarly, is there respect for the colours? Difficult to say as I did not atten
 
 When I look and listen to other open-source software around me, all anyone talks about is "..X". As we say in French ‘ça tombe comme à Gravelotte’.
 There are few (if any) references to "..X" in RT, and I don't think that will change (at least not on my end). I'm not saying these aren't good methods (they are), but:
-+ there's something equivalent in RT, even if the concepts and vocabulary are different;
++ there's something equivalent in RT, even if the concepts and vocabulary are different.
 + some tools require implementation work (code modification, downloading and configuring libraries, etc.) that isn't accessible to everyone. These 'custom' tools are certainly relevant, but they only allow exchanges between users who have installed them (and what about updates?). Since its creation, RT has maintained compatibility with previous versions (which is often a drawback) and is delivered as a complete package. Everyone receives the same distributed package, thus ensuring compatibility over time and between users. So, in summary, yes to these tools if they can be fully integrated into the overall code.
 + Note that the color gamut of printed materials, whether CMYK or RGB, is 'small' (often smaller than sRGB, especially in shadows...). So, simulation is possible, but...
 
@@ -996,7 +1000,7 @@ Fortunately, not all images are like that, and the histogram in 'neutral' mode i
 
 #### Start of treatment
 
-+ set to Neutral.
++ Set to Neutral.
 + Highlight reconstruction – Color Propagation (Exposure Tab) - disable ‘Clip out-of-gamut colors’. At this stage, we don't yet know if this selection is useful. It allows us to find the maximum linear value of the white point. Depending on the values ​​found later in Michaelis-Menten (Selective Editing) or in Gamut Compression (Color Tab) , you may or may not want to disable it.
 + The values found for ‘Maximum achromatic value’ in Gamut Compression (Color Tab), are strongly influenced by the settings chosen for 'Clip out-of-gamut colors' and 'Highlight reconstruction'. In this case (‘The Blue Horse’), I preferred to keep 'Highlight reconstruction > Color propagation' enabled and uncheck ‘Clip out-of-gamut colors'
 + Capture Sharpening (Raw Tab) - Enabled - You'll notice that "Contrast threshold" isn't set to zero. You can leave the default settings. The image doesn't appear to be noisy, so don't change anything for the two sliders (Presharpening denoise, Postsharpening denoise);
@@ -1028,8 +1032,8 @@ Check if the histogram changes when you enable or disable it. Of course, choose 
 <figcaption>Abstract Profile</figcaption>
 </figure>
 
-+ Adjust gamma and slope to achieve the desired result and Attenuation threshold
-+ Enable ‘Contrast Enhancement’ - The default settings should be suitable in most cases. I increased 'Contrast profile' to 3. This means that 1 basic level of Wavelet decomposition is used (to simplify)
++ Adjust gamma and slope to achieve the desired result and Attenuation threshold.
++ Enable ‘Contrast Enhancement’ - The default settings should be suitable in most cases. I increased 'Contrast profile' to 3. This means that 1 basic level of Wavelet decomposition is used (to simplify).
 + The RGBmax indicator should display a value less than 1. If it doesn't, either change the previous AP or MM settings, or adjust 'Final Gain & Gamut Compression'. You will see the RT process values ​​displayed below the 'Gain (Ev)' and 'Target gamut' settings. To display the data, at least one of the two settings must not be zero or 'None'. I recommend setting 'Target gamut' to sRGB (the same setting you used for Soft Proofing) and in Gamut Compression (Color Tab).
 
 ####  Color Appearance & Lighting
@@ -1098,11 +1102,11 @@ I’m going to show you how to process this image; some of the settings might be
  [Specific tools used](/tutorials/#specific-tools-used)
 
 #### First steps
-+ set to Neutral.
-+ activate ‘Highlight reconstruction > Color propagation’, and check the image and histogram to ensure there is no change. Since there appears to be no effect, deactivate ‘Highlight reconstruction’.
++ Set to Neutral.
++ Activate ‘Highlight reconstruction > Color propagation’, and check the image and histogram to ensure there is no change. Since there appears to be no effect, deactivate ‘Highlight reconstruction’.
 + Go to the ‘Color tab’ and enable 'Gamut compression’. I’ve chosen ‘sRGB’ as the ‘Target Compression Gamut’, which should be suitable for most users with a standard monitor. Again, double-check that there are no changes to the image or histogram, and examine the information line under ‘Maximum achromatic value’. You’ll see three values: R :, G :, and B :, which correspond to the maximum of the three channels (in sRGB). In this case, they are all much lower than 1. This suggests that the image has been underexposed. We’ll see what to do with this information later. Then deactivate ‘Gamut compression’
 + Go to 'Raw tab > Capture Sharpening’, activate it, and check that ‘Contrast threshold’ is not set to zero. If it is, you will need to adjust ‘Presharpening denoise’. Leave the default settings and leave ‘Capture Sharpening’ enabled.
-+ Go to ‘Color tab > White Balance’ and choose ‘Automatic & Refinement > Temperature correlation’. This algorithm compares up to 236 colors in the image with over 400 spectral reference colors. Some of these colors are in ‘Beta RGB’, the smallest color space encompassing ‘Pointer’s gamut’ (the reflected colors seen by humans), while others are in the entire visible spectrum (ACES-P0). Try the two settings ‘Medium sampling - near Pointers’s gamut’ and ‘Close to full CIE diagram’. You’ll see a difference in the calculations, which is probably due to the slightly hazy upper area of ​​the image – perhaps corresponding to a break in the sunlight. I chose to keep the first setting. Note that these references are only used for calculations and have no direct relation to the ‘Working Profile’ or ‘Output profiles’. It makes no sense to use it with illuminants other than Daylight and Blackbody
++ Go to ‘Color tab > White Balance’ and choose ‘Automatic & Refinement > Temperature correlation’. This algorithm compares up to 236 colors in the image with over 400 spectral reference colors. Some of these colors are in ‘Beta RGB’, the smallest color space encompassing ‘Pointer’s gamut’ (the reflected colors seen by humans), while others are in the entire visible spectrum (ACES-P0). Try the two settings ‘Medium sampling - near Pointers’s gamut’ and ‘Close to full CIE diagram’. You’ll see a difference in the calculations, which is probably due to the slightly hazy upper area of ​​the image – perhaps corresponding to a break in the sunlight. I chose to keep the first setting. Note that these references are only used for calculations and have no direct relation to the ‘Working Profile’ or ‘Output profiles’. It makes no sense to use it with illuminants other than Daylight and Blackbody:
  [Temperature correlation](/tutorials/#white-balance---temperature-correlation)
 
 #### Selective Editing - 5 RT-spots
@@ -1137,10 +1141,13 @@ I’m going to show you how to process this image; some of the settings might be
 <img src="inv-ghs-5.jpg" title="inv-ghs-5.jpg" width="300" />
 <figcaption>Inverse GHS</figcaption>
 </figure>
+
 + note : the scope value; the shape of 'GHS Curve Visualisation' which works 'in reverse.
 
 ##### Third spot : Increase the sense of clarity in the upper part of the image
-+The goal is to increase the sense of clarity in the upper part of the image. To do this, I use 'Color correction grid'
+
+The goal is to increase the sense of clarity in the upper part of the image. To do this, I use 'Color correction grid'
+
 <figure>
 <img src="upper-clar-5.jpg" title="upper-clar-5.jpg" width="600" />
 <figcaption>Clarity</figcaption>
@@ -1243,7 +1250,7 @@ Raw file : (Copyright Andy Astbury - Creative Common Attribution-share Alike 4.0
 + The role of Color Appearance & Lighting : Red Green Blue.
 
 #### First steps
-+ set to Neutral.
++ Set to Neutral.
 + Enabling Raw Black Point 'dehaze' does move the green sliders, but it introduces a strong red bias into the image. Deactivate it and return the sliders to zero.
 + Enable White Balance > Auto > Temerature correlation > the default values ​​should be suitable.
 + Enable Gamut Compression. You will see basic values ​​for the displayed data. At this stage, there is probably no need for compression. However, try adjusting the sliders to see the potential effect on the histogram and the image. In this example, Gamut Compression is disabled.
@@ -1293,7 +1300,7 @@ I preferred to use Generalized Hyperbolic Stretch (GHS) rather than Michaelis-Me
 The goal of this step is to adjust the White Point (linear) and Black Point (linear), and at a minimum, to adjust the image contrast.
 Go to ‘Selective Editing > Global > Equalization & Pre-Tone Mapping’. Choose Genralized Hyperbolic Stretch.
 
-Click on ‘Auto Black Point & White Point’ and examine the values. You should see BP = 0.0033, meaning the image’s black levels were not optimized (), and WP = 1.0657, also indicating no optimization. Adjusting these values ​​to the range [0, 1] will result in an image with greater contrast and deeper blacks.This reduction in linear Black point, does essentially the same thing as "Raw Black Point," but here it doesn't introduce a color cast. All three RGB channels are treated identically.
+Click on ‘Auto Black Point & White Point’ and examine the values. You should see BP = 0.0033, meaning the image’s black levels were not optimized, and WP = 1.0657, also indicating no optimization. Adjusting these values ​​to the range [0, 1] will result in an image with greater contrast and deeper blacks.This reduction in linear Black point, does essentially the same thing as "Raw Black Point," but here it doesn't introduce a color cast. All three RGB channels are treated identically.
 
 The (somewhat arbitrary) settings are ‘Stretch factor (D)’ = 0.488, ‘Local intensity (b)’ = 1.442 and ‘Symmetry point (SP)’ = 0.03113. Of course you can change these settings.
 
@@ -1306,7 +1313,7 @@ The (somewhat arbitrary) settings are ‘Stretch factor (D)’ = 0.488, ‘Local
 
 The goal is to restore sharpness to the transition areas of the image between the (noisy) background and the main subject.
 
-Select ‘Add tool to current spot…’ > Sharpening > Capture Deconvolution
+Select ‘Add tool to current spot.. > Sharpening > Capture Deconvolution'
 
 The major problem – not specific to this tool but generally due to RawTherapee’s pipeline – is the sensitivity to the zoom level and the preview position. So, you have to make do. Ideally, you would have a screen large enough to see the details in ‘fit to screen’ mode (which is definitely not the case for me). In most cases, choose a reasonable zoom level of 50%, 100%, or 200% to see the area in question (here, the mouse’s nose). Activate ‘Show contrast mask’ with ‘Contrast threshold’ in ‘automatic’ mode. When you are satisfied with the resulting effect, uncheck the ‘automatic’ box; the setting will be retained for the entire process (including Output).
 
@@ -1402,9 +1409,9 @@ Raw file :  (Creative Common Attribution-share Alike 4.0)
 
 **Learning objectives**
 + See the role of presharpening denoise and postsharpening denoise.
-+ The role of Gamut Compression
++ The role of Gamut Compression.
 + The impact of the demosiacing method and how to compensate for the lack of a contrast mask in this case.
-+ The impact of Abstract Profile - and gamut controls
++ The impact of Abstract Profile - and gamut controls.
 + The distribution of denoising along the process.
 + The role of GHS in balancing the image.
 + How to (partially) use the new possibilities of ‘Selective Editing > denoise’.
@@ -1412,18 +1419,18 @@ Raw file :  (Creative Common Attribution-share Alike 4.0)
 + The role of Color Appearance & Lighting (Red Green Blue).
 
 #### First step
-+ set to Neutral.
-+ Set White Balance auto - to Low Sampling & Ignore camera settings : The choice is quite subjective (you can 'remove the 2 pass algorithm')
++ Set to Neutral.
++ Set White Balance auto - to Low Sampling & Ignore camera settings : The choice is quite subjective (you can or must 'remove the 2 pass algorithm').
 <figure>
 <img src="girl-wb-7.jpg" title="girl-wb-7.jpg" width="300" />
 <figcaption>White Balance auto</figcaption>
 </figure>
 
-#### Capture Sharpening & main denoise
+#### Capture Sharpening & main Noise Reduction
 
-+ Verify that ‘Contrast Threshold’ displays a value = 0
++ Verify that ‘Contrast Threshold’ displays a value = 0.
 + Enable ‘Show contrast mask’, which is also insensitive to the Preview position.
-+ Adjust the ‘Presharpening denoise’ setting until the mask appears (or a little more)
++ Adjust the ‘Presharpening denoise’ setting until the mask appears (or a little more).
 + Set the demosaicing method to a dual demosaicing system (AMAZE + bilinear). There’s no mask for this system (it’s complicated to implement), but you can use the one from ‘Capture sharpening’. Increase the value in ‘Demosaicing > Contrast threshold’, for example, up to 14 (disabling auto… which remains at 0). Through trial and error, choose the method that minimizes artifacts and noise.
 
 **Remove noise on flat areas**
@@ -1435,7 +1442,7 @@ Raw file :  (Creative Common Attribution-share Alike 4.0)
 </figure>
 
 **Second step**
-Use ‘Noise reduction’ sparingly - this isn’t (at least in my opinion) a comprehensive processing step, as it affects the entire image, resulting in a lack of nuance. I’ve chosen relatively low values ​​for ‘Luminance’ and ‘Chominance’ (see pp3 settings)
+Use ‘Noise reduction’ sparingly - this isn’t (at least in my opinion) a comprehensive processing step, as it affects the entire image, resulting in a lack of nuance. I’ve chosen relatively low values ​​for ‘Luminance’ and ‘Chominance’ (see pp3 settings).
 
 #### Gamut Compression
 
@@ -1462,7 +1469,7 @@ The choices are fairly arbitrary.
 
 ##### Adjust the noise reduction to your liking
 At this stage, nothing is clear, everything is arbitrary. We are subject to the constraints of the Preview…and in the current state of the process, there is no ‘proper’ method. So we make do.
-+ Add a new RT-spot (Blur/Grain & Denoise > Denoise) in Global mode (of course you can choose Full image and use deltaE, or a normal Spot…, but to simplify the explanation I chose ‘Global’)
++ Add a new RT-spot (Blur/Grain & Denoise > Denoise) in Global mode (of course you can choose Full image and use deltaE, or a normal Spot…, but to simplify the explanation I choose ‘Global’)
 + Enable ‘Contrast threshold’.
 + Enable ‘Show contrast mask’.
 + Adjust the ‘Denoise contrast mask’ and ‘Equalizer denoise mask’ to isolate areas to be treated or excluded. You can balance the system by adjusting the ‘Ratio flat-structured areas’ slider.
