@@ -32,6 +32,7 @@ This concept isn't about forcing you to change your image processing methods, bu
 + Finding the best color balance is crucial before starting any treatments. The longer you wait, the greater the risk of 'contaminating' other methods. Note that it may be affected by chromatic noise.
 + Make the most of the possibilities in Raw mode, whether it be the demosaicing method, the improvement of sharpness and noise treatment, the correction of black points and chromatic aberrations, etc.
 + Control (and compress if necessary) the gamut at the beginning and end of the process.
++ Be careful not to use methods or tools that lead to the creation of imaginary colors. The core principle of Game Changer is to eliminate them - or at the very least, reduce them.
 + Using the concept of a pre-tone mapping, which makes an image usable or (acceptable) for further processing. That is to say:
   - Bring the black point close to zero, to increase contrast and use the entire range of data.
   - Bring the White point as close as possible to 1: out-of-gamut data can have very high values ​​(3, 5 or 10), and all methods are more efficient when in the interval [0 1].
@@ -96,18 +97,18 @@ But of course, there are no prohibitions; these are only general recommendations
 ### Specific tools used
 As of February 2026 - to be updated.
 Apart from tools that have been around for many years, but are not always well known, I highlight new ones, or those that seem preferable to me:
-+ Capture Sharpening (Raw Tab) - With Pre and Post sharpening denoise  [Capture Sharpening](/capture_sharpening/)
-+ Color Propagation in Highlight reconstruction (Exposure Tab) [Highlight Reconstruction](/exposure/#highlight-reconstruction)
-+ White Balance > Automatic & Refinement > Temperature correlation (Color Tab) [Temperature Correlation](/white_balance/#the-temperature-correlation-algorithm)
-+ Gamut Compression (Color Tab) [Gamut Compression](/gamut_compression)
-+ Selective Editing > Equalization & Pre-Tone Mapping : Generalized Hyperbolic Stretch (GHS) & Michaelis-Menten (MM) [GHS & MM](/local_adjustments/#generalized-hyperbolic-stretch-and-michaelis-menten)
-+ Abstract Profile (Color Tab) [AP](/color_management/#abstract-profiles)
-  - Tone Response Curve [AP - TRC](/color_management/#trc---tone-response-curve)
-  - Contrast Enhancement [AP-CE](/color_management/#contrast-enhancement), in particular how it works [Presets](/color_management/#each-preset-contains-a-selection-of-decomposition-levels), and [Characteristics](/color_management/#the-contrast-enhancement-module-has-the-following-characteristics)
-  - Illuminant White Point [AP - IWP](/color_management/#illuminant---white-point)
-  - Primaries [AP - Prim](/color_management/#primaries) 
-+ Selective Editing > Blur/Grain & Denoise > Denoise [SE-denoise](/local_adjustments/#selective-editing----blurgrain--denoise--denoise)
-+ Color Appearance & Lighting (Advanced Tab) [CIECAM](/ciecam02)
++ Capture Sharpening (Raw Tab) - With Pre and Post sharpening denoise:  [Capture Sharpening](/capture_sharpening/)
++ Color Propagation in Highlight reconstruction (Exposure Tab): [Highlight Reconstruction](/exposure/#highlight-reconstruction)
++ White Balance > Automatic & Refinement > Temperature correlation (Color Tab): [Temperature Correlation](/white_balance/#the-temperature-correlation-algorithm)
++ Gamut Compression (Color Tab): [Gamut Compression](/gamut_compression)
++ Selective Editing > Equalization & Pre-Tone Mapping : Generalized Hyperbolic Stretch (GHS) & Michaelis-Menten (MM): [GHS & MM](/local_adjustments/#generalized-hyperbolic-stretch-and-michaelis-menten)
++ Abstract Profile (Color Tab): [AP](/color_management/#abstract-profiles)
+  - Tone Response Curve:[AP - TRC](/color_management/#trc---tone-response-curve)
+  - Contrast Enhancement: [AP-CE](/color_management/#contrast-enhancement), in particular how it works [Presets](/color_management/#each-preset-contains-a-selection-of-decomposition-levels), and [Characteristics](/color_management/#the-contrast-enhancement-module-has-the-following-characteristics)
+  - Illuminant White Point: [AP - IWP](/color_management/#illuminant---white-point)
+  - Primaries: [AP - Prim](/color_management/#primaries) 
++ Selective Editing > Blur/Grain & Denoise > Denoise : [SE-denoise](/local_adjustments/#selective-editing----blurgrain--denoise--denoise)
++ Color Appearance & Lighting (Advanced Tab): [CIECAM](/ciecam02)
 
 ## The tutorials
 
@@ -814,6 +815,17 @@ I set it to sRGB*. Note that ‘gamut compression’ doesn’t take into account
 
 [Common illuminants](/color_management_addon/#white-balance-gaps)
 
+##### Some technical explanations
+
+Whether it's each camera or our human eye, the color perception system can be summarized by 3 concepts:
++ The color specific to each object (flowers, metal, greenery, etc.). It is measured with a spectrometer and is expressed as spectral data between 380 nm and 830 nm.
++ The nature of the illuminant, which is also expressed in spectral data, is crucial: daylight and blackbody are well-known and have a Color Rendering Index (CRI) of 100 by definition. However, other light sources have emerged, such as halogens and LEDs, whose spectral distribution is not continuous; their CRI can be very poor, 60 or less. This results in "holes" in the spectrum and inaccurate data, often leading to imaginary color temperatures.
++ The Observer, which of course is different for each camera, and obviously different from that of a human.
+
+The whole thing is solved by matrix calculations, for which I am attaching a link.
+
+[Colorimetry - Data used](/local_adjustments/#generalized-hyperbolic-stretch--michaelis-menten--what-type-of-data-to-use-)
+
 <figure>
 <img src="gamut-comp-2.jpg" title="gamut-comp-2.jpg" width="300" />
 <figcaption>Gamut Compression - LED</figcaption>
@@ -1456,7 +1468,7 @@ At this stage, nothing is clear, everything is arbitrary. We are subject to the 
 + Adjust the ‘Denoise contrast mask’ and ‘Equalizer denoise mask’ to isolate areas to be treated or excluded. You can balance the system by adjusting the ‘Ratio flat-structured areas’ slider.
 + Adjust the luminance and chrominance wavelets ‘as best as possible’… there’s no magic bullet.
 
-**The importance of ‘Locks MadL noise evaluation** :
+**The importance of Locks MadL noise evaluation** :
 + Depending on the position in the Preview, the image analysis is performed using the concept of ‘MAD’ - median absolute deviation - which evaluates noise by decomposition level (here from 0 to 6) and by direction (Horizontal, Vertical, Diagonal). Unfortunately, this evaluation is performed here (as in the ‘Noise reduction’ Detail tab) on the Preview and not on the entire image.
 + If you want to see the interaction between the position in the Preview and the zoom level, select ‘Advanced’ for this RT-spot. You will see 21 sliders that display the MadL value. ‘Locks MadL noise evaluation’ must be enabled. Move the image into the Preview and see the MadL changes.
 + Low levels (0, 1, 2, 3, 4) represent the most visible noise, while higher values ​​tend towards ‘banding noise’. Refer to the tooltips; they attempt to explain the (necessarily complex) operation.
@@ -1495,7 +1507,7 @@ I could have done the same thing for the 2 Chromatic dimensions with MadC.
 [Selective Editing denoise](/local_adjustments/#selective-editing----blurgrain--denoise--denoise)
 
 
-##### Fifth step - Restore some sharpness using ‘Capture deconvolution’
+##### Restore some sharpness using ‘Capture deconvolution’
 
 Open a third RT-Spot in Global mode and choose ‘Add tools to current spot…> Sharpening > Capture Deconvolution’. Can you leave the default settings or change them.
 <figure>
