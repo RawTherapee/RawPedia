@@ -1456,7 +1456,7 @@ At this stage, nothing is clear, everything is arbitrary. We are subject to the 
 + Adjust the ‘Denoise contrast mask’ and ‘Equalizer denoise mask’ to isolate areas to be treated or excluded. You can balance the system by adjusting the ‘Ratio flat-structured areas’ slider.
 + Adjust the luminance and chrominance wavelets ‘as best as possible’… there’s no magic bullet.
 
-The importance of ‘Locks MadL noise evaluation’ :
+**The importance of ‘Locks MadL noise evaluation** :
 + Depending on the position in the Preview, the image analysis is performed using the concept of ‘MAD’ - median absolute deviation - which evaluates noise by decomposition level (here from 0 to 6) and by direction (Horizontal, Vertical, Diagonal). Unfortunately, this evaluation is performed here (as in the ‘Noise reduction’ Detail tab) on the Preview and not on the entire image.
 + If you want to see the interaction between the position in the Preview and the zoom level, select ‘Advanced’ for this RT-spot. You will see 21 sliders that display the MadL value. ‘Locks MadL noise evaluation’ must be enabled. Move the image into the Preview and see the MadL changes.
 + Low levels (0, 1, 2, 3, 4) represent the most visible noise, while higher values ​​tend towards ‘banding noise’. Refer to the tooltips; they attempt to explain the (necessarily complex) operation.
@@ -1468,10 +1468,32 @@ Why is there a difference between what’s displayed in ‘Residual Noise Levels
 + For the former, these measurements are taken after processing and take into account what is empirically visible (using weighting coefficients).
 + For the latter, they represent the actual values ​​used by the core algorithm designed in 2012 by Emil Martinec (who also created Color Propagation and Amaze). Of course, Ingo and I have significantly enhanced the capabilities of the noise reduction functions.
 
+######  Simplified interface
+
 <figure>
 <img src="girl-seden-7.jpg" title="girl-seden-7.jpg" width="300" />
 <figcaption>Selective Editing Denoise</figcaption>
 </figure>
+
+###### Complex interface
+
+If you want to delve deeper, switch to "Advanced" complexity mode. You'll see a selection that might seem daunting, but it reflects the 7 levels of decomposition used – from 2x2 pixels up to 256x256 pixels. The lower levels focus on highly visible noise, while the higher ones are geared more towards banding.
+
+[Daubechies Wavelets](https://en.wikipedia.org/wiki/Daubechies_wavelet)
+
+These sliders represent the wavelet decomposition of the Daubechies method, limited to 7 levels for noise reduction. The first 7 sliders represent the horizontal dimension, the next 7 the vertical dimension, and the last 7 the diagonal dimension. The calculated values ​​are those obtained with MadL (median absolute deviation luminance) for the portion of the image you are viewing. If you switch to manual mode (checkbox "Manual settings"), you can increase or decrease these values. I admit it's not immediately obvious, but it's one of the few ways to customize the process.
+
+Be careful not to confuse this with the sliders or the curves of the 'normal' interface which assume in the calculations that these values ​​are those of MadL by default.
+
+I could have done the same thing for the 2 Chromatic dimensions with MadC.
+
+<figure>
+<img src="girl-daub-7.jpg" title="girl-daub-7.jpg" width="300" />
+<figcaption>Daubechies 7 levels - 3 directions</figcaption>
+</figure>
+
+[Selective Editing denoise](/local_adjustments/#selective-editing----blurgrain--denoise--denoise)
+
 
 ##### Fifth step - Restore some sharpness using ‘Capture deconvolution’
 
