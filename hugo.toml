@@ -83,12 +83,15 @@ defaultContentLanguage = 'en'
     endLevel = 5
     ordered = false
     startLevel = 2
+  [markup.goldmark.parser.attribute]
+    block = true
   [markup.goldmark.renderer]
     hardWraps = false
     unsafe = true
     xhtml = false
-
   [markup.goldmark.renderHooks.link]
+    useEmbedded = 'always'
+  [markup.goldmark.renderHooks.image]
     useEmbedded = 'always'
 
 [outputs]
