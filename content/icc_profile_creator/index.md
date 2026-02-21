@@ -10,17 +10,13 @@ toc: true
 
 ## Introduction
 
-<figure>
-<img src="/images/Rt55_icc_profile_creator.png"
-title="Rt55_icc_profile_creator.png" />
-<figcaption>Rt55_icc_profile_creator.png</figcaption>
-</figure>
+![](rt55_icc_profile_creator.png)
 
 The ICC Profile Creator allows you to generate your own ICC profiles.
 You can use standard presets as well as custom values.
 
 RawTherapee can generate output, screen or custom working profiles using
-the XYZ matrix generated for [Custom profiles](color_management#adding_custom_working_profiles)
+the XYZ matrix generated for [Custom profiles](color_management#adding-custom-working-profiles)
 
 You cannot adjust all the parameters of an ICC profile with this tool,
 e.g. the A2B or B2A tags, but you can adjust those that are important
@@ -32,18 +28,18 @@ in both cases you can use custom primaries and modify the illuminant as
 well as the tone reproduction curve (TRC).
 
 The code and the basic principles are similar to those used for
-[Abstract profiles](color_management#abstract_profiles)
+[Abstract profiles](color_management#abstract-profiles)
 
 ## Usage
 
 Access this module via the
-![<File:Gamut-plus.png>](/images/Gamut-plus.png "File:Gamut-plus.png") ICC
+![](gamut-plus.png "Gamut-plus.png") ICC
 Profile Creator button located either in the bottom-left or top-right of
 the RawTherapee window.
 
 To make the profiles you generate available for use in RawTherapee, save
 them to the "directory containing color profiles" as specified in
-Preferences \> [Color Management](preferences#color_management_tab).
+Preferences > [Color Management](preferences#color-management-tab).
 
 ### Primary Colors
 
@@ -52,9 +48,9 @@ basis of all other colors. In the ICC profile generator, you specify the
 location of the primary colors on the 1931 CIE xy chromaticity diagram
 using the xy coordinates.
 
-[CIE xy diagram](color_management#the_cie_xy_diagram)
+[CIE xy diagram](color_management#the-cie-xy-diagram)
 
-[Operation of the algorithm](color_management#how_the_.22primaries_and_white_point.22_algorithm_works)
+[Operation of the algorithm](color_management#how-the-primaries-and-white-point-algorithm-works)
 
 ### Tone Reproduction Curve
 
@@ -71,7 +67,7 @@ will consist of a linear part and a parabolic part with a seamless
 connection between the two.
 
 You can see other uses of the TRC in Abstract profiles \>
-[TRC_-_Tone_Response_Curve](color_management#trc_-_tone_response_curve).
+[TRC_-_Tone_Response_Curve](color_management#trc---tone-response-curve).
 
 ### Illuminant
 
@@ -90,4 +86,4 @@ necessary chromaticity adaptation to convert the colors to the selected
 illuminant.
 
 For further information on illuminants and Abstract Profiles see:
-[Illuminant - Abstract profile](color_management#illuminant_-_white_point).
+[Illuminant - Abstract profile](color_management#illuminant---white-point).

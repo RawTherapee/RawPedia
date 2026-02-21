@@ -8,11 +8,12 @@ tags:
 toc: true
 ---
 
-__TOC__
 
 The File Browser tab is where you review your photos, select photos for
 editing, or perform batch-editing operations. It consists of the
-following parts:![](Rt_setm_fb.png "Rt_setm_fb.png")
+following parts:
+
+![](rt_setm_fb.png "Rt_setm_fb.png")
 
 - The left panel
   - The "Places" panel on the top links to your home folder, USB card
@@ -38,10 +39,10 @@ following parts:![](Rt_setm_fb.png "Rt_setm_fb.png")
     blurry or out of focus.
 - The central panel shows thumbnails of the folder currently selected.
 
-You can hide the individual panels using the "Show/Hide the left panel
-![<File:Panel-to-left.png>](Panel-to-left.png "File:Panel-to-left.png")"
+You can hide the individual panels using the "Show/Hide the left panel 
+![](panel-to-left.png "File:Panel-to-left.png")"
 and "Show/Hide the right panel
-![<File:Panel-to-right.png>](Panel-to-right.png "File:Panel-to-right.png")"
+![](panel-to-right.png "File:Panel-to-right.png")"
 buttons - see the [Keyboard Shortcuts](keyboard_shortcuts)
 page.
 
@@ -125,32 +126,32 @@ independent from your system one if you have a system one.
 ### Using the Trash Bin
 
 To move files to the trash bin, either use the "Move to trash" button
-![<File:Trash.png>](Trash.png "File:Trash.png") in the top-right corner
+![](trash.png "Trash.png") in the top-right corner
 of each thumbnail, or right-click on a selection of files and choose
 "File operations \> Move to trash". These files are then marked as being
 in the trash bin, but they are not deleted from your hard drive.
 
 - To hide all files which are marked as being in the trash bin, click
   the "Show only non-deleted images" button
-  ![<File:Trash-hide-deleted.png>](Trash-hide-deleted.png "File:Trash-hide-deleted.png")
+  ![](trash-hide-deleted.png "Trash-hide-deleted.png")
   in the top toolbar.
 - To see the contents of the trash bin, click the "Show contents of
   trash" button
-  ![<File:Trash-show-full.png>](Trash-show-full.png "File:Trash-show-full.png").
+  ![](trash-show-full.png "Trash-show-full.png").
 - While you are viewing the contents of the trash bin a new "Permanently
   delete the files from trash" button
-  ![<File:Trash.png>](Trash.png "File:Trash.png") appears to the left of
+  ![](trash.png "Trash.png") appears to the left of
   the thumbnails - use it to delete all trashed files from your hard
   drive.
 - Click on the "Clear all filters" button
-  ![<File:Filterclear.png>](Filterclear.png "File:Filterclear.png") to
+  ![](filterclear.png "File:Filterclear.png") to
   return to the default view.
 
 ### Deleting From the Hard Drive
 
 To delete files from your hard drive without using the trash bin, just
 right-click on a file or on a selection of files and choose "File
-operations \> Delete" or "Delete with output from queue". Both options
+operations > Delete" or "Delete with output from queue". Both options
 delete the selected photo and its sidecar file from your hard drive, but
 "Delete with output from queue" also deletes the saved image whose
 filename matches the template which you currently have set in the Queue

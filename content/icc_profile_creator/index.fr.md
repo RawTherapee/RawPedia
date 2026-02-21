@@ -1,5 +1,5 @@
 ---
-title: ICC Profile Creator
+title: Le Générateur de Profil ICC
 contributors:
   - Jdc
   - Lebarhon
@@ -8,19 +8,12 @@ tags:
   - 'General Information'
 ---
 
-<div class="pagetitle">
-
-Le Générateur de Profil ICC
-
-</div>
 
 ## Introduction
 
-<figure>
-<img src="/images/Rt55_icc_profile_creator.png"
-title="Rt55_icc_profile_creator.png" />
-<figcaption>Rt55_icc_profile_creator.png</figcaption>
-</figure>
+
+![](rt55_icc_profile_creator.png)
+
 
 Le Générateur de Profil ICC vous permet de créer vos propres profils
 ICC. Vous pouvez aussi bien utiliser des pré-réglages standards que des
@@ -30,7 +23,7 @@ Utilisation du générateur de profil ICC RawTherapee peut générer des
 profils de sortie, ou des profils d'écran, ou des profils de travail
 personnalisés en n'utilisant que la matrice XYZ générée pour le profil
 [Profils
-personnalisés](Color_Management/fr#Ajout_de_profils_de_travail_personnalis.C3.A9s.md)
+personnalisés](color_management#adding-custom-working-profiles)
 
 Bien que vous ne puissiez pas régler absolument tous les aspects d'un
 profil ICC - comme par exemple les tags A2B ou B2A - avec cet outil,
@@ -45,7 +38,7 @@ reproduction des tons (TRC).
 
 Le code utilisé ainsi que les principes de base sont proches des
 "Abstract profiles" [Profils
-abstraits](Color_Management/fr#Profils_abstraits.md)
+abstraits](color_management#profils-abstraits)
 
 ## Comment utiliser le générateur de profils
 
@@ -58,7 +51,7 @@ Pour que les profils créés soient disponibles à l'usage dans
 RawTherapee, les enregistrer dans le répertoire standard des profils de
 couleurs de votre système d'exploitation tel que défini dans Préférences
 \> [L'onglet Gestion des
-couleurs](Preferences/fr#L'onglet_Gestion_des_couleurs.md).
+couleurs](Preferences#longlet-gestion-des-couleurs).
 
 ### Les couleurs primaires
 
@@ -68,10 +61,10 @@ générateur de profil ICC, vous spécifiez l'emplacement de ces couleurs
 primaires au moyen de coordonnées correspondant au diagramme de
 chromaticité CIExy de 1931.
 
-[Diagramme CIE xy](color_management/fr#le_diagramme_cie_xy)
+[Diagramme CIE xy](color_management#le-diagramme-cie-xy)
 
 [Fonctionnement de
-l'algorithme](Color_Management/fr#Comment_fonctionne_l.27algorithme_.22Primaires_et_Point_Blanc.22.md)
+l'algorithme](Color_Management#comment-fonctionne-lalgorithme-primaires-et-point-blanc)
 
 ### La courbe de reproduction des tons (TRC)
 
@@ -89,7 +82,7 @@ parabolique avec un raccord sans rupture.
 
 Vous pouvez voir d'autres actions possibles d'une TRC dans "Abstract
 profiles" [Abstract profile -
-TRC](Color_Management/fr#TRC_-_Courbe_de_r.C3.A9ponse_tonale.md)
+TRC](Color_Management#trc---courbe-de-réponse-tonale)
 
 ### Illuminant
 
@@ -109,4 +102,4 @@ couleurs à l'illuminant sélectionné.
 
 D'autres considérations sur l'illuminant - Abstract profiles :
 [Illuminant - Abstract
-profile](Color_Management/fr#Illuminant_-_point_blanc.md)
+profile](Color_Management#illuminant---point-blanc)

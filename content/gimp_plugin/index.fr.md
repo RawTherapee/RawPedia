@@ -1,16 +1,10 @@
 ---
-title: GIMP Plugin
+title: Le Plugin GIMP
 contributors:
   - Lebarhon
 tags:
   - 'General Information'
 ---
-
-<div class="pagetitle">
-
-Le Plugin GIMP
-
-</div>
 
 Vous pouvez ouvrir des images raw avec GIMP en utilisant RawTherapee en
 tant que plugin.

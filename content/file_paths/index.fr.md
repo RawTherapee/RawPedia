@@ -42,21 +42,21 @@ la compilation que vous utilisez a pris ceci en compte.
 Le dossier config de RawTherapee contient :
 
 - le fichier "options" qui contient tous vos paramètres établis dans
-  [Préférences](preferences/fr),
+  [Préférences](preferences),
 - le dossier "batch" qui regroupe les [profils de
-  traitement](Sidecar_Files_-_Processing_Profiles/fr.md)
+  traitement](Sidecar_Files_-_Processing_Profiles)
   temporaires des photos envoyées dans la [File
-  d'attente](The_Batch_Queue/fr.md),
+  d'attente](The_Batch_Queue),
 - le fichier éditable par l'utilisateur
-  [camconst.json](adding_support_for_new_raw_formats/fr), où
+  [camconst.json](adding_support_for_new_raw_formats), où
   vous pouvez définir les détails sur la façon dont un format raw
   spécifique doit être traité (ceux-ci prévalent sur les valeurs du
   fichier système camconst.json),
 - les règles du [Profil
-  dynamique](Dynamic_processing_profiles_/fr.md)
+  dynamique](dynamic_processing_profiles)
 - et le dossier "profiles" où vous pouvez copier ou enregistrer vos
   [profils de
-  traitement](Sidecar_Files_-_Processing_Profiles/fr.md)
+  traitement](Sidecar_Files_-_Processing_Profiles)
   personnalisés si vous désirez qu'ils apparaissent dans la liste
   déroulante de RawTherapee.
 
@@ -68,17 +68,13 @@ depuis la sauvegarde.
 Emplacements par défaut du dossier config de RawTherapee (rechercher le
 préfixe de "RawTherapee\*" décrit ci-dessus):
 
-Windows XP  
-`%USERPROFILE%\Local Settings\Application Data\`
-
-Windows 7, 8 et 10  
-`%LOCALAPPDATA%\`
-
-Linux  
-`~/.config/`
-
-macOS  
-`~/Library/Application Support/RawTherapee/config/`
+|            |                                                                                         |
+|------------|-----------------------------------------------------------------------------------------|
+| Windows XP | `%USERPROFILE%\Local Settings\Application Data\`                                        |
+| Windows 7+ | `%LOCALAPPDATA%`                                                                        |
+| Linux      | `~/.config/`                                                                            |
+| macOS      | `~/Library/Containers/RawTherapee/Data/Library/Application Support/RawTherapee/config/` |
+{.table .table-striped .table-sm}
 
 Dans le Finder, menu "Aller", cliquer sur "Aller au dossier" (raccourci
 Commande+Shift+g) vous pouvez alors taper/coller tout chemin où vous
@@ -104,17 +100,13 @@ seulement à régénérer les vignettes.
 Emplacements par défaut du dossier cache de RawTherapee (rechercher le
 préfixe de "RawTherapee\*" décrit ci-dessus):
 
-Windows XP  
-`%USERPROFILE%\Local Settings\Application Data\`
-
-Windows 7, 8 et 10  
-`%LOCALAPPDATA%`
-
-Linux  
-`~/.cache/`
-
-macOS  
-`~/Library/Application Support/RawTherapee/cache/`
+|            |                                                                                         |
+|------------|-----------------------------------------------------------------------------------------|
+| Windows XP | `%USERPROFILE%\Local Settings\Application Data\`                                        |
+| Windows 7+ | `%LOCALAPPDATA%`                                                                        |
+| Linux      | `~/.cache/`                                                                             |
+| macOS      | `~/Library/Containers/RawTherapee/Data/Library/Application Support/RawTherapee/cache/` |
+{.table .table-striped .table-sm}
 
 Dans le Finder, menu "Aller", cliquer sur "Aller au dossier" (raccourci
 Commande+Shift+g) vous pouvez alors taper/coller tout chemin où vous
@@ -152,7 +144,7 @@ Linux et macOS
 ## Profils de traitement
 
 Si vous créez vos propres [profils de
-traitement](Sidecar_Files_-_Processing_Profiles/fr.md), pour les
+traitement](Sidecar_Files_-_Processing_Profiles), pour les
 faire apparaître dans la liste des "Profils de traitement" de
 RawTherapee, vous devez les enregistrer dans le dossier "*profiles*" que
 vous trouverez à l'intérieur du fichier "*config*" come indiqué
@@ -161,7 +153,7 @@ ci-dessus.
 ## Dossier temporaire
 
 L'outil "[Editer l'image courante dans un éditeur
-externe](Edit_Current_Image_in_External_Editor/fr.md)"
+externe](Edit_Current_Image_in_External_Editor)"
 enregistre les fichiers image temporaires dans un dossier temporaire :
 
 Windows  

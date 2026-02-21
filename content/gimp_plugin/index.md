@@ -4,7 +4,6 @@ contributors:
   - DrSlony
 tags:
   - 'General Information'
-toc: true
 ---
 
 You can open raw images in GIMP using RawTherapee as a plugin.

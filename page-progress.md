@@ -1,3 +1,7 @@
+✅ = Page exists and checked
+blank = page exists and has not been checked
+🔺 = Page does not exist
+
 | Page                                                  | EN  | FR  | DE  | CA  | ES  | IT  | JP  | PT  |
 | ---                                                   | --- | --- | --- | --- | --- | --- | --- | --- |
 | 8-bit and 16-bit                                      |     |     |     |     |     |     |     |     |
@@ -6,7 +10,7 @@
 | Batch Adjustments - Sync                              | ✅  | ✅  |     | 🔺  |     |     |     | 🔺  |
 | Batch Processing Tab                                  | ✅  | ✅  | 🔺  | 🔺  |     | 🔺  |     | 🔺  |
 | Batch-Syncs                                           |     |     |     |     |     |     |     |     |
-| Bit Depth                                             |     |     |     |     |     |     |     |     |
+| Bit Depth                                             | ✅  | ✅  | 🔺  | 🔺  |     | 🔺  |     | 🔺  |
 | Black-and-White                                       |     |     |     |     |     |     |     |     |
 | Black-and-White addon                                 |     |     |     |     |     |     |     |     |
 | Bordi e Microcrontasto                                |     |     |     |     |     |     |     |     |
@@ -44,9 +48,9 @@
 | Exposure                                              |     |     |     |     |     |     |     |     |
 | Favorites Tab                                         |     |     |     |     |     |     |     |     |
 | Features                                              | ✅  | ✅  |     | 🔺  |     |     |     |     |
-| File Browser                                          |     |     |     |     |     |     |     |     |
+| File Browser                                          | ✅  | 🔺  | 🔺  | 🔺  |     | 🔺  | 🔺  | 🔺  |
 | File Browser Tab                                      |     |     |     |     |     |     |     |     |
-| File Paths                                            |     |     |     |     |     |     |     |     |
+| File Paths                                            | ✅  | ✅  |     | 🔺  |     |     |     | 🔺  |
 | Film Emulation                                        |     |     |     |     |     |     |     |     |
 | Film Negative                                         |     |     |     |     |     |     |     |     |
 | Film Simulation                                       |     |     |     |     |     |     |     |     |
@@ -59,7 +63,7 @@
 | General Tab                                           |     |     |     |     |     |     |     |     |
 | Getting LCP lens profiles                             |     |     |     |     |     |     |     |     |
 | Getting Started                                       | ✅  | ✅  |     |     |     |     |     |     |
-| GIMP Plugin                                           |     |     |     |     |     |     |     |     |
+| GIMP Plugin                                           | ✅  | ✅  | 🔺  | 🔺  |     |     |     |     |
 | Graduated Filter                                      |     |     |     |     |     |     |     |     |
 | Haze Removal                                          |     |     |     |     |     |     |     |     |
 | How to convert raw formats to DNG                     |     |     |     |     |     |     |     |     |
@@ -78,14 +82,13 @@
 | How to write useful bug reports                       |     |     |     |     |     |     |     |     |
 | How_to_create_input_DCPs                              |     |     |     |     |     |     |     |     |
 | HSV Equalizer                                         |     |     |     |     |     |     |     |     |
-| ICC Profile Creator                                   |     |     |     |     |     |     |     |     |
-| ICC_Profile_Creaters                                  |     |     |     |     |     |     |     |     |
+| ICC Profile Creator                                   | ✅  | ✅  | 🔺  | 🔺  |     | 🔺  |     | 🔺  |
 | Image file formats and compression                    |     |     |     |     |     |     |     |     |
 | Image Processing Tab                                  |     |     |     |     |     |     |     |     |
 | Impulse Noise Reduction                               |     |     |     |     |     |     |     |     |
 | IPTC Tab                                              |     |     |     |     |     |     |     |     |
 | IRC                                                   |     |     |     |     |     |     |     |     |
-| Keyboard Shortcuts                                    |     |     |     |     |     |     |     |     |
+| Keyboard Shortcuts                                    | ✅  |     |     | 🔺  |     | 🔺  |     | 🔺  |
 | Lab Adjustments                                       |     |     |     |     |     |     |     |     |
 | Lens Geometry                                         |     |     |     |     |     |     |     |     |
 | Linux                                                 |     |     |     |     |     |     |     |     |

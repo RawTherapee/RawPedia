@@ -38,7 +38,7 @@ The RawTherapee config folder contains:
 - the "options" file, which contains all of your settings from
   [Preferences](preferences),
 - the "batch" folder, which stores temporary [processing profiles](sidecar_files_-_processing_profiles) of the
-  photos you sent to the [Queue](the_batch_queue),
+  photos you sent to the [Queue](queue),
 - the user-editable
   [camconst.json](adding_support_for_new_raw_formats) file,
   where you can define details of how a specific raw format is to be
@@ -55,17 +55,14 @@ RawTherapee on a new system.
 Default locations for the RawTherapee config folder (look for the
 "RawTherapee\*" prefix as described above):
 
-Windows XP
-`%USERPROFILE%\Local Settings\Application Data\`
+|            |                                                                                         |
+|------------|-----------------------------------------------------------------------------------------|
+| Windows XP | `%USERPROFILE%\Local Settings\Application Data\`                                        |
+| Windows 7+ | `%LOCALAPPDATA%`                                                                        |
+| Linux      | `~/.config/`                                                                            |
+| macOS      | `~/Library/Containers/RawTherapee/Data/Library/Application Support/RawTherapee/config/` |
+{.table .table-striped .table-sm}
 
-Windows 7, 8 and 10
-`%LOCALAPPDATA%`
-
-Linux
-`~/.config/`
-
-macOS
-`~/Library/Containers/RawTherapee/Data/Library/Application Support/RawTherapee/config/`
 
 Under the Finder's 'Go' menu click 'Go to Folder' (shortcut
 Command+Shift+g), you can then type/paste any path you want to navigate
@@ -91,17 +88,14 @@ thumbnails.
 Default locations for the RawTherapee cache folder (look for the
 "RawTherapee\*" prefix as described above):
 
-Windows XP
-`%USERPROFILE%\Local Settings\Application Data\`
+|            |                                                                                         |
+|------------|-----------------------------------------------------------------------------------------|
+| Windows XP | `%USERPROFILE%\Local Settings\Application Data\`                                        |
+| Windows 7+ | `%LOCALAPPDATA%`                                                                        |
+| Linux      | `~/.cache/`                                                                             |
+| macOS      | `~/Library/Containers/RawTherapee/Data/Library/Application Support/RawTherapee/cache/` |
+{.table .table-striped .table-sm}
 
-Windows 7, 8 and 10
-`%LOCALAPPDATA%`
-
-Linux
-`~/.cache/`
-
-macOS
-`~/Library/Containers/RawTherapee/Data/Library/Application Support/RawTherapee/cache/`
 
 Under the Finder's 'Go' menu click 'Go to Folder' (shortcut
 Command+Shift+g), you can then type/paste any path you want to navigate
@@ -141,7 +135,7 @@ as described above.
 ## Temporary Folder
 
 The "[Edit Current Image in External Editor](edit_current_image_in_external_editor)" tool stores
-intermediate image files in the folder specified in [Preferences \> External Editor \> Output Directory](preferences#external_editor). By default this is
+intermediate image files in the folder specified in [Preferences \> External Editor \> Output Directory](preferences#external-editor). By default this is
 the operating system's default temp folder. RawTherapee will use a
 subdirectory with the name format `rawtherapee-`<username>, e.g.
 `rawtherapee-Lawrence37`, and permissions are set to user-only
