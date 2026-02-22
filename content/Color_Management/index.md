@@ -399,6 +399,8 @@ to be used as a working space.
 
 ## Abstract Profiles
 
+[Game changer](/tutorials/)
+
 ### What is an Abstract profile?
 
 - According to the International Color Consortium (ICC), Abstract
