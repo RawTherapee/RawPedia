@@ -12,6 +12,8 @@ toc: true
 
 ## Color Appearance & Lighting (CIECAM02/16) et Color Appearance (Cam16 & JzCzHz) - Tutorial
 
+[Game changer](/tutorials/)
+
 ### Introduction
 
 The following information is common to:
@@ -76,7 +78,7 @@ Some examples of color phenomena that can be addressed with a CAM:
 
 ### Variables - data and vocabulary used by CIECAM
 
-[Variables - datas)]({{% relref "ciecam02/#data" %}})
+[Variables - datas]({{% relref "ciecam02/#data" %}})
 
 [Definitions]({{% relref "ciecam02/#some-definitions" %}})
 

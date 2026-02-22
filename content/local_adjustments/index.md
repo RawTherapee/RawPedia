@@ -247,7 +247,7 @@ In the settings menu, choose "Add tool to current spot".
 
 <figure>
 <img src="addtoolcolorandlight1.jpg" title="addtoolcolorandlight1.jpg"
-width="600" />
+width="300" />
 <figcaption>addtoolcolorandlight1.jpg</figcaption>
 </figure>
 
@@ -1519,7 +1519,9 @@ A possible example is in Rawpedia (not for blur) ‘A complex noise reduction p
 Original image, with “Exposure compensation” = +1.5
 
 <img src="amsterdam15.jpg" title="Amsterdam15.jpg" width="600"
-alt="Amsterdam15.jpg" /> Raw file (Rawtherapee - Creative Common
+alt="Amsterdam15.jpg" /> 
+
+Raw file (Rawtherapee - Creative Common
 Attribution-share Alike 4.0):
 [9](https://drive.google.com/file/d/1dJ5yiqF-XdLQdKizCDseUxHf34y4AKZ6/view?usp=sharing)
 
@@ -1897,7 +1899,7 @@ reduces the effect of the Color & Light adjustments.
 <figcaption>mask_recovend.jpg</figcaption>
 </figure>
 
-#### What can you do when the mask has a salt-and-pepper appearance? (under development)
+#### What can you do when the mask has a salt-and-pepper appearance?
 
 When you use the LC(h) curve to create a mask, the image of the mask can
 sometimes be covered with black and white dots (salt and pepper noise)
@@ -2180,7 +2182,7 @@ possible blend modes.
 width="600" />
 <figcaption>common-color-prepa1.jpg</figcaption>
 </figure>
-
+ame role
 ##### First merge using Normal blend mode
 
 - Choose the Normal blend mode.
@@ -3302,13 +3304,13 @@ They include:
       the overall brightness; c) adapt the point (near Mean Luminance
       Yb) from which the attenuation of the highlights occurs.
 
-<img src="highattenuation1.jpg" title="highattenuation1.jpg" width="600"
+<img src="highattenuation1.jpg" title="highattenuation1.jpg" width="300"
 alt="highattenuation1.jpg" />
 
 - Primaries & Illuminant, for adjusting the image colorimetry. The user
   can choose the illuminant and adjust the dominant colour.
 
-<img src="primdom.jpg" title="Primdom.jpg" width="600"
+<img src="primdom.jpg" title="Primdom.jpg" width="300"
 alt="Primdom.jpg" />
 
 - Adjusting the dominant color can be done by moving the white point
@@ -3542,12 +3544,12 @@ For a brief explanation of this module, see the following:
 #### Understanding the CAM - SDR - HDR settings - General
 
 For a brief explanation of this module, see the following:
-[CIECAM02#Understanding_the_CAM_-_SDR_-_HDR_settings_-_General]({{% relref "ciecam02#understanding-the-cam---sdr---hdr-settings---general" %}})
+[CIECAM Understanding CAM SDR HDR]({{% relref "ciecam02#understanding-the-cam---sdr---hdr-settings---general" %}})
 
 #### Understanding the CAM - SDR - HDR settings -Introduction
 
 For a brief explanation of this module, see the following
-[Understanding_the_CAM_-_SDR_-_HDR_settings_-_General]({{% relref "ciecam02#understanding-the-cam---sdr---hdr-settings---introduction" %}})
+[CIECAM Understanding CAM SRD HDR Introduction]({{% relref "ciecam02#understanding-the-cam---sdr---hdr-settings---introduction" %}})
 
 [Experimental tool - JzCzHz]({{% relref "ciecam02#understanding-the-cam---sdr---hdr-settings---general" %}})
 
@@ -3637,6 +3639,7 @@ luminance (Yb%)".
   the calculation. We will see that it is different with "Sigmoid Jz".
 
 **Sigmoid Jz**
+
 <img src="sigmoidjz1.jpg" title="Sigmoidjz1.jpg" width="600"
 alt="Sigmoidjz1.jpg" />
 
@@ -3660,6 +3663,8 @@ highlights. It is obvious that the responses and therefore the settings
 are dependent on the image, the monitor, and the 6 settings
 
 ### Generalized Hyperbolic Stretch and Michaelis-Menten
+
+[Game changer](/tutorials/)
 
 #### Introduction
 
@@ -7021,8 +7026,11 @@ filter other types of impulse noise.
 Example showing how it can be used:
 
 [Log Encoding]({{% relref "#log-encoding" %}})
+
 [Log Encoding and highlight recovery]({{% relref "#log-encoding-and-highlight-recovery" %}})
+
 [Other examples using Log Encoding]({{% relref "#other-examples-log-encoding" %}})
+
 #### Introduction
 
 This module is derived from the excellent module developped by Alberto
@@ -7135,7 +7143,8 @@ with a Graduated Filter equipped with 2 sliders: “Gradient strength” and
 ### Color appearance (Cam16 & JzCzHz)
 
 Example using Color Appearance and HDR functions:
-[HDR-SDR First approach: Log encoding – Cam16 – JzCzHz – Sigmoid](#HDR_to_SDR:_A_First_Approach_(Log_Encoding_-_CAM16_-_JzCzHz_-_Sigmoid) "wikilink")
+[HDR-SDR First approach: Log encoding – Cam16 – JzCzHz – Sigmoid](/local_adjustments/#hdr-to-sdr-a-first-approach-log-encoding---cam16---jzczhz---sigmoid)
+
 
 The Color appearance module (Cam16 & JzCzHz) is both:
 
