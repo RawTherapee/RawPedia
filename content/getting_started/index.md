@@ -29,23 +29,25 @@ builds for production use or unstable development builds for testing.
 
 ## Start RawTherapee
 
-![](/images/Rt_setm_fb.png "Rt_setm_fb.png") (currently opened), Queue, Editor
-and Preferences. 2- Panels used for navigating to files and folders. 3-
-Thumbnails of the currently opened folder. 4- Filters to limit the
-thumbnails shown to only those which match some metadata or state. 5-
-Thumbnail zooming and info. 6- Quick image operations. 7- Sub-tabs of
-the File Browser: Filter (currently opened), Inspect (to see a
-full-sized embedded JPEG preview), Batch Edit (to apply some setting to
-all selected images) and Fast Export (low quality and bypasses some
-tools but fast saving - don't use this for typical saving!). 8-
-Right-click context menu (you will typically use this to apply some
-processing profile to all selected files).\]\]
-
 When you start RawTherapee you will land in the [File Browser](/file_browser) tab, and it might be empty. You need
 to point RawTherapee to where your raw photos are stored. Use the folder
 tree browser on the left of the *File Browser* tab to navigate to your
 raw photo repository and double-click on the folder to open it. Then
 double-click on a raw photo to start editing it.
+
+
+![](images/rt_setm_fb.png) 
+
+RawTherapee in Single Editor Tab Mode - Vertical Tabs, showing: 
+1. Main sections: File Browser (currently opened), Queue, Editor and Preferences. 
+2. Panels used for navigating to files and folders. 
+3. Thumbnails of the currently opened folder. 
+4. Filters to limit the thumbnails shown to only those which match some metadata or state. 
+5. Thumbnail zooming and info. 
+6. Quick image operations. 
+7. Sub-tabs of the File Browser: Filter (currently opened), Inspect (to see a full-sized embedded JPEG preview), Batch Edit (to apply some setting to all selected images) and Fast Export (low quality and bypasses some tools but fast saving - don't use this for typical saving!). 
+8. Right-click context menu (you will typically use this to apply some processing profile to all selected files).
+
 
 ## Edit your first image
 
@@ -88,10 +90,7 @@ most cases this match is very close to the "camera look". In rare cases
 it may fail. See the [Auto-Matched Curve](/auto-matched_curve)
 article for more information.
 
-<figure>
-<img src="/images/Rt_setm_editor.png" title="Rt_setm_editor.png" />
-<figcaption>Rt_setm_editor.png</figcaption>
-</figure>
+{{< figure src="/images/rt_setm_editor.png" >}}
 
 Take a moment to look around this Editor tab. Notice that there are tabs
 within this tab - on the right of screen towards the top. These tabs and
@@ -102,12 +101,12 @@ contains – Exposure, Shadows/Highlights, Tone Mapping etc. If you click
 on one of them it will expand so that you can see its contents. Click
 again and it will collapse. Right-click on one and that one will expand
 while all others will collapse - a time-saving shortcut. To the left of
-each tool's label is a power button <img src='/images/power-on-small.png'></img>
+each tool's label is a power button ![](/images/power-on-small.png)
 on /
-<img src='/images/power-off-small.png'></img>
+![](/images/power-off-small.png)
 off) which lets you turn it on or off, or in some cases instead of a
 power button there is a triangular expander
-<img src='/images/expander-closed-small.png'></img>.
+![](/images/expander-closed-small.png).
 Read the [Tools section of the General Comments About Some Toolbox Widgets](/general_comments_about_some_toolbox_widgets#tools)
 article for a detailed explanation. Browse through the tabs and panels
 until you feel totally overwhelmed by all that's available.
@@ -145,31 +144,31 @@ you protect your images:
     your camera's output. If you're happy with the result, you're done.
     Else read on.
 2.  Click on the
-    <img src='/images/color-circles.png'></img>
+    ![](/images/color-circles.png)
     Color tab and expanding the [White Balance](/white_balance) tool by right-clicking on it (or
     use the [keyboard shortcut](/keyboard_shortcuts)).
     RawTherapee will start with the white balance used by your camera.
     Most white balance adjustments involve moving the Temperature and
     Tint sliders, or using the
-    <img src='/images/color-picker.png'></img>
+    ![](/images/color-picker.png)
     Spot White-Balance Picker on a colorless (neutral gray) patch.
     Adjust to taste.
 3.  Next, fix the exposure by going to the
-    <img src='/images/exposure.png'></img>
+    ![](/images/exposure.png)
     Exposure
     tab, expanding the [Exposure](/exposure) tool and
     adjusting it to taste. For now, just use the Exposure Compensation
     and Saturation sliders.
 4.  If your image is noisy, switch to the
-    <img src='/images/detail.png'></img>
+    ![](/images/detail.png)
     Detail tab, zoom
     to 100% either using the
-    <img src='/images/magnifier-1to1.png'></img>
+    ![](/images/magnifier-1to1.png)
     button or using the keyboard shortcut, because the effects of the
     tools in this tab are only visible in the zoomed-to-100% preview
     (and of course in the saved image), and enable the [Noise Reduction](/noise_reduction) tool by clicking on the power
     button
-    <img src='/images/power-on-small.png'></img>
+    ![](/images/power-on-small.png)
     leaving the settings at their default values for now. RawTherapee
     has automatically removed color (chrominance) noise. Luminance noise
     is removed [manually](/noise_reduction#usage), though
@@ -177,21 +176,21 @@ you protect your images:
     grainy, film-like look. As a general rule, when using noise
     reduction don't use sharpening. Zoom back out to see the whole image
     either using the
-    <img src='/images/magnifier-fit.png'></img>
+    ![](/images/magnifier-fit.png)
     button or using the keyboard shortcut key.
 5.  Now you decided you want to fix the
     [geometry](/lens/geometry) and composition of your photo.
     - First make the horizon level, or correct the things which should
       be vertical such as street lamps or building edges. To easily do
       this, press the "s" key on your keyboard (the same as clicking the
-      <img src='/images/rotate-straighten.png'></img>
+      ![](/images/rotate-straighten.png)
       button), and click-and-drag a line along the horizon or along the
       edge of a building over the preview. Your image will rotate
       accordingly and you will automatically be taken into the
-      <img src='/images/transform.png'></img>
+      ![](/images/transform.png)
       Transform tab.
     - To crop the photo, press the shortcut key on your keyboard (or use
-      the <img src='/images/crop.png'></img>
+      the ![](/images/crop.png)
       button) and
       click-and-drag a crop over the preview; you will notice that the
       [Crop](/crop) tool becomes automatically enabled. There
@@ -206,7 +205,7 @@ you protect your images:
       only applied to the saved image, not to the preview, so you won't
       see any change in the preview as you enable these tools.
 6.  You're all set, let's [save](/saving) it straight away.
-    Click the <img src='/images/save.png'></img>
+    Click the ![](/images/save.png)
     Save Current
     Image button (located below the lower left corner of the preview
     area), or use the + keyboard shortcut. Save it as a JPG file using
@@ -277,14 +276,14 @@ this reason we suggest you stick to this general order of operations:
     influence others. Carry on with the [Lab Adjustments](/lab_adjustments) tool and then the rest of
     the tools in the Exposure tab.
 7.  Then use the tools in the
-    <img src='/images/color-circles.png'></img>
+    ![](/images/color-circles.png)
     Color tab.
 8.  Then zoom to 100% and use the tools in the
-    <img src='/images/detail.png'></img>
+    ![](/images/detail.png)
     Detail tab.
     Generally, don't sharpen if you're using noise reduction.
 9.  Finally, zoom out again and use the tools in the
-    <img src='/images/transform.png'></img>
+    ![](/images/transform.png)
     Transform tab. The reason you left these for last is that they may
     make the preview image appear a bit blurry, because in order for the
     preview to be responsive, RawTherapee uses that very preview image
@@ -294,10 +293,10 @@ this reason we suggest you stick to this general order of operations:
     saving as by that point RawTherapee does its processing on the
     full-sized image, which is slow but of high quality.
 10. You can edit metadata in the
-    <img src='/images/metadata.png'></img>
+    ![](/images/metadata.png)
     [Meta](/metadata_copy_mode) tab at any time before saving.
-11. Save, either directly <img src='/images/save.png'></img>
+11. Save, either directly ![](/images/save.png)
     when you want to save a single photo, or via the
-    <img src='/images/gears.png'></img>'
+    ![](/images/gears.png)'
     [Batch Queue](/the_batch_queue) when you want to process many
     photos. See the [Saving Images](/saving_images) article.

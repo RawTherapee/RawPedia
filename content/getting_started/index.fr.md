@@ -8,11 +8,6 @@ tags:
 weight: 1
 ---
 
-<div class="pagetitle">
-
-Premiers pas
-
-</div>
 
 ## Bienvenue
 
@@ -112,10 +107,7 @@ plupart du temps, la correspondance est très proche. Dans de rares cas,
 cela peut échouer. Voir l'article [Auto-Matched
 Curve](/auto-matched_curve) pour plus de détailes.
 
-<figure>
-<img src="/images/Rt_setm_editor.png" title="Rt_setm_editor.png" />
-<figcaption>Rt_setm_editor.png</figcaption>
-</figure>
+{{< figure src="/images/rt_setm_editor.png" >}}
 
 Prenez le temps de faire le tour de cet onglet Editeur.
 
@@ -131,13 +123,13 @@ voir son contenu. Cliquez de nouveau, il se referme. Cliquez droit sur
 l'un des outils, et celui_ci s'ouvre alors que tous les autres se
 ferment, un raccourci pour gagner du temps. A gauche de chaque titre
 d'outil, il y a le bouton d'activation
-(![<File:Power-on-small.png>](Power-on-small.png "File:Power-on-small.png")
+![](/images/power-on-small.png)
 marche /
-![<File:Power-off-small.png>](Power-off-small.png "File:Power-off-small.png")
+![](/images/power-off-small.png)
 arrêt) qui vous autorise d'activer ou de désactiver ledit outil, ou dans
 certains cas, à la place du bouton d'activation, il y a l’icône
 triangulaire
-![<File:Expander-closed-small.png>](Expander-closed-small.png "File:Expander-closed-small.png")
+![](/images/expander-closed-small.png)
 d'ouverture/fermeture de l'outil. Lire le chapitre [Outils de la page
 Commentaires généraux à propos de certains éléments d'interface
 grapPowerhique (Widgets) de la boite à
@@ -187,7 +179,7 @@ vous aider à protéger vos images :
     ressemblant à la photo de sortie de l'appareil. Si le résultat vous
     satisfait, vous avez terminé. Sinon, continuez la lecture.
 2.  Cliquer sur l'onglet Couleur
-    ![<File:Color-circles.png>](Color-circles.png "File:Color-circles.png")
+    ![](/images/color-circles.png)
     puis ouvrir l'outil [Balance de blancs](/white_balance)
     par un clic droit (ou utilisez le [raccourci
     clavier](/Keyboard_Shortcuts) ). RawTherapee va
@@ -195,23 +187,23 @@ vous aider à protéger vos images :
     photo. Le plus souvent, le réglage de la balance Powerdes blancs
     exige d'agir sur les curseurs Température et Teinte, ou d'utiliser
     la pipette Point de mesure
-    ![<File:Color-picker.png>](Color-picker.png "File:Color-picker.png")
+    ![](/images/color-picker.png)
     sur une zone sans couleur (gris neutre). Ajuster à son goût.
 3.  Ensuite, régler l'exposition en allant dans l'onglet Exposition
-    ![<File:Exposure.png>](Exposure.png "File:Exposure.png") ouvrir
+    ![](/images/exposure.png) ouvrir
     l'outil [Exposition](/exposure) et ajuster à son goût.
     Pour l'instant, se limiter aux curseurs Compensation d'exposition et
     Saturation.
 4.  Si votre photo est bruitée, passez sur l'onglet Détail
-    ![<File:Detail.png>](Detail.png "File:Detail.png"), zoomez à 100%
+    ![](/images/detail.png), zoomez à 100%
     soit à l'aide du bouton
-    ![<File:Magnifier-1to1.png>](Magnifier-1to1.png "File:Magnifier-1to1.png")
+    ![](/images/magnifier-1to1.png)
     ou à l'aide du raccourci clavier , car les effets des outils de cet
     onglet ne sont visibles dans l'aperçu que si celui-ci est zoomé à
     100% (et visibles aussi bien sûr dans l'image sauvegardée), et
     activez l'outil [Réduction du bruit](/noise_reduction)
     en cliquant sur le bouton d'activation
-    ![<File:Power-on-small.png>](Power-on-small.png "File:Power-on-small.png"),
+    ![](/images/power-on-small.png),
     laissant pour l'instant les paramètres à leur valeur par défaut.
     RawTherapee a enlevé automatiquement le bruit de couleur
     (chrominance). Le bruit de Luminance est retiré
@@ -221,7 +213,7 @@ vous aider à protéger vos images :
     l'utilisation de la réduction du bruit, ne pas utiliser l'outil
     Netteté. Zoomer arrière pour visualiser toute l'image soit avec le
     bouton
-    ![<File:Magnifier-fit.png>](Magnifier-fit.png "File:Magnifier-fit.png")
+    ![](/images/magnifier-fit.png)
     ou avec la raccourci clavier .
 5.  Maintenant on peut passer à l'amélioration de la
     [géométrie](/lens/geometry) et de la composition de la
@@ -230,14 +222,14 @@ vous aider à protéger vos images :
       être verticales comme des lampadaires de rue ou des arêtes
       d'immeuble. Pour effectuer cela facilement, appuyer sur la touche
       "s" du clavier (même action que le bouton
-      ![<File:Rotate-straighten.png>](Rotate-straighten.png "File:Rotate-straighten.png")),
+      ![](/images/rotate-straighten.png)),
       et cliquer-glisser sur l'aperçu pour tracer une ligne le long de
       l'horizon ou le long de l'arête de l'immeuble. L'image pivotera en
       conséquence et vous serez automatiquement amené dans l'onglet
       Transformation
-      ![<File:Transform.png>](Transform.png "File:Transform.png").
+      ![](/images/transform.png).
     - Pour recadrer la photo, appuyer sur le raccourci clavier (ou bien
-      utiliser le bouton ![<File:Crop.png>](Crop.png "File:Crop.png"))
+      utiliser le bouton ![](/images/crop.png))
       et cliquer-glisser sur l'aperçu pour former le cadre; vous
       remarquerez que l'outil [Recadrage](/crop) s'active
       automatiquement. Il est inutile d'"appliquer" un recadrage, il
@@ -256,7 +248,7 @@ vous aider à protéger vos images :
       ces outils.
 6.  Vous en avez terminé, [Enregistrez](/saving) dès
     maintenant. Cliquez sur le bouton Enregistrer l'image courante
-    ![<File:save.png>](save.png "File:save.png"), ou bien utilisez le
+    ![](/images/save.png), ou bien utilisez le
     raccourci clavier +. Enregistrez au format JPG en gardant les
     paramètres par défaut (qualité à "92", sous-échantillonnage à
     "Équilibre"). Ce sont de bons réglages universels. Choisir un
@@ -346,13 +338,13 @@ suivre cet ordre général des opérations :
     [Ajustements Lab](/lab_adjustments) puis le reste des
     outils de l'onglet Exposition.
 7.  Puis les outils de l'onglet Couleur
-    ![<File:Color-circles.png>](Color-circles.png "File:Color-circles.png").
+    ![](/images/color-circles.png).
 8.  Zoomer maintenant à 100% et utilisez les outils de l'onglet Détail
-    ![<File:Detail.png>](Detail.png "File:Detail.png"). En général, ne
+    ![](/images/detail.png). En général, ne
     pas utiliser la Netteté si vous utilisez la Réduction du bruit.
 9.  Enfin, zoomer arrière de nouveau et utiliser les outils de l'onglet
     Transformation
-    ![<File:Transform.png>](Transform.png "File:Transform.png"). La
+    ![](/images/transform.png). La
     raison pour laquelle ces outils sont utilisés en dernier est qu'ils
     peuvent rendre l'aperçu d'apparence légèrement floue floue, car dans
     le but de garder l'aperçu réactif, RawTherapee utilise une
@@ -363,7 +355,7 @@ suivre cet ordre général des opérations :
     sur l'image en pleine résolution, ce qui est lent mais garanti la
     plus haute qualité.
 10. Vous pouvez à tout moment éditer les métadonnées dans l'onglet
-    ![<File:Metadata.png>](Metadata.png "File:Metadata.png")
+    ![](/images/metadata.png)
     [Meta](/metadata_copy_mode) a tout moment avant de
     sauvegarder.
 11. Enregistrer, soit directement
