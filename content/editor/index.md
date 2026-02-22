@@ -12,10 +12,7 @@ tags:
 toc: true
 ---
 
-<figure>
-<img src="/images/Rt_55_trains.png" title="Rt_55_trains.png" />
-<figcaption>Rt_55_trains.png</figcaption>
-</figure>
+{{< figure src="/images/rt_55_trains.png" >}}
 
 ## Introduction
 
@@ -36,7 +33,7 @@ adjustments made by the tools in the
 [Toolbox](#toolbox). Note that the effects of some
 tools are only accurately visible when you are zoomed in to 1:1 (100%)
 or more; these tools are marked in the interface with a "1:1" icon
-![Zoom 1:1](One-to-one-small.png "Zoom 1:1") alongside the tool's name.
+![Zoom 1:1](/images/one-to-one-small.png "Zoom 1:1") alongside the tool's name.
 
 When opening an image, RawTherapee loads the tool settings from the
 sidecar file if one exists, else it applies a default sidecar file as
@@ -89,10 +86,7 @@ or 100% (in the outermost circle). This vectorscope is a good way to see
 how many pixels are outside (or almost outside) the color space of the
 *output profile*.
 
-<figure>
-<img src="/images/HSvectorscope.jpg" title="HSvectorscope.jpg" width="500" />
-<figcaption>HSvectorscope.jpg</figcaption>
-</figure>
+{{< figure src="/images/hsvectorscope.jpg" >}}
 
 In this vectorscope you will see that there are three axes that point to
 the colors red, yellow, green, cyan, blue, and magenta.
@@ -104,11 +98,7 @@ The rest of the pixels are distributed and with different “amounts of
 color” (saturation), represented as white areas of a more or less
 intense color, depending on the number of pixels in that area.
 
-<figure>
-<img src="/images/HSvectorscope_OOG.jpg" title="HSvectorscope_OOG.jpg"
-width="500" />
-<figcaption>HSvectorscope_OOG.jpg</figcaption>
-</figure>
+{{< figure src="/images/hsvectorscope_oog.jpg" >}}
 
 By activating the “show out-of-gamut colors” button you will see a cyan
 mask that highlights the out-of-gamut pixels.
@@ -120,16 +110,14 @@ located, the more saturated it is.
 The chroma values are calculated with the values a\* and b\* from the
 L\*a\*b\* coordinates that you can see in the *Navigator* panel using
 the formula:
-<img src="/images/Chroma.png" title="Chroma.png" width="200" alt="Chroma.png" />
+
+![](/images/chroma.png)
 
 In this example you see the more saturated colors reaching approximately
 the value 85. Specifically, they are the red and yellow tones.
 
-<figure>
-<img src="/images/HCvectorscope_OOG.jpg" title="HCvectorscope_OOG.jpg"
-width="500" />
-<figcaption>HCvectorscope_OOG.jpg</figcaption>
-</figure>
+{{< figure src="/images/hcvectorscope_oog.jpg" >}}
+
 
 However, keep in mind that the three-dimensional color space is not
 regular (they are not spheres or cubes) and therefore to correctly
@@ -151,7 +139,7 @@ hovering over.
 The values shown in the main histogram and Navigator panel are either
 those of the working profile or of the gamma-corrected output profile,
 depending on the state of the gamut button
-![<File:Gamut-hist.png>](Gamut-hist.png "File:Gamut-hist.png") located
+![](/images/gamut-hist.png) located
 in the toolbar above the main preview. When the gamut button is enabled
 the working profile is used, otherwise the gamma-corrected output
 profile is used.
@@ -212,7 +200,7 @@ photo in the *Image Editor* or close RawTherapee.
 To the right is a panel which optionally shows the main histogram and
 *Processing Profiles* selector ("*Preferences \> General \> Layout \>
 Histogram in left panel*"), and always shows the
-[Toolbox](#toolbox). You can hide this panel using the ![Hide right panel icon](panel-to-right.png "Hide right panel icon") hide icon,
+[Toolbox](#toolbox). You can hide this panel using the ![](/images/panel-to-right.png) hide icon,
 or its [keyboard shortcut](/keyboard_shortcuts).
 
 ### Processing Profile Selector
@@ -220,11 +208,9 @@ or its [keyboard shortcut](/keyboard_shortcuts).
 The Processing Profiles panel allows you to apply, save, load, copy and
 paste processing profiles, partially or in full.
 
-<figure>
-<img src="/images/Processing-profiles-selector.png"
-title="Processing-profiles-selector.png" />
-<figcaption>Processing-profiles-selector.png</figcaption>
-</figure>
+
+{{< figure src="/images/processing-profiles-selector.png" >}}
+
 
 Read the [Sidecar Files / Processing
 Profiles](/sidecar_files_-_processing_profiles) page for more
@@ -246,8 +232,8 @@ RawTherapee allows you to work on photos in two modes:
   top of the *[Editor](#the-filmstrip)*
   tab showing the rest of the photos in that folder for easy access.
   There are *Previous Image* and *Next Image*
-  ![<File:Nav-prev.png>](Nav-prev.png "File:Nav-prev.png")
-  ![<File:Nav-next.png>](Nav-next.png "File:Nav-next.png") buttons in
+  ![](/images/nav-prev.png)
+  ![](/images/nav-next.png) buttons in
   the bottom toolbar (and [keyboard shortcuts](/keyboard_shortcuts) for them) to switch to the
   previous/next image.
 - *Multiple Editor Tabs Mode* (METM), where each photo is opened in its
@@ -257,7 +243,7 @@ RawTherapee allows you to work on photos in two modes:
   photos opened at the same time requires more RAM.
 
 Try both modes and see which one suits you best. To do that, click on
-the *Preferences* icon [Preferences icon](image:preferences.png) in the bottom-left or top-right
+the *Preferences* icon ![Preferences icon](/images/preferences.png) in the bottom-left or top-right
 corner of the RT window, choose "*General \> Layout*" and set *Editor
 Layout* to your preferred choice.
 
@@ -278,15 +264,16 @@ little benefit, so it is likely to be removed in the future (see [issue 2254](ht
 
 ## The Filmstrip
 
-![](Rt_filmstrip_21_toolbar-visible.jpg "Rt_filmstrip_21_toolbar-visible.jpg")
-![](Rt_filmstrip_21_toolbar-hidden.jpg "Rt_filmstrip_21_toolbar-hidden.jpg")
+![](/images/rt_filmstrip_21_toolbar-visible.jpg "rt_filmstrip_21_toolbar-visible.jpg")
+
+![](/images/rt_filmstrip_21_toolbar-hidden.jpg "rt_filmstrip_21_toolbar-hidden.jpg")
 
 If you use *Single Editor Tab Mode* ("*Preferences \> General \>
 Layout*") you can display a horizontal panel above the preview, this is
 called the *Filmstrip*. It contains thumbnails of all images in the
 currently opened album, and is synchronized with the currently opened
 image so that you can use [keyboard shortcuts](/keyboard_shortcuts) or the previous ![Open previous image icon](nav-prev.png "Open previous image icon") and next
-![Open next image icon](nav-next.png "Open next image icon") image
+![Open next image icon](/images/nav-next.png "Open next image icon") image
 buttons to open the previous/next image without needing to go back to
 the *[File Browser](/file_browser)* tab.
 

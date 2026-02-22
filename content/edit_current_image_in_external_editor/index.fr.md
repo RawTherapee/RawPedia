@@ -16,7 +16,7 @@ configurer pour envoyer l'image dans afficheur, ainsi d'un simple clic
 sur un bouton, vous pouvez voir l'image finale avec une qualité élevée.
 
 Le bouton pour envoyer l'image dans un éditeur externe
-![<File:Palette-brush.png>](Palette-brush.png "File:Palette-brush.png")
+![](/images/palette-brush.png)
 est situé en bas à gauche du panneau d'aperçu. Lors de l'utilisation de
 cette fonction, Rawtherapee traite votre image et l’enregistre au format
 TIFF 16 bits entiers codé gamma dans le [dossier
