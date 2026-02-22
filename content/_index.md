@@ -13,11 +13,9 @@ contributors:
   - Jdc
 ---
 
-<figure class='d-block text-center'>
-<img src="/images/08_rt57_mushroom_blades_rawpedia.png"
-title="08_rt57_mushroom_blades_rawpedia.png" width="" />
-<!-- <figcaption>08_rt57_mushroom_blades_rawpedia.png</figcaption> -->
-</figure>
+{{< figure
+    src="/images/08_rt57_mushroom_blades_rawpedia.png"
+>}}
 
 Welcome to **[RawTherapee](https://rawtherapee.com)'s** documentation!
 
