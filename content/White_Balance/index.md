@@ -124,15 +124,15 @@ and/or using the Spot WB tool.
 ### Pick
 
 <figure>
-<img src="/images/White_balance_1_before.png"
-title="White_balance_1_before.png" />
-<figcaption>White_balance_1_before.png</figcaption>
+<img src="/images/white_balance_1_before.png"
+title="white_balance_1_before.png" />
+<figcaption>white_balance_1_before.png</figcaption>
 </figure>
 
 <figure>
-<img src="/images/White_balance_1_after.png"
-title="White_balance_1_after.png" />
-<figcaption>White_balance_1_after.png</figcaption>
+<img src="/images/white_balance_1_after.png"
+title="white_balance_1_after.png" />
+<figcaption>white_balance_1_after.png</figcaption>
 </figure>
 
 When you click on the Pick button
