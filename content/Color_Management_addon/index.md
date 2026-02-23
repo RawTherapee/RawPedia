@@ -104,8 +104,8 @@ account possible malfunctioning (bugs) still unsolved !
 - elaboration :
 
 <figure>
-<img src="/images/Mire468.jpg" title="Mire468.jpg" />
-<figcaption>Mire468.jpg</figcaption>
+<img src="mire468-1.jpg" title="mire468-1.jpg" />
+<figcaption>mire468-1.jpg</figcaption>
 </figure>
 
 1.  shoot a test pattern in ideal conditions matching the planned use
@@ -192,8 +192,8 @@ account possible malfunctioning (bugs) still unsolved !
   illuminant (daylight) and for temperatures under 4000K
 
 <figure>
-<img src="/images/illum1.jpg" title="illum1.jpg" />
-<figcaption>illum1.jpg</figcaption>
+<img src="illum1-1.jpg" title="illum1-1.jpg" />
+<figcaption>illum1-1.jpg</figcaption>
 </figure>
 
 ##### Principles
@@ -365,8 +365,8 @@ lighting is fluorescent - the illuminant in question (e.g. F11 4000K) by
 an equivalent "Daylight 4000K".
 
 <figure>
-<img src="/images/Comp4000.jpg" title="Comp4000.jpg" />
-<figcaption>Comp4000.jpg</figcaption>
+<img src="comp4000-1.jpg" title="comp4000-1.jpg" />
+<figcaption>comp4000-1.jpg</figcaption>
 </figure>
 
 Actually, the white balance calculates on the spectral data basis, two
@@ -424,36 +424,11 @@ raw processing software, of which RawTherapee.
 
 ##### Illuminants Diagrams and Color Rendering Index (CRI)
 
-<File:I_llumD50.jpg%7CIlluminant> D50 (CRI=100 Sigma=0)
-<File:I_llumA.jpg%7CIlluminant> A 2856K (CRI=100 Sigma=0)
-<File:I_llumD150.jpg%7CIlluminant> D150 -15000K (CRI=100 Sigma=0)
-<File:I_llumF1.jpg%7CIlluminant> Fluo F1 "daylight" 6430K (CRI=77
-Sigma=10) <File:I_llumF2.jpg%7CIlluminant> Fluo F2 "coolwite"4230K
-(CRI=64 Sigma=12) <File:I_llumF3.jpg%7CIlluminant> Fluo F3 "white" 3450K
-(CRI=60 Sigma=12) <File:I_llumF4.jpg%7CIlluminant> Fluo F4 "warm white"
-2940K (CRI=54 Sigma=11) <File:I_llumF5.jpg%7CIlluminant> Fluo F5
-"daylight" 6350K (CRI=74 Sigma=12)
-
-<File:I_llumF6.jpg%7CIlluminant> Fluo F6 "Lite white" 4150K (CRI=61
-Sigma=13) <File:I_llumF7.jpg%7CIlluminant> Fluo F7 "D65 simulator" 6500K
-(CRI=90 Sigma=2) <File:I_llumF8.jpg%7CIlluminant> Fluo F8 "D50 sylvania
-F40" 5000K (CRI=94 Sigma=1.4) <File:I_llumF9.jpg%7CIlluminant> Fluo F9
-"Cool white delux" 4150K - 4330K (CRI=89 Sigma=2)
-<File:I_llumF10.jpg%7CIlluminant> Fluo F10 "Philips TL85" 5000K (CRI=72
-Sigma=11) <File:I_llumF11.jpg%7CIlluminant> Fluo F11 "Philips TL84"
-4150K - 4000K (CRI=77 Sigma=9) <File:I_llumF12.jpg%7CIlluminant> Fluo
-F12 "Philips TL853" 3000K (CRI=72 Sigma=8)
-<File:I_llumHMI.jpg%7CIlluminant> Lamp HMI 4800K (CRI=97 Sigma=1)
-
-<File:I_llumCTI.jpg%7CIlluminant> Lamp GTI 5000K (CRI=90 Sigma=2)
-<File:I_llumJudge.jpg%7CIlluminant> Lamp Judge III 5000K (CRI=92
-Sigma=2) <File:I_llumSolux3500.jpg%7CIlluminant> Lamp Solux 3500K
-(CRI=95 Sigma=2) <File:I_llumSolux4100.jpg%7CIlluminant> Lamp Solux
-4100K (CRI=92 Sigma=2) <File:I_llumSolux4700.jpg%7CIlluminant> Lamp
-SoluxNG 4700K - 4480K (CRI=97 Sigma=1)
-<File:I_llumLED-LSI-lum2040.jpg%7CIlluminant> Lamp LED LSI Lumelex
-2040 - 3000K(CRI=90 Sigma=2) <File:I_llumLED_CRSSP12.jpg%7CIlluminant>
-Lamp LED CRS SP12 WWMR16 - 3050K(CRI=94 Sigma=3)
+<figure>
+<img src="illum-all.jpg" title="illum-all.jpg"
+width="1000" />
+<figcaption>illum-all.jpg</figcaption>
+</figure>
 
 ##### Algorithm
 
@@ -522,7 +497,7 @@ what basis ?
   In this case it is not really useful to choose a wide gamut profile.
 
 <figure>
-<img src="/images/GAMUTS.jpg"
+<img src="gamuts.jpg"
 title="representation of 4 profiles or spaces gamut" />
 <figcaption>representation of 4 profiles or spaces gamut</figcaption>
 </figure>
@@ -564,7 +539,7 @@ RawTherapee.exe window you will see a message:
 RawTherapee made the good choice to work in Lab mode (or its flavours
 Luv or Lch) or in CIECAM02 mode and with real numbers. This allows to
 preserve the best colors and gamut.
-
+FCRI
 Functions available in "Exposure" does not modify the hue, except
 "Saturation" that make it by dysfunction of the Lab mode (see about that
 the [Munsell correction](#the_"munsell"_correction) section
@@ -674,9 +649,13 @@ floating-point precision (LUTf):
 6.  for information, a deltaE94 less than 1 is negligible, it is
     noticeable around 2 or 3 and very important at 8 or 11.
 
-<File:Munsell-Lab-L20.jpg%7CColors> drifts representation for L=20
-<File:Munsell-Lab-L40.jpg%7CColors> drifts representation for L=40
-<File:Munsell-Lab-L70.jpg%7CColors> drifts representation for L=70
+<figure>
+<img src="munsell-drift.jpg" title="munsell-drift.jpg"
+width="1000" />
+<figcaption>munsell-drift.jpg</figcaption>
+</figure>
+
+
 
 ### Output space "Output Profile"
 
@@ -717,14 +696,30 @@ the RawTherapee options: relative, perceptual, ...) the RGB data from
 the working space to the output space.
 
 <figure>
-<img src="/images/GamutL50.jpg" title="Gamut for a luminance L=50" />
-<figcaption>Gamut for a luminance L=50</figcaption>
+<img src="gamutl50-1.jpg" title="gamut for a luminance l=50" />
+<figcaption>gamut for a luminance l=50</figcaption>
 </figure>
 
-<File:GamutL05.jpg%7CGamut> for a luminance L=5
-<File:GamutL25.jpg%7CGamut> for a luminance L=25
-<File:GamutL75.jpg%7CGamut> for a luminance L=75
-<File:GamutL95.jpg%7CGamut> for a luminance L=95
+<figure>
+<img src="gamutl05.jpg" title="gamut for a luminance l=05" />
+<figcaption>gamut for a luminance l=05</figcaption>
+</figure>
+
+<figure>
+<img src="gamutl25.jpg" title="gamut for a luminance l=25" />
+<figcaption>gamut for a luminance l=25</figcaption>
+</figure>
+
+<figure>
+<img src="gamutl75.jpg" title="gamut for a luminance l=75" />
+<figcaption>gamut for a luminance l=75</figcaption>
+</figure>
+
+<figure>
+<img src="gamutl95.jpg" title="gamut for a luminance l=95" />
+<figcaption>gamut for a luminance l=95</figcaption>
+</figure>
+
 
 Of courses, remarks about the choice of the output color space are
 similar to the ones about the working space (print, screen,...).
@@ -897,8 +892,18 @@ various gamma and as a reference the RawTherapee histogram (preview)
 with the same settings (working spacece Prophoto, profile "neutral",
 output profile = Prophoto and its varying gamma).
 
-![Preview Prophoto](RT_prev_Prophoto.jpg "Preview Prophoto")
-![<File:GammaS.jpg>](GammaS.jpg "File:GammaS.jpg")
+<figure>
+<img src="munsell-drift.jpg" title="munsell-drift.jpg"
+width="1000" />
+<figcaption>munsell-drift.jpg</figcaption>
+</figure>
+
+##### Gamma influence
+<figure>
+<img src="gammas.jpg" title="gammas.jpg"
+width="1000" />
+<figcaption>gammas.jpg</figcaption>
+</figure>
 
 The more the histogram is shifted to the left the more the image appears
 dark...
@@ -915,11 +920,14 @@ about sRGB output).
 Some people could be worried, is "RT_SRGB" identical to
 "sRGB_Color_Space_Profile" and different from the preview. Moreover,
 what are the effects of another gamma?
+<figure>
+<img src="out-var.jpg" title="out-var.jpg"
+width="1000" />
+<figcaption>out-var.jpg</figcaption>
+</figure>
 
-<File:RT_prev_sRGB.jpg%7CPreview> en SRGB <File:RT_sRGB.jpg%7COutput>
-RT_sRGB <File:SRGB_color_space.jpg%7COutput> sRGB_Color_space_Profile
-<File:RT_sRGB_gBT709.jpg%7COutput> sRGB gamma BT709
-<File:RT_sRGBg23p8.jpg%7COutput> sRGB gamma=2.3 slope=8
+
+
 
 #### How to use it ?
 
@@ -995,7 +1003,10 @@ more frequent output - a histogram with much less fish bones that may
 bring posterization in the shades. Here is for comparison with the same
 image, a 16 bits histogram enlargement in low lights, between sRGB Color
 Space profile and RT_sRGB
+<figure>
+<img src="prof-qual.jpg" title="prof-qual.jpg"
+width="800" />
+<figcaption>prof-qual.jpg Histogram</figcaption>
+</figure>
 
-<File:SRGB16bits.jpg%7Cpartial> 16 bits histogram
-sRGB_color_space_profile <File:RT_sRGB16bits.jpg%7Cpartial> 16 bits
-histogram RT_sRGB
+
