@@ -2182,7 +2182,8 @@ possible blend modes.
 width="600" />
 <figcaption>common-color-prepa1.jpg</figcaption>
 </figure>
-ame role
+
+
 ##### First merge using Normal blend mode
 
 - Choose the Normal blend mode.
