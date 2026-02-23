@@ -20,8 +20,9 @@ of colors from scene to intermediate formats, editors and various output
 media. This is an often complicated and technical matter that
 RawTherapee tries to handle as correctly as possible behind the scenes.
 More can be read about it
-[here](http://rawpedia.rawtherapee.com/Color_Management_addon). The
-various options of the Color Management tool are explained below.
+[here](/color_management_addon/)
+
+The various options of the Color Management tool are explained below.
 
 ## Input Profile
 
@@ -43,9 +44,9 @@ because most tools depend on it. There are several ways to apply an
 input profile.
 
 <figure>
-<img src="/images/ColorManagement-InputProfile-GUI.jpg"
-title="ColorManagement-InputProfile-GUI.jpg" />
-<figcaption>ColorManagement-InputProfile-GUI.jpg</figcaption>
+<img src="colormanagement-inputprofile.jpg"
+title="colormanagement-inputprofile.jpg" />
+<figcaption>ColorManagement-InputProfile.jpg</figcaption>
 </figure>
 
 #### No Profile
@@ -435,14 +436,14 @@ makes it possible to easily see:
   to 770nm.
 
 <figure>
-<img src="/images/ciexy-color.jpg" title="ciexy-color.jpg" width="600" />
+<img src="ciexy-color1.jpg" title="ciexy-color1.jpg" width="600" />
 <figcaption>ciexy-color.jpg</figcaption>
 </figure>
 
 - A triangular color-space model based on the primaries.
 
 <figure>
-<img src="/images/ciexy-3space.jpg" title="ciexy-3space.jpg" width="600" />
+<img src="ciexy-3space1.jpg" title="ciexy-3space1.jpg" width="600" />
 <figcaption>ciexy-3space.jpg</figcaption>
 </figure>
 
@@ -450,7 +451,7 @@ makes it possible to easily see:
   of the illuminants D50, D65, Std A, ).
 
 <figure>
-<img src="/images/ciexy-wp.jpg" title="ciexy-wp.jpg" width="600" />
+<img src="ciexy-wp1.jpg" title="ciexy-wp1.jpg" width="600" />
 <figcaption>ciexy-wp.jpg</figcaption>
 </figure>
 
@@ -753,8 +754,11 @@ It has several objectives:
 By default, the illuminant is set to the corresponding value in the
 Working profile. For example this corresponds to D50 for "ProPhoto", D65
 for "sRGB", D60 for "ACESp1".
-<img src="/images/ciexy-wp.jpg" title="ciexy-wp.jpg" width="600"
-alt="ciexy-wp.jpg" /> Why change it? There are several reasons for
+
+<img src="ciexy-wp0.jpg" title="ciexy-wp0.jpg" width="600"
+alt="ciexy-wp0.jpg" />
+
+ Why change it? There are several reasons for
 wanting to change this value:
 
 - To deliberately change the colors as you would with a Channel Mixer or
@@ -853,8 +857,10 @@ Raw file: (Brian Poindexter - Creative Common Attribution-share Alike
 
 #### Apply a TRC
 
-<img src="/images/flowerT-trc.jpg" title="flowerT-trc.jpg" width="600"
-alt="flowerT-trc.jpg" /> Examine the green part of the image:
+<img src="flowert-trc1.jpg" title="flowert-trc1.jpg" width="600"
+alt="flowert-tr1c.jpg" /> 
+
+Examine the green part of the image:
 
 - The more you act on Slope, the more the dark part will lighten
 - The more you act on Gamma, the brighter the light part will be.
@@ -862,14 +868,17 @@ alt="flowerT-trc.jpg" /> Examine the green part of the image:
 #### Change primaries
 
 Adobe RGB replace Prophoto (Working profile), Rawtherapee's default
-setting <img src="/images/flowerT-primaries.jpg" title="flowerT-primaries.jpg"
-width="600" alt="flowerT-primaries.jpg" /> Try changing 'Destination
-primaries - Adobe RGB' to another value, for example Rec2020 or ACESp0
+setting <img src="flowert-primaries1.jpg" title="flowert-primaries1.jpg"
+width="600" alt="flowert-primaries1.jpg" /> 
+
+Try changing 'Destination primaries - Adobe RGB' to another value, for example Rec2020 or ACESp0
 
 #### Change primaries - Custom CIExy diagram
 
-<img src="/images/flowerT-prim-CIExydiag.jpg" title="flowerT-prim-CIExydiag.jpg"
-width="600" alt="flowerT-prim-CIExydiag.jpg" /> The change concerns only
+<img src="flowert-prim-ciexydiag1.jpg" title="flowert-prim-ciexydiag1.jpg"
+width="600" alt="flowert-prim-ciexydiag1.jpg" /> 
+
+The change concerns only
 the red point from Adobe RGB: observe the image and the change in the
 values of the primaries Rx, Ry
 
@@ -893,9 +902,10 @@ The settings given in the example are for didactic purposes. Of course
 you can (should) use settings that are closer to the Working profile
 values.
 
-<img src="/images/ciexy-bw1.jpg" title="ciexy-bw1.jpg" width="600"
-alt="ciexy-bw1.jpg" /> Raw file:
-[2](https://drive.google.com/file/d/1azCxu1midw6dcuN7SbvbAiJH4pxX5BTA/view?usp=sharing)
+<img src="ciexy-bw-1.jpg" title="ciexy-bw-1.jpg" width="600"
+alt="ciexy-bw-1.jpg" /> 
+
+Raw file: [2](https://drive.google.com/file/d/1azCxu1midw6dcuN7SbvbAiJH4pxX5BTA/view?usp=sharing)
 
 ### How the "Primaries and White Point" algorithm works
 
