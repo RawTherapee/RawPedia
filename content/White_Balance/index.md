@@ -63,12 +63,12 @@ for diagnostic purposes or when working with UniWB images.
 
 ### Method
 
-- [/images/Wb-camera.png](/images/wb-camera.png) Camera
+- [Wb-camera.png](/images/wb-camera.png) Camera
 
   Takes the white balance used by the camera. If you shoot only in raw
   (so no raw+JPG), put the white balance settings of your camera on
   auto. This should generally give good results.
-- [/images/Wb-auto.png](/images/wb-auto.png) Automatic
+- [Wb-auto.png](/images/wb-auto.png) Automatic
   - RGB grey
 
     Automatically corrects the white balance, by assuming that the
@@ -100,24 +100,26 @@ for diagnostic purposes or when working with UniWB images.
       movement of this command brings a new calculation of temperature,
       tint and correlation.
     - A description of the Itcwb algorithim can be found here
-      [algorithm](white_balance#the_temperature_correlation_algorithm)
-- [/images/Wb-custom.png](/images/wb-custom.png) Custom
+
+      [algorithm](/white_balance/#the-temperature-correlation-algorithm)
+
+- [Wb-custom.png](/images/wb-custom.png) Custom
 
 
 Set your own color temperature and green tint by moving the two sliders
 and/or using the Spot WB tool.
 
 - Light source presets
-  - [/images/Wb-sun.png](/images/wb-sun.png) Daylight (Sunny)
-  - [/images/Wb-cloudy.png](/images/wb-cloudy.png) Cloudy
-  - [/images/Wb-shade.png](/images/wb-shade.png) Shade
-  - [/images/Wb-water.png](/images/wb-water.png) Underwater
-  - [/images/Wb-tungsten.png](/images/wb-tungsten.png) Tungsten
-  - [/images/Wb-fluorescent.png](/images/wb-fluorescent.png)
+  - [Wb-sun.png](/images/wb-sun.png) Daylight (Sunny)
+  - [Wb-cloudy.png](/images/wb-cloudy.png) Cloudy
+  - [Wb-shade.png](/images/wb-shade.png) Shade
+  - [Wb-water.png](/images/wb-water.png) Underwater
+  - [Wb-tungsten.png](/images/wb-tungsten.png) Tungsten
+  - [Wb-fluorescent.png](/images/wb-fluorescent.png)
     Fluorescent
-  - [/images/Wb-lamp.png](/images/wb-lamp.png) Lamp
-  - [/images/Wb-led.png](/images/wb-led.png) LED
-  - [/images/Wb-flash.png](/images/wb-flash.png) Flash
+  - [Wb-lamp.png](/images/wb-lamp.png) Lamp
+  - [Wb-led.png](/images/wb-led.png) LED
+  - [Wb-flash.png](/images/wb-flash.png) Flash
 
 ### Pick
 
@@ -430,10 +432,6 @@ re-calculated temperature, tint, correlation.
 
 ### User-Modifiable Settings
 
-The development branch
-[`whitebalanceopt`](https://github.com/Beep6581/RawTherapee/pull/6643)
-allows one to modify the parameters used by this algorithm.
-
 By default the settings should be suitable in most cases. However, it is
 possible to make custom modifications to the operation of the algorithm.
 
@@ -566,23 +564,23 @@ of the processing (which is always very complex). Of course it can
   - Example for a luminance of 10 and a luminance of 50 \[0..100\].
 
 <figure>
-<img src="/images/Gamu-comp10.jpg" title="Gamu-comp10.jpg" />
-<figcaption>Gamu-comp10.jpg</figcaption>
+<img src="/images/gamu-comp10.jpg" title="gamu-comp10.jpg" />
+<figcaption>gamu-comp10.jpg</figcaption>
 </figure>
 
 <figure>
-<img src="/images/Gamu-comp50.jpg" title="Gamu-comp50.jpg" />
-<figcaption>Gamu-comp50.jpg</figcaption>
+<img src="/images/gamu-comp50.jpg" title="gamu-comp50.jpg" />
+<figcaption>gamu-comp50.jpg</figcaption>
 </figure>
 
 <figure>
-<img src="/images/Rec2020_Pointer.jpg" title="Rec2020_Pointer.jpg" />
-<figcaption>Rec2020_Pointer.jpg</figcaption>
+<img src="/images/rec2020_pointer.jpg" title="rec2020_pointer.jpg" />
+<figcaption>rec2020_pointer.jpg</figcaption>
 </figure>
 
 <figure>
-<img src="/images/sRGB2jdcmax.jpg" title="sRGB2jdcmax.jpg" />
-<figcaption>sRGB2jdcmax.jpg</figcaption>
+<img src="/images/srgb2jdcmax.jpg" title="srgb2jdcmax.jpg" />
+<figcaption>srgb2jdcmax.jpg</figcaption>
 </figure>
 
 Impact settings: After several weeks of user testing and optimization of
