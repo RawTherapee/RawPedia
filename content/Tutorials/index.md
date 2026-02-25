@@ -199,12 +199,16 @@ Do not attempt to reduce noise, whether using in 'Capture Sharpening', 'Presharp
 + The choice of Amaze+VNG4 allows for good detail rendering of structures and a possible reduction of artifacts in flat areas.
 + False color suppresion steps: setting it to 4 slightly reduces artifacts
 
+[Demosaicing](/demosaicing/)
+
 ##### Raw Black points
 
 The 'Dehaze' system designed by Ingo Weirich suggests here, due to the difference between the values ​​R=0, G=0, B=0 and the very low values ​​R=0.4%, G=0.4%, B=0.4%, that it's a haze problem... I think that's not the case. We're dealing with data corruption here... just like what happens in highlights.
 
 + First, try the "Dehaze" checkbox; you'll see the sliders move to the right, the histogram expands, especially to the left (the shadow areas), and the image is brighter and more colorful: Red:+1, Green 1:+7, Green 2:+7, Blue:+2.
 + Second, increase the settings (by unchecking the 'Dehaze' box) : Red:+3, Green 1:+14, Green 2:+8, Blue:+5. You will again notice a more vivid image, a better utilized histogram, and a reduction in artifacts.
+
+[Raw Black points](/raw_black_points/)
 
 <figure>
 <img src="raw-tools.jpg" title="raw-tools.jpg" width="300" />
@@ -248,6 +252,7 @@ I chose "Camera" which seems to give a better result. During the Raw pre-process
 <figcaption>Capture Sharpening</figcaption>
 </figure>
 
+[Capture Sharpening](/capture_sharpening/)
 
 #### Color Propagation
 
@@ -274,6 +279,8 @@ To fully utilize the capabilities of "White Balance Auto temperature correlation
 
 + The automatic calculation always performs two passes: the first with the base results, and a second to try to get closer to D50, thus avoiding color adaptation (which can be done in "Automatic Symmetric" mode using Color Appearance & Lighting). The choice is up to the user. Among the criteria is the 'Correlation factor'; the smaller it is, the better. The other criterion is the 'Size', which is the number of colors found to be significant for comparison with the reference spectral colors (approximately 400). The larger the 'Size', the better. Note that it may be affected by chromatic noise.
 
+[Temerature correlation](/white_balance/#the-temperature-correlation-algorithm)
+
 #### Gamut Compression
 
 As a reminder, this algorithm does not perform a "conversion" but compresses the data to the output profile (in linear mode, without gamma). It will ensure, at _a minima_, that the data will be within the gamut. Hence the importance of examining the histogram in mode 'gamma-corrected **output profile**'
@@ -283,6 +290,8 @@ As a reminder, this algorithm does not perform a "conversion" but compresses the
 </figure>
 
 + I made a few small changes to the default settings, but you can try modifying all 3 'Threshold' values ​​as well as 'Rolloff & Power'.
+
+[Gamut Compression](/gamut_compression/)
 
 #### Selective Editing - Five RT-Spots
 
@@ -298,6 +307,8 @@ As a reminder, this algorithm does not perform a "conversion" but compresses the
 + Note the use of checkboxes (uncheck them all first). Start with 'Subtract linear black'; you'll see the histogram compress towards the left, even with the work done beforehand in the Raw section. Then activate 'Linear dynamic range'; the histogram will be compressed by roughly 1.18 (see the values ​​displayed below). The asymptote for highlights will be better defined, and contrast and saturation will increase.
 + The other settings - which are also important - are part of the chain of mastering gamut and artifacts.
 
+[Michaelis-Menten](/local_adjustments/#michaelis-menten---mm---origin)
+
 ##### The second - Equalization & Pre-Tone Mapping - Generalized Hyperbolic Stretch (GHS)
 
 <figure>
@@ -310,6 +321,9 @@ As a reminder, this algorithm does not perform a "conversion" but compresses the
 + Activate 'Auto Symmetry point (SP)'.
 + Adjust 'Stretch factor (D)' and 'Local intensity (b)' to achieve the desired effect.
 
+[Generalized Hyperbolic Stretch](/local_adjustments/#generalized-hyperbolic-strech---ghs---origin)
+
+
 ##### The third - Color & Light - Excluding Spot
 
 <figure>
@@ -320,6 +334,7 @@ As a reminder, this algorithm does not perform a "conversion" but compresses the
 + This Spot Exclusion will undo all changes and allow you to add more. It will remove (at least partially) some of the artifacts and amplify the sky color to make it more dramatic.
 + Note the use of 'Color correction grid'
 
+[Four Types of RT-spot](/local_adjustments/#the-four-types-of-rt-spot)
 
 ##### The fourth - to reduce artifacts
 
@@ -350,6 +365,8 @@ As a reminder, this algorithm does not perform a "conversion" but compresses the
 + Nothing new here, I'm using a tool that's been around in RT for a long time. I could have used the same tool found in Selective Editing associated with each tool, but except for 'fit to screen', it's sensitive to the Preview's dimensions.
 + I positioned it to increase the contrast (more dramatic effect) between the clouds and the rest of the image.
 
+[Graduated Filter](/graduated_filter/)
+
 #### Abstract Profile
 
 I'll proceed in two steps. First, adjust the tones and check for any potential excesses in the histogram and gamut. Second, have some fun with the 'Primaries & Illuminants' module.
@@ -364,6 +381,10 @@ I'll proceed in two steps. First, adjust the tones and check for any potential e
 + Note the gamma and slope settings (which is a seamless function) that connect a straight line with a slope value of 'Slope' to a parabolic curve with a 'Gamma' value. You are manipulating the balance of shadows and highlights.
 + The other settings are fairly intuitive. Note the importance of 'Attenuation threshold' which acts asymptotically on highlights.
 + For Contrast Enhancement, note the very high value of both Contrast profile (5), which leads to modifying the contrast from 2x2 pixel groups up to 1024x1024 (if the size of your Preview allows it), and the curve which is almost at its maximum. The system uses only wavelets, and only for signal processing. 'Normally' as it is designed, it should not (or very little) generate artifacts. The goal here is to make the whole image more dramatic (it is certain that for a portrait, or traditional images, the basic settings are sufficient).
+
+[TRC Tone Response Curve](/color_management/#trc---tone-response-curve)
+
+[Contrast Enhancement](/color_management/#contrast-enhancement)
 
 ###### RGB Max - informations
 
@@ -394,6 +415,8 @@ The objective here is twofold:
 + Note that if instead of increasing the saturation, I had reduced it, we would have gone outside the CIExy diagram, hence the generation of imaginary colors.
 + Note that I've changed the 'White point' of the internal ICC profile to D41. When you change it, you change the dominant color. The primary rotation is done from this 'new' White point.
 + Note that just because a color is in the CIExy diagram does not mean it is in the gamut (there is a 3rd dimension 'Y' - equivalent to luminance). But any color that is outside the diagram is necessarily imaginary.
+
+[Primaries](/color_management/#use-of-data-from-the-cie-xy-diagram-in-abstract-profiles)
 
 #### Color Appearance & Lighting
 
@@ -443,6 +466,8 @@ In this tutorial, I will present it briefly in 2 parts:
 </figure>
 
 + For this challenging image, I made a point of moderating the settings to avoid artifacts.
+
+[Red Green Blue](/ciecam02/#red---green---blue---hue-rotation-h---saturation-s---brightness-curve-q)
 
 #### Appearance of the result at the end of treatment
 
@@ -509,6 +534,8 @@ The user will understand the ‘Game changer’ approach discussed in this tutor
 #### Using Generalized Hyperbolic Stretch (GHS)
 
 ##### Preamble
+
+[Generalized Hyperbolic Stretch](/local_adjustments/#generalized-hyperbolic-strech---ghs---origin)
 
 I won’t compare it to other tone mappers in RawTherapee or other software, using tables or a pros/cons list. That would be tedious and probably not very interesting from a user’s perspective. I will simply (given the lack of documentation) draw your attention to the specific points that are crucial:
 
@@ -581,6 +608,8 @@ Performs the entire GHS processing, including Matrix conversion either AgX or Jz
 This algorithm is much simpler than GHS. It often provides almost the correct settings on the first try. However, it cannot operate in 'Inverse' mode. Like GHS, it requires adjustments to the 'Black point (linear)' and 'White point (linear)'. 
 
 For the sake of simplicity, it is only offered in RGB Standard mode, i.e. the 3 channels Red, Green, Blue used in the same way.
+
+[Michaelis-Menten](/local_adjustments/#michaelis-menten---mm---origin)
 
 ##### MM Settings
 
@@ -662,6 +691,10 @@ The image obtained after GHS or MM is perfectly acceptable. I could have added a
 + I activated ‘Contrast Enhancement’ with a value of 3 and slightly increased ‘Residual Contrast’.
 + But, primarily and mainly for educational purposes, I used the ‘Dominant Color’ function (is not included in pp3)
 
+[TRC Tone Response Curve](/color_management/#trc---tone-response-curve)
+
+[Contrast Enhancement](/color_management/#contrast-enhancement)
+
 ###### Dominant Color
 
 This function, also available in ‘Selective Editing > Color Appearance (CAM16)’, allows you to correct or introduce a dominant color. Without modifying the primaries, which is possible in graphic mode, choose ‘Destination primaries > Custom (CIExy Diagram)’.
@@ -678,6 +711,8 @@ I ‘forgot’ one thing. After ‘Abstract profile’, it is possible (even rec
 </figure>
 
 #### Color Appearance & Lighting
+
+[CIECAM](/ciecam02/#color-appearance--lighting-ciecam0216-et-color-appearance-cam16--jzczhz---tutorial)
 
 We use the same principles as in the first tutorial, but the settings are different. Here, the goal isn't to create a dramatic effect, but to amplify the sunburst.
 [CIECAM - Best shadows & highlights technics](/tutorials/#color-appearance--lighting)
@@ -706,6 +741,8 @@ Here, I used 'Lightness + Saturation (s)' which has a differentiated action on s
     - Change the brightness (Q) with a curve that allows you to adapt the contrast and brightness to each situation.
 
 + As a reminder, in CIECAM there are a total of 9 variables, 6 of which are accessible to the user in RT: Lightness (J), Brightness (Q), Saturation (s), Chroma (C), Colorfullness (M), and Hue rotation (h). They are interdependent. For example Chroma = saturation * saturation * brightness.
+
+[Red Green Blue](/ciecam02/#red---green---blue---hue-rotation-h---saturation-s---brightness-curve-q)
 
 <figure>
 <img src="red-green-blue-2.jpg" title="red-green-blue-2.jpg" width="300" />
@@ -862,6 +899,8 @@ MM:
 + Note also 'Subtract linear black' and 'Linear dynamic range' enabled.
 + Note : attenuation threshold (b): better histogram, less out-of-gamut data.
 
+[Michaelis-Menten](/local_adjustments/#michaelis-menten---mm---origin)
+
 #### Restore some sharpness to the image
 
 + Postsharpening denoise in Capture Sharpening, despite precautions, slightly reduced the sharpness provided by Capture Sharpening.
@@ -891,9 +930,15 @@ Here, I'm not using primaries, nor am I touching the illuminants. We're staying 
 + Note: Final RGB Max = 0.758 and Final Saturation Max = 0.728 which corresponds to the maximum RGB and Saturation values ​​after the final 'Color Appearance & Lighting' step.
 + Note : the second gamut compression, with 'Power = 1.6'.
 
+[TRC Tone Response Curve](/color_management/#trc---tone-response-curve)
+
+[Contrast Enhancement](/color_management/#contrast-enhancement)
+
 #### Color Appearance & Lighting
 
 Beyond CIECAM's ability to account for shooting conditions, viewing conditions, and physiological effects, it is used here for a similar purpose to primaries: to make colors appear more natural (this is quite subjective), and to maximize contrast and saturation without exceeding the color gamut.
+
+[CIECAM](/ciecam02/#color-appearance--lighting-ciecam0216-et-color-appearance-cam16--jzczhz---tutorial)
 
 ##### Red Green Blue
 
@@ -903,6 +948,8 @@ Beyond CIECAM's ability to account for shooting conditions, viewing conditions, 
     - Change the brightness (Q) with a curve that allows you to adapt the contrast and brightness to each situation.
 
 + As a reminder, in CIECAM there are a total of 9 variables, 6 of which are accessible to the user in RT: Lightness (J), Brightness (Q), Saturation (s), Chroma (C), Colorfullness (M), and Hue rotation (h). They are interdependent. For example Chroma = saturation * saturation * brightness.
+
+[Red Green Blue](/ciecam02/#red---green---blue---hue-rotation-h---saturation-s---brightness-curve-q)
 
 <figure>
 <img src="red-green-blue-3.jpg" title="red-green-blue-3.jpg" width="300" />
@@ -1023,7 +1070,9 @@ Check if the histogram changes when you enable or disable it. Of course, choose 
 
 + Ensure that Subtract lines black and Linear dynamic range are enabled.
 + You can see that these values ​​are respectively at 0.0016 and 1.7706. This means that significant compression has been performed to 'fit' into Rec2020.
-+ Note that I did not act on 'Exposure (Ev)' but on Output scale (S) and Knee strength (K)
++ Note that I did not act on 'Exposure (Ev)' but on Output scale (S) and Knee strength (K).
+
+[Michaelis-Menten](/local_adjustments/#michaelis-menten---mm---origin)
 
 #### Abstract Profile
 
@@ -1036,6 +1085,10 @@ Check if the histogram changes when you enable or disable it. Of course, choose 
 + Enable ‘Contrast Enhancement’ - The default settings should be suitable in most cases. I increased 'Contrast profile' to 3. This means that 1 basic level of Wavelet decomposition is used (to simplify).
 + The RGBmax indicator should display a value less than 1. If it doesn't, either change the previous AP or MM settings, or adjust 'Final Gain & Gamut Compression'. You will see the RT process values ​​displayed below the 'Gain (Ev)' and 'Target gamut' settings. To display the data, at least one of the two settings must not be zero or 'None'. I recommend setting 'Target gamut' to sRGB (the same setting you used for Soft Proofing) and in Gamut Compression (Color Tab).
 
+[TRC Tone Response Curve](/color_management/#trc---tone-response-curve)
+
+[Contrast Enhancement](/color_management/#contrast-enhancement)
+
 ####  Color Appearance & Lighting
 
 + Now we'll explore the new 'Red Green Blue' tool, which will allow you to finely control each of the 3 RGB channels.
@@ -1043,6 +1096,10 @@ Check if the histogram changes when you enable or disable it. Of course, choose 
 + Note the default 'Scene conditions' settings which you could change if you know exactly the shooting conditions.
 + Note the default 'Viewing conditions' settings which you could change to adapt them to your viewing environment (the room you are in, its ambiance, the 'Absolute luminance' estimate, and Surround…).
 + I chose 'Lightness + Saturation' and slightly increased the overall saturation and contrast (J)
+
+[CIECAM](/ciecam02/#color-appearance--lighting-ciecam0216-et-color-appearance-cam16--jzczhz---tutorial)
+
+[Red Green Blue](/ciecam02/#red---green---blue---hue-rotation-h---saturation-s---brightness-curve-q)
 
 ##### Red - Green - Blue
 
@@ -1058,6 +1115,8 @@ In the case of the ‘Blue Horse’ I arrived at the settings used in pp3, using
 To simplify use, I’ve only included one slider per channel for hue rotation, and one slider per channel for Saturation (s). I could have also included a tone equalizer for the red, green, and blue range; If that proves useful, aside from complicating the interface, it doesn’t pose any problem. Note that the 3 Brightness curves allow you to adjust the brightness and contrast for each color range. Specifically, brightness acts on the perceived chroma via the (s) Saturation function.
 
 Of course, the settings are quite arbitrary, depending on your tastes.
+
+[Red Green Blue](/ciecam02/#red---green---blue---hue-rotation-h---saturation-s---brightness-curve-q)
 
 <figure>
 <img src="red-green-blue-4.jpg" title="red-green-blue-4.jpg" width="300" />
@@ -1181,12 +1240,20 @@ The goal is to increase the sense of clarity in the upper part of the image. To 
 <figcaption>Abstract Profile</figcaption>
 </figure>
 
+[TRC Tone Response Curve](/color_management/#trc---tone-response-curve)
+
+[Contrast Enhancement](/color_management/#contrast-enhancement)
+
 #### Color Appearance & Lighting
 + Now we'll explore the new 'Red Green Blue' tool, which will allow you to finely control each of the 3 RGB channels.
 + First : enable ‘Color Appearance & Lighting’ and choose ‘Complexity = Advanced’. This gives you more choices among the CIECAM variables. Thus, you have : Lightness (J) and Contrast (J), Brightness (Q) and Contrast (Q), Chroma (C), Saturation (s), Colorfullness (M), hue raotation (h) , and 3 tones curves for Lightness, Brightness, and Color.
 + Note the default 'Scene conditions' settings which you could change if you know exactly the shooting conditions.
 + Note the default 'Viewing conditions' settings which you could change to adapt them to your viewing environment (the room you are in, its ambiance, the 'Absolute luminance' estimate, and Surround…).
 + I chose 'Lightness + Saturation' and slightly increased the overall saturation and contrast (J)
+
+[CIECAM](/ciecam02/#color-appearance--lighting-ciecam0216-et-color-appearance-cam16--jzczhz---tutorial)
+
+
 
 ##### Red - Green - Blue
 
@@ -1207,6 +1274,8 @@ Of course, the settings are quite arbitrary, depending on your tastes.
 <img src="red-green-blue-5.jpg" title="red-green-blue-5.jpg" width="300" />
 <figcaption>CIECAM Red Green Blue</figcaption>
 </figure>
+
+[Red Green Blue](/ciecam02/#red---green---blue---hue-rotation-h---saturation-s---brightness-curve-q)
 
 **Back to Abstract profile**
 
@@ -1343,12 +1412,18 @@ When ‘Capture Sharpening’ (Raw Tab) is enabled, the ‘Capture Radius’ val
 + In principle, there’s no point in using the ‘Primaries & Illuminant’ module here.
 + You can easily see the effect of the last controls in 'Final Gain & Gamut Compression', set 'Target Gamut' to 'None' and you will see the out-of-gamut data appear, also observe the histogram.
 
+[TRC Tone Response Curve](/color_management/#trc---tone-response-curve)
+
+[Contrast Enhancement](/color_management/#contrast-enhancement)
+
 #### Color Appearance & Lighting
 + Now we'll explore the new 'Red Green Blue' tool, which will allow you to finely control each of the 3 RGB channels.
 + First : enable ‘Color Appearance & Lighting’ and choose ‘Complexity = Advanced’. This gives you more choices among the CIECAM variables. Thus, you have : Lightness (J) and Contrast (J), Brightness (Q) and Contrast (Q), Chroma (C), Saturation (s), Colorfullness (M), hue raotation (h) , and 3 tones curves for Lightness, Brightness, and Color.
 + Note the default 'Scene conditions' settings which you could change if you know exactly the shooting conditions.
 + Note the default 'Viewing conditions' settings which you could change to adapt them to your viewing environment (the room you are in, its ambiance, the 'Absolute luminance' estimate, and Surround…).
 + I chose 'Lightness + Saturation' and slightly increased the overall saturation and contrast (J)
+
+[CIECAM](/ciecam02/#color-appearance--lighting-ciecam0216-et-color-appearance-cam16--jzczhz---tutorial)
 
 ##### Red - Green - Blue
 
@@ -1364,6 +1439,8 @@ In the case of the ‘Harvest mouse’ I arrived at the settings used in pp3, us
 To simplify use, I’ve only included one slider per channel for hue rotation, and one slider per channel for Saturation (s). I could have also included a tone equalizer for the red, green, and blue range; If that proves useful, aside from complicating the interface, it doesn’t pose any problem. Note that the 3 Brightness curves allow you to adjust the brightness and contrast for each color range. Specifically, brightness acts on the perceived chroma via the (s) Saturation function.
 
 Of course, the settings are quite arbitrary, depending on your tastes.
+
+[Red Green Blue](/ciecam02/#red---green---blue---hue-rotation-h---saturation-s---brightness-curve-q)
 
 <figure>
 <img src="red-green-blue-6.jpg" title="red-green-blue-6.jpg" width="300" />
@@ -1468,6 +1545,7 @@ The choices are fairly arbitrary.
 </figure>
 
 ##### Adjust the noise reduction to your liking
+
 At this stage, nothing is clear, everything is arbitrary. We are subject to the constraints of the Preview…and in the current state of the process, there is no ‘proper’ method. So we make do.
 + Add a new RT-spot (Blur/Grain & Denoise > Denoise) in Global mode (of course you can choose Full image and use deltaE, or a normal Spot…, but to simplify the explanation I choose ‘Global’)
 + Enable ‘Contrast threshold’.
@@ -1537,6 +1615,10 @@ Open a third RT-Spot in Global mode and choose ‘Add tools to current spot…> 
 + In principle, there’s no point in using the ‘Primaries & Illuminant’ module here.
 + You can easily see the effect of the last controls in 'Final Gain & Gamut Compression', set 'Target Gamut' to 'None' and you will see the out-of-gamut data appear, also observe the histogram.
 
+[TRC Tone Response Curve](/color_management/#trc---tone-response-curve)
+
+[Contrast Enhancement](/color_management/#contrast-enhancement)
+
 
 #### Color Appearance & Lighting
 + Now we'll explore the new 'Red Green Blue' tool, which will allow you to finely control each of the 3 RGB channels.
@@ -1544,6 +1626,8 @@ Open a third RT-Spot in Global mode and choose ‘Add tools to current spot…> 
 + Note the default 'Scene conditions' settings which you could change if you know exactly the shooting conditions.
 + Note the default 'Viewing conditions' settings which you could change to adapt them to your viewing environment (the room you are in, its ambiance, the 'Absolute luminance' estimate, and Surround…).
 + I chose 'Lightness + Saturation' and slightly increased the overall saturation.
+
+[CIECAM](/ciecam02/#color-appearance--lighting-ciecam0216-et-color-appearance-cam16--jzczhz---tutorial)
 
 ##### Red - Green - Blue
 
@@ -1559,6 +1643,8 @@ In the case of the ‘Girl’ I arrived at the settings used in pp3, using ‘So
 To simplify use, I’ve only included one slider per channel for hue rotation, and one slider per channel for Saturation (s). I could have also included a tone equalizer for the red, green, and blue range; If that proves useful, aside from complicating the interface, it doesn’t pose any problem. Note that the 3 Brightness curves allow you to adjust the brightness and contrast for each color range. Specifically, brightness acts on the perceived chroma via the (s) Saturation function.
 
 Of course, the settings are quite arbitrary, depending on your tastes.
+
+[Red Green Blue](/ciecam02/#red---green---blue---hue-rotation-h---saturation-s---brightness-curve-q)
 
 <figure>
 <img src="red-green-blue-7.jpg" title="red-green-blue-7.jpg" width="300" />
