@@ -11,7 +11,8 @@ toc: true
 ## Introduction : What is a "Game changer"?
 
 ‘Game changer’ - in French, the term ‘bouleverseur’ suits me well as a translation: it aims to change the usual way of thinking and acting in terms of image processing. Before changing the way we do things, we must first agree on the way we see things. In french a great sociologist, now deceased, said : "L'accord sur ma manière de faire est avant tout un accord sur la manière de voir" (Jean-Daniel Reynaud : 1926 - 2019).
-grave
+
+
 This concept isn't about forcing you to change your image processing methods, but rather about trying a different approach based on principles that solve (at least partially, I believe) difficult image processing problems, using new concepts and methods. I'm not talking about tools here, but meta-methods: how to proceed and why this processing method is preferable to another for this type of image. There isn't a single method that works in all cases, but rather principles based on specific objectives.
 
 
@@ -145,7 +146,7 @@ I deliberately chose extreme settings to show that even with a 'degraded' starti
 
  [Some principles](/tutorials/#in-summary-some-principles)
 
- [Recommandations](/tutorials/#recommendations)
+ [Recommendations](/tutorials/#recommendations)
 
  [Specific tools used](/tutorials/#specific-tools-used)
 
@@ -201,31 +202,31 @@ Do not attempt to reduce noise, whether using in 'Capture Sharpening', 'Presharp
 
 [Demosaicing](/demosaicing/)
 
-##### Raw Black points
+##### Raw Black Points
 
 The 'Dehaze' system designed by Ingo Weirich (thanks to him) suggests here, due to the difference between the values ​​R=0, G=0, B=0 and the very low values ​​R=0.4%, G=0.4%, B=0.4%, that it's a haze problem... I think that's not the case. We're dealing with data corruption here... just like what happens in highlights.
 
 + First, try the "Dehaze" checkbox; you'll see the sliders move to the right, the histogram expands, especially to the left (the shadow areas), and the image is brighter and more colorful: Red:+1, Green 1:+7, Green 2:+7, Blue:+2.
 + Second, increase the settings (by unchecking the 'Dehaze' box) : Red:+3, Green 1:+14, Green 2:+8, Blue:+5. You will again notice a more vivid image, a better utilized histogram, and a reduction in artifacts.
 
-[Raw Black points](/raw_black_points/)
+[Raw Black Points](/raw_black_points/)
 
 <figure>
 <img src="raw-tools.jpg" title="raw-tools.jpg" width="300" />
 <figcaption>Demosaicing & Raw Black Points</figcaption>
 </figure>
 
-Below, you can see the influence of Raw Black Point on the image at the end of the process.
+Below, you can see the influence of Raw Black Points on the image at the end of the process.
 + Note the difference on the horizontal axis, close to zero.
 + Note that the overall histogram is better filled.
 <figure>
 <img src="rawblack-0.jpg" title="rawblack-0.jpg" width="300" />
-<figcaption>Histogram without Raw Black point</figcaption>
+<figcaption>Histogram without Raw Black points</figcaption>
 </figure>
 
 <figure>
 <img src="rawblack-1.jpg" title="rawblack-1.jpg" width="300" />
-<figcaption>Histogram with Raw Black point</figcaption>
+<figcaption>Histogram with Raw Black points</figcaption>
 </figure>
 
 + Be **very careful**, these settings are very sensitive and can contribute to making the images unusable.
@@ -511,7 +512,7 @@ This image seems innocuous at first glance, a typical sunset. The image is gener
 
  [Some principles](/tutorials/#in-summary-some-principles)
 
- [Recommandations](/tutorials/#recommendations)
+ [Recommendations](/tutorials/#recommendations)
 
  [Specific tools used](/tutorials/#specific-tools-used)
 
@@ -588,7 +589,7 @@ Sliders like ‘Stretch factor (D)’ work in reverse. They reduce contrast, dar
 
 ##### Six methods available - two recommended
 
-Six methods available (RGB Luminance, RGB Standard, Lightness & chromaticity (Lab), Luminance (HSL), Saturation (HSL), Hue (HSL)). Two are recommanded:
+Six methods available (RGB Luminance, RGB Standard, Lightness & chromaticity (Lab), Luminance (HSL), Saturation (HSL), Hue (HSL)). Two are recommended:
 
 + RGB Luminance : the three channels R, G, B are used equally. To control the system, an equivalent luminance is calculated, attempting to take into account WP values ​​above 1.
 + RGB Standard (default) : the three channels R, G, B are used equally.
@@ -773,7 +774,7 @@ Compared to the tutorial presented in November 2025, the changes are significant
 
  [Some principles](/tutorials/#in-summary-some-principles)
 
- [Recommandations](/tutorials/#recommendations)
+ [Recommendations](/tutorials/#recommendations)
 
  [Specific tools used](/tutorials/#specific-tools-used)
 
@@ -997,7 +998,7 @@ There are many methods on the market for creating (nostalgia) the colours and ap
 
  [Some principles](/tutorials/#in-summary-some-principles)
 
- [Recommandations](/tutorials/#recommendations)
+ [Recommendations](/tutorials/#recommendations)
 
  [Specific tools used](/tutorials/#specific-tools-used)
 
@@ -1156,7 +1157,7 @@ I’m going to show you how to process this image; some of the settings might be
 
  [Some principles](/tutorials/#in-summary-some-principles)
 
- [Recommandations](/tutorials/#recommendations)
+ [Recommendations](/tutorials/#recommendations)
 
  [Specific tools used](/tutorials/#specific-tools-used)
 
@@ -1307,7 +1308,7 @@ Raw file : (Copyright Andy Astbury - Creative Common Attribution-share Alike 4.0
 
  [Some principles](/tutorials/#in-summary-some-principles)
 
- [Recommandations](/tutorials/#recommendations)
+ [Recommendations](/tutorials/#recommendations)
 
  [Specific tools used](/tutorials/#specific-tools-used)
 
@@ -1474,7 +1475,7 @@ Raw file :  (Creative Common Attribution-share Alike 4.0)
 
  [Some principles](/tutorials/#in-summary-some-principles)
 
- [Recommandations](/tutorials/#recommendations)
+ [Recommendations](/tutorials/#recommendations)
 
  [Specific tools used](/tutorials/#specific-tools-used)
 
