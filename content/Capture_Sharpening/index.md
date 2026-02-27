@@ -81,15 +81,15 @@ automatically guess the radius needed to counteract the effect.
 
 <div>
 
-- <figure>
-  <img src="/images/Clematis_original.png" title="Clematis_original.png" />
-  <figcaption>Clematis_original.png</figcaption>
-  </figure>
 
-- <figure>
-  <img src="/images/Clematis_good_radius.png" title="Clematis_good_radius.png" />
+  ![](clematis_original.png "clematis_original.png")
+  <figcaption>Clematis_original.png</figcaption>
+
+
+
+  ![](clematis_good_radius.png "clematis_good_radius.png")
   <figcaption>Clematis_good_radius.png</figcaption>
-  </figure>
+
 
 </div>
 
@@ -100,15 +100,15 @@ that you are only trying to undo the in-camera blurring.
 
 <div>
 
-- <figure>
-  <img src="/images/Clematis_good_radius.png" title="Clematis_good_radius.png" />
-  <figcaption>Clematis_good_radius.png</figcaption>
-  </figure>
 
-- <figure>
-  <img src="/images/Clematis_bad_radius.png" title="Clematis_bad_radius.png" />
+  ![](clematis_good_radius.png "clematis_good_radius.png")
+  <figcaption>Clematis_good_radius.png</figcaption>
+
+
+
+  ![](clematis_bad_radius.png "clematis_bad_radius.png")
   <figcaption>Clematis_bad_radius.png</figcaption>
-  </figure>
+
 
 </div>
 
@@ -129,15 +129,15 @@ pixel filter turned on (located in the *Raw tab*):
 
 <div>
 
-- <figure>
-  <img src="/images/Renon_hotpixels.png" title="Renon_hotpixels.png" />
-  <figcaption>Renon_hotpixels.png</figcaption>
-  </figure>
 
-- <figure>
-  <img src="/images/Renon_nohotpixels.png" title="Renon_nohotpixels.png" />
+  ![](renon_hotpixels.png "renon_hotpixels.png")
+  <figcaption>Renon_hotpixels.png</figcaption>
+
+
+
+  ![](renon_nohotpixels.png "renon_nohotpixels.png")
   <figcaption>Renon_nohotpixels.png</figcaption>
-  </figure>
+
 
 </div>
 
@@ -200,8 +200,8 @@ It has become nearly impossible to know which mask is active. Hence the presence
 
 ## Capture Sharpening: Presharpening denoise and Postsharpening denoise
 
-<img src="/images/CS-pre-post.jpg" title="Capture Sharpening" width="300"
-alt="CS-pre-post.jpg" />
+![](cs-pre-post.jpg "cs-pre-post.jpg")
+
 
 ### Presharpening denoise:
 
