@@ -3,6 +3,7 @@ baseURL = ''
 languageCode = 'en'
 title = 'RawPedia'
 theme = ['hugo-bootstrap-bare']
+enableGitInfo = true
 
 defaultContentLanguage = 'en'
 

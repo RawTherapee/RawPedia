@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+
+<div class='row justify-content-center'>
+  <div class='col-lg-8'>
+    <h1 class='mt-4'>RawPedia</h1>
+    <!-- <h2>{{ .Title }}</h2> -->
+
+    {{ .Content }}
+
+    <h2>Changes</h2>
+
+    {{ range .Site.Pages.ByLastmod.Reverse }}
+      <div class='mb-3'>
+        <div class='h5 mb-0'>{{ .Lastmod | time.Format ":date_medium" }}</div>
+        <div class='h6 my-0'>Page: <a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
+        {{ with .GitInfo }}
+          {{ .AuthorName }} (<a href="https://github.com/RawTherapee/RawPedia/commit/{{ .Hash }}" title="View the commit for this change.">{{ .AbbreviatedHash }}</a>)<br/>
+          {{ .Subject }}<br/>
+          {{/* {{ .Body }} */}}
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+</div>
+
+
+{{ end }}
