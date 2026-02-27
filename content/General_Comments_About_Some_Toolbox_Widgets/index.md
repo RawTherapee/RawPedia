@@ -15,10 +15,9 @@ know about. Take a few minutes to read it.
 
 The Editor tab has three main panels whose visibility can be toggled
 using the Show/Hide Panel buttons
-![<File:Panel-to-bottom.png>](/images/Panel-to-bottom.png "File:Panel-to-bottom.png")
-![<File:Panel-to-left.png>](/images/Panel-to-left.png "File:Panel-to-left.png")
-![<File:Panel-to-top.png>](/images/Panel-to-top.png "File:Panel-to-top.png")
-![<File:Panel-to-right.png>](/images/Panel-to-right.png "File:Panel-to-right.png"),
+![panel-to-bottom.png](panel-to-bottom.png "panel-to-bottom.png")
+![panel-to-top.png](panel-to-top.png "panel-to-top.png")
+![panel-to-right.png](panel-to-right.png "panel-to-right.png"),
 making more room for the image preview.
 
 You can use the mouse scrollwheel to safely scroll the panels up/down
@@ -42,19 +41,19 @@ of the selected photos but off in others. Some tools instead of an
 on/off button have an "expander" which lets you expand or collapse the
 contents of that tool.
 
-![<File:Power-off-small.png>](/images/Power-off-small.png "File:Power-off-small.png")
+![power-off-small.png](power-off-small.png "power-off-small.png")
 Off.
 
-![<File:Power-on-small.png>](/images/Power-on-small.png "File:Power-on-small.png")
+![power-on-small.png](power-on-small.png "power-on-small.png")
 On.
 
-![<File:Power-inconsistent-small.png>](/images/Power-inconsistent-small.png "File:Power-inconsistent-small.png")
+![power-inconsistent-small.png](power-inconsistent-small.png "power-inconsistent-small.png")
 Inconsistent.
 
-![<File:Expander-closed-small.png>](/images/Expander-closed-small.png "File:Expander-closed-small.png")
+![expander-closed-small.png](expander-closed-small.png "expander-closed-small.png")
 Collapsed.
 
-![<File:Expander-open-small.png>](/images/Expander-open-small.png "File:Expander-open-small.png")
+![expander-open-small.png](expander-open-small.png "expander-open-small.png")
 Expanded.
 
 ## Sliders
@@ -72,7 +71,7 @@ while holding the knob. This is a standard feature of all programs which
 use [GTK+ 3](https://en.wikipedia.org/wiki/GTK+).
 
 Each slider has a "reset" button
-![<File:Undo-small.png>](/images/Undo-small.png "File:Undo-small.png") which
+![undo-small.png](undo-small.png "undo-small.png") which
 behaves as follows:
 
 - resets the slider to the default value, which is hard-coded to 0 for
@@ -89,17 +88,25 @@ RawTherapee has three kinds of curve widgets:
 - Equalizer curves
 - Threshold curves
 
-<div align="center">
 
-<File:Rt55> curve type tone.png\|The tone curve. <File:Rt55> curve type
-equalizer.png\|The equalizer curve <File:Rt55> curve type
-threshold.png\|The threshold curve.
 
-</div>
+![](rt55_curve_type_tone.png)
 
-\[\[<File:Rt55> curves.png\|frame\|1- Curve type.
+The tone curve.
 
-2- Curve mode.\]\]
+![](rt55_curve_type_equalizer.png)
+
+The equalizer curve.
+
+![](rt55_curve_type_threshold.png)
+
+The threshold curve.
+
+
+
+![](rt55_curves.png)
+
+2- Curve mode.
 
 The shape of a tone curve and of an equalizer curve is defined based on
 control points which you create and position with the mouse. When a
@@ -112,15 +119,15 @@ position. The same control points can lead to different curve shapes by
 changing the underlying math, and you can control this math by choosing
 a tone curve type in the drop-down list:
 
-- ![<File:curve-linear-small.png>](curve-linear-small.png "File:curve-linear-small.png")
+- ![curve-linear-small.png](curve-linear-small.png "curve-linear-small.png")
   Linear,
-- ![<File:curve-spline-small.png>](curve-spline-small.png "File:curve-spline-small.png")
+- ![curve-spline-small.png](curve-spline-small.png "curve-spline-small.png")
   Standard,
-- ![<File:curve-catmullrom-small.png>](curve-catmullrom-small.png "File:curve-catmullrom-small.png")
+- ![curve-catmullrom-small.png](curve-catmullrom-small.png "curve-catmullrom-small.png")
   Flexible,
-- ![<File:curve-parametric-small.png>](curve-parametric-small.png "File:curve-parametric-small.png")
+- ![curve-parametric-small.png](curve-parametric-small.png "curve-parametric-small.png")
   Parametric,
-- ![<File:curve-nurbs-small.png>](curve-nurbs-small.png "File:curve-nurbs-small.png")
+- ![curve-nurbs-small.png](curve-nurbs-small.png "curve-nurbs-small.png")
   Control cage.
 
 You can also click the curve type button to toggle the visibility of the
@@ -130,23 +137,22 @@ enabled, then that curve has an effect on the image regardless whether
 it is visible or not.
 
 Each curve can be reset
-![<File:Undo-small.png>](/images/Undo-small.png "File:Undo-small.png") to the
+![undo-small.png](undo-small.png "undo-small.png") to the
 default value. Some curves come in groups, such as the [Lab Adjustments](lab_adjustments) curves. There is one reset
 button for the whole group, and it applies to the currently selected
 curve. Click on the curve type drop-down button to select that curve.
 
 Some curves have a color picker
-![<File:Crosshair-node-curve.png>](/images/Crosshair-node-curve.png "File:Crosshair-node-curve.png")
+![crosshair-node-curve.png](crosshair-node-curve.png "crosshair-node-curve.png")
 and a control point in/out value editor
-![<File:Edit-point.png>](/images/Edit-point.png "File:Edit-point.png").
+![edit-point.png](edit-point.png "edit-point.png").
 
 ### Color Picker
 
-<figure>
-<img src="/images/Rt55_lab_hh_color_picker.png"
-title="Rt55_lab_hh_color_picker.png" />
+
+![](rt55_lab_hh_color_picker.png "rt55_lab_hh_color_picker.png")
 <figcaption>Rt55_lab_hh_color_picker.png</figcaption>
-</figure>
+
 
 Most curves in RawTherapee have a color picker button
 ![<File:Crosshair-node-curve.png>](/images/Crosshair-node-curve.png "File:Crosshair-node-curve.png").
@@ -217,11 +223,15 @@ deactivate it.
 
 ### Tone Curves
 
-![](/images/Rt55_curve_linear.png "Rt55_curve_linear.png")
-![](/images/Rt55_curve_standard.png "Rt55_curve_standard.png")
-![](/images/Rt55_curve_flexible.png "Rt55_curve_flexible.png")
-![](/images/Rt55_curve_parametric.png "Rt55_curve_parametric.png")
-![](/images/Rt55_curve_control_cage.png "Rt55_curve_control_cage.png")
+![](/images/rt55_curve_linear.png "rt55_curve_linear.png")
+
+![](/images/rt55_curve_standard.png "rt55_curve_standard.png")
+
+![](/images/rt55_curve_flexible.png "rt55_curve_flexible.png")
+
+![](/images/rt55_curve_parametric.png "rt55_curve_parametric.png")
+
+![](/images/rt55_curve_control_cage.png "rt55_curve_control_cage.png")
 
 Tone curves serve to map an input value (on the horizontal or X axis) to
 an output value (on the vertical or Y axis). Though they may seem
@@ -292,7 +302,7 @@ with little impact on the other parts.
 Allows you to use sliders rather than dragging the curve directly. For
 the Parametric curve type, clicking the right mouse button over the zone
 selector
-(![Image:Parametric_curve_bar.png](/images/Parametric_curve_bar.png "Image:Parametric_curve_bar.png"))
+![Image:parametric_curve_bar.png](parametric_curve_bar.png "parametric_curve_bar.png")
 will reset the handles' position to their default values. (The global
 reset button will reset them too.)
 
@@ -329,11 +339,11 @@ RawTherapee use the *flat curve*:
   - [V](hsv_equalizer#v)
 
 It's very simple to use once you understand it, so let's use the [HSV Equalizer](hsv_equalizer) in the
-![<File:Color-circles.png>](/images/Color-circles.png "File:Color-circles.png")
+![color-circles.png](color-circles.png "color-circles.png")
 Color tab as an example. Click on the drop-down icon
-[image:Drop-down.png](/images/drop-down.png) next to the H(ue)
+[image:Drop-down.png](drop-down.png) next to the H(ue)
 button and choose "*Minima/Maxima control points*"
-![<File:Curve-controlpoints-small.png>](/images/Curve-controlpoints-small.png "File:Curve-controlpoints-small.png").
+![curve-controlpoints-small.png>](curve-controlpoints-small.png "curve-controlpoints-small.png").
 You'll see six dots on the horizontal line in the middle and six
 vertical lines that cross these dots. Notice that those lines are
 colored; from left to right: red, yellow, green, aqua, blue and magenta.
@@ -355,7 +365,7 @@ only in one direction (only horizontally or only vertically) you can use
 the 'snap to' function by holding down the Shift key while moving the
 point.
 
-[frame](/images/flat_curve_zoom.png) It's easy to see if a
+[frame](flat_curve_zoom.png) It's easy to see if a
 point is on its neutral value (i.e. on the middle line) because the
 color of the point will be green. As soon as you move a point off its
 neutral value, it changes color to black.
@@ -381,7 +391,7 @@ red and yellow) and move the graph around, change its slope and see what
 happens to your photo.
 
 Reset the *Hue* curve to "*Linear*" (no changes) by clicking on the
-reset icon ![image:Gtk-undo-ltr.png](/images/gtk-undo-ltr.png)
+reset icon ![image:gtk-undo-ltr.png](gtk-undo-ltr.png)
 next to the *Value* button. To compare the effects of the *Hue* curve
 with linear: switch between "*Linear*" and "*Minima/Maxima control
 points*" in the drop-down menu next to this button, or use the history
@@ -402,8 +412,8 @@ tool the tones (or hues or saturations values) that you want processed
 
 As an example, consider the Threshold curve editor on the Detail -\>
 [Sharpening](sharpening) tool.
-![](/images/Sharpening_Threshold.png "_Sharpening_Threshold.png") The setting
-shown is telling the Sharpening tool to phase in sharpening quickly in
+![](sharpening_threshold.png "sharpening_threshold.png") 
+The setting shown is telling the Sharpening tool to phase in sharpening quickly in
 the black areas (the steep line up on the left), maintain full
 sharpening through mid-tones (the plateau area) and then phase out
 sharpening slowly in the highlights (the long slope down). Dragging one
@@ -452,6 +462,6 @@ inaccurate depending on the tool settings (for example [Tone Mapping](tone_mappi
 be accurate at zoom levels less than 100% or they may be inaccurate,
 depending on their settings). You will know which tools these are
 because they are marked with a "1:1" icon
-![<File:One-to-one-small.png>](/images/One-to-one-small.png "File:One-to-one-small.png")
+![one-to-one-small.png>](one-to-one-small.png "one-to-one-small.png")
 next to their names. RawPedia explains how accurate the preview is for
 all affected tools on each tool's page.
