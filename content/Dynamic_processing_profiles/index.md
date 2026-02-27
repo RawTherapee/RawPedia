@@ -7,11 +7,10 @@ tags:
   - 'Processing Profiles'
 ---
 
-<figure>
-<img src="/images/dynamic-profile-rules-screenshot.png"
-title="dynamic-profile-rules-screenshot.png" />
+
+![](dynamic-profile-rules-screenshot.png "dynamic-profile-rules-screenshot.png")
 <figcaption>dynamic-profile-rules-screenshot.png</figcaption>
-</figure>
+
 
 Sometimes a single, "static" default processing profile is not enough to
 cover all use cases. For example, the amount of noise reduction to apply

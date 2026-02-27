@@ -51,10 +51,10 @@ To get the best results, the following settings are recommended:
 3.  Luminance only: the tool works in the L\*a\*b\* color space and with
     this option, only the L\* component is enhanced.
 
-<figure>
-<img src="/images/edges.jpg" title="edges.jpg" />
+
+![](edges.jpg "edges.jpg")
 <figcaption>edges.jpg</figcaption>
-</figure>
+
 
 Additional information can be found here:
 [www.rawness.es/sharpening](https://web.archive.org/web/20110625093654/http://www.rawness.es/sharpening/?lang=en)
@@ -72,9 +72,8 @@ intention is to allow recovering texture lost due to noise reduction. It
 does not introduce
 halos.[2](https://web.archive.org/web/20100324142513/http://www.rawness.es/contraste-local-y-microcontraste/?lang=en)
 
-<figure>
-<img src="/images/seagull-microcontrast.jpg"
-title="seagull-microcontrast.jpg" />
+
+![](seagull-microcontrast.jpg "seagull-microcontrast.jpg")
 <figcaption>seagull-microcontrast.jpg</figcaption>
 </figure>
 

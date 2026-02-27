@@ -67,10 +67,10 @@ Compression tool on the source images. If you need to compress the
 dynamic range across a series of images in a consistent way, use a curve
 instead. You can, however, use this tool on the stitched panorama.
 
-<figure>
-<img src="/images/DRC-Example.jpg" title="DRC-Example.jpg" />
+
+![](drc-example.jpg "drc-example.jpg")
 <figcaption>DRC-Example.jpg</figcaption>
-</figure>
+
 
 ## Interface
 
