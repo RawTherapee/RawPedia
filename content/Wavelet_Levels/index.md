@@ -1648,10 +1648,10 @@ parameters:
 
 <div class="parrpad">
 
-<figure>
+
 ![](wavelet_local_contrast_thresholds.jpg "wavelet_local_contrast_thresholds.jpg")
-<figcaption>wavelet_local_contrast_thresholds.jpg</figcaption>
-</figure>
+<figcaption>wavelet_local_contrast_threshold.jpg</figcaption>
+
 
 </div>
 
@@ -1692,10 +1692,9 @@ In practice:
 
 <div class="parrpad">
 
-<figure>
+
 ![](wavelet_local_contrast_gauss.jpg "wavelet_local_contrast_gauss.jpg")
-<figcaption>wavelet_local_contrast_gauss.jpg</figcaption>
-</figure>
+<figcaption>wavelet_local_contrast_gaus.jpg</figcaption>
 
 </div>
 
@@ -1735,20 +1734,20 @@ horizontal line).
 
 <div>
 
-- <figure>
+
   ![](wavelet_local_contrast_curves_o.jpg "wavelet_local_contrast_curves_o.jpg")
   <figcaption>wavelet_local_contrast_curves_o.jpg</figcaption>
-  </figure>
 
-- <figure>
+
+
   ![](wavelet_local_contrast_curves_t.jpg "wavelet_local_contrast_curves_t.jpg")
   <figcaption>wavelet_local_contrast_curves_t.jpg</figcaption>
-  </figure>
 
-- <figure>
+
+
   ![](wavelet_local_contrast_curves_g.jpg "wavelet_local_contrast_curves_g.jpg")
   <figcaption>wavelet_local_contrast_curves_g.jpg</figcaption>
-  </figure>
+
 
 </div>
 
@@ -1826,12 +1825,9 @@ aspects of the edge detection algorithm:
 
 <div>
 
--
-
-<figure>
 ![](wavelet_edge_sharpness.jpg "wavelet_edge_sharpness.jpg")
 <figcaption>wavelet_edge_sharpness.jpg</figcaption>
-</figure>
+
 
 </li>
 </ul>
