@@ -71,7 +71,7 @@ precision when analyzing the data.
 a very simplistic explanation: mathematicians would surely have a lot to
 say here...\]</span>
 
-![](Wavelet_daubechies20.jpg "Wavelet_daubechies20.jpg")RawTherapee uses
+![](wavelet_daubechies20.jpg "Wavelet_daubechies20.jpg")RawTherapee uses
 wavelets in various tools, and in this one in particular it uses the
 [Daubechies](https://en.wikipedia.org/wiki/Daubechies_wavelet) wavelet,
 to decompose the elements of the image into the components of the
@@ -538,7 +538,9 @@ fundamental points:
 
 ### Contrast Levels
 
-![](/images/wavelet_contrast_buttons.jpg "wavelet_contrast_buttons.jpg") The
+![](wavelet_contrast_buttons.jpg "wavelet_contrast_buttons.jpg") 
+
+The
 number of levels shown is defined by the ***Wavelet levels*** and you
 can reduce or increase this number in the wavelet configuration
 settings.
