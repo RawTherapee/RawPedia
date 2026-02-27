@@ -103,3 +103,11 @@ defaultContentLanguage = 'en'
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    source = 'assets/images'
+    target = 'assets'
