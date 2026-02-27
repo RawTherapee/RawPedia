@@ -180,13 +180,13 @@ highlight indication icon
 on the top right of the image window. Overexposed areas will show up in
 black.
 
-<figure>
-<img src="/images/Hra_0.jpg" title="Hra_0.jpg" />
-<figcaption>Hra_0.jpg</figcaption>
-</figure>
 
-<figure>
-<img src="/images/Hra_0_chi.jpg" title="Hra_0_chi.jpg" />
+![](hra_0.jpg "hra_0.jpg")
+<figcaption>Hra_0.jpg</figcaption>
+
+
+
+![](hra_0_chi.jpg "Hra_0_chi.jpg")
 <figcaption>Hra_0_chi.jpg</figcaption>
 </figure>
 
@@ -199,8 +199,8 @@ when the HC slider is significantly over 100. For the other methods you
 will usually want to keep the HC slider around or below 100 - watch the
 histogram and the preview!
 
-<figure>
-<img src="/images/Hra_125_ba.jpg" title="Hra_125_ba.jpg" />
+
+![](hra_125_ba.jpg "hra_125_ba.jpg")
 <figcaption>Hra_125_ba.jpg</figcaption>
 </figure>
 
@@ -225,11 +225,9 @@ areas would start turning gray. You don't want them to turn gray. That
 would make the photo look dull. In this example the indicator's black
 areas disappeared when I set HC to 125.
 
-<figure>
-<img src="/images/Hra_toomuch_histogram.png"
-title="Hra_toomuch_histogram.png" />
+![](hra_toomuch_histogram.png "hra_toomuch_histogram.png")
 <figcaption>Hra_toomuch_histogram.png</figcaption>
-</figure>
+
 
 As a rule, the histogram of a correctly developed image should touch
 both ends - the black and the white end. Not doing so means the image
@@ -350,20 +348,18 @@ expanded and highlights compressed to better match human perception.
 
 #### Linear
 
-<figure>
-<img src="/images/Rt55_curve_linear.png" title="Rt55_curve_linear.png" />
+![](rt55_curve_linear.png "rt55_curve_linear.png")
 <figcaption>Rt55_curve_linear.png</figcaption>
-</figure>
 
 This represents the unaltered (or linear) image, so without any tone
 curve applied. It disables the curve.
 
 #### Standard
 
-<figure>
-<img src="/images/Rt55_curve_standard.png" title="Rt55_curve_standard.png" />
+
+![](rt55_curve_standard.png "rt55_curve_standard.png"
 <figcaption>Rt55_curve_standard.png</figcaption>
-</figure>
+
 
 This is a classic cubic spline curve, seen in many other programs as
 well. The left part of the graph represents the darker tones, the right
@@ -402,10 +398,10 @@ direction, then the effect will be identical to manipulating the
 
 #### Flexible
 
-<figure>
-<img src="/images/Rt55_curve_flexible.png" title="Rt55_curve_flexible.png" />
+
+![](rt55_curve_flexible.png "rt55_curve_flexible.png")
 <figcaption>Rt55_curve_flexible.png</figcaption>
-</figure>
+
 
 A characteristic of the "Standard" cubic spline curve is that editing
 one node could have a huge impact on what happens to the curve in
@@ -415,11 +411,10 @@ with little impact on the other parts.
 
 #### Parametric
 
-<figure>
-<img src="/images/Rt55_curve_parametric.png"
-title="Rt55_curve_parametric.png" />
+
+![](rt55_curve_parametric.png "rt55_curve_parametric.png")
 <figcaption>Rt55_curve_parametric.png</figcaption>
-</figure>
+
 
 This curve presents four sliders and three control points. The sliders
 are used to control highlights, lights, darks and shadows respectively
@@ -455,9 +450,8 @@ control points to linear (zero).
 
 #### Control Cage
 
-<figure>
-<img src="/images/Rt55_curve_control_cage.png"
-title="Rt55_curve_control_cage.png" />
+
+![](rt55_curve_control_cage.png "rt55_curve_control_cage.png")
 <figcaption>Rt55_curve_control_cage.png</figcaption>
 </figure>
 

@@ -9,29 +9,29 @@ tags:
   - 'Raw Tab'
 ---
 
-<img src="/images/chromatic_aberration_auto1.jpg"
-title="chromatic_aberration_auto1.jpg" width="900"
-alt="chromatic_aberration_auto1.jpg" />
-<img src="/images/chromatic_aberration_auto2.jpg"
-title="chromatic_aberration_auto2.jpg" width="900"
-alt="chromatic_aberration_auto2.jpg" /> This "Chromatic Aberration" tool
+![](images/chromatic_aberration_auto1.jpg "chromatic_aberration_auto1.jpg")
+
+![](chromatic_aberration_auto2.jpg "chromatic_aberration_auto2.jpg")
+
+This "Chromatic Aberration" tool
 works on the image **before** demosaicing, that's why it's located in
-the *Raw* tab. The [Chromatic Aberration Correction](lens/geometry#chromatic_aberration_correction)
+the *Raw* tab. The [Chromatic Aberration Correction](/lens--geometry/#chromatic-aberration-correction)
 tool in the *Transform* tab works on the image **after** demosaicing.
 
 Chromatic aberration correction on the raw level is currently only
 supported for raw files from cameras with a [Bayer filter](https://en.wikipedia.org/wiki/Bayer_filter). If you need to
 remove chromatic aberration from raw photos from X-Trans sensor cameras
-(Fuji), then use the [Chromatic Aberration Correction](lens/geometry#chromatic_aberration_correction)
+(Fuji), then use the [Chromatic Aberration Correction](/lens--geometry/#chromatic-aberration-correction)
+
 tool in the *Transform* tab.
 
 Chromatic aberration can be corrected by using the "Red" and "Blue"
 sliders. Normally you won't see any chromatic aberration in the
 fit-to-screen preview, therefore it is highly recommended to open a
 detail window
-![<File:Window-add.png>](Window-add.png "File:Window-add.png") or to
+![<file:window-add.png>](window-add.png "file:window-add.png") or to
 zoom the main preview in to 100%
-![<File:Magnifier-1to1.png>](Magnifier-1to1.png "File:Magnifier-1to1.png")
+![<file:magnifier-1to1.png>](magnifier-1to1.png "file:magnifier-1to1.png")
 or more when you attempt this kind of correction.
 
 This tools corrects bluish-green and magenta fringes due to lens lateral

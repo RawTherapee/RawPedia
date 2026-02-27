@@ -36,8 +36,9 @@ tablet or phone. In this case too playing with the "0 (Finest)" detail
 level will make no difference to the end result. Most of the time only
 sliders "3" and "4" will have a practically useful effect.
 
-<img src="/images/Rt_cbdl_100.jpg" title="Rt_cbdl_100.jpg" width="900"
-alt="Rt_cbdl_100.jpg" /> For example, in order to remove skin blemishes
+![](rt_cbdl_100.jpg "rt_cbdl_100.jpg")
+ 
+For example, in order to remove skin blemishes
 while retaining skin texture on this 10 megapixel photo, where your
 intention is to view it at its full size and from up close (e.g. art
 gallery), zoom to 100% and start by setting the sliders as follows, then
@@ -50,8 +51,9 @@ fine-tune to taste:
 `4 (Coarsest): 1.2`
 `Skin Tones Targetting/Protection: -75`
 
-<img src="/images/Rt_cbdl_25_1.jpg" title="Rt_cbdl_25_1.jpg" width="900"
-alt="Rt_cbdl_25_1.jpg" /> If you want to downscale the photo to use it
+![](rt_cbdl_25_1.jpg "rt_cbdl_25_1.jpg")
+
+If you want to downscale the photo to use it
 on the web, you should zoom out to about 25% which is more or less the
 size at which the image will be viewed. Using the settings above we can
 still see that the skin is smoothed, but if you reset the first three
@@ -65,8 +67,9 @@ simply how sharpness (resolution and
 if you only intend to share the downscaled version of your photo, you
 can save yourself time by simply ignoring the first three sliders.
 
-<img src="/images/Rt_cbdl_25_2.jpg" title="Rt_cbdl_25_2.jpg" width="900"
-alt="Rt_cbdl_25_2.jpg" /> Furthermore, you may find when you zoom out
+![](rt_cbdl_25_2.jpg "rt_cbdl_25_2.jpg")
+
+Furthermore, you may find when you zoom out
 that the sliders had effects which were not immediately apparent at 100%
 zoom. For example you may find that using the "4 (Coarsest)" slider can
 pleasantly mitigate large, harsh shadows, so set it to 0.5 and fine-tune

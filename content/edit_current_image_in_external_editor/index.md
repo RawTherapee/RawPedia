@@ -15,7 +15,7 @@ image to an image editor such as GIMP or Photoshop for further
 processing, or to preview the processed image in an image viewer.
 
 The button to send the image to an external application
-![](/images/rt510_edit_in_external_editor_gimp.png)
+![](rt510_edit_in_external_editor_gimp.png)
 is located at the bottom-left of the preview panel. When the button is
 clicked, the image will be processed and sent to the currently selected
 external application. The button's icon and tooltip reflect the current

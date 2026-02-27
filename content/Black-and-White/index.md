@@ -9,8 +9,9 @@ tags:
 toc: true
 ---
 
-<img src="/images/Rt_ba_bw_1.jpg" title="Rt_ba_bw_1.jpg" width="900"
-alt="Rt_ba_bw_1.jpg" /> The *Black-and-White* tool gives you great
+![](rt_ba_bw_1.jpg "rt_ba_bw_1.jpg")
+
+The *Black-and-White* tool gives you great
 control over the process of converting a color image into a
 black-and-white one.
 
