@@ -21,15 +21,21 @@
 
     {{ .Content }}
 
+    <div class='border-top border-bottom py-1 mt-5 text-secondary'>
+      <strong>Last modified: {{ .Lastmod | time.Format ":date_long" }}</strong> {{ with .GitInfo }}(commit <a href="https://github.com/RawTherapee/RawPedia/commit/{{ .Hash }}" title="View the commit {{ .AbbreviatedHash }}">{{ .AbbreviatedHash }}</a>) {{end}}
+    </div>
+
     {{ if .IsTranslated }}
-    <h4>{{ i18n "translations" }}</h4>
-    <ul>
-              {{ range .Translations }}
-              <li><a href="{{ .Permalink }}">
-      {{ .Lang }}: {{ .Title }}{{ if .IsPage }}{{ end }}
-              </a></li>
-              {{ end }}
-    </ul>
+      <div class='mt-4 mb-5'>
+        <h4>{{ i18n "translations" }}</h4>
+        <ul>
+          {{ range .Translations }}
+            <li>
+              <a href="{{ .Permalink }}">{{ .Lang }}: {{ .Title }}{{ if .IsPage }}{{ end }}</a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
     {{ end }}
   </article>
 </div>
