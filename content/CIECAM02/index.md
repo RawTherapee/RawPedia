@@ -12,6 +12,8 @@ toc: true
 
 ## Color Appearance & Lighting (CIECAM02/16) et Color Appearance (Cam16 & JzCzHz) - Tutorial
 
+[Game changer](/tutorials/)
+
 ### Introduction
 
 The following information is common to:
@@ -76,7 +78,7 @@ Some examples of color phenomena that can be addressed with a CAM:
 
 ### Variables - data and vocabulary used by CIECAM
 
-[Variables - datas)]({{% relref "ciecam02/#data" %}})
+[Variables - datas]({{% relref "ciecam02/#data" %}})
 
 [Definitions]({{% relref "ciecam02/#some-definitions" %}})
 
@@ -144,9 +146,9 @@ Raw file (Pixls.us - Creative Common Attribution-share Alike 4.0):
 [1](https://drive.google.com/file/d/1ctjOWX2lVmgcAzJtBwt69FGpxZOq-LyP/view?usp=sharing)
 
 <figure>
-<img src="/images/ciecam_light_prepa.jpg" title="ciecam_light_prepa.jpg"
+<img src="ciecam_light_prepa1.jpg" title="ciecam_light_prepa1.jpg"
 width="600" />
-<figcaption>ciecam_light_prepa.jpg</figcaption>
+<figcaption>ciecam_light_prepa1.jpg</figcaption>
 </figure>
 
 ##### Lighten the image
@@ -154,8 +156,8 @@ width="600" />
 Go to the Advanced tab and select Color Appearance & Lighting
 (CIECAM02/16). Under Scene Conditions set the Surround-Scene Lighting
 combobox to Dark. That's it!
-<img src="/images/ciecam_ligh.jpg" title="ciecam_ligh.jpg" width="600"
-alt="ciecam_ligh.jpg" />
+<img src="ciecam_ligh1.jpg" title="ciecam_ligh1.jpg" width="600"
+alt="ciecam_ligh1.jpg" />
 
 You can refine the adjustment using the Image Adjustments settings.
 
@@ -187,8 +189,8 @@ in the Color tab using White Balance \> Auto \> "Temperature
 correlation".
 
 <figure>
-<img src="/images/catATwb.jpg" title="catATwb.jpg" width="600" />
-<figcaption>catATwb.jpg</figcaption>
+<img src="catatwb1.jpg" title="catatwb1.jpg" width="600" />
+<figcaption>catatwb1.jpg</figcaption>
 </figure>
 
 Examine the result:
@@ -214,8 +216,8 @@ To remedy this, we will use CIECAM02.
   That's it!
 
 <figure>
-<img src="/images/catATauto.jpg" title="catATauto.jpg" width="600" />
-<figcaption>catATauto.jpg</figcaption>
+<img src="catatauto1.jpg" title="catatauto1.jpg" width="600" />
+<figcaption>catatauto1.jpg</figcaption>
 </figure>
 
 Look at the image, the sky is blue and the skin tones of the passers-by
@@ -251,8 +253,8 @@ Viewing environment:
 - Surround = Dim: the TV is set against a dark wall.
 
 <figure>
-<img src="/images/voyagejpg.jpg" title="voyagejpg.jpg" width="600" />
-<figcaption>voyagejpg.jpg</figcaption>
+<img src="voyagejpg1.jpg" title="voyagejpg1.jpg" width="600" />
+<figcaption>voyagejpg1.jpg</figcaption>
 </figure>
 
 Important note: The same image viewed on your PC will not look good
@@ -263,8 +265,9 @@ absolute luminance).
 
 Of course, we are so keen to impress our guests that we have cheated a
 little by adding some extra contrast and chroma.
-<img src="/images/voyage_plus.jpg" title="voyage_plus.jpg" width="600"
-alt="voyage_plus.jpg" />
+
+<img src="voyage_plus1.jpg" title="voyage_plus1.jpg" width="600"
+alt="voyage_plus1.jpg" />
 
 ## Local Adjustments - Color Appearance (Cam16 & JzCzHz Experimental)
 
@@ -758,20 +761,21 @@ The darker the background will be, the more we'll have to boost
 colors...
 
 (Creative Common Attribution-share Alike 4.0)
-<img src="/images/Simult-contr1.jpg" title="Simult-contr1.jpg" width="600"
-alt="Simult-contr1.jpg" />
-<img src="/images/Simult-contr3.jpg" title="Simult-contr3.jpg" width="600"
-alt="Simult-contr3.jpg" />
+<img src="simult-contr1-1.jpg" title="simult-contr1-1.jpg" width="600"
+alt="simult-contr1-1.jpg" />
+
+<img src="simult-contr3-1.jpg" title="simult-contr3-1.jpg" width="600"
+alt="simult-contr3-1.jpg" />
 
 #### the Hunt's effect
 
 Increased seen coloration (colorfulness) with luminance. An object
 appears more vivid and contrasty in full light than in shade. (Creative
 Common Attribution-share Alike 4.0)
-<img src="/images/Huntseffect1.jpg" title="Huntseffect1.jpg" width="600"
-alt="Huntseffect1.jpg" />
-<img src="/images/Huntseffect-2.jpg" title="Huntseffect-2.jpg" width="600"
-alt="Huntseffect-2.jpg" />
+<img src="huntseffect1-1.jpg" title="huntseffect1-1.jpg" width="600"
+alt="huntseffect1-1.jpg" />
+<img src="huntseffect-2-1.jpg" title="huntseffect-2-1.jpg" width="600"
+alt="huntseffect-2.jpg" />
 
 #### Stevens's effect
 
@@ -779,8 +783,9 @@ Augmentation of the perceived contrast with the luminance. When the
 luminance increases, the dark colors looks like even darker and the
 luminous colors appears even more luminous. (Creative Common
 Attribution-share Alike 4.0)
-<img src="/images/Simult-contr2.jpg" title="Simult-contr2.jpg" width="600"
-alt="Simult-contr2.jpg" />
+
+<img src="simult-contr2-1.jpg" title="simult-contr2-1.jpg" width="600"
+alt="simult-contr2-1.jpg" />
 
 #### Helmholtz-Kohlrausch's effect
 
@@ -788,8 +793,9 @@ Dependence of the brightness in relation to the luminance and
 chromaticity. Colored objects appear lighter than the achromatic objects
 with the same luminance. The most saturated colors appear brighter.
 (Creative Common Attribution-share Alike 4.0)
-<img src="/images/Helmholtz-effect.jpg" title="Helmholtz-effect.jpg" width="600"
-alt="Helmholtz-effect.jpg" />
+
+<img src="helmholtz-effect1.jpg" title="helmholtz-effect1.jpg" width="600"
+alt="helmholtz-effect1.jpg" />
 
 #### Chromatic adaptation
 
@@ -1075,12 +1081,13 @@ Simplified synthesis of what RT allows with the current patch :
 Which data are taken into account and which simplifications I
 (arbitrarily?) made? How to adjust them? :
 
-- **Yb** (also in JzCzHz): Yb is the relative luminance of the
+### Yb
+ (also in JzCzHz): Yb is the relative luminance of the
   background ! With that, we're much advanced ! Specifically it is
   expressed in % of gray. A 18% gray corresponds to a background
   luminance expressed in CIE L of 50%.
 
-:\* for process \#3, if your monitor is calibrated, you can easily have
+* for process #3, if your monitor is calibrated, you can easily have
 a value of Yb close to 18 or 20. If your TV or projector, that seems
 difficult to calibrate, seems dark or light, you can adjust this value
 empirically. It depends on the visualization support and can be
@@ -1088,12 +1095,12 @@ considered as constant for a set of photos and in a condition of
 observation. If you want to change this value, go to “Preferences /
 Color Management / Yb luminance output device (%)”
 
-:\*for process \#1, it's much more complex because:
+* for process #1, it's much more complex because:
 
-:\*\*an image has rarely a constant exposure and small luminance
+* an image has rarely a constant exposure and small luminance
 variations
 
-:\*\*I placed the CIECAM module at the end of the Lab process, just
+* I placed the CIECAM module at the end of the Lab process, just
 before the RGB conversion and the sends to the output device, so we can
 assume that the user has used various tools of RT to make the image have
 an "average" histogram
@@ -1113,30 +1120,32 @@ could see three areas :
   result Yb=5%;
 - overexposed, where Yb would be as high as 70%..
 
-- **La** (also in JzCzHz): La is the adaptation field's absolute
+### La
+(also in JzCzHz): La is the adaptation field's absolute
   luminance ! Again, we're much advanced now !
 
-:\*In process \#1, it corresponds to the luminance when shooting. E.g.
+* In process #1, it corresponds to the luminance when shooting. E.g.
 if you make a photo in the shade, “La” will be close to 2000cd/m2; if
 you make interior shots, “La” will vary depending on the lighting from
 20 to 300cd/m2... In reproduction, these values may be even lower
 
-:\***”Scene luminosity” and the “Auto” checkbox** (process \#1):
+* ”Scene luminosity” and the “Auto” checkbox** (process #1):
 
-:\*\* If Checkbox enabled, La is calculated with Exif data (shutter
+* If Checkbox enabled, La is calculated with Exif data (shutter
 speed, ISO speed, F number, Camera Exposure comprensation) and also Raw
 White Point and Exposure compensation slider
-
-:\*In process \#3, it corresponds to the luminance of the place in which
+ 
+* In process #3, it corresponds to the luminance of the place in which
 is made the observation. When you calibrate your monitor, you are asked
 for this value... or you are offered the choice of using a probe. Orders
 of magnitude from 15 to 100 should resolve most cases. But e.g. for a
 theatrical projection in the dark, it can lead to lower values (1-10)
 
-:\*These 2 values of “La” are adjustable in RT, in the “CIE Color
+* These 2 values of “La” are adjustable in RT, in the “CIE Color
 Appearance Model 2002” tool
 
-- **Surround**(also in JzCzHz: Scene Conditions)
+### Surround
+(also in JzCzHz: Scene Conditions)
 
 
 Again, I have made simplifications...
@@ -1159,18 +1168,18 @@ Again, I have made simplifications...
   darker the surrounding will be, the higher will be the image's
   simultaneous contrast.
 
-- **White-points model**
+### White-points model
 
-:\*“WB RT + output” : here we trust RT's white balance for the process
-\#1; CIECAM uses D50 as a reference: RT's white balance bring back the
-conditions to a D50 equivalent, while for process \#3, it will be
+* “WB RT + output” : here we trust RT's white balance for the process
+#1; CIECAM uses D50 as a reference: RT's white balance bring back the
+conditions to a D50 equivalent, while for process #3, it will be
 necessary - as needed - to set the white point of the output device. Go
 to "Preferences / Color Management / Settings white output device
 (monitor, TV, projector)" and select an illuminant in the list (is it
 sufficient? I have no idea about the characteristics of projectors,
 light, temperature...)
 
-:\*WB RT+CAT02 + output” : for process \#3, we are in the same situation
+* WB RT+CAT02 + output” : for process \#3, we are in the same situation
 than above; for process \#1, a mix is made between RT's white balance
 and CAT02 that is using its settings, which makes a solution where the
 two effects (RT and CAT02) are combined. You can modulate the action of
@@ -1178,17 +1187,17 @@ CAT02 by acting on the “CAT02 adaptation” slider. You'll probably have
 to change RT's white balance settings to benefit from the “mix”
 advantages, otherwise the effects does add themselves.
 
-:\*CAT02 is a chromatic adaptation, it converts the XYZ values of an
+* CAT02 is a chromatic adaptation, it converts the XYZ values of an
 image whose white points is Xw0, Yw0, Zw0, in new XYZ values whose white
 point becomes XW1, Yw1, ZW1 ; the algorithm used is similar to the one
 from Von Kries, therefore different from RT's correction that takes into
 account the channels multipliers !
 
-- **”CAT02/16 adaptation” and the “Auto” checkbox**
+### ”CAT02/16 adaptation” and the “Auto” checkbox
 
-:\*see above for the usage of “WB CAT02/16 + output”
+* see above for the usage of “WB CAT02/16 + output”
 
-:\*however, even when “white point model” is set to “equal”, this slider
+* however, even when “white point model” is set to “equal”, this slider
 can be useful. Usually, the “auto” checkbox must be checked and CIECAM
 calculates itself an internal “D” coefficient that is used for other
 purpose than the chromatic adaptation. The result is a value greater
@@ -1225,18 +1234,14 @@ the brightness of the room.
 
 <!-- -->
 
-- **“Js” algorithm**
-
-
-It is similar to JC, but :
-
-- - the chroma is replaced by the saturation (CIECAM). But for which
+- **“Js” algorithm** It is similar to JC, but :
+  - the chroma is replaced by the saturation (CIECAM). But for which
     purpose? I'm quoting again an excerpt of the text from G.Hunt For
     samples of large angular subtense, however, a correlate of
     saturation may be more appropriate to use. In the real world, it is
     common for solid objects to be seen in directional lighting; in
     these circumstances saturation is a more useful percept than chroma
-    because saturation remains constant in shadows. In imaging, artists
+    because **saturation remains constant in shadows**. In imaging, artists
     and computer-graphics operators make extensive use of series of
     colors of constant saturation. In optical imaging, saturation can be
     an important percept in large dark areas. Recent experimental work
@@ -1250,15 +1255,15 @@ It is similar to JC, but :
   - here we use 2 variables Q (“brightness”) and M (“Colorfulness”) that
     are not relative data, but absolute. We takes into account the
     white's brightness. It is easy to realize that the same white
-    "J=100" will appear brighter in the sun than in a dark room...
+    "J=100" will appear brighter in the sun than in a dark room.
   - the white's brightness takes into account the following parameters
     (scene) : “adaptation luminosity La”, “CAT02 adaptation” and “Yb”
-    (currently not adjustable)
+    (currently not adjustable).
   - in common use, the control is more difficult than with "JC", however
     it provides opportunities for high contrast images and opens the
-    door for HDR processing
+    door for HDR processing.
   - Skin tones control is less "fine" than with "JC", globally wider in
-    the reds
+    the reds.
   - The “contrast” obviously acts different, since it takes into account
     Q differently than J.
 
@@ -1324,10 +1329,10 @@ As usual, the ordinate represents the number of pixels involved.
 width="300" />
 <figcaption>red-green-blue.jpg</figcaption>
 </figure>
-I've added an extra control to 'Red Green Blue'. For each R, G, B channel, in addition to **Hue rotation (h)** and **Saturation (s)** adjustments, you can adjust the **Brightness** (Q) using a curve.
+I've added an extra control to 'Red Green Blue'. For each R, G, B channel, in addition to Hue rotation (h) and Saturation (s) adjustments, you can adjust the Brightness (Q) using a curve.
 
 
-### 'Red Blue Green' allows you to either
+### 'Red Green Blue' allows you to either
 * Correct any color deviations due to either: gamut overshoot following various adjustments in the process, or poor white balance.
 * Achieve a better balance of colors and luminances to satisfy your preferences.
 * Film Simulation: with or without combined use in the 'Color' panel > Film Simulation > HaldCLUT (for example, using Kodak Kodachrome 25 film). 
@@ -1356,7 +1361,8 @@ To simplify use, I've only included one slider per channel for hue rotation, and
   relative colorimetry. I think that differences with what could be
   produced in CIECAM mode are minimal.
 - Some adjustments of the CIECAM code are made when “Gamut control” is
-  enabled..
+  enabled.
+- With [Game Changer](/tutorials/) and CIECAM 16, this control is maintained solely through compatibility.  
 
 ## Code, calculation accuracy and processing time
 
@@ -1382,7 +1388,7 @@ correct.
 This model (CIECAM02) is not perfect, and the following limitations are
 identified. They can lead for certain images to process them correctly :
 
-- we have already seen this for the Yb settings ;
+- we have already seen this for the Yb settings.
 - CIECAM02 is not a workspace as sRGB or Prophoto, or even Lab. So it is
   difficult to control the gamut. CIECAM is even known for its problems
   of narrow gamut, that's why unexpected results may occur to the limits
@@ -1460,5 +1466,6 @@ CIECAM02 Wikipedia [4](http://en.wikipedia.org/wiki/CIECAM02)
 Color Appearance Model - Fairchild
 [5](http://www.cis.rit.edu/fairchild/PDFs/AppearanceLec.pdf)
 
-Mémoire Laborie ENS Louis Lumière
-[6](http://www.ens-louis-lumiere.fr/fileadmin/recherche/Laborie-photo-2007-mem.pdf)
+[CIECAM Handprint](https://www.handprint.com/HP/WCL/color7.html#CIECAM)
+
+[CIECAM Ming Ronnier Luo and Changjun Li](https://cielab.xyz/pdf/CIECAM02_and_Its_Recent_Developments.pdf)

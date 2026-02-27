@@ -12,8 +12,8 @@ toc: true
 ---
 
 <figure>
-<img src="/images/Daffodil_split.jpg" title="Daffodil_split.jpg" />
-<figcaption>Daffodil_split.jpg</figcaption>
+<img src="/images/daffodil_split.jpg" title="daffodil_split.jpg" />
+<figcaption>daffodil_split.jpg</figcaption>
 </figure>
 
 __TOC__
@@ -142,8 +142,8 @@ residual image, or with all of them combined.
 The size of the details included in each level is:
 
 <figure>
-<img src="/images/Wavelet_detail_size.jpg" title="Wavelet_detail_size.jpg" />
-<figcaption>Wavelet_detail_size.jpg</figcaption>
+<img src="/images/wavelet_detail_size.jpg" title="wavelet_detail_size.jpg" />
+<figcaption>wavelet_detail_size.jpg</figcaption>
 </figure>
 
 
@@ -461,18 +461,18 @@ second time***. </span>
   </figure>
 
 - <figure>
-  <img src="/images/wavelet_config_L2.jpg" title="wavelet_config_L2.jpg" />
+  <img src="/images/wavelet_config_l2.jpg" title="wavelet_config_l2.jpg" />
   <figcaption>wavelet_config_L2.jpg</figcaption>
   </figure>
 
 - <figure>
-  <img src="/images/wavelet_config_L4.jpg" title="wavelet_config_L4.jpg" />
+  <img src="/images/wavelet_config_l4.jpg" title="wavelet_config_l4.jpg" />
   <figcaption>wavelet_config_L4.jpg</figcaption>
   </figure>
 
 - <figure>
-  <img src="/images/wavelet_config_RI.jpg" title="wavelet_config_RI.jpg" />
-  <figcaption>wavelet_config_RI.jpg</figcaption>
+  <img src="/images/wavelet_config_ri.jpg" title="wavelet_config_ri.jpg" />
+  <figcaption>wavelet_config_ri.jpg</figcaption>
   </figure>
 
 </div>
@@ -744,21 +744,21 @@ control points on the curves, ...).
   </figure>
 
 - <figure>
-  <img src="/images/wavelet_contrast_15C+_WL.jpg"
-  title="wavelet_contrast_15C+_WL.jpg" />
-  <figcaption>wavelet_contrast_15C+_WL.jpg</figcaption>
+  <img src="/images/wavelet_contrast_15c+_wl.jpg"
+  title="wavelet_contrast_15C+_wl.jpg" />
+  <figcaption>wavelet_contrast_15C+_wl.jpg</figcaption>
   </figure>
 
 - <figure>
-  <img src="/images/wavelet_contrast_15C+_H3S6.jpg"
-  title="wavelet_contrast_15C+_H3S6.jpg" />
-  <figcaption>wavelet_contrast_15C+_H3S6.jpg</figcaption>
+  <img src="/images/wavelet_contrast_15c+_h3s6.jpg"
+  title="wavelet_contrast_15c+_h3s6.jpg" />
+  <figcaption>wavelet_contrast_15c+_h3s6.jpg</figcaption>
   </figure>
 
 - <figure>
-  <img src="/images/wavelet_contrast_15C+_H3S6_Str50.jpg"
-  title="wavelet_contrast_15C+_H3S6_Str50.jpg" />
-  <figcaption>wavelet_contrast_15C+_H3S6_Str50.jpg</figcaption>
+  <img src="/images/wavelet_contrast_15c+_h3s6_str50.jpg"
+  title="wavelet_contrast_15c+_h3s6_str50.jpg" />
+  <figcaption>wavelet_contrast_15c+_h3s6_str50.jpg</figcaption>
   </figure>
 
 </div>
@@ -776,9 +776,9 @@ effect.
   </figure>
 
 - <figure>
-  <img src="/images/wavelet_contrast_15C+_H3S6_Str50.jpg"
-  title="wavelet_contrast_15C+_H3S6_Str50.jpg" />
-  <figcaption>wavelet_contrast_15C+_H3S6_Str50.jpg</figcaption>
+  <img src="/images/wavelet_contrast_15c+_h3s6_str50.jpg"
+  title="wavelet_contrast_15c+_H3s6_str50.jpg" />
+  <figcaption>wavelet_contrast_15c+_h3s6_str50.jpg</figcaption>
   </figure>
 
 </div>
@@ -828,27 +828,27 @@ whether there are any deviations from the initial value.
 <div>
 
 - <figure>
-  <img src="/images/wavelet_contrast_15C+_H3S6.jpg"
-  title="wavelet_contrast_15C+_H3S6.jpg" />
-  <figcaption>wavelet_contrast_15C+_H3S6.jpg</figcaption>
+  <img src="/images/wavelet_contrast_15c+_h3s6.jpg"
+  title="wavelet_contrast_15c+_h3s6.jpg" />
+  <figcaption>wavelet_contrast_15c+_h3s6.jpg</figcaption>
   </figure>
 
 - <figure>
-  <img src="/images/wavelet_chrom_WC_full.jpg"
-  title="wavelet_chrom_WC_full.jpg" />
-  <figcaption>wavelet_chrom_WC_full.jpg</figcaption>
+  <img src="/images/wavelet_chrom_wc_full.jpg"
+  title="wavelet_chrom_wc_full.jpg" />
+  <figcaption>wavelet_chrom_wc_full.jpg</figcaption>
   </figure>
 
 - <figure>
-  <img src="/images/wavelet_chrom_WC_L1L2full.jpg"
-  title="wavelet_chrom_WC_L1L2full.jpg" />
-  <figcaption>wavelet_chrom_WC_L1L2full.jpg</figcaption>
+  <img src="/images/wavelet_chrom_wc_l1l2full.jpg"
+  title="wavelet_chrom_wc_l1l2full.jpg" />
+  <figcaption>wavelet_chrom_wc_l1l2full.jpg</figcaption>
   </figure>
 
 - <figure>
-  <img src="/images/wavelet_chrom_WC_detail.jpg"
-  title="wavelet_chrom_WC_detail.jpg" />
-  <figcaption>wavelet_chrom_WC_detail.jpg</figcaption>
+  <img src="/images/wavelet_chrom_wc_detail.jpg"
+  title="wavelet_chrom_wc_detail.jpg" />
+  <figcaption>wavelet_chrom_wc_detail.jpg</figcaption>
   </figure>
 
 </div>
@@ -927,27 +927,27 @@ artifacts.
 <div>
 
 - <figure>
-  <img src="/images/wavelet_contrast_15C+_H3S6.jpg"
-  title="wavelet_contrast_15C+_H3S6.jpg" />
-  <figcaption>wavelet_contrast_15C+_H3S6.jpg</figcaption>
+  <img src="/images/wavelet_contrast_15c+_h3s6.jpg"
+  title="wavelet_contrast_15c+_h3s6.jpg" />
+  <figcaption>wavelet_contrast_15c+_h3s6.jpg</figcaption>
   </figure>
 
 - <figure>
-  <img src="/images/wavelet_chrom_WC_L1L2full.jpg"
-  title="wavelet_chrom_WC_L1L2full.jpg" />
+  <img src="/images/wavelet_chrom_wc_l1l2full.jpg"
+  title="wavelet_chrom_wc_l1l2full.jpg" />
   <figcaption>wavelet_chrom_WC_L1L2full.jpg</figcaption>
   </figure>
 
 - <figure>
-  <img src="/images/wavelet_chrom_SP_L1L2full_L3_60.jpg"
-  title="wavelet_chrom_SP_L1L2full_L3_60.jpg" />
-  <figcaption>wavelet_chrom_SP_L1L2full_L3_60.jpg</figcaption>
+  <img src="/images/wavelet_chrom_sp_l1l2full_l3_60.jpg"
+  title="wavelet_chrom_sp_l1l2full_l3_60.jpg" />
+  <figcaption>wavelet_chrom_sp_l1l2full_l3_60.jpg</figcaption>
   </figure>
 
 - <figure>
-  <img src="/images/wavelet_contrast_15C+_H3S6.jpg"
-  title="wavelet_contrast_15C+_H3S6.jpg" />
-  <figcaption>wavelet_contrast_15C+_H3S6.jpg</figcaption>
+  <img src="/images/wavelet_contrast_15c+_h3s6.jpg"
+  title="wavelet_contrast_15c+_h3s6.jpg" />
+  <figcaption>wavelet_contrast_15c+_h3s6.jpg</figcaption>
   </figure>
 
 </div>
@@ -979,27 +979,27 @@ effects without producing artifacts that will ruin the photo.
 <div>
 
 - <figure>
-  <img src="/images/wavelet_chrom_Link_100.jpg"
-  title="wavelet_chrom_Link_100.jpg" />
-  <figcaption>wavelet_chrom_Link_100.jpg</figcaption>
+  <img src="/images/wavelet_chrom_link_100.jpg"
+  title="wavelet_chrom_link_100.jpg" />
+  <figcaption>wavelet_chrom_link_100.jpg</figcaption>
   </figure>
 
 - <figure>
-  <img src="/images/wavelet_chrom_Link_50.jpg"
-  title="wavelet_chrom_Link_50.jpg" />
-  <figcaption>wavelet_chrom_Link_50.jpg</figcaption>
+  <img src="/images/wavelet_chrom_link_50.jpg"
+  title="wavelet_chrom_link_50.jpg" />
+  <figcaption>wavelet_chrom_link_50.jpg</figcaption>
   </figure>
 
 - <figure>
-  <img src="/images/wavelet_chrom_Link_50_Str50.jpg"
-  title="wavelet_chrom_Link_50_Str50.jpg" />
-  <figcaption>wavelet_chrom_Link_50_Str50.jpg</figcaption>
+  <img src="/images/wavelet_chrom_link_50_str50.jpg"
+  title="wavelet_chrom_link_50_str50.jpg" />
+  <figcaption>wavelet_chrom_link_50_str50.jpg</figcaption>
   </figure>
 
 - <figure>
-  <img src="/images/wavelet_contrast_15C+_H3S6_Str50.jpg"
-  title="wavelet_contrast_15C+_H3S6_Str50.jpg" />
-  <figcaption>wavelet_contrast_15C+_H3S6_Str50.jpg</figcaption>
+  <img src="/images/wavelet_contrast_15c+_h3s6_str50.jpg"
+  title="wavelet_contrast_15c+_h3s6_str50.jpg" />
+  <figcaption>wavelet_contrast_15c+_h3s6_str50.jpg</figcaption>
   </figure>
 
 </div>
@@ -1174,7 +1174,7 @@ intuitive, especially when selecting yellow tones. Perceptually they are
 equivalent to a graph such as the one below:
 
 <figure>
-<img src="/images/Cielab_8x8.jpg" title="Cielab_8x8.jpg" />
+<img src="/images/cielab_8x8.jpg" title="cielab_8x8.jpg" />
 <figcaption>Cielab_8x8.jpg</figcaption>
 </figure>
 
@@ -1262,7 +1262,7 @@ of how you can interact with the curve, see the explanations of the
 *[Tone Curves](exposure#tone_curves)*. And remember that if
 you don't like the changes you have made to the curve, you can always
 start over by clicking the reset arrow
-![<File:ResetButton.png>](/images/ResetButton.png "File:ResetButton.png").
+![<File:resetbutton.png>](/images/resetbutton.png "File:resetbutton.png").
 
 As long as there are variations in contrast in the original image color,
 these curves will allow you to selectively vary the tone of the desired
@@ -1289,41 +1289,41 @@ colors have been excluded:
 <div>
 
 - <figure>
-  <img src="/images/wavelet_chrom_Link_50_Str50.jpg"
-  title="wavelet_chrom_Link_50_Str50.jpg" />
-  <figcaption>wavelet_chrom_Link_50_Str50.jpg</figcaption>
+  <img src="/images/wavelet_chrom_link_50_str50.jpg"
+  title="wavelet_chrom_link_50_str50.jpg" />
+  <figcaption>wavelet_chrom_link_50_str50.jpg</figcaption>
   </figure>
 
 - <figure>
-  <img src="/images/wavelet_toning_opBYfull.jpg"
-  title="wavelet_toning_opBYfull.jpg" />
-  <figcaption>wavelet_toning_opBYfull.jpg</figcaption>
+  <img src="/images/wavelet_toning_opbyfull.jpg"
+  title="wavelet_toning_opbyfull.jpg" />
+  <figcaption>wavelet_toning_opbyfull.jpg</figcaption>
   </figure>
 
 - <figure>
-  <img src="/images/wavelet_toning_opBYfull_curve.jpg"
-  title="wavelet_toning_opBYfull_curve.jpg" />
-  <figcaption>wavelet_toning_opBYfull_curve.jpg</figcaption>
+  <img src="/images/wavelet_toning_opbyfull_curve.jpg"
+  title="wavelet_toning_opbyfull_curve.jpg" />
+  <figcaption>wavelet_toning_opbyfull_curve.jpg</figcaption>
   </figure>
 
 </div>
 <div>
 
 - <figure>
-  <img src="/images/wavelet_toning_opBY.jpg" title="wavelet_toning_opBY.jpg" />
-  <figcaption>wavelet_toning_opBY.jpg</figcaption>
+  <img src="/images/wavelet_toning_opby.jpg" title="wavelet_toning_opby.jpg" />
+  <figcaption>wavelet_toning_opby.jpg</figcaption>
   </figure>
 
 - <figure>
-  <img src="/images/wavelet_toning_opBY_Str50.jpg"
-  title="wavelet_toning_opBY_Str50.jpg" />
-  <figcaption>wavelet_toning_opBY_Str50.jpg</figcaption>
+  <img src="/images/wavelet_toning_opby_str50.jpg"
+  title="wavelet_toning_opby_str50.jpg" />
+  <figcaption>wavelet_toning_opby_str50.jpg</figcaption>
   </figure>
 
 - <figure>
-  <img src="/images/wavelet_toning_opBY_curve.jpg"
-  title="wavelet_toning_opBY_curve.jpg" />
-  <figcaption>wavelet_toning_opBY_curve.jpg</figcaption>
+  <img src="/images/wavelet_toning_opby_curve.jpg"
+  title="wavelet_toning_opby_curve.jpg" />
+  <figcaption>wavelet_toning_opby_curve.jpg</figcaption>
   </figure>
 
 </div>
@@ -1470,48 +1470,48 @@ next level.
   </figure>
 
 - <figure>
-  <img src="/images/wavelet_denoise_L2d00s100.jpg"
-  title="wavelet_denoise_L2d00s100.jpg" />
-  <figcaption>wavelet_denoise_L2d00s100.jpg</figcaption>
+  <img src="/images/wavelet_denoise_l2d00s100.jpg"
+  title="wavelet_denoise_l2d00s100.jpg" />
+  <figcaption>wavelet_denoise_l2d00s100.jpg</figcaption>
   </figure>
 
 - <figure>
-  <img src="/images/wavelet_denoise_L2d30s100.jpg"
-  title="wavelet_denoise_L2d30s100.jpg" />
-  <figcaption>wavelet_denoise_L2d30s100.jpg</figcaption>
+  <img src="/images/wavelet_denoise_l2d30s100.jpg"
+  title="wavelet_denoise_l2d30s100.jpg" />
+  <figcaption>wavelet_denoise_l2d30s100.jpg</figcaption>
   </figure>
 
 - <figure>
-  <img src="/images/wavelet_denoise_L2d30s27.jpg"
-  title="wavelet_denoise_L2d30s27.jpg" />
-  <figcaption>wavelet_denoise_L2d30s27.jpg</figcaption>
+  <img src="/images/wavelet_denoise_l2d30s27.jpg"
+  title="wavelet_denoise_l2d30s27.jpg" />
+  <figcaption>wavelet_denoise_l2d30s27.jpg</figcaption>
   </figure>
 
 </div>
 <div>
 
 - <figure>
-  <img src="/images/wavelet_denoise_L1d00s00.jpg"
-  title="wavelet_denoise_L1d00s00.jpg" />
-  <figcaption>wavelet_denoise_L1d00s00.jpg</figcaption>
+  <img src="/images/wavelet_denoise_l1d00s00.jpg"
+  title="wavelet_denoise_l1d00s00.jpg" />
+  <figcaption>wavelet_denoise_l1d00s00.jpg</figcaption>
   </figure>
 
 - <figure>
-  <img src="/images/wavelet_denoise_L1d00s100.jpg"
-  title="wavelet_denoise_L1d00s100.jpg" />
-  <figcaption>wavelet_denoise_L1d00s100.jpg</figcaption>
+  <img src="/images/wavelet_denoise_l1d00s100.jpg"
+  title="wavelet_denoise_l1d00s100.jpg" />
+  <figcaption>wavelet_denoise_l1d00s100.jpg</figcaption>
   </figure>
 
 - <figure>
-  <img src="/images/wavelet_denoise_L1d12s100.jpg"
-  title="wavelet_denoise_L1d12s100.jpg" />
-  <figcaption>wavelet_denoise_L1d12s100.jpg</figcaption>
+  <img src="/images/wavelet_denoise_l1d12s100.jpg"
+  title="wavelet_denoise_l1d12s100.jpg" />
+  <figcaption>wavelet_denoise_l1d12s100.jpg</figcaption>
   </figure>
 
 - <figure>
-  <img src="/images/wavelet_denoise_L1d12s-17.jpg"
-  title="wavelet_denoise_L1d12s-17.jpg" />
-  <figcaption>wavelet_denoise_L1d12s-17.jpg</figcaption>
+  <img src="/images/wavelet_denoise_l1d12s-17.jpg"
+  title="wavelet_denoise_l1d12s-17.jpg" />
+  <figcaption>wavelet_denoise_l1d12s-17.jpg</figcaption>
   </figure>
 
 </div>
@@ -1675,21 +1675,21 @@ representation makes it easier to understand:
 <div>
 
 - <figure>
-  <img src="/images/Wavelet_edge_sharpening_D-50.png"
-  title="Wavelet_edge_sharpening_D-50.png" />
-  <figcaption>Wavelet_edge_sharpening_D-50.png</figcaption>
+  <img src="/images/wavelet_edge_sharpening_d-50.png"
+  title="wavelet_edge_sharpening_d-50.png" />
+  <figcaption>wavelet_edge_sharpening_d-50.png</figcaption>
   </figure>
 
 - <figure>
-  <img src="/images/Wavelet_edge_sharpening_unchanged.png"
-  title="Wavelet_edge_sharpening_unchanged.png" />
-  <figcaption>Wavelet_edge_sharpening_unchanged.png</figcaption>
+  <img src="/images/wavelet_edge_sharpening_unchanged.png"
+  title="wavelet_edge_sharpening_unchanged.png" />
+  <figcaption>wavelet_edge_sharpening_unchanged.png</figcaption>
   </figure>
 
 - <figure>
-  <img src="/images/Wavelet_edge_sharpening_D100.png"
-  title="Wavelet_edge_sharpening_D100.png" />
-  <figcaption>Wavelet_edge_sharpening_D100.png</figcaption>
+  <img src="/images/wavelet_edge_sharpening_d100.png"
+  title="wavelet_edge_sharpening_d100.png" />
+  <figcaption>wavelet_edge_sharpening_d100.png</figcaption>
   </figure>
 
 </div>
@@ -1718,9 +1718,9 @@ maximum at *Radius: 20*. It then slowly reduces back to *Radius:100*.
 Graphically:
 
 <figure>
-<img src="/images/Wavelet_edge_sharpening_reduced.png"
-title="Wavelet_edge_sharpening_reduced.png" />
-<figcaption>Wavelet_edge_sharpening_reduced.png</figcaption>
+<img src="/images/wavelet_edge_sharpening_reduced.png"
+title="wavelet_edge_sharpening_reduced.png" />
+<figcaption>wavelet_edge_sharpening_reduced.png</figcaption>
 </figure>
 
 The best thing to do is to choose *Unchanged*, because with the option
@@ -2083,15 +2083,15 @@ In both cases you have 3 sliders to adjust the changes:
 - ![](/images/wavelet_smc_original.jpg "wavelet_smc_original.jpg")\]
 
 - <figure>
-  <img src="/images/wavelet_sharpm_ML60MC30.jpg"
-  title="wavelet_sharpm_ML60MC30.jpg" />
-  <figcaption>wavelet_sharpm_ML60MC30.jpg</figcaption>
+  <img src="/images/wavelet_sharpm_ml60mc30.jpg"
+  title="wavelet_sharpm_ml60mc30.jpg" />
+  <figcaption>wavelet_sharpm_ml60mc30.jpg</figcaption>
   </figure>
 
 - <figure>
-  <img src="/images/wavelet_clarity_ML60MC30.jpg"
-  title="wavelet_clarity_ML60MC30.jpg" />
-  <figcaption>wavelet_clarity_ML60MC30.jpg</figcaption>
+  <img src="/images/wavelet_clarity_ml60mc30.jpg"
+  title="wavelet_clarity_ml60mc30.jpg" />
+  <figcaption>wavelet_clarity_ml60mc30.jpg</figcaption>
   </figure>
 
 </div>
@@ -2123,18 +2123,18 @@ in the residual image will have almost no effect on the noise.
 - ![](wavelets_residual_original.jpg "wavelets_residual_original.jpg")\]
 
 - <figure>
-  <img src="/images/wavelets_residual_L5.jpg" title="wavelets_residual_L5.jpg" />
-  <figcaption>wavelets_residual_L5.jpg</figcaption>
+  <img src="/images/wavelets_residual_l5.jpg" title="wavelets_residual_l5.jpg" />
+  <figcaption>wavelets_residual_l5.jpg</figcaption>
   </figure>
 
 - <figure>
-  <img src="/images/wavelets_residual_L7.jpg" title="wavelets_residual_L7.jpg" />
-  <figcaption>wavelets_residual_L7.jpg</figcaption>
+  <img src="/images/wavelets_residual_l7.jpg" title="wavelets_residual_l7.jpg" />
+  <figcaption>wavelets_residual_l7.jpg</figcaption>
   </figure>
 
 - <figure>
-  <img src="/images/wavelets_residual_L8.jpg" title="wavelets_residual_L8.jpg" />
-  <figcaption>wavelets_residual_L8.jpg</figcaption>
+  <img src="/images/wavelets_residual_l8.jpg" title="wavelets_residual_l8.jpg" />
+  <figcaption>wavelets_residual_l8.jpg</figcaption>
   </figure>
 
 </div>
@@ -2176,14 +2176,14 @@ brightness of the highlights:
   </figure>
 
 - <figure>
-  <img src="/images/wavelets_residual_SH.jpg" title="wavelets_residual_SH.jpg" />
-  <figcaption>wavelets_residual_SH.jpg</figcaption>
+  <img src="/images/wavelets_residual_sh.jpg" title="wavelets_residual_sh.jpg" />
+  <figcaption>wavelets_residual_sh.jpg</figcaption>
   </figure>
 
 - <figure>
-  <img src="/images/wavelets_residual_SH-out.jpg"
-  title="wavelets_residual_SH-out.jpg" />
-  <figcaption>wavelets_residual_SH-out.jpg</figcaption>
+  <img src="/images/wavelets_residual_sh-out.jpg"
+  title="wavelets_residual_sh-out.jpg" />
+  <figcaption>wavelets_residual_sh-out.jpg</figcaption>
   </figure>
 
 </div>
@@ -2216,21 +2216,21 @@ tab. However, note that this tool does not have the ability to
 <div>
 
 - <figure>
-  <img src="/images/wavelets_residual_SHneg_original.jpg"
-  title="wavelets_residual_SHneg_original.jpg" />
-  <figcaption>wavelets_residual_SHneg_original.jpg</figcaption>
+  <img src="/images/wavelets_residual_shneg_original.jpg"
+  title="wavelets_residual_shneg_original.jpg" />
+  <figcaption>wavelets_residual_shneg_original.jpg</figcaption>
   </figure>
 
 - <figure>
-  <img src="/images/wavelets_residual_SHneg_old.jpg"
-  title="wavelets_residual_SHneg_old.jpg" />
-  <figcaption>wavelets_residual_SHneg_old.jpg</figcaption>
+  <img src="/images/wavelets_residual_shneg_old.jpg"
+  title="wavelets_residual_shneg_old.jpg" />
+  <figcaption>wavelets_residual_shneg_old.jpg</figcaption>
   </figure>
 
 - <figure>
-  <img src="/images/wavelets_residual_SHneg_new.jpg"
-  title="wavelets_residual_SHneg_new.jpg" />
-  <figcaption>wavelets_residual_SHneg_new.jpg</figcaption>
+  <img src="/images/wavelets_residual_shneg_new.jpg"
+  title="wavelets_residual_shneg_new.jpg" />
+  <figcaption>wavelets_residual_shneg_new.jpg</figcaption>
   </figure>
 
 </div>
