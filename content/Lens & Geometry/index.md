@@ -216,14 +216,14 @@ TODO Explain what "logarithmic" and "linear" do.
 
 ### Auto-Fill
 
-<img src="/images/Lensgeometry_bluehorse_barrel_distortion_correction.jpg"
-title="Lensgeometry_bluehorse_barrel_distortion_correction.jpg"
-width="900"
-alt="Lensgeometry_bluehorse_barrel_distortion_correction.jpg" /> <img
-src="Lensgeometry_bluehorse_barrel_distortion_correction_autofill.jpg"
-title="Lensgeometry_bluehorse_barrel_distortion_correction_autofill.jpg"
-width="900"
-alt="Lensgeometry_bluehorse_barrel_distortion_correction_autofill.jpg" />
+![](lensgeometry_bluehorse_barrel_distortion_correction.jpg "lensgeometry_bluehorse_barrel_distortion_correction.jpg")
+
+Distortion correction
+
+![](lensgeometry_bluehorse_barrel_distortion_correction_autofill.jpg "lensgeometry_bluehorse_barrel_distortion_correction_autofill.jpg")
+
+Autofill
+
 
 This option will upscale or downscale the photo to the extent that the
 whole image fits within the image boundaries with no black borders
@@ -241,16 +241,16 @@ periphery.
 
 ### Auto-Crop
 
-<img
-src="/images/Lensgeometry_bluehorse_autocrop_after_distortion_correction.jpg"
-title="Lensgeometry_bluehorse_autocrop_after_distortion_correction.jpg"
-width="900"
-alt="Lensgeometry_bluehorse_autocrop_after_distortion_correction.jpg" />
-<img src="/images/Lensgeometry_bluehorse_autocrop_after_rotation.jpg"
-title="Lensgeometry_bluehorse_autocrop_after_rotation.jpg" width="900"
-alt="Lensgeometry_bluehorse_autocrop_after_rotation.jpg" />
+![](lensgeometry_bluehorse_autocrop_after_distortion_correction.jpg "lensgeometry_bluehorse_autocrop_after_distortion_correction.jpg")
 
-"![image:Crop-auto.png](/images/crop-auto.png) Auto-Crop" is
+Distortion correction
+
+![](lensgeometry_bluehorse_autocrop_after_rotation.jpg "lensgeometry_bluehorse_autocrop_after_rotation.jpg")
+
+After rotation
+
+
+"![crop-auto.png](crop-auto.png) Auto-Crop" is
 available when "Auto-fill" is disabled. When activated, it will not
 cause image interpolation, but instead will crop away the empty space
 left by the distortion correction or image rotation.
@@ -259,10 +259,10 @@ left by the distortion correction or image rotation.
 
 ### Rotate
 
-![900px](/images/rotate.jpg)
+![900px](rotate.jpg)
 
 Rotate the image between -45° and +45°. Use the
-"![<File:Rotate-straighten.png>](/images/Rotate-straighten.png "File:Rotate-straighten.png")
+"![rotate-straighten.png>](rotate-straighten.png "rotate-straighten.png")
 Select Straight Line" button to set either a vertical or a horizontal
 image alignment. Use the mouse to draw this line - click and hold mouse
 to start, move to draw a new vertical or horizontal axis and release to
@@ -280,10 +280,13 @@ it's the easiest and most accurate. Click on the "automatic" buttons for
 correcting horizontal, vertical or both perspectives. Revert to manual
 adjustments if these automatic adjustments fail.
 
-<img src="/images/perspective_horizontal.jpg" title="perspective_horizontal.jpg"
-width="900" alt="perspective_horizontal.jpg" />
-<img src="/images/perspective_vertical.jpg" title="perspective_vertical.jpg"
-width="900" alt="perspective_vertical.jpg" />
+![](perspective_horizontal.jpg "perspective_horizontal.jpg")
+
+Perspective_horizontal
+
+![](perspective_vertical.jpg "perspective_vertical.jpg")
+
+Perspective_vertical.
 
 #### Simple
 
@@ -445,12 +448,14 @@ image by making it match the JPEG image. There are two limitations:
 
 ### Chromatic Aberration Correction
 
-<img src="/images/chromatic_aberration_auto1.jpg"
-title="chromatic_aberration_auto1.jpg" width="900"
-alt="chromatic_aberration_auto1.jpg" />
-<img src="/images/chromatic_aberration_auto2.jpg"
-title="chromatic_aberration_auto2.jpg" width="900"
-alt="chromatic_aberration_auto2.jpg" />
+![](chromatic_aberration_auto1.jpg "chromatic_aberration_auto1.jpg")
+
+chromatic_aberration_auto1
+
+![](chromatic_aberration_auto2.jpg "chromatic_aberration_auto2.jpg")
+
+chromatic_aberration_auto2
+
 
 This "Chromatic Aberration Correction" tool in the *Transform* tab works
 on the image **after** demosaicing. The [Chromatic Aberration](chromatic_aberration) tool in the *Raw* tab works
@@ -460,9 +465,9 @@ Chromatic aberration can be corrected by using the "Red" and "Blue"
 sliders. Normally you won't see any chromatic aberration in the
 fit-to-screen preview, therefore it is highly recommended to open a
 detail window
-![<File:Window-add.png>](/images/Window-add.png "File:Window-add.png") or to
+![window-add.png](window-add.png "window-add.png") or to
 zoom the main preview in to 100%
-![<File:Magnifier-1to1.png>](/images/Magnifier-1to1.png "File:Magnifier-1to1.png")
+![magnifier-1to1.png>](magnifier-1to1.png "magnifier-1to1.png")
 or more when you attempt this kind of correction. As in other software
 tools, this algorithm eliminates moderate chromatic aberration quite
 well. Do not expect miracles with images having extremely high chromatic
