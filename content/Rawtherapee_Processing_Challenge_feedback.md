@@ -105,9 +105,8 @@ treatment (arbitrary choice) for educational purposes.
 
 ##### Tester B
 
-- IMG_0080.CR2-Nosle.pp3 \[<https://dr>
-
-ive.google.com/file/d/15wnkXYQCsZj7QZG6D69o_DsnYDpR-iAd/view?usp=sharing\]
+- IMG_0080.CR2-Nosle.pp3
+  [3](https://drive.google.com/file/d/15wnkXYQCsZj7QZG6D69o_DsnYDpR-iAd/view?usp=sharing)
 
 - Treatment Summary: Exposure, Temperature correlation, Selective
   Editing : a) spot 1 – Cam16 & Denoise – b) spot 2 - Denoise
@@ -153,16 +152,15 @@ ive.google.com/file/d/15wnkXYQCsZj7QZG6D69o_DsnYDpR-iAd/view?usp=sharing\]
 #### Original image without processing
 
 
-<img src="/images/2010_montr_033-thumb.jpg"  tille="2010_montr_033-thumb.jpg"
-width="600" />
+![](2010_montr_033-thumb.jpg "2010_montr_033-thumb.jpg")
+
 <figcaption>2010_MONTR_033-thumb.jpg</figcaption>
 
 
 #### Image with possible processing
 
 
-<img src="/images/2010_montr_033-thumb1.jpg" title="2010_montr_033-thumb1.jpg"
-width="600" />
+![](2010_montr_033-thumb1.jpg "2010_montr_033-thumb1.jpg")
 <figcaption>2010_MONTR_033-thumb1.jpg</figcaption>
 
 
@@ -219,14 +217,14 @@ width="600" />
 #### Original image without processing
 
 
-<img src="/images/s7-00463.jpg" title="s7-00463.jpg" width="600" />
+![](s7-00463.jpg "s7-00463.jpg")
 <figcaption>S7-00463.jpg</figcaption>
 
 
 #### Image with possible processing
 
 
-<img src="/images/Ss_00463-thumb.jpg" title="s7_00463-thumb.jpg" width="600" />
+![](s7_00463-thumb.jpg "s7_00463-thumb.jpg")
 <figcaption>S7_00463-thumb.jpg</figcaption>
 
 
@@ -285,7 +283,7 @@ I chose this image for educational purposes. This process combines:
 - Minimal processing outside “Selective Editing”, based on the non-use
   of Tone-curves (Exposure Tab), on the use of Defringe (Detail Tab),
   and Temperature correlation for White Balance (Color Tab)
-  <img src="/images/s7-00463-expos.jpg" title="s7-00463-expos.jpg" width="600"/>
+  ![](s7-00463-expos.jpg "s7-00463-expos.jpg")
 
 - Using Selective Editing with:
   - First Spot with Global Spot method: Color Appearance , Denoise
@@ -301,7 +299,7 @@ I chose this image for educational purposes. This process combines:
 - Scene conditions \> Surround \> Extremely Dark (Cutsheet)
 
 Then:
-<img src="/images/s7-00463-cam16.jpg" title="s7-00463-cam16.jpg" width="600" />
+![](s7-00463-cam16.jpg "s7-00463-cam16.jpg")
 
 Note :
 
@@ -314,7 +312,7 @@ Then :
 
 - Add tool to current spot : Blur/Grain & Denoise \> Denoise
 
-<img src="/images/s7-00463-denoise.jpg" title="S7-00463-denoise.jpg" width="600" />
+![](s7-00463-denoise.jpg "s7-00463-denoise.jpg")
  Note:
 
 - Mode Conservative
@@ -324,7 +322,7 @@ Then :
 
 ###### Second Spot Wavelet
 
-<img src="/images/s7-00463-wav.jpg" title="s7-00463-wav.jpg" width="600"/>
+![](s7-00463-wav.jpg "s7-00463-wav.jpg")
 
 Note:
 
@@ -459,13 +457,13 @@ understand and act.
 #### Original image without processing
 
 
-<img src="/images/b-0.jpg" title="b-0.jpg" width="600" />
+![](b-0.jpg "b-0.jpg")
 <figcaption>B-0.jpg</figcaption>
 
 #### Image with possible processing
 
 
-<img src="/images/b-thumb.jpg" title="b-thumb.jpg" width="600" />
+![](b-thumb.jpg "b-thumb.jpg")
 <figcaption>B-thumb.jpg</figcaption>
 
 #### Some treatments carried out by the testers
@@ -507,14 +505,14 @@ understand and act.
 #### Original image without processing
 
 
-<img src="/images/impgp2426-thumb0.jpg" title="imgp2426-thumb0.jpg"
+![](impgp2426-thumb0.jpg "imgp2426-thumb0.jpg")
 width="600" />
 <figcaption>IMGP2426-thumb0.jpg</figcaption>
 
 
 #### Image with possible processing
 
-<img src="/images/imgp2426-thumb.jpg" title="imgp2426-thumb.jpg" width="600" />
+![](imgp2426-thumb.jpg "imgp2426-thumb.jpg")
 <figcaption>IMGP2426-thumb.jpg</figcaption>
 
 #### Some treatments carried out by the testers
@@ -557,14 +555,14 @@ width="600" />
 #### Original image without processing
 
 
-<img src="/images/dsc5286.jpg" title="dsc5286.jpg" width="600" />
+![](dsc5286.jpg "dsc5286.jpg")
 <figcaption>DSC5286.jpg</figcaption>
 
 
 #### Image with possible processing
 
 
-<img src="/images/dsc5286-thumb.jpg" title="dsc5286-thumb.jpg" width="600" />
+![](dsc5286-thumb.jpg "dsc5286-thumb.jpg")
 <figcaption>DSC5286-thumb.jpg</figcaption>
 
 
@@ -626,7 +624,7 @@ I chose this image for educational purposes. This process combines:
 ###### First Spot with Global Spot method - Color Appearance
 
 
-<img src="/images/dsc5286-ca.jpg" title="dsc5286-ca.jpg" width="600" />
+![](dsc5286-ca.jpg "dsc5286-ca.jpg")
 <figcaption>DSC5286-CA.jpg</figcaption>
 
 
@@ -640,7 +638,7 @@ Note:
 ###### First Spot with Global Spot method - Local Contrast & Wavelets
 
 
-<img src="/images/dsc286-wav.jpg" title="dsc5286-wav.jpg" width="600" />
+![](dsc286-wav.jpg "dsc5286-wav.jpg")
 <figcaption>DSC5286-wav.jpg</figcaption>
 
 Note:
@@ -662,7 +660,7 @@ In this image "Spot Removal" does not work correctly.Instead I use
   - Offset = 1.66
 
 
-<img src="/images/dsc5286-spot.jpg" title="dsc5286-spot.jpg" width="600" />
+![](dsc5286-spot.jpg "dsc5286-spot.jpg")
 <figcaption>DSC5286-spot.jpg</figcaption>
 
 
@@ -712,7 +710,7 @@ be “artificial”.
 #### Original image without processing
 
 
-<img src="/images/hagalund-0.jpg" title="hagalund-0.jpg" width="600" />
+![](hagalund-0.jpg "hagalund-0.jpg")
 <figcaption>hagalund-0.jpg</figcaption>
 
 
@@ -745,7 +743,7 @@ the differences.
 
 1\) Image appearance with basic profile 'Auto-Matched Curve ISO Low and
 activation of Color Propagation
-<img src="/images/haga-auto-cp.jpg" title="haga-auto-cp.jpg" width="600"/>
+![](haga-auto-cp.jpg "haga-auto-cp.jpg")
 
 The partial view of the building shows
 exposure values at L=100 a=0 b=0, reflecting excess luminance and an
@@ -761,7 +759,7 @@ I will deal with this problem in two stages:
   transitions
 
 2\) Bring Lab values within acceptable limits
-<img src="/images/haga-cam16-0.jpg" title="haga-cam16-0.jpg" width="600"/>
+![](haga-cam16-0.jpg "haga-cam16-0.jpg")
 
 I'm going to use several features that are
 actually internal functions rather similar to a Tone-mapper.
@@ -781,7 +779,7 @@ actually internal functions rather similar to a Tone-mapper.
 
 3\) Attenuate disparities to obtain an ensemble with less pronounced
 transitions
-<img src="/images/haga-reti-0.jpg" title="haga-reti-0.jpg" width="600"/>
+![](haga-reti-0.jpg "haga-reti-0.jpg")
 
 
 For this I'm going to use a tool that allows a
