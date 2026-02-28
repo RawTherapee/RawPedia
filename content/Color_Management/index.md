@@ -281,10 +281,11 @@ with unsupported ICC profiles).
 
 Some ICC profiles apply a tone-curve and desaturate bright highlights
 for a more film-like look. Those profiles may not work well together
-with [Highlight Reconstruction](exposure#highlight_reconstruction). If you
+with [Highlight Reconstruction](/exposure/#highlight-reconstruction)
+If you
 see a radical change in contrast when you apply your ICC profile, it has
 applied a tone-curve and then you should not use it together with
-[Highlight Reconstruction](exposure#highlight_reconstruction).
+[Highlight Reconstruction](/exposure/#highlight-reconstruction).
 
 Unlike DCP profiles, ICC profile processing may cause clipping of
 extremely saturated colors during conversion. In practice this is rarely

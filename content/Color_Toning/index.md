@@ -12,8 +12,8 @@ toc: true
 
 ## Introduction
 
-![](Rt55_color_toning_grids_1_mask_on.png "Rt55_color_toning_grids_1_mask_on.png")
-![](Rt55_color_toning_grids_1_mask_off.png "Rt55_color_toning_grids_1_mask_off.png")
+![](rt55_color_toning_grids_1_mask_on.png "rt55_color_toning_grids_1_mask_on.png")
+![](rt55_color_toning_grids_1_mask_off.png "rt55_color_toning_grids_1_mask_off.png")
 
 The first question that arises is: What is the definition of, or what do
 you hear by, "Color Toning" or "Split Toning"? Indeed, when consulting
@@ -235,9 +235,9 @@ of masks, but also supports functions from the
 
 ### Black and White
 
-It is thanks to going to and from from the [Black and White](black-and-white_addon) tool - particularly
-[Luminance Equalizer](black-and-white_addon#luminance_equalizer)- to the
-"Color Toning" tool - particularly [Color Balance Shadows/Midtones/Highlights](color_toning#color_balance_shadows_midtones_highlights) -
+It is thanks to going to and from from the [Black and White addon](black-and-white_addon) tool - particularly
+[Luminance Equalizer](black-and-white_addon/#luminance-equalizer) to the
+"Color Toning" tool - particularly [Color Balance Shadows/Midtones/Highlights](/color_toning/#color-balance-shadowsmidtoneshighlights) -
 that you will get the most pronounced (black and white) special effects.
 
 ### Film Simulation
