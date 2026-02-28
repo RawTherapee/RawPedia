@@ -9,7 +9,7 @@ tags:
 toc: true
 ---
 
-![](/images/Lab_color_space.png "Lab_color_space.png")
+
 [Lab](https://en.wikipedia.org/wiki/Lab_color_space) (also called CIELAB
 or L\*a\*b) is a three dimensional color space designed to approximate
 human vision, as opposed to the RGB color space which models the output
@@ -123,12 +123,12 @@ color-spaces. It's just a matter of taste. Once the image is reduced to
 grayscale you can give the image a tone by using the a\* and b\* curves.
 To copy just color toning from one image to another, copy the current
 processing profile to clipboard
-![Image:Gtk-copy.png](/images/Gtk-copy.png "Image:Gtk-copy.png"), then
+![](gtk-copy.png "gtk-copy.png"), then
 partial-paste it either by right-clicking on a photo in the *File
 Browser* and selecting "*Processing Profile Operations \> Paste -
 partial*", or from the *Image Editor* tab by Ctrl+clicking on "*Paste
 profile from clipboard*"
-[image:Gtk-paste.png](/images/gtk-paste.png) to paste only the
+![](gtk-paste.png) to paste only the
 *L\*a\*b\* Adjustments* section of the profile. Note that other
 adjustments in the *L\*a\*b\* Adjustments* sections will be pasted as
 well. Alternatively, the a\* and b\* curves can be copied and pasted
@@ -138,21 +138,21 @@ and Black-and-White tools.
 
 ### LH Curve
 
-![](/images/Lab_LH_BA.jpg "Lab_LH_BA.jpg") The LH curve (lightness according to
+![](lab_lh_ba.jpg "lab_lh_ba.jpg") The LH curve (lightness according to
 hue) allows to modify the lightness based on hue. To lighten the colors
 of the particular hue, move the desired point on the LH curve up, and to
 darken - down.
 
 ### CH Curve
 
-![](/images/Lab_CH_BA1.jpg "Lab_CH_BA1.jpg") The CH curve (chromaticity
+![](lab_ch_ba1.jpg "lab_ch_ba1.jpg") The CH curve (chromaticity
 according to hue) allows to control output chromaticity based on the
 input hue, C=f(H). Using it you can very easily boost or mute only a
 selected range of colors.
 
 ### HH Curve
 
-![](/images/Lab_HH_BA.jpg "Lab_HH_BA.jpg") The HH curve (hue according to hue)
+![](lab_hh_ba.jpg "lab_hh_ba.jpg") The HH curve (hue according to hue)
 allows to alter the hue for a specified hue. For example, one could
 shift reds to be more orange by moving the red point up until the thick
 horizontal line that appears as the point is being dragged becomes the
@@ -175,19 +175,23 @@ This allows you to separately adjust the chromaticity of pixels of low
 and high saturation, so you can boost saturation where needed without
 causing already saturated zones to clip.
 
-Image:Lab_CC_BA1.jpg\|Boost low chromaticity, mute high chromaticity.
-Image:Lab_CC_BA2.jpg\|Mute low chromaticity. Image:Lab_CC_BA3.jpg\|Mute
-low chromaticity.
+![](lab_cc_ba1.jpg "lab_cc_ba1.jpg") Boost low chromaticity, mute high chromaticity.
+
+![](lab_cc_ba2.jpg "lab_cc_ba2.jpg")
+Mute low chromaticity. 
+![](lab_cc_ba3.jpg "lac_cc_ba3.jpg")
+Mute low chromaticity.
 
 You can use the Show/Hide chromaticity histogram button
-![<File:Histogram-gold-on-small.svg>](/images/Histogram-gold-on-small.svg "File:Histogram-gold-on-small.svg")
+![histogram-gold-on-small.svg](histogram-gold-on-small.svg "histogram-gold-on-small.svg")
 besides the histogram to help you see the effects of your CC curve
 tweaks on the histogram, and to help you find the maximum value before
 you start clipping colors.
 
-Image:Lab_CC_hist_neutral.png\|Smooth chromaticity histogram with
-neutral CC curve. Image:Lab_CC_hist_clipped.png\|Spiked chromaticity
-histogram with too strong CC curve.
+![](lab_cc_hist_neutral.png "lab_cc_hist_neutral.png")
+Smooth chromaticity histogram with neutral CC curve. 
+![](lab_cc_hist_clipped.png "lab_cc_hist_clipped")
+Spiked chromaticity histogram with too strong CC curve.
 
 The screenshots show what the chromaticity histogram looks like for the
 untouched image, and then what happens when you increase chromaticity
@@ -209,8 +213,10 @@ The LC curve (lightness according to chromaticity) allows to control the
 output lightness based on the input chromaticity, L=f(C). You can use it
 on portraits to lighten skin
 
-Image:Lab LC BA1.jpg\|Lighten low-chromaticity zones. Image:Lab LC
-BA2.jpg\|Lighten skin tones.
+![](lab_lc_ba1.jpg "lab_lc_ba1.jpg") 
+Lighten low-chromaticity zones. 
+![](lab_lc_ba2.jpg "lab_lc_ba2.jpg")
+Lighten skin tones.
 
 The LC curve's action is modulated by the *Restrict LC to red and skin
 tones* checkbox. Thus the LC curve provides a complex image control,
@@ -234,6 +240,7 @@ their lightness, so you can for example decrease the chromaticity of
 shadows if they are noisy or for artistic purposes, or increase the
 chromaticity of dark and mid-tones without affecting the bright sky.
 
-Image:Lab CL BA1.jpg\|Increase chromaticity of light areas without
-saturating shadows. Image:Lab CL BA2.jpg\|Chromaticity of dark and
-mid-tones increased without saturating the sky.
+![](lab_cl_ba1.jpg "lab_cl_ba1.jpg)
+Increase chromaticity of light areas without saturating shadows. 
+![](lab_cl_ba2.jpg "lab_cl_ba2.jpg")
+Chromaticity of dark and mid-tones increased without saturating the sky.
