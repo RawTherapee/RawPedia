@@ -15,7 +15,7 @@ available screen space. You can still see the cropped-off area in the
 preview if you zoom out and set the [background color of the preview](the_image_editor_tab#background_color_of_the_preview)
 to "theme-based". The cropped-off area will of course not appear in the
 saved image.
-
+/editor/
 When you set the [background color of the preview](the_image_editor_tab#background_color_of_the_preview)
 to anything other than "theme-based" then the cropped-off area will be
 completely hidden from the preview, but if you set it to "theme-based"
@@ -47,9 +47,6 @@ crop would print at using that PPI value.
 
 ## Aspect Ratios
 
-![](Sensor_sizes_overlaid_inside.svg "Sensor_sizes_overlaid_inside.svg")
-![](SensorSizes.svg "SensorSizes.svg")
-![](Vector_Video_Standards2.svg "Vector_Video_Standards2.svg")
 
 ### Custom crop ratio
 

@@ -11,7 +11,6 @@ tags:
 
 
 ![](rt55_soft_light.png "rt55_soft_light.png")
-<figcaption>Rt55_soft_light.png</figcaption>
 
 
 This tool emulates the effect of blending an image with a copy of itself
