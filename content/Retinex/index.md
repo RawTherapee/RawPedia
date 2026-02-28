@@ -58,15 +58,6 @@ The use of Retinex might be beneficial to images processing:
 It is the algorithm described in this page, with its limitations,
 advantages and drawbacks.
 
-### Retinex in "Wavelets"
-
-I installed 2 possibilities to enable Retinex in the Wavelet process:
-[Wavelet levels/fr](wavelet_levels/fr). Some of the quoted
-limitations are no more there !
-
-Quick comparison between the both versions " Retinex in Wavelets" and "
-Retinex at the beginning of the processing":
-[Wavelet_levels/fr#Avantages_.28.2B.29_et_inconv.C3.A9nients_.28-.29_de_Retinex.2Ffr_par_rapport_.C3.A0_Retinex_in_wavelet](wavelet_levels/fr#avantages_.28.2b.29_et_inconv.c3.a9nients_.28-.29_de_retinex.2ffr_par_rapport_.c3.a0_retinex_in_wavelet)
 
 ## Imposed limitations by RawTherapee
 
@@ -112,14 +103,15 @@ For more information, see the "pdf" documents given in the
   (Single Scale Retinex), it is up to the user to choose.
 - modifying the input image luminance distribution by
 
-:\* applying a gamma before the "Transmission Map" file creation
+* applying a gamma before the "Transmission Map" file creation
 
-:\* applying an inverse gamma to restore the input image characteristics
+* applying an inverse gamma to restore the input image characteristics
+
 This modification of the distribution allows:
 
-:\* to change the image tonality
+* to change the image tonality
 
-:\* to modify the "Transmission Map" file to take into account for
+* to modify the "Transmission Map" file to take into account for
 example the under or over exposed areas.
 
 - applying several time (Scale) – 3 times, not modifiable by the user –
@@ -228,8 +220,8 @@ I set 3 methods:
 
 ### "Transmission Map" file processing
 
-<img src="/images/TMap.jpg" title="TMap.jpg" width="200" alt="TMap.jpg" /> The
-main basis processing consist of to apply, using the "Transmission Map"
+![](tmap.jpg "tmap.jpg").
+ The main basis processing consist of to apply, using the "Transmission Map"
 average and standard-deviation, a transformation of the type:
 
 - newT = (oldT – mini) / maxi-mini.
@@ -261,8 +253,7 @@ going to increase the contrasts, but can lead to artefacts.
 
 ### Elaborating the "Image Haze-free" file
 
-<img src="/images/Hazefree.jpg" title="Hazefree.jpg" width="200"
-alt="Hazefree.jpg" /> This file is obtained by "difference" between the
+![](hazefree.jpg "hazefree.jpg") This file is obtained by "difference" between the
 input image and the "Transmission Map" file.
 
 We are going to use here 2 extra parameters, Gain and Brightness
@@ -619,8 +610,8 @@ by default, that means respectively 80, 200 and 20.
 
 #### Transmission map adjustment – Iterations with Radius, contrast, scale
 
-<img src="/images/TMap.jpg" title="TMap.jpg" width="300" alt="TMap.jpg" /> The
-next step consist to study in the tool "settings" the indicator that
+![](tmap.jpg "tmap.jpg")
+ The next step consist to study in the tool "settings" the indicator that
 give partial information about Retinex optimization, the
 "Transmission-map" file, I quoted "Restore haze-free". You can also, iif
 you want, view the "Transmission-map" file, (set Process to the
@@ -643,8 +634,8 @@ to the following adjustments:
 
 ##### The Haze-free image
 
-<img src="/images/Hazefree.jpg" title="Hazefree.jpg" width="300"
-alt="Hazefree.jpg" /> Just now I don't modify the values that could have
+![](hazefree.jpg "hazefree.jpg")
+Just now I don't modify the values that could have
 an influence on "Transmission-map" like "radius", "contrast".
 
 Then, in an iterative way between "Gain transmission" + "offset" and
