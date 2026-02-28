@@ -39,7 +39,7 @@ For a perfect gray tone, except in the case of [Color Toning](color_toning), as 
 the end of the pipeline, the values of “a” and “b” in the [Lab Adjustments](lab_adjustments) of the "Exposure" tab are set
 to zero.
 
-Note also the interaction with the [Color Toning](color_toning) tool, see [Color Toning section](#color_toning) below.
+Note also the interaction with the [Color Toning](color_toning) tool.
 
 ### Desaturation
 
@@ -199,10 +199,10 @@ the image is then in black-and-white!
   the algorithms “Color toning” and “Black-and-White” have been adapted
   to give you the maximum of the joined effects.
 - You can act simultaneously on all the possibilities in “Color toning”,
-  nevertheless, [Color Balance Shadows/Midtones/Highlights](color_toning#color_balance_shadows_/_midtones_/_highlights)
+  nevertheless, [Color Balance Shadows/Midtones/Highlights](/color_toning/#color-balance-shadowsmidtoneshighlights)
   gives the most possibilities.
-- Try switching between [Color Balance Shadows/Midtones/Highlights](color_toning#color_balance_shadows_/_midtones_/_highlights)
-  and e.g. [L\*a\*b\*  blending](color_toning#"l*a*b*_blending"_particularities),
+- Try switching between [Color Balance Shadows/Midtones/Highlights](/color_toning/#color-balance-shadowsmidtoneshighlights)
+  and e.g.  [L\*a\*b\*  blending](/color_toning/#lab-blending-particularities)
   try the gamma sliders and the curves in the "Black-and-White" tool.
 - Of course you have to walk through a number of trials and errors
   iterations if you are looking for special effects.

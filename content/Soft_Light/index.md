@@ -9,10 +9,10 @@ tags:
   - 'Color Tab'
 ---
 
-<figure>
-<img src="/images/Rt55_soft_light.png" title="Rt55_soft_light.png" />
+
+![](rt55_soft_light.png "rt55_soft_light.png")
 <figcaption>Rt55_soft_light.png</figcaption>
-</figure>
+
 
 This tool emulates the effect of blending an image with a copy of itself
 in ["soft-light"](https://en.wikipedia.org/wiki/Blend_modes#Soft_Light)
