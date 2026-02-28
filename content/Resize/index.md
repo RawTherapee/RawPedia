@@ -11,10 +11,9 @@ tags:
 toc: true
 ---
 
-<figure>
-<img src="/images/Resize_tool_5.4-dev.png" title="Resize_tool_5.4-dev.png" />
-<figcaption>Resize_tool_5.4-dev.png</figcaption>
-</figure>
+
+![](resize_tool_5.4-dev.png "resize_tool_5.4-dev.png")
+
 
 ## Resize
 
@@ -40,10 +39,9 @@ You will typically want the width and height to apply to the cropped
 area, however you can also have it apply to the full image. The crop
 will be scaled accordingly.
 
-<figure>
-<img src="/images/Resize-interpolation.png" title="Resize-interpolation.png" />
-<figcaption>Resize-interpolation.png</figcaption>
-</figure>
+
+![](resize-interpolation.png "resize-interpolation.png")
+
 
 ### Method
 

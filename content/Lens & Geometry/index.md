@@ -22,7 +22,7 @@ full resolution image, so it will be sharp. If you zoom the preview in,
 then RawTherapee will use this higher resolution preview image when
 calculating the transformation, so to see what the saved file will look
 like, just zoom in to 100%
-![<File:Magnifier-1to1.png>](/images/Magnifier-1to1.png "File:Magnifier-1to1.png").
+![magnifier-1to1.png](magnifier-1to1.png "magnifier-1to1.png").
 
 ## Introduction
 
@@ -76,7 +76,7 @@ take a given photo. This information is decoded from the photo's
 metadata (currently using a home-made solution, and in the future using
 [Exiv2](https://exiv2.org/)). To check whether the camera and lens names
 are decoded correctly, open a photo and in the Editor tab hit the
-"![image:info.png](/images/info.png) Quick info" button. The
+"![info.png](info.png) Quick info" button. The
 info panel should show your camera and lens names. If it does not, then
 RawTherapee failed to decode this information correctly. For the time
 being, there is nothing you can do about this but wait for a new version
@@ -134,7 +134,7 @@ Lensfun database (which could be taken from one of the files in
 `$HOME/.local/share/lensfun/myLensfun` and modify the relevant parameter
 to match the metadata from your photos. You can find the camera and lens
 name and parameters contained in your photos by viewing the
-"![image:info.png](/images/info.png) Quick info" panel.
+"![info.png](info.png) Quick info" panel.
 
 Note that while editing the Lensfun database in `/usr/share/lensfun/`
 directly may be possible, this is not recommended because you could lose
@@ -169,11 +169,11 @@ file (read the guide on [how to get LCP profiles](how_to_get_lcp_and_dcp_profile
 correct geometric distortion, vignetting and lateral chromatic
 aberrations.
 
-The [Profiled Lens Correction](lens/geometry#profiled_lens_correction) tool's
+The [Profiled Lens Correction](/lens--geometry/#profiled-lens-correction) tool's
 "geometric distortion" feature can be used together with the manual
-[Distortion Correction](lens/geometry#distortion_correction)
+[Distortion Correction](/lens--geometry/#geometric-distortion)
 tool, and the vignetting correction feature can be used together with
-the manual [Vignetting Correction](lens/geometry#vignetting_correction) tool. This
+the manual [Vignetting Correction](/lens--geometry/#vignetting-correction) tool. This
 lets you apply manual adjustments in addition to the LCP profile's
 automatic adjustments, either for artistic reasons or if the LCP fails
 to sufficiently correct a parameter. Be careful that you don't overdo
