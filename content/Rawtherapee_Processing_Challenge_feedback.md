@@ -82,17 +82,16 @@ treatment (arbitrary choice) for educational purposes.
 
 #### Original image without processing
 
-<figure>
-<img src="/images/G_0080-thumb0.jpg" title="G_0080-thumb0.jpg" width="600" />
+
+![](g_0080-thumb0.jpg "g_0080-thumb0.jpg")
 <figcaption>G_0080-thumb0.jpg</figcaption>
-</figure>
+
 
 #### Image with possible processing
 
-<figure>
-<img src="/images/G_0080-thumb.jpg" title="G_0080-thumb.jpg" width="600" />
+
+![](g_0080-thumb.jpg "g_0080-thumb.jpg")
 <figcaption>G_0080-thumb.jpg</figcaption>
-</figure>
 
 #### Some treatments carried out by the testers
 
@@ -153,19 +152,19 @@ ive.google.com/file/d/15wnkXYQCsZj7QZG6D69o_DsnYDpR-iAd/view?usp=sharing\]
 
 #### Original image without processing
 
-<figure>
-<img src="/images/2010_MONTR_033-thumb.jpg" title="2010_MONTR_033-thumb.jpg"
+
+<img src="/images/2010_montr_033-thumb.jpg"  tille="2010_montr_033-thumb.jpg"
 width="600" />
 <figcaption>2010_MONTR_033-thumb.jpg</figcaption>
-</figure>
+
 
 #### Image with possible processing
 
-<figure>
-<img src="/images/2010_MONTR_033-thumb1.jpg" title="2010_MONTR_033-thumb1.jpg"
+
+<img src="/images/2010_montr_033-thumb1.jpg" title="2010_montr_033-thumb1.jpg"
 width="600" />
 <figcaption>2010_MONTR_033-thumb1.jpg</figcaption>
-</figure>
+
 
 #### Some treatments carried out by the testers
 
@@ -219,17 +218,17 @@ width="600" />
 
 #### Original image without processing
 
-<figure>
-<img src="/images/S7-00463.jpg" title="S7-00463.jpg" width="600" />
+
+<img src="/images/s7-00463.jpg" title="s7-00463.jpg" width="600" />
 <figcaption>S7-00463.jpg</figcaption>
-</figure>
+
 
 #### Image with possible processing
 
-<figure>
-<img src="/images/S7_00463-thumb.jpg" title="S7_00463-thumb.jpg" width="600" />
+
+<img src="/images/Ss_00463-thumb.jpg" title="s7_00463-thumb.jpg" width="600" />
 <figcaption>S7_00463-thumb.jpg</figcaption>
-</figure>
+
 
 #### Some treatments carried out by the testers
 
@@ -286,8 +285,8 @@ I chose this image for educational purposes. This process combines:
 - Minimal processing outside “Selective Editing”, based on the non-use
   of Tone-curves (Exposure Tab), on the use of Defringe (Detail Tab),
   and Temperature correlation for White Balance (Color Tab)
-  <img src="/images/S7-00463-expos.jpg" title="S7-00463-expos.jpg" width="600"
-  alt="S7-00463-expos.jpg" />
+  <img src="/images/s7-00463-expos.jpg" title="s7-00463-expos.jpg" width="600"/>
+
 - Using Selective Editing with:
   - First Spot with Global Spot method: Color Appearance , Denoise
     (Blur/Grain & Denoise)
@@ -302,8 +301,9 @@ I chose this image for educational purposes. This process combines:
 - Scene conditions \> Surround \> Extremely Dark (Cutsheet)
 
 Then:
-<img src="/images/S7-00463-cam16.jpg" title="S7-00463-cam16.jpg" width="600"
-alt="S7-00463-cam16.jpg" /> Note :
+<img src="/images/s7-00463-cam16.jpg" title="s7-00463-cam16.jpg" width="600" />
+
+Note :
 
 - Source Data Adjustments :
   - Gamma = 6, Slope = 21, Midtones = 30
@@ -314,8 +314,8 @@ Then :
 
 - Add tool to current spot : Blur/Grain & Denoise \> Denoise
 
-<img src="/images/S7-00463-denoise.jpg" title="S7-00463-denoise.jpg" width="600"
-alt="S7-00463-denoise.jpg" /> Note:
+<img src="/images/s7-00463-denoise.jpg" title="S7-00463-denoise.jpg" width="600" />
+ Note:
 
 - Mode Conservative
 - Non-Local Means: Strength = 2
@@ -324,8 +324,9 @@ alt="S7-00463-denoise.jpg" /> Note:
 
 ###### Second Spot Wavelet
 
-<img src="/images/S7-00463-wav.jpg" title="S7-00463-wav.jpg" width="600"
-alt="S7-00463-wav.jpg" /> Note:
+<img src="/images/s7-00463-wav.jpg" title="s7-00463-wav.jpg" width="600"/>
+
+Note:
 
 - Scope = 81
 - Wavelet levels slider
@@ -457,17 +458,15 @@ understand and act.
 
 #### Original image without processing
 
-<figure>
-<img src="/images/B-0.jpg" title="B-0.jpg" width="600" />
+
+<img src="/images/b-0.jpg" title="b-0.jpg" width="600" />
 <figcaption>B-0.jpg</figcaption>
-</figure>
 
 #### Image with possible processing
 
-<figure>
-<img src="/images/B-thumb.jpg" title="B-thumb.jpg" width="600" />
+
+<img src="/images/b-thumb.jpg" title="b-thumb.jpg" width="600" />
 <figcaption>B-thumb.jpg</figcaption>
-</figure>
 
 #### Some treatments carried out by the testers
 
@@ -507,18 +506,16 @@ understand and act.
 
 #### Original image without processing
 
-<figure>
-<img src="/images/IMGP2426-thumb0.jpg" title="IMGP2426-thumb0.jpg"
+
+<img src="/images/impgp2426-thumb0.jpg" title="imgp2426-thumb0.jpg"
 width="600" />
 <figcaption>IMGP2426-thumb0.jpg</figcaption>
-</figure>
+
 
 #### Image with possible processing
 
-<figure>
-<img src="/images/IMGP2426-thumb.jpg" title="IMGP2426-thumb.jpg" width="600" />
+<img src="/images/imgp2426-thumb.jpg" title="imgp2426-thumb.jpg" width="600" />
 <figcaption>IMGP2426-thumb.jpg</figcaption>
-</figure>
 
 #### Some treatments carried out by the testers
 
@@ -559,17 +556,17 @@ width="600" />
 
 #### Original image without processing
 
-<figure>
-<img src="/images/DSC5286.jpg" title="DSC5286.jpg" width="600" />
+
+<img src="/images/dsc5286.jpg" title="dsc5286.jpg" width="600" />
 <figcaption>DSC5286.jpg</figcaption>
-</figure>
+
 
 #### Image with possible processing
 
-<figure>
-<img src="/images/DSC5286-thumb.jpg" title="DSC5286-thumb.jpg" width="600" />
+
+<img src="/images/dsc5286-thumb.jpg" title="dsc5286-thumb.jpg" width="600" />
 <figcaption>DSC5286-thumb.jpg</figcaption>
-</figure>
+
 
 #### Some treatments carried out by the testers
 
@@ -628,10 +625,10 @@ I chose this image for educational purposes. This process combines:
 
 ###### First Spot with Global Spot method - Color Appearance
 
-<figure>
-<img src="/images/DSC5286-CA.jpg" title="DSC5286-CA.jpg" width="600" />
+
+<img src="/images/dsc5286-ca.jpg" title="dsc5286-ca.jpg" width="600" />
 <figcaption>DSC5286-CA.jpg</figcaption>
-</figure>
+
 
 Note:
 
@@ -642,10 +639,9 @@ Note:
 
 ###### First Spot with Global Spot method - Local Contrast & Wavelets
 
-<figure>
-<img src="/images/DSC5286-wav.jpg" title="DSC5286-wav.jpg" width="600" />
+
+<img src="/images/dsc286-wav.jpg" title="dsc5286-wav.jpg" width="600" />
 <figcaption>DSC5286-wav.jpg</figcaption>
-</figure>
 
 Note:
 
@@ -665,10 +661,10 @@ In this image "Spot Removal" does not work correctly.Instead I use
   - Attenuation response = 2.5
   - Offset = 1.66
 
-<figure>
-<img src="/images/DSC5286-spot.jpg" title="DSC5286-spot.jpg" width="600" />
+
+<img src="/images/dsc5286-spot.jpg" title="dsc5286-spot.jpg" width="600" />
 <figcaption>DSC5286-spot.jpg</figcaption>
-</figure>
+
 
 ###### Why this process?
 
@@ -715,10 +711,10 @@ be “artificial”.
 
 #### Original image without processing
 
-<figure>
+
 <img src="/images/hagalund-0.jpg" title="hagalund-0.jpg" width="600" />
 <figcaption>hagalund-0.jpg</figcaption>
-</figure>
+
 
 #### Some treatments carried out by the testers
 
@@ -749,8 +745,9 @@ the differences.
 
 1\) Image appearance with basic profile 'Auto-Matched Curve ISO Low and
 activation of Color Propagation
-<img src="/images/haga-auto-cp.jpg" title="haga-auto-cp.jpg" width="600"
-alt="haga-auto-cp.jpg" /> The partial view of the building shows
+<img src="/images/haga-auto-cp.jpg" title="haga-auto-cp.jpg" width="600"/>
+
+The partial view of the building shows
 exposure values at L=100 a=0 b=0, reflecting excess luminance and an
 entirely white background. Other parts of the building retain a
 predominantly light blue color, but with significant disparities.
@@ -764,8 +761,9 @@ I will deal with this problem in two stages:
   transitions
 
 2\) Bring Lab values within acceptable limits
-<img src="/images/haga-cam16-0.jpg" title="haga-cam16-0.jpg" width="600"
-alt="haga-cam16-0.jpg" /> I'm going to use several features that are
+<img src="/images/haga-cam16-0.jpg" title="haga-cam16-0.jpg" width="600"/>
+
+I'm going to use several features that are
 actually internal functions rather similar to a Tone-mapper.
 
 - The first is to act on “Whites distribution” to modify the link
@@ -783,8 +781,10 @@ actually internal functions rather similar to a Tone-mapper.
 
 3\) Attenuate disparities to obtain an ensemble with less pronounced
 transitions
-<img src="/images/haga-reti-0.jpg" title="haga-reti-0.jpg" width="600"
-alt="haga-reti-0.jpg" /> For this I'm going to use a tool that allows a
+<img src="/images/haga-reti-0.jpg" title="haga-reti-0.jpg" width="600"/>
+
+
+For this I'm going to use a tool that allows a
 form of “Dodge and Burn”:
 
 - Soft Light & Original Retinex \> Original retinex.
