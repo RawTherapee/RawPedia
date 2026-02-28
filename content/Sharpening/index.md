@@ -25,7 +25,7 @@ The "contrast threshold" and "blur radius" sliders allow you to control
 a mask that decides which areas are affected by sharpening and which are
 left untouched. Activate the "preview the sharpening contrast mask"
 button
-![<File:Contrastmask-off.png>](/images/Contrastmask-off.png "File:Contrastmask-off.png")
+![contrastmask-off.png>](contrastmask-off.png "contrastmask-off.png")
 (in the toolbar above the main preview) to see this mask.
 
 ## Methods
@@ -55,7 +55,7 @@ For low ISO images that are in focus and without motion blur a value of
 
 #### Threshold
 
-[image:Usm_threshold.png](/images/usm_threshold.png)
+[usm_threshold.png](usm_threshold.png)
 
 The *Threshold* tool helps to suppress noise amplification and haloing
 and to confine sharpening to a desired tonal range. The Threshold tool

@@ -14,7 +14,7 @@ cropping is used.
 
 For correcting vignetting caused by the lens light fall-off (as opposed
 to this filter which is not for correction but for artistic effect), use
-the [Vignetting Correction](lens/geometry#vignetting_correction) filter in
+the [Vignetting Correction](/lens--geometry/#vignetting-correction) filter in
 the Transform tab, in the Lens/Geometry tool. Even better, use the
 [Flat Field](flat_field) tool.
 
@@ -32,8 +32,11 @@ affected by the filter. At 50 the feather reaches halfway to center and
 the rest is unaffected, and at 100 the feather reaches all the way into
 the center.
 
-<File:Vignette-filter_4.00_00_50.jpg%7CFeather> = 0
-<File:Vignette-filter_4.00_99_50.jpg%7CFeather> = 100
+![](vignette-filter_4.00_00_50.jpg)
+Feather = 0.
+
+![](vignette-filter_4.00_99_50.jpg)
+Feather = 100
 
 ## Roundness
 
@@ -43,5 +46,8 @@ at 100 it’s circular. Note that if your image is square the fitted
 ellipse will of course be a circle, so the shape will then not change in
 the range 50 to 100.
 
-<File:Vignette-filter_4.00_50_00.jpg%7CRoundness> = 0
-<File:Vignette-filter_4.00_50_99.jpg%7CRoundness> = 100
+![](vignette-filter_4.00_50_00.jpg)
+Roundness = 0
+
+![](vignette-filter_4.00_50_99.jpg)
+Roundness = 100

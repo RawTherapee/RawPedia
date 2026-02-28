@@ -56,8 +56,7 @@ To get the best results, the following settings are recommended:
 <figcaption>edges.jpg</figcaption>
 
 
-Additional information can be found here:
-[www.rawness.es/sharpening](https://web.archive.org/web/20110625093654/http://www.rawness.es/sharpening/?lang=en)
+
 
 ## Microcontrast
 

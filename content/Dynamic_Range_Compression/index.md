@@ -31,7 +31,7 @@ In general there are two ways to handle dynamic range changes: either
 discard a portion of the data outside the destination range (e.g.
 clipping highlights), or compress the data so that it fits the
 destination range. The Dynamic Range Compression tool uses the latter
-approach based on the [Gradient Domain High Dynamic Range Compression](http://www.cs.huji.ac.il/~danix/hdr/) algorithm developed
+approach based on the Gradient Domain High Dynamic Range Compression algorithm developed
 by R. Fattal and coworkers. This algorithm is often simply referred to
 as "Fattal", e.g. in Luminance HDR.
 

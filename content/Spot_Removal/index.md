@@ -13,18 +13,15 @@ blemishes, sensor dust) with another part of the same image. You can
 even use it to remove entire objects from an image, like in the example
 below.
 
-<figure>
-<img src="/images/SpotRemoval-Example.jpg"
-title="File:SpotRemoval-Example.jpg" />
-<figcaption><a
-href="File:SpotRemoval-Example.jpg">File:SpotRemoval-Example.jpg</a></figcaption>
-</figure>
+
+![](spotremoval-example.jpg "spotremoval-example.jpg")
+
 
 ### Activate spot editing mode
 
 In order to add, remove or change spots, the spot editing mode needs to
 be active. Toggle this mode using the
-![<File:Edit-point.png>](/images/Edit-point.png "File:Edit-point.png") button.
+![edit-point.png>](edit-point.png "edit-point.png") button.
 
 ### Adding spots
 
