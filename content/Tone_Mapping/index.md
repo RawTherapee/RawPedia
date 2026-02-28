@@ -13,16 +13,16 @@ the nature of the algorithm, only the 1:1 (or more) preview zoom will
 match the saved image perfectly. If you are zoomed out at less than 1:1,
 you should be aware that the preview can match the saved image very well
 or not so well, depending on the "*Edge Stopping*" and "*Scale*"
-sliders. Read the "[Getting the preview to match the saved image](tone_mapping#getting_the_preview_to_match_the_saved_image)"
+sliders. Read the [Getting the preview to match the saved image](/tone_mapping/#getting-the-preview-to-match-the-saved-image)
 section below. Use a detail window (click on the
-![<File:Window-add.png>](/images/Window-add.png "File:Window-add.png") icon
+![window-add.png>](window-add.png "window-add.png") icon
 under the [main preview panel](the_image_editor_tab#the_preview_panel)) to inspect a
 part of the image, or zoom the main preview to 100% (also called 1:1)
-![<File:Magnifier-1to1.png>](/images/Magnifier-1to1.png "File:Magnifier-1to1.png").
+![magnifier-1to1.png>](magnifier-1to1.png "magnifier-1to1.png").
 
 ------------------------------------------------------------------------
 
-![](/images/Rt407-ba-tonemapping-hdr-cropped.jpg "Rt407-ba-tonemapping-hdr-cropped.jpg")
+![](rt407-ba-tonemapping-hdr-cropped.jpg "rt407-ba-tonemapping-hdr-cropped.jpg")
 The Tone Mapping tool can be used to lift the dark areas of your photo
 in a way that prevents halos from appearing, and it can be used to bring
 out or suppress detail, to make the photo more crisp or more 'dreamy'.
@@ -36,9 +36,11 @@ Note: tone mapping requires a lot of memory (RAM) and is CPU-intensive.
 
 ## Getting the preview to match the saved image
 
-Image:Rt tm preview.jpg\|Edge Stopping=1.40 and Scale=0.10 while
-editing, but Scale is set to 1.00 just before saving. Image:Rt tm
-saved.jpg\|Using this trick, the preview matches the saved image very
+![](rt_tm_preview.jpg)
+Edge Stopping=1.40 and Scale=0.10 while
+editing, but Scale is set to 1.00 just before saving. 
+![](rt_tm_saved.jpg)
+Using this trick, the preview matches the saved image very
 well.
 
 The effects of this tool highly depend on the size of the input image in

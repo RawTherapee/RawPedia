@@ -20,15 +20,17 @@ can be tuned by several parameters explained below.
 
 This tool was first implemented by [G'MIC](http://gmic.eu/) and then
 ported to RawTherapee. Its effect is applied in L\*a\*b\* space and only
-on the lightness channel. Its position in the [processing pipeline](http://rawpedia.rawtherapee.com/Toolchain_Pipeline) is after
+on the lightness channel. Its position in the [processing pipeline](/toolchain_pipeline/) is after
 the Shadows / Highlight tool and before all other tools that operate in
 L\*a\*b\* space.
 
 <div align="center">
 
-<File:LocalContrast-Off.jpg%7COriginal> image.
-<File:LocalContrast-On.jpg%7CLocal> Contrast applied (Radius = 100,
-Amount = 0.5)
+![](localcontrast-off.jpg)
+Original> image.
+
+![](localcontrast-on.jpg)
+Local> Contrast applied (Radius = 100, Amount = 0.5)
 
 </div>
 

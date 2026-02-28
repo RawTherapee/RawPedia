@@ -12,10 +12,9 @@ toc: true
 
 ## Introduction
 
-<figure>
-<img src="/images/Noise-cactus-0-ba.png" title="Noise-cactus-0-ba.png" />
+
+![](noise-cactus-0-ba.png "noise-cactus-0-ba.png")
 <figcaption>Noise-cactus-0-ba.png</figcaption>
-</figure>
 
 Photography is based on recording light which falls on a medium during
 an exposure. The medium is typically film or a digital sensor. The light
@@ -69,9 +68,9 @@ There are different tools for dealing with different types of noise:
   by the [Impulse Noise Reduction](impulse_noise_reduction)
   tool.
 - Hot and dead pixels are best dealt with using the [Hot/Dead Pixel
-  Filter](Preprocessing#Hot.2FDead_Pixel_Filter.md).
+  Filter](preprocessing#hot.2fdead_pixel_filter.md).
 - Pattern noise (periodic, anisotropic) is best handled by the [Line
-  Noise Filter](Preprocessing#Line_Noise_Filter.md). You can
+  Noise Filter](preprocessing#Line_Noise_Filter.md). You can
   also fix pattern noise (de-screen) after RawTherapee in GIMP, using
   the Fourier transform in G'MIC.
 
@@ -87,25 +86,33 @@ deviating color - "chrominance noise", and deviating brightness -
 
 <div align="center">
 
-<File:noise-wall.png%7CA> noisy test photo taken at ISO 6400.
-<File:Noise-wall-demosaic-amaze.png%7CAMaZE> demosaicing leads to small
-maze-like patterns. <File:Noise-wall-demosaic-lmmse.png%7CLMMSE>
-demosaicing avoids maze-like patterns while preserving detail.
-<File:Noise-wall-luminance100-chrominance-off.png%7CThis> is what
-chrominance noise looks like. Luminance detail was obliterated to make
+![](noise-wall.png) noisy test photo taken at ISO 6400.
+
+![](noise-wall-demosaic-amaze.png)
+AMaZE demosaicing leads to small maze-like patterns. 
+
+![](noise-wall-demosaic-lmmse.png
+LMMSE demosaicing avoids maze-like patterns while preserving detail.
+
+![](noise-wall-luminance100-chrominance-off.png)
+This is what chrominance noise looks like. Luminance detail was obliterated to make
 the chrominance noise more clear. Notice the color blotches in what
 should be a smooth wall.
-<File:Noise-wall-luminance100-chrominance-on.png%7CEnabling> chrominance
-noise reduction eliminates the colored blotches.
-<File:Noise-wall-chrominance.png%7CThis> is what luminance noise looks
-like. Chrominance noise was removed to make the luminance noise more
-clear.
-<File:Noise-wall-luminance-tweaked-chrominance-on-median-off.png%7CBoth>
-chrominance and luminance noise were removed.
-<File:Noise-wall-luminance-tweaked-chrominance-on-zoom-median-off.png%7CTiny>
-pixel-sized artifacts are left-over from noise reduction.
-<File:Noise-wall-luminance-tweaked-chrominance-on-zoom-median-on.png%7CThese>
-artifacts can be removed using the median filter.
+
+![](noise-wall-luminance100-chrominance-on.png)
+Enabling chrominance noise reduction eliminates the colored blotches.
+
+![](noise-wall-chrominance.png)
+This is what luminance noise looks like. Chrominance noise was removed to make the luminance noise more clear.
+
+![](noise-wall-luminance-tweaked-chrominance-on-median-off.png)
+Both chrominance and luminance noise were removed.
+
+![](noise-wall-luminance-tweaked-chrominance-on-zoom-median-off.png)
+Tiny pixel-sized artifacts are left-over from noise reduction.
+
+![](noise-wall-luminance-tweaked-chrominance-on-zoom-median-on.png
+These artifacts can be removed using the median filter.
 
 </div>
 
@@ -159,22 +166,30 @@ This section details the order of operations for removing noise.
 
 <div align="center">
 
-<File:Noise-cactus-1-amaze.png%7CThe> noisy image.
-<File:Noise-cactus-2-lmmse.png%7CChanging> the demosaicing method to
-LMMSE eliminates the small maze-like patterns and makes the
-salt-and-pepper noise more clear.
-<File:Noise-cactus-3-pixelfilter.png%7CEnabling> the
-[Hot/Dead Pixel Filter](preprocessing#hot.2fdead_pixel_filter) eliminates the
-salt-and-pepper noise. <File:Noise-cactus-4-nr-chroma.png%7CEnabling>
-automatic chromaticity noise reduction renders a pleasantly-grainy
-image. <File:Noise-cactus-5-nr-luminance.png%7CLuminance> noise was
-smoothed-away using the *Luminance* slider.
-<File:Noise-cactus-6-nr-detailrecovery.png%7CDetail> was restored using
-the *Detail recovery* slider. <File:Noise-cactus-7-nr-median.png%7CThe>
-median filter was used to eliminate left-over artifacts.
-<File:Noise-cactus-8-sharpen.png%7CSharpness> was restored using an
-unsharp-mask with a contrast threshold to prevent sharpening areas which
-should be smooth.
+![](noise-cactus-1-amaze.png)
+The noisy image.
+
+![](noise-cactus-2-lmmse.png)
+Changing the demosaicing method to LMMSE eliminates the small maze-like patterns and makes the salt-and-pepper noise more clear.
+
+![](noise-cactus-3-pixelfilter.png)
+Enabling> the [Hot/Dead Pixel Filter](preprocessing#hot.2fdead_pixel_filter) eliminates the
+salt-and-pepper noise. 
+
+![](noise-cactus-4-nr-chroma.png)
+Enabling automatic chromaticity noise reduction renders a pleasantly-grainy image. 
+
+![](noise-cactus-5-nr-luminance.png)
+Luminance noise was smoothed-away using the *Luminance* slider.
+
+![](noise-cactus-6-nr-detailrecovery.png)
+Detail> was restored using the *Detail recovery* slider. 
+
+![](noise-cactus-7-nr-median.png)
+The median filter was used to eliminate left-over artifacts.
+
+![](noise-cactus-8-sharpen.png)
+Sharpness was restored using an unsharp-mask with a contrast threshold to prevent sharpening areas which should be smooth.
 
 </div>
 
@@ -193,28 +208,36 @@ display the effects (and side-effects) very well.
 
 <div align="center">
 
-<File:Noise-handkerchief-1-off.png%7CThe> noisy image. Detail recovery
-will be intentionally left at 0, and chromaticity strength will be
+![](noise-handkerchief-1-off.png)
+The noisy image. Detail recovery will be intentionally left at 0, and chromaticity strength will be
 intentionally set very high, to emphasize effect.
-<File:Noise-handkerchief-2-luminance-lab-conservative.png%7CLuminance>
-noise reduction in L\*a\*b\* space, conservative.
-<File:Noise-handkerchief-3-luminance-lab-aggressive.png%7CLuminance>
-noise reduction in L\*a\*b\* space, aggressive.
-<File:Noise-handkerchief-4-luminance-rgb-conservative.png%7CLuminance>
-noise reduction in RGB space, conservative.
-<File:Noise-handkerchief-5-luminance-rgb-aggressive.png%7CLuminance>
-noise reduction in RGB space, aggressive.
-<File:Noise-handkerchief-6-chrominance-lab-conservative.png%7CChrominance>
-noise reduction in L\*a\*b\* space, conservative.
-<File:Noise-handkerchief-7-chrominance-lab-aggressive.png%7CChrominance>
-noise reduction in L\*a\*b\* space, aggressive. Notice how colors bleed
+
+![](noise-handkerchief-2-luminance-lab-conservative.png)
+Luminance noise reduction in L\*a\*b\* space, conservative.
+
+![](noise-handkerchief-3-luminance-lab-aggressive.png)
+Luminance noise reduction in L\*a\*b\* space, aggressive.
+
+![](noise-handkerchief-4-luminance-rgb-conservative.png)
+Luminance noise reduction in RGB space, conservative.
+
+![](noise-handkerchief-5-luminance-rgb-aggressive.png)
+Luminance noise reduction in RGB space, aggressive.
+
+![](noise-handkerchief-6-chrominance-lab-conservative.png)
+Chrominance noise reduction in L\*a\*b\* space, conservative.
+
+![](noise-handkerchief-7-chrominance-lab-aggressive.png)
+Chrominance noise reduction in L\*a\*b\* space, aggressive. Notice how colors bleed
 one into another in areas where one hue meets the other - navy blue
 bleeds into cyan, green bleeds into dull-red, dull-red bleeds into
 crimson-red, etc.
-<File:Noise-handkerchief-8-chrominance-rgb-conservative.png%7CChrominance>
-noise reduction in RGB space, conservative.
-<File:Noise-handkerchief-9-chrominance-rgb-aggressive.png%7CChrominance>
-noise reduction in RGB space, aggressive. Low-frequency detail is lost.
+
+![](noise-handkerchief-8-chrominance-rgb-conservative.png)
+Chrominance noise reduction in RGB space, conservative.
+
+![](noise-handkerchief-9-chrominance-rgb-aggressive.png)
+Chrominance noise reduction in RGB space, aggressive. Low-frequency detail is lost.
 
 </div>
 
@@ -251,11 +274,10 @@ only.
 
 ### Luminance
 
-<figure>
-<img src="/images/Rt_nr_luminancecurve_books.jpg"
-title="Rt_nr_luminancecurve_books.jpg" />
+
+![](rt_nr_luminancecurve_books.jpg "rt_nr_luminancecurve_books.jpg")
 <figcaption>Rt_nr_luminancecurve_books.jpg</figcaption>
-</figure>
+
 
 "Luminance control" lets you choose whether you want to manipulate the
 luminance noise reduction via sliders or a curve.
@@ -355,9 +377,10 @@ re-calculated when you pan or when you copy the profile to other images.
 
 ### Median
 
-<img src="/images/Rt_nr_median_books.jpg" title="Rt_nr_median_books.jpg"
-width="600" alt="Rt_nr_median_books.jpg" />
-![](/images/Rt_nr_median_zoom_books.jpg "Rt_nr_median_zoom_books.jpg")
+![](rt_nr_median_books.jpg "rt_nr_median_books.jpg")
+
+
+![](rt_nr_median_zoom_books.jpg "rt_nr_median_zoom_books.jpg")
 
 Use this filter to remove tiny, sharp-looking artifacts left-over from
 noise reduction.
