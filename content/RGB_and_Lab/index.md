@@ -6,8 +6,7 @@ tags:
   - 'General Information'
 ---
 
-![](/images/RGB_Cube_Show_lowgamma_cutout_b.png "RGB_Cube_Show_lowgamma_cutout_b.png")
-![](/images/Lab_color_space.png "Lab_color_space.png")
+
 *[RGB](https://en.wikipedia.org/wiki/RGB_color_space)* and *[CIE L\*a\*b\*](https://en.wikipedia.org/wiki/Lab_color_space)* (or just
 "*Lab*") are two different [color spaces](https://en.wikipedia.org/wiki/Color_space), or ways of
 describing colors.
@@ -28,14 +27,29 @@ look 'warmer'.
 
 <div align="center">
 
-<File:colorspace_flowers_900_1_neutral.jpg> \| Neutral
-<File:colorspace_flowers_900_2_rgb_lightness.jpg> \| RGB Lightness +30
-<File:colorspace_flowers_900_3_lab_lightness.jpg> \| Lab Lightness +30
-<File:colorspace_flowers_900_4_rgb_contrast.jpg> \| RGB Contrast +45
-<File:colorspace_flowers_900_5_lab_contrast.jpg> \| Lab Contrast +45
-<File:colorspace_flowers_900_6_rgb_saturation.jpg> \| RGB Saturation +25
-<File:colorspace_flowers_900_7_lab_chromaticity.jpg> \| Lab Chromaticity
-+25 <File:colorspace_flowers_900_8_vibrance.jpg> \| Vibrance +25
+![](colorspace_flowers_900_1_neutral.jpg)
+Neutral
+
+![](colorspace_flowers_900_2_rgb_lightness.jpg)
+RGB Lightness +30
+
+![](colorspace_flowers_900_3_lab_lightness.jpg)
+Lab Lightness +30
+
+![](colorspace_flowers_900_4_rgb_contrast.jpg)
+RGB Contrast +45
+
+![](colorspace_flowers_900_5_lab_contrast.jpg)
+ Lab Contrast +45
+
+![](colorspace_flowers_900_6_rgb_saturation.jpg)
+RGB Saturation +25
+
+![](colorspace_flowers_900_7_lab_chromaticity.jpg)
+Lab Chromaticity +25
+
+![](colorspace_flowers_900_8_vibrance.jpg)
+Vibrance +25
 
 </div>
 
