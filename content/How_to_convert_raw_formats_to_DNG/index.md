@@ -10,8 +10,8 @@ toc: true
 
 __TOC__
 
-![](/images/Adobe_dng_converter_83.png "Adobe_dng_converter_83.png")
-![](/images/Adobe_dng_converter_raw.png "Adobe_dng_converter_raw.png")
+![](adobe_dng_converter_83.png "adobe_dng_converter_83.png")
+![](adobe_dng_converter_raw.png "adobe_dng_converter_raw.png")
 
 Digital photography cameras can most often save your images in the
 [JPEG](http://en.wikipedia.org/wiki/JPEG) format, as well as dump the
@@ -77,11 +77,9 @@ Run it and you're done.
 
 ## Unsupported sensors
 
-<figure>
-<img src="/images/Adobe_dng_converter_830.png"
-title="Adobe_dng_converter_830.png" />
+![](adobe_dng_converter_830.png "Adobe_dng_converter_830.png")
 <figcaption>Adobe_dng_converter_830.png</figcaption>
-</figure>
+
 
 The DNG format can contain real raw data, but it can also contain
 demosaiced images. These demosaiced images are no longer really raw -
