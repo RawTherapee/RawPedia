@@ -119,7 +119,7 @@ occur if you are working on a non-raw file.
 ## Defaults
 
 The default processing profile used when opening **non-raw** images is
-called "[Neutral](neutral)". This profile has all tool
+called "Neutral". This profile has all tool
 settings at their neutral values, so they have no effect. Since non-raw
 images usually have already been processed and are ready for viewing,
 having RawTherapee not introduce any tweaks by default is the desirable
@@ -139,11 +139,10 @@ Furthermore, most tools in the Editor tab have a reset button.
 
 ## Partial Processing Profiles and Fill Modes
 
-<figure>
-<img src="/images/Processing-profiles-selector.png"
-title="Processing-profiles-selector.png" />
+
+![](processing-profiles-selector.png  "processing-profiles-selector.png")
 <figcaption>Processing-profiles-selector.png</figcaption>
-</figure>
+
 
 Processing profile storage (saving to a file or copying to memory) and
 application (loading from a file or pasting from memory) can be partial,

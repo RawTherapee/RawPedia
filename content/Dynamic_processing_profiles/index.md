@@ -9,7 +9,7 @@ tags:
 
 
 ![](dynamic-profile-rules-screenshot.png "dynamic-profile-rules-screenshot.png")
-<figcaption>dynamic-profile-rules-screenshot.png</figcaption>
+<figcaption>dynamic-profile-rules_screenshot.png</figcaption>
 
 
 Sometimes a single, "static" default processing profile is not enough to
