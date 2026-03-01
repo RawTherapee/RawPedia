@@ -11,7 +11,7 @@ toc: true
 ---
 
 You can access the Preferences window by clicking on the Preferences
-button [preferences](/static/images/Preferences.png) which
+button [preferences](preferences.png) which
 is either in the bottom-left corner of the RawTherapee window, or the
 top-right one, depending on your
 [Editor tab mode layout](the_image_editor_tab#editor_tab_modes).
@@ -80,10 +80,10 @@ right tool panel above the tools.
 
 - Show Filmstrip Toolbar
 
-<figure>
-<img src="/images/Rt_setm_fb.png" title="Rt_setm_fb.png" />
+
+![](rt_setm_fb.png "rt_setm_fb.png")
 <figcaption>Rt_setm_fb.png</figcaption>
-</figure>
+
 
 
 The Filmstrip is a narrow panel which you can toggle to appear within
@@ -97,8 +97,8 @@ toolbar" [keyboard shortcut](keyboard_shortcuts).
 
 - Compact Toolbars in File Browser
 
-![](/images/Single-row-file-browser-toolbar-off.png "Single-row-file-browser-toolbar-off.png")
-![](/images/Single-row-file-browser-toolbar-on.png "Single-row-file-browser-toolbar-on.png")
+![](single-row-file-browser-toolbar-off.png "single-row-file-browser-toolbar-off.png")
+![](single-row-file-browser-toolbar-on.png "single-row-file-browser-toolbar-on.png")
 
 
 Enable this option if you have a high resolution screen to merge all the
@@ -148,14 +148,12 @@ A restart is required for these changes to take effect.
 
 ### Appearance
 
-<figure>
-<img src="/images/Image_editor.png"
-title="The Image Editor tab showing: (1) the preview background, (2) the crop mask, (3) lockable color pickers and (4) buttons which toggle the color of the preview background between black, white and theme-based." />
+
+![](image_editor.png "the image editor tab showing: (1) the preview background, (2) the crop mask, (3) lockable color pickers and (4) buttons which toggle the color of the preview background between black, white and theme-based.")
 <figcaption>The Image Editor tab showing: (1) the preview background,
 (2) the crop mask, (3) lockable color pickers and (4) buttons which
 toggle the color of the preview background between black, white and
 theme-based.</figcaption>
-</figure>
 
 - Theme
 
@@ -199,13 +197,12 @@ as it allows the cropped-off part of the photo to remain somewhat
 visible (2), so that you can move the crop around to find the best
 composition (hold the **Shift** key and move the crop with the mouse).
 
-<figure>
-<img src="/images/Image_editor_navigator.png"
-title="The Image Editor tab showing: (1) the Navigator panel, (2) the Navigator guide which marks the area currently visible in the main preview when zoomed-in." />
+
+![](image_editor_navigator.png "the image editor tab showing: (1) the Navigator panel, (2) the Navigator guide which marks the area currently visible in the main preview when zoomed-in.")
 <figcaption>The Image Editor tab showing: (1) the Navigator panel, (2)
 the Navigator guide which marks the area currently visible in the main
 preview when zoomed-in.</figcaption>
-</figure>
+
 
 - Navigator guide color
 
@@ -215,14 +212,14 @@ screenshot) visible in the
 [Navigator](the_image_editor_tab#navigator) panel (marked
 "1") when the main preview is zoomed-in.
 
-<figure>
-<img src="/images/Rt56_hidpi.png" title="Rt56_hidpi.png" />
+
+![](rt56_hidpi.png "rt56_hidpi.png")
 <figcaption>Rt56_hidpi.png</figcaption>
-</figure>
+
 
 ### Clipping Indication
 
-The clipped [shadow](/static/images/Warning-shadows.png) and [highlight](/static/images/Warning-highlights.png) indicators in the Editor allow you to easily see which areas of the image are too dark or too bright. Highlighted areas are shaded according to the much they transgress the thresholds.
+The clipped [shadow](warning-shadows.png) and [highlight](warning-highlights.png) indicators in the Editor allow you to easily see which areas of the image are too dark or too bright. Highlighted areas are shaded according to the much they transgress the thresholds.
 
 The thresholds for these indicators are defined in Preferences > General.
 
@@ -248,36 +245,35 @@ when zoomed out.
 When "Remember zoom % and pan offset" is enabled, when you open the next
 image RawTherapee will try to show the same area at the same zoom level
 as the current image. This only works in "Single Editor Tab Mode" and
-when "[Demosaicing method used for the preview at \<100%
-zoom](Preferences#Preview_Demosaicing_Method.md)" is set to "As
+when Demosaicing method used for the preview at \<100%
+zoom is set to "As
 in PP3".
 
 ### External Editor
 
-<figure>
-<img src="/images/Rt510_preferences_external_editor.png"
-title="Rt510_preferences_external_editor.png" />
+
+![](rt510_preferences_external_editor.png "rt510_preferences_external_editor.png")
 <figcaption>Rt510_preferences_external_editor.png</figcaption>
-</figure>
+
 
 RawTherapee can send the processed image directly to an external
 program, e.g. an image editor, an image viewer or a script. This is done
 using the
-![<File:Image-editor.png>](Image-editor.png "File:Image-editor.png")
-"[Edit Current Image in External Editor](edit_current_image_in_external_editor)" button in the
+![<image-editor.png](image-editor.png "image-editor.png")
+"[edit current image in external editor](edit_current_image_in_external_editor)" button in the
 Editor tab under the main preview - see the [Saving](saving)
 article. It is here in Preferences where you can customize which program
 the processed image is to be sent to when you click the button.
 
 To get started, click the
-![<File:Add-small.png>](/images/Add-small.png "File:Add-small.png") plus button.
+![add-small.png](add-small.png "add-small.png") plus button.
 This will add a new entry to the list. Then, click Change Application or
 Change Executable to select the external editor. The Change Application
 button opens a list of installed applications to choose from, while the
 Change Executable button opens an executable file selector. Multiple
 external editors can be added this way. To remove an editor, select the
 entry in the list and click the
-![<File:Remove-small.png>](/images/Remove-small.png "File:Remove-small.png")
+![remove-small.png](remove-small.png "remove-small.png")
 minus button.
 
 The external editor names and commands can be edited directly by double
@@ -306,7 +302,7 @@ Specify which profile RawTherapee is to use when opening a raw or
 non-raw photo.
 
 - The default processing profile **for raw photos** as of RawTherapee
-  5.4 is "[Auto-Matched Curve](auto-matched_curve) - ISO
+  5.4 is "[Auto-Matched Curve](/exposure/#auto-matched-tone-curve) ISO
   Low".
 - The default processing profile **for non-raw photos** (such as JPEG,
   TIFF or PNG) is "[Neutral](neutral)". The "Neutral" profile
@@ -437,7 +433,7 @@ Choose which files are recognized as images and displayed in the
 set by default, except for PNG which is disabled by default.
 
 If a desired extension is missing you can easily add it by clicking the
-"Add" ![<File:Add-small.png>](/images/Add-small.png "File:Add-small.png")
+"Add" ![add-small.png>](add-small.png "add-small.png")
 button.
 
 Some users reported that their Parsed Extensions panel is empty. This
