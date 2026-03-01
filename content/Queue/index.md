@@ -12,9 +12,9 @@ toc: true
 
 [Saving images](saving_images) from RawTherapee can be done
 in several ways, the two most common of which are either saving the
-image immediately ![<File:Save.png>](/images/Save.png "File:Save.png") from the
+image immediately ![file:save.png](save.png "save.png") from the
 Editor tab, or adding it to the batch processing queue
-![<File:Gears.png>](/images/Gears.png "File:Gears.png") which resides in the
+![gears.png](gears.png "gears.png") which resides in the
 Queue tab.
 
 Using the "Save immediately" feature will put your CPU immediately to
@@ -52,10 +52,10 @@ to "Auto-start", it may have finished processing before you viewed it).
 
 ## Queue Settings
 
-<figure>
-<img src="/images/Save_window.png" title="Save_window.png" />
+
+![](save_window.png "save_window.png")
 <figcaption>Save_window.png</figcaption>
-</figure>
+
 
 The Queue has several settings, such as the output file format and
 destination. These settings take effect in all cases except when you use
