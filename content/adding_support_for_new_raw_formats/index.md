@@ -87,7 +87,7 @@ instructed otherwise.
 
 For more documentation detailing the required photos and instructions
 how to measure them, read the comments inside the `camconst.json` file:
-<https://github.com/Beep6581/RawTherapee/blob/dev/rtengine/camconst.json>
+<https://github.com/Rawtherapee/RawTherapee/blob/dev/rtengine/camconst.json>
 
 ### How to Shoot White Frames
 
