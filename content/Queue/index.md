@@ -52,9 +52,9 @@ to "Auto-start", it may have finished processing before you viewed it).
 
 ## Queue Settings
 
-
 ![](save_window.png "save_window.png")
-<figcaption>Save_window.png</figcaption>
+
+Save-window.png
 
 
 The Queue has several settings, such as the output file format and
