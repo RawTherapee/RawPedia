@@ -49,10 +49,10 @@ menu. Most commonly you will be running a 64-bit operating system and
 will want to create applications that are optimized for that. Therefore,
 start the **MSYS2 MinGW 64-bit** shell and continue below.
 
-<figure>
-<img src="/images/MSYS2_Shell.jpg" title="File:MSYS2 Shell.jpg" />
-<figcaption><a href="File:MSYS2">File:MSYS2</a> Shell.jpg</figcaption>
-</figure>
+
+![](msys2_shell.jpg "msys2_shell.jpg")
+
+File:Msys2
 
 Note: in following text, <MSYS2> refers to the MSYS2 installation
 folder, typically `C:\msys64`
