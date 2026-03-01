@@ -24,8 +24,10 @@ selector, partial profiles and the fill mode toggle button.
 
 ## Creating Processing Profiles
 
-![](Rt_filebrowser_customprofile.jpg "Rt_filebrowser_customprofile.jpg")).\]\]
-![](Rt_imageeditor_customprofile_cropped.jpg "Rt_imageeditor_customprofile_cropped.jpg")
+![](rt_filebrowser_customprofile.jpg "tt_filebrowser_customprofile.jpg")
+
+![](rt_imageeditor_customprofile_cropped.jpg "rt_imageeditor_customprofile_cropped.jpg")
+
 in the [Image Editor](the_image_editor_tab).\]\] You can
 create your own processing profiles and have them shown in the
 [Processing Profile Selector](the_image_editor_tab#processing_profile_selector)
@@ -61,7 +63,7 @@ drop-down list.
 
 ## Partial Processing Profiles
 
-![thumb](image:pp3_partial_window.png)
+![thumb](pp3_partial_window.png)
 
 Sometimes, you will want to save only a subset of the parameters
 available, e.g. to avoid storing geometric parameters like rotate, crop

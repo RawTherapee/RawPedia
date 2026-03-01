@@ -302,10 +302,10 @@ Specify which profile RawTherapee is to use when opening a raw or
 non-raw photo.
 
 - The default processing profile **for raw photos** as of RawTherapee
-  5.4 is "[Auto-Matched Curve](/exposure/#auto-matched-tone-curve) ISO
+  5.4 is 'Auto-Matched Tone Curve' ISO
   Low".
 - The default processing profile **for non-raw photos** (such as JPEG,
-  TIFF or PNG) is "[Neutral](neutral)". The "Neutral" profile
+  TIFF or PNG) is Neutral. The "Neutral" profile
   just loads the photo as it is, without applying any changes.
 
 To have processing profiles you have made yourself appear in the list,
@@ -697,7 +697,7 @@ access it from RAM.
 
 The "Image to show" option lets you decide whether to use the embedded
 JPEG image or to render one based on the real raw data using the
-"[Neutral](neutral)" processing profile. Using the embedded
+"Neutral" processing profile. Using the embedded
 image is faster than rendering from the real raw data.
 
 ### Threads
