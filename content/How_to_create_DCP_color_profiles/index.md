@@ -98,9 +98,9 @@ Find out more:
 
 ## Shooting the Color Target
 
-![](/images/PENTAX_K10D_daylight_london_summer.jpg "PENTAX_K10D_daylight_london_summer.jpg")
-![](/images/Colortarget_glare.png "Colortarget_glare.png")
-![](/images/Gluehlampe_01_KMJ.png "Gluehlampe_01_KMJ.png")
+![](pentax_k10d_daylight_london_summer.jpg "pentax_k10d_daylight_london_summer.jpg")
+![](colortarget_glare.png "colortarget_glare.png")
+![](gluehlampe_01_KMJ.png "gluehlampe_01_KMJ.png")
 
 This guide assumes you use the X-Rite ColorChecker Passport, though you
 can use any supported color target. If using the X-Rite ColorChecker
@@ -259,10 +259,9 @@ distributions, such as Gentoo and Sabayon where the "scanin" executable
 is called `argyll-scanin`, but not by others, such as Ubuntu where it is
 called just `scanin`. Adjust accordingly.
 
-<figure>
-<img src="/images/Daylight_crop.jpg" title="Daylight_crop.jpg" />
+
+![](daylight_crop.jpg "daylight_crop.jpg")
 <figcaption>Daylight_crop.jpg</figcaption>
-</figure>
 
 To generate a dual-illuminant DCP profile from two ColorChecker Passport
 shots:
