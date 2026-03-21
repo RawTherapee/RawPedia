@@ -505,8 +505,7 @@ understand and act.
 #### Original image without processing
 
 
-![](impgp2426-thumb0.jpg "imgp2426-thumb0.jpg")
-width="600" />
+![](imgp2426-thumb0.jpg "imgp2426-thumb0.jpg")
 <figcaption>IMGP2426-thumb0.jpg</figcaption>
 
 
