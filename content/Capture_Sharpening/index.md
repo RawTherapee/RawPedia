@@ -123,9 +123,9 @@ There will not be as much sharpening but there will be fewer or no
 artifacts that could be enhanced by subsequent processing in other
 software.
 
-Note also that if you are editing a long-exposure raw file (with hot
+Note also that if you are editing a long-exposure  file (with hot
 pixels), the auto radius calculation works much better with the hot
-pixel filter turned on (located in the *Raw tab*):
+pixel filter turned on (located in the * tab*):
 
 <div>
 
@@ -164,7 +164,7 @@ it manually using the Iterations slider.
 To get the best out of this tool, the camera white level needs to be
 correct, especially if the image has sharp transitions between clipped
 and non-clipped highlights. If you experience problems, please refer to
-the section on *White Levels* in [Adding Support for New raw Formats](adding_support_for_new_raw_formats).
+the section on *White Levels* in [Adding Support for New Raw Formats](adding_support_for_new_raw_formats).
 
 ## Capture sharpening and noise-related problems
 
