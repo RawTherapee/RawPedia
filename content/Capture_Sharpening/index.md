@@ -123,9 +123,9 @@ There will not be as much sharpening but there will be fewer or no
 artifacts that could be enhanced by subsequent processing in other
 software.
 
-Note also that if you are editing a long-exposure  file (with hot
+Note also that if you are editing a long-exposure raw file (with hot
 pixels), the auto radius calculation works much better with the hot
-pixel filter turned on (located in the * tab*):
+pixel filter turned on (located in the *Raw tab*):
 
 <div>
 
