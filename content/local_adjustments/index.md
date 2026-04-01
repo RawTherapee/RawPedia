@@ -3104,6 +3104,8 @@ Conditions is ticked.
 <figcaption>Cam16image adjustments</figcaption>
 </figure>
 
+CAM16 Image adjustments has similar features to CIECAM02, but with fewer options. The 'Red Green Blue' function offers the same functionality, allowing for deltaE and local corrections.
+
 [Red green blue](ciecam02/#red---green---blue---hue-rotation-h---saturation-s---brightness-curve-q)
 
 
