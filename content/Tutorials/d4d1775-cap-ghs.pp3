@@ -1,5 +1,5 @@
 [Version]
-AppVersion=5.12-244-g4f408623f
+AppVersion=5.12-330-g5eef9eb31
 Version=353
 
 [General]
@@ -331,7 +331,24 @@ H=3284
 FixedRatio=true
 Ratio=As Image
 Orientation=As Image
-Guide=Frame
+
+[CropGuide]
+Enabled=true
+RuleOfThirds=false
+RuleOfDiagonals=false
+HarmonicMeans=false
+Crosshair=false
+Grid=false
+GoldenTriangle=false
+GoldenRatio=false
+Epassport=false
+CenteredSquare=false
+GoldenTriangleMirror=false
+GoldenRatioRotate=false
+GoldenRatioMirror=false
+Bleed=0
+Basis=Scale
+AspectRatios=[]
 
 [Coarse Transformation]
 Rotate=0
@@ -392,7 +409,7 @@ CenterY=0
 
 [Locallab]
 Enabled=true
-Selspot=1
+Selspot=0
 Name_0=New Spot
 Isvisible_0=false
 PrevMethod_0=hide
@@ -450,7 +467,7 @@ Ghs_HP_0=1
 Ghs_LC_0=0
 Ghs_MID_0=0
 Ghs_BLP_0=0.0033
-Ghs_HLP_0=1.0657000000000001
+Ghs_HLP_0=0.9657
 Ghs_autobw_0=true
 Ghs_agx_0=true
 Ghs_smooth_0=false
@@ -694,8 +711,8 @@ LabGridcieGx=-0.50909137725830078
 LabGridcieGy=0.63090741634368896
 LabGridcieWx=-0.24963712692260742
 LabGridcieWy=-0.22000080347061157
-LabGridcieMx=-0.15857100486755371
-LabGridcieMy=-0.12366390228271484
+LabGridcieMx=-0.1587187647819519
+LabGridcieMy=-0.12321501970291138
 Preser=0
 Fbw=false
 TrcExp=true

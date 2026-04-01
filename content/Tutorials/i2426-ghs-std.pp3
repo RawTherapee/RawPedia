@@ -1,5 +1,5 @@
 [Version]
-AppVersion=5.12-226-gd1560e798
+AppVersion=5.12-366-g42cf4cb86
 Version=353
 
 [General]
@@ -331,7 +331,24 @@ H=4016
 FixedRatio=true
 Ratio=As Image
 Orientation=As Image
-Guide=Frame
+
+[CropGuide]
+Enabled=true
+RuleOfThirds=false
+RuleOfDiagonals=false
+HarmonicMeans=false
+Crosshair=false
+Grid=false
+GoldenTriangle=false
+GoldenRatio=false
+Epassport=false
+CenteredSquare=false
+GoldenTriangleMirror=false
+GoldenRatioRotate=false
+GoldenRatioMirror=false
+Bleed=0
+Basis=Scale
+AspectRatios=[]
 
 [Coarse Transformation]
 Rotate=0
@@ -392,7 +409,7 @@ CenterY=0
 
 [Locallab]
 Enabled=true
-Selspot=2
+Selspot=0
 Name_0=New Spot
 Isvisible_0=false
 PrevMethod_0=hide
@@ -450,7 +467,7 @@ Ghs_HP_0=1
 Ghs_LC_0=0
 Ghs_MID_0=0
 Ghs_BLP_0=0.00020000000000000001
-Ghs_HLP_0=4.2023999999999999
+Ghs_HLP_0=4.1092000000000004
 Ghs_autobw_0=true
 Ghs_agx_0=true
 Ghs_smooth_0=false
@@ -552,14 +569,14 @@ Ghs_D_1=1.4379999999999999
 Ghs_slope_1=9.0299999999999994
 Ghs_chro_1=0
 Ghs_B_1=9.5
-Ghs_SP_1=0.00064000000000000005
+Ghs_SP_1=0.00098999999999999999
 SPAutoRadius_1=true
 Ghs_LP_1=0
 Ghs_HP_1=0.71853
 Ghs_LC_1=0
 Ghs_MID_1=0
 Ghs_BLP_1=0
-Ghs_HLP_1=1.0861000000000001
+Ghs_HLP_1=0.89659999999999995
 Ghs_autobw_1=true
 Ghs_agx_1=true
 Ghs_smooth_1=true
@@ -850,8 +867,8 @@ LabGridcieGx=-0.50909137725830078
 LabGridcieGy=0.63090741634368896
 LabGridcieWx=-0.24963712692260742
 LabGridcieWy=-0.22000080347061157
-LabGridcieMx=-0.079900920391082764
-LabGridcieMy=-0.13202750682830811
+LabGridcieMx=-0.080176234245300293
+LabGridcieMy=-0.1320919394493103
 Preser=0
 Fbw=false
 TrcExp=true
