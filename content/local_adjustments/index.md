@@ -3098,6 +3098,15 @@ Conditions is ticked.
 <figcaption>Cam16exp.jpg</figcaption>
 </figure>
 
+##### CAM16 Image Adjustments - settings
+<figure>
+<img src="cam16imadju.jpg" title="cam16imadju.jpg" width="600" />
+<figcaption>Cam16image adjustments</figcaption>
+</figure>
+
+[Red green blue](ciecam02/#red---green---blue---hue-rotation-h---saturation-s---brightness-curve-q)
+
+
 ##### Cam16 tutorial with an HDR image
 
 I have chosen an image of the Alexandre III bridge in Paris, taken at
