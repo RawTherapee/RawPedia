@@ -1,6 +1,6 @@
 ---
 title: Local Adjustments
-date: 2026-02-09
+date: 2026-04-01
 contributors:
   - Jdc - Jacques Desmis
   - DrSlony
@@ -2978,10 +2978,22 @@ described in the two previous paragraphs, it was decided:
     - Gamma: modifies the effect on the highlights.
     - Slope: allows you to lighten the shadows.
     - Midtones: adjusts midtones.
-    - Highlight attenuation: completes the processing carried out by
+      - To avoid color shifts, you can choose where this algorithm is located: a) before gamma and slope; b) after gamma and slope; c) after the entire CAM16 process
+    - Attenuation threshold: completes the processing carried out by
       gamma, slope and midtones by causing a slight lowering of
       highlights. Please note this does not replace Highlight
       reconstruction.
+    - Tone Mapping Operators : Complements the processing performed by Gamma, Slope and Midtones by applying either:
+      * asymptotic highlight attenuation
+      * or tone mapping.
+        Please note that this does not replace highlight reconstruction.
+      * Ev based: attenuates highlights using an exponential function.
+      * Gamma based: attenuates highlights using a hyperbolic function and partial tone mapping.
+      * Slope based: uses tone mapping. Slope (gray balance) acts on the dynamic range and affects shadows and contrast. 'Scale Yb scene' is a function of White Ev.
+      * RGB channel slope: similar to 'Slope based', but differentiable for each R, G, B channel. Attenuation threshold modifies mid gray and shadow/highlight balance.
+      * Sigmoid based: applies Sigmoid tone mapping with the Contrast and Skew sliders. Display white point (cd/m2) adjusts the maximum screen luminance. This new version of Sigmoid is incompatible with versions 5.11 and earlier..
+      * TRC based: applies a simplified Tone Response Curve (TRC) to each individual R, G, B channel. Modifies the gamma by adjusting the shadow/highlight distribution (levels). 'Relative gamma' mode is a simplified method that takes into account the Slope. 'Highlight attenuation threshold' reduces the effect on the highlights.
+      * For the RGB operators 'RGB channel slope' and 'TRC based', the 'Invert color' checkbox simulates a film negative function.
 
 <!-- -->
 
@@ -3085,6 +3097,17 @@ Conditions is ticked.
 <img src="cam16exp.jpg" title="Cam16exp.jpg" width="600" />
 <figcaption>Cam16exp.jpg</figcaption>
 </figure>
+
+##### CAM16 Image Adjustments - settings
+<figure>
+<img src="cam16imadju.jpg" title="cam16imadju.jpg" width="600" />
+<figcaption>Cam16image adjustments</figcaption>
+</figure>
+
+CAM16 Image adjustments has similar features to CIECAM02, but with fewer options. The 'Red Green Blue' function offers the same functionality, allowing for deltaE and local corrections.
+
+[Red green blue](ciecam02/#red---green---blue---hue-rotation-h---saturation-s---brightness-curve-q)
+
 
 ##### Cam16 tutorial with an HDR image
 
