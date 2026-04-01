@@ -3104,9 +3104,32 @@ Conditions is ticked.
 <figcaption>Cam16image adjustments</figcaption>
 </figure>
 
-CAM16 Image adjustments has similar features to CIECAM02, but with fewer options. The 'Red Green Blue' function offers the same functionality, allowing for deltaE and local corrections.
+CAM16 Image adjustments has similar features to CIECAM02, but with fewer options. 
+
+[Tutorial CIECAM](ciecam02/#color-appearance--lighting-ciecam0216-et-color-appearance-cam16--jzczhz---tutorial)
+
+The 'Red Green Blue' function offers the same functionality, allowing for deltaE and local corrections.
 
 [Red green blue](ciecam02/#red---green---blue---hue-rotation-h---saturation-s---brightness-curve-q)
+
+##### CAM16 Final Gain & Gamut Compression
+<figure>
+<img src="cam16final.jpg" title="cam16final.jpg" width="600" />
+<figcaption>Cam16 Final Gain & Gamut Compression</figcaption>
+</figure>
+
+**Target Gamut**
+Placed at the end of Selective Editing > Color Appearance (CAM16 & JzCzHz), takes into account, only for CAM16 & JzCzHz, everything preceding the current Spot, this tool allows you to compress the data to fit into the output profile.
+
+This output gamut compression is much simpler than at the beginning of the processing pipeline because unless the user has exaggerated the settings, the gamut will already be close to the Working Profile, hence the simplified graphical interface.
+
+More often than not, you will not see any changes to the image or the histogram when using Gamut Compression. This is because it does not convert the data from Working profile (often Rec2020) to Target Gamut (often sRGB), but compresses it to fit the Target gamut (often sRGB) while remaining in Working profile (often Rec2020), and the upstream treatments must have preserved the gamut. The effect is visible on Led’s, flowers with high saturation. On a normal landscape or portrait, there is most often no change.
+
+**Gain (Ev)**
+Modifies global image appearance, similar to the Exposure slider, by applying a positive or negative Ev adjustment to the RGB data. This allows for better control of either the color gamut or the saturation; for the latter, small values ​​of plus or minus 0.1 to 0.4 are sufficient. Higher gain values ​​allow for future use with HDR displays.
+
+**Note**
+The term 'final' can be misleading. It all depends on the user's actual process. If 'Selective Editing > Color Appearance (CAM16 & JzCzHz)' is the last processing step, then 'final' truly signifies the end of the process, and the values ​​displayed are the final ones. If the user chooses to use other processing steps such as 'Exposure', 'Abstract Profile', or 'Color Appearance & Lighting', etc., then 'final' only signifies the end of the 'CAM16' process.
 
 
 ##### Cam16 tutorial with an HDR image
