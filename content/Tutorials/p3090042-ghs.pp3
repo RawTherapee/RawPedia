@@ -1,5 +1,5 @@
 [Version]
-AppVersion=5.12-244-g4f408623f
+AppVersion=5.12-330-g5eef9eb31
 Version=353
 
 [General]
@@ -331,7 +331,24 @@ H=3464
 FixedRatio=true
 Ratio=As Image
 Orientation=As Image
-Guide=Frame
+
+[CropGuide]
+Enabled=true
+RuleOfThirds=false
+RuleOfDiagonals=false
+HarmonicMeans=false
+Crosshair=false
+Grid=false
+GoldenTriangle=false
+GoldenRatio=false
+Epassport=false
+CenteredSquare=false
+GoldenTriangleMirror=false
+GoldenRatioRotate=false
+GoldenRatioMirror=false
+Bleed=0
+Basis=Scale
+AspectRatios=[]
 
 [Coarse Transformation]
 Rotate=0
@@ -359,9 +376,9 @@ LCPFile=
 UseDistortion=true
 UseVignette=true
 UseCA=false
-LFCameraMake=Olympus Imaging Corp.
-LFCameraModel=E-M5
-LFLens=Olympus Olympus M.Zuiko Digital ED 12-50mm f/3.5-6.3 EZ
+LFCameraMake=
+LFCameraModel=
+LFLens=
 
 [Perspective]
 Method=simple
@@ -392,7 +409,7 @@ CenterY=0
 
 [Locallab]
 Enabled=true
-Selspot=0
+Selspot=2
 Name_0=New Spot
 Isvisible_0=true
 PrevMethod_0=hide
@@ -449,8 +466,8 @@ Ghs_LP_0=0
 Ghs_HP_0=1
 Ghs_LC_0=0
 Ghs_MID_0=0
-Ghs_BLP_0=0.0011999999999999999
-Ghs_HLP_0=1.2943
+Ghs_BLP_0=0.0014
+Ghs_HLP_0=1.2199
 Ghs_autobw_0=true
 Ghs_agx_0=true
 Ghs_smooth_0=false
@@ -841,8 +858,8 @@ LabGridcieGx=-0.52800047397613525
 LabGridcieGy=0.70981645584106445
 LabGridcieWx=-0.24963712692260742
 LabGridcieWy=-0.22000080347061157
-LabGridcieMx=-0.20655703544616699
-LabGridcieMy=-0.31678205728530884
+LabGridcieMx=-0.20853102207183838
+LabGridcieMy=-0.32393628358840942
 Preser=0
 Fbw=false
 TrcExp=true

@@ -3951,8 +3951,7 @@ will be minimal, or even unnecessary.
 It can be used in a second GHS spot after a first GHS spot in Global or 'Full image' 
 mode, most often with 'Spot method = Normal spot', to, for example, darken sky or sunset.
 
-To allow Inverse GHS to work, the 'Stretch factor (D)' must be between 0.001 and 0.002 
-and the checkbox 'Auto Black point & White point' should be disabled. 
+To allow Inverse GHS to work the checkbox 'Auto Black point & White point' should be disabled. 
 
 
 ##### The need to fine-tune White Point (linear WP) and Black Point (linear BP)
@@ -3982,40 +3981,35 @@ all image data to be processed is in the interval \[0 ,1\].
 ###### Associated Tooltips
 **Black point/White point**: Sets the 'Black point (linear BP)', 'White point (linear WP)' for a linear stretch.
 
-* 'Black Point (linear BP)' and 'White Point (linear WP)' settings are only available if the 'Stretch factor (D)' is between 0.001 and 0.002. This is to avoid altering the histogram.
-
-* When the stretch factor is 0.002 or less, all stretch settings except for 'Black point' and 'White point' will have no effect.
 * 'Black point (linear BP)' and 'White point (linear WP)' settings are sensitive to the general settings upstream of GHS i.e. highlight reconstruction, white balance and RAW processes.
 * To have relevant 'Black Point (linear BP)' and 'White Point (linear WP)' settings, the entire image must be analyzed. It is recommended to use 'Fit whole image to screen - Shortcut Alt-f'.
-* To allow Inverse GHS or Matrix conversion (AgX, Jz, Cat16) to work the 'Stretch factor (D)' must be between 0.001 and 0.002 and the checkbox 'Auto Black point & White point' disabled. 
+* To allow Inverse GHS or Matrix conversion (AgX, Jz, Cat16) to work the 'Auto Black point & White point' must be disabled. 
 
 **Black point** Sets the black point for a linear image stretch.
 * In normal GHS mode, negative slider values lift the shadows linearly to avoid excessive noise and facilitate 
 * For positive slider values, the histogram is shifted to the left. For raw images, you can also use the more precise Raw Black Points > Dehaze in the Raw tab.
 * Increases in contrast due to the linear stretch will be evenly distributed over the image.
 * You can adjust a linear black point offset to either: a)account for noise in the deep shadows. b) adjust the histogram.
-* Set 'Stretch factor (D)' to 0.001 to adjust the sliders.
 * The label 'Clipped pixel count Shadows:x Highlights:y' shows the number of pixels that would be clipped without adjusting the two sliders.
 * The label ‘Pixel values - Darkest:w Lightest:z’ shows you the minimum and maximum values in the range [0, 1].
 * The label 'RGB values - R:r G:g B:b' shows you the maximum values for each channel.
 * The label 'Dynamic Range GHS (Ev)' shows you the Dynamic Range, which uses the value of the highest and the lowest of the 3 RGB channels, instead of the luminance.
 
 * In  Inverse GHS mode the behavior is reversed and there are possible interactions with the White point. In the majority of cases, especially when using a second GHS Spot, the adjustments will be small, or even unnecessary.
-* To activate the Inverse GHS checkbox, it may be necessary to move the 'Stretch factor' slider from 0.001 to 0.002. This will work only if the checkbox 'Auto Black point & White point' is disabled. 
+* To activate the Inverse GHS checkbox, the checkbox 'Auto Black point & White point' must be disabled. 
 
 **White point** Sets the White point for a linear stretch of the image. Any pixel with value greater than the white point input will be clipped and the data lost.
 * Contrast gained by performing the linear stretch will be evenly distributed over the image, which will be brightened. Pixels with values greater than the white point will appear white and have a value of 1.0.
 * Setting this parameter to a value greater than 1 will extend the dynamic range at the high end.
 * The 'Highlight reconstruction' method has a very strong impact on the white-point value.
 
-* Set 'Stretch factor (D)' to 0.001 to adjust the sliders.
 * The label 'Clipped pixel count - Shadows:x Highlights=y' shows you the number of pixels that would be clipped without adjusting the two sliders.
 * The label 'Pixel values - Darkest:w Lightest:z' shows you the minimum and maximum values in the range [0, 1].
 * The label 'RGB values - R:r G:g B:b' shows you the maximum values for each channel.
 * The label 'Dynamic Range GHS (Ev)' shows you the Dynamic Range, which uses the value of the highest and the lowest of the 3 RGB channels, instead of the luminance.
 
 * In Inverse GHS mode the behavior is reversed and there are possible interactions with the black point.
-* To allow Inverse GHS to work the 'Stretch factor (D)' must be between 0.001 and 0.002 and the checkbox 'Auto Black point & White point' disabled.
+* To allow Inverse GHS to work the checkbox 'Auto Black point & White point' must be disabled.
 
 **Auto Black point & White point** Automatically adjust the 'Black point' and 'White point' values.
 * Not available in Inverse GHS mode and must be disabled to allow Inverse GHS to work. It must be disabled (and re-enabled) in order to change 'Matrix conversion (AgX, JzAzBz, Cat16)'.
@@ -4038,10 +4032,7 @@ by GHS. While setting (linear WP) and (linear BP), observe the
 histogram. On the left, the histogram should be close to the vertical
 axis, with no off-gamut values (linear BP). On the right, the histogram
 should be close to the vertical axis, with no out-of-gamut values (linear WP). The setting of (linear WP) is particularly influenced by the
-activation of Highlight reconstruction. I recommend neutralizing the
-action of GHS - Stretch factor (D) defaults to 0.001, this initializes
-the system (all other settings default) - so as not to interfere with WP
-and BP settings and histogram reading. In 'Inverse GHS' mode, the White
+activation of Highlight reconstruction. In 'Inverse GHS' mode, the White
 point (linear WP) and Black point (linear BP) settings must be
 different. For example, a value of 1.8 for (linear WP) will be required
 in GHS mode and perhaps 0.8 in Inverse GHS mode. In addition, there is
@@ -4067,7 +4058,7 @@ Be careful :
 
 **Comments**
 Performs the entire GHS processing, including Matrix conversion either AgX or JzAzBz or Cat16. For JzAzBz and Cat16 you have the choice between a transformation in RGB mode or in XYZ mode (preferably).
-* To allow this matrix to be enabled or disabled, the 'Stretch factor (D)' must be between 0.001 and 0.002 and 'Auto Black point and White point' disabled.
+* To allow this matrix to be enabled or disabled the 'Auto Black point and White point' must be disabled.
 * You need to re-enable 'Auto Black point and White point' to recalculate the values ​​of 'linear BP', 'linear WP' and 'Symmetry point (SP)'.
 
 
@@ -4239,9 +4230,7 @@ To help the user understand what GHS and its inverse function are (a little bit 
 As you can see:
 - 'Stretch factor (D)' only has positive values.
 - There are no 'contrast' or 'lightness' sliders, no more 'middle grey' or 'pivot'.
-- Interestingly, I use very low values ​​of (D) as 'special' values ​​(0.001 or 0.002) to activate certain functions: settings for White Point (linear WP), Black Point (linear BP), Symmetry point (SP), and Inverse GHS.
 
-It's important to understand that the system, as I've designed it, is entirely dynamic. You directly see the interaction of the (WP), (BP), and (SP) settings. Some might say it's not very 'professional' (in terms of code), but I haven't found any other solutions that work. It is imperative that the GHS algorithm be activated in order to calculate and see the influence of (BP) and (WP) and examine the histogram (I recommend doing it in 'working profile' mode with gamma=1) - before any significant action on 'Stretch factor (D)'. ‘D = 0.001’ is a very low value that can be considered negligible (in terms of stretch), but it allows the algorithm to function. At this value, to ensure the impact of (BP) and (WP) is visible, some sliders are deactivated so as not to influence the result (e.g. Stretch regularization & Midtones).
 
 The problem (not just that of labels and tooltips - labels and tooltips are difficult to write because you have to try to convey something else) is complex. Wanting to create a dynamic system that calculates (BP), (WP), and (SP) in real time and allows for inverse operation (Inverse GHS) is difficult; I'm not trying to be pretentious. However, it's completely different from anything being done elsewhere. I'm not saying that what is done elsewhere (in RawTherapee or other software...) is less good or bad, but it is very different.
 
