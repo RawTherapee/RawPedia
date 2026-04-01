@@ -614,6 +614,100 @@ width="600" />
 <figcaption>gradLCHScopeFeather1.jpg</figcaption>
 </figure>
 
+#### How to change Local Contrast & Clarity
+
+I will only elaborate on the concept of local contrast with wavelets. This tool is a combination of several wavelet-based tools. It's an "all-in-one" solution. It doesn't use any masks or layers and relies solely on signal processing.
+
+I started with the algorithm I developed around 2012 or 2013 (which has been adopted by other open-source software) and the "Contrast enhancement" version in Abstract Profiles.
+
+[See Contrast Enhancement - Abstract Profiles](color_management/#contrast-enhancement)
+
+The essential improvement is the ability, if necessary, to modify the amplitude (the gradient) of the local contrast according to the level of decomposition. With the default value (1) the settings should be suitable in the vast majority of cases. However, for example, to accentuate the dramatic effect of a sky, you can increase this gradient on the higher decomposition levels up to 512x512 pixels or 1024x1024 pixels. Or, of course, do the opposite.  
+
+The general problem with any algorithm that uses wavelets is that of halos and artifacts. I'm not saying they don't exist at all, but I think they are well controlled.
+
+Note that this algorithm is an "all-in-one" solution... It combines (and improves upon) what you can find in Contrast By Details Levels, Wavelet Levels (with edge sharpness), and Contrast Enhancement (AP). You will notice that the "Clarity" function is directly accessible.  
+
+The 3 key points for using the set are:
+* the double slider "Wavelet levels"
+* the curve "Local contrast"
+* merge luma (Clarity).
+
+<figure>
+<img src="sewavcont.jpg" title="sewavcont.jpg" width="600" />
+<figcaption>Local contrast using Wavelets</figcaption>
+</figure>
+
+##### Wavelets levels
+
+Range of wavelet levels used throughout the Wavelets module.
+
+The numbers associated with Top-left and Bottom-left represent the minimum decomposition levels used. The numbers associated with Top-right and Bottom-right represent the maximum decomposition levels used.
+
+If the respective values ​​of Top-left and Bottom-left, or Top-right and Bottom-right, are different, a transition is applied.
+* 0 - means a 2x2 pixels decomposition. 
+* 1 - means a 4x4 pixels decomposition.
+* 2 - means a 8x8 pixels decomposition.
+* 3 - means a 16x16 pixels decomposition.
+* 4 - means a 32x32 pixels decomposition.
+* 5 - means a 64x64 pixels decomposition.
+* 6 - means a 128x128 pixels decomposition.
+* 7 - means a 256x256 pixels decomposition.
+* 8 - means a 512x512 pixels decomposition.
+* 9 - means a 1024x1024 pixels decomposition.
+
+The values ​​8 and 9 assume, in order to be perceived in the Preview, that the size of the Preview is sufficient.
+
+##### Show modified areas with Wavelets
+
+Wavelet decomposition: Shows the changes made by the wavelet settings (only luminance).\n\nYou see the changes made to the decomposed image, factoring in the deltaE and transitions, when you modify the wavelet settings. Note that this is different from Wavelet levels in the Advanced tab in which you always see the results of the decomposition.
+
+##### Prevent decomposition contrast high & low light
+
+Allows you to avoid, for all 'wavelet' functions which implement contrast, modifying the very low lights and the very high lights.
+
+##### Settings
+
+**Attenuation response**
+
+The effect of the local contrast adjustment is stronger for medium-contrast details and weaker for high and low-contrast details.
+
+This slider controls how quickly the effect dampens towards the extreme contrasts.
+
+The higher the value of the slider, the wider the range of contrasts that will receive the full effect of the local contrast adjustment and the higher the risk of generating artifacts.\nThe lower the value, the more the effect will be pinpointed towards a narrow range of contrast values.
+
+**Offset**
+
+Offset modifies the balance between low contrast and high contrast details.
+
+High values will amplify contrast changes to the higher contrast details, whereas low values will amplify contrast changes to low contrast details.
+
+By using a low Attenuation response value you can select which contrast values will be enhanced.
+
+**Gradient levels**
+
+Adjust local contrast for high and medium decomposition levels.
+* Medium corresponds to a Top-right value greater than 3. 
+* High corresponds to a Top-right value greater than 5.
+
+##### Clarity & Sharp Mask
+
+This algorithm combines two decompositions of the same image and recombines them using different processes, It involves significant system resources.
+* From levels 0 to Bottom-right = 4 (included) 'Sharp mask' is enabled.
+* Starting from levels 5 – Top-right or Bottom-right and above: 'Clarity' is enabled.
+* In the case of the 'Sharp Mask' the change of level is similar to changing the radius in the 'Unsharp Mask'. 
+* For 'Clarity' a level change results in a greater or lesser three-dimensional volume effect on the image. 
+
+**Merge luma**
+
+'Merge luma' is used to select the intensity of the desired effect on luminance.
+
+**Merge chroma**
+
+*'Merge chroma' is used to select the intensity of the desired effect on chrominance.
+
+
+
 #### Six ways to change the exposure and lift the shadows
 
 This example is for demonstration purposes only so that we can see the
