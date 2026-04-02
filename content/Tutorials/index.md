@@ -1740,3 +1740,10 @@ The user will understand the ‘Game changer’ approach discussed in this tutor
   - The use of Color Appearance & Lighting and the possible corrections of the 3 channels R, G, B.
 
 
+#### Start of treatment
+
+* Set to Neutral.
+* Highlight reconstruction – Color Propagation (Exposure Tab) - disable ‘Clip out-of-gamut colors’. At this stage, we don’t yet know if this selection is useful. It allows us to find the maximum linear value of the white point. Depending on the values ​​found later in GHS (Selective Editing) or in Gamut Compression (Color Tab) , you may or may not want to disable it.
+* The values found for ‘Maximum achromatic value’ in Gamut Compression (Color Tab), are strongly influenced by the settings chosen for ‘Clip out-of-gamut colors’ and ‘Highlight reconstruction’. In this case (‘Pagodas’), I preferred to keep ‘Highlight reconstruction > Color propagation’ enabled and uncheck ‘Clip out-of-gamut colors’
+* Capture Sharpening (Raw Tab) - Enabled - You’ll notice that “Contrast threshold” isn’t set to zero. You can leave the default settings. The image doesn’t appear to be very noisy, so don’t change anything for the two sliders (Presharpening denoise, Postsharpening denoise);
+* White Balance > Automatic & Refinement > Temperature correlation: The illuminant a priori, is of the Daylight type; this automatic setting should be the most suitable.
