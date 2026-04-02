@@ -718,7 +718,7 @@ Raw file (Creative Common Attribution-share Alike 4.0):
 
 pp3 file: [Pagodas pp3](dsc1629.pp3 "dsc1629.pp3")
 
-See Tutorial Game Changer.
+[See Tutorial Game Changer - Pagodas](/tutorials/#pagodas---how-to-process-local-contrast---clarity)
 
 ###### Settings 
 
