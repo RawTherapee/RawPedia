@@ -11,7 +11,7 @@ toc: true
 ---
 
 You can access the Preferences window by clicking on the Preferences
-button [preferences](preferences.png) which
+button ![preferences](preferences.png "preferences.png") which
 is either in the bottom-left corner of the RawTherapee window, or the
 top-right one, depending on your
 [Editor tab mode layout](the_image_editor_tab#editor_tab_modes).
@@ -219,7 +219,7 @@ screenshot) visible in the
 
 ### Clipping Indication
 
-The clipped [shadow](warning-shadows.png) and [highlight](warning-highlights.png) indicators in the Editor allow you to easily see which areas of the image are too dark or too bright. Highlighted areas are shaded according to the much they transgress the thresholds.
+The clipped ![shadow.png](warning-shadows.png "warning-shadows.png") and ![highlight](warning-highlights.png "warning-highlights.png") indicators in the Editor allow you to easily see which areas of the image are too dark or too bright. Highlighted areas are shaded according to the much they transgress the thresholds.
 
 The thresholds for these indicators are defined in Preferences > General.
 
@@ -227,7 +227,7 @@ The clipped shadow indicator will highlight areas where all three channels fall 
 
 The clipped highlight indicator will highlight areas where at least one channel lies at or above the specified highlight threshold. If you want to see only where all channels are clipped, then enable the luminosity preview mode in addition to the clipped highlight indicator.
 
-Clipping is calculated using data which depends on the state of the gamut button Gamut-hist.png which you can toggle above the main preview in the Editor tab. When the gamut button is enabled the working profile is used, otherwise the gamma-corrected output profile is used. 
+Clipping is calculated using data which depends on the state of the gamut button ![](Gamut-hist.png "Gamut-hist.png") which you can toggle above the main preview in the Editor tab. When the gamut button is enabled the working profile is used, otherwise the gamma-corrected output profile is used. 
 
 ### Pan Rate Amplification
 
@@ -474,8 +474,10 @@ Standard locations where color profiles are stored:
 
 Windows
     `C:\Windows\system32\spool\drivers\color`
+
 Linux
     `/usr/share/color/icc/`
+
 macOS
     `/library/ColorSync/Profiles/Displays/`
 
@@ -545,7 +547,7 @@ When in the "Printer (Soft-Proofing)" section, the "source" is the image
 data at the end of the pipeline, and the "destination" is the selected
 printer profile's color space.
 
-:; Relative Colorimetric
+   Relative Colorimetric
 
 
 
@@ -554,7 +556,7 @@ color space will be shown using the nearest in-gamut color without
 affecting other in-gamut colors. The white point will be corrected. This
 is the default option and works with all profiles.
 
-:; Perceptual
+   Perceptual
 
 
 
@@ -568,7 +570,7 @@ the required gamut mapping tables - most ICC profiles do not, and in
 those cases "relative colorimetric" will be silently used instead (this
 is standard behavior across most software).
 
-:; Absolute Colorimetric
+   Absolute Colorimetric
 
 
 

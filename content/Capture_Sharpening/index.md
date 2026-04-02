@@ -164,7 +164,7 @@ it manually using the Iterations slider.
 To get the best out of this tool, the camera white level needs to be
 correct, especially if the image has sharp transitions between clipped
 and non-clipped highlights. If you experience problems, please refer to
-the section on *White Levels* in [Adding Support for New raw Formats](adding_support_for_new_raw_formats).
+the section on *White Levels* in [Adding Support for New Raw Formats](adding_support_for_new_raw_formats).
 
 ## Capture sharpening and noise-related problems
 
