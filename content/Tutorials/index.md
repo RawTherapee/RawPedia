@@ -112,6 +112,31 @@ Apart from tools that have been around for many years, but are not always well k
 + Selective Editing > Blur/Grain & Denoise > Denoise : [SE-denoise](/local_adjustments/#selective-editing----blurgrain--denoise--denoise)
 + Color Appearance & Lighting (Advanced Tab): [CIECAM](/ciecam02)
 
+### Alternatives
+
+With most of the principles and recommendations outlined above, you can replace some of the tools with others.
+* Selective Editing > Equalization & Pre-Tone Mapping : Generalized Hyperbolic Stretch (GHS) & Michaelis-Menten (MM)
+* Abstract Profile (Color Tab)
+* Color Appearance & Lighting (Advanced Tab)
+
+By :  
+* Selective Editing > Color Appearance (CAM16 & JzCzHz). This tool contains, with the exception of GHS and MM, tools similar to Abstract Profiles and Color Appearance & Lighting.
+
+**Advantages**: Greater integration, fewer trips back and forth between different 'Tabs. Since version 5.13, the tools located in 'Source Data Adjustments', 'Red Green Blue' in 'CAM16 Images Adjustments' and 'Final Gain & Gamut Compression', provide essentially the same capabilities as the tools already presented in Game Changer. This allows the use of Selective Editing features (deltaE, transitions, etc.). GHS and MM are 'replaced' by others Tone-mappers (Slope based, Sigmoid based, Log encoding, etc.)
+
+**Disadvantages**: Tone Mapping Operators use pre-calculated values ​​for White Points and Black Points, which may be unsuitable depending on the process used, and are not recalculated. This means that if you open a second session, the values ​​will likely be incorrect. Furthermore, it will be difficult (or even impossible) to precisely adjust the Black Point, leading to a lack of image contrast (of course, in the case where the BP value is not close to zero in linear value).
+
+[Selective Editing > Color Appearance CAM16 & JzCzHz](local_adjustments/#cam16-with-hdr-pre-processing)
+
+In this regard, you can examine the tutorial made in spring 2024 to develop some of the tools referenced above.
+
+[Tutorial - Rawtherapee Processsing Challenge](rawtherapee_processing_challenge_feedback/)
+
+You can also 'replace' Contrast Enhancement in 'Abstract Profiles' with Local Contrast & Clarity from Selective Editing which has more possibilities.
+
+[Local contrast & Clarity](local_adjustments/#how-to-change-local-contrast--clarity-and-sharp-mask)
+
+
 ## The tutorials
 
 [Best Shadows & Highlight techniques](/tutorials/#game-changer---best-shadows--higlights-techniques)
@@ -127,6 +152,9 @@ Apart from tools that have been around for many years, but are not always well k
 [Harvest mouse](/tutorials/#game-changer-using-harvest-mouse)
 
 [Young girl - noisy image](/tutorials/#game-changer-young-girl---noisy-image)
+
+[Pagodas - How to process Local Contrast &  Clarity](/tutorials/#pagodas---how-to-process-local-contrast---clarity)
+
 
 As a reminder: all these tutorials are designed for teaching, rather than achieving the best possible result (which, by the way, is quite subjective). What I'm fairly certain of is that out-of-gamut data (here, sRGB) is handled 99% of the time, along with various artifacts. It's very easy to create 'flashy' images, but these will be out of bounds.
 
@@ -149,6 +177,8 @@ I deliberately chose extreme settings to show that even with a 'degraded' starti
  [Recommendations](/tutorials/#recommendations)
 
  [Specific tools used](/tutorials/#specific-tools-used)
+
+ [Alternatives](/tutorials/#alternatives)
 
 **Image selection**
 
@@ -516,6 +546,8 @@ This image seems innocuous at first glance, a typical sunset. The image is gener
 
  [Specific tools used](/tutorials/#specific-tools-used)
 
+ [Alternatives](/tutorials/#alternatives)
+
 **Learning objective**
 
 The user will understand the ‘Game changer’ approach discussed in this tutorial:
@@ -778,6 +810,8 @@ Compared to the tutorial presented in November 2025, the changes are significant
 
  [Specific tools used](/tutorials/#specific-tools-used)
 
+ [Alternatives](/tutorials/#alternatives)
+
 **Learning objective**
 + The role of GHS & MM, in the linear portion of the data, which can be considered a ‘Pre-tone-mapper’.
 + The importance of Highlight reconstruction > Color Propagation.
@@ -1002,6 +1036,8 @@ There are many methods on the market for creating (nostalgia) the colours and ap
 
  [Specific tools used](/tutorials/#specific-tools-used)
 
+ [Alternatives](/tutorials/#alternatives)
+
 **In summary:**
 
 1) Color Appearance & Lighting : by allowing hue rotation (slider) , saturation (slider), brightness (curve) variation for each R, G, and B channel.
@@ -1161,6 +1197,8 @@ I’m going to show you how to process this image; some of the settings might be
 
  [Specific tools used](/tutorials/#specific-tools-used)
 
+ [Alternatives](/tutorials/#alternatives)
+
 #### First steps
 + Set to Neutral.
 + Activate ‘Highlight reconstruction > Color propagation’, and check the image and histogram to ensure there is no change. Since there appears to be no effect, deactivate ‘Highlight reconstruction’.
@@ -1311,6 +1349,8 @@ Raw file : (Copyright Andy Astbury - Creative Common Attribution-share Alike 4.0
  [Recommendations](/tutorials/#recommendations)
 
  [Specific tools used](/tutorials/#specific-tools-used)
+
+[Alternatives](/tutorials/#alternatives)
 
 **Learning objective**
 
@@ -1478,6 +1518,8 @@ Raw file :  (Creative Common Attribution-share Alike 4.0)
  [Recommendations](/tutorials/#recommendations)
 
  [Specific tools used](/tutorials/#specific-tools-used)
+
+ [Alternatives](/tutorials/#alternatives)
 
 **Image in Neutral mode**
 <figure>
@@ -1664,3 +1706,37 @@ Check that the data displayed in ‘Final Gain & Gamut Compression’ is within 
 </figure>
 
 Obviously, as with any highly noisy image, finding the right balance between respecting the color gamut, visible detail, and noise is difficult; it's all about compromise.
+
+### Pagodas - How to process Local Contrast &  Clarity
+
+In this tutorial, we will see how to use Local contrast (Selective Editing > Wavelets) and Clarity & Sharp Mask. This is a way of presenting a more complete alternative to "Contrast Enhancement" in 'Abstract profile'
+
+The image is difficult: beneath its seemingly simple appearance, mastering the color gamut is complex.
+
+I deliberately chose extreme settings to demonstrate the system's limitations. The objective is to achieve very high local contrast values ​​in order to highlight the control of halos and artifacts. The second objective is to introduce - for users who are unaware of it - the concept of Clarity (with wavelets).
+
+ [Some principles](/tutorials/#in-summary-some-principles)
+
+ [Recommendations](/tutorials/#recommendations)
+
+ [Specific tools used](/tutorials/#specific-tools-used)
+
+ [Alternatives](/tutorials/#alternatives)
+
+ Raw file (Creative Common Attribution-share Alike 4.0):
+ [14](https://drive.google.com/file/d/1GdqejdnbW1kJFNY6y9sdQDlF2rCEGMCu/view?usp=sharing)
+ 
+ pp3 file: [Pagodas pp3](dsc1629.pp3 "dsc1629.pp3")
+
+#### Learning objectives
+
+The user will understand the ‘Game changer’ approach discussed in this tutorial:
+  - The importance of Color Propagation.
+  - The importance of Gamut Compression.
+  - White Balance optimization - Temperature correlation.
+  - The role of ‘GHS’.
+  - The place given to 'Selective Editing > Local Contrast & Wavelets'.
+  - The role of Abstract profile (without Contrast Enhancement).
+  - The use of Color Appearance & Lighting and the possible corrections of the 3 channels R, G, B.
+
+

@@ -614,9 +614,9 @@ width="600" />
 <figcaption>gradLCHScopeFeather1.jpg</figcaption>
 </figure>
 
-#### How to change Local Contrast & Clarity
+#### How to change Local Contrast & Clarity and Sharp Mask
 
-I will only elaborate on the concept of local contrast with wavelets. This tool is a combination of several wavelet-based tools. It's an "all-in-one" solution. It doesn't use any masks or layers and relies solely on signal processing.
+I will only elaborate on the concept of Local contrast with wavelets. This tool is a combination of several wavelet-based tools. It's an "all-in-one" solution. It doesn't use any masks or layers and relies solely on signal processing.
 
 I started with the algorithm I developed around 2012 or 2013 (which has been adopted by other open-source software) and the "Contrast enhancement" version in Abstract Profiles.
 
@@ -706,7 +706,21 @@ This algorithm combines two decompositions of the same image and recombines them
 
 *'Merge chroma' is used to select the intensity of the desired effect on chrominance.
 
+##### An example
 
+<figure>
+<img src="contex.jpg" title="contex.jpg" width="800" />
+<figcaption>Local contrast using Wavelets Example</figcaption>
+</figure>
+
+Raw file (Creative Common Attribution-share Alike 4.0):
+[14](https://drive.google.com/file/d/1GdqejdnbW1kJFNY6y9sdQDlF2rCEGMCu/view?usp=sharing)
+
+pp3 file: [Pagodas pp3](dsc1629.pp3 "dsc1629.pp3")
+
+[See Tutorial Game Changer - Pagodas](/tutorials/#pagodas---how-to-process-local-contrast---clarity)
+
+###### Settings 
 
 #### Six ways to change the exposure and lift the shadows
 
