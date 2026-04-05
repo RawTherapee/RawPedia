@@ -1729,6 +1729,7 @@ I deliberately chose extreme settings to demonstrate the system's limitations. T
   pp3 file: [Pagodas pp3](dsc1629.pp3 "dsc1629.pp3")
 
   pp3 file 1: [Pagodas-1 pp3](dsc1629-1.pp3 "dsc1629-1.pp3")
+
 #### Learning objectives
 
 The user will understand the ‘Game changer’ approach discussed in this tutorial:
@@ -1741,7 +1742,7 @@ The user will understand the ‘Game changer’ approach discussed in this tutor
 
 This tutorial will use two processing hypotheses. 
 * The first uses the same principles as the previous 'Game changer', but replaces 'Contrast enhancement' with 'SE > Local Contrast & Wavelets' with "Pagodas pp3"
-* The second also replaces 'Abstract Profile' and 'Color Appearance & Lighting' with 'SE Color Appearance (CAM16 & JzCzHz) with "Pagodas-1 pp3"
+* The second also replaces 'Abstract Profile' and 'Color Appearance & Lighting' with 'Selective Editing > Color Appearance (CAM16 & JzCzHz) with "Pagodas-1 pp3"
 
 #### Start of treatment
 
