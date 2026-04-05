@@ -1,5 +1,5 @@
 [Version]
-AppVersion=5.12-366-g42cf4cb86
+AppVersion=5.12-366-gc22cb0080
 Version=353
 
 [General]
@@ -19,7 +19,7 @@ HighlightComprThreshold=0
 ShadowCompr=50
 HistogramMatching=false
 CurveFromHistogramMatching=false
-ClampOOG=false
+ClampOOG=true
 CurveMode=Standard
 CurveMode2=Standard
 Curve=0;
@@ -460,14 +460,14 @@ Ghs_D_0=1.452
 Ghs_slope_0=9.0299999999999994
 Ghs_chro_0=0
 Ghs_B_0=9.4299999999999997
-Ghs_SP_0=0.082150000000000001
+Ghs_SP_0=0.083470000000000003
 SPAutoRadius_0=true
 Ghs_LP_0=0.014
 Ghs_HP_0=1
 Ghs_LC_0=30
 Ghs_MID_0=0
 Ghs_BLP_0=0
-Ghs_HLP_0=1.3743000000000001
+Ghs_HLP_0=1.3557999999999999
 Ghs_autobw_0=false
 Ghs_agx_0=true
 Ghs_smooth_0=true
@@ -773,8 +773,8 @@ LabGridcieGx=-0.50909137725830078
 LabGridcieGy=0.63090741634368896
 LabGridcieWx=-0.24963712692260742
 LabGridcieWy=-0.22000080347061157
-LabGridcieMx=-0.21678841114044189
-LabGridcieMy=-0.19251936674118042
+LabGridcieMx=-0.21697759628295898
+LabGridcieMy=-0.19293743371963501
 Preser=0
 Fbw=false
 TrcExp=true

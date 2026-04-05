@@ -1726,12 +1726,13 @@ I deliberately chose extreme settings to demonstrate the system's limitations. T
  Raw file (Creative Common Attribution-share Alike 4.0):
  [14](https://drive.google.com/file/d/1GdqejdnbW1kJFNY6y9sdQDlF2rCEGMCu/view?usp=sharing)
  
- pp3 file: [Pagodas pp3](dsc1629.pp3 "dsc1629.pp3")
+  pp3 file: [Pagodas pp3](dsc1629.pp3 "dsc1629.pp3")
+
+  pp3 file 1: [Pagodas-1 pp3](dsc1629-1.pp3 "dsc1629-1.pp3")
 
 #### Learning objectives
 
 The user will understand the ‘Game changer’ approach discussed in this tutorial:
-  - The importance of Color Propagation.
   - The importance of Gamut Compression.
   - White Balance optimization - Temperature correlation.
   - The role of ‘GHS’.
@@ -1739,11 +1740,14 @@ The user will understand the ‘Game changer’ approach discussed in this tutor
   - The role of Abstract profile (without Contrast Enhancement).
   - The use of Color Appearance & Lighting and the possible corrections of the 3 channels R, G, B.
 
+This tutorial will use two processing hypotheses. 
+* The first uses the same principles as the previous 'Game changer', but replaces 'Contrast enhancement' with 'SE > Local Contrast & Wavelets' with "Pagodas pp3"
+* The second also replaces 'Abstract Profile' and 'Color Appearance & Lighting' with 'Selective Editing > Color Appearance (CAM16 & JzCzHz) with "Pagodas-1 pp3"
 
 #### Start of treatment
 
 * Set to Neutral.
-* Highlight reconstruction – Color Propagation (Exposure Tab) - disable ‘Clip out-of-gamut colors’. At this stage, we don’t yet know if this selection is useful. It allows us to find the maximum linear value of the white point. Depending on the values ​​found later in GHS (Selective Editing) or in Gamut Compression (Color Tab) , you may or may not want to disable it.
-* The values found for ‘Maximum achromatic value’ in Gamut Compression (Color Tab), are strongly influenced by the settings chosen for ‘Clip out-of-gamut colors’ and ‘Highlight reconstruction’. In this case (‘Pagodas’), I preferred to keep ‘Highlight reconstruction > Color propagation’ enabled and uncheck ‘Clip out-of-gamut colors’
+* The values found for ‘Maximum achromatic value’ in Gamut Compression (Color Tab), are strongly influenced by the settings chosen for ‘Clip out-of-gamut colors’ and ‘Highlight reconstruction’. In this case (‘Pagodas’), Highlight reconstruction > Color Propagation is not enabled.
 * Capture Sharpening (Raw Tab) - Enabled - You’ll notice that “Contrast threshold” isn’t set to zero. You can leave the default settings. The image doesn’t appear to be very noisy, so don’t change anything for the two sliders (Presharpening denoise, Postsharpening denoise);
 * White Balance > Automatic & Refinement > Temperature correlation: The illuminant a priori, is of the Daylight type; this automatic setting should be the most suitable.
+
