@@ -42,13 +42,11 @@ the command:
 
     $ pacman -Syu
 
-MSYS2 provides [three 'shells'](https://www.msys2.org/wiki/MSYS2-introduction/) (command-line
-interfaces) for different purposes: **MSYS**, **MinGW 32-bit** and
-**MinGW 64-bit**. They can be launched through shortcuts in your Start
-menu. Most commonly you will be running a 64-bit operating system and
-will want to create applications that are optimized for that. Therefore,
-start the **MSYS2 MinGW 64-bit** shell and continue below.
-
+MSYS2 provides [four 'shells'](https://www.msys2.org/wiki/MSYS2-introduction/) (command-line
+interfaces) for different purposes: **MSYS**, **UCRT64**, **CLANG64** and
+**CLANGARM64**. They can be launched through shortcuts in your Start
+menu. *As of March 2026*, MSYS2 [recommends](https://www.msys2.org/docs/environments/) using UCRT64, if you are unsure.
+Their differences are in which architecture, toolchain and C/C++ libraries they use.
 
 ![](msys2_shell.jpg "msys2_shell.jpg")
 
@@ -66,11 +64,15 @@ manual](https://wiki.archlinux.org/index.php/pacman) for details.
  
 First, install a few miscellaneous tools:
 
-    $ pacman -S tar gzip nano make diffutils intltool git
+    $ pacman -S tar gzip nano make diffutils intltool git autotools
 
 Then install the necessary development tools and the required libraries:
 
-    $ pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-gdb mingw-w64-x86_64-make mingw-w64-x86_64-pkg-config mingw-w64-x86_64-cmake mingw-w64-x86_64-ninja mingw-w64-x86_64-gtkmm3 mingw-w64-x86_64-lcms2 mingw-w64-x86_64-fftw mingw-w64-x86_64-exiv2 mingw-w64-x86_64-lensfun mingw-w64-x86_64-libiptcdata mingw-w64-x86_64-libraw mingw-w64-x86_64-libjxl
+    $ pacman -S gcc gdb make pkg-config cmake ninja 
+    $ pacman -S mingw-w64-ucrt-x86_64-gtkmm3 mingw-w64-ucrt-x86_64-lcms2 mingw-w64-ucrt-x86_64-fftw mingw-w64-ucrt-x86_64-exiv2 mingw-w64-ucrt-x86_64-lensfun mingw-w64-ucrt-x86_64-libiptcdata
+
+If you use a different environment, replace each "mingw-w64-ucrt-x86_64"
+with the prefix of your chosen environment.
 
 ### Updating Lensfun database
 
@@ -83,7 +85,7 @@ database:
 The updater returns the path where the updated database is located.
 **Copy this path for later use!**
 
-### Download and build libiptcdata
+### Optional: Download and build libiptcdata
 
 Since December 2020 the `libiptcdata` library is provided by MSYS2 and
 no longer requires manual compilation. <i>Only if you experience
@@ -127,7 +129,7 @@ RawTherapee's source code can be cloned from [the official GitHub
 repository](https://github.com/Rawtherapee/RawTherapee):
 
     $ cd ~
-    $ git clone git://github.com/Rawtherapee/RawTherapee.git
+    $ git clone https://github.com/Rawtherapee/RawTherapee.git
     $ cd RawTherapee
 
 ### Switching branches
@@ -137,7 +139,7 @@ This is the main development branch of RawTherapee and probably what you
 want to use. To switch to a [different branch](https://github.com/Rawtherapee/RawTherapee/branches), do the
 following:
 
-    $ git checkout branchname # replace with another available branch name
+    $ git checkout windows-x86-ucrt64 # replace with another available branch name
 
 ### Create a separate directory for the build
 
@@ -161,8 +163,9 @@ following commands:
 
 If you want to fully utilize the Libraw functionality (the library integrated into Rawtherapee)
 
-    $ cmake -G "Ninja" -DLENSFUNDBDIR=put/your/lensfun/directory/here -DCMAKE_BUILD_TYPE="release" -DWITH_SYSTEM_LIBRAW="OFF" -DPROC_TARGET_NUMBER="2" -DCACHE_NAME_SUFFIX="5-dev" ..-DCACHE_NAME_SUFFIX="5-dev" ..
+    $ cmake -G "Ninja" -DLENSFUNDBDIR=put/your/lensfun/directory/here -DCMAKE_BUILD_TYPE="release" -DWITH_SYSTEM_LIBRAW="OFF" -DPROC_TARGET_NUMBER="2" -DCACHE_NAME_SUFFIX="5-dev" ..
     $ cmake --build . --target install
+
 Make sure to replace the path to the Lensfun database with the actual
 path obtained a few steps before. See the [Linux
 article](Linux#CMake.md) for more details on the various
@@ -220,8 +223,8 @@ options.
 
 ### Definition of folders
 
-- <prefix> is <MSYS2>`\mingw64`,
-- <MSYS2> is the MSYS2 installation folder,
+- `<prefix>` is `<MSYS2>\ucrt64`,
+- `<MSYS2>` is the MSYS2 installation folder,
 - and `.` is the RawTherapee installation folder.
 
 ### Copy RawTherapee executable and generated files
@@ -300,7 +303,7 @@ current list of required DLLs and EXE is:
     zlib1.dll
 
 Copy the following list of Adwaita theme files and directories from
-<prefix>`\share\icons\Adwaita\` to `.\share\icons\Adwaita\`:
+`<prefix>\share\icons\Adwaita\` to `.\share\icons\Adwaita\`:
 
     scalable\actions
     scalable\devices
@@ -368,17 +371,14 @@ upload panel, create a zip archive in which you will place both the
 newly created installer and the corresponding *AboutThisBuild.txt* file
 which can be found at the same place. Name the resulting zip archive
 following this template:
-`RawTherapee_`<version>`_win64_`<buildtype>`.zip`
+`RawTherapee_<version>_win64_<buildtype>.zip`
 
 If you are building and distributing nightly builds, follow this
-template: `RawTherapee_`<branch>`_`<version>`_win64_`<buildtype>`.zip`
+template: `RawTherapee_<branch>_<version>_win64_<buildtype>.zip`
 
 - "win64" means it can run on 64-bit Windows (in effect, only Windows 7
   and newer is officially supported).
 - The "version" will either look like `5.8` if you checkout the `5.8`
-  tag, or <code>5.8-g35abd92
-
-</code> if you checkout the `dev` branch after 5.8 was tagged.
-
+  tag, or <code>5.8-g35abd92</code> if you checkout the `dev` branch after 5.8 was tagged.
 - If you are shipping more than one build type in an installer, don't
   include <buildtype> in the name.
