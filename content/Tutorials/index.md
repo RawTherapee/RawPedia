@@ -1724,9 +1724,8 @@ I deliberately chose extreme settings to demonstrate the system's limitations. T
  [Alternatives](/tutorials/#alternatives)
 
  Raw file (Creative Common Attribution-share Alike 4.0):
- [14](https://drive.google.com/file/d/1GdqejdnbW1kJFNY6y9sdQDlF2rCEGMCu/view?usp=sharing)
- 
-  pp3 file: [Pagodas pp3](dsc1629-0.pp3 "dsc1629-0.pp3")
+ [14](https://drive.google.com/file/d/1GdqejdnbW1kJFNY6y9sdQDlF2rCEGMCu/view?usp=sharing
+  pp3 file: [Pagodas-0 pp3](dsc1629-0.pp3 "dsc1629-0.pp3")
 
   pp3 file 1: [Pagodas-1 pp3](dsc1629-1.pp3 "dsc1629-1.pp3")
 
@@ -1741,7 +1740,7 @@ The user will understand the ‘Game changer’ approach discussed in this tutor
   - The use of Color Appearance & Lighting and the possible corrections of the 3 channels R, G, B.
 
 This tutorial will use two processing hypotheses. 
-* The first uses the same principles as the previous 'Game changer', but replaces 'Contrast enhancement' with 'SE > Local Contrast & Wavelets' with "Pagodas pp3"
+* The first uses the same principles as the previous 'Game changer', but replaces 'Contrast enhancement' with 'SE > Local Contrast & Wavelets' with "Pagodas-0 pp3"
 * The second also replaces 'Abstract Profile' and 'Color Appearance & Lighting' with 'Selective Editing > Color Appearance (CAM16 & JzCzHz) with "Pagodas-1 pp3"
 
 #### Start of treatment
@@ -1787,3 +1786,31 @@ Below, you can see the influence of Raw Black Points on the image at the end of 
 </figure>
 
 Check if the histogram changes when you enable or disable it. Of course, choose the same 'Target compression Gamut' as the 'Soft proofing'. If it does change, the automatic settings should be fine. Look at the ‘Power’ incidence (the higher it is, the purer the compressed colors will be). Try slightly adjusting the values ​​of the three 'Threshold' sliders and/or ‘Maximum Distance Limits’. But most importantly, look at the values ​​of the 'Maximum achromatic value' which is near of 1.6. This means these values ​​are beyond the default profile and need to be adjusted. Hence the need for a 'Tone mapper'. As a reminder, we do not convert the data to the Target Compression Gamut (TCG), but we compress it in such a way that the critical data is inside the TCG, while remaining in the Working profile.
+
+
+#### First tutorial with "Pagodas-0 pp3"
+
+
+##### Pre-tone mapper : Generalized Hyperbolic Stretch
+<figure>
+<img src="ghs-8-0.jpg" title="ghs-8-0.jpg" width="300" />
+<figcaption>GHS</figcaption>
+</figure>
+
+In Global mode.
+
+After Enable 'Auto Black point & White point", I unchecked the box and selected Black point (linear) to minimize out-of-gamuts in shadows.
+
+##### Local Contrast & Wavelets
+
+In Global mode.
+
+<figure>
+<img src="loc-wav-8.jpg" title="loc-wav-8.jpg" width="300" />
+<figcaption>Local Contrast Wavelets - first step</figcaption>
+</figure>
+
+<figure>
+<img src="loc-wav-resid-8.jpg" title="loc-wav-resid-8.jpg" width="300" />
+<figcaption>Local Contrast Wavelets - Residual</figcaption>
+</figure>
