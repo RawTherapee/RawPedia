@@ -1726,7 +1726,7 @@ I deliberately chose extreme settings to demonstrate the system's limitations. T
  Raw file (Creative Common Attribution-share Alike 4.0):
  [14](https://drive.google.com/file/d/1GdqejdnbW1kJFNY6y9sdQDlF2rCEGMCu/view?usp=sharing)
  
-  pp3 file: [Pagodas pp3](dsc1629.pp3 "dsc1629.pp3")
+  pp3 file: [Pagodas pp3](dsc1629-0.pp3 "dsc1629-0.pp3")
 
   pp3 file 1: [Pagodas-1 pp3](dsc1629-1.pp3 "dsc1629-1.pp3")
 
@@ -1751,3 +1751,39 @@ This tutorial will use two processing hypotheses.
 * Capture Sharpening (Raw Tab) - Enabled - You’ll notice that “Contrast threshold” isn’t set to zero. You can leave the default settings. The image doesn’t appear to be very noisy, so don’t change anything for the two sliders (Presharpening denoise, Postsharpening denoise);
 * White Balance > Automatic & Refinement > Temperature correlation: The illuminant a priori, is of the Daylight type; this automatic setting should be the most suitable.
 
+##### Raw Black Points
+
+The 'Dehaze' system designed by Ingo Weirich (thanks to him) suggests in some cases, this can improve the image by optimizing the black points. This can be accompanied by either a reduction in haze or a slight improvement in the overall image contrast.
+
++ Try the "Dehaze" checkbox; you'll see the sliders move to the right, the histogram expands, especially to the left (the shadow areas), and the image is brighter and more colorful: Red:+2, Green 1:+26, Green 2:+26, Blue:+14.
+
+
+[Raw Black Points](/raw_black_points/)
+
+<figure>
+<img src="raw-tools-8.jpg" title="raw-tools-8.jpg" width="300" />
+<figcaption>Demosaicing & Raw Black Points</figcaption>
+</figure>
+
+Below, you can see the influence of Raw Black Points on the image at the end of the process.
++ Note the difference on the horizontal axis, close to zero.
++ Note that the overall histogram is better filled.
+<figure>
+<img src="rawblack-0-8.jpg" title="rawblack-0-8.jpg" width="300" />
+<figcaption>Histogram without Raw Black points</figcaption>
+</figure>
+
+<figure>
+<img src="rawblack-1-8.jpg" title="rawblack-1-8.jpg" width="300" />
+<figcaption>Histogram with Raw Black points</figcaption>
+</figure>
+
++ Be **very careful**, these settings are very sensitive and can contribute to making the images unusable.
+
+#### Gamut Compression
+<figure>
+<img src="gam-comp-8.jpg" title="gam-comp-8.jpg" width="300" />
+<figcaption>Gamut Compression</figcaption>
+</figure>
+
+Check if the histogram changes when you enable or disable it. Of course, choose the same 'Target compression Gamut' as the 'Soft proofing'. If it does change, the automatic settings should be fine. Look at the ‘Power’ incidence (the higher it is, the purer the compressed colors will be). Try slightly adjusting the values ​​of the three 'Threshold' sliders and/or ‘Maximum Distance Limits’. But most importantly, look at the values ​​of the 'Maximum achromatic value' which is near of 1.6. This means these values ​​are beyond the default profile and need to be adjusted. Hence the need for a 'Tone mapper'. As a reminder, we do not convert the data to the Target Compression Gamut (TCG), but we compress it in such a way that the critical data is inside the TCG, while remaining in the Working profile.
