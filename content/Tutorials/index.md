@@ -1787,6 +1787,13 @@ Below, you can see the influence of Raw Black Points on the image at the end of 
 
 Check if the histogram changes when you enable or disable it. Of course, choose the same 'Target compression Gamut' as the 'Soft proofing'. If it does change, the automatic settings should be fine. Look at the ‘Power’ incidence (the higher it is, the purer the compressed colors will be). Try slightly adjusting the values ​​of the three 'Threshold' sliders and/or ‘Maximum Distance Limits’. But most importantly, look at the values ​​of the 'Maximum achromatic value' which is near of 1.6. This means these values ​​are beyond the default profile and need to be adjusted. Hence the need for a 'Tone mapper'. As a reminder, we do not convert the data to the Target Compression Gamut (TCG), but we compress it in such a way that the critical data is inside the TCG, while remaining in the Working profile.
 
+**A difficult gamut in the yellows**
+<figure>
+<img src="gam-yel-8.jpg" title="gam-yel-8.jpg" width="800" />
+<figcaption>Gamut sRGB & Rec2020 in Yellows</figcaption>
+</figure>
+
+Note the narrow gamut for yellows (the dominant colors of the Pagodas). The graph shows Rec2020 in white and sRGB in yellow.
 
 #### First tutorial with "Pagodas-0 pp3"
 
