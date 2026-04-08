@@ -1812,12 +1812,45 @@ After Enable 'Auto Black point & White point", I unchecked the box and selected 
 
 In Global mode.
 
+For further explanation, see the link in 'Selective Editing > Local contrast & Wavelets'
+
+[Local contrast & Clarity](/local_adjustments/#how-to-change-local-contrast--clarity-and-sharp-mask)
+
 <figure>
 <img src="loc-wav-8.jpg" title="loc-wav-8.jpg" width="300" />
 <figcaption>Local Contrast Wavelets - first step</figcaption>
 </figure>
 
+**Some remarks**
+
+* Changes the Wavelet levels values; the further the double slider is to the right, the higher the levels will be implemented. Check that the 'preview' size on your system allows for viewing values ​​of 512x512 and 1014x1024. These values ​​will be available in TIF or JPG format.
+* Modify the shape of the curve. The essential part is the center. Modifying the left side has little effect, but significantly modifying the right side can lead to artifacts. This has no relation to luminance.
+* Look at the effect of 'Attenuation response' and 'Gradient levels'
+* Also look at the effect of 'Clarity' and the 2 sliders.
+* The action takes place across the entire image: the pagodas, but also the buildings, the background, the sky.
+* Despite these extreme settings, it seems that halos and artifacts (due to local contrast) are controlled.
+
 <figure>
 <img src="loc-wav-resid-8.jpg" title="loc-wav-resid-8.jpg" width="300" />
 <figcaption>Local Contrast Wavelets - Residual</figcaption>
+</figure>
+
+This second screenshot highlights the "Residual image" section. Two settings require your attention:
+* Residual image contrast - which will 'balance the overall contrast' with the very strong local contrast
+* Gamma and Slope: will brighten the residual image in the shadows and reduce out-of-gamut areas.
+
+**A few views - from TIFF**
+
+Original
+
+<figure>
+<img src="loc-waw-without-8.jpg" title="loc-waw-without-8.jpg" width="800" />
+<figcaption>Local Contrast Wavelets - without</figcaption>
+</figure>
+
+Local Contrast
+
+<figure>
+<img src="loc-waw-with-8.jpg" title="loc-waw-with-8.jpg" width="800" />
+<figcaption>Local Contrast Wavelets</figcaption>
 </figure>
