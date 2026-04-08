@@ -1724,9 +1724,8 @@ I deliberately chose extreme settings to demonstrate the system's limitations. T
  [Alternatives](/tutorials/#alternatives)
 
  Raw file (Creative Common Attribution-share Alike 4.0):
- [14](https://drive.google.com/file/d/1GdqejdnbW1kJFNY6y9sdQDlF2rCEGMCu/view?usp=sharing)
- 
-  pp3 file: [Pagodas pp3](dsc1629.pp3 "dsc1629.pp3")
+ [14](https://drive.google.com/file/d/1GdqejdnbW1kJFNY6y9sdQDlF2rCEGMCu/view?usp=sharing
+  pp3 file: [Pagodas-0 pp3](dsc1629-0.pp3 "dsc1629-0.pp3")
 
   pp3 file 1: [Pagodas-1 pp3](dsc1629-1.pp3 "dsc1629-1.pp3")
 
@@ -1741,7 +1740,7 @@ The user will understand the ‘Game changer’ approach discussed in this tutor
   - The use of Color Appearance & Lighting and the possible corrections of the 3 channels R, G, B.
 
 This tutorial will use two processing hypotheses. 
-* The first uses the same principles as the previous 'Game changer', but replaces 'Contrast enhancement' with 'SE > Local Contrast & Wavelets' with "Pagodas pp3"
+* The first uses the same principles as the previous 'Game changer', but replaces 'Contrast enhancement' with 'SE > Local Contrast & Wavelets' with "Pagodas-0 pp3"
 * The second also replaces 'Abstract Profile' and 'Color Appearance & Lighting' with 'Selective Editing > Color Appearance (CAM16 & JzCzHz) with "Pagodas-1 pp3"
 
 #### Start of treatment
@@ -1751,3 +1750,113 @@ This tutorial will use two processing hypotheses.
 * Capture Sharpening (Raw Tab) - Enabled - You’ll notice that “Contrast threshold” isn’t set to zero. You can leave the default settings. The image doesn’t appear to be very noisy, so don’t change anything for the two sliders (Presharpening denoise, Postsharpening denoise);
 * White Balance > Automatic & Refinement > Temperature correlation: The illuminant a priori, is of the Daylight type; this automatic setting should be the most suitable.
 
+##### Raw Black Points
+
+The 'Dehaze' system designed by Ingo Weirich (thanks to him) suggests in some cases, this can improve the image by optimizing the black points. This can be accompanied by either a reduction in haze or a slight improvement in the overall image contrast.
+
++ Try the "Dehaze" checkbox; you'll see the sliders move to the right, the histogram expands, especially to the left (the shadow areas), and the image is brighter and more colorful: Red:+2, Green 1:+26, Green 2:+26, Blue:+14.
+
+
+[Raw Black Points](/raw_black_points/)
+
+<figure>
+<img src="raw-tools-8.jpg" title="raw-tools-8.jpg" width="300" />
+<figcaption>Demosaicing & Raw Black Points</figcaption>
+</figure>
+
+Below, you can see the influence of Raw Black Points on the image at the end of the process.
++ Note the difference on the horizontal axis, close to zero.
++ Note that the overall histogram is better filled.
+<figure>
+<img src="rawblack-0-8.jpg" title="rawblack-0-8.jpg" width="300" />
+<figcaption>Histogram without Raw Black points</figcaption>
+</figure>
+
+<figure>
+<img src="rawblack-1-8.jpg" title="rawblack-1-8.jpg" width="300" />
+<figcaption>Histogram with Raw Black points</figcaption>
+</figure>
+
++ Be **very careful**, these settings are very sensitive and can contribute to making the images unusable.
+
+#### Gamut Compression
+<figure>
+<img src="gam-comp-8.jpg" title="gam-comp-8.jpg" width="300" />
+<figcaption>Gamut Compression</figcaption>
+</figure>
+
+Check if the histogram changes when you enable or disable it. Of course, choose the same 'Target compression Gamut' as the 'Soft proofing'. If it does change, the automatic settings should be fine. Look at the ‘Power’ incidence (the higher it is, the purer the compressed colors will be). Try slightly adjusting the values ​​of the three 'Threshold' sliders and/or ‘Maximum Distance Limits’. But most importantly, look at the values ​​of the 'Maximum achromatic value' which is near of 1.6. This means these values ​​are beyond the default profile and need to be adjusted. Hence the need for a 'Tone mapper'. As a reminder, we do not convert the data to the Target Compression Gamut (TCG), but we compress it in such a way that the critical data is inside the TCG, while remaining in the Working profile.
+
+**A difficult gamut in the yellows**
+<figure>
+<img src="gam-yel-8.jpg" title="gam-yel-8.jpg" width="800" />
+<figcaption>Gamut sRGB & Rec2020 in Yellows</figcaption>
+</figure>
+
+Note the narrow gamut for yellows (the dominant colors of the Pagodas). The graph shows Rec2020 in white and sRGB in yellow.
+
+#### First tutorial with "Pagodas-0 pp3"
+
+
+##### Pre-tone mapper : Generalized Hyperbolic Stretch
+<figure>
+<img src="ghs-8-0.jpg" title="ghs-8-0.jpg" width="300" />
+<figcaption>GHS</figcaption>
+</figure>
+
+In Global mode.
+
+After Enable 'Auto Black point & White point", I unchecked the box and selected Black point (linear) to minimize out-of-gamuts in shadows.
+
+##### Local Contrast & Wavelets
+
+In Global mode.
+
+For further explanation, see the link in 'Selective Editing > Local contrast & Wavelets'
+
+[Local contrast & Clarity](/local_adjustments/#how-to-change-local-contrast--clarity-and-sharp-mask)
+
+<figure>
+<img src="loc-wav-8.jpg" title="loc-wav-8.jpg" width="300" />
+<figcaption>Local Contrast Wavelets - first step</figcaption>
+</figure>
+
+**Some remarks**
+
+* Changes the Wavelet levels values; the further the double slider is to the right, the higher the levels will be implemented. Check that the 'preview' size on your system allows for viewing values ​​of 512x512 and 1014x1024. These values ​​will be available in TIF or JPG format.
+* Modify the shape of the curve. The essential part is the center. Modifying the left side has little effect, but significantly modifying the right side can lead to artifacts. This has no relation to luminance.
+* Look at the effect of 'Attenuation response' and 'Gradient levels'
+* Also look at the effect of 'Clarity' and the 2 sliders.
+* The action takes place across the entire image: the pagodas, but also the buildings, the background, the sky.
+* Despite these extreme settings, it seems that halos and artifacts (due to local contrast) are controlled.
+
+<figure>
+<img src="loc-wav-resid-8.jpg" title="loc-wav-resid-8.jpg" width="300" />
+<figcaption>Local Contrast Wavelets - Residual</figcaption>
+</figure>
+
+This second screenshot highlights the "Residual image" section. Two settings require your attention:
+* Residual image contrast - which will 'balance the overall contrast' with the very strong local contrast
+* Gamma and Slope: will brighten the residual image in the shadows and reduce out-of-gamut areas.
+
+**A few views - from TIFF**
+
+Original
+
+<figure>
+<img src="loc-waw-without-8.jpg" title="loc-waw-without-8.jpg" width="800" />
+<figcaption>Local Contrast Wavelets - without</figcaption>
+</figure>
+
+Local Contrast
+
+<figure>
+<img src="loc-waw-with-8.jpg" title="loc-waw-with-8.jpg" width="800" />
+<figcaption>Local Contrast Wavelets</figcaption>
+</figure>
+
+Layers - difference
+<figure>
+<img src="loc-waw-diff-8.jpg" title="loc-waw-diff-8.jpg" width="800" />
+<figcaption>Local Contrast Wavelets - differences</figcaption>
+</figure>
