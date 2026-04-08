@@ -1854,3 +1854,9 @@ Local Contrast
 <img src="loc-waw-with-8.jpg" title="loc-waw-with-8.jpg" width="800" />
 <figcaption>Local Contrast Wavelets</figcaption>
 </figure>
+
+Layers - difference
+<figure>
+<img src="loc-waw-diff-8.jpg" title="loc-waw-diff-8.jpg" width="800" />
+<figcaption>Local Contrast Wavelets - differences</figcaption>
+</figure>
