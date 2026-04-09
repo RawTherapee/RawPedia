@@ -1983,3 +1983,42 @@ Layers - difference
 <img src="loc-waw-diff-8-1.jpg" title="loc-waw-diff-8-1.jpg" width="800" />
 <figcaption>Local Contrast Wavelets - differences</figcaption>
 </figure>
+
+
+##### Color Appearance (CAM16 & JzCzHz) - the pagodas
+
+**Settings**
+
+<figure>
+<img src="cam16pag-8-1.jpg" title="cam16pag-8-1.jpg" width="800" />
+<figcaption>CAM16 - Pagodas</figcaption>
+</figure>
+
+Note:
+* In Settings : ΔE decay set to 4 - to avoid artifacts in sky
+* Scope = 60
+* Blur shape detection set to 31 - to avoid artifacts and out of gamut.
+
+**Source Data Adjustments**
+
+<figure>
+<img src="cam16pag-sda-8-1.jpg" title="cam16pag-sda-8-1.jpg" width="300" />
+<figcaption>CAM16 - Pagodas - Source Data Adjustments</figcaption>
+</figure>
+
+Note:
+* Gamma and Slope
+* Attenuation threshold - to avoid out of gamut.
+* Tone Mapping Operators - Gamma based - to avoid out of gamut.
+
+**CAM16 Image Adjustments**
+
+<figure>
+<img src="cam16pag-rgb-8-1.jpg" title="cam16pag-rgb-8-1.jpg" width="300" />
+<figcaption>CAM16 - Pagodas - Image adjustments</figcaption>
+</figure>
+
+Note:
+* Contrast (Q) = 20
+* Saturation (s) = 20
+* Hue - red rotation set to 13,  to "facilitate" the gamut in the yellows.
