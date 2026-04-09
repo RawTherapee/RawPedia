@@ -1985,7 +1985,7 @@ Layers - difference
 </figure>
 
 
-##### Color Appearance (CAM16 & JzCzHz) - the pagodas
+##### Color Appearance (CAM16 & JzCzHz) - the Pagodas
 
 **Settings**
 
@@ -1995,6 +1995,7 @@ Layers - difference
 </figure>
 
 Note:
+* Normal spot
 * In Settings : ΔE decay set to 4 - to avoid artifacts in sky
 * Scope = 60
 * Blur shape detection set to 31 - to avoid artifacts and out of gamut.
@@ -2010,7 +2011,7 @@ Note:
 * Gamma and Slope
 * Attenuation threshold - to avoid out of gamut.
 * Tone Mapping Operators - Gamma based - to avoid out of gamut.
-
+ 
 **CAM16 Image Adjustments**
 
 <figure>
@@ -2022,3 +2023,41 @@ Note:
 * Contrast (Q) = 20
 * Saturation (s) = 20
 * Hue - red rotation set to 13,  to "facilitate" the gamut in the yellows.
+
+##### Color Appearance (CAM16 & JzCzHz) - the Sky
+
+**Settings**
+
+<figure>
+<img src="cam16sky-8-1.jpg" title="cam16sky-8-1.jpg" width="800" />
+<figcaption>CAM16 - Pagodas Sky</figcaption>
+</figure>
+
+Note:
+* Full image
+* In Settings : ΔE decay set to 4 - to avoid artifacts in sky
+* Scope = 12
+* Blur shape detection set to 10 - to avoid artifacts and out of gamut.
+
+**Source Data Adjustments**
+
+<figure>
+<img src="cam16sky-sda-8-1.jpg" title="cam16pag-sky-8-1.jpg" width="300" />
+<figcaption>CAM16 - Pagodas - Sky - Source Data Adjustments</figcaption>
+</figure>
+
+Note:
+* Gamma and Slope
+
+ 
+**CAM16 Image Adjustments**
+
+<figure>
+<img src="cam16sky-rgb-8-1.jpg" title="cam16pag-sky-8-1.jpg" width="300" />
+<figcaption>CAM16 - Pagodas - Sky - Image adjustments</figcaption>
+</figure>
+
+Note:
+* Hue - blue rotation set to 15.4
+* Saturation - blue set to 6.5
+* Curve brightness
