@@ -1967,19 +1967,19 @@ This second screenshot highlights the "Residual image" section. Two settings req
 Original
 
 <figure>
-<img src="loc-waw-without-8.jpg" title="loc-waw-without-8.jpg" width="800" />
+<img src="loc-waw-without-8-1.jpg" title="loc-waw-without-8-1.jpg" width="800" />
 <figcaption>Local Contrast Wavelets - without</figcaption>
 </figure>
 
 Local Contrast
 
 <figure>
-<img src="loc-waw-with-8.jpg" title="loc-waw-with-8.jpg" width="800" />
+<img src="loc-waw-with-8-1.jpg" title="loc-waw-with-8-1.jpg" width="800" />
 <figcaption>Local Contrast Wavelets</figcaption>
 </figure>
 
 Layers - difference
 <figure>
-<img src="loc-waw-diff-8.jpg" title="loc-waw-diff-8.jpg" width="800" />
+<img src="loc-waw-diff-8-1.jpg" title="loc-waw-diff-8-1.jpg" width="800" />
 <figcaption>Local Contrast Wavelets - differences</figcaption>
 </figure>
