@@ -2061,3 +2061,10 @@ Note:
 * Hue - blue rotation set to 15.4
 * Saturation - blue set to 6.5
 * Curve brightness
+
+#### Synthesis
+
+Of course, this image is just one case among many; each image is unique. But overall:
+* Unless you need the advanced features of Color Appearance & Lighting (CIECAM)
+* I think it's better to use Selective Editing > Color Appearance (CAM16 & JzCzHz) and Selective Editing > Local Contrast & Wavelets
+* The system offers more flexibility and allows for better control of out-of-gamut effects and artifacts.
