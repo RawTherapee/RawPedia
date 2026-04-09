@@ -1724,7 +1724,7 @@ I deliberately chose extreme settings to demonstrate the system's limitations. T
  [Alternatives](/tutorials/#alternatives)
 
  Raw file (Creative Common Attribution-share Alike 4.0):
- [14](https://drive.google.com/file/d/1GdqejdnbW1kJFNY6y9sdQDlF2rCEGMCu/view?usp=sharing
+ [14](https://drive.google.com/file/d/1GdqejdnbW1kJFNY6y9sdQDlF2rCEGMCu/view?usp=sharing)
   
   pp3 file: [Pagodas-0 pp3](dsc1629-0.pp3 "dsc1629-0.pp3")
 
@@ -1880,7 +1880,7 @@ Layers - difference
 [TRC Tone Response Curve](/color_management/#trc---tone-response-curve)
 
 
-#### Color Appearance & Lighting
+##### Color Appearance & Lighting
 + No#w we'll explore the new 'Red Green Blue' tool, which will allow you to finely control each of the 3 RGB channels.
 + First : enable ‘Color Appearance & Lighting’ and choose ‘Complexity = Advanced’. This gives you more choices among the CIECAM variables. Thus, you have : Lightness (J) and Contrast (J), Brightness (Q) and Contrast (Q), Chroma (C), Saturation (s), Colorfulness (M), hue raotation (h) , and 3 tones curves for Lightness, Brightness, and Color.
 + Note the default 'Scene conditions' settings which you could change if you know exactly the shooting conditions.
@@ -1889,7 +1889,7 @@ Layers - difference
 
 [CIECAM](/ciecam02/#color-appearance--lighting-ciecam0216-et-color-appearance-cam16--jzczhz---tutorial)
 
-##### Red - Green - Blue
+###### Red - Green - Blue
 
 +  You can modify each R, G, B channel to finely retouch colors or simulate films:
     - Rotate each color by degrees.
@@ -1914,3 +1914,72 @@ Of course, the settings are quite arbitrary, depending on your tastes.
 **Back to Abstract Profile**
 
 Return to the Abstract profile, ‘Final Gain & Gamut Compression’ and check the information about gamut control.
+
+#### Second tutorial with "Pagodas-1 pp3"
+
+##### Pre-tone mapper : Generalized Hyperbolic Stretch
+<figure>
+<img src="ghs-8-1.jpg" title="ghs-8-1.jpg" width="300" />
+<figcaption>GHS</figcaption>
+</figure>
+
+In Global mode.
+
+After Enable 'Auto Black point & White point", I unchecked the box and selected Black point (linear) to minimize out-of-gamuts in shadows.
+
+Note: The higher values ​​of Stretch factor (D) than in the first tutorial
+
+##### Local Contrast & Wavelets
+
+In Normal mode.
+
+For further explanation, see the link in 'Selective Editing > Local contrast & Wavelets'
+
+[Local contrast & Clarity](/local_adjustments/#how-to-change-local-contrast--clarity-and-sharp-mask)
+
+<figure>
+<img src="loc-wav-8-1.jpg" title="loc-wav-8-1.jpg" width="800" />
+<figcaption>Local Contrast Wavelets - Normal mode</figcaption>
+</figure>
+
+**Some remarks**
+
+* Changes the Wavelet levels values; the further the double slider is to the right, the higher the levels will be implemented. Check that the 'preview' size on your system allows for viewing values ​​of 512x512 and 1014x1024. These values ​​will be available in TIF or JPG format.
+* Modify the shape of the curve. The essential part is the center. Modifying the left side has little effect, but significantly modifying the right side can lead to artifacts. This has no relation to luminance.
+* Look at the effect of 'Attenuation response' and 'Gradient levels'
+* Also look at the effect of 'Clarity' and the 2 sliders.
+* The action is limited by the shape of the Spot and the deltaE, to favor the 'pagodas' and, to a lesser extent, the Buildings, and to avoid influencing the sky too much.
+* Of course, you can change the position of the Spot's center, the Spot's shape, and the Scope value, depending on the desired effect.
+* Note the higher values ​​in the settings for both 'Local contrast' and 'Clarity'
+* Despite these extreme settings, it seems that halos and artifacts (due to local contrast) are controlled.
+
+<figure>
+<img src="loc-wav-resid-8-1.jpg" title="loc-wav-resid-8-1.jpg" width="300" />
+<figcaption>Local Contrast Wavelets - Residual</figcaption>
+</figure>
+
+This second screenshot highlights the "Residual image" section. Two settings require your attention:
+* Residual image contrast - which will 'balance the overall contrast' with the very strong local contrast
+* Residual image chroma.
+
+**A few views - from TIFF**
+
+Original
+
+<figure>
+<img src="loc-waw-without-8.jpg" title="loc-waw-without-8.jpg" width="800" />
+<figcaption>Local Contrast Wavelets - without</figcaption>
+</figure>
+
+Local Contrast
+
+<figure>
+<img src="loc-waw-with-8.jpg" title="loc-waw-with-8.jpg" width="800" />
+<figcaption>Local Contrast Wavelets</figcaption>
+</figure>
+
+Layers - difference
+<figure>
+<img src="loc-waw-diff-8.jpg" title="loc-waw-diff-8.jpg" width="800" />
+<figcaption>Local Contrast Wavelets - differences</figcaption>
+</figure>
