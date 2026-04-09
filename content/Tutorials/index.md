@@ -1725,6 +1725,7 @@ I deliberately chose extreme settings to demonstrate the system's limitations. T
 
  Raw file (Creative Common Attribution-share Alike 4.0):
  [14](https://drive.google.com/file/d/1GdqejdnbW1kJFNY6y9sdQDlF2rCEGMCu/view?usp=sharing
+  
   pp3 file: [Pagodas-0 pp3](dsc1629-0.pp3 "dsc1629-0.pp3")
 
   pp3 file 1: [Pagodas-1 pp3](dsc1629-1.pp3 "dsc1629-1.pp3")
@@ -1860,3 +1861,56 @@ Layers - difference
 <img src="loc-waw-diff-8.jpg" title="loc-waw-diff-8.jpg" width="800" />
 <figcaption>Local Contrast Wavelets - differences</figcaption>
 </figure>
+
+
+##### Abstract Profile : Adjusting Tones
+
++ Balance the lights in the image.
++ Significantly increase local contrast.
++ Adjust gamma and slope to achieve the desired result and Attenuation threshold. This is where you can change the background, making it darker or lighter by adjusting the 'Slope' setting.
++ The RGBmax indicator should display a value less than 1. If it doesn't, either change the previous AP or GHS settings, or adjust 'Final Gain & Gamut Compression'. You will see the RT process values ​​displayed below the 'Gain (Ev)' and 'Target gamut' settings. To display the data, at least one of the two settings must not be zero or 'None'. I recommend setting 'Target gamut' to sRGB (the same setting you used for Soft Proofing) and in Gamut Compression (Color Tab).
+<figure>
+<img src="ap-trc-8.jpg" title="ap-trc-8.jpg" width="300" />
+<figcaption>Abstract Profile</figcaption>
+</figure>
+
++ In principle, there’s no point in using the ‘Primaries & Illuminant’ module here.
++ You can easily see the effect of the last controls in 'Final Gain & Gamut Compression', set 'Target Gamut' to 'None' and you will see the out-of-gamut data appear, also observe the histogram.
+
+[TRC Tone Response Curve](/color_management/#trc---tone-response-curve)
+
+
+#### Color Appearance & Lighting
++ No#w we'll explore the new 'Red Green Blue' tool, which will allow you to finely control each of the 3 RGB channels.
++ First : enable ‘Color Appearance & Lighting’ and choose ‘Complexity = Advanced’. This gives you more choices among the CIECAM variables. Thus, you have : Lightness (J) and Contrast (J), Brightness (Q) and Contrast (Q), Chroma (C), Saturation (s), Colorfulness (M), hue raotation (h) , and 3 tones curves for Lightness, Brightness, and Color.
++ Note the default 'Scene conditions' settings which you could change if you know exactly the shooting conditions.
++ Note the default 'Viewing conditions' settings which you could change to adapt them to your viewing environment (the room you are in, its ambiance, the 'Absolute luminance' estimate, and Surround…).
++ I chose 'Lightness + Saturation' and slightly increased the overall saturation and Contrast (J).
+
+[CIECAM](/ciecam02/#color-appearance--lighting-ciecam0216-et-color-appearance-cam16--jzczhz---tutorial)
+
+##### Red - Green - Blue
+
++  You can modify each R, G, B channel to finely retouch colors or simulate films:
+    - Rotate each color by degrees.
+    - Change the saturation (s) in the sense of a CAM (Color Appearance Model).
+    - Change the brightness (Q) with a curve that allows you to adapt the contrast and brightness to each situation.
+
++ As a reminder, in CIECAM there are a total of 9 variables, 6 of which are accessible to the user in RT: Lightness (J), Brightness (Q), Saturation (s), Chroma (C), Colorfulness (M), and Hue rotation (h). They are interdependent. For example Chroma = saturation * saturation * brightness.
+
+In the case of the ‘Pagodas’ I arrived at the settings used in pp3. I did not activate the brightness curves because artifacts appeared in the sky at the red and blue transitions.
+
+To simplify use, I’ve only included one slider per channel for hue rotation, and one slider per channel for Saturation (s). I could have also included a tone equalizer for the red, green, and blue range; If that proves useful, aside from complicating the interface, it doesn’t pose any problem. Note that the 3 Brightness curves allow you to adjust the brightness and contrast for each color range. Specifically, brightness acts on the perceived chroma via the (s) Saturation function.
+
+Of course, the settings are quite arbitrary, depending on your tastes.
+
+[Red Green Blue](/ciecam02/#red---green---blue---hue-rotation-h---saturation-s---brightness-curve-q)
+
+<figure>
+<img src="red-green-blue-8.jpg" title="red-green-blue-8.jpg" width="300" />
+<figcaption>CIECAM Red Green Blue</figcaption>
+</figure>
+
+**Back to Abstract Profile**
+
+Return to the Abstract profile, ‘Final Gain & Gamut Compression’ and check the information about gamut control.
