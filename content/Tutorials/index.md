@@ -1730,6 +1730,15 @@ I deliberately chose extreme settings to demonstrate the system's limitations. T
 
   pp3 file 1: [Pagodas-1 pp3](dsc1629-1.pp3 "dsc1629-1.pp3")
 
+  **Image neutral**
+
+<figure>
+<img src="pagodas-neut.jpg" title="pagodas-neut.jpg" width="800" />
+<figcaption>Neutral</figcaption>
+</figure>
+
+Look at the out-of-gamut shots in the towers.
+
 #### Learning objectives
 
 The user will understand the ‘Game changer’ approach discussed in this tutorial:
@@ -1796,6 +1805,8 @@ Check if the histogram changes when you enable or disable it. Of course, choose 
 
 Note the narrow gamut for yellows (the dominant colors of the Pagodas). The graph shows Rec2020 in white and sRGB in yellow.
 
+This will have at least two consequences: strong compression in 'Gamut compression' and a likely need to rotate reds and yellows to fit within the sRGB gamut.
+
 #### First tutorial with "Pagodas-0 pp3"
 
 
@@ -1830,6 +1841,7 @@ For further explanation, see the link in 'Selective Editing > Local contrast & W
 * Also look at the effect of 'Clarity' and the 2 sliders.
 * The action takes place across the entire image: the pagodas, but also the buildings, the background, the sky.
 * Despite these extreme settings, it seems that halos and artifacts (due to local contrast) are controlled.
+* If you wish to implement "Sharp mask" (Clarity & Sharp mask) without making any changes to Local Contrast, you will need to open another Spot with Wavelets levels reduced to Bottom-right at 4.
 
 <figure>
 <img src="loc-wav-resid-8.jpg" title="loc-wav-resid-8.jpg" width="300" />
@@ -1861,6 +1873,8 @@ Layers - difference
 <img src="loc-waw-diff-8.jpg" title="loc-waw-diff-8.jpg" width="800" />
 <figcaption>Local Contrast Wavelets - differences</figcaption>
 </figure>
+
+A black color indicates that there are no changes. The greater the intensity (luminance) of this difference, the greater the change.
 
 
 ##### Abstract Profile : Adjusting Tones
@@ -1917,6 +1931,7 @@ Return to the Abstract profile, ‘Final Gain & Gamut Compression’ and check t
 
 #### Second tutorial with "Pagodas-1 pp3"
 
+
 ##### Pre-tone mapper : Generalized Hyperbolic Stretch
 <figure>
 <img src="ghs-8-1.jpg" title="ghs-8-1.jpg" width="300" />
@@ -1952,6 +1967,8 @@ For further explanation, see the link in 'Selective Editing > Local contrast & W
 * Of course, you can change the position of the Spot's center, the Spot's shape, and the Scope value, depending on the desired effect.
 * Note the higher values ​​in the settings for both 'Local contrast' and 'Clarity'
 * Despite these extreme settings, it seems that halos and artifacts (due to local contrast) are controlled.
+* If you wish to implement "Sharp mask" (Clarity & Sharp mask) without making any changes to Local Contrast, you will need to open another Spot with Wavelets levels reduced to Bottom-right at 4.
+
 
 <figure>
 <img src="loc-wav-resid-8-1.jpg" title="loc-wav-resid-8-1.jpg" width="300" />
@@ -1984,6 +2001,7 @@ Layers - difference
 <figcaption>Local Contrast Wavelets - differences</figcaption>
 </figure>
 
+A black color indicates that there are no changes. The greater the intensity (luminance) of this difference, the greater the change.
 
 ##### Color Appearance (CAM16 & JzCzHz) - the Pagodas
 
@@ -2069,4 +2087,6 @@ Of course, this image is just one case among many; each image is unique. But ove
 * I think it's better to use 'Selective Editing > Color Appearance (CAM16 & JzCzHz)' and 'Selective Editing > Local Contrast & Wavelets'
 * The system offers more flexibility and allows for better control of out-of-gamut effects and artifacts.
 * This choice allows for more differentiated action of Local Contrast, and better color management.
+
+As a reminder, the settings are very pronounced for educational purposes. In reality, lower values ​​are preferable.
 
