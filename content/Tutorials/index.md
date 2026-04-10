@@ -1797,6 +1797,8 @@ Below, you can see the influence of Raw Black Points on the image at the end of 
 
 Check if the histogram changes when you enable or disable it. Of course, choose the same 'Target compression Gamut' as the 'Soft proofing'. If it does change, the automatic settings should be fine. Look at the ‘Power’ incidence (the higher it is, the purer the compressed colors will be). Try slightly adjusting the values ​​of the three 'Threshold' sliders and/or ‘Maximum Distance Limits’. But most importantly, look at the values ​​of the 'Maximum achromatic value' which is near of 1.6. This means these values ​​are beyond the default profile and need to be adjusted. Hence the need for a 'Tone mapper'. As a reminder, we do not convert the data to the Target Compression Gamut (TCG), but we compress it in such a way that the critical data is inside the TCG, while remaining in the Working profile.
 
+Try changing the slider values, for example in the 'Yellows'... it's all about compromise, between gamut control and color purity
+
 **A difficult gamut in the yellows**
 <figure>
 <img src="gam-yel-8.jpg" title="gam-yel-8.jpg" width="800" />
@@ -1837,8 +1839,8 @@ For further explanation, see the link in 'Selective Editing > Local contrast & W
 
 * Changes the Wavelet levels values; the further the double slider is to the right, the higher the levels will be implemented. Check that the 'preview' size on your system allows for viewing values ​​of 512x512 and 1014x1024. These values ​​will be available in TIF or JPG format.
 * Modify the shape of the curve. The essential part is the center. Modifying the left side has little effect, but significantly modifying the right side can lead to artifacts. This has no relation to luminance.
-* Look at the effect of 'Attenuation response' and 'Gradient levels'
-* Also look at the effect of 'Clarity' and the 2 sliders.
+* Look at the effect of 'Attenuation response' and 'Gradient levels' and (in Advanced mode) 'Offset'.
+* Also look at the effect of 'Clarity' and the 2 sliders Merge luma & Merge chroma.
 * The action takes place across the entire image: the pagodas, but also the buildings, the background, the sky.
 * Despite these extreme settings, it seems that halos and artifacts (due to local contrast) are controlled.
 * If you wish to implement "Sharp mask" (Clarity & Sharp mask) without making any changes to Local Contrast, you will need to open another Spot with Wavelets levels reduced to Bottom-right at 4.
@@ -2042,6 +2044,15 @@ Note:
 * Saturation (s) = 20
 * Hue - red rotation set to 13,  to "facilitate" the gamut in the yellows.
 
+**Final Gain & Gamut Compression**
+
+<figure>
+<img src="cam16pag-fin-8-1.jpg" title="cam16pag-fin-8-1.jpg" width="300" />
+<figcaption>CAM16 - Pagodas - Final Gain & Gamut Compression</figcaption>
+</figure>
+
+Try disabling Gamut Compression: Target gamut = none.
+
 ##### Color Appearance (CAM16 & JzCzHz) - the Sky
 
 **Settings**
@@ -2079,6 +2090,15 @@ Note:
 * Hue - blue rotation set to 15.4
 * Saturation - blue set to 6.5
 * Curve brightness
+
+**Final Gain & Gamut Compression**
+
+<figure>
+<img src="cam16sky-fin-8-1.jpg" title="cam16sky-fin-8-1.jpg" width="300" />
+<figcaption>CAM16 - Pagodas - Sky - Final Gain & Gamut Compression</figcaption>
+</figure>
+
+
 
 #### Synthesis - Pagodas
 
