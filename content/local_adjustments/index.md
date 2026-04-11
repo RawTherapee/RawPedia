@@ -716,7 +716,7 @@ This algorithm combines two decompositions of the same image and recombines them
 Raw file (Creative Common Attribution-share Alike 4.0):
 [14](https://drive.google.com/file/d/1GdqejdnbW1kJFNY6y9sdQDlF2rCEGMCu/view?usp=sharing)
 
-pp3 file: [Pagodas pp3](dsc1629-0.pp3 "dsc1629-0.pp3")
+pp3 file: [Pagodas 0 pp3](dsc1629-0.pp3 "dsc1629-0.pp3")
 
 [See Tutorial Game Changer - Pagodas](/tutorials/#pagodas---how-to-process-local-contrast---clarity)
 

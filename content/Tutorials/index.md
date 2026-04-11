@@ -1760,12 +1760,24 @@ This tutorial will use two processing hypotheses.
 * Capture Sharpening (Raw Tab) - Enabled - You’ll notice that “Contrast threshold” isn’t set to zero. You can leave the default settings. The image doesn’t appear to be very noisy, so don’t change anything for the two sliders (Presharpening denoise, Postsharpening denoise);
 * White Balance > Automatic & Refinement > Temperature correlation: The illuminant a priori, is of the Daylight type; this automatic setting should be the most suitable.
 
-##### Raw Black Points
+##### Raw Settings
+
+##### Demoisaicing and Raw Black Points
+
+**Demoisaicing**
+
++ Try different methods. After my tests, I found the best results for mastering artifacts in the clouds.
++ AMaZE 
++ False color suppression steps = 5.
+
+**Dehaze**
 
 The 'Dehaze' system designed by Ingo Weirich (thanks to him) suggests in some cases, this can improve the image by optimizing the black points. This can be accompanied by either a reduction in haze or a slight improvement in the overall image contrast.
 
 + Try the "Dehaze" checkbox; you'll see the sliders move to the right, the histogram expands, especially to the left (the shadow areas), and the image is brighter and more colorful: Red:+2, Green 1:+26, Green 2:+26, Blue:+14.
-
++ Disabled Dehaze Checkbox 
++ Increase slightly the 2 Green (Grren 1 & Grren 2) to 28, to reduce artifacts
++ Be **very careful**, these settings are very sensitive and can contribute to making the images unusable.
 
 [Raw Black Points](/raw_black_points/)
 
@@ -1787,9 +1799,9 @@ Below, you can see the influence of Raw Black Points on the image at the end of 
 <figcaption>Histogram with Raw Black points</figcaption>
 </figure>
 
-+ Be **very careful**, these settings are very sensitive and can contribute to making the images unusable.
 
-#### Gamut Compression
+
+##### Gamut Compression
 <figure>
 <img src="gam-comp-8.jpg" title="gam-comp-8.jpg" width="300" />
 <figcaption>Gamut Compression</figcaption>
