@@ -1,5 +1,5 @@
 [Version]
-AppVersion=5.12-357-g1b7a3af36
+AppVersion=5.12-358-g90a9499ca
 Version=353
 
 [General]
@@ -165,8 +165,8 @@ Uniformity=5
 [White Balance]
 Enabled=true
 Setting=autitcgreen
-Temperature=5127
-Green=1.1419999999999999
+Temperature=4927
+Green=1.1339999999999999
 Equal=1
 TemperatureBias=0
 StandardObserver=TWO_DEGREES
@@ -409,7 +409,7 @@ CenterY=0
 
 [Locallab]
 Enabled=true
-Selspot=0
+Selspot=1
 Name_0=New Spot
 Isvisible_0=true
 PrevMethod_0=hide
@@ -695,7 +695,7 @@ BorderBlue=255
 
 [PostDemosaicSharpening]
 Enabled=true
-Contrast=6
+Contrast=8
 AutoContrast=true
 AutoRadius=true
 DeconvRadius=0.57999999999999996
@@ -773,8 +773,8 @@ LabGridcieGx=-0.50909137725830078
 LabGridcieGy=0.63090741634368896
 LabGridcieWx=-0.24963712692260742
 LabGridcieWy=-0.22000080347061157
-LabGridcieMx=-0.20460683107376099
-LabGridcieMy=-0.17013216018676758
+LabGridcieMx=-0.22145187854766846
+LabGridcieMy=-0.19136756658554077
 Preser=0
 Fbw=false
 TrcExp=true
@@ -1042,16 +1042,16 @@ HotDeadPixelThresh=100
 PreExposure=1
 
 [RAW Bayer]
-Method=amazebilinear
+Method=amaze
 Border=4
 ImageNum=1
-CcSteps=0
-PreBlack0=26
+CcSteps=5
+PreBlack0=28
 PreBlack1=2
 PreBlack2=14
-PreBlack3=26
+PreBlack3=28
 PreTwoGreen=true
-Dehablack=true
+Dehablack=false
 LineDenoise=0
 LineDenoiseDirection=3
 GreenEqThreshold=0
