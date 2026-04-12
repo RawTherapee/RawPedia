@@ -1776,7 +1776,7 @@ The 'Dehaze' system designed by Ingo Weirich (thanks to him) suggests in some ca
 
 + Try the "Dehaze" checkbox; you'll see the sliders move to the right, the histogram expands, especially to the left (the shadow areas), and the image is brighter and more colorful: Red:+2, Green 1:+26, Green 2:+26, Blue:+14.
 + Disabled Dehaze Checkbox 
-+ Increase slightly the 2 Green (Grren 1 & Grren 2) to 28, to reduce artifacts
++ Increase slightly the 2 Green (Green 1 & Green 2) to 28, to reduce artifacts
 + Be **very careful**, these settings are very sensitive and can contribute to making the images unusable.
 
 [Raw Black Points](/raw_black_points/)
@@ -2027,7 +2027,7 @@ A black color indicates that there are no changes. The greater the intensity (lu
 </figure>
 
 Note:
-* Normal spot
+* Full image
 * In Settings : ΔE decay set to 4 - to avoid artifacts in sky
 * Scope = 60
 * Blur shape detection set to 31 - to avoid artifacts and out of gamut.
