@@ -186,7 +186,7 @@ che ti aiutano a proteggere le tue immagini:
       Trasforma.
     - Per ritagliare la foto, premi il tasto di scelta rapida "c" sulla
       tastiera (oppure usa il pulsante
-      ![<File:Crop.png>](Crop.png "File:Crop.png") viene automaticamente
+      ![<File:crop.png>](/images/crop.png "File:crop.png") viene automaticamente
       abilitato. Non c'è bisogno di "applicare" un taglio - è efficace
       nel momento in cui si disegna. Potrebbe essere necessario
       impostare il tipo di guida "Crop" su "none" se questo non è

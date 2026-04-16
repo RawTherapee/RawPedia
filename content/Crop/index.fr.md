@@ -34,7 +34,7 @@ recadrage](Preferences/fr#Thème.md)".
 
 Activez le mode recadrage en cliquant sur le bouton "Sélection du
 recadrage" dans le panneau de l'outil, ou sur le bouton
-![<File:Crop.png>](Crop.png "File:Crop.png") dans la barre du haut de
+![<File:crop.png>](/images/crop.png "File:crop.png") dans la barre du haut de
 l'[Editeur](the_image_editor_tab/fr) ou sur le [raccourci
 clavier approprié](Keyboard_Shortcuts/fr.md), puis créer le
 cadre de sélection sur l'image d'aperçu par cliquer/glisser de la

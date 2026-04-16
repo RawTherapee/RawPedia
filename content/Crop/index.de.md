@@ -28,7 +28,7 @@ color/transparency](Preferences#Default_Theme.md)" to change the
 color and transparency of the masked area around the crop.
 
 Activate crop-placing mode by clicking the "Select Crop" button in the
-tool panel, the ![<File:Crop.png>](Crop.png "File:Crop.png") button in
+tool panel, the ![<File:crop.png>](/images/crop.png "File:crop.png") button in
 the [Editor's](the_image_editor_tab) top toolbar, or the
 appropriate [keyboard shortcut](keyboard_shortcuts), then
 create the crop by clicking and dragging over the preview with your

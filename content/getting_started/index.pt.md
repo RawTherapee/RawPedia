@@ -181,7 +181,7 @@ alguns recursos que ajudam a proteger suas imagens:
       acordo e você será automaticamente levado para a guia
       Transformar![<File:Transform.png>](Transform.png "File:Transform.png").
     - Para cortar a foto, pressione a tecla de atalho "c" no teclado (ou
-      use o botão ![<File:Crop.png>](Crop.png "File:Crop.png")) e clique
+      use o botão ![<File:crop.png>](/images/crop.png "File:crop.png")) e clique
       e arraste um recorte sobre a visualização; você notará que a
       ferramenta [Cortar](crop/pt) fica automaticamente
       ativada. Não há necessidade de "aplicar" um corte - ele tem efeito
