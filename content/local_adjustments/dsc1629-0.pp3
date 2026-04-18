@@ -1,5 +1,5 @@
 [Version]
-AppVersion=5.12-358-g90a9499ca
+AppVersion=5.12-373-g4e838000c
 Version=353
 
 [General]
@@ -208,6 +208,7 @@ H-Hue=0
 H-Hue-red=10
 H-Hue-green=0
 H-Hue-blue=1.2
+Brighthres=13
 RSTProtection=0
 AdaptScene=3811.2600000000002
 AutoAdapscen=true
@@ -227,9 +228,9 @@ CurveMode=Lightness
 CurveMode2=Brightness
 CurveMode3=Chroma
 Curve=0;
-Curvered=0;
+Curvered=3;0;0;0.46502057613168729;0.59670781893004121;1;1;
 Curvegreen=0;
-Curveblue=0;
+Curveblue=3;0;0;0.4032921810699589;0.71604938271604934;1;1;
 Curve2=0;
 Curve3=0;
 
@@ -334,15 +335,15 @@ Orientation=As Image
 
 [CropGuide]
 Enabled=true
-RuleOfThirds=false
-RuleOfDiagonals=false
-HarmonicMeans=false
-Crosshair=false
-Grid=false
-GoldenTriangle=false
-GoldenRatio=false
-Epassport=false
-CenteredSquare=false
+RuleOfThirds={"Enabled":false,"Red":1,"Green":1,"Blue":1,"Alpha":0.618}
+RuleOfDiagonals={"Enabled":false,"Red":1,"Green":1,"Blue":1,"Alpha":0.618}
+HarmonicMeans={"Enabled":false,"Red":1,"Green":1,"Blue":1,"Alpha":0.618}
+Crosshair={"Enabled":false,"Red":1,"Green":1,"Blue":1,"Alpha":0.618}
+Grid={"Enabled":false,"Red":1,"Green":1,"Blue":1,"Alpha":0.618}
+GoldenTriangle={"Enabled":false,"Red":1,"Green":1,"Blue":1,"Alpha":0.618}
+GoldenRatio={"Enabled":false,"Red":1,"Green":1,"Blue":1,"Alpha":0.618}
+Epassport={"Enabled":false,"Red":1,"Green":1,"Blue":1,"Alpha":0.618}
+CenteredSquare={"Enabled":false,"Red":1,"Green":1,"Blue":1,"Alpha":0.618}
 GoldenTriangleMirror=false
 GoldenRatioRotate=false
 GoldenRatioMirror=false
@@ -773,7 +774,7 @@ LabGridcieGx=-0.50909137725830078
 LabGridcieGy=0.63090741634368896
 LabGridcieWx=-0.24963712692260742
 LabGridcieWy=-0.22000080347061157
-LabGridcieMx=-0.22145187854766846
+LabGridcieMx=-0.22145193815231323
 LabGridcieMy=-0.19136756658554077
 Preser=0
 Fbw=false
