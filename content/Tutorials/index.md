@@ -496,6 +496,17 @@ In this tutorial, I will present it briefly in 2 parts:
 <figcaption>CIECAM Red Green Blue</figcaption>
 </figure>
 
+**Threshold Brightness Curves**
+
+ The ‘Threshold Brightness Curves’ aims to limit artifacts due to variations in color differences.
+
+<figure>
+<img src="redgreenblue-thres.jpg" title="redgreenblue-thres.jpg"
+width="300" />
+<figcaption>red-green-blue Threshold</figcaption>
+</figure>
+
+
 + For this challenging image, I made a point of moderating the settings to avoid artifacts.
 
 [Red Green Blue](/ciecam02/#red---green---blue---hue-rotation-h---saturation-s---brightness-curve-q)
@@ -782,6 +793,16 @@ Here, I used 'Lightness + Saturation (s)' which has a differentiated action on s
 <figcaption>CIECAM Red Green Blue</figcaption>
 </figure>
 
+**Threshold Brightness Curves**
+
+ The ‘Threshold Brightness Curves’ aims to limit artifacts due to variations in color differences.
+
+<figure>
+<img src="redgreenblue-thres.jpg" title="redgreenblue-thres.jpg"
+width="300" />
+<figcaption>red-green-blue Threshold</figcaption>
+</figure>
+
 ### Game changer using LED’s image
 
 This third tutorial aims to explain the concept of a ‘Game changer’, with an example using an image of a show with LED lighting and visible spotlights.
@@ -991,6 +1012,18 @@ Beyond CIECAM's ability to account for shooting conditions, viewing conditions, 
 <figcaption>Red Green Blue - LED</figcaption>
 </figure>
 
+
+**Threshold Brightness Curves**
+
+ The ‘Threshold Brightness Curves’ aims to limit artifacts due to variations in color differences.
+
+<figure>
+<img src="redgreenblue-thres.jpg" title="redgreenblue-thres.jpg"
+width="300" />
+<figcaption>red-green-blue Threshold</figcaption>
+</figure>
+
+
 ####  Image at the end of Game Changer
 
 <figure>
@@ -1160,6 +1193,17 @@ Of course, the settings are quite arbitrary, depending on your tastes.
 <figcaption>CIECAM Red Green Blue</figcaption>
 </figure>
 
+
+**Threshold Brightness Curves**
+
+ The ‘Threshold Brightness Curves’ aims to limit artifacts due to variations in color differences.
+
+<figure>
+<img src="redgreenblue-thres.jpg" title="redgreenblue-thres.jpg"
+width="300" />
+<figcaption>red-green-blue Threshold</figcaption>
+</figure>
+
 **Back to Abstract profile**
 
 Check that the data displayed in ‘Final Gain & Gamut Compression’ is within limits, correct it if necessary, but be careful with the gamut
@@ -1313,6 +1357,19 @@ Of course, the settings are quite arbitrary, depending on your tastes.
 <img src="red-green-blue-5.jpg" title="red-green-blue-5.jpg" width="300" />
 <figcaption>CIECAM Red Green Blue</figcaption>
 </figure>
+
+
+**Threshold Brightness Curves**
+
+ The ‘Threshold Brightness Curves’ aims to limit artifacts due to variations in color differences.
+
+<figure>
+<img src="redgreenblue-thres.jpg" title="redgreenblue-thres.jpg"
+width="300" />
+<figcaption>red-green-blue Threshold</figcaption>
+</figure>
+
+
 
 [Red Green Blue](/ciecam02/#red---green---blue---hue-rotation-h---saturation-s---brightness-curve-q)
 
@@ -1487,6 +1544,19 @@ Of course, the settings are quite arbitrary, depending on your tastes.
 <img src="red-green-blue-6.jpg" title="red-green-blue-6.jpg" width="300" />
 <figcaption>CIECAM Red Green Blue</figcaption>
 </figure>
+
+
+**Threshold Brightness Curves**
+
+ The ‘Threshold Brightness Curves’ aims to limit artifacts due to variations in color differences.
+
+<figure>
+<img src="redgreenblue-thres.jpg" title="redgreenblue-thres.jpg"
+width="300" />
+<figcaption>red-green-blue Threshold</figcaption>
+</figure>
+
+
 
 **Back to Abstract profile**
 
@@ -1693,6 +1763,19 @@ Of course, the settings are quite arbitrary, depending on your tastes.
 <img src="red-green-blue-7.jpg" title="red-green-blue-7.jpg" width="300" />
 <figcaption>CIECAM Red Green Blue</figcaption>
 </figure>
+
+
+**Threshold Brightness Curves**
+
+ The ‘Threshold Brightness Curves’ aims to limit artifacts due to variations in color differences.
+
+<figure>
+<img src="redgreenblue-thres.jpg" title="redgreenblue-thres.jpg"
+width="300" />
+<figcaption>red-green-blue Threshold</figcaption>
+</figure>
+
+
 
 **Back to Abstract profile**
 
@@ -1939,6 +2022,19 @@ Of course, the settings are quite arbitrary, depending on your tastes.
 <figcaption>CIECAM Red Green Blue</figcaption>
 </figure>
 
+
+**Threshold Brightness Curves**
+
+ The ‘Threshold Brightness Curves’ aims to limit artifacts due to variations in color differences.
+
+<figure>
+<img src="redgreenblue-thres.jpg" title="redgreenblue-thres.jpg"
+width="300" />
+<figcaption>red-green-blue Threshold</figcaption>
+</figure>
+
+
+
 **Back to Abstract Profile**
 
 Return to the Abstract profile, ‘Final Gain & Gamut Compression’ and check the information about gamut control.
@@ -2102,6 +2198,17 @@ Note:
 * Hue - blue rotation set to 15.4
 * Saturation - blue set to 6.5
 * Curve brightness
+
+**Threshold Brightness Curves**
+
+ The ‘Threshold Brightness Curves’ aims to limit artifacts due to variations in color differences.
+
+<figure>
+<img src="redgreenblue-thres.jpg" title="redgreenblue-thres.jpg"
+width="300" />
+<figcaption>red-green-blue Threshold</figcaption>
+</figure>
+
 
 **Final Gain & Gamut Compression**
 
