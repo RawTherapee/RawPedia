@@ -1351,6 +1351,15 @@ These hue, saturation and brightness adjustments do not use primaries. They are 
 
 To simplify use, I've only included one slider per channel for hue rotation, and one slider per channel for Saturation (s). I could have also included a tone equalizer for the red, green, and blue ranges... If that proves useful, aside from complicating the interface, it doesn't pose any problem. Note that the 3 Brightness curves allow you to adjust the brightness and contrast for each color range. Specifically, brightness acts on the perceived chroma via the (s) Saturation function.
 
+**Threshold Brightness Curves**
+
+ The ‘Threshold Brightness Curves’ aims to limit artifacts due to variations in color differences.
+
+<figure>
+<img src="redgreenblue-thres.jpg" title="redgreenblue-thres.jpg"
+width="300" />
+<figcaption>red-green-blue Threshold</figcaption>
+</figure>
 
 ## Gamut control (Lab + CIECAM)
 
