@@ -238,7 +238,7 @@ zu-/abschalten.</p></td>
 <td><p><a href="The_Image_Editor_Tab/de"
 title="wikilink">Editor</a></p></td>
 <td></td>
-<td><p><a href="image:Crop.png" title="wikilink">image:Crop.png</a>
+<td><p><a href="image:crop.png" title="wikilink">image:crop.png</a>
 <em><strong>C</strong>rop</em> - Ruft das Beschnitt-Werkzeug auf. + und
 <em>schieben</em> innerhalb des ausgewählten Bereichs verschiebt das
 gesamte Auswahl-Rechteck.</p></td>

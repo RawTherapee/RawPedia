@@ -174,7 +174,7 @@ funcions que us ajudaran a protegir les vostres fotos:
       ![<File:Transform.png>](Transform.png "File:Transform.png")
       Pestanya Transformació.
     - Per escapçar la foto, premeu la drecera de teclat «c» (o utilitzeu
-      el botó ![<File:Crop.png>](Crop.png "File:Crop.png")) i feu clic i
+      el botó ![<File:crop.png>](/images/crop.png "File:crop.png")) i feu clic i
       arrossegueu la zona que voleu escapçar sobre la previsualització;
       veureu que l'eina [Escapçat](crop/ca) s'activa
       automàticament. No és necessari «aplicar» un escapçat; té efecte

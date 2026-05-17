@@ -383,7 +383,7 @@ helfen, deine Bilder zu schützen:
       Button die dritte Möglichkeit zu finden, das Zeichnen der
       Leitlinie zu aktivieren.
     - Um das Bild nun zu beschneiden, drücke die Taste "c" oder verwende
-      den Button ![<File:Crop.png>](Crop.png "File:Crop.png") und ziehe
+      den Button ![<File:crop.png>](/images/crop.png "File:crop.png") und ziehe
       ein Rechteck entsprechend des Bildausschnitts auf den beschnitten
       werden soll. Auch in diesem Fall wird das passende Werkzeug
       ["Ausschnitt"](crop/de) im Werkzeugkasten angesprungen

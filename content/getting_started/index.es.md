@@ -307,7 +307,7 @@ características que te ayudan a proteger tus imágenes:
       ![<File:Transform.png>](Transform.png "File:Transform.png") ), con
       la herramienta *Lente/Geometría* desplegada.
     - Para recortar la foto, pulsa la tecla *«c»* (o utiliza el botón
-      *Recortar* ![<File:Crop.png>](Crop.png "File:Crop.png") ) y haz
+      *Recortar* ![<File:crop.png>](/images/crop.png "File:crop.png") ) y haz
       clic y arrastra formando un marco sobre la vista previa que
       resaltará lo que quedará visible tras el recorte. Fíjate que la
       herramienta *Recortar* se activa automáticamente. No hay necesidad
