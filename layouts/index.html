@@ -196,17 +196,21 @@
     {{ end }}
   </ul>
 
-  {{ $category := "Tutorials" }}
-  <a href='#{{ $category | urlize }}'>
-    <h3 id='{{ $category | urlize }}'>{{ or (T $category) $category }}</h3>
-  </a>
-  <ul>
-    {{ range where .Site.RegularPages "Params.tags" "intersect" (slice $category) }}
-      <li>
-        <a href="{{.RelPermalink}}">{{ .Title }}</a>
-      </li>
-    {{ end }}
-  </ul>
+
+  {{ $address := "/tutorials/" }}
+  <h3><a href='{{ $address | urlize }}'>Tutorials</a></h3>
+
+  <!-- {{ $category := "Tutorials" }} -->
+  <!-- <a href='#{{ $category | urlize }}'> -->
+  <!--   <h3 id='{{ $category | urlize }}'>{{ or (T $category) $category }}</h3> -->
+  <!-- </a> -->
+  <!-- <ul> -->
+  <!--   {{ range where .Site.RegularPages "Params.tags" "intersect" (slice $category) }} -->
+  <!--     <li> -->
+  <!--       <a href="{{.RelPermalink}}">{{ .Title }}</a> -->
+  <!--     </li> -->
+  <!--   {{ end }} -->
+  <!-- </ul> -->
 
   {{ $category := "Compiling" }}
   <a href='#{{ $category | urlize }}'>
