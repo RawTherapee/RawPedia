@@ -1,12 +1,28 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
+
+<div class='row justify-content-center'>
+  <div class='col-lg-8'>
+
+  <h1 class = 'mt-4'>{{ .Title }}</h1>
   {{ .Content }}
+  </div>
+</div>
+
+<div class='row justify-content-center'>
+  <div class='col-lg-8'>
+
   <ul>
     {{ range .Pages }}
       <li>
-        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <div>{{ .Summary }}</div>
       </li>
     {{ end }}
   </ul>
+
+  </div>
+</div>
+
+
 {{ end }}
   
