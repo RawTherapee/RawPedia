@@ -4,6 +4,7 @@ languageCode = 'en'
 title = 'RawPedia'
 theme = ['hugo-bootstrap-bare']
 enableGitInfo = true
+summaryLength = 20
 
 defaultContentLanguage = 'en'
 
@@ -93,7 +94,7 @@ defaultContentLanguage = 'en'
   [markup.goldmark.renderHooks.link]
     useEmbedded = 'always'
   [markup.goldmark.renderHooks.image]
-    useEmbedded = 'always'
+    useEmbedded = 'auto'
 
 [outputs]
   home = ['html', 'rss', 'json']
