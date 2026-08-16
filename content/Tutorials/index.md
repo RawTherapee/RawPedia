@@ -60,7 +60,7 @@ This concept isn't about forcing you to change your image processing methods, bu
 + Be careful not to use methods or tools that lead to the creation of imaginary colors. The core principle of Game Changer is to eliminate them - or at the very least, reduce them.
 + Using the concept of a pre-tone mapping, which makes an image usable or (acceptable) for further processing. That is to say:
   - Bring the Black point close to zero, to increase contrast and use the entire range of data.
-  - Bring the White point as close as possible to 1: out-of-gamut data can have very high values ​​(3, 5 or 10), and all methods are more efficient when in the interval [0 1] (32-bit real format), and subsequent processing is more efficient when the data has been normalized i.e. in the interval [0 1] (32-bit real format)
+  - Bring the White point as close as possible to 1: out-of-gamut data can have very high values ​​(3, 5 or 10), and all methods are more efficient when in the interval [0 1] (32-bit real format), and subsequent processing is more efficient when the data has been normalized i.e. in the interval [0 1] (32-bit real format) and the output of GHS is unbounded.
   - All calculations are performed using 32-bit real numbers, and no data is lost.
   - Implementing an asymptotic process that allows us to get closer to the White point, without reaching it - and even less going beyond it.
   - This principle is included in 'Selective Editing > Equalization & Pre-tone mapping': The first RT-spot used must always be (if of course there is a need) a Pre-tone mapper in Global mode.
