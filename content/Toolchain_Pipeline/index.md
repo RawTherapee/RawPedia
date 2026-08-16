@@ -593,8 +593,8 @@ animals, etc.) and then add some local contrast. This can take 2 forms:
 ## RawTherapee pipeline : linear or non-linear ?
 ### Linear processing: what is it and why is it used?
 In the so-called scene-referred workflow images are processed using linear operations up and until the point where the scene values are converted to display-adapted values (output tone mapping) and the L*a*b* colour space is avoided in the intermediate steps prior to the output transform. The claimed advantages are as follows :
-* Working in linear RGB is simpler, the algorithms are faster and can tolerate more extreme adjustments without generating artifacts.  
-* The use of the L*a*b* color space limits the dynamic range and introduces hue and saturation shifts. There are better color spaces such as IPT-HDR and JzAzBz that have been developed specifically for HDR with nearly perfect hue linearity. 
+* *Working in linear RGB is simpler, the algorithms are faster and can tolerate more extreme adjustments without generating artifacts.*  
+* *The use of the L*a*b* *color space limits the dynamic range and introduces hue and saturation shifts. There are better color spaces such as IPT-HDR and JzAzBz that have been developed specifically for HDR with nearly perfect hue linearity*
 
 Rawtherapee takes a different approach while still meeting the desired criteria in terms of dynamic range, hue integrity and minimum artifacts.
 
@@ -624,7 +624,7 @@ Faced with these nearly insurmountable challenges given that there are many more
    -Adjust the highlights asymptotically and reduce the dynamic range,
    -Prepare it for the visualization stage by reducing the gamut (often in 8 bits) and applying a gamma adjustment.
   
-* With the exception of the final display conversion to 8 bits, these transformations are performed in unbounded 32-bit (or 64-bit) floating-point format, without data loss and are often reversible. For example, the RGB>Lab and Lab>RGB transformations, which also preserve the colorimetry using a Munsell correction are capable of handling a dynamic range of at least 25 Ev. 
+* With the exception of the final display conversion to 8 bits, these transformations are performed in unbounded 32-bit (or 64-bit) floating-point format, **without data loss** and are often reversible. For example, the RGB>Lab and Lab>RGB transformations, which also **preserve the colorimetry using a Munsell correction** are capable of handling a **dynamic range of at least 25 Ev.** 
 * Depending on the situation, multiple algorithms may be used to optimize the data; for example, General Hyperbolic Stretch combined with Abstract Profile.
 * Use CIECAM either at the end of processing pipeline just before the output-device conversion (monitors, printers, etc.), or in conjunction with Selective Editing, to best account for physiological effects that are misinterpreted by mathematical algorithms alone. In particular, this includes the physiological effects of the shooting or scene conditions (simultaneous contrast, Hunts effect, etc.) and the viewing conditions. 
 * Ensure throughout the process: a) that the data prior to the final conversion remains within the working profile by using the histogram in linear mode and ensuring that you avoid using or generating imaginary colors (for example, manipulating primary colors is risky); b) that the entire process leading up to the final conversion stays within the gamut limits of the output profile. 
