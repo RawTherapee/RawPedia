@@ -3983,7 +3983,7 @@ several 'stretches' in normal GHS or inverse GHS, in 'Global', 'Full
 image' or 'Normal spot' mode. MM is much simpler mathematically and has a simpler user interface. It gives the correct result (almost) with the default settings (or with few changes). It should be suitable in most cases. However, it lacks an Inverse mode and is less efficient in extreme cases. There's nothing stopping you from mixing them, a first RT-spot with MM, and a second with GHS, for example in 'Inverse' mode to mitigate the effects in an area that's too heavily modified (sky, sun...).
 
 #### Hyperbolics and others asymptotiques
-Both GHS and MM use hyperbolic functions, but of a different nature. Michaelis' function can work without problems in any data range (it's best to put it in [0, 1]). GHS assumes the data is in [0, 1] otherwise it clips the data, which is unfortunate. This has significant consequences in terms of code and for users.
+Both GHS and MM use hyperbolic functions, but of a different nature. Michaelis' function can work without problems in any data range (it's best to put it in [0, 1]). GHS assumes the data is in [0, 1] otherwise it clips the data, which is unfortunate. This has significant consequences in terms of code and for users. This data is in 32-bit real format, and nothing prevents the action of GHS from causing the limits to be exceeded.
 
 There are several types of hyperbolic functions, all sharing, despite their different mathematical principles, the common characteristic of implementing asymptotic functions that approach a value without ever reaching it (a typical example being highlights):
 * Those that use the usual functions 'sinh' (hyperbolic sinus) , 'cosh' (hyperbolic cosinus) , 'tanh' (hyperbolic tangent), or even compositions of functions exp(x) and exp(-x). GHS falls into this category. Its distinctive feature (hence the term 'Generalized') is that the formula changes seamlessly depending on the settings... this is what makes it remarkable. I've attached the ‘Desmos’ demonstration (feel free to expand the left panel to see the formulas). But it is complex to implement and for users  [GHS - Desmos](https://www.desmos.com/calculator/xufftbzks6?lang=fr)
@@ -4111,7 +4111,7 @@ To allow Inverse GHS to work the checkbox 'Auto Black point & White point' shoul
 ##### The need to fine-tune White Point (linear WP) and Black Point (linear BP)
 
 The algorithm developed by David Payne and Mike Cranfield assumes that
-all image data to be processed is in the interval \[0 ,1\].
+all image data to be processed is in the interval \[0 ,1\] (32-bit real format)
 
 - Negative values or values greater than 1 will be ignored (clipped).
 - If shooting conditions or upstream processing reduce the practical
@@ -4574,7 +4574,7 @@ alt="Ghs-example1.jpg" /> In this first step:
 
 **Recommendations**
 
-- It is preferable to use GHS as the first RT-spot; this will allow us to resolve the problem of equilibria due to deviations from [0 1] 
+- It is preferable to use GHS as the first RT-spot; this will allow us to resolve the problem of equilibria due to deviations from [0 1] (32-bit real format)
   of the values ​​of the Black point (linear BP) and White point (linear WP). In fact, GHS behaves like a pre-tone-mapper. Black point correction
   (linear BP) in Raw corresponds roughly to Raw Black Point > Dehaze (Raw Tab), while White point correction (linear WP) can be considered
   a better use of Raw White Points (Raw Tab). Ideally, GHS would have been developed using raw data, but this option would have two major
@@ -4711,7 +4711,7 @@ To modify the primaries or adjust the 'Dominant colors', you must change the sel
   especially for (WP linear) and (SP). Find a balanced image by adjusting Stretch Factor (D) and Local Intensity (b). You can also use the other
   available settings: Protect Shadows (LP), Protect Highlights (HP), Stretch Regularization & Midtones, and Highlight Attenuation. The goal is to
   obtain an acceptable image for subsequent enhancement; of course, it can be excellent after GHS processing. The general objectives are:
-  a) data optimization to fit within the interval [0-1] - with no data out of gamut, the most important; b) a histogram without major defects;
+  a) data optimization to fit within the interval [0-1] (32-bit real format) - with no data out of gamut, the most important; b) a histogram without major defects;
   c) a balance of luminance, contrast, and color (gamut, colorimetry, etc.).
 - Then use Abstract Profile, specifically: a) Gamma/Slope to adjust tones; b) Contrast Enhancement to adjust local contrast; 
   c) Primaries & Illuminant if necessary to correct colors (purity, saturation, dominant color), in particular if the illuminants are
