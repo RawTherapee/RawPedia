@@ -155,6 +155,66 @@ operations:
   - Film Negative
   - Capture Sharpening
 
+
+## RawTherapee pipeline : linear or non-linear ?
+### Linear processing: what is it and why is it used?
+In the so-called scene-referred workflow images are processed using linear operations up and until the point where the scene values are converted to display-adapted values (output tone mapping) and the L*a*b* colour space is avoided in the intermediate steps prior to the output transform. The claimed advantages are as follows :
+* *Working in linear RGB is simpler, the algorithms are faster and can tolerate more extreme adjustments without generating artifacts.*  
+* *The use of the L*a*b* *color space limits the dynamic range and introduces hue and saturation shifts. There are better color spaces such as IPT-HDR and JzAzBz that have been developed specifically for HDR with nearly perfect hue linearity*
+
+Rawtherapee takes a different approach while still meeting the desired criteria in terms of dynamic range, hue integrity and minimum artifacts.
+
+### Linear maths
+Linear operations include polynomials, linear equations, vector transformations, matrix calculations, the Fourier transform, Wavelets, etc.
+They do not include logarithmic or exponential functions,  exposure, gamut compression, hyperbolic functions, tone curves or CIECAM, etc.
+
+### What happens when you take a photo?
+The camera’s sensor, whose internal characteristics are largely unknown, is exposed to a natural or artificial illuminant falling on a subject for which precise colour information is unknown (i.e. spectral data for each part of the image - flowers, animals, buildings, etc.). Not only that, but the tristimulus “observer ” values produced by the camera are different to those of a human observer.  
+The illuminant is either: a) natural light, governed by, the time of day, the amount of cloud cover and the laws of Planck and Boltzmann (a combination of quantum and wave physics);  or b) artificial, with a spectral distribution that is usually unknown. What we can say for certain is that the data recorded on the sensor and perceived by our eyes cannot be defined using linear algebra.
+This observation raises the question: should we strive to process data linearly when, by its very nature it is not, especially when there are LED illuminants?  For example, our cameras address the problem described above by using a 3x3 (linear) matrix and a D65 illuminant, which is an admission of our inability to do better.
+
+### What is important?
+We need to distinguish between the part of image processing that aims to best “map” the data recorded on the sensor into the working profile, which is done in true 32- or 64-bit (lossless) mode and the visualization part, whether on a screen or to a printer. For the latter, the gamut is often much narrower, and a curve simulating our visual perception (gamma) is also applied. Currently, the majority of display conversions are done in 8-bit Lab, which results in a considerable loss of data. Obviously any further processing after such a conversion should be avoided. 
+
+### Factors affecting data linearity
+In addition to illuminants as mentioned above, the following non-exhaustive factors can be cited:
+* The recovery of highlights and shadows for example. Color Propagation attempts to restore values up to 4 to 10 times the usual maximums (beyond the working profile). It seems obvious that it is highly desirable to bring this data back into the human-visible range i.e. the working profile, otherwise we’re just making things up by manipulating imaginary data. Subsequent processing on the working-profile data should remain unbounded.
+* Gamut compression, which aims to make out-of-gamut data (whether related to the illuminant or to exposure) consistent with the output gamut.
+* White balance, which ultimately boils down to three multiplication coefficients, but which in reality involves complex phenomena that are difficult to model e.g. in Temperature Correlation.
+
+### The choices made in Rawtherapee
+Faced with these nearly insurmountable challenges given that there are many more unknowns than equations, RawTherapee proceeds as follows :
+* Treat what can be treated using linear algebra even though we often lack all the necessary information and are obliged to use simplified models. We also need to bear in mind that processing image data that falls outside the limits of the working profile is a daunting task and a risky gamble because we are dealing with imaginary colours and cannot visualise what we are doing. These operations can be referred to as sensor-referred processing.
+* Use linear, logarithmic, or hyperbolic transformations to fit the data (without limiting) into the working profile to :
+   - bring the black point close to zero to optimize contrast,
+   - adjust the highlights asymptotically and reduce the dynamic range,
+   - prepare it for the visualization stage by reducing the gamut (often in 8 bits) and applying a gamma adjustment.
+  
+* With the exception of the final display conversion to 8 bits, these transformations are performed in unbounded 32-bit (or 64-bit) floating-point format, **without data loss** and are often reversible. For example, the RGB>Lab and Lab>RGB transformations, which also **preserve the colorimetry using a Munsell correction** are capable of handling a **dynamic range of at least 25 Ev.** 
+* Depending on the situation, multiple algorithms may be used to optimize the data; for example, General Hyperbolic Stretch combined with Abstract Profile.
+* Use CIECAM either at the end of processing pipeline just before the output-device conversion (monitors, printers, etc.), or in conjunction with Selective Editing, to best account for physiological effects that are misinterpreted by mathematical algorithms alone. In particular, this includes the physiological effects of the shooting or scene conditions (simultaneous contrast, Hunts effect, etc.) and the viewing conditions. 
+* Ensure throughout the process: a) that the data prior to the final conversion remains within the working profile by using the histogram in linear mode and ensuring that you avoid using or generating imaginary colors (for example, manipulating primary colors is risky); b) that the entire process leading up to the final conversion stays within the gamut limits of the output profile. 
+
+### Conclusion
+There is no single correct approach to processing RAW files. What is important is that the process of preparing the data for display does not result in unnecessary data loss or limiting that can compromise the end result. 
+Rawtherapee has taken a different approach from other software; the concepts of “scene-referred” and “display-referred” are not strictly used (except with some similarities when using processes based on CIECAM). This doesn’t mean that the scene-referred concept isn’t effective when used in the appropriate context. Lab is used because, in 32-bit mode, it allows for a dynamic range of at least 25 EV and avoids color shifts (to maintain nearly perfect hue linearity) by using Munsell correction.
+
+The approach to processing in Rawtherapee is based on the following general combination:
+* Optimize the RAW data using linear algebra (demosaicing, black point adjustment, capture sharpening, etc.);
+* Use gamut compression to manage the output profile gamut from the very beginning of the process;
+* Use a white-balance method based on temperature correlation when possible, rather than conventional white balance;
+* Use the concept of “pre-tone mapping” to bring the current black point close to zero, manage highlights asymptotically, and reduce the “dynamic range” to bring the data back into the working profile and obtain an “acceptable” image for further processing.
+* Adjust tonal contrast, highlights, and tone mapping to prepare the output, without limiting the data.
+* Adjust colors while taking into account the physiological aspects of colorimetry along with the shooting and viewing conditions, without limiting the data.
+
+This approach does not conflict with the principles of scene-referred or display-referred processing, but interprets them differently from what is done elsewhere, allowing for greater flexibility. The goal is the same.
+The principles outlined above should be viewed as a guide rather than a rigid framework. Each image is a unique case and the processing needs to be adapted accordingly.
+You can get a glimpse of this approach in the two Rawpedia tutorials:
+
+[Game Changer](/tutorials/)
+
+[Rawtherapee Process Challenge](rawtherapee_processing_challenge_feedback)
+
 ## Colorimetry
 
 ### The Importance of CIECAM and L\*a\*b\*
@@ -589,62 +649,3 @@ animals, etc.) and then add some local contrast. This can take 2 forms:
 <img src="/images/locwav.jpg" title="locwav.jpg" width="300" />
 <figcaption>locwav.jpg</figcaption>
 </figure>
-
-## RawTherapee pipeline : linear or non-linear ?
-### Linear processing: what is it and why is it used?
-In the so-called scene-referred workflow images are processed using linear operations up and until the point where the scene values are converted to display-adapted values (output tone mapping) and the L*a*b* colour space is avoided in the intermediate steps prior to the output transform. The claimed advantages are as follows :
-* *Working in linear RGB is simpler, the algorithms are faster and can tolerate more extreme adjustments without generating artifacts.*  
-* *The use of the L*a*b* *color space limits the dynamic range and introduces hue and saturation shifts. There are better color spaces such as IPT-HDR and JzAzBz that have been developed specifically for HDR with nearly perfect hue linearity*
-
-Rawtherapee takes a different approach while still meeting the desired criteria in terms of dynamic range, hue integrity and minimum artifacts.
-
-### Linear maths
-Linear operations include polynomials, linear equations, vector transformations, matrix calculations, the Fourier transform, Wavelets, etc.
-They do not include logarithmic or exponential functions,  exposure, gamut compression, hyperbolic functions, tone curves or CIECAM, etc.
-
-### What happens when you take a photo?
-The camera’s sensor, whose internal characteristics are largely unknown, is exposed to a natural or artificial illuminant falling on a subject for which precise colour information is unknown (i.e. spectral data for each part of the image - flowers, animals, buildings, etc.). Not only that, but the tristimulus “observer ” values produced by the camera are different to those of a human observer.  
-The illuminant is either: a) natural light, governed by, the time of day, the amount of cloud cover and the laws of Planck and Boltzmann (a combination of quantum and wave physics);  or b) artificial, with a spectral distribution that is usually unknown. What we can say for certain is that the data recorded on the sensor and perceived by our eyes cannot be defined using linear algebra.
-This observation raises the question: should we strive to process data linearly when, by its very nature it is not, especially when there are LED illuminants?  For example, our cameras address the problem described above by using a 3x3 (linear) matrix and a D65 illuminant, which is an admission of our inability to do better.
-
-### What is important?
-We need to distinguish between the part of image processing that aims to best “map” the data recorded on the sensor into the working profile, which is done in true 32- or 64-bit (lossless) mode and the visualization part, whether on a screen or to a printer. For the latter, the gamut is often much narrower, and a curve simulating our visual perception (gamma) is also applied. Currently, the majority of display conversions are done in 8-bit Lab, which results in a considerable loss of data. Obviously any further processing after such a conversion should be avoided. 
-
-### Factors affecting data linearity
-In addition to illuminants as mentioned above, the following non-exhaustive factors can be cited:
-* The recovery of highlights and shadows for example. Color Propagation attempts to restore values up to 4 to 10 times the usual maximums (beyond the working profile). It seems obvious that it is highly desirable to bring this data back into the human-visible range i.e. the working profile, otherwise we’re just making things up by manipulating imaginary data. Subsequent processing on the working-profile data should remain unbounded.
-* Gamut compression, which aims to make out-of-gamut data (whether related to the illuminant or to exposure) consistent with the output gamut.
-* White balance, which ultimately boils down to three multiplication coefficients, but which in reality involves complex phenomena that are difficult to model e.g. in Temperature Correlation.
-
-### The choices made in Rawtherapee
-Faced with these nearly insurmountable challenges given that there are many more unknowns than equations, RawTherapee proceeds as follows :
-* Treat what can be treated using linear algebra even though we often lack all the necessary information and are obliged to use simplified models. We also need to bear in mind that processing image data that falls outside the limits of the working profile is a daunting task and a risky gamble because we are dealing with imaginary colours and cannot visualise what we are doing. These operations can be referred to as sensor-referred processing.
-* Use linear, logarithmic, or hyperbolic transformations to fit the data (without limiting) into the working profile to :
-   -Bring the black point close to zero to optimize contrast,
-   -Adjust the highlights asymptotically and reduce the dynamic range,
-   -Prepare it for the visualization stage by reducing the gamut (often in 8 bits) and applying a gamma adjustment.
-  
-* With the exception of the final display conversion to 8 bits, these transformations are performed in unbounded 32-bit (or 64-bit) floating-point format, **without data loss** and are often reversible. For example, the RGB>Lab and Lab>RGB transformations, which also **preserve the colorimetry using a Munsell correction** are capable of handling a **dynamic range of at least 25 Ev.** 
-* Depending on the situation, multiple algorithms may be used to optimize the data; for example, General Hyperbolic Stretch combined with Abstract Profile.
-* Use CIECAM either at the end of processing pipeline just before the output-device conversion (monitors, printers, etc.), or in conjunction with Selective Editing, to best account for physiological effects that are misinterpreted by mathematical algorithms alone. In particular, this includes the physiological effects of the shooting or scene conditions (simultaneous contrast, Hunts effect, etc.) and the viewing conditions. 
-* Ensure throughout the process: a) that the data prior to the final conversion remains within the working profile by using the histogram in linear mode and ensuring that you avoid using or generating imaginary colors (for example, manipulating primary colors is risky); b) that the entire process leading up to the final conversion stays within the gamut limits of the output profile. 
-
-### Conclusion
-There is no single correct approach to processing RAW files. What is important is that the process of preparing the data for display does not result in unnecessary data loss or limiting that can compromise the end result. 
-Rawtherapee has taken a different approach from other software; the concepts of “scene-referred” and “display-referred” are not strictly used (except with some similarities when using processes based on CIECAM). This doesn’t mean that the scene-referred concept isn’t effective when used in the appropriate context. Lab is used because, in 32-bit mode, it allows for a dynamic range of at least 25 EV and avoids color shifts (to maintain nearly perfect hue linearity) by using Munsell correction.
-
-The approach to processing in Rawtherapee is based on the following general combination:
-* Optimize the RAW data using linear algebra (demosaicing, black point adjustment, capture sharpening, etc.);
-* Use gamut compression to manage the output profile gamut from the very beginning of the process;
-* Use a white-balance method based on temperature correlation when possible, rather than conventional white balance;
-* Use the concept of “pre-tone mapping” to bring the current black point close to zero, manage highlights asymptotically, and reduce the “dynamic range” to bring the data back into the working profile and obtain an “acceptable” image for further processing.
-* Adjust tonal contrast, highlights, and tone mapping to prepare the output, without limiting the data.
-* Adjust colors while taking into account the physiological aspects of colorimetry along with the shooting and viewing conditions, without limiting the data.
-
-This approach does not conflict with the principles of scene-referred or display-referred processing, but interprets them differently from what is done elsewhere, allowing for greater flexibility. The goal is the same.
-The principles outlined above should be viewed as a guide rather than a rigid framework. Each image is a unique case and the processing needs to be adapted accordingly.
-You can get a glimpse of this approach in the two Rawpedia tutorials:
-
-[Game changer](/tutorials/)
-
-[Rawtherapee Process Challenge](rawtherapee_processing_challenge_feedback)
