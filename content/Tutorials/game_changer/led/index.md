@@ -4,7 +4,7 @@ contributors:
   - Jdc
 tags:
   - 'Tool Description'
-  - 'Tutorials'
+  - 'Tutorial'
 toc: true
 summary: Addressing LED lighting and spotlights
 ---

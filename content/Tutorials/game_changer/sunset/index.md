@@ -4,7 +4,7 @@ contributors:
   - Jdc
 tags:
   - 'Tool Description'
-  - 'Tutorials'
+  - 'Tutorial'
 toc: true
 summary: Applying the 'Game Changer' concepts to a sunset
 ---

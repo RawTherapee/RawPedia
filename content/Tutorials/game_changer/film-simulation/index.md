@@ -4,7 +4,7 @@ contributors:
   - Jdc
 tags:
   - 'Tool Description'
-  - 'Tutorials'
+  - 'Tutorial'
 toc: true
 summary: Demonstrate the use of the ‘Color Appearance & Lighting tools’ (CIECAM) for fine control of colour
 ---

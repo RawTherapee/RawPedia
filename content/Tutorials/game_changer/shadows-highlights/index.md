@@ -5,7 +5,7 @@ contributors:
   - Tyler Smith
 tags:
   - 'Tool Description'
-  - 'Tutorials'
+  - 'Tutorial'
 toc: true
 summary: In this tutorial, we will see how to use various tools to avoid or remove artifacts, and propose a preferred solution for brightening shadows, controling highlights, and creating a dramatic effect.
 ---

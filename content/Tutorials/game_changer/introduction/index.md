@@ -1,11 +1,11 @@
 ---
-title: "01. Introduction: What is a \"Game changer\"?"
+title: "01. Introduction to the \"Game changer\" Tutorials"
 contributors:
   - Jdc
   - Tyler Smith
 tags:
   - 'Tool Description'
-  - 'Tutorials'
+  - 'Tutorial'
 toc: true
 summary: Introducing the principles and recommendations the tutorials illustrate
 ---
