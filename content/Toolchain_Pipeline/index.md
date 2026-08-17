@@ -158,9 +158,9 @@ operations:
 
 ## RawTherapee pipeline : linear or non-linear ?
 ### Linear processing: what is it and why is it used?
-In the so-called scene-referred workflow images are processed using linear operations up and until the point where the scene values are converted to display-adapted values (output tone mapping) and the L*a*b* colour space is avoided in the intermediate steps prior to the output transform. The claimed advantages are as follows :
+In the so-called scene-referred workflow images are processed using linear operations up and until the point where the scene values are converted to display-adapted values (output tone mapping) and the L\*a\*b\* colour space is avoided in the intermediate steps prior to the output transform. The claimed advantages are as follows :
 * *Working in linear RGB is simpler, the algorithms are faster and can tolerate more extreme adjustments without generating artifacts.*  
-* *The use of the L*a*b* *color space limits the dynamic range and introduces hue and saturation shifts. There are better color spaces such as IPT-HDR and JzAzBz that have been developed specifically for HDR with nearly perfect hue linearity*
+* *The use of the L\*a\*b\* color space limits the dynamic range and introduces hue and saturation shifts. There are better color spaces such as IPT-HDR and JzAzBz that have been developed specifically for HDR with nearly perfect hue linearity*
 
 Rawtherapee takes a different approach while still meeting the desired criteria in terms of dynamic range, hue integrity and minimum artifacts.
 
@@ -174,7 +174,7 @@ The illuminant is either: a) natural light, governed by, the time of day, the am
 This observation raises the question: should we strive to process data linearly when, by its very nature it is not, especially when there are LED illuminants?  For example, our cameras address the problem described above by using a 3x3 (linear) matrix and a D65 illuminant, which is an admission of our inability to do better.
 
 ### What is important?
-We need to distinguish between the part of image processing that aims to best “map” the data recorded on the sensor into the working profile, which is done in true 32- or 64-bit (lossless) mode and the visualization part, whether on a screen or to a printer. For the latter, the gamut is often much narrower, and a curve simulating our visual perception (gamma) is also applied. Currently, the majority of display conversions are done in 8-bit Lab, which results in a considerable loss of data. Obviously any further processing after such a conversion should be avoided. 
+We need to distinguish between the part of image processing that aims to best “map” the data recorded on the sensor into the working profile, which is done in true 32- or 64-bit (lossless) mode and the visualization part, whether on a screen or to a printer. For the latter, the gamut is often much narrower, and a curve simulating our visual perception (gamma) is also applied. Currently, the majority of display conversions are done in 8-bit L\*a\*b\*, which results in a considerable loss of data. Obviously any further processing after such a conversion should be avoided. 
 
 ### Factors affecting data linearity
 In addition to illuminants as mentioned above, the following non-exhaustive factors can be cited:
@@ -197,7 +197,7 @@ Faced with these nearly insurmountable challenges given that there are many more
 
 ### Conclusion
 There is no single correct approach to processing RAW files. What is important is that the process of preparing the data for display does not result in unnecessary data loss or limiting that can compromise the end result. 
-Rawtherapee has taken a different approach from other software; the concepts of “scene-referred” and “display-referred” are not strictly used (except with some similarities when using processes based on CIECAM). This doesn’t mean that the scene-referred concept isn’t effective when used in the appropriate context. Lab is used because, in 32-bit mode, it allows for a dynamic range of at least 25 EV and avoids color shifts (to maintain nearly perfect hue linearity) by using Munsell correction.
+Rawtherapee has taken a different approach from other software; the concepts of “scene-referred” and “display-referred” are not strictly used (except with some similarities when using processes based on CIECAM). This doesn’t mean that the scene-referred concept isn’t effective when used in the appropriate context. L\*a\*b\* is used because, in 32-bit mode, it allows for a dynamic range of at least 25 EV and avoids color shifts (to maintain nearly perfect hue linearity) by using Munsell correction.
 
 The approach to processing in Rawtherapee is based on the following general combination:
 * Optimize the RAW data using linear algebra (demosaicing, black point adjustment, capture sharpening, etc.);
