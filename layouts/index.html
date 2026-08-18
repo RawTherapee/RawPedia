@@ -196,12 +196,14 @@
     {{ end }}
   </ul>
 
+
+  {{ $address := "/tutorials/" }}
   {{ $category := "Tutorials" }}
   <a href='#{{ $category | urlize }}'>
     <h3 id='{{ $category | urlize }}'>{{ or (T $category) $category }}</h3>
   </a>
   <ul>
-    {{ range where .Site.RegularPages "Params.tags" "intersect" (slice $category) }}
+    {{ range where .Site.Pages "Params.tags" "intersect" (slice $category) }}
       <li>
         <a href="{{.RelPermalink}}">{{ .Title }}</a>
       </li>
