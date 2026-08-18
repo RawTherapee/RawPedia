@@ -176,7 +176,11 @@ More on [Raw Black Points](/raw_black_points/)
 >}}
 
 Below, you can see the influence of Raw Black Points on the image at the
-end of the process (i.e., after all the processing steps below have been completed). 
+end of the process (i.e., after all the processing steps below have been
+completed). This histogram corresponds to the pp3 file 2 : 'Second
+example with Color Propagation and blur' at the end of the process, with
+the histogram type set to 'Output profile mode with a gamma.' 
+
 + Note the difference on the horizontal axis, close to zero.
 + Note that the overall histogram is better filled.
 
