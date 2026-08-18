@@ -60,7 +60,7 @@ This concept isn't about forcing you to change your image processing methods, bu
 + Be careful not to use methods or tools that lead to the creation of imaginary colors. The core principle of Game Changer is to eliminate them - or at the very least, reduce them.
 + Using the concept of a pre-tone mapping, which makes an image usable or (acceptable) for further processing. That is to say:
   - Bring the Black point close to zero, to increase contrast and use the entire range of data.
-  - Bring the White point as close as possible to 1: out-of-gamut data can have very high values ​​(3, 5 or 10), and all methods are more efficient when in the interval [0 1] (32-bit real format), and subsequent processing is more efficient when the data has been normalized i.e. in the interval [0 1] (32-bit real format) and the output of GHS is unbounded.
+  - Bring the White point as close as possible to 1: out-of-gamut data can have very high values ​​(3, 5 or 10), and all methods are more efficient when in the interval [0, 1] (32-bit real format), and subsequent processing is more efficient when the data has been normalized i.e. in the interval [0, 1] (32-bit real format) and the output of GHS is unbounded.  
   - All calculations are performed using 32-bit real numbers, and no data is lost.
   - Implementing an asymptotic process that allows us to get closer to the White point, without reaching it - and even less going beyond it.
   - This principle is included in 'Selective Editing > Equalization & Pre-tone mapping': The first RT-spot used must always be (if of course there is a need) a Pre-tone mapper in Global mode.
@@ -111,7 +111,7 @@ But of course, there are no prohibitions; these are only general recommendations
   - Michaelis-Menten : Subtrack black = 0.05 White point=3.1
   - Generalized Hyperbolic Strech: RGB values- R:3.3 G:1.2 B:1.9
   - Abstract Profiles : RGB max = 0.92 - Final RGB Max = 0.62 - Final Saturation Max = 0.75
-+ 'Normally', if everything was within the gamut, and if no processing caused it to be exceeded, the values ​​should all be within the interval [0 1] (32-bit real format).
++ 'Normally', if everything is within the gamut, and if no processing caused it to be exceeded, the values ​​should all be within the interval [0, 1] (32-bit real format).
 + If you find values (for the maximum) ​​for Gamut Compression, Michaelis-Menten, Generalized Hyperbolic Stretch:
   - That are less than 1 or close to 1. It's likely that Highlight reconstruction > Color Propagation (or Inpaint Opposed) won't help. In that case, disable it.
   - If these same values ​​are much greater than 1, for example 3.5 or 8, or more, the use of Color Propagation is recommended, and consequently it should not be disabled.
@@ -598,7 +598,7 @@ I won’t compare it to other tone mappers in RawTherapee or other software, usi
 
 ##### The advantage of doing multiple stretches
 
-Rather than attempting a single stretch, in the case of images with a high WP (3 to 5), which will require a high 'Stretch factor (D)', or where the user will have difficulty locating the area where action should be prioritized, it is better to perform two stretches. The first, with moderate values, will place the data in the interval [0-1] (32-bit real format), while the second will allow for better localization of the action.
+Rather than attempting a single stretch, in the case of images with a high WP (3 to 5), which will require a high 'Stretch factor (D)', or where the user will have difficulty locating the area where action should be prioritized, it is better to perform two stretches. The first, with moderate values, will place the data in the interval [0, 1] (32-bit real format), while the second will allow for better localization of the action.
 
 + Note that GHS settings can cause data (depending on the GHS settings) to fall outside the [0, 1] range, both in linear and output data. Constantly monitor the histogram in both modes (working profile - linear and output profile - gamma) and make any necessary corrections. In reality, to give the GHS algorithm some leeway, I added 0.1 to the calculations. This means that if you open a second RT-Spot, you'll see the WP value as 1.1, not 1.
 + In ‘Stretch Regularization & Midtones’, you can set the value (LC) – the local contrast – to zero to avoid artifacts in the sun area. Local contrast can be addressed later in Abstract Profile.
@@ -935,7 +935,7 @@ I made gradual adjustments starting from the basic settings, leading to the resu
 #### Third step: Generalized Hyperbolic Stretch - GHS & Michaelis-Menten - MM
 
 I chose to perform the 'pre-tone mapping' in 2 steps:
-+ The first with GHS, to bring the huge value of the data (linear White point around 11), into the interval [0 1] (32-bit real format).
++ The first with GHS, to bring the huge value of the data (linear White point around 11), into the interval [0, 1] (32-bit real format).
 + The second with MM, to better balance the image.
 
 GHS:
@@ -1262,7 +1262,7 @@ I’m going to show you how to process this image; some of the settings might be
 </figure>
 
 + activate the checkbox 'Auto black point & White point', and also 'Symmetry point (SP)'.
-+ you can see the two settings found by the algorithm which show the underexposure of the image. After these settings, the data is in Rec2020 in the interval [0 1] (32-bit real format). BP (linear) = 0.0016, WP (linear) = 0.6662.
++ you can see the two settings found by the algorithm which demonstrate the underexposure of the image. After these settings, the data is in Rec2020 in the interval [0, 1] (32-bit real format). BP (linear) = 0.0016, WP (linear) = 0.6662.
 
 ##### First spot : Sharpening
 
@@ -1469,7 +1469,7 @@ I preferred to use Generalized Hyperbolic Stretch (GHS) rather than Michaelis-Me
 The goal of this step is to adjust the White Point (linear) and Black Point (linear), and at a minimum, to adjust the image contrast.
 Go to ‘Selective Editing > Global > Equalization & Pre-Tone Mapping’. Choose Genralized Hyperbolic Stretch.
 
-Click on ‘Auto Black Point & White Point’ and examine the values. You should see BP = 0.0033, meaning the image’s black levels were not optimized, and WP = 1.0657, also indicating no optimization. Adjusting these values ​​to the range [0, 1] (32-bit real format) will result in an image with greater contrast and deeper blacks.This reduction in linear Black point, does essentially the same thing as "Raw Black Point," but here it doesn't introduce a color cast. All three RGB channels are treated identically.
+Click on ‘Auto Black Point & White Point’ and examine the values. You should see BP = 0.0033, meaning the image’s black levels are not optimized, and WP = 1.0657, also indicating no optimization. Adjusting these values ​​to the range [0, 1] (32-bit real format) will result in an image with greater contrast and deeper blacks. This reduction in linear Black point, does essentially the same thing as "Raw Black Point," but here it doesn't introduce a color cast. All three RGB channels are treated identically.
 
 The (somewhat arbitrary) settings are ‘Stretch factor (D)’ = 0.488, ‘Local intensity (b)’ = 1.442 and ‘Symmetry point (SP)’ = 0.03113. Of course you can change these settings.
 
