@@ -158,9 +158,9 @@ operations:
 
 ## RawTherapee pipeline : linear or non-linear ?
 ### Linear processing: what is it and why is it used?
-Suggest edit to read: In the so-called scene-referred workflow images are processed using linear operations. This occurs up and until the point where the scene values are converted to display-adapted values (output tone mapping). The L\*a\*b\* colour space is avoided in the intermediate steps prior to the output transform. The claimed advantages are as follows:
+In the so-called scene-referred workflow images are processed using linear operations. This occurs up and until the point where the scene values are converted to display-adapted values (output tone mapping). The L\*a\*b\* colour space is avoided in the intermediate steps prior to the output transform. The claimed advantages are as follows:
 * *Working in linear RGB is simpler, the algorithms are faster and can tolerate more extreme adjustments without generating artifacts.*  
-* *Avoids the use of the L\*a\*b\* color space which supposedly limits the dynamic range and introduces hue and saturation shifts. There are better color spaces such as IPT-HDR and JzAzBz that have been developed specifically for HDR with nearly perfect hue linearity*
+* *Avoids the use of the L\*a\*b\* color space which supposedly limits the dynamic range and introduces hue and saturation shifts. There are better color spaces such as IPT-HDR and JzAzBz that have been developed specifically for HDR with nearly perfect hue linearity.*
 
 Rawtherapee takes a different approach while still meeting the desired criteria in terms of dynamic range, hue integrity and minimum artifacts.
 
@@ -186,7 +186,7 @@ In addition to illuminants as mentioned above, the following non-exhaustive fact
 * White balance, which ultimately boils down to three multiplication coefficients, but which in reality involves complex phenomena that are difficult to model e.g. in Temperature Correlation.
 
 ### The choices made in Rawtherapee
-Faced with these nearly difficult challenges given that there are many more unknowns than equations, RawTherapee proceeds as follows :
+Faced with these difficult challenges given that there are many more unknowns than equations, RawTherapee proceeds as follows :
 * Treat what can be treated using linear algebra even though we often lack all the necessary information and are obliged to use simplified models. We also need to bear in mind that processing image data that falls outside the limits of the working profile is a daunting task and a risky gamble because we are dealing with imaginary colors and cannot visualise what we are doing. These operations can be referred to as sensor-referred processing.
 * Use linear, logarithmic, or hyperbolic transformations to fit the data (without limiting) into the working profile to :
    - bring the black point close to zero to optimize contrast,

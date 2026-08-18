@@ -4711,8 +4711,8 @@ To modify the primaries or adjust the 'Dominant colors', you must change the sel
   especially for (WP linear) and (SP). Find a balanced image by adjusting Stretch Factor (D) and Local Intensity (b). You can also use the other
   available settings: Protect Shadows (LP), Protect Highlights (HP), Stretch Regularization & Midtones, and Highlight Attenuation. The goal is to
   obtain an acceptable image for subsequent enhancement; of course, it can be excellent after GHS processing. The general objectives are:
-  a) data optimization to fit within the interval [0-1] (32-bit real format) - with no data out of gamut, the most important; b) a histogram without major defects;
-  c) a balance of luminance, contrast, and color (gamut, colorimetry, etc.).
+  a) data optimization to fit within the interval [0, 1] (32-bit real format) - with no data out of gamut, the most important; b) a histogram without major defects;
+  b) a balance of luminance, contrast, and color (gamut, colorimetry, etc.).
 - Then use Abstract Profile, specifically: a) Gamma/Slope to adjust tones; b) Contrast Enhancement to adjust local contrast; 
   c) Primaries & Illuminant if necessary to correct colors (purity, saturation, dominant color), in particular if the illuminants are
   very far from the 'Daylight' or 'BlackBody' references, for example LED or Halogen. Of course, you can also use Selective Editing >
