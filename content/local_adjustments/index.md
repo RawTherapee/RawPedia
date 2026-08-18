@@ -4574,7 +4574,7 @@ alt="Ghs-example1.jpg" /> In this first step:
 
 **Recommendations**
 
-- It is preferable to use GHS as the first RT-spot; this will allow us to resolve the problem of equilibria due to deviations from [0 1] (32-bit real format)
+- It is preferable to use GHS as the first Global RT-spot; this will allow us to resolve the problem of equilibria due to deviations from [0 1] (32-bit real format)
   of the values ​​of the Black point (linear BP) and White point (linear WP). In fact, GHS behaves like a pre-tone-mapper. Black point correction
   (linear BP) in Raw corresponds roughly to Raw Black Point > Dehaze (Raw Tab), while White point correction (linear WP) can be considered
   a better use of Raw White Points (Raw Tab). Ideally, GHS would have been developed using raw data, but this option would have two major
