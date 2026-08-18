@@ -170,7 +170,10 @@ They do not include logarithmic or exponential functions,  exposure, gamut compr
 
 ### What happens when you take a photo?
 The camera’s sensor, whose internal characteristics are largely unknown, is exposed to a natural or artificial illuminant falling on a subject for which precise colour information is unknown (i.e. spectral data for each part of the image - flowers, animals, buildings, etc.). Not only that, but the tristimulus “observer ” values produced by the camera are different to those of a human observer.  
-The illuminant is either: a) natural light, governed by, the time of day, the amount of cloud cover and the laws of Planck and Boltzmann (a combination of quantum and wave physics);  or b) artificial, with a spectral distribution that is usually unknown. What we can say for certain is that the data recorded on the sensor and perceived by our eyes cannot be defined using linear algebra.
+The illuminant is either:
+* natural light, governed by, the time of day, the amount of cloud cover and the laws of Planck and Boltzmann (a combination of quantum and wave physics);
+* artificial, with a spectral distribution that is usually unknown. 
+* what we can say for certain is that the data recorded on the sensor and perceived by our eyes cannot be defined using linear algebra.
 This observation raises the question: should we strive to process data linearly when, by its very nature it is not, especially when there are LED illuminants?  For example, our cameras address the problem described above by using a 3x3 (linear) matrix and a D65 illuminant, which is an admission of our inability to do better.
 
 ### What is important?

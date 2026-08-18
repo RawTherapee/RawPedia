@@ -936,7 +936,7 @@ I made gradual adjustments starting from the basic settings, leading to the resu
 
 I chose to perform the 'pre-tone mapping' in 2 steps:
 + The first with GHS, to bring the huge value of the data (linear White point around 11), into the interval [0 1] (32-bit real format).
-+ The second wit MM, to better balance the image.
++ The second with MM, to better balance the image.
 
 GHS:
 <figure>
