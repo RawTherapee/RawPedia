@@ -89,7 +89,7 @@ I preferred to use Generalized Hyperbolic Stretch (GHS) rather than Michaelis-Me
 The goal of this step is to adjust the White Point (linear) and Black Point (linear), and at a minimum, to adjust the image contrast.
 Go to ‘Selective Editing > Global > Equalization & Pre-Tone Mapping’. Choose Genralized Hyperbolic Stretch.
 
-Click on ‘Auto Black Point & White Point’ and examine the values. You should see BP = 0.0033, meaning the image’s black levels were not optimized, and WP = 1.0657, also indicating no optimization. Adjusting these values ​​to the range [0, 1] will result in an image with greater contrast and deeper blacks.This reduction in linear Black point, does essentially the same thing as "Raw Black Point," but here it doesn't introduce a color cast. All three RGB channels are treated identically.
+Click on ‘Auto Black Point & White Point’ and examine the values. You should see BP = 0.0033, meaning the image’s black levels were not optimized, and WP = 1.0657, also indicating no optimization. Adjusting these values ​​to the range [0, 1] (32-bit real format) will result in an image with greater contrast and deeper blacks.This reduction in linear Black point, does essentially the same thing as "Raw Black Point," but here it doesn't introduce a color cast. All three RGB channels are treated identically.
 
 The (somewhat arbitrary) settings are ‘Stretch factor (D)’ = 0.488, ‘Local intensity (b)’ = 1.442 and ‘Symmetry point (SP)’ = 0.03113. Of course you can change these settings.
 

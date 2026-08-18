@@ -34,8 +34,7 @@ This concept isn't about forcing you to change your image processing methods, bu
 + Be careful not to use methods or tools that lead to the creation of imaginary colors. The core principle of Game Changer is to eliminate them - or at the very least, reduce them.
 + Using the concept of a pre-tone mapping, which makes an image usable or (acceptable) for further processing. That is to say:
   - Bring the Black point close to zero, to increase contrast and use the entire range of data.
-
-  - Bring the White point as close as possible to 1: out-of-gamut data can have very high values ​​(3, 5 or 10), and all methods are more efficient when in the interval [0 1], and subsequent processing is more efficient when the data has been normalized i.e. in the interval [0 1].
+  - Bring the White point as close as possible to 1: out-of-gamut data can have very high values ​​(3, 5 or 10), and all methods are more efficient when in the interval [0 1] (32-bit real format), and subsequent processing is more efficient when the data has been normalized i.e. in the interval [0 1] (32-bit real format) and the output of GHS is unbounded.
   - All calculations are performed using 32-bit real numbers, and no data is lost.
   - Implementing an asymptotic process that allows us to get closer to the White point, without reaching it - and even less going beyond it.
   - This principle is included in 'Selective Editing > Equalization & Pre-tone mapping': The first RT-spot used must always be (if of course there is a need) a Pre-tone mapper in Global mode.
@@ -86,7 +85,7 @@ But of course, there are no prohibitions; these are only general recommendations
   - Michaelis-Menten : Subtrack black = 0.05 White point=3.1
   - Generalized Hyperbolic Strech: RGB values- R:3.3 G:1.2 B:1.9
   - Abstract Profiles : RGB max = 0.92 - Final RGB Max = 0.62 - Final Saturation Max = 0.75
-+ 'Normally', if everything was within the gamut, and if no processing caused it to be exceeded, the values ​​should all be within the interval [0 1].
++ 'Normally', if everything was within the gamut, and if no processing caused it to be exceeded, the values ​​should all be within the interval [0 1] (32-bit real format).
 + If you find values (for the maximum) ​​for Gamut Compression, Michaelis-Menten, Generalized Hyperbolic Stretch:
   - That are less than 1 or close to 1. It's likely that Highlight reconstruction > Color Propagation (or Inpaint Opposed) won't help. In that case, disable it.
   - If these same values ​​are much greater than 1, for example 3.5 or 8, or more, the use of Color Propagation is recommended, and consequently it should not be disabled.

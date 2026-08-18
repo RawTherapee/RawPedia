@@ -48,7 +48,7 @@ I’m going to show you how to process this image; some of the settings might be
 </figure>
 
 + activate the checkbox 'Auto black point & White point', and also 'Symmetry point (SP)'.
-+ you can see the two settings found by the algorithm which show the underexposure of the image. After these settings, the data is in Rec2020 in the interval [0 1]. BP (linear) = 0.0016, WP (linear) = 0.6662.
++ you can see the two settings found by the algorithm which show the underexposure of the image. After these settings, the data is in Rec2020 in the interval [0 1] (32-bit real format). BP (linear) = 0.0016, WP (linear) = 0.6662.
 
 ### First spot : Sharpening
 
