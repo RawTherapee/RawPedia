@@ -160,7 +160,7 @@ operations:
 ### Linear processing: what is it and why is it used?
 Suggest edit to read: In the so-called scene-referred workflow images are processed using linear operations. This occurs up and until the point where the scene values are converted to display-adapted values (output tone mapping). The L\*a\*b\* colour space is avoided in the intermediate steps prior to the output transform. The claimed advantages are as follows:
 * *Working in linear RGB is simpler, the algorithms are faster and can tolerate more extreme adjustments without generating artifacts.*  
-* *The use of the L\*a\*b\* color space limits the dynamic range and introduces hue and saturation shifts. There are better color spaces such as IPT-HDR and JzAzBz that have been developed specifically for HDR with nearly perfect hue linearity*
+* *Avoids the use of the L\*a\*b\* color space which supposedly limits the dynamic range and introduces hue and saturation shifts. There are better color spaces such as IPT-HDR and JzAzBz that have been developed specifically for HDR with nearly perfect hue linearity*
 
 Rawtherapee takes a different approach while still meeting the desired criteria in terms of dynamic range, hue integrity and minimum artifacts.
 
