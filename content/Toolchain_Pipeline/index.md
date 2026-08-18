@@ -211,7 +211,7 @@ There is no single correct approach to processing raw files. What is important i
 
 Rawtherapee takes a different approach from other software; in Rawtherapee the concepts of “scene-referred” and “display-referred” are not strictly used (except with some similarities when using processes based on CIECAM). This doesn’t mean that the scene-referred concept isn’t effective when used in the appropriate context.
 
-L\*a\*b\* is used because in 32-bit mode, it allows for a dynamic range of at least 25 EV and avoids color shifts (to maintain nearly perfect hue linearity) by using Munsell correction.
+L\*a\*b\* is used when appropriate because in 32-bit mode, it allows for a dynamic range of at least 25 EV and avoids color shifts (to maintain nearly perfect hue linearity) by using Munsell correction.
 
 The approach to processing in Rawtherapee is based on the following general combination:
 * Optimize the RAW data using linear algebra (demosaicing, black point adjustment, capture sharpening, etc.);
