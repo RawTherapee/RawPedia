@@ -199,8 +199,8 @@ Faced with these difficult challenges given that there are many more unknowns th
 * Use CIECAM either at the end of the processing pipeline just before the output-device conversion (monitors, printers, etc.), or in conjunction with Selective Editing, to best account for physiological effects that are misinterpreted by mathematical algorithms alone. In particular, this includes the physiological effects of the shooting or scene conditions (simultaneous contrast, Hunts effect, etc.) and the viewing conditions. 
 
 Finally RT sets out to ensure that throughout the process:
-* that the data prior to the final conversion remains within the working profile by using the histogram in linear mode and ensuring that you avoid using or generating imaginary colors (for example, manipulating primary colors is risky);
-* that the entire process leading up to the final conversion stays within the gamut limits of the output profile. 
+* the data prior to the final conversion remains within the working profile by using the histogram in linear mode and ensuring that you avoid using or generating imaginary colors (for example, manipulating primary colors is risky);
+* the entire process leading up to the final conversion stays within the gamut limits of the output profile. 
 
 ### Conclusion
 There is no single correct approach to processing raw files. What is important is that the process of preparing the data for display does not introduce unnecessary data loss or limitations that can compromise the end result.
