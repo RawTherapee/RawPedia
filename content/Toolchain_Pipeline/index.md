@@ -162,7 +162,7 @@ In the so-called scene-referred workflow images are processed using linear opera
 * *Working in linear RGB is simpler, the algorithms are faster and can tolerate more extreme adjustments without generating artifacts.*  
 * *Avoids the use of the L\*a\*b\* color space which supposedly limits the dynamic range and introduces hue and saturation shifts.*
 
-Rawtherapee takes a different approach while still meeting the desired criteria in terms of dynamic range, hue integrity and minimum artifacts.
+RawTherapee takes a different approach while still meeting the desired criteria in terms of dynamic range, hue integrity and minimum artifacts.
 
 ### Linear maths
 Linear operations include polynomials, linear equations, vector transformations, matrix calculations, the Fourier transform, Wavelets, etc.
@@ -187,7 +187,7 @@ In addition to illuminants as mentioned above, the following non-exhaustive fact
 * Gamut compression, which aims to make out-of-gamut data (whether related to the illuminant or to exposure) consistent with the output gamut.
 * White balance, which ultimately boils down to three multiplication coefficients, but which in reality involves complex phenomena that are difficult to model e.g. in Temperature Correlation.
 
-### The choices made in Rawtherapee
+### The choices made in RawTherapee
 Faced with these difficult challenges given that there are many more unknowns than equations, RawTherapee proceeds as follows :
 * Treat what can be treated using linear algebra even though we often lack all the necessary information and are obliged to use simplified models. We also need to bear in mind that processing image data that falls outside the limits of the working profile is a daunting task and a risky gamble because we are dealing with imaginary colors and cannot visualise what we are doing. These operations can be referred to as sensor-referred processing.
 * Use linear, logarithmic, or hyperbolic transformations to fit the data (without limiting) into the working profile to :
@@ -199,18 +199,18 @@ Faced with these difficult challenges given that there are many more unknowns th
 * Multiple algorithms can be used (for example, General Hyperbolic Stretch combined with Abstract Profile) to optimize the data.
 * Use CIECAM either at the end of the processing pipeline just before the output-device conversion (monitors, printers, etc.), or in conjunction with Selective Editing, to best account for physiological effects that are misinterpreted by mathematical algorithms alone. In particular, this includes the physiological effects of the shooting or scene conditions (simultaneous contrast, Hunts effect, etc.) and the viewing conditions.
 
-Finally RT sets out to ensure that throughout the process:
+Finally RawTherapee sets out to ensure that throughout the process:
 * the data prior to the final conversion remains within the working profile by using the histogram in linear mode and ensuring that you avoid using or generating imaginary colors (for example, manipulating primary colors is risky);
 * the entire process leading up to the final conversion stays within the gamut limits of the output profile. 
 
 ### Conclusion
 There is no single correct approach to processing raw files. What is important is that the process of preparing the data for display does not introduce unnecessary data loss or limitations that can compromise the end result.
 
-Rawtherapee takes a different approach from other software; in Rawtherapee the concepts of “scene-referred” and “display-referred” are not strictly used (except with some similarities when using processes based on CIECAM). This doesn’t mean that the scene-referred concept isn’t effective when used in the appropriate context.
+RawTherapee takes a different approach from other software; in RawTherapee the concepts of “scene-referred” and “display-referred” are not strictly used (except with some similarities when using processes based on CIECAM). This doesn’t mean that the scene-referred concept isn’t effective when used in the appropriate context.
 
 L\*a\*b\* is used when appropriate because in 32-bit mode, it allows for a dynamic range of at least 25 EV and avoids color shifts (to maintain nearly perfect hue linearity) by using Munsell correction.
 
-The approach to processing in Rawtherapee is based on the following general combination:
+The approach to processing in RawTherapee is based on the following general combination:
 * Optimize the RAW data using linear algebra (demosaicing, black point adjustment, capture sharpening, etc.);
 * Use gamut compression to manage the output profile gamut from the very beginning of the process;
 * Use a white-balance method based on temperature correlation when possible, rather than conventional white balance;
@@ -224,7 +224,7 @@ You can get a glimpse of this approach in the two Rawpedia tutorials:
 
 [Game Changer](/tutorials/)
 
-[Rawtherapee Process Challenge](rawtherapee_processing_challenge_feedback)
+[RawTherapee Process Challenge](rawtherapee_processing_challenge_feedback)
 
 ## Colorimetry
 
