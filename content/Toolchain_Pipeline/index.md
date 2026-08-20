@@ -169,14 +169,14 @@ Linear operations include polynomials, linear equations, vector transformations,
 They do not include logarithmic or exponential functions, exposure, gamut compression, hyperbolic functions, tone curves, L\*a\*b\* or CIECAM, etc.
 
 ### What happens when you take a photo?
-The camera’s sensor, whose internal characteristics are largely unknown, is exposed to a natural or artificial illuminant falling on a subject for which precise color information is unknown (i.e. spectral data for each part of the image - flowers, animals, buildings, etc.). Not only that, but the tristimulus “observer” values produced by the camera are different to those of a human observer.
+The camera’s sensor, whose internal characteristics are largely unknown, is exposed to a natural or artificial illuminant -often multiple - falling on a subject for which precise color information is unknown (i.e. spectral data for each part of the image - flowers, animals, buildings, etc.). Not only that, but the tristimulus “observer” values produced by the camera are different to those of a human observer.
 
-The illuminant is either:
+Each illuminant is either:
 * natural light, governed by the time of day, the amount of cloud cover and the laws of Planck and Boltzmann (a combination of quantum and wave physics);
 * artificial, with a spectral distribution that is usually unknown.
 
 What we can say for certain is that the data recorded on the sensor and perceived by our eyes cannot be defined using linear algebra.
-This observation raises the question: should we strive to process data linearly when, by its very nature it is not, especially when there are LED illuminants? Consider our digital cameras, they attempt to use a 3x3 (linear) matrix and a D65 illuminant (6500K), an admission of our inability to do better.
+This observation raises the question: should we strive to process data linearly when, by its very nature it is not, or that this data is subject to uncertainty, especially when there are LED illuminants? Consider our digital cameras, they attempt to use a 3x3 (linear) matrix and a D65 illuminant (6500K), an admission of our inability to do better.
 
 ### What is important?
 We need to distinguish between the part of image processing that aims to best “map” the data recorded on the sensor into the working profile, which is done in true 32- or 64-bit (lossless) mode and the visualization part, whether on a screen or to a printer. For the latter, the gamut is often much narrower and a curve simulating our visual perception (gamma) is also applied. Currently, the majority of display conversions are done in 8-bit L\*a\*b\*, which results in a considerable loss of data. Obviously any further processing after such a conversion should be avoided.
