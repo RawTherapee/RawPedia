@@ -169,16 +169,17 @@ Linear operations include polynomials, linear equations, vector transformations,
 They do not include logarithmic or exponential functions, exposure, gamut compression, hyperbolic functions, tone curves, L\*a\*b\* or CIECAM, etc.
 
 ### What happens when you take a photo?
-The camera’s sensor, whose internal characteristics are largely unknown, is exposed to a natural or artificial illuminant falling on a subject for which precise color information is unknown (i.e. spectral data for each part of the image - flowers, animals, buildings, etc.). Not only that, but the tristimulus “observer ” values produced by the camera are different to those of a human observer.  
+The camera’s sensor, whose internal characteristics are largely unknown, is exposed to a natural or artificial illuminant falling on a subject for which precise color information is unknown (i.e. spectral data for each part of the image - flowers, animals, buildings, etc.). Not only that, but the tristimulus “observer” values produced by the camera are different to those of a human observer.
+
 The illuminant is either:
 * natural light, governed by the time of day, the amount of cloud cover and the laws of Planck and Boltzmann (a combination of quantum and wave physics);
-* artificial, with a spectral distribution that is usually unknown. 
+* artificial, with a spectral distribution that is usually unknown.
 
 What we can say for certain is that the data recorded on the sensor and perceived by our eyes cannot be defined using linear algebra.
 This observation raises the question: should we strive to process data linearly when, by its very nature it is not, especially when there are LED illuminants? Consider our digital cameras, they attempt to use a 3x3 (linear) matrix and a D65 illuminant (6500K), an admission of our inability to do better.
 
 ### What is important?
-We need to distinguish between the part of image processing that aims to best “map” the data recorded on the sensor into the working profile, which is done in true 32- or 64-bit (lossless) mode and the visualization part, whether on a screen or to a printer. For the latter, the gamut is often much narrower and a curve simulating our visual perception (gamma) is also applied. Currently, the majority of display conversions are done in 8-bit L\*a\*b\*, which results in a considerable loss of data. Obviously any further processing after such a conversion should be avoided. 
+We need to distinguish between the part of image processing that aims to best “map” the data recorded on the sensor into the working profile, which is done in true 32- or 64-bit (lossless) mode and the visualization part, whether on a screen or to a printer. For the latter, the gamut is often much narrower and a curve simulating our visual perception (gamma) is also applied. Currently, the majority of display conversions are done in 8-bit L\*a\*b\*, which results in a considerable loss of data. Obviously any further processing after such a conversion should be avoided.
 
 ### Factors affecting data linearity
 In addition to illuminants as mentioned above, the following non-exhaustive factors can be cited:
@@ -196,7 +197,7 @@ Faced with these difficult challenges given that there are many more unknowns th
   
 * With the exception of the final display conversion to 8 bits, these transformations are performed in unbounded 32-bit (or 64-bit) floating-point format, **without data loss**, and are often reversible. For example, the RGB -> L\*a\*b\* and L\*a\*b\* -> RGB transformations, which also **preserve the colorimetry using a Munsell correction**, are capable of handling a **dynamic range of at least 25 Ev.** 
 * Multiple algorithms can be used (for example, General Hyperbolic Stretch combined with Abstract Profile) to optimize the data.
-* Use CIECAM either at the end of the processing pipeline just before the output-device conversion (monitors, printers, etc.), or in conjunction with Selective Editing, to best account for physiological effects that are misinterpreted by mathematical algorithms alone. In particular, this includes the physiological effects of the shooting or scene conditions (simultaneous contrast, Hunts effect, etc.) and the viewing conditions. 
+* Use CIECAM either at the end of the processing pipeline just before the output-device conversion (monitors, printers, etc.), or in conjunction with Selective Editing, to best account for physiological effects that are misinterpreted by mathematical algorithms alone. In particular, this includes the physiological effects of the shooting or scene conditions (simultaneous contrast, Hunts effect, etc.) and the viewing conditions.
 
 Finally RT sets out to ensure that throughout the process:
 * the data prior to the final conversion remains within the working profile by using the histogram in linear mode and ensuring that you avoid using or generating imaginary colors (for example, manipulating primary colors is risky);
