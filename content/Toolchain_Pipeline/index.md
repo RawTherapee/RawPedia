@@ -169,7 +169,7 @@ Linear operations include polynomials, linear equations, vector transformations,
 They do not include logarithmic or exponential functions, exposure, gamut compression, hyperbolic functions, tone curves, L\*a\*b\* or CIECAM, etc.
 
 ### What happens when you take a photo?
-The camera’s sensor, whose internal characteristics are largely unknown, is exposed to a natural or artificial illuminant -often multiple - falling on a subject for which precise color information is unknown (i.e. spectral data for each part of the image - flowers, animals, buildings, etc.). Not only that, but the tristimulus “observer” values produced by the camera are different to those of a human observer.
+The camera’s sensor, whose internal characteristics are largely unknown, is exposed to a natural or artificial illuminant or multiple illuminants, falling on a subject for which precise color information is unknown (i.e. spectral data for each part of the image - flowers, animals, buildings, etc.). Not only that, but the tristimulus “observer” values produced by the camera are different to those of a human observer.
 
 Each illuminant is either:
 * natural light, governed by the time of day, the amount of cloud cover and the laws of Planck and Boltzmann (a combination of quantum and wave physics);
