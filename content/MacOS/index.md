@@ -1,5 +1,7 @@
 ---
-title: MacOS
+aliases: ["/os_x/", "/osx/"]
+title: "MacOS"
+date: 2026-06-27
 contributors:
   - DrSlony
   - Ion12
@@ -12,77 +14,77 @@ tags:
 toc: true
 ---
 
-This page details instructions for compiling RawTherapee on **macOS**
+## How to compile RawTherapee on macOS
+
+This page details instructions for compiling RawTherapee on macOS
 systems. There are also separate pages with instructions for compiling
-on [Linux](linux) and [Windows](windows). This
-guide details the **what** and **how** parts of compilation. For the
-**why** and explanations of these commands, for a list of dependencies,
-CMake options and other information, please refer to the detailed
+on [Linux](linux) and [Windows](windows). For more information regarding the cmake commands and dependencies, please refer to the 
 [Linux](linux) article.
 
-When in doubt, [join us on IRC](irc) and ask a human!
+When in doubt, <big> ***[join us on the forum](forum)*** </big> and ask a human!
 
 For instructions on cloning the source, choosing branches, configuring
 CMake and doing the actual compilation, see these sections in the
 [Linux](linux) guide. The information below is in addition to
 that.
 
-## Dependencies
+### Dependencies
 
 See the list of dependencies in the [Compiling in Linux](linux#dependencies) article.
+There are two separate package managers on macOS, [Homebrew](https://brew.sh), and MacPorts. Only use one package manager and configure the build for it:
 
-### Homebrew
+#### Homebrew [🌐](https://brew.sh)
+
+To install [Homebrew](https://brew.sh), use: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 
 The following command installs dependencies for RawTherapee:
-`brew install gtk+3 gtkmm3 gtk-mac-integration adwaita-icon-theme libsigc++ little-cms2 libiptcdata fftw lensfun wget llvm shared-mime-info exiv2 jpeg-xl libomp automake libtool imagemagick create-dmg`
+`brew install imagemagick create-dmg libtiff gtk+3 gtkmm3 gtk-mac-integration adwaita-icon-theme libsigc++@2 little-cms2 libiptcdata fftw lensfun expat pkgconfig llvm shared-mime-info exiv2 jpeg-xl libomp automake libtool`
 
-- **Configuring the homebrew build environment for Apple Silicon "M1"**
-
+##### Configuring the homebrew build environment for Apple Silicon `arm64`
 
 To your `cmake` command add the following flags:
 
+```zsh
+-DLOCAL_PREFIX:STRING="/opt/homebrew"
+```
 
-`-DLOCAL_PREFIX:STRING="/opt/homebrew"`
+```zsh
+-DCMAKE_OSX_ARCHITECTURES=arm64
+```
 
-`-DCMAKE_OSX_ARCHITECTURES=arm64`
-
-### MacPorts
+#### MacPorts
 
 Tested on OS X 10.9-12.
 
-- **Prerequisites**
+##### Prerequisites
   - Xcode Developer Tools & Command Line Tools
   - MacPorts
     - Detailed instructions on setting up MacPorts and the developer
       tools are available on the [MacPorts website](https://www.macports.org).
-- **Configure MacPorts:**
+##### Configure MacPorts:
 
 
 Add the following line to /opt/local/etc/macports/variants.conf
 
+```zsh
++quartz -x11 -gnome +openmp
+```
+##### Installing dependencies
 
-`+quartz -x11 -gnome +openmp`
-
-- **Dependencies**
-
-
-To install the dependencies, run from the terminal:
-
-
-`sudo port install git cmake clang-11 libomp gtk3 gtkmm3 gtk-osx-application-gtk3 adwaita-icon-theme libsigcxx2 lcms2 libiptcdata fftw-3-single lensfun`
+To install the dependencies, run from the terminal `sudo port install git cmake clang-11 libomp gtk3 gtkmm3 gtk-osx-application-gtk3 adwaita-icon-theme libsigcxx2 lcms2 libiptcdata fftw-3-single lensfun`
 
 If compiling on Xcode 9.2 you will also need to do:
 
-
-`sudo port install ld64 +ld64_xcode`
-
-- **Configuring compile system for MacPorts**
-
+```zsh
+sudo port install ld64 +ld64_xcode
+```
+#### Configuring compile system for MacPorts
 
 To your `cmake` command add the following flag:
 
-
-`-DLOCAL_PREFIX:STRING="/opt/local"`
+```zsh
+-DLOCAL_PREFIX:STRING="/opt/local"
+```
 
 ## Compiling
 
@@ -97,165 +99,257 @@ a versioning scheme for **Apple clang** which is inconsistent with
 **llvm clang**. To figure out which compiler to use, check your system
 compiler first:
 
-<div style="margin-left: 2em;">
+<small>
 
-    -> which clang
-    /usr/bin/clang
+```zsh
+% which clang
+/usr/bin/clang
 
-    -> /usr/bin/clang --version
-    Apple clang version 11.0.0 (clang-1100.0.33.17)
-    Target: x86_64-apple-darwin18.7.0
-    Thread model: posix
-    InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+% /usr/bin/clang --version
+Apple clang version 11.0.0 (clang-1100.0.33.17)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+```
 
-</div>
+</small>
 
-If you see **Apple clang** mentioned in the top line of the **clang**
+If you see **`Apple clang`** mentioned in the top line of the `clang`
 version output, note the version number it specifies and refer to
 [this Wikipeda table](https://en.wikipedia.org/wiki/Xcode#Xcode_7.0_-_12.x_(since_Free_On-Device_Development))
 for the mapping between **Apple clang** and **llvm clang** versions.
 This knowledge may be useful when tracing any compilation errors.
 
-If you want to upload a generic \`x86_64\` build or otherwise share it
-with others, you must use
+If you want a generic \`x86_64\` build, use:
 
-
-`-DPROC_TARGET_NUMBER="1"`
+```zsh
+-DPROC_TARGET_NUMBER="1"
+```
 
 and set the processor label manually by setting
 
 
-`-DPROC_LABEL="generic processor"`
+```zsh
+-DPROC_LABEL="generic processor"
+```
 
-If you want to compile a CPU-optimized for yourself only, or build for
-the Apple \`M1\`, then use
+If you want to compile a CPU-optimized build for your own computer's processor, use
 
 
-`-DPROC_TARGET_NUMBER="2"`
+```zsh
+-DPROC_TARGET_NUMBER="2"
+```
 
 and then the processor label would be irrelevant, you could skip it.
 
-If you wish to
-[codesign](https://developer.apple.com/support/code-signing/) your
-build, add your details to the CMake command:
+To enable **SIMDE** accellerations on arm64 (apple silicon), add to your cmake command:
 
+```zsh
+-DWITH_SIMDE:BOOL=ON
+```
 
-`-DCODESIGNID="Developer ID Application: Firstname Lastname (XXXXXXXXXX)"`
+### Deployment Target (Minimum macOS Version)
+
+To set the deployment target, give the version number of the macos SDK you will be using:
+
+```zsh
+-DCMAKE_OSX_DEPLOYMENT_TARGET="26.1"
+```
+
+### Code Signature
+
+To
+[codesign](https://developer.apple.com/support/code-signing/) the
+build, add your Apple "Developer ID Application" certificate name to the CMake command:
+
+```zsh
+-DCODESIGNID:STRING="Developer ID Application: Firstname Lastname (XXXXXXXXXX)"
+```
 
 The app and the generated dmg (Apple Disk Image) will be codesigned.
 
+To sign ad-hoc (for your own machine), use `-` (a minus) as the Certificate name.
+
+### App Notary
+
 To
 [notarize](https://developer.apple.com/documentation/security/notarizing_your_app_before_distribution/customizing_the_notarization_workflow?language=objc)
-your codesigned build, include your app-specific notarial credential in
+your codesigned build, include your app-specific notary credential in
 the CMake command:
 
-
-`-DNOTARY="--username user@mail.com --password abcd-efgh-ijkl-mnop"`
+```zsh
+-DNOTARY:STRING="--username user@mail.com --password abcd-efgh-ijkl-mnop"
+```
 
 The app and dmg will be notarized (scanned for malware) and stapled
 (have the notarization ticket attached).
+
+To build a universal app, enable it and provide the URL of the sister architechure's generated zip:
+
+```zsh
+-DOSX_UNIVERSAL:BOOL=ON \
+-DOSX_UNIVERSAL_URL="file:///Volumes/Public/RawTherapee_macOS_x86_64_latest.zip"
+```
+
+To make a *Fancy* .dmg, enable it with:
+
+```zsh
+-DFANCY_DMG:BOOL=ON
+```
 
 ### Compile RawTherapee
 
 Now you are ready to compile:
 
-    cd ~/repo-rt
-    rm -rf build
-    mkdir build && cd build
-    lensfun-update-data
-    cmake -DCMAKE_BUILD_TYPE="release" \
-          -DPROC_TARGET_NUMBER="1" \
-          -DPROC_LABEL="generic processor" \
-          -DCACHE_NAME_SUFFIX="5-dev" \
-          -DCMAKE_C_COMPILER="clang" \
-          -DCMAKE_CXX_COMPILER="clang++" \
-          -DWITH_LTO="OFF" \
-          -DLENSFUNDBDIR="share/lensfun" \
-          -DCMAKE_OSX_DEPLOYMENT_TARGET=10.15 \
-          ..
-    make -j$(sysctl -n hw.ncpu) install
-    sudo make macosx_bundle
+```zsh
+cd ~/repo-rt
+rm -rf build
+mkdir build && cd build
+lensfun-update-data
+cmake -DCMAKE_BUILD_TYPE="release" \
+      -DPROC_TARGET_NUMBER="1" \
+      -DPROC_LABEL="generic processor" \
+      -DCACHE_NAME_SUFFIX="5-dev" \
+      -DCMAKE_C_COMPILER="clang" \
+      -DCMAKE_CXX_COMPILER="clang++" \
+      -DWITH_LTO="OFF" \
+      -DLENSFUNDBDIR="share/lensfun" \
+      -DCMAKE_OSX_DEPLOYMENT_TARGET=10.15 \
+      ..
+make -j$(sysctl -n hw.ncpu) install
+sudo make macosx_bundle
+```
 
 To compile RawTherapee with a specific llvm **clang** version (e.g.
 installed via homebrew), use the following **cmake** command. When doing
 so, make sure these settings point to the appropriate paths:
 
-- Using llvm 10 from homebrew:
+Using llvm 10 from homebrew:
 
-<div style="margin-left: 2em;">
+```zsh
+-DCMAKE_C_COMPILER="/usr/local/Cellar/llvm/10.0.1_1/bin/clang"
+-DCMAKE_CXX_COMPILER="/usr/local/Cellar/llvm/10.0.1_1/bin/clang++"
+-DCMAKE_AR="/usr/local/Cellar/llvm/10.0.1_1/bin/llvm-ar"
+-DCMAKE_RANLIB="/usr/local/Cellar/llvm/10.0.1_1/bin/llvm-ranlib"
+```
 
-      -DCMAKE_C_COMPILER="/usr/local/Cellar/llvm/10.0.1_1/bin/clang"
-      -DCMAKE_CXX_COMPILER="/usr/local/Cellar/llvm/10.0.1_1/bin/clang++"
-      -DCMAKE_AR="/usr/local/Cellar/llvm/10.0.1_1/bin/llvm-ar"
-      -DCMAKE_RANLIB="/usr/local/Cellar/llvm/10.0.1_1/bin/llvm-ranlib"
+#### Example **`cmake`** command:
+
+<div style="font-size: 12px;">
+
+```zsh
+cmake  .. \
+    -DCMAKE_BUILD_TYPE="release" \
+    -DPROC_TARGET_NUMBER="2" \
+    -DCACHE_NAME_SUFFIX="5.8-dev" \
+    -DCMAKE_C_COMPILER="/usr/local/Cellar/llvm/10.0.1_1/bin/clang" \
+    -DCMAKE_CXX_COMPILER="/usr/local/Cellar/llvm/10.0.1_1/bin/clang++" \
+    -DWITH_LTO="ON" \
+    -DLENSFUNDBDIR="/Applications/RawTherapee.app/Contents/Resources/share/lensfun" \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DOpenMP_C_FLAGS=-fopenmp=libomp \
+    -DOpenMP_CXX_FLAGS=-fopenmp=libomp \
+    -DOpenMP_C_LIB_NAMES="libomp" \
+    -DOpenMP_CXX_LIB_NAMES="libomp" \
+    -DOpenMP_libomp_LIBRARY="/usr/local/lib/libomp.dylib" \
+    -DOpenMP_CXX_FLAGS="-Wno-pass-failed -Wno-deprecated-register -Xpreprocessor -fopenmp /usr/local/lib/libomp.dylib -I/usr/local/include" \
+    -DOpenMP_CXX_LIB_NAMES="libomp" \
+    -DOpenMP_C_FLAGS="-Wno-pass-failed -Wno-deprecated-register -Xpreprocessor -fopenmp /usr/local/lib/libomp.dylib -I/usr/local/include" \
+    -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON \
+    -DCMAKE_EXE_LINKER_FLAGS="-L/usr/local/opt/libffi/lib -L/usr/local/lib" \
+    -DCMAKE_AR="/usr/local/Cellar/llvm/10.0.1_1/bin/llvm-ar" \
+    -DCMAKE_RANLIB="/usr/local/Cellar/llvm/10.0.1_1/bin/llvm-ranlib" \
+    -DCMAKE_OSX_DEPLOYMENT_TARGET=10.15
+```
 
 </div>
 
-- The **cmake** command:
+#### Example universal build on Apple Silicon using Homebrew, Apple Clang
 
-<div style="margin-left: 2em;">
+<div style="font-size: 12px;">
 
-    export PKG_CONFIG_PATH=/usr/local/opt/libffi/lib/pkgconfig:/usr/local/opt/expat/lib/pkgconfig && \
-    cmake  .. -DCMAKE_BUILD_TYPE="release" \
-              -DPROC_TARGET_NUMBER="2" \
-              -DCACHE_NAME_SUFFIX="5.8-dev" \
-              -DCMAKE_C_COMPILER="/usr/local/Cellar/llvm/10.0.1_1/bin/clang" \
-              -DCMAKE_CXX_COMPILER="/usr/local/Cellar/llvm/10.0.1_1/bin/clang++" \
-              -DWITH_LTO="ON" \
-              -DLENSFUNDBDIR="/Applications/RawTherapee.app/Contents/Resources/share/lensfun" \
-              -DCMAKE_BUILD_TYPE=Release \
-              -DOpenMP_C_FLAGS=-fopenmp=libomp \
-              -DOpenMP_CXX_FLAGS=-fopenmp=libomp \
-              -DOpenMP_C_LIB_NAMES="libomp" \
-              -DOpenMP_CXX_LIB_NAMES="libomp" \
-              -DOpenMP_libomp_LIBRARY="/usr/local/lib/libomp.dylib" \
-              -DOpenMP_CXX_FLAGS="-Wno-pass-failed -Wno-deprecated-register -Xpreprocessor -fopenmp /usr/local/lib/libomp.dylib -I/usr/local/include" \
-              -DOpenMP_CXX_LIB_NAMES="libomp" \
-              -DOpenMP_C_FLAGS="-Wno-pass-failed -Wno-deprecated-register -Xpreprocessor -fopenmp /usr/local/lib/libomp.dylib -I/usr/local/include" \
-              -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON \
-              -DCMAKE_EXE_LINKER_FLAGS="-L/usr/local/opt/libffi/lib -L/usr/local/lib" \
-              -DCMAKE_AR="/usr/local/Cellar/llvm/10.0.1_1/bin/llvm-ar" \
-              -DCMAKE_RANLIB="/usr/local/Cellar/llvm/10.0.1_1/bin/llvm-ranlib" \
-              -DCMAKE_OSX_DEPLOYMENT_TARGET=10.15
-
+```zsh
+cd ~
+git clone https://github.com/rawtherapee/rawtherapee repo-rt
+cd repo-rt
+mkdir build
+cd build
+date > stamp
+date > message
+cmake -DCMAKE_BUILD_TYPE="Release" \
+    -DCMAKE_OSX_ARCHITECTURES=arm64 \
+    -DPROC_TARGET_NUMBER="2" -DPROC_LABEL="arm64" \
+    -DCACHE_NAME_SUFFIX="5-dev" -DCMAKE_C_COMPILER="clang" \
+    -DCMAKE_CXX_COMPILER="clang++" \
+    -DWITH_LTO="ON" \
+    -DCMAKE_OSX_SYSROOT="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk" \
+    -DCMAKE_OSX_DEPLOYMENT_TARGET="26.1" -DLOCAL_PREFIX:STRING="/opt/homebrew" \
+    -DLENSFUNDBDIR="/Applications/RawTherapee.app/Contents/Resources/share/lensfun" \
+    -DCMAKE_EXE_LINKER_FLAGS="-Wl,-headerpad_max_install_names -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -arch arm64" \
+    -DOpenMP_C_FLAGS="-fopenmp=lomp" -DOpenMP_CXX_FLAGS=-fopenmp=lomp \
+    -DOpenMP_C_LIB_NAMES="libomp" -DOpenMP_CXX_LIB_NAMES="libomp" \
+    -DOpenMP_libomp_LIBRARY="/opt/homebrew/opt/libomp/lib/libomp.dylib" \
+    -DOpenMP_CXX_FLAGS="-Xpreprocessor -fopenmp /opt/homebrew/opt/libomp/lib/libomp.dylib -I/opt/homebrew/opt/libomp/include" \
+    -DOpenMP_CXX_LIB_NAMES="libomp" \
+    -DOpenMP_C_FLAGS="-Xpreprocessor -fopenmp /opt/homebrew/opt/libomp/lib/libomp.dylib -I/opt/homebrew/opt/libomp/include" \
+    -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON \
+    -DWITH_SIMDE:BOOL=ON \
+    -DOSX_UNIVERSAL_URL="file:///Volumes/Public/RawTherapee_macOS_x86_64_latest.zip" \
+    -DOSX_UNIVERSAL:BOOL=ON \
+    -DFANCY_DMG:BOOL=ON \
+    -DCODESIGNID:STRING="$CODESIGN"  \
+    -DNOTARY:STRING="$NOTARY" \
+    ..
+make -j8 install
+sudo make macosx_bundle
+```
 </div>
 
-### From-Scratch Method
+<br>
 
-- This
-  [1](https://raw.githubusercontent.com/Benitoite/RTdeps/master/macbuildRT.sh)
-  obsolete but useful script of commands may be helpful as a basis for compiling dependencies.
-- A
-  JDK[2](https://www.oracle.com/technetwork/java/javase/downloads/jdk13-downloads-5672538.html)
+###### From-Scratch Method used before High Sierra.
+
+<details>
+
+This [obsolete experimental script](https://raw.githubusercontent.com/Benitoite/RTdeps/master/macbuildRT.sh)
+   script was helpful for dependency compilation.
+  
+A [JDK](https://www.oracle.com/technetwork/java/javase/downloads/jdk13-downloads-5672538.html)
   must be installed.
-- Xcode 11.1+ [3](https://developer.apple.com/xcode) must be installed
+  
+Xcode 11.1+ [from Apple](https://developer.apple.com/xcode) must be installed
+</details>
+
+<hr>
+<hr>
 
 ### Run and Share RawTherapee
 
 You will find a disk image in the build directory; this is the
-distribution release and can be run on any machine which meets the
-architecture requirements you specified in variants.conf earlier.
+distribution release and can be run on any mac that matches the
+architectures you compiled for.
+
+For the release, Codesigning and Notarizing the app and dmg allows users to install and run RawTherapee under default system security settings.
 
 The generated zip file is named according to this template:
 
+<small> `RawTherapee_macOS_`*\<minimum supported macOS version\>*`_64_`*\<RawTherapee version\>*`.dmg.zip` </small>
 
-RawTherapee_OSX_**<minimum supported macOS version>**_64_**<RawTherapee version>**.dmg.zip
+For example: `RawTherapee_macOS_10.9_64_5.8-94-g4dbbc4053.dmg.zip`
 
-RawTherapee_OSX_10.9_64_5.8-94-g4dbbc4053.dmg.zip
-
-Upload the zip archive to <http://filebin.net/> and
+Upload the zip archive to [file.io 🌐](http://file.io/) or your [iCloud](https://support.apple.com/guide/icloud/share-files-and-folders-mm708256356b/icloud) drive and
 [open a new issue on our GitHub page](https://github.com/Beep6581/RawTherapee/issues/new)
-with the link so that we can upload it to the website.
+with the link if you need help with your developement testing.
 
-## macOS installation
+## Installing the RawTherapee Application on macOS
 
-To install the RawTherapee application, open the .dmg and drag the
+<div style="font-size: 32px; margin-left: 0em;">
+
+To install the RawTherapee application, open the `.dmg` and drag the
 RawTherapee app onto the `/Applications` folder.
 
-To use the optional rawtherapee-cli command line interface, move
-rawtherapee-cli into a folder in your \$PATH and install the RawTherapee
+To use the [command line interface (CLI)](command-line_options/#rawtherapee-cli), move
+`rawtherapee-cli` into a folder in your \$PATH and install the RawTherapee
 app as above.
 
-If the workspace is too small to read, you must change the HiDPI
-settings in RawTherapee: Preferences \> General, then enable pseudo
-HiDPI mode. [4](https://rawpedia.rawtherapee.com/Preferences#Appearance)
+</div>
