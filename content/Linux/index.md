@@ -380,27 +380,6 @@ To make a "release" type build, set: `-DCMAKE_BUILD_TYPE="release"`
 
 <!-- -->
 
-USE_OLD_CXX_ABI
-`ON` or `OFF` (default).
-
-When compiling a program, one must use the same conventions as those
-used by the libraries which that program relies upon, otherwise
-compilation (linking) will fail. Generally one does not need to concern
-oneself with this, but we are now at a time when GCC4 is being phased
-out by GCC5, each by default using a convention incompatible with the
-other, and so this issue is relevant. If the libraries on your system
-have been compiled using GCC5, they probably use a standard called
-C++11. This means that your RawTherapee build must use the same
-standard, which is the case by default. However, if despite using GCC5
-your libraries were built using the older C++03 standard, then
-RawTherapee must be set to use the same, and this is when you would set
-"USE_OLD_CXX_ABI" to "ON".
-
-
-To enable USE_OLD_CXX_ABI, set: `-DUSE_OLD_CXX_ABI="ON"`
-
-<!-- -->
-
 CACHE_NAME_SUFFIX
 The CACHE_NAME_SUFFIX options sets the suffix of the cache and config
 folder names the compiled RawTherapee build will use. See the
