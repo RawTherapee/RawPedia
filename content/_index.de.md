@@ -4,237 +4,197 @@ contributors:
   - Fherb
   - N3tt3rm4n
   - DrSlony
+  - marter001
 ---
 
-Die Enzyklopädie für
-RawTherapee, Raw-Fotografie und alles, was mit Raw zu tun hat
+ <div style="text-align: center; padding-bottom: 1em; margin-bottom: 1em; background-color: #363636; color: #DDDDDD;">
 
-<!-- <div style="text-align: center; padding-bottom: 1em; margin-bottom: 1em; background-color: #363636; color: #DDDDDD;"> -->
+ <span style="font-family: serif; font-size: 4em; font-weight: bold; text-shadow: 2px 2px 2px #161616;">Raw</span>
+ <span style="font-family: serif; font-size: 4em; font-weight: bold; text-shadow: 2px 2px 2px #161616; color: #BBBBBB">Pedia</span>
 
-<!-- <span style="font-family: serif; font-size: 4em; font-weight: bold; text-shadow: 2px 2px 2px #161616;">Raw</span> -->
-<!-- <span style="font-family: serif; font-size: 4em; font-weight: bold; text-shadow: 2px 2px 2px #161616; color: #BBBBBB">Pedia</span> -->
+ <span style="font-variant: small-caps;">Die Enzyklopädie für RawTherapee, Raw-Fotografie und alles, was mit Raw zu tun hat</span>
 
-<!-- <span style="font-variant: small-caps;">Die Enzyklopädie für -->
-<!-- RawTherapee, Raw-Fotografie und alles, was mit Raw zu tun hat</span> -->
+ </div> 
+ <div style="float: left; clear: right">
 
-<!-- </div> -->
-<!-- <div style="float: left; clear: right"> -->
+ <div style="background-color: #f6f6f6; border: 1px solid #aaa; padding: 1em; margin-bottom: 1em;">
 
-<!-- <table> -->
-<!-- <thead> -->
-<!-- <tr class="header"> -->
-<!-- <th style="padding: 0 1em;"><p>In anderen Sprachen:</p></th> -->
-<!-- </tr> -->
-<!-- </thead> -->
-<!-- <tbody> -->
-<!-- <tr class="odd"> -->
-<!-- <td><figure> -->
-<!-- <img src="/images/Flag_of_Catalonia.svg" title="Flag_of_Catalonia.svg" -->
-<!-- width="90" height="60" /> -->
-<!-- <figcaption>Flag_of_Catalonia.svg</figcaption> -->
-<!-- </figure> -->
-<!-- <p><a href="Main_Page/ca" title="wikilink">Català</a></p></td> -->
-<!-- </tr> -->
-<!-- </tbody> -->
-<!-- </table> -->
 
-  
+ ## RawTherapee
 
-<!-- <div style="background-color: #f6f6f6; border: 1px solid #aaa; padding: 1em; margin-bottom: 1em;"> -->
+ ### Allgemeine Informationen
 
-<!-- [right](image:rawtherapee_rawpedia_header1_h300.jpg) -->
+ <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3;">
 
-<!-- ## RawTherapee -->
+ - [Los geht's](getting_started)
+ - [Funktionen](features)
+ - [Die Gleitkommazahl-Engine](the_floating_point_engine)
+ - [8 Bit und 16 Bit](8-bit_and_16-bit)
+ - [RGB und Lab](rgb_and_lab)
+ - [Eine portable Installation erstellen](Making_a_Portable_Installation)
+ - [Die Registerkarte Dateiverwaltung](The_File_Browser_Tab)
+ - [Die Registerkarte Bildeditor](the_image_editor_tab)
+ - [Batcheinstellungen - Sync](batch_adjustments_-_sync)
+ - [Speichern](Saving_Images)
+ - [Die Batch-Warteschlange](the_batch_queue)
+ - [Aktuelles Bild in einem externen Editor bearbeiten](Edit_Current_Image_in_External_Editor)
+ - [Komandozeilenoptionen](command-line_options)
+ - [Tastaturkürzel](keyboard_shortcuts)
+ - [Hinzufügen von Unterstützung für neue Raw-Formate](Adding_Support_for_New_Raw_Formats)
+ - [Dateipfade](file_paths)
+ - [Einstellungen](preferences)
+ - [Negativ](negative)
+ - [GIMP-Plugin](gimp_plugin)
 
-<!-- ### Allgemeine Informationen -->
+ </div>
+ <hr />
+ <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3;">
+ <div style="display: inline-block; width: 100%;">
 
-<!-- <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3;"> -->
+ ### Prozessprofile
 
-<!-- - [Los geht's](getting_started/de) -->
-<!-- - [Funktionen](features/de) -->
-<!-- - [Die Gleitkommazahl-Engine](the_floating_point_engine/de) -->
-<!-- - [8 Bit und 16 Bit](8-bit_and_16-bit/de) -->
-<!-- - [RGB und Lab](rgb_and_lab/de) -->
-<!-- - [Eine portable Installation -->
-<!--   erstellen](Making_a_Portable_Installation/de.md) -->
-<!-- - [Die Registerkarte -->
-<!--   Dateiverwaltung](The_File_Browser_Tab/de.md) -->
-<!-- - [Die Registerkarte Bildeditor](the_image_editor_tab/de) -->
-<!-- - [Batcheinstellungen - Sync](batch_adjustments_-_sync/de) -->
-<!-- - [Speichern](saving/de) -->
-<!-- - [Die Batch-Warteschlange](the_batch_queue/de) -->
-<!-- - [Aktuelles Bild in einem externen Editor -->
-<!--   bearbeiten](Edit_Current_Image_in_External_Editor/de.md) -->
-<!-- - [Komandozeilenoptionen](command-line_options/de) -->
-<!-- - [Tastaturkürzel](keyboard_shortcuts/de) -->
-<!-- - [Hinzufügen von Unterstützung für neue -->
-<!--   Raw-Formate](Adding_Support_for_New_Raw_Formats/de.md) -->
-<!-- - [Dateipfade](file_paths/de) -->
-<!-- - [Einstellungen](preferences/de) -->
-<!-- - [Negativ](negative/de) -->
-<!-- - [GIMP-Plugin](gimp_plugin/de) -->
+ - [Filialdateien - Prozessprofile](Sidecar_Files_-_Processing_Profiles)
+ - [Erstellen von Prozessprofilen für den allgemeinen Gebrauch](Creating_processing_profiles_for_general_use)
+ - [Dynamische Prozessprofile](dynamic_processing_profiles)
 
-<!-- </div> -->
-<!-- <hr /> -->
-<!-- <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3;"> -->
-<!-- <div style="display: inline-block; width: 100%;"> -->
+ </div>
+ <div style="display: inline-block; width: 100%;">
 
-<!-- ### Prozessprofile -->
+ #### Skripte für Prozessprofile
 
-<!-- - [Filialdateien - -->
-<!--   Prozessprofile](Sidecar_Files_-_Processing_Profiles/de.md) -->
-<!-- - [Erstellen von Prozessprofilen für den allgemeinen -->
-<!--   Gebrauch](Creating_processing_profiles_for_general_use/de.md) -->
-<!-- - [Dynamische Prozessprofile](dynamic_processing_profiles/de) -->
+ - [RTProfileSelector](rtprofileselector)
+ - [RTbatch](rtbatch)
 
-<!-- </div> -->
-<!-- <div style="display: inline-block; width: 100%;"> -->
+ </div>
+ <div style="display: inline-block; width: 100%;">
 
-<!-- #### Skripte für Prozessprofile -->
+ #### Bundled Processing Profiles
 
-<!-- - [RTProfileSelector](rtprofileselector/de) -->
-<!-- - [RTbatch](rtbatch/de) -->
+ - [Default (Standard)](default)
+ - [Faded (Ausgeblichen)](faded)
 
-<!-- </div> -->
-<!-- <div style="display: inline-block; width: 100%;"> -->
+ </div>
+ </div>
+ <hr />
 
-<!-- #### Bundled Processing Profiles -->
+ ### Tool Description
 
-<!-- - [Default (Standard)](default/de) -->
-<!-- - [Faded (Ausgeblichen)](faded/de) -->
+ - [Allgemeine Kommentare über einige Werkzeuge](Allgemeine_Kommentare_über_einige_Werkzeuge.md)
 
-<!-- </div> -->
-<!-- </div> -->
-<!-- <hr /> -->
+ <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3;">
+ <div style="break-inside: avoid-column; -webkit-column-break-inside: avoid;">
 
-<!-- ### Tool Description -->
+ #### Registerkarte Belichtung
 
-<!-- - [Allgemeine Kommentare über einige -->
-<!--   Werkzeuge](Allgemeine_Kommentare_über_einige_Werkzeuge.md) -->
+ - [Belichtung](exposure)
+ - [Gamma - Differential](gamma_-_differential) (WIP, noch nicht verfügbar)
+ - [Schatten/Lichter](shadows/highlights)
+ - [Dynamikkompression](tone_mapping)
+ - [Vignettierungsfilter](vignetting_filter)
+ - [Grauverlaufsfilter](graduated_filter)
+ - [Lab-Anpassungen](lab_adjustments)
+ - [CIE Color Appearance Model 2002](ciecam02)
 
-<!-- <div style="column-count:3;-moz-column-count:3;-webkit-column-count:3;"> -->
-<!-- <div style="break-inside: avoid-column; -webkit-column-break-inside: avoid;"> -->
+ </div>
+ <div style="break-inside: avoid-column; -webkit-column-break-inside: avoid;">
 
-<!-- #### Registerkarte Belichtung -->
+ #### Registerkarte Details
 
-<!-- - [Belichtung](exposure/de) -->
-<!-- - [Gamma - Differential/de](gamma_-_differential/de) (WIP, -->
-<!--   noch nicht verfügbar) -->
-<!-- - [Schatten/Lichter](shadows/highlights/de) -->
-<!-- - [Dynamikkompression](tone_mapping/de) -->
-<!-- - [Vignettierungsfilter](vignetting_filter/de) -->
-<!-- - [Grauverlaufsfilter](graduated_filter/de) -->
-<!-- - [Lab-Anpassungen](lab_adjustments/de) -->
-<!-- - [CIE Color Appearance Model 2002](ciecam02/de) -->
+ - [Schärfung](sharpening/de)
+ - [Kantenschärfung und Mikrokontrast](Edges_and_Microcontrast/de.md)
+ - [Impulsrauschreduzierung](impulse_noise_reduction/de)
+ - [Rauschreduzierung](noise_reduction/de)
+ - [Farbsaum entfernen (Defringe)](defringe/de)
+ - [Detailebenenkontrast](contrast_by_detail_levels/de)
 
-<!-- </div> -->
-<!-- <div style="break-inside: avoid-column; -webkit-column-break-inside: avoid;"> -->
+ </div>
+ <div style="break-inside: avoid-column; -webkit-column-break-inside: avoid;">
 
-<!-- #### Registerkarte Details -->
+ #### Registerkarte Farbe
 
-<!-- - [Schärfung](sharpening/de) -->
-<!-- - [Kantenschärfung und -->
-<!--   Mikrokontrast](Edges_and_Microcontrast/de.md) -->
-<!-- - [Impulsrauschreduzierung](impulse_noise_reduction/de) -->
-<!-- - [Rauschreduzierung](noise_reduction/de) -->
-<!-- - [Farbsaum entfernen (Defringe)](defringe/de) -->
-<!-- - [Detailebenenkontrast](contrast_by_detail_levels/de) -->
+ - [Weißabgleich](white_balance/de)
+ - [Dynamik](vibrance/de)
+ - [RGB-Kanalmixer](channel_mixer/de)
+ - [Schwarz / Weiß](black-and-white/de)
+ - [Schwarz / Weiß-Erweiterung](black-and-white_addon/de)
+ - [Farbton (H) / Sättignung (S) / Dynamik (V)](HSV_Equalizer/de.md)
+ - [Filmsimulation](film_simulation/de)
+ - [RGB-Kurven](rgb_curves/de)
+ - [Farbanpassungen](color_toning/de)
+ - [Farbmanagement](color_management/de)
+ - [Farbmanagementerweiterung](color_management_addon/de)
 
-<!-- </div> -->
-<!-- <div style="break-inside: avoid-column; -webkit-column-break-inside: avoid;"> -->
+ </div>
+ <div style="break-inside: avoid-column; -webkit-column-break-inside: avoid;">
 
-<!-- #### Registerkarte Farbe -->
+ #### Registerkarte Wavelet
 
-<!-- - [Weißabgleich](white_balance/de) -->
-<!-- - [Dynamik](vibrance/de) -->
-<!-- - [RGB-Kanalmixer](channel_mixer/de) -->
-<!-- - [Schwarz / Weiß](black-and-white/de) -->
-<!-- - [Schwarz / Weiß-Erweiterung](black-and-white_addon/de) -->
-<!-- - [Farbton (H) / Sättignung (S) / Dynamik -->
-<!--   (V)](HSV_Equalizer/de.md) -->
-<!-- - [Filmsimulation](film_simulation/de) -->
-<!-- - [RGB-Kurven](rgb_curves/de) -->
-<!-- - [Farbanpassungen](color_toning/de) -->
-<!-- - [Farbmanagement](color_management/de) -->
-<!-- - [Farbmanagementerweiterung](color_management_addon/de) -->
+ - [Wavelet](wavelets/de)
 
-<!-- </div> -->
-<!-- <div style="break-inside: avoid-column; -webkit-column-break-inside: avoid;"> -->
+ </div>
+ <div style="break-inside: avoid-column; -webkit-column-break-inside: avoid;">
 
-<!-- #### Registerkarte Wavelet -->
+ #### Registerkarte Transformieren
 
-<!-- - [Wavelet](wavelets/de) -->
+ - [Ausschnitt](crop/de)
+ - [Skalieren](resize/de)
+ - [Objektivkorrekturen](lens/geometry/de)
 
-<!-- </div> -->
-<!-- <div style="break-inside: avoid-column; -webkit-column-break-inside: avoid;"> -->
+ </div>
+ <div style="break-inside: avoid-column; -webkit-column-break-inside: avoid;">
 
-<!-- #### Registerkarte Transformieren -->
+ #### Registerkarte RAW
 
-<!-- - [Ausschnitt](crop/de) -->
-<!-- - [Skalieren](resize/de) -->
-<!-- - [Objektivkorrekturen](lens/geometry/de) -->
+ - [Sensor mit Bayer-Matrix](demosaicing/de)
+ - [Vorverarbeitung](preprocessing/de)
+ - [Sensor mit X-Trans-Matrix](chromatic_aberration/de)
+ - [Schwarzpunkt](raw_black_points/de)
+ - [Weißpunkt](raw_white_points/de)
+ - [Dunkelbild](dark_frame/de)
+ - [Weißbild](flat_field/de)
 
-<!-- </div> -->
-<!-- <div style="break-inside: avoid-column; -webkit-column-break-inside: avoid;"> -->
+ </div>
+ <div style="break-inside: avoid-column; -webkit-column-break-inside: avoid;">
 
-<!-- #### Registerkarte RAW -->
+ #### Registerkarte Metadaten
 
-<!-- - [Sensor mit Bayer-Matrix](demosaicing/de) -->
-<!-- - [Vorverarbeitung](preprocessing/de) -->
-<!-- - [Sensor mit X-Trans-Matrix](chromatic_aberration/de) -->
-<!-- - [Schwarzpunkt](raw_black_points/de) -->
-<!-- - [Weißpunkt](raw_white_points/de) -->
-<!-- - [Dunkelbild](dark_frame/de) -->
-<!-- - [Weißbild](flat_field/de) -->
+ - [Registerkarte Exif](exif_tab/de)
+ - [Registerkarte IPTC](iptc_tab/de)
 
-<!-- </div> -->
-<!-- <div style="break-inside: avoid-column; -webkit-column-break-inside: avoid;"> -->
+ </div>
+ </div>
+ <hr />
 
-<!-- #### Regieterkarte Metadaten -->
+ ### Interagieren
 
-<!-- - [Registerkarte Exif](exif_tab/de) -->
-<!-- - [Registerkarte IPTC](iptc_tab/de) -->
+ - [Forum](forum/de)
+ - [IRC](irc/de)
+ - [Google+](google+/de)
 
-<!-- </div> -->
-<!-- </div> -->
-<!-- <hr /> -->
+ ### Kompilieren
 
-<!-- ### Interagieren -->
+ - In [Linux](linux/de)
+ - In [Windows](windows/de)
+ - In [macOS](macos/de)
 
-<!-- - [Forum](forum/de) -->
-<!-- - [IRC](irc/de) -->
-<!-- - [Google+](google+/de) -->
+ ### Fehlerbehebung
 
-<!-- ### Kompilieren -->
+ - [Wie man hilfreiche Fehlermeldungen schreibt](How_to_write_useful_bug_reports/de.md)
+ - [Wie man Abstürze am Anfang verhindert](How_to_fix_crashes_on_startup/de.md)
 
-<!-- - In [Linux](linux/de) -->
-<!-- - In [Windows](windows/de) -->
-<!-- - In [macOS](macos/de) -->
+</div>
 
-<!-- ### Fehlerbehebung -->
+ <div style="background-color: #f6f6f6; border: 1px solid #aaa; padding: 1em; margin-bottom: 1em;">
 
-<!-- - [Wie man hilfreiche Fehlermeldungen -->
-<!--   schreibt](How_to_write_useful_bug_reports/de.md) -->
-<!-- - [Wie man Abstürze am Anfang -->
-<!--   verhindert](How_to_fix_crashes_on_startup/de.md) -->
+ ## Photographie allgemein
 
-<!-- </div> -->
-<!-- <div style="background-color: #f6f6f6; border: 1px solid #aaa; padding: 1em; margin-bottom: 1em;"> -->
+ - [Wie man Raw-Formate zu DNG konvertiert](How_to_convert_raw_formats_to_DNG/de.md)
+ - [Wie man DCP-Farbprofile erstellt](How_to_create_DCP_color_profiles/de.md)
+ - [Wie man ICC-Profile extrahiert und untersucht](How_to_extract_and_examine_ICC_profiles/de.md)
+ - [Wie man LCP- und DCP-Profile bekommt](How_to_get_LCP_and_DCP_profiles/de.md)
+ - [Wie man Nikon ICM-Profile bekommt](How_to_get_Nikon_ICM_profiles/de.md)
+ - [Wasserzeichen](watermarking/de)
+ - [Bilddateienformate und -kompressionen](Image_file_formats_and_compression/de.md)
 
-<!-- ## Photographie allgemein -->
+ </div>
 
-<!-- - [Wie man Raw-Formate zu DNG -->
-<!--   konvertiert](How_to_convert_raw_formats_to_DNG/de.md) -->
-<!-- - [Wie man DCP-Farbprofile -->
-<!--   erstellt](How_to_create_DCP_color_profiles/de.md) -->
-<!-- - [Wie man ICC-Profile extrahiert und -->
-<!--   untersucht](How_to_extract_and_examine_ICC_profiles/de.md) -->
-<!-- - [Wie man LCP- und DCP-Profile -->
-<!--   bekommt](How_to_get_LCP_and_DCP_profiles/de.md) -->
-<!-- - [Wie man Nikon ICM-Profile -->
-<!--   bekommt](How_to_get_Nikon_ICM_profiles/de.md) -->
-<!-- - [Wasserzeichen](watermarking/de) -->
-<!-- - [Bilddateienformate und -->
-<!--   -kompressionen](Image_file_formats_and_compression/de.md) -->
-
-<!-- </div> -->

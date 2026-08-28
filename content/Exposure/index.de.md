@@ -349,7 +349,7 @@ the average are lifted (lowered), while tonalities below the average are
 lowered (lifted). The same contrast curve is applied separately to each
 R, G and B channel.
 
-## Saturation
+## Sättigung
 
 This slider makes the photo more or less saturated. In more technical
 terms, it adjusts the saturation of the image by applying a multiplier

@@ -41,14 +41,14 @@ defaultContentLanguage = 'en'
   weight = 2
   [languages.fr.pagination]
     path = 'page'
-# [languages.de]
-#   languageCode = 'de'
-#   languageName = 'Deutsch'
-#   timeZone = 'America/New_York'
-#   title = 'RawPedia'
-#   weight = 3
-#   [languages.de.pagination]
-#     path = 'page'
+ [languages.de]
+   languageCode = 'de'
+   languageName = 'Deutsch'
+   timeZone = 'Europe'
+   title = 'RawPedia'
+   weight = 3
+   [languages.de.pagination]
+     path = 'page'
 # [languages.ca]
 #   languageCode = 'ca'
 #   languageName = 'Català'
