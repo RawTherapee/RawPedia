@@ -307,20 +307,46 @@ sudo make macosx_bundle
 
 <br>
 
-###### From-Scratch Method used before High Sierra.
+###### MacPorts Build on OSX 10.13 *High Sierra*
 
-<details>
-
-This [obsolete experimental script](https://raw.githubusercontent.com/Benitoite/RTdeps/master/macbuildRT.sh)
-   script was helpful for dependency compilation.
-  
-A [JDK](https://www.oracle.com/technetwork/java/javase/downloads/jdk13-downloads-5672538.html)
-  must be installed.
-  
-Xcode 11.1+ [from Apple](https://developer.apple.com/xcode) must be installed
-</details>
-
-<hr>
+```zsh
+cmake .. \
+-DCACHE_NAME_SUFFIX:STRING=5-dev \
+-DCMAKE_BUILD_TYPE:STRING=Release \
+-DCMAKE_OSX_ARCHITECTURES:STRING=x86_64 \
+-DCMAKE_OSX_DEPLOYMENT_TARGET:STRING=10.13 \
+-DCMAKE_OSX_SYSROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk \
+-DCODESIGNID:STRING="Developer ID Application: Doctor Who (ABCDE12345)" \
+-DFANCY_DMG:BOOL=ON \
+-DLOCAL_PREFIX:STRING=/opt/local \
+-DNOTARY:STRING="—apple-id drwho@bbc.uk --team-id ABCDE12345 --password abcd-efgh-ijkl-mnop” \
+-DOPTION_OMP:BOOL=ON \
+-DOSX_CONTINUOUS:BOOL=OFF \
+-DOSX_DEV_BUILD:BOOL=OFF \
+-DOSX_NIGHTLY:BOOL=OFF \
+-DOSX_UNIVERSAL:BOOL=OFF \
+-DPROC_TARGET_1_FLAGS:STRING=-mtune=generic \
+-DPROC_TARGET_NUMBER:STRING=1 \
+-DPROC_LABEL:STRING=x86 \
+-DWITH_LTO:BOOL=ON \
+-DWITH_SIMDE:BOOL=OFF \
+-DMACINTEGRATION_INCLUDE_DIR=/opt/local/include/gtkmacintegration-gtk3/gtkmacintegration \
+-DMACINTEGRATION_LIBRARY=/opt/local/lib/gtkmacintegration-gtk3/libgtkmacintegration-gtk3.dylib \
+-DOpenMP_CXX_FLAGS:STRING="-Xclang -fopenmp" \
+-DOpenMP_libomp_LIBRARY:FILEPATH=/opt/local/lib/libomp.dylib \
+-DCMAKE_EXE_LINKER_FLAGS="-L/opt/local/lib/libomp -lomp -L/opt/local/lib" \
+-DCMAKE_C_FLAGS="-Xpreprocessor -fopenmp" \
+-DCMAKE_CXX_FLAGS="-D_LIBCPP_ENABLE_CXX17_REMOVED_AUTO_PTR -Xpreprocessor -fopenmp -I/opt/local/include/libomp" \
+-DCMAKE_CXX_COMPILER=clang++ \
+-DCMAKE_C_COMPILER=clang \
+-DCMAKE_SHARED_LINKER_FLAGS="-L/opt/local/lib/libomp -lomp" \
+-DCMAKE_VERBOSE_MAKEFILE=ON \
+-DCMAKE_CXX_STANDARD=17 \
+-DCMAKE_CXX_STANDARD_REQUIRED=ON \
+-DCMAKE_REQUIRED_FLAGS="-std=c++17 -mmacosx-version-min=10.13" \
+-DCMAKE_REQUIRED_DEFINITIONS="-D_LIBCPP_ENABLE_CXX17_REMOVED_AUTO_PTR" \
+--fresh
+```
 <hr>
 
 ### Run and Share RawTherapee
