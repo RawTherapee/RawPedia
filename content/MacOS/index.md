@@ -1,7 +1,7 @@
 ---
 aliases: ["/os_x/", "/osx/"]
 title: "MacOS"
-date: 2026-06-27
+date: 2026-10-01
 contributors:
   - DrSlony
   - Ion12
@@ -54,10 +54,10 @@ To your `cmake` command add the following flags:
 
 #### MacPorts
 
-Tested on OS X 10.9-12.
+Tested on OS X 10.13.
 
 ##### Prerequisites
-  - Xcode Developer Tools & Command Line Tools
+  - Xcode 10+ & Command Line Tools (Supports C++17)
   - MacPorts
     - Detailed instructions on setting up MacPorts and the developer
       tools are available on the [MacPorts website](https://www.macports.org).
@@ -71,7 +71,9 @@ Add the following line to /opt/local/etc/macports/variants.conf
 ```
 ##### Installing dependencies
 
-To install the dependencies, run from the terminal `sudo port install git cmake clang-11 libomp gtk3 gtkmm3 gtk-osx-application-gtk3 adwaita-icon-theme libsigcxx2 lcms2 libiptcdata fftw-3-single lensfun`
+To install the dependencies, run from the terminal `sudo port install git cmake clang-11 libomp gtk3 gtkmm3 gtk-osx-application-gtk3 adwaita-icon-theme libsigcxx2 lcms2 libiptcdata fftw-3-single lensfun libjxl librsvg pkgconfig exiv2`
+
+For making the distributable bundle, also `sudo port install ImageMagick7 create-dmg`
 
 If compiling on Xcode 9.2 you will also need to do:
 
