@@ -227,7 +227,7 @@ The clipped shadow indicator will highlight areas where all three channels fall 
 
 The clipped highlight indicator will highlight areas where at least one channel lies at or above the specified highlight threshold. If you want to see only where all channels are clipped, then enable the luminosity preview mode in addition to the clipped highlight indicator.
 
-Clipping is calculated using data which depends on the state of the gamut button ![](Gamut-hist.png "Gamut-hist.png") which you can toggle above the main preview in the Editor tab. When the gamut button is enabled the working profile is used, otherwise the gamma-corrected output profile is used. 
+Clipping is calculated using data which depends on the state of the gamut button ![](gamut-hist.png "gamut-hist.png") which you can toggle above the main preview in the Editor tab. When the gamut button is enabled the working profile is used, otherwise the gamma-corrected output profile is used. 
 
 ### Pan Rate Amplification
 

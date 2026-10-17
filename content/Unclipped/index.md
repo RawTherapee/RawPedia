@@ -80,12 +80,12 @@ profile:
     - If you want to apply this profile and reset all tools to safe
       default values, then set the [processing profile fill mode](sidecar_files_-_processing_profiles#partial_processing_profiles_and_fill_modes)
       to "Filled"
-      ![<File:Profile-filled.png>](/images/Profile-filled.png "File:Profile-filled.png")
+      ![<File:profile-filled.png>](/images/profile-filled.png "File:profile-filled.png")
       before applying this profile.
     - If you want to apply this profile while preserving existing
       adjustments, then set the processing profile fill mode to
       "Preserve"
-      ![<File:Profile-partial.png>](/images/Profile-partial.png "File:Profile-partial.png")
+      ![<File:profile-partial.png>](/images/profile-partial.png "File:profile-partial.png")
       before applying this profile.
 2.  Save the image as either a 16-bit floating-point TIFF or a 32-bit
     floating-point TIFF.

@@ -10,8 +10,8 @@ tags:
 toc: true
 ---
 
-<img src="/images/Rt_haldclut_london.jpg" title="Rt_haldclut_london.jpg"
-width="900" alt="Rt_haldclut_london.jpg" /> The *Film Simulation* tool
+![rt_haldclut_london.jpg](/images/rt_haldclut_london.jpg "rt_haldclut_london.jpg")
+The *Film Simulation* tool
 allows you to match the colors of a photo to a reference image with a
 single click. This tool requires the use of reference images in the
 HaldCLUT pattern, in either PNG or TIFF format. Each HaldCLUT image
@@ -54,7 +54,7 @@ folder as suggested, keeping only HaldCLUT images in it.
 
 ## How It Works
 
-![](/images/Hald_CLUT_Identity_12.png "Hald_CLUT_Identity_12.png") The Film
+![](/images/hald_clut_identity_12.png "hald_clut_identity_12.png") The Film
 Simulation tool uses specially prepared images in what is called a
 HaldCLUT pattern. "CLUT" means "Color Look-Up Table", while what "Hald"
 means is anyone's guess. A HaldCLUT image contains a set of gradients of

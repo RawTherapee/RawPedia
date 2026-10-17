@@ -637,7 +637,7 @@ Note:
 ###### First Spot with Global Spot method - Local Contrast & Wavelets
 
 
-![](dsc286-wav.jpg "dsc5286-wav.jpg")
+![](dsc5286-wav.jpg "dsc5286-wav.jpg")
 <figcaption>DSC5286-wav.jpg</figcaption>
 
 Note:
