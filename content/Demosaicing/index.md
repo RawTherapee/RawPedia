@@ -10,9 +10,9 @@ tags:
 toc: true
 ---
 
-![](/imags/Chipincamera.jpg "Chipincamera.jpg")
-![](/imags/Bayer_pattern_on_sensor.svg "Bayer_pattern_on_sensor.svg")
-![](/imags/Bayer_pattern_on_sensor_profile.svg "Bayer_pattern_on_sensor_profile.svg")
+![](/images/chipincamera.jpg "chipincamera.jpg")
+![](/images/bayer_pattern_on_sensor.svg "bayer_pattern_on_sensor.svg")
+![](/images/bayer_pattern_on_sensor_profile.svg "bayer_pattern_on_sensor_profile.svg")
 
 ## Introduction
 

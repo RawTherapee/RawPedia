@@ -155,7 +155,7 @@ and a control point in/out value editor
 
 
 Most curves in RawTherapee have a color picker button
-![<File:Crosshair-node-curve.png>](/images/Crosshair-node-curve.png "File:Crosshair-node-curve.png").
+![<File:crosshair-node-curve.png>](/images/crosshair-node-curve.png "File:crosshair-node-curve.png").
 The color picker enables you to place a control point in a curve at the
 exact spot which corresponds to the area you're hovering over on the
 preview.
@@ -201,9 +201,9 @@ create these control points is by using the color picker. For this
 example, we will start with a curve without any control points and
 create some using the color picker. Click the control point in/out value
 editor button
-![<File:Edit-point.png>](/images/Edit-point.png "File:Edit-point.png") next to
+![<File:edit-point.png>](/images/edit-point.png "File:edit-point.png") next to
 the curve, and also click the color picker button
-![<File:Crosshair-node-curve.png>](/images/Crosshair-node-curve.png "File:Crosshair-node-curve.png").
+![<File:crosshair-node-curve.png>](/images/crosshair-node-curve.png "File:crosshair-node-curve.png").
 You will now see "I" (in) and "O" (out) values displayed under the
 curve. They correspond to the point under the mouse cursor if you hover
 it over the curve or over the preview. Hover the cursor over the

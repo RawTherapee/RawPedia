@@ -12,18 +12,18 @@ Your original raw file will never be altered by RawTherapee.
 There are several ways of saving an image from the
 [Image Editor](the_image_editor_tab) tab:
 
-- ![<File:Save.png>](/images/Save.png "File:Save.png") Save immediately from the
+- ![<File:save.png>](/images/save.png "File:save.png") Save immediately from the
   Editor tab,
-- ![<File:Gears.png>](/images/Gears.png "File:Gears.png") Save via the
+- ![<File:gears.png>](/images/gears.png "File:gears.png") Save via the
   [Queue](queue),
-- ![<File:Palette-brush.png>](/images/Palette-brush.png "File:Palette-brush.png")
+- ![<File:palette-brush.png>](/images/palette-brush.png "File:palette-brush.png")
   [Edit Current Image in External Editor](edit_current_image_in_external_editor) (described
   in its own article).
 
 ## Save Immediately
 
 In the Editor tab, if you click on the little hard disk icon
-![<File:Save.png>](/images/Save.png "File:Save.png") at the bottom-left of the
+![<File:save.png>](/images/save.png "File:save.png") at the bottom-left of the
 preview image, or hit the  + shortcut, you can "*Save immediately*".
 This works as a standard "Save As" dialog. You can select the name and
 location for the output file (RawTherapee will automatically add the

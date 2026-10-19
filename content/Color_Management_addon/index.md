@@ -496,11 +496,7 @@ what basis ?
 - Do you make essentially prints with a printer that use a CMYK driver?
   In this case it is not really useful to choose a wide gamut profile.
 
-<figure>
-<img src="gamuts.jpg"
-title="representation of 4 profiles or spaces gamut" />
-<figcaption>representation of 4 profiles or spaces gamut</figcaption>
-</figure>
+![](gamuts.jpg "representation of 4 profiles or spaces gamut")
 
 - Do you make prints with a high quality ink-jet printer? In this case,
   it is better to choose Prophoto (this kind of printers have a gamut,

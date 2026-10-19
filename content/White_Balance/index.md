@@ -123,20 +123,12 @@ and/or using the Spot WB tool.
 
 ### Pick
 
-<figure>
-<img src="/images/white_balance_1_before.png"
-title="white_balance_1_before.png" />
-<figcaption>white_balance_1_before.png</figcaption>
-</figure>
+![white_balance_1_before.png](/images/white_balance_1_before.png "white_balance_1_before.png")
 
-<figure>
-<img src="/images/white_balance_1_after.png"
-title="white_balance_1_after.png" />
-<figcaption>white_balance_1_after.png</figcaption>
-</figure>
+![white_balance_1_after.png](/images/white_balance_1_after.png "white_balance_1_after.png")
 
 When you click on the Pick button
-![<File:Color-picker.png>](/images/Color-picker.png "File:Color-picker.png")
+![<File:color-picker.png>](/images/color-picker.png "File:color-picker.png")
 (shortcut: **w**), the cursor changes into a pipette when it's over the
 preview. Click on a neutral area to set the correct white balance for
 the whole image based on the clicked area.
@@ -563,25 +555,13 @@ of the processing (which is always very complex). Of course it can
   gamut.
   - Example for a luminance of 10 and a luminance of 50 \[0..100\].
 
-<figure>
-<img src="/images/gamu-comp10.jpg" title="gamu-comp10.jpg" />
-<figcaption>gamu-comp10.jpg</figcaption>
-</figure>
+![gamu-comp10.jpg](/images/gamu-comp10.jpg "gamu-comp10.jpg")
 
-<figure>
-<img src="/images/gamu-comp50.jpg" title="gamu-comp50.jpg" />
-<figcaption>gamu-comp50.jpg</figcaption>
-</figure>
+![gamu-comp50.jpg](/images/gamu-comp50.jpg "gamu-comp50.jpg")
 
-<figure>
-<img src="/images/rec2020_pointer.jpg" title="rec2020_pointer.jpg" />
-<figcaption>rec2020_pointer.jpg</figcaption>
-</figure>
+![rec2020_pointer.jpg](/images/rec2020_pointer.jpg "rec2020_pointer.jpg")
 
-<figure>
-<img src="/images/srgb2jdcmax.jpg" title="srgb2jdcmax.jpg" />
-<figcaption>srgb2jdcmax.jpg</figcaption>
-</figure>
+![srgb2jdcmax.jpg](/images/srgb2jdcmax.jpg "srgb2jdcmax.jpg")
 
 Impact settings: After several weeks of user testing and optimization of
 the algorithm, 3 parameters remain directly accessible to the user:

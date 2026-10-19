@@ -38,9 +38,9 @@ There are several ways of adding an image to the queue:
 
 1.  When you are done tweaking an image in the Editor, click the "Put
     current image to processing queue" button
-    ![<File:Gears.png>](/images/Gears.png "File:Gears.png").
+    ![<File:gears.png>](/images/gears.png "File:gears.png").
 2.  Also in the Editor tab, click the "Save current image" button
-    ![<File:Save.png>](/images/Save.png "File:Save.png") and select "Put to the
+    ![<File:save.png>](/images/save.png "File:save.png") and select "Put to the
     head/tail of the processing queue".
 3.  Right-click on a thumbnail in the [File Browser](file_browser) or the
     [Filmstrip](editor#the_filmstrip) and select "Put to
@@ -60,7 +60,7 @@ Save-window.png
 The Queue has several settings, such as the output file format and
 destination. These settings take effect in all cases except when you use
 the "Save current image" button
-![<File:Save.png>](/images/Save.png "File:Save.png"), select "Put to the
+![<File:save.png>](/images/save.png "File:save.png"), select "Put to the
 head/tail of the processing queue" and enable the "Force saving options"
 checkbox. In this case, the settings seen in the "Save" window will be
 used, and the ones from the Queue tab ignored. In all other cases, the
@@ -128,7 +128,7 @@ will first finish processing the current photo.
 
 You can remove a specific image from the queue by clicking the small
 "Cancel job"
-![<File:Cancel-small.png>](/images/Cancel-small.png "File:Cancel-small.png")
+![<File:cancel-small.png>](/images/cancel-small.png "File:cancel-small.png")
 button in the corner of each thumbnail.
 
 You can clear the whole queue right-clicking on a thumbnail and clicking

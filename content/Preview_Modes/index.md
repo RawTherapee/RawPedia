@@ -38,11 +38,12 @@ deselecting any other mode.</caption>
 <tr class="odd">
 <td style="padding:10px;"><p>Regular*</p></td>
 <td></td>
-<td><figure>
-<img src="/images/preview_mode_1_regular.png"
-title="Image:preview mode 1 regular.png" />
-<figcaption>Image:preview mode 1 regular.png</figcaption>
-</figure></td>
+<td>
+
+![Image:preview mode 1 regular.png](/images/preview_mode_1_regular.png
+"Image:preview mode 1 regular.png")
+
+</td>
 </tr>
 <tr class="even">
 <td style="padding:10px;"><p>Red channel</p></td>
@@ -110,7 +111,7 @@ which channel might be clipping or for aesthetic reasons.
 
 ## Focus Mask
 
-![Focus mask indicating the focusing plane](/images/Preview_6_focus_2.jpg "Focus mask indicating the focusing plane")
+![Focus mask indicating the focusing plane](/images/preview_6_focus_2.jpg "Focus mask indicating the focusing plane")
 The focus mask is designed to highlight areas of the image which are in
 focus. Naturally, focused areas are sharper, so the sharp areas are
 being highlighted. The focus mask is more accurate on images with a

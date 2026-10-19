@@ -9,7 +9,7 @@ tags:
 toc: true
 ---
 
-![](/images/HSV_color_solid_cylinder_alpha_lowgamma.png "HSV_color_solid_cylinder_alpha_lowgamma.png")
+![](/images/1280px-hsv_color_solid_cylinder_alpha_lowgamma.png "1280px-hsv_color_solid_cylinder_alpha_lowgamma.png")
 The *HSV Equalizer* (Hue, Saturation and Value) works in the
 [HSV color space](https://en.wikipedia.org/wiki/HSL_and_HSV). Use it to selectively
 change colors, e.g. make the sky more dramatic by making it somewhat

@@ -5,9 +5,9 @@ contributors:
 ---
 
 The clipped shadow
-![<File:Warning-shadows.png>](Warning-shadows.png "File:Warning-shadows.png")
+![<File:warning-shadows.png>](warning-shadows.png "File:warning-shadows.png")
 and
-![<File:Warning-highlights.png>](Warning-highlights.png "File:Warning-highlights.png")
+![<File:warning-highlights.png>](warning-highlights.png "File:warning-highlights.png")
 highlight indicators in the Editor allow you to easily see which areas
 of the image are too dark or too bright. Highlighted areas are shaded
 according to the much they transgress the thresholds.
@@ -25,7 +25,7 @@ luminosity preview mode in addition to the clipped highlight indicator.
 
 Clipping is calculated using data which depends on the state of the
 gamut button
-![<File:Gamut-hist.png>](Gamut-hist.png "File:Gamut-hist.png") which you
+![<File:gamut-hist.png>](gamut-hist.png "File:gamut-hist.png") which you
 can toggle above the main preview in the Editor tab. When the gamut
 button is enabled the working profile is used, otherwise the
 gamma-corrected output profile is used.
