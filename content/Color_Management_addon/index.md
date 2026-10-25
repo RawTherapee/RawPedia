@@ -246,7 +246,7 @@ RawTherapee allows 5 possibilities:
   on a theoretical neutral grey basis;
 - « pre-set settings »: like Shade, Daylight, Fluorescent, etc.
 - « Custom »: the user can choose Temperature and Tint (see the section
-  [White balance gaps](#white_balance_gaps))
+  [White balance gaps](#white-balance-gaps))
 - « Spot WB »: the user choose a neutral-grey area as a reference. This
   almost means a neutral-grey chart must be present when shooting.
 
@@ -358,7 +358,7 @@ lighting tubes sold in the shops:
 - F11 : Philips T84 – 4000K
 - F12 : Philips T83 – 3000K
 
-These illuminants (see [white balance gaps](#white_balance_gaps)) have a very different spectral
+These illuminants (see [white balance gaps](#white-balance-gaps)) have a very different spectral
 power distribution between them and between the "daylight" and
 "blackbody" illuminants. So it is not advised to replace - when a
 lighting is fluorescent - the illuminant in question (e.g. F11 4000K) by
@@ -394,7 +394,7 @@ following choices:
 - use of CIECAM02 for the chromatic adaptation
 - use of CIE Lab for deltaE calculation
 
-To remedy it (partially) it is enough to create an [input profile](#icc_input_profiles_:_elaboration,_use,_gaps) with
+To remedy it (partially) it is enough to create an [input profile](#icc-input-profiles--elaboration-use-gaps) with
 the desired lighting source and the matching spectral data.
 
 ##### Other illuminants
@@ -542,7 +542,7 @@ preserve the best colors and gamut.
 FCRI
 Functions available in "Exposure" does not modify the hue, except
 "Saturation" that make it by dysfunction of the Lab mode (see about that
-the [Munsell correction](#the_"munsell"_correction) section
+the [Munsell correction](#the-munsell-correction) section
 
 Same thing for "Lab adjustments", for the "Saturation" slider, along
 with the "a" and "b" curves and all the curves that control the
@@ -691,7 +691,7 @@ in \windows\system32\spool\drivers\color for Windows and
 /usr/share/color/icc for the other systems.
 
 When you choose an output profile, e.g. AdobeRGB1998 and the working
-profile Prophoto, LCMS2 will convert with a [Colorimetric intent](preferences#rendering_intent) (chosen by default in
+profile Prophoto, LCMS2 will convert with a [Colorimetric intent](preferences#rendering-intents) (chosen by default in
 the RawTherapee options: relative, perceptual, ...) the RGB data from
 the working space to the output space.
 
@@ -737,7 +737,7 @@ incompatible - important risk of posterization - with wide gamut spaces
 
 Because of the copyrights, I shipped specific files with more detailed
 LUT that should bring less posterization in the shadows. These files are
-a by-product of [Output Gamma](#output_gamma) (see below)
+a by-product of [Output Gamma](#output-gamma) (see below)
 
 - RT_sRGB.icm: similar (primary) to sRGB.icm standard with internal
   gamma close to sRGB: g=2.40 slope=12.92

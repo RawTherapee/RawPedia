@@ -14,7 +14,7 @@ You can access the Preferences window by clicking on the Preferences
 button ![preferences](preferences.png "preferences.png") which
 is either in the bottom-left corner of the RawTherapee window, or the
 top-right one, depending on your
-[Editor tab mode layout](the_image_editor_tab#editor_tab_modes).
+[Editor tab mode layout](editor#editor-tab-modes).
 
 ## About
 
@@ -209,7 +209,7 @@ preview when zoomed-in.</figcaption>
 
 Adjust the color and transparency of the frame (marked "2" in the second
 screenshot) visible in the
-[Navigator](the_image_editor_tab#navigator) panel (marked
+[Navigator](editor#navigator) panel (marked
 "1") when the main preview is zoomed-in.
 
 
@@ -310,7 +310,7 @@ non-raw photo.
 
 To have processing profiles you have made yourself appear in the list,
 save them to the "*profiles*" sub-folder within the "*config*" folder.
-You can find out where it is on the [file paths](file_paths#processing_profiles) page.
+You can find out where it is on the [file paths](file_paths#processing-profiles) page.
 
 The special entry "Dynamic" activates the support for
 [Dynamic Processing Profiles](dynamic_processing_profiles).
@@ -334,7 +334,7 @@ correction parameters or noise reduction based on image properties. It
 is called just once on the first edit of the picture, or called manually
 from the context menu when right-clicking on a thumbnail in the
 [File Browser](the_file_browser_tab) or
-[Filmstrip](the_image_editor_tab#the_filmstrip)
+[Filmstrip](editor#the-filmstrip)
 
 <b>Note:</b> You are responsible for using double quotes where necessary
 if you're using paths containing spaces.
@@ -424,7 +424,7 @@ and how it should be displayed.
 
 Adjust the grouping of the right-click context menu in the
 [File Browser](the_file_browser_tab) (and
-[Filmstrip](the_image_editor_tab#the_filmstrip)).
+[Filmstrip](editor#the-filmstrip)).
 
 ### Parsed Extensions
 
@@ -591,7 +591,7 @@ dark areas) at the expense of less color correctness.
 ## Batch Edit Tab
 
 Batch editing is making adjustments to more than one image at the same
-time. This is done through the [Batch Edit](the_file_browser_tab#batch_adjustments_-_sync) tab in
+time. This is done through the [Batch Edit](file_browser#batch-adjustments---sync) tab in
 the File Browser.
 
 The tool panel in the Batch Edit tab looks similar to the tool panel
@@ -629,7 +629,7 @@ This mode may also be understood as "relative". Modifying sliders which
 are set to the "Add" mode will result in the value of the modification
 being added to the existing value. For example, if you select two images
 by holding the **Ctrl** modifier key, one image which has an
-[Exposure#Exposure_Compensation Exposure Compensation](exposure#exposure_compensation_exposure_compensation)
+[Exposure#Exposure_Compensation Exposure Compensation](exposure#exposure-compensation)
 of -0.5 EV and the other which has +1.0 EV, moving the "Exposure
 Compensation" slider up to +0.3 will result in setting a value of -0.2
 EV for the first image and +1.3 EV for the second one.
@@ -690,7 +690,7 @@ between them in the Editor.
 ### Inspect
 
 Most raw files contain an embedded JPEG preview image. To show that
-image in the [Inspect](file_browser#inspect) tab it needs to
+image in the [Inspect](file_browser) tab it needs to
 be extracted, which takes a fraction of a second. The "Maximum number of
 cached images" setting lets you specify how many of the last-viewed
 embedded images are kept in RAM, so that if you view the previous image

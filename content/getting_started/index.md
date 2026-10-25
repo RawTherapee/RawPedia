@@ -199,7 +199,7 @@ you protect your images:
       set the Crop "Guide type" to "none" if it's a problem.
     - Finally, you want to downscale the photo, because who wants to
       upload a 10MB JPEG to your social network. Enable the
-      [Resize](/resize) tool and the [Post-Resize Sharpening](/resize#post-resize_sharpening) sub-tool,
+      [Resize](/resize) tool and the [Post-Resize Sharpening](/resize#post-resize-sharpening) sub-tool,
       and leave them at the default settings. The resizing effect is
       only applied to the saved image, not to the preview, so you won't
       see any change in the preview as you enable these tools.
@@ -262,7 +262,7 @@ this reason we suggest you stick to this general order of operations:
 4.  Next, adjust the [Exposure](/exposure), using the Exposure
     Compensation and Black sliders to get the image into the right
     ballpark. Once in the right ballpark, continue with using both tone
-    curves. Be sure to read the [Tone Curve section](/exposure#tone_curves) in the Exposure article to
+    curves. Be sure to read the [Tone Curve section](/exposure#tone-curves) in the Exposure article to
     learn why there are two of them and how best to use them - they are
     a very powerful tool!
 5.  In the Basics section above we suggested that you use the

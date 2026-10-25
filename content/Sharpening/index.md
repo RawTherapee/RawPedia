@@ -16,7 +16,7 @@ sharpening - see [Edges and Microcontrast](edges_and_microcontrast) and the
 
 The Sharpening tool is applied to the full image, **before** the
 [Resize](resize) tool. If you would like to apply sharpening
-**after** resizing, use the [Post-Resize Sharpening](resize#post-resize_sharpening) tool which you
+**after** resizing, use the [Post-Resize Sharpening](resize#post-resize-sharpening) tool which you
 will find inside the Resize tool.
 
 ## Contrast Mask

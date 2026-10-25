@@ -134,7 +134,7 @@ city1 fast.png\|Fast Image:Demosaicing city1 none.png\|None
   adapter with a wide angle lens designed for film, you may also get
   crosstalk. It can then be better to use the VNG4 algorithm (Variable
   Number of Gradients), which handles this situation well, at the cost
-  of some fine detail. An alternative is to enable [green  equilibration](preprocessing#green_equilibration) to
+  of some fine detail. An alternative is to enable [green  equilibration](preprocessing#green-equilibration) to
   even-out the green channel differences.
 
   Pixel Shift
@@ -190,7 +190,7 @@ perform any demosaicing (the demosaicer selection is still enabled but
 does not do anything), and everything works normally. However, if the
 camera identifies as an RGB Bayer camera, demosaicing will be performed
 and a color matrix will be applied. To disable this, you should select
-the "Mono" demosaicing method, and select "No profile" as [input profile](color_management#input_profile) in the Color
+the "Mono" demosaicing method, and select "No profile" as [input profile](color_management#input-profile) in the Color
 Management panel.
 
 ## Interface

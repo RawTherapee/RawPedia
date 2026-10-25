@@ -328,15 +328,15 @@ the alternatives.
 RawTherapee use the *flat curve*:
 
 - [Lab Adjustments](lab_adjustments)
-  - [LH](lab_adjustments#lh_curve)
-  - [CH](lab_adjustments#ch_curve)
-  - [HH](lab_adjustments#hh_curve)
+  - [LH](lab_adjustments#lh-curve)
+  - [CH](lab_adjustments#ch-curve)
+  - [HH](lab_adjustments#hh-curve)
 - [Defringe](defringe)
   - [Hue](defringe#hue)
 - [HSV Equalizer](hsv_equalizer)
-  - [H](hsv_equalizer#h)
-  - [S](hsv_equalizer#s)
-  - [V](hsv_equalizer#v)
+  - H
+  - S
+  - V
 
 It's very simple to use once you understand it, so let's use the [HSV Equalizer](hsv_equalizer) in the
 ![color-circles.png](color-circles.png "color-circles.png")

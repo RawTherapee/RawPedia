@@ -68,9 +68,9 @@ There are different tools for dealing with different types of noise:
   by the [Impulse Noise Reduction](impulse_noise_reduction)
   tool.
 - Hot and dead pixels are best dealt with using the [Hot/Dead Pixel
-  Filter](preprocessing#hot.2fdead_pixel_filter.md).
+  Filter](preprocessing#hotdead-pixel-filter).
 - Pattern noise (periodic, anisotropic) is best handled by the [Line
-  Noise Filter](preprocessing#Line_Noise_Filter.md). You can
+  Noise Filter](preprocessing#line-noise-filter). You can
   also fix pattern noise (de-screen) after RawTherapee in GIMP, using
   the Fourier transform in G'MIC.
 
@@ -145,7 +145,7 @@ This section details the order of operations for removing noise.
 3.  Zoom into the photo to 100% or more and find an area that has both
     sharp, in-focus parts as well as large, plain or out-of-focus ones,
     so that you have a good overview of the effects of the tool.
-4.  Enable the [Hot/Dead Pixel Filter](preprocessing#hot.2fdead_pixel_filter) if you
+4.  Enable the [Hot/Dead Pixel Filter](preprocessing#hotdead-pixel-filter) if you
     notice salt-and-pepper noise (black and/or white pixels).
 5.  Enable the Noise Reduction tool. Chrominance noise is automatically
     removed and usually does not require any tweaking. At this point the
@@ -173,7 +173,7 @@ The noisy image.
 Changing the demosaicing method to LMMSE eliminates the small maze-like patterns and makes the salt-and-pepper noise more clear.
 
 ![](noise-cactus-3-pixelfilter.png)
-Enabling> the [Hot/Dead Pixel Filter](preprocessing#hot.2fdead_pixel_filter) eliminates the
+Enabling> the [Hot/Dead Pixel Filter](preprocessing#hotdead-pixel-filter) eliminates the
 salt-and-pepper noise. 
 
 ![](noise-cactus-4-nr-chroma.png)

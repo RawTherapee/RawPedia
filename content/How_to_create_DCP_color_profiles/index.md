@@ -227,7 +227,7 @@ open-source alternative is using DCamProf.
 Simply install the X-Rite ColorChecker Passport software bundled with
 your chart (it works in Linux too using [wine](http://www.winehq.org/),
 just follow the same steps as outlined for
-[installing Adobe DNG Converter in Linux](how_to_convert_raw_formats_to_dng#installing_adobe_dng_converter_in_linux))
+[installing Adobe DNG Converter in Linux](how_to_convert_raw_formats_to_dng#installing-adobe-dng-converter-in-linux))
 and open your shot in it. It expects the shot to be in the DNG format,
 so you should first [convert it to DNG](how_to_convert_raw_formats_to_dng). Using it is
 straightforward, it's intuitive.
@@ -267,7 +267,7 @@ To generate a dual-illuminant DCP profile from two ColorChecker Passport
 shots:
 
 1.  Take two photographs of the color target as described above in the
-    [Shooting the color chart](how_to_create_dcp_color_profiles#shooting_the_color_chart)
+    [Shooting the color chart](how_to_create_dcp_color_profiles#shooting-the-color-target)
     section.
 2.  For each of the two photos, do the following:
     1.  Open the photo in the latest version of RawTherapee,

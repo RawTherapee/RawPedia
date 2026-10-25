@@ -36,13 +36,13 @@ There are many methods on the market for creating (nostalgia) the colours and ap
 <figcaption>Film Simulation</figcaption>
 </figure>
 
- [Some principles](/tutorials/#in-summary-some-principles)
+ [Some principles](/tutorials/game_changer/introduction#in-summary-some-principles)
 
- [Recommendations](/tutorials/#recommendations)
+ [Recommendations](/tutorials/game_changer/introduction#recommendations)
 
- [Specific tools used](/tutorials/#specific-tools-used)
+ [Specific tools used](/tutorials/game_changer/introduction#specific-tools-used)
 
- [Alternatives](/tutorials/#alternatives)
+ [Alternatives](/tutorials/game_changer/introduction#alternatives)
 
 **In summary:**
 
