@@ -23,13 +23,13 @@ Raw file : (Copyright Andy Astbury - Creative Common Attribution-share Alike 4.0
 
 - pp3 file 3: [harvest](d4d1775-cap-ghs.pp3 "d4d1775-cap-ghs.pp3")
 
- [Some principles](/tutorials/#in-summary-some-principles)
+ [Some principles](/tutorials/game_changer/introduction#in-summary-some-principles)
 
- [Recommendations](/tutorials/#recommendations)
+ [Recommendations](/tutorials/game_changer/introduction#recommendations)
 
- [Specific tools used](/tutorials/#specific-tools-used)
+ [Specific tools used](/tutorials/game_changer/introduction#specific-tools-used)
 
-[Alternatives](/tutorials/#alternatives)
+[Alternatives](/tutorials/game_changer/introduction#alternatives)
 
 **Learning objective**
 

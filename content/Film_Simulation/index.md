@@ -159,7 +159,7 @@ with the terms "assign color profile" vs "convert to color profile" from
 GIMP or Photoshop - which color profile is assigned does not matter
 because it does not alter pixel values, but converting matters because
 then the pixel values change. When editing the HaldCLUT image in
-RawTherapee, the choice of [output color profile](color_management#output_profile) matters because it
+RawTherapee, the choice of [output color profile](color_management#output-profile) matters because it
 alters pixel values of the saved image. As the identity image provided
 by us or generated according to our recipe uses the sRGB primary
 chromaticities, so you should use RTv2_sRGB or RTv4_sRGB when saving it
@@ -223,7 +223,7 @@ collection.
 
 If you would like to compare the effects of several specific HaldCLUTs,
 and they are not consecutive in the combobox, an easy way to switch
-between them is by [taking a snapshot](the_image_editor_tab#snapshots) after applying
+between them is by [taking a snapshot](editor#snapshots) after applying
 each, and then just clicking on the snapshots.
 
 ## RawTherapee Film Simulation Collection

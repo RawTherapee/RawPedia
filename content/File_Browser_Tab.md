@@ -18,7 +18,7 @@ information below the images in the file browser.
 ## Context Menu Options
 
 Adjust the grouping of the right-click context menu in the [File Browser](file_browser) (and
-[Filmstrip](the_image_editor_tab#the_filmstrip)).
+[Filmstrip](/editor#the-filmstrip)).
 
 ## Parsed Extensions
 

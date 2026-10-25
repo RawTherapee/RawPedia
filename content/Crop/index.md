@@ -13,18 +13,18 @@ toc: true
 Cropping in RawTherapee does not discard the cropped-off area, it just
 hides it by drawing a crop frame and zooming in to fit the frame to the
 available screen space. You can still see the cropped-off area in the
-preview if you zoom out and set the [background color of the preview](the_image_editor_tab#background_color_of_the_preview)
+preview if you zoom out and set the [background color of the preview](editor#preview-background-color)
 to "theme-based". The cropped-off area will of course not appear in the
 saved image.
 
 ## Editor
 
-When you set the [background color of the preview](the_image_editor_tab#background_color_of_the_preview)
+When you set the [background color of the preview](editor#preview-background-color)
 to anything other than "theme-based" then the cropped-off area will be
 completely hidden from the preview, but if you set it to "theme-based"
 then by default the cropped-off area will be covered by a dark but
 semi-transparent mask. You can define the color and transparency of this
-mask in "[Preferences](preferences) \> General \> [Crop mask color/transparency](preferences#default_theme)".
+mask in "[Preferences](preferences) \> General \> [Crop mask color/transparency](preferences#appearance)".
 
 Activate crop-placing mode by clicking the "Select Crop" button in the
 tool panel, the ![<File:crop.png>](/images/crop.png "File:crop.png") button in

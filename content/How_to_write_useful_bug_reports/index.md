@@ -146,7 +146,7 @@ reporting a bug! Reporting based on an old version is a waste of time.
       help write this section.
 2.  Run RawTherapee from within GDB.
     - In **Linux**, assuming you used [compiled RawTherapee
-      yourself](Linux#Compiling:_The_Manual_Way.md), open up a
+      yourself](linux#the-manual-way), open up a
       terminal and, assuming your debug build was compiled to
       `~/rt_debug/` then type:
           gdb ~/rt_debug/rawtherapee

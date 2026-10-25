@@ -43,7 +43,7 @@ There are several ways of adding an image to the queue:
     ![<File:Save.png>](/images/Save.png "File:Save.png") and select "Put to the
     head/tail of the processing queue".
 3.  Right-click on a thumbnail in the [File Browser](file_browser) or the
-    [Filmstrip](editor#the_filmstrip) and select "Put to
+    [Filmstrip](editor#the-filmstrip) and select "Put to
     queue".
 
 Regardless which method you use, when you go to the *Queue* tab you will

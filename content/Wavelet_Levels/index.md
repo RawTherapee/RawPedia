@@ -206,7 +206,7 @@ sharpness and on one’s ability to see any small changes introduced by
 the various modules: **the effects of this tool are only visible at full
 size** (or larger).
 
-In practice, this means that, [for processing speed reasons](general_comments_about_some_toolbox_widgets#the_preview_area),
+In practice, this means that, [for processing speed reasons](general_comments_about_some_toolbox_widgets#the-preview-area),
 you must have the final size of the image in mind. If it is planned to
 reduce the image size (scale it down, not crop it), then it is advised
 to first export it with its final size and process it afterwards with
@@ -257,7 +257,7 @@ differences between them:
   of each level,
 - *Contrast by Detail Levels* adjusts equally all luminance (or chroma)
   values present in the level, while Wavelet Levels performs a
-  progressive adjustment ([this is explained further in the contrast attenuation section](#the_attenuation_curve)),
+  progressive adjustment ([this is explained further in the contrast attenuation section](#the-attenuation-curve)),
 - *Contrast by Detail Levels* doesn't have a residual image.
 
 That said, it is possible to use both tools at the same time. It should
@@ -334,7 +334,7 @@ quality of the lower levels, or that of the residual image:
 - in some cases the best results for edge detection are obtained with D2
 - in other cases with D6 or D14
 
-This parameter has a fairly strong impact on *[Edge detection](#edge_detection)* and also on global decomposition
+This parameter has a fairly strong impact on *[Edge detection](#edge-detection)* and also on global decomposition
 (the relationship between the residual image and each level).
 
 ### Preview
@@ -773,7 +773,7 @@ value (0).
 
 In addition, there is a *Attenuation Response* slider for all 3 options,
 which will act in the same way as described in the
-[section on the attenuation of the Contrast module](#attenuation_and_selectivity_in_contrast_changes).
+[section on the attenuation of the Contrast module](#attenuation-and-selectivity-in-contrast-changes).
 
 ### Whole chroma range
 
@@ -936,8 +936,8 @@ the color in the «veins» of the petals.
 
 ## Gamut module
 
-This module is linked to the [Contrast](#contrast_module) and
-[Chroma](#chroma_module) modules, so that adjustments can be
+This module is linked to the [Contrast](#contrast-module) and
+[Chroma](#chroma-module) modules, so that adjustments can be
 targeted as a function of the chroma in the details. In other words, for
 the details in each of the wavelet levels, you can not only take into
 account the contrast of the luminance (contrast module) or the contrast
@@ -956,7 +956,7 @@ in areas where there are changes in tone or which have high contrast.
 Although useful for fast and undemanding processing, you will actually
 achieve better results with a judicious combination of the
 *[Noise Reduction](noise_reduction)* tool in the Detail tab and the
-*[Denoise and Refine module](#denoise_and_refine_module)* in
+*[Denoise and Refine module](#denoise-and-refine-module)* in
 this tool.
 
 <div>
@@ -1043,7 +1043,7 @@ into account regardless of the colors modified with the curve.
 
 Processing by Wavelet Levels can introduce significant hue changes,
 especially near the limits of the color range of the
-[working color space](color_management#working_profile). Activating this
+[working color space](color_management#working-profile). Activating this
 option makes a series of corrections to ensure that the resulting hue is
 related to the initial color.
 
@@ -1062,7 +1062,7 @@ decide which color dominants they will take.
 
 As with the other modules, there is an *Attenuation Response* slider,
 which will act in the same way as described in the
-[chapter on the attenuation in the Contrast module](#attenuation_and_selectivity_in_contrast_changes).
+[chapter on the attenuation in the Contrast module](#attenuation-and-selectivity-in-contrast-changes).
 
 ### Excluded Colors
 
@@ -1163,7 +1163,7 @@ vertical axis (or *y* axis):
 
 By default, the curve is flat and lies on the mid-line. To get an idea
 of how you can interact with the curve, see the explanations of the
-*[Tone Curves](exposure#tone_curves)*. And remember that if
+*[Tone Curves](exposure#tone-curves)*. And remember that if
 you don't like the changes you have made to the curve, you can always
 start over by clicking the reset arrow
 ![<File:resetbutton.png>](resetbutton.png "File:resetbutton.png").
@@ -1340,7 +1340,7 @@ To get a better understanding of the extent to which the noise levels
 can be improved, it is useful to proceed on a level-by-level basis,
 taking advantage of the fact that you can view the detail in each
 individual level on a neutral background (as explained when dealing with
-the *[Preview](#the_preview)*). Turn off *Link with Edge
+the *[Preview](#the-preview)*). Turn off *Link with Edge
 Sharpness' Strength* and then increase the *Strength* slider of the
 level you are working on to the maximum: the noise will become obvious
 and you will be able to assess how much denoise is needed. Once you have
@@ -1453,7 +1453,7 @@ highlighting it when analyzing the edges
 This module applies a form of contour detection on the details in each
 of the wavelet levels.
 
-At first glance it looks like an **[Unsharp Mask](sharpening#unsharp_mask)**, because decomposition by
+At first glance it looks like an **[Unsharp Mask](sharpening#unsharp-mask)**, because decomposition by
 wavelet levels generates a *residual image* that looks a bit like a
 mask, but that's where the similarities end.
 
@@ -1467,8 +1467,8 @@ of these options are explained in detail below).
 
 Before explaining how to use the module, keep in mind the following to
 avoid generating excessively strong artifacts or effects: both the
-configuration of the *[Edge performance (D2, D4 ... D14)](#edge_performance)* and the
-[strength of each level in *Denoise and Refine*](#denoise_and_refine_module) (when you
+configuration of the *[Edge performance (D2, D4 ... D14)](#edge-performance)* and the
+[strength of each level in *Denoise and Refine*](#denoise-and-refine-module) (when you
 have *Link with Edge Sharpness' Strength* activated) have a noticeable
 effect on *Edge detection*. Each time you make an adjustment, you need
 to evaluate the result and readjust everything to obtain good sharpness
@@ -1496,7 +1496,7 @@ There are 4 sliders:
     contrast. Its effect is stronger at finer levels and resetting this
     slider cancels out any changes in the rest of the module.
 2.  **Attenuation Response**: this operates in the same way as the
-    attenuation control described in the [chapter covering the attenuation of the Contrast module](#attenuation_and_selectivity_in_contrast_changes).
+    attenuation control described in the [chapter covering the attenuation of the Contrast module](#attenuation-and-selectivity-in-contrast-changes).
     It controls the extent to which the contrast values will be
     modified.
 3.  **Radius**: generates a three-dimensional image effect and may give
@@ -1840,7 +1840,7 @@ selected levels. The result is stronger in the higher levels (from
 *level 7* upwards) and is especially useful in astrophotography.
 
 The ***Attenuation Response*** slider acts as described in the
-[chapter on the attenuation of the Contrast module](#attenuation_and_selectivity_in_contrast_changes).
+[chapter on the attenuation of the Contrast module](#attenuation-and-selectivity-in-contrast-changes).
 
 The ***Blur by levels*** curve modifies the luminance of each level: it
 is divided into 10 zones, with *level 1* on the left and *Extra* on the
@@ -2037,7 +2037,7 @@ If sliders for shadows and highlights have positive values, you can only
 The result is similar to the
 [Shadows/Highlights](/shadows--highlights) tool in the Exposure
 tab. However, note that this tool does not have the ability to
-[Reconstruct Highlights](exposure#highlight_reconstruction).
+[Reconstruct Highlights](exposure#highlight-reconstruction).
 
 - negative values have a strong impact on the residual image
 - highlights are darkened if negative values are used
@@ -2155,7 +2155,7 @@ aid to improve the [bokeh](https://en.wikipedia.org/wiki/Bokeh) of the
 image, by blurring the luminance of the residual image (***Blur
 Luminance**'') and its color component (***Blur Chroma**'').
 
-The result is closely linked to the values and to the number of [Wavelet levels](#wavelet_levels): to obtain a good bokeh you need to
+The result is closely linked to the values and to the number of [Wavelet levels](#wavelet-levels): to obtain a good bokeh you need to
 be able to adjust the amount of detail in the image depending on whether
 you want the background to be partially recognizable or completely
 blurred.
@@ -2292,7 +2292,7 @@ placed to the right, the lower levels are reduced and the upper levels
 are increased.
 
 You also have at your disposal an ***Attenuation Response*** slider,
-which will act as described in the [chapter on attenuation of the Contrast module](#attenuation_and_selectivity_in_contrast_changes).
+which will act as described in the [chapter on attenuation of the Contrast module](#attenuation-and-selectivity-in-contrast-changes).
 
 Finally the option ***Chrominance balance*** allows you to modify the
 d/v-h balance of the chromatic components of the decomposition using the
@@ -2323,7 +2323,7 @@ values of high local contrasts and avoid artifacts.
 
 In addition, there is also a ***Attenuation Response*** slider, which
 will act in the same way explained in the
-[chapter on the attenuation of the Contrast module](#attenuation_and_selectivity_in_contrast_changes).
+[chapter on the attenuation of the Contrast module](#attenuation-and-selectivity-in-contrast-changes).
 
 ### *After* Contrast Curve
 

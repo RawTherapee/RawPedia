@@ -107,12 +107,12 @@ inside RawPedia) or external (to a webpage in the Internet):
     start with the page name, followed by a `#`, all of it surrounded by
     double brackets as in
     `[[Getting_Started#Start_RawTherapee|starting RawTherapee]]`. It
-    will look like this: [starting RawTherapee](getting_started#start_rawtherapee)
+    will look like this: [starting RawTherapee](getting_started#start-rawtherapee)
   - linking to a section inside the current page: you just have to add
     the link to the proper section, starting the code with a `#` and
     surrounded by double brackets as in
     `[[#Standard_MediaWiki_coding_markup|standard MediaWiki markup]]`.
-    It will show as: [standard MediaWiki markup](#standard_mediawiki_coding_markup)
+    It will show as: [standard MediaWiki markup](#standard-mediawiki-coding-markup)
 - external links: they will be surrounded by single brackets and the
   full url is added straight away, followed by a custom text. This time
   the url and the text shown is separated by just an empty space:
@@ -1145,7 +1145,7 @@ way**.
 The stylesheet is ready to let you show 2, 3 or 4 images side by side.
 Whenever you need to show more images altogether, consider breaking them
 into groups, with each group in one row. Or even use a [workflow
-gallery](#Workflow_galleries.md) as explained later in this
+gallery](#workflow-pages) as explained later in this
 section.
 
 To code a gallery you will follow these steps:

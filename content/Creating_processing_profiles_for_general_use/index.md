@@ -18,7 +18,7 @@ You can see the whole list of processing profiles in the *[Image Editor](the_ima
 a thumbnail in the *File Browser* tab and move your mouse over to
 "*Processing Profile Operations \> Apply Profile*".
 
-Read the short "[Processing Profile Selector](the_image_editor_tab#processing_profile_selector)"
+Read the short "[Processing Profile Selector](editor#processing-profile-selector)"
 article to make sure you understand how to make full use of the
 selector, partial profiles and the fill mode toggle button.
 
@@ -30,7 +30,7 @@ selector, partial profiles and the fill mode toggle button.
 
 in the [Image Editor](the_image_editor_tab).\]\] You can
 create your own processing profiles and have them shown in the
-[Processing Profile Selector](the_image_editor_tab#processing_profile_selector)
+[Processing Profile Selector](editor#processing-profile-selector)
 drop-down list.
 
 - Open a photo you want to create a good starting point profile for.
