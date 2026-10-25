@@ -2035,7 +2035,7 @@ sliders.
 If sliders for shadows and highlights have positive values, you can only
 *recover* the shadows (lightening them) or highlights (darkening them).
 The result is similar to the
-[Shadows/Highlights](shadows/highlights) tool in the Exposure
+[Shadows/Highlights](/shadows--highlights) tool in the Exposure
 tab. However, note that this tool does not have the ability to
 [Reconstruct Highlights](exposure#highlight_reconstruction).
 

@@ -87,8 +87,7 @@ your raw photo to look like the out-of-camera JPEG. It does so by
 analyzing the JPEG image which was created by your camera and is stored
 within the raw file, and adjusting the tone curve so as to match it. In
 most cases this match is very close to the "camera look". In rare cases
-it may fail. See the [Auto-Matched Curve](/auto-matched_curve)
-article for more information.
+it may fail.
 
 {{< figure src="/images/rt_setm_editor.png" >}}
 
@@ -179,7 +178,7 @@ you protect your images:
     ![](/images/magnifier-fit.png)
     button or using the keyboard shortcut key.
 5.  Now you decided you want to fix the
-    [geometry](/lens/geometry) and composition of your photo.
+    [geometry](/lens--geometry) and composition of your photo.
     - First make the horizon level, or correct the things which should
       be vertical such as street lamps or building edges. To easily do
       this, press the "s" key on your keyboard (the same as clicking the

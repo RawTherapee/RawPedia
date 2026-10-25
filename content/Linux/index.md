@@ -525,7 +525,7 @@ Build using system KLT library when ON, otherwise use KLT files bundled
 with RawTherapee.
 
 The Kanade–Lucas–Tomasi (KLT) feature tracker is used by the
-[Auto Distortion Correction](lens/geometry#distortion_correction)
+[Auto Distortion Correction](/lens--geometry/#geometric-distortion)
 tool.
 
 <!-- -->

@@ -125,7 +125,7 @@ images usually have already been processed and are ready for viewing,
 having RawTherapee not introduce any tweaks by default is the desirable
 behavior.
 
-The default profile for **raw** photos is called "[Auto-Matched Curve](auto-matched_curve)" (from RawTherapee 5.4 onward).
+The default profile for **raw** photos is called "Auto-Matched Curve" (from RawTherapee 5.4 onward).
 This profile makes your raw image look like the out-of-camera JPEG,
 which is usually a desirable starting point.
 
