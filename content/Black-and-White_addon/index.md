@@ -54,7 +54,7 @@ chromacity C=sqrt(a\*a+b\*b) that is set to 0.
 
 ### Luminance Equalizer
 
-This method use a [flat curve](general_comments_about_some_toolbox_widgets#the_flat_curve),
+This method use a [flat curve](general_comments_about_some_toolbox_widgets#the-flat-curve),
 that allows to modify the luminance based on hue.
 
 The algorithm uses a conversion rgb==\>LCH \[modifying L based on
@@ -184,7 +184,7 @@ effect.
 ## 'Before' curve and 'After' curve
 
 These curves are used the same way and have the same final result as
-those described in the [Tone Curves](exposure#tone_curves)
+those described in the [Tone Curves](exposure#tone-curves)
 section of the [Exposure](exposure) tool. They allow
 customizing the Black-and-White tool, making it independent of the
 tunings made elsewhere. Notice: the “After curve” has only one mode, as

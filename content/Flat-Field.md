@@ -37,8 +37,8 @@ gamma-induced shifts. Thus in RawTherapee flat-field correction can be
 applied to raw files only.
 
 Due to performance considerations, thumbnail images do not reflect
-flat-field corrections. At present only the [main preview](the_image_editor_tab#the_preview_panel) in the
-[Editor](the_image_editor_tab#the_preview_panel) tab and the
+flat-field corrections. At present only the [main preview](editor#the-preview-panel) in the
+[Editor](editor#the-preview-panel) tab and the
 output image can be flat-field corrected.
 
 Accuracy of the flat-field correction is largely based on use of the

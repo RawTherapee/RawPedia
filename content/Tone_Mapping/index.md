@@ -16,7 +16,7 @@ or not so well, depending on the "*Edge Stopping*" and "*Scale*"
 sliders. Read the [Getting the preview to match the saved image](/tone_mapping/#getting-the-preview-to-match-the-saved-image)
 section below. Use a detail window (click on the
 ![window-add.png>](window-add.png "window-add.png") icon
-under the [main preview panel](the_image_editor_tab#the_preview_panel)) to inspect a
+under the [main preview panel](editor#the-preview-panel)) to inspect a
 part of the image, or zoom the main preview to 100% (also called 1:1)
 ![magnifier-1to1.png>](magnifier-1to1.png "magnifier-1to1.png").
 
@@ -59,7 +59,7 @@ closely matches the saved image. If you wish to adjust these values, you
 will need to process the full image every time you change them to make
 sure that their effects on the saved output are what you had in mind. An
 easy way to simplify this task is by setting an image viewer as the
-"[External editor](preferences#external_editor)", then you
+"[External editor](preferences#external-editor)", then you
 just hit the keyboard shortcut Ctrl+e to have RawTherapee fully process
 the image and automatically view it in your image viewer.
 

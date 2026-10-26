@@ -27,7 +27,7 @@ to the image the moment one of these actions are taken:
 - You open the photo for [editing](the_image_editor_tab).
 - You apply a processing profile manually, by using the right-click
   context menu in the [File Browser](the_file_browser_tab) or
-  [Filmstrip](the_image_editor_tab#the_filmstrip).
+  [Filmstrip](editor#the-filmstrip).
 - You apply a [dynamic processing profile](dynamic_processing_profiles).
 
 When you open an image for editing, or when a processing profile is
@@ -35,7 +35,7 @@ assigned, RawTherapee will convert the real raw data into a viewable
 image. In order to do this, there are many settings which need to be set
 to *something*, and what these specific values are depends on:
 
-- Your [default processing profile](preferences#default_processing_profile).
+- Your [default processing profile](preferences#default-processing-profile).
 - Your [dynamic processing profile rules](dynamic_processing_profiles), if any.
 - Or on the processing profile you selected from the right-click context
   menu if you right-clicked on a thumbnail.
@@ -49,7 +49,7 @@ work in exactly the same way:
 
   RawTherapee comes with a bundle of profiles. Their purpose is to give
   you a good starting point, to demonstrate how the tools can be used
-  together. They are the ones you see in the [Processing Profile Selector](the_image_editor_tab#processing_profile_selector)
+  together. They are the ones you see in the [Processing Profile Selector](editor#processing-profile-selector)
   drop-down list's "Bundled profiles" section, in the [Image Editor](the_image_editor_tab).
 - "My profiles".
 
@@ -78,12 +78,12 @@ The processing profile is written to disk:
 - When you apply a processing profile manually or using a dynamic
   profile.
 - When you close the current image (the Editor tab) if using
-  [Multiple Editor Tabs Mode](the_image_editor_tab#editor_tab_modes)
+  [Multiple Editor Tabs Mode](editor#editor-tab-modes)
   (METM).
 - When you close the current image by opening a different image if using
-  [Single Editor Tab Mode](the_image_editor_tab#editor_tab_modes) (SETM).
+  [Single Editor Tab Mode](editor#editor-tab-modes) (SETM).
 - When you close the current image by closing RawTherapee.
-- When you manually save the processing profile using the [Processing Profile Selector](the_image_editor_tab#processing_profile_selector)
+- When you manually save the processing profile using the [Processing Profile Selector](editor#processing-profile-selector)
   panel in the Editor tab.
 - When you use the "force saving current settings to the processing
   profile" [keyboard shortcut](keyboard_shortcuts) from the
@@ -98,7 +98,7 @@ Editor tab.
 
 ## Storage
 
-Where the processing profile is stored can be configured in [Preferences \> Processing Profile Handling](preferences#processing_profile_handling).
+Where the processing profile is stored can be configured in [Preferences \> Processing Profile Handling](preferences#processing-profile-handling).
 
 By default, the processing profile for an image is stored alongside the
 input image (if you open `kitty.raw`, a new file `kitty.raw.pp3` will be
@@ -125,7 +125,7 @@ images usually have already been processed and are ready for viewing,
 having RawTherapee not introduce any tweaks by default is the desirable
 behavior.
 
-The default profile for **raw** photos is called "[Auto-Matched Curve](auto-matched_curve)" (from RawTherapee 5.4 onward).
+The default profile for **raw** photos is called "Auto-Matched Curve" (from RawTherapee 5.4 onward).
 This profile makes your raw image look like the out-of-camera JPEG,
 which is usually a desirable starting point.
 
@@ -148,7 +148,7 @@ Processing profile storage (saving to a file or copying to memory) and
 application (loading from a file or pasting from memory) can be partial,
 where only a subset of the parameters are involved, or full, involving
 all parameters. These operations are performed using the buttons in the
-[Processing Profile Selector](editor#processing_profile_selector) located in the
+[Processing Profile Selector](editor#processing-profile-selector) located in the
 top-right corner of the [Editor](editor) tab. Clicking these
 buttons invokes an operation on the full profile, while +clicking
 invokes an operation only on a subset of parameters. When a partial

@@ -247,7 +247,7 @@ More on [Capture Sharpening](/capture_sharpening/)
   being activated. This slider allows you to adjust the transitions between
   'recovered' (and therefore lost) areas and healthy areas. This also led
   to a change in the 'Raw Black Points' setting.
-  - [Recommendations](/tutorials/introduction/#recommendations)
+  - [Recommendations](/tutorials/game_changer/introduction/#recommendations)
 
 #### White Balance - Temperature correlation
 

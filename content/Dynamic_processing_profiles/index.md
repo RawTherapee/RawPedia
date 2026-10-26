@@ -31,8 +31,8 @@ time, the list of rules is scanned, and all the profiles that match are
 combined (in the order given, so later rules can override earlier ones)
 to build the initial processing profile.
 
-In order to activate the functionality, the [default processing profile](preferences#default_processing_profile) must be set
-to "(Dynamic)". Rules are defined in the [Dynamic Profile Rules](preferences#dynamic_profile_rules_tab) section of the
+In order to activate the functionality, the [default processing profile](preferences#default-processing-profile) must be set
+to "(Dynamic)". Rules are defined in the [Dynamic Profile Rules](preferences#dynamic-profile-rules-tab) section of the
 Preferences window.
 
 In order to invoke the dynamic processing profile chain in batch, after

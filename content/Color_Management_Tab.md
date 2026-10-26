@@ -6,4 +6,4 @@ contributors:
 ---
 
 1.  REDIRECT
-    [Preferences#Color_Management_Tab](preferences#color_management_tab)
+    [preferences#color-management-tab](preferences#color-management-tab)

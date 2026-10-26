@@ -79,7 +79,7 @@ File Browser \> Maximal Thumbnail Height*").
 
 You can filter the visible photos by using the buttons in the *File
 Browser's* or
-*[Filmstrip](the_image_editor_tab#the_filmstrip)'s* top
+*[Filmstrip](editor#the-filmstrip)'s* top
 toolbar, as well as by using the "*Find*" box or the "*Filter*" tab.
 Possible uses:
 

@@ -23,13 +23,13 @@ At first, I thought this image was from a Gorge near my home, in the hinterland 
 
 I’m going to show you how to process this image; some of the settings might be excessive. My aim is to teach through example, rather than focusing on the final result itself. The most important thing for any photography enthusiast is that they are happy with the outcome. Of course you can criticize, add treatments, remove some… and say ‘it’s better with XXX’
 
- [Some principles](/tutorials/introduction/#in-summary-some-principles)
+ [Some principles](/tutorials/game_changer/introduction/#in-summary-some-principles)
 
- [Recommendations](/tutorials/introduction/#recommendations)
+ [Recommendations](/tutorials/game_changer/introduction/#recommendations)
 
- [Specific tools used](/tutorials/introduction/#specific-tools-used)
+ [Specific tools used](/tutorials/game_changer/introduction/#specific-tools-used)
 
- [Alternatives](/tutorials/introduction/#alternatives)
+ [Alternatives](/tutorials/game_changer/introduction/#alternatives)
 
 ## First steps
 + Set to Neutral.
@@ -37,7 +37,7 @@ I’m going to show you how to process this image; some of the settings might be
 + Go to the ‘Color tab’ and enable 'Gamut compression’. I’ve chosen ‘sRGB’ as the ‘Target Compression Gamut’, which should be suitable for most users with a standard monitor. Again, double-check that there are no changes to the image or histogram, and examine the information line under ‘Maximum achromatic value’. You’ll see three values: R :, G :, and B :, which correspond to the maximum of the three channels (in sRGB). In this case, they are all much lower than 1. This suggests that the image has been underexposed. We’ll see what to do with this information later. Then deactivate ‘Gamut compression’
 + Go to 'Raw tab > Capture Sharpening’, activate it, and check that ‘Contrast threshold’ is not set to zero. If it is, you will need to adjust ‘Presharpening denoise’. Leave the default settings and leave ‘Capture Sharpening’ enabled.
 + Go to ‘Color tab > White Balance’ and choose ‘Automatic & Refinement > Temperature correlation’. This algorithm compares up to 236 colors in the image with over 400 spectral reference colors. Some of these colors are in ‘Beta RGB’, the smallest color space encompassing ‘Pointer’s gamut’ (the reflected colors seen by humans), while others are in the entire visible spectrum (ACES-P0). Try the two settings ‘Medium sampling - near Pointers’s gamut’ and ‘Close to full CIE diagram’. You’ll see a difference in the calculations, which is probably due to the slightly hazy upper area of ​​the image – perhaps corresponding to a break in the sunlight. I chose to keep the first setting. Note that these references are only used for calculations and have no direct relation to the ‘Working Profile’ or ‘Output profiles’. It makes no sense to use it with illuminants other than Daylight and Blackbody:
- [Temperature correlation](/tutorials/#white-balance---temperature-correlation)
+ [Temperature correlation](/tutorials/game_changer/shadows-highlights/#white-balance---temperature-correlation)
 
 ## Selective Editing - 5 RT-spots
 

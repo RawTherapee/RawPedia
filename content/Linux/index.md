@@ -236,9 +236,9 @@ Proceed to [Compilation](#compilation).
 ## Compilation
 
 There are two general ways you can compile RawTherapee: either use the
-[automatic](#the_automatic_way) Bash script which compiles
+[automatic](#the-automatic-way) Bash script which compiles
 RawTherapee for you (recommended), or do so
-[manually](#the_manual_way).
+[manually](#the-manual-way).
 
 ### The Automatic Way
 
@@ -278,7 +278,7 @@ update itself.
 The script compiles the current branch, which by default is `dev` where
 most of the development happens. To compile a different branch, check it
 out using standard git commands before running the script. Read more
-about RawTherapee's branches below in the [Choose a Branch](linux#choose_a_branch) section.
+about RawTherapee's branches below in the [Choose a Branch](#choose-a-branch) section.
 
 For more information, see `./build-rawtherapee --help`
 
@@ -288,7 +288,7 @@ You have finished, RawTherapee is ready for use. You can skip the
 ### The Manual Way
 
 The recommended way of compiling RawTherapee is by using the automatic
-script - see [Compilation: The Automatic Way](#the_automatic_way). If you want to learn how to compile
+script - see [Compilation: The Automatic Way](#the-automatic-way). If you want to learn how to compile
 manually, read on.
 
 In order to keep your "home" folder clean when manually compiling
@@ -525,7 +525,7 @@ Build using system KLT library when ON, otherwise use KLT files bundled
 with RawTherapee.
 
 The Kanade–Lucas–Tomasi (KLT) feature tracker is used by the
-[Auto Distortion Correction](lens/geometry#distortion_correction)
+[Auto Distortion Correction](/lens--geometry/#geometric-distortion)
 tool.
 
 <!-- -->

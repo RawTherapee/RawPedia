@@ -718,7 +718,7 @@ Raw file (Creative Common Attribution-share Alike 4.0):
 
 pp3 file: [Pagodas 0 pp3](dsc1629-0.pp3 "dsc1629-0.pp3")
 
-[See Tutorial Game Changer - Pagodas](/tutorials/#pagodas---how-to-process-local-contrast---clarity)
+[See Tutorial Game Changer - Pagodas](tutorials/game_changer/pagodas)
 
 ###### Settings 
 
@@ -3000,7 +3000,7 @@ processing chain. Other aspects such as the HDR monitor characteristics
   the dynamic range (DR). If an image has a DR of 15Ev before the LA
   module, it has approximately the same value after the LA module (any
   differences will be due to user adjustments).
-  [Jzazbz - a new experimental CAM? (Cam16 & JzCzHz)](CIECAM02#Jzazbz_-_a_new_experimental_CAM_(Cam16_&_JzCzHz) "wikilink").
+  [Jzazbz - a new experimental CAM? (Cam16 & JzCzHz)](CIECAM02#jzazbz---a-new-experimental-cam-cam16--jzczhz "wikilink").
   However, while Lab allows low light levels (less than 0.005 cd/m2) to
   be taken into account, this is not the case for highlights \> 120
   cd/m2 because of the use of gamma. Nevertheless, Lab preserves
@@ -6505,7 +6505,7 @@ equivalent in the main-menu "Wavelet levels" (Advanced tab) and has a
 similar degree of complexity. It targets the local-contrast effect on
 edges and has the same controls as its main-menu equivalent.
 
-- [Edge sharpness](wavelet_levels#edge_sharpness_module)
+- [Edge sharpness](wavelet_levels#edge-sharpness-module)
 
 In addition, it benefits from the specific functions in Local
 Adjustments such as scope, transitions, multiple selections etc.

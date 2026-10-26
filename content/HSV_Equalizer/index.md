@@ -25,7 +25,7 @@ setting [Saturation](exposure#saturation) in the
 [Exposure](exposure) tool to -100.
 
 There is a description of how the
-[flat curve type](general_comments_about_some_toolbox_widgets#the_flat_curve)
+[flat curve type](general_comments_about_some_toolbox_widgets#the-flat-curve)
 works in the
 [General Comments About Some Toolbox Widgets](general_comments_about_some_toolbox_widgets)
 chapter.

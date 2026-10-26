@@ -93,7 +93,7 @@ and escalate if the simple steps do not help:
     1.  A stack backtrace would most likely tell us everything we need
         to know, including the name of the faulty file and/or where to
         find the problem in the code. See the
-        [guide to stack-backtraces](how_to_write_useful_bug_reports#when_rawtherapee_crashes_-_an_introduction_to_stack_backtraces).
+        [guide to stack-backtraces](how_to_write_useful_bug_reports#when-rawtherapee-crashes---an-introduction-to-stack-backtraces).
         The instructions may seem complicated but they are simple to
         follow and it would be of tremendous help if you did follow
         them. Sending us a stack backtrace in most cases is enough.

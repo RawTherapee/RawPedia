@@ -87,8 +87,7 @@ your raw photo to look like the out-of-camera JPEG. It does so by
 analyzing the JPEG image which was created by your camera and is stored
 within the raw file, and adjusting the tone curve so as to match it. In
 most cases this match is very close to the "camera look". In rare cases
-it may fail. See the [Auto-Matched Curve](/auto-matched_curve)
-article for more information.
+it may fail.
 
 {{< figure src="/images/rt_setm_editor.png" >}}
 
@@ -179,7 +178,7 @@ you protect your images:
     ![](/images/magnifier-fit.png)
     button or using the keyboard shortcut key.
 5.  Now you decided you want to fix the
-    [geometry](/lens/geometry) and composition of your photo.
+    [geometry](/lens--geometry) and composition of your photo.
     - First make the horizon level, or correct the things which should
       be vertical such as street lamps or building edges. To easily do
       this, press the "s" key on your keyboard (the same as clicking the
@@ -200,7 +199,7 @@ you protect your images:
       set the Crop "Guide type" to "none" if it's a problem.
     - Finally, you want to downscale the photo, because who wants to
       upload a 10MB JPEG to your social network. Enable the
-      [Resize](/resize) tool and the [Post-Resize Sharpening](/resize#post-resize_sharpening) sub-tool,
+      [Resize](/resize) tool and the [Post-Resize Sharpening](/resize#post-resize-sharpening) sub-tool,
       and leave them at the default settings. The resizing effect is
       only applied to the saved image, not to the preview, so you won't
       see any change in the preview as you enable these tools.
@@ -263,7 +262,7 @@ this reason we suggest you stick to this general order of operations:
 4.  Next, adjust the [Exposure](/exposure), using the Exposure
     Compensation and Black sliders to get the image into the right
     ballpark. Once in the right ballpark, continue with using both tone
-    curves. Be sure to read the [Tone Curve section](/exposure#tone_curves) in the Exposure article to
+    curves. Be sure to read the [Tone Curve section](/exposure#tone-curves) in the Exposure article to
     learn why there are two of them and how best to use them - they are
     a very powerful tool!
 5.  In the Basics section above we suggested that you use the
