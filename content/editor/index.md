@@ -104,24 +104,24 @@ happening here:
     processing to it, such as a base tone curve, even at their most
     neutral settings, thereby making it impossible for users to see the
     real, untouched contents of their raw photos. Adobe Lightroom is an
-    example. Comparing RawTherapee's real [neutral](neutral)
+    example. Comparing RawTherapee's real neutral
     image to a pseudo-neutral one from these other programs will expose
     the differences.
 
 RawTherapee, on the other hand, is capable of showing you the real raw
 image in the main preview, leaving the way you want this data processed
-up to you. When you use the "[Neutral](neutral)" processing
+up to you. When you use the "Neutral" processing
 profile you will see the demosaiced image with camera white balance in
 your working color space with no other modifications. You can even see
 the non-demosaiced image by setting the [demosaicing
-method](Demosaicing#Method.md) to "None".
+method](demosaicing#method) to "None".
 
 To provide you with a more aesthetically pleasing starting point,
-RawTherapee by default uses the [Auto-Matched
-Curve](Auto-Matched_Curve.md) processing profile, which
+RawTherapee by default uses the Auto-Matched
+Curve processing profile, which
 automatically generates a tone curve to make the tones of the raw image
 match those of the embedded JPEG, if one exists. If one does not exist,
-you can use the [Standard Film Curve](standard_film_curve)
+you can use the Standard Film Curve
 processing profile, which applies a curve which looks good in most
 cases. Choose the sub-type (ISO Low/Medium/High) depending on how noisy
 your image is.
@@ -134,11 +134,7 @@ screens.
 
 ### Preview Background Color
 
-<figure>
-<img src="/images/Rt59_preview_background_all.png"
-title="Rt59_preview_background_all.png" />
-<figcaption>Rt59_preview_background_all.png</figcaption>
-</figure>
+![](rt59_preview_background_all.png)
 
 The background color of the preview panel may be changed to allow you to
 better judge how the image tones will appear when the saved image is
@@ -147,23 +143,19 @@ color.
 
 This choice also applies to the cropped-off area, if the image is
 cropped. See "[Preferences \> General \> Appearance \> Crop mask
-color](Preferences#Appearance.md)".
+color](preferences/#appearance)".
 
 Available options:
 
 - theme-based (see [Preferences \> General \>
-  Appearance](Preferences#Appearance.md)),
+  Appearance](preferences/#appearance)),
 - black,
 - [L\* middle grey](https://en.wikipedia.org/wiki/Middle_gray),
 - white.
 
 ### Preview Channel
 
-<figure>
-<img src="/images/Rt59_preview_channel_all.png"
-title="Rt59_preview_channel_all.png" />
-<figcaption>Rt59_preview_channel_all.png</figcaption>
-</figure>
+![](rt59_preview_channel_all.png)
 
 The preview can be toggled to show one of the following channels:
 
@@ -180,11 +172,7 @@ which channel might be clipping or for aesthetic reasons.
 
 ### Preview Mask
 
-<figure>
-<img src="/images/Rt59_preview_mask_all.png"
-title="Rt59_preview_mask_all.png" />
-<figcaption>Rt59_preview_mask_all.png</figcaption>
-</figure>
+![](rt59_preview_mask_all.png)
 
 Available options:
 
@@ -192,15 +180,11 @@ Available options:
   they appear),
 - Sharpening contrast mask, which visualizes the mask which decides
   which areas are affected by sharpening. See [Sharpening \> Contrast
-  Mask](Sharpening#Contrast_Mask.md).
+  Mask](sharpening/#contrast-mask).
 - Clipped shadow indication.
 - Clipped highlight indication.
 
-<figure>
-<img src="/images/Preview_6_focus_2.jpg"
-title="Focus mask indicating the focusing plane" />
-<figcaption>Focus mask indicating the focusing plane</figcaption>
-</figure>
+![Focus mask indicating the focusing plane](preview_6_focus_2.jpg "Focus mask indicating the focusing plane")
 
 The focus mask is designed to highlight areas of the image which are in
 focus. Naturally, focused areas are sharper, so the sharp areas are
@@ -223,7 +207,7 @@ you decide to delete them based on the focus mask.
 ### Detail Window
 
 The "New detail window" button
-![<File:Window-add.png>](Window-add.png "File:Window-add.png"), situated
+![](window-add.png), situated
 below the main preview next to the zoom buttons, opens a new viewport
 over the main preview of an adjustable size and of adjustable zoom. This
 lets you work on the photo zoomed-to-fit while examining several areas
@@ -257,20 +241,20 @@ for the preview to be refreshed.
 We have introduced two parameters which control the length of this
 waiting period:
 
-AdjusterMinDelay  
-Default value = 100ms.
+**AdjusterMinDelay**
+- Default value = 100ms.
 
-This is used for tools with a very fast response time, for example the
+- This is used for tools with a very fast response time, for example the
 exposure compensation slider.
 
-AdjusterMaxDelay  
-Default value = 200ms.
+**AdjusterMaxDelay**
+- Default value = 200ms.
 
-This is used for tools with a slow response time, for example the
+- This is used for tools with a slow response time, for example the
 CIECAM02 sliders.
 
 You can adjust both of these values in the options file in the [config
-folder](File_Paths.md).
+folder](file_paths).
 
 ## The Left Panel
 
@@ -278,27 +262,16 @@ To the left is a panel which optionally shows the main histogram
 ("*Preferences \> General \> Layout \> Histogram in left panel*"), and
 always shows the *Navigator*, *History* and *Snapshots*. You can hide
 this panel using the ![Hide left panel
-icon](panel-to-left.png "Hide left panel icon") hide icon, or its
+icon](20181225150134!panel-to-left.png "Hide left panel icon") hide icon, or its
 [keyboard shortcut](keyboard_shortcuts).
 
 ### Main Histogram
 
-<figure>
-<img src="/images/Rt57_histogram_wide_labeled.png"
-title="Rt57_histogram_wide_labeled.png" />
-<figcaption>Rt57_histogram_wide_labeled.png</figcaption>
-</figure>
+![](rt57_histogram_wide_labeled.png)
 
-<figure>
-<img src="/images/RT57_histogram_ani.gif" title="RT57_histogram_ani.gif" />
-<figcaption>RT57_histogram_ani.gif</figcaption>
-</figure>
+![](rt57_histogram_ani.gif)
 
-<figure>
-<img src="/images/Rt_histogram_rgbindicator.png"
-title="Rt_histogram_rgbindicator.png" />
-<figcaption>Rt_histogram_rgbindicator.png</figcaption>
-</figure>
+![](rt_histogram_rgbindicator.png)
 
 A histogram in photography is a graphical representation of the number
 of pixels of a given value. Typically the horizontal axis represents the
@@ -323,29 +296,29 @@ floating-point precision anyway.
 
 The main histogram can simultaneously show one or more of the following:
 
-- ![<File:Histogram-red-on-small.svg>](Histogram-red-on-small.svg "File:Histogram-red-on-small.svg")
+- ![](histogram-red-on-small.svg)
   the red channel,
-- ![<File:Histogram-green-on-small.svg>](Histogram-green-on-small.svg "File:Histogram-green-on-small.svg")
+- ![](histogram-green-on-small.svg)
   the green channel,
-- ![<File:Histogram-blue-on-small.svg>](Histogram-blue-on-small.svg "File:Histogram-blue-on-small.svg")
+- ![](histogram-blue-on-small.svg)
   the blue channel,
-- ![<File:Histogram-silver-on-small.svg>](Histogram-silver-on-small.svg "File:Histogram-silver-on-small.svg")
+- ![](histogram-silver-on-small.svg)
   CIELab luminance,
-- ![<File:Histogram-gold-on-small.svg>](Histogram-gold-on-small.svg "File:Histogram-gold-on-small.svg")
+- ![](histogram-gold-on-small.svg)
   [chromaticity](http://en.wikipedia.org/wiki/Chromaticity).
-- ![<File:Histogram-bayer-on-small.svg>](Histogram-bayer-on-small.svg "File:Histogram-bayer-on-small.svg")
+- ![](histogram-bayer-on-small.svg)
   red, green and blue channels of the source raw image before
   demosaicing.
 
 The histogram shows the channels listed above using the gamma-corrected
 output profile when the gamut button
-![<File:Gamut-hist.png>](Gamut-hist.png "File:Gamut-hist.png") is
+![](gamut-hist.png) is
 disabled (default), or using the working profile when the button is
 enabled. The status of this button also affects the values shown in the
 Navigator panel, as well as the clipped shadow
-![<File:Warning-shadows.png>](Warning-shadows.png "File:Warning-shadows.png")
+![](warning-shadows.png)
 and
-![<File:Warning-highlights.png>](Warning-highlights.png "File:Warning-highlights.png")
+![](warning-highlights.png)
 highlight indicators. It does not affect the raw histogram.
 
 Like water in a pipeline, image data flows through RawTherapee from the
@@ -356,7 +329,7 @@ histogram allows you to visualize this data at several stages. By
 default, the histogram shows color data as it will appear if you save
 the output image, including processing done at all intermediate stages.
 By enabling the gamut button
-![<File:Gamut-hist.png>](Gamut-hist.png "File:Gamut-hist.png") you can
+![](gamut-hist.png) you can
 peak at the data at the early stage where it gets converted into the
 working space. You can even look at the raw data before any
 transformations or demosaicing are applied.
@@ -381,14 +354,14 @@ highlights](https://en.wikipedia.org/wiki/Specular_highlight). If a
 histogram shows clipping, and if you care about the clipped regions, you
 should start by establishing where the clipping occurs. Check the raw
 histogram - are any channels clipped? If yes, then maybe [highlight
-reconstruction](Exposure#Highlight_Reconstruction.md) can help.
+reconstruction](exposure#highlight-reconstruction) can help.
 If the raw histograms are not clipped, then all the required information
 is intact, and it is some stage downstream in the pipeline which causes
 clipping. Ensure your working profile's gamut is large enough by
 enabling the gamut button
-![<File:Gamut-hist.png>](Gamut-hist.png "File:Gamut-hist.png") to see
+![](gamut-hist.png) to see
 histograms at the working profile stage of the pipeline. You might want
-to temporarily apply the [Neutral](neutral) profile to
+to temporarily apply the Neutral profile to
 disable all the tools while checking, then revert. If your working space
 is not causing clipping (the default working space is ProPhoto and it's
 huge), then it's likely your adjustments which are causing clipping.
@@ -402,14 +375,14 @@ miscalibrated your monitor may be.
 To help you visualize the data, the histogram (as of RawTherapee 5.5)
 has three modes which scale the data in the x and y axes differently:
 
-- ![<File:Histogram-mode-linear-small.png>](Histogram-mode-linear-small.png "File:Histogram-mode-linear-small.png")
+- ![](histogram-mode-linear-small.png)
   Linear-linear mode. You find gridlines at halves, quarters, eighths
   and sixteenths, depending on the size of the histogram.
-- ![<File:Histogram-mode-logx-small.png>](Histogram-mode-logx-small.png "File:Histogram-mode-logx-small.png")
+- ![](histogram-mode-logx-small.png)
   Linear-log mode. The x-axis is linear, the y-axis and the horizontal
   gridlines are scaled logarithmically. The position of the gridlines
   still corresponds to the halves, quarters, etc.
-- ![<File:Histogram-mode-logxy-small.png>](Histogram-mode-logxy-small.png "File:Histogram-mode-logxy-small.png")
+- ![](histogram-mode-logxy-small.png)
   Log-log mode. Both the x- and y-axes are scaled logarithmically. The
   gridlines are not scaled logarithmically, but correspond to
   [stops](https://en.wikipedia.org/wiki/Exposure_value) - with every
@@ -440,7 +413,7 @@ floor may lie for instance at 512. The white level is also not
 necessarily 16384; it depends on various things, and may lie for
 instance at 16300. For more information, see the articles
 [Demosaicing](demosaicing) and [Adding Support for New Raw
-Formats](Adding_Support_for_New_Raw_Formats.md) (especially the
+Formats](adding_support_for_new_raw_formats) (especially the
 header of the `camconst.json` file). The black and white level values
 used by RawTherapee are hierarchically set by looking in several places:
 in `dcraw.c`, inside the raw file's metadata, and in `camconst.json`
@@ -478,7 +451,7 @@ In greater detail:
   groups of 21 columns in the image
 - the analysis of the pixel values **is performed on the final image**,
   that is, taking into account [the output
-  profile](https://rawpedia.rawtherapee.com/Color_Management#Output_Profile)
+  profile](color_management#output-profile)
 - for each column, the R, G, and B values of the pixels are placed
   vertically. The greater the channel value of the pixel, the higher it
   is placed in the column. Each channel of a pixel is placed according
@@ -498,15 +471,12 @@ In greater detail:
   the left of the waveform to change the brightness of the points (if
   you do not see it, you should toggle the button to show the display
   options
-  […](https://rawpedia.rawtherapee.com/images/c/c5/Histogram-ellipsis-small.png)).
+  […](histogram-ellipsis-small.png)).
   Increasing the brightness of the points, you will be able to better
   see when there are overexposed or underexposed pixels (at the top or
   bottom of the waveform)
 
-<figure>
-<img src="/images/Waveform.jpg" title="Waveform.jpg" />
-<figcaption>Waveform.jpg</figcaption>
-</figure>
+![](waveform.jpg)
 
 If you look carefully at the waveform you will see some dashed
 horizontal lines. They represent the position of the values 1, 3, 7, 15,
@@ -544,11 +514,9 @@ abrupt change in the white line at the left part of the waveform
 represents the large contrast between the edge of the door frame and the
 deep shade between the frame and door.
 
-<span id="rgb-parade"></span>
-
 ### RGB Parade
 
-![](Parade.jpg "Parade.jpg") This is the same as the waveform, but with
+![](parade.jpg) This is the same as the waveform, but with
 the color channels separated in to three adjacent graphs.
 
 In this form, you can better see what happens with each channel, without
@@ -560,8 +528,6 @@ are narrower.
 In the example, you can see the overexposed areas of the padlock
 correspond to the green and blue channels.
 
-<span id="vectorscopes"></span>
-
 ### Vectorscopes
 
 The *vectorscopes* are graphical representations of the image pixel
@@ -570,22 +536,18 @@ position of the graph corresponding with the hue and saturation.
 
 In the same way as with the waveform, the *vectorscopes* are calculated
 with the colors in the exported image, that is, based on the
-[<https://rawpedia.rawtherapee.com/Color_Management#Output_Profile>
-output
-profile](https://rawpedia.rawtherapee.com/Color_Management#Output_Profile_output_profile.md).
+[output profile](color_management#output-profile).
 
 In RawTherapee, there are two types of *vectorscopes*:
 
 - the ***H-S Vectorscope***: shows pixel colors based on the
-  [<https://en.wikipedia.org/wiki/HSL_and_HSV> HSL color
-  model](https://en.wikipedia.org/wiki/HSL_and_HSV_HSL_color_model.md).
+  [HSL color model](https://en.wikipedia.org/wiki/HSL_and_HSV_HSL_color_model).
   The more saturated colors are located closer to the edges of the
   graph, which represent the limits of the *output color space* and is
   useful to estimate the number of pixels that are outside the color
   gamut, or about to go outside.
 - the ***H-C Vectorscope***: shows the colors based on the
-  [<https://en.wikipedia.org/wiki/CIELAB_color_space#Cylindrical_model>
-  Lch color space](https://en.wikipedia.org/wiki/cielab_color_space#cylindrical_model_lch_color_space).
+  [Lch color space](https://en.wikipedia.org/wiki/cielab_color_space#cylindrical_model_lch_color_space).
   It is useful to estimate the saturation of colors as we perceive it
   with our eyes, that is, how “intense” or “washed-out” we perceive the
   colors. The closer to the edges the white points are, the more
