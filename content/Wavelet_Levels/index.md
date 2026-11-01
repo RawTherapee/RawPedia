@@ -558,7 +558,7 @@ after removing all the details distributed across all of the levels.
 ### Attenuation and selectivity in contrast changes
 
 There are 3 sliders that allow you to adjust the curve for each level,
-as explained in [Analysis of the contrasts in each level](#analysis_of_the_contrasts_in_each_level):
+as explained in [The attenuation curve](#the-attenuation-curve):
 
 1.  ***Attenuation Response***: by selecting positive values the upper
     part of the curve becomes wider around the medium contrast area, and
