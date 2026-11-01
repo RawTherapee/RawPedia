@@ -100,7 +100,7 @@ Find out more:
 
 ![](pentax_k10d_daylight_london_summer.jpg "pentax_k10d_daylight_london_summer.jpg")
 ![](colortarget_glare.png "colortarget_glare.png")
-![](gluehlampe_01_KMJ.png "gluehlampe_01_KMJ.png")
+![](722px-gluehlampe_01_kmj.png "722px-gluehlampe_01_kmj.png")
 
 This guide assumes you use the X-Rite ColorChecker Passport, though you
 can use any supported color target. If using the X-Rite ColorChecker

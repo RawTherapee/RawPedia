@@ -176,7 +176,7 @@ only on raw files but on normal images too.
 
 To see if your photo contains overexposed areas, click on the clipped
 highlight indication icon
-![<File:Warning-highlights.png>](Warning-highlights.png "File:Warning-highlights.png")
+![<File:warning-highlights.png>](warning-highlights.png "File:warning-highlights.png")
 on the top right of the image window. Overexposed areas will show up in
 black.
 
@@ -216,7 +216,7 @@ Increase the HC slider until the red, green and blue channels in the
 histogram no longer squash up against the right end of the histogram -
 you want them to touch it, but not to cram up against it. You can enable
 the *Clipped highlight indication* icon
-![<File:Warning-highlights.png>](Warning-highlights.png "File:Warning-highlights.png")
+![<File:warning-highlights.png>](warning-highlights.png "File:warning-highlights.png")
 before moving the HC slider up. Once the indicator's black areas
 disappear from the white parts you want compressed, which is also when
 the lightness of those pixels drops from L=100 to L=99, you stop. Don't
@@ -319,15 +319,15 @@ by using both without entering too fast in the "danger zone" where your
 colors becomes unrealistic.
 
 You can save a curve to disk. Click on the *Save current curve* button
-![Image:Gtk-save-large-dark.png](Gtk-save-large-dark.png "Image:Gtk-save-large-dark.png")
+![Image:gtk-save-large-dark.png](gtk-save-large-dark.png "Image:gtk-save-large-dark.png")
 next to the graph and give it a name. Use the *Load a curve from file*
-button ![Image:Gtk-open.png](Gtk-open.png "Image:Gtk-open.png") to apply
+button ![Image:gtk-open.png](gtk-open.png "Image:gtk-open.png") to apply
 this curve later to another file. Use the *Reset curve to linear* button
-![Image:Gtk-undo-ltr.png](Gtk-undo-ltr.png "Image:Gtk-undo-ltr.png") to
+![Image:gtk-undo-ltr.png](gtk-undo-ltr.png "Image:gtk-undo-ltr.png") to
 delete all the points you created and to reset the curve to
 neutral/linear. You can also *Copy*
-![Image:Gtk-copy.png](Gtk-copy.png "Image:Gtk-copy.png") and *Paste*
-![Image:Gtk-paste.png](Gtk-paste.png "Image:Gtk-paste.png") curves
+![Image:gtk-copy.png](gtk-copy.png "Image:gtk-copy.png") and *Paste*
+![Image:gtk-paste.png](gtk-paste.png "Image:gtk-paste.png") curves
 to/from RawTherapee's own clipboard, which comes in very useful if you
 want to quickly apply an identical curve to a different tool. Saved
 curves have the `.rtc` filename extension.
@@ -443,7 +443,7 @@ the right makes the highlights brighter, moving it to the left darkens
 the highlights.
 
 Use the *Reset to default* buttons
-![Image:Gtk-undo-ltr.png](Gtk-undo-ltr.png "Image:Gtk-undo-ltr.png")
+![Image:gtk-undo-ltr.png](gtk-undo-ltr.png "Image:gtk-undo-ltr.png")
 next to the sliders to reset individual sliders, use the same button at
 the top of the tone curve section to reset all four sliders and the
 control points to linear (zero).

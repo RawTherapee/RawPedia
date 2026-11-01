@@ -1711,7 +1711,7 @@ will be affected (as with the slider points), whereas moving it up or
 down will increase or decrease the strength of the changes in detail.
 
 With the default curve shape (which you can reset with the
-![<File:ResetButton.png>](ResetButton.png "File:ResetButton.png")
+![<File:resetbutton.png>](resetbutton.png "File:resetbutton.png")
 button) the effect achieved is similar to a
 [HIRALOAM](https://www.ledet.com/margulis/Makeready/MA69-Life_on_the_Edge.pdf):
 it enhances the contrast values by controlling the shadows, while making

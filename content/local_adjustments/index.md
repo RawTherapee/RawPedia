@@ -4175,10 +4175,7 @@ all image data to be processed is in the interval \[0 ,1\] (32-bit real format)
 
 ##### Recommendations
 
-<figure>
-<img src="./gamu-profil1.jpg" title="Gamu-profil1.jpg" width="600" />
-<figcaption>Gamu-profil1.jpg</figcaption>
-</figure>
+![gamu-profil1.jpg](gamu-profil1.jpg "gamu-profil1.jpg")
 
 To make these settings easier, set the 'gamut' knob so that the data and
 histogram use the same values as those - linear + working profile - used

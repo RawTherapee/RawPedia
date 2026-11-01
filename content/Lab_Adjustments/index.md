@@ -79,7 +79,7 @@ image. Below are illustrated explanations of each curve.
 
 ### L Curve
 
-![](/images/Lab_L_BA.jpg "Lab_L_BA.jpg") The L curve allows to control output
+![](/images/lab_l_ba.jpg "lab_l_ba.jpg") The L curve allows to control output
 lightness based on the input lightness, L=f(L). The histogram on the L
 curve reflects lightness after the Lab adjustments. This curve allows
 you to control the lightness without affecting color.

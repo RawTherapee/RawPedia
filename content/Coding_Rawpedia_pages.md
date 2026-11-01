@@ -420,7 +420,7 @@ images that fit inside a line of text, but are larger.
 <div class="code-result-inline">
 
 **Lorem ipsum dolor sit amet,
-![<File:Profile-filled.png>](Profile-filled.png "File:Profile-filled.png")
+![<File:profile-filled.png>](profile-filled.png "File:profile-filled.png")
 nullam mauris est, pharetra a fringilla vitae.**
 
 </div>
@@ -493,7 +493,7 @@ To get:
 
 <div class="code-result">
 
-![](wavelet_contrast_shadow.png "wavelet_contrast_shadow.png")
+![](240px-wavelet_contrast_shadow.png "240px-wavelet_contrast_shadow.png")
 **Praesent efficitur enim in felis elementum, congue blandit augue
 hendrerit. Donec bibendum nec nisi eget dapibus. Sed augue augue,
 porttitor nec volutpat at, porttitor pellentesque tellus. Nulla tempus
@@ -511,7 +511,7 @@ On the other hand, when placing the image at the end of a list item:
 
 - **In hac habitasse platea dictumst. Praesent quis tellus
   scelerisque**
-  ![](wavelet_contrast_shadow.png "wavelet_contrast_shadow.png")
+  ![](240px-wavelet_contrast_shadow.png "240px-wavelet_contrast_shadow.png")
 
 
 
@@ -539,7 +539,7 @@ lead you to the specified url when you click the image:
 
 <div class="image-sample">
 
-![](Wavelet_daubechies20.png "Wavelet_daubechies20.png") **Pellentesque
+![](600px-wavelet_daubechies20.png "600px-wavelet_daubechies20.png") **Pellentesque
 sodales non odio in venenatis. Suspendisse imperdiet laoreet dictum.
 Phasellus at tortor vel ante interdum pellentesque non at justo. Nam
 luctus, risus quis ullamcorper ultrices, justo justo commodo massa, ut
@@ -571,7 +571,7 @@ This time a left positioning is added, too:
 
 <div class="image-sample">
 
-![](wavelet_contrast_buttons.png "wavelet_contrast_buttons.png") '''Nunc
+![](300px-wavelet_contrast_buttons.png "300px-wavelet_contrast_buttons.png") '''Nunc
 et semper magna. Fusce vel dolor orci. Suspendisse eget velit
 pellentesque turpis sodales pretium at finibus velit. Aenean dolor nibh,
 tempus nec sapien eu, rhoncus posuere tortor. Sed scelerisque lacus id
@@ -595,7 +595,7 @@ turpis sodales pretium at finibus velit. Aenean dolor nibh.
 
 <div class="image-sample">
 
-![](Wavelet_detail_size.png "Wavelet_detail_size.png") **Mauris dui
+![](450px-wavelet_detail_size.png "450px-wavelet_detail_size.png") **Mauris dui
 erat, viverra ac magna eu, egestas consequat mi. Integer tristique,
 justo quis dignissim vehicula, leo quam tincidunt mi, nec porttitor nunc
 augue quis enim. Nunc id sapien ipsum. Fusce diam mauris, placerat eu
@@ -654,10 +654,7 @@ With the next example we are displaying a big image (bigger than the
 viewport size), full width, and removing the possibility to click on it
 (`link=`) :
 
-<figure>
-<img src="/images/Rt_55_trains.png" title="Rt_55_trains.png" />
-<figcaption>Rt_55_trains.png</figcaption>
-</figure>
+![rt_55_trains.png](/images/rt_55_trains.png "rt_55_trains.png")
 
 Please note that you need to add the `none` option to prevent the image
 to overflow the screen.
@@ -678,7 +675,7 @@ formatting as before, but getting some important side effects:
 Integer nec mollis elit, in auctor leo. Proin et neque quis tellus
 laoreet faucibus. Suspendisse efficitur ligula velit, eget consequat
 ante mollis id.**
-![](Rt57_histogram_wide_labeled.png "Rt57_histogram_wide_labeled.png")
+![](rt57_histogram_wide_labeled.png "rt57_histogram_wide_labeled.png")
 **Praesent sollicitudin bibendum purus, eget viverra lectus luctus
 tincidunt. Orci varius natoque penatibus et magnis dis parturient
 montes, nascetur ridiculus mus. Etiam justo neque, volutpat ultricies
@@ -697,7 +694,7 @@ the screen**:
 **Vivamus maximus nunc suscipit luctus iaculis. Pellentesque rutrum ante
 sit amet leo consectetur imperdiet. Nullam elementum nisl sed volutpat
 ultrices.**
-![](Rt_filmstrip_21_toolbar-visible.jpg "Rt_filmstrip_21_toolbar-visible.jpg")
+![](rt_filmstrip_21_toolbar-visible.jpg "rt_filmstrip_21_toolbar-visible.jpg")
 **Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
 posuere cubilia Curae; Suspendisse blandit enim eget nulla mattis
 accumsan. Mauris ut lobortis massa. In hac habitasse platea dictumst.
@@ -781,11 +778,7 @@ You will get an image positioned lower than it should be:
 
 <div class="image-sample">
 
-<figure>
-<img src="/images/wavelet_contrast_buttons.png"
-title="wavelet_contrast_buttons.png" />
-<figcaption>wavelet_contrast_buttons.png</figcaption>
-</figure>
+![300px-wavelet_contrast_buttons.png](/images/300px-wavelet_contrast_buttons.png "300px-wavelet_contrast_buttons.png")
 
 - At vero eos et accusam et justo duo dolores et ea rebum. Sed diam
   nonummy nibh euismod tincidunt. Quis nostrud exerci tation. Stet clita
@@ -818,11 +811,7 @@ And to fix it you have to enclose the image within
 <div class="image-sample">
 <div class="tlist">
 
-<figure>
-<img src="/images/wavelet_contrast_buttons.png"
-title="wavelet_contrast_buttons.png" />
-<figcaption>wavelet_contrast_buttons.png</figcaption>
-</figure>
+![300px-wavelet_contrast_buttons.png](/images/300px-wavelet_contrast_buttons.png "300px-wavelet_contrast_buttons.png")
 
 </div>
 
@@ -883,11 +872,7 @@ have to enclose the image `<div class="tlist tleft-list">...</div>`. But
 
 <div class="tlist">
 
-<figure>
-<img src="/images/wavelet_contrast_buttons.png"
-title="wavelet_contrast_buttons.png" />
-<figcaption>wavelet_contrast_buttons.png</figcaption>
-</figure>
+![300px-wavelet_contrast_buttons.png](/images/300px-wavelet_contrast_buttons.png "300px-wavelet_contrast_buttons.png")
 
 </div>
 
@@ -918,11 +903,7 @@ title="wavelet_contrast_buttons.png" />
 
 <div class="tlist tleft-list">
 
-<figure>
-<img src="/images/wavelet_contrast_buttons.png"
-title="wavelet_contrast_buttons.png" />
-<figcaption>wavelet_contrast_buttons.png</figcaption>
-</figure>
+![300px-wavelet_contrast_buttons.png](/images/300px-wavelet_contrast_buttons.png "300px-wavelet_contrast_buttons.png")
 
 </div>
 
@@ -981,7 +962,7 @@ animation.
 <div class="thumb tnone">
 <div class="thumbinner" style="width: 310px;">
 
-![](Case3.png "Case3.png") ![](Case3.gif "Case3.gif")
+![](case3.png "case3.png") ![](case3.gif "case3.gif")
 
 <div class="thumbcaption">
 
@@ -1178,28 +1159,14 @@ the images will render as:
 
 <div>
 
-- <figure>
-  <img src="/images/wavelet_pic.png" title="wavelet_pic.png" />
-  <figcaption>wavelet_pic.png</figcaption>
-  </figure>
+- ![660px-wavelet_pic.png](/images/660px-wavelet_pic.png "660px-wavelet_pic.png")
 
-- <figure>
-  <img src="/images/wavelet_contrast_15C+_WL.png"
-  title="wavelet_contrast_15C+_WL.png" />
-  <figcaption>wavelet_contrast_15C+_WL.png</figcaption>
-  </figure>
+- ![660px-wavelet_contrast_15c+_wl.png](/images/660px-wavelet_contrast_15c+_wl.png "660px-wavelet_contrast_15c+_wl.png")
 
-- <figure>
-  <img src="/images/wavelet_contrast_15C+_H3S6.png"
-  title="wavelet_contrast_15C+_H3S6.png" />
-  <figcaption>wavelet_contrast_15C+_H3S6.png</figcaption>
-  </figure>
+- ![660px-wavelet_contrast_15c+_h3s6.png](/images/660px-wavelet_contrast_15c+_h3s6.png "660px-wavelet_contrast_15c+_h3s6.png")
 
-- <figure>
-  <img src="/images/wavelet_contrast_15C+_H3S6_Str50.png"
-  title="wavelet_contrast_15C+_H3S6_Str50.png" />
-  <figcaption>wavelet_contrast_15C+_H3S6_Str50.png</figcaption>
-  </figure>
+-
+![660px-wavelet_contrast_15c+_h3s6_str50.png](/images/660px-wavelet_contrast_15c+_h3s6_str50.png "660px-wavelet_contrast_15c+_h3s6_str50.png")
 
 </div>
 
@@ -1225,23 +1192,11 @@ the images will render as:
 
 <div>
 
-- <figure>
-  <img src="/images/wavelet_chrom_Link_50_Str50.png"
-  title="wavelet_chrom_Link_50_Str50.png" />
-  <figcaption>wavelet_chrom_Link_50_Str50.png</figcaption>
-  </figure>
+- ![660px-wavelet_chrom_link_50_str50.png](/images/660px-wavelet_chrom_link_50_str50.png "660px-wavelet_chrom_link_50_str50.png")
 
-- <figure>
-  <img src="/images/wavelet_toning_opBYfull.png"
-  title="wavelet_toning_opBYfull.png" />
-  <figcaption>wavelet_toning_opBYfull.png</figcaption>
-  </figure>
+- ![660px-wavelet_toning_opbyfull.png](/images/660px-wavelet_toning_opbyfull.png "660px-wavelet_toning_opbyfull.png")
 
-- <figure>
-  <img src="/images/wavelet_toning_opBYfull_curve.png"
-  title="wavelet_toning_opBYfull_curve.png" />
-  <figcaption>wavelet_toning_opBYfull_curve.png</figcaption>
-  </figure>
+- ![280px-wavelet_toning_opbyfull_curve.png](/images/280px-wavelet_toning_opbyfull_curve.png "280px-wavelet_toning_opbyfull_curve.png")
 
 </div>
 
@@ -1263,16 +1218,9 @@ Will get:
 
 <div>
 
-- <figure>
-  <img src="/images/wavelet_smc_original.png" title="wavelet_smc_original.png" />
-  <figcaption>wavelet_smc_original.png</figcaption>
-  </figure>
+- [900px-wavelet_smc_original.png](/images/900px-wavelet_smc_original.png "900px-wavelet_smc_original.png")
 
-- <figure>
-  <img src="/images/wavelet_clarity_ML60MC30.png"
-  title="wavelet_clarity_ML60MC30.png" />
-  <figcaption>wavelet_clarity_ML60MC30.png</figcaption>
-  </figure>
+- ![20200623062937!wavelet_clarity_ml60mc30.png](/images/20200623062937!wavelet_clarity_ml60mc30.png "20200623062937!wavelet_clarity_ml60mc30.png")
 
 </div>
 

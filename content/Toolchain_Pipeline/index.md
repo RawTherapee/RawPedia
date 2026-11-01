@@ -327,11 +327,7 @@ Note:
 - Approximately 40% of the image is 100% white.
 - The restored black-to-white dynamic range is around 12 to 13 Ev.
 
-<figure>
-<img src="/images/sweep-rgb-neutral.jpg" title="sweep-rgb-neutral.jpg"
-width="600" />
-<figcaption>sweep-rgb-neutral.jpg</figcaption>
-</figure>
+![sweep-rgb-neutral.jpg](/images/sweep-rgb-neutral.jpg "sweep-rgb-neutral.jpg")
 
 ###### Image with Local Adjustments - Log Encoding
 
@@ -344,10 +340,7 @@ Note:
 - The dynamic range of the blacks, whites and color is restored to 25Ev.
 - Note the use of "White distribution = 90".
 
-<figure>
-<img src="/images/sweep-rgb-log.jpg" title="sweep-rgb-log.jpg" width="600" />
-<figcaption>sweep-rgb-log.jpg</figcaption>
-</figure>
+![sweep-rgb-log.jpg](/images/sweep-rgb-log.jpg "sweep-rgb-log.jpg")
 
 #### CIECAM02/16
 
@@ -649,7 +642,7 @@ animals, etc.) and then add some local contrast. This can take 2 forms:
   - In the Abstract Profile module you have Contrast Enhancement based
     on the notion of contrast profiles.
 
-<img src="/images/APwav.jpg" title="APwav.jpg" width="300" alt="APwav.jpg" />
+![apwav.jpg](apwav.jpg "apwav.jpg")
 
 - In Selective Editing, there is the Local Contrast & Wavelets tool,
   which in Basic mode allows you to adjust the local contrast (by
