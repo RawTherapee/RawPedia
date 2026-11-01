@@ -830,7 +830,7 @@ Highlight problems:
   [39](https://drive.google.com/file/d/1vAzFY7Qh8MdJ882J_4JeO_cnpGELzD8D/view?usp=drive_link)
 
 [An evaluation of the Dynamic-Range capabilities of tools in Selective
-Editing](Local_Adjustments#An_evaluation_of_the_dynamic-range_capabilities_of_tools_in_Selective_Editing.md)
+Editing](local_adjustments#an-evaluation-of-the-dynamic-range-capabilities-of-tools-in-selective-editing)
 
 ## The new features tested in this challenge
 
@@ -851,7 +851,7 @@ Editing](Local_Adjustments#An_evaluation_of_the_dynamic-range_capabilities_of_to
   to get to know Rawtherapee better.
 
 [Color appearance Cam16 and
-HDR](Local_Adjustments#Using_the_Cam16_and_HDR_functions.md)
+HDR](local_adjustments#using-the-cam16-and-hdr-functions)
 
 ## Why a new module ?: there's Sigmoid and Filmic
 
@@ -873,7 +873,7 @@ Reservations about Lab and its limitation to 7 or 8 Ev are unfounded.
 Image processing - after RGB\>Lab and then Lab\>RGB conversion - shows
 that Lab easily passes 25 Ev, more than enough to process all images.
 [An evaluation of the dynamic-range capabilities of tools in Selective
-Editing](Local_Adjustments#An_evaluation_of_the_dynamic-range_capabilities_of_tools_in_Selective_Editing.md)
+Editing](local_adjustments#an-evaluation-of-the-dynamic-range-capabilities-of-tools-in-selective-editing)
 
 I'm not saying that Filmic (cf Log encoding) or Sigmoid are bad modules,
 these are tone-mappers - you'll find them in RT - , but either they use

@@ -15,13 +15,13 @@ The image is difficult: beneath its seemingly simple appearance, mastering the c
 
 I deliberately chose extreme settings to demonstrate the system's limitations. The objective is to achieve very high local contrast values ​​in order to highlight the control of halos and artifacts. The second objective is to introduce - for users who are unaware of it - the concept of Clarity (with wavelets).
 
- [Some principles](/tutorials/#in-summary-some-principles)
+ [Some principles](/tutorials/game_changer/introduction#in-summary-some-principles)
 
- [Recommendations](/tutorials/#recommendations)
+ [Recommendations](/tutorials/game_changer/introduction#recommendations)
 
- [Specific tools used](/tutorials/#specific-tools-used)
+ [Specific tools used](/tutorials/game_changer/introduction#specific-tools-used)
 
- [Alternatives](/tutorials/#alternatives)
+ [Alternatives](/tutorials/game_changer/introduction#alternatives)
 
  Raw file (Creative Common Attribution-share Alike 4.0):
  [14](https://drive.google.com/file/d/1GdqejdnbW1kJFNY6y9sdQDlF2rCEGMCu/view?usp=sharing)

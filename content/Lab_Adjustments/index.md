@@ -101,7 +101,7 @@ yellow. This can be used to apply color toning effects.
 
 Color-toning a black-and-white image can be done using one of two
 methods: the recommended and most intuitive method is by using the
-[Color Toning](color_toning#black_and_white) tool along with
+[Color Toning](color_toning#black-and-white) tool along with
 the Black-and-White tool. The other, less powerful method is using the
 a\* and b\* curves of the L\*a\*b\* Adjustments tool once the image is
 desaturated. The reason we still describe how to do it without using the
@@ -111,7 +111,7 @@ older version which lacks these tools, or you're just curious what your
 options are.
 
 Read about color-toning a black-and-white image the recommended way on
-the [Color Toning](color_toning#black_and_white) tool's page;
+the [Color Toning](color_toning#black-and-white) tool's page;
 this section describes how to do it by using the a\* and b\* curves.
 
 First you need to make the image black-and-white. Do this using any of

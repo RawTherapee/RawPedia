@@ -21,13 +21,13 @@ Raw file :  (Creative Common Attribution-share Alike 4.0)
 
 - pp3 file 3: [Young girl](p3090042-ghs.pp3 "p3090042-ghs.pp3")
 
- [Some principles](/tutorials/introduction/#in-summary-some-principles)
+ [Some principles](/tutorials/game_changer/introduction/#in-summary-some-principles)
 
- [Recommendations](/tutorials/introduction/#recommendations)
+ [Recommendations](/tutorials/game_changer/introduction/#recommendations)
 
- [Specific tools used](/tutorials/introduction/#specific-tools-used)
+ [Specific tools used](/tutorials/game_changer/introduction/#specific-tools-used)
 
- [Alternatives](/tutorials/introduction/#alternatives)
+ [Alternatives](/tutorials/game_changer/introduction/#alternatives)
 
 **Image in Neutral mode**
 <figure>

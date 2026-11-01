@@ -62,13 +62,13 @@ tools or settings are known to be incompatible with saving unclipped
 images in RawTherapee 5.6, and so are disabled by this processing
 profile:
 
-- [Exposure tone curves](exposure#tone_curves),
+- [Exposure tone curves](exposure#tone-curves),
 - [Vibrance](vibrance),
 - Before/After curves in the
   [Black-and-White](black-and-white) tool,
 - [Film Simulation](film_simulation),
 - [RGB Curves](rgb_curves) in luminosity mode,
-- [DCP look table](color_management#use_dcp.27s_look_table),
+- [DCP look table](color_management#dcp-look-table),
 - [CIECAM02](ciecam02)
 
 ## Usage
@@ -78,7 +78,7 @@ profile:
     that your output ICC profile is either v4, or a linear tone response
     curve v2.
     - If you want to apply this profile and reset all tools to safe
-      default values, then set the [processing profile fill mode](sidecar_files_-_processing_profiles#partial_processing_profiles_and_fill_modes)
+      default values, then set the [processing profile fill mode](sidecar_files_-_processing_profiles#partial-processing-profiles-and-fill-modes)
       to "Filled"
       ![<File:Profile-filled.png>](/images/Profile-filled.png "File:Profile-filled.png")
       before applying this profile.

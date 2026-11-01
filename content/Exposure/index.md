@@ -55,7 +55,7 @@ also guess clipped data using nearby data from unclipped channels, if
 present. Remember, this tool is used for the *reconstruction* of clipped
 highlights, while if you just want to *compress* highlights which were
 not clipped in the first place but became clipped due to the use of, for
-example, *Exposure Compensation*, then use the [Highlight Compression](/exposure/#highlight-compression) slider. (A tool to avoid when using [Game Changer](/game_changer) )
+example, *Exposure Compensation*, then use the [Highlight Compression](/exposure/#highlight-compression) slider. (A tool to avoid when using [Game Changer](/tutorials/game_changer))
 The *Auto Levels* button will automatically enable *Highlight
 Reconstruction* if necessary.
 
@@ -84,7 +84,7 @@ Four different methods of highlight reconstruction are available:
     In both cases, the 'Blur' slider allows for a smoother transition between restored areas and those that are unchanged.
 
     Works well even with very high "*Highlight Compression*" values
-    (under 500). A tool to avoid when using "Game Changer"[Game Changer](/game_changer)
+    (under 500). A tool to avoid when using "[Game Changer](/tutorials/game_changer)"
 3.  Inpaint opposed
 
     This method restores clipped pixels by looking at selected pixels

@@ -6,4 +6,4 @@ contributors:
 ---
 
 1.  REDIRECT
-    [Preferences#Batch_Edit_Tab](preferences#batch_edit_tab)
+    [preferences#batch-edit-tab](preferences#batch-edit-tab)

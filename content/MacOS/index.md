@@ -86,7 +86,7 @@ To your `cmake` command add the following flag:
 
 ## Compiling
 
-See the [Compiling in Linux](linux#compiling:_the_manual_way)
+See the [Compiling in Linux](linux#the-manual-way)
 article for instructions on how to **clone** the source code, choose a
 **branch** and how to configure **CMake**. Ignore the ***Now you are
 ready to compile*** code on that page and follow the code on this page.

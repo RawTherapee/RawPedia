@@ -6,4 +6,4 @@ contributors:
 ---
 
 1.  REDIRECT
-    [Preferences#Performance_Tab](preferences#performance_tab)
+    [preferences#performance-tab](preferences#performance-tab)

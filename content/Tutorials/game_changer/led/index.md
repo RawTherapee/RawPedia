@@ -29,13 +29,13 @@ Compared to the tutorial presented in November 2025, the changes are significant
 
 [Pixls.us LED's](https://discuss.pixls.us/t/game-changer-using-led-s-image-gamut-compresion-ghs-abstract-profiles-primaries/54245)
 
- [Some principles](/tutorials/introduction/#in-summary-some-principles)
+ [Some principles](/tutorials/game_changer/introduction/#in-summary-some-principles)
 
- [Recommendations](/tutorials/introduction/#recommendations)
+ [Recommendations](/tutorials/game_changer/introduction/#recommendations)
 
- [Specific tools used](/tutorials/introduction/#specific-tools-used)
+ [Specific tools used](/tutorials/game_changer/introduction/#specific-tools-used)
 
- [Alternatives](/tutorials/introduction/#alternatives)
+ [Alternatives](/tutorials/game_changer/introduction/#alternatives)
 
 ## Learning objective
 + The role of GHS & MM, in the linear portion of the data, which can be considered a ‘Pre-tone-mapper’.
@@ -179,7 +179,7 @@ Here, I'm not using primaries, nor am I touching the illuminants. We're staying 
 + However, some improvements have been made recently:
   - A ‘Saturation’ slider has been added, allowing compensation for saturation loss, particularly related to high Slope values.
   - An ‘Attenuation Threshold’ slider allows for better control of highlights using an exponential function.
-  - Contrast Enhancement is a simplified way for users to utilize wavelets to improve local contrast. Readers interested in more advanced aspects can follow this link: [AP](/tutorials/introduction/#specific-tools-used) and go to the 3 links in 'Contrast Enhancement'.
+  - Contrast Enhancement is a simplified way for users to utilize wavelets to improve local contrast. Readers interested in more advanced aspects can follow this link: [AP](/tutorials/game_changer/introduction/#specific-tools-used) and go to the 3 links in 'Contrast Enhancement'.
 
 <figure>
 <img src="ap-trc-contrast-2.jpg" title="ap-trc-contrast-2.jpg" width="300" />

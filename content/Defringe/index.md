@@ -40,7 +40,7 @@ Sets a threshold for the application of defringing.
 
 ### Hue
 
-You can use the *Hue* [flat curve](general_comments_about_some_toolbox_widgets#the_flat_curve)
+You can use the *Hue* [flat curve](general_comments_about_some_toolbox_widgets#the-flat-curve)
 to specify which colors *Defringe* should target. The horizontal axis
 represents the range of colors, and the vertical axis the strength of
 fringe removal. This allows you to limit the action to a specific range

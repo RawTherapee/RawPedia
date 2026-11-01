@@ -168,7 +168,7 @@ If you want to fully utilize the Libraw functionality (the library integrated in
 
 Make sure to replace the path to the Lensfun database with the actual
 path obtained a few steps before. See the [Linux
-article](Linux#CMake.md) for more details on the various
+article](linux#cmake) for more details on the various
 options. Depending on your system, the build process may take anywhere
 between 3 and 25 minutes.
 

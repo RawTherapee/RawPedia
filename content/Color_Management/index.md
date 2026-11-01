@@ -365,7 +365,7 @@ RawTherapee 5.5 allows you to specify custom working profiles through a
 [JSON](https://en.wikipedia.org/wiki/JSON) file. The file should be
 named `workingspaces.json` and it can reside in:
 
-- the ICC profile folder as set in [Preferences \> Color Management \> Directory containing color profiles](preferences#color_management_tab),
+- the ICC profile folder as set in [Preferences \> Color Management \> Directory containing color profiles](preferences#color-management-tab),
 - or in RawTherapee's own ICC profile folder:
   - Windows: <rt-install-folder>`\iccprofiles`
   - Linux:
@@ -1297,7 +1297,7 @@ RawTherapee lets you specify "input" (e.g. your camera's profile),
 class profiles with an RGB color space, because RawTherapee saves only
 RGB images. Profiles listed in this combobox are those which come
 bundled with RawTherapee and those located in the folder set in
-Preferences \> [Color Management](preferences#color_management_tab).
+Preferences \> [Color Management](preferences#color-management-tab).
 
 The soft-proofing feature is dedicated to simulating printer rendering.
 It lets you preview what your image will look like when printed,

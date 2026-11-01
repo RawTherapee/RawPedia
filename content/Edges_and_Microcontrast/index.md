@@ -14,7 +14,7 @@ __TOC__
 
 ## General
 
-Unlike *[Unsharp Mask](sharpening#unsharp_mask)*, *Edges* is
+Unlike *[Unsharp Mask](sharpening#unsharp-mask)*, *Edges* is
 a true sharpening algorithm. It does not introduce halos, it can be used
 on noisy images and it works in the Lab color space. It emphasizes only
 the edges, and can be combined with

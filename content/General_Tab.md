@@ -6,4 +6,4 @@ contributors:
 ---
 
 1.  REDIRECT
-    [Preferences#General_Tab](preferences#general_tab)
+    [preferences#general-tab](preferences#general-tab)

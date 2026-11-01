@@ -100,7 +100,7 @@ what this filter does.
 
 For high ISO shots (1600+), try for example clicking on the
 "*Contrast-*" button twice and using [Sharpening](sharpening)
-\> [Unsharp Mask](sharpening#unsharp_mask) with an amount of
+\> [Unsharp Mask](sharpening#unsharp-mask) with an amount of
 80.
 
 ## Threshold

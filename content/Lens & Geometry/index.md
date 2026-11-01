@@ -325,7 +325,7 @@ distortion.
   post-processed with an off-center crop. Units are in percent of the
   image width/height.
 - Rotation: corrects rotation around the optical axis. This is different
-  from the [Rotate](lens/geometry#rotate) tool because it is
+  from the [Rotate](#rotate) tool because it is
   applied after the shift (they are effectively the same if
   horizontal/vertical shift are 0). Units are degrees.
 - Horizontal/Vertical: corrects perspective distortion due to the

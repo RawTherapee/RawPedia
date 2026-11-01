@@ -19,9 +19,9 @@ In this tutorial, we will see how to use:
 
 Of course, other tools are necessary, such as 'Gamut Compression', 'White Balance Auto - Temperature Correlation' (See the first tutorial for more details: of course the settings are different).
 
-[Gamut Compression](/tutorials/shadows-highlights/#gamut-compression)
+[Gamut Compression](/tutorials/game_changer/shadows-highlights/#gamut-compression)
 
-[Auto White Balance - Temperature Correlation](/tutorials/shadows-highlights/#white-balance---temperature-correlation)
+[Auto White Balance - Temperature Correlation](/tutorials/game_changer/shadows-highlights/#white-balance---temperature-correlation)
 
 Image selection:
 Image n°5 IMGP2426.DNG from the Rawtherapee Processing Challenge feedback (begin 2024)
@@ -36,13 +36,13 @@ This image seems innocuous at first glance, a typical sunset. The image is gener
 - pp3 file 2: [Second example with Generalized Hyperbolic Strech - RGB Standard](i2426-ghs-std.pp3 "i2426-ghs-std.pp3")
 - pp3 file 3: [Third example with Michaelis-Menten](i2426-mm.pp3 "i2426-mm.pp3")
 
- [Some principles](/tutorials/introduction/#in-summary-some-principles)
+ [Some principles](/tutorials/game_changer/introduction/#in-summary-some-principles)
 
- [Recommendations](/tutorials/introduction/#recommendations)
+ [Recommendations](/tutorials/game_changer/introduction/#recommendations)
 
- [Specific tools used](/tutorials/introduction/#specific-tools-used)
+ [Specific tools used](/tutorials/game_changer/introduction/#specific-tools-used)
 
- [Alternatives](/tutorials/introduction/#alternatives)
+ [Alternatives](/tutorials/game_changer/introduction/#alternatives)
 
 **Learning objective**
 
@@ -213,7 +213,7 @@ To give the user a glimpse of the possibilities of each of these 'pre-tone mappe
 + However, some improvements have been made recently:
   - A ‘Saturation’ slider has been added, allowing compensation for saturation loss, particularly related to high Slope values.
   - An ‘Attenuation Threshold’ slider allows for better control of highlights using an exponential function.
-  - Contrast Enhancement is a simplified way for users to utilize wavelets to improve local contrast. Readers interested in more advanced aspects can follow this link: [AP](/tutorials/introduction/#specific-tools-used) and go to the 3 links in 'Contrast Enhancement'.
+  - Contrast Enhancement is a simplified way for users to utilize wavelets to improve local contrast. Readers interested in more advanced aspects can follow this link: [AP](/tutorials/game_changer/introduction/#specific-tools-used) and go to the 3 links in 'Contrast Enhancement'.
 
 ##### Let’s return to our image.
 
@@ -249,7 +249,7 @@ I ‘forgot’ one thing. After ‘Abstract profile’, it is possible (even rec
 [CIECAM](/ciecam02/#color-appearance--lighting-ciecam0216-et-color-appearance-cam16--jzczhz---tutorial)
 
 We use the same principles as in the first tutorial, but the settings are different. Here, the goal isn't to create a dramatic effect, but to amplify the sunburst.
-[CIECAM - Best shadows & highlights technics](/tutorials/shadows-highlights/#color-appearance--lighting)
+[CIECAM - Best shadows & highlights technics](/tutorials/game_changer/shadows-highlights/#color-appearance--lighting)
 
 ##### CIECAM - Main settings (GHS & MM)
 
