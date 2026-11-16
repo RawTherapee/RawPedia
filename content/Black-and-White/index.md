@@ -157,7 +157,7 @@ You may choose between:
 
 The color filter simulates shooting with a colored filter placed in front
 of the lens. These filters reduce the transmission of a specific color and
-therefore an impact the luminance of that color. E.g. a red filter darkens
+therefore impact the luminance of that color. E.g. a red filter darkens
 a blue sky and lightens the reds. This filter works as a multiplicator for
 the settings made with “presets”.
 
