@@ -3,6 +3,7 @@ title: Black-and-White
 contributors:
   - DrSlony
   - XavAL
+  - Lebarhon
   - plantarum
 tags:
   - 'Tool Description'
