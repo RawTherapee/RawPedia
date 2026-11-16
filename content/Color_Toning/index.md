@@ -186,7 +186,7 @@ The "Strength" slider allows to set the system sensitivity:
     generalised chromatic correction,
 2.  with medium values, you can use this tool as a color toning,
 3.  with high values, you can use this tool as a black and white toning,
-    interacting with the [Black and White](black-and-white_addon) tool (internal algorithm
+    interacting with the [Black and White](black-and-white) tool (internal algorithm
     parameters are different for a color or a black and white action)
 
 Select "Preserve Luminance" to prevent any change of the lightness
@@ -199,7 +199,7 @@ This method is close to ACR and Lightroom, both in its operating mode
 and its rendering.
 
 It is mostly intended to color toning, even if it may be used in
-interaction with the [Black and White](black-and-white_addon)
+interaction with the [Black and White](black-and-white)
 tool.
 
 Two sliders with two levels are at your disposal, the first one for
@@ -235,8 +235,8 @@ of masks, but also supports functions from the
 
 ### Black and White
 
-It is thanks to going to and from from the [Black and White addon](black-and-white_addon) tool - particularly
-[Luminance Equalizer](black-and-white_addon/#luminance-equalizer) to the
+It is thanks to going to and from from the [Black and White](black-and-white) tool - particularly
+[Luminance Equalizer](black-and-white/#luminance-equalizer) to the
 "Color Toning" tool - particularly [Color Balance Shadows/Midtones/Highlights](/color_toning/#color-balance-shadowsmidtoneshighlights) -
 that you will get the most pronounced (black and white) special effects.
 
@@ -246,7 +246,7 @@ that you will get the most pronounced (black and white) special effects.
   all the "Color Toning" tools are directly available.
 - In the case of black and white [film simulation](film_simulation), it is mandatory to enable the
   the "Black and White" tool. The
-  [desaturation](black-and-white_addon#desaturation) method
+  [desaturation](black-and-white#desaturation) method
   is almost neutral and allows a direct use of the black and white
   simulations in all the "Color Toning" tools", but without being able
   to use the special effects of the "Black and White" tool.
